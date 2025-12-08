@@ -1,50 +1,93 @@
+
+
 name: Build Minecraft Mod
 
 on:
   workflow_dispatch:
     inputs:
       mod_id:
-        description: 'Mod ID from database'
+        description: 'Mod UUID from database'
         required: true
-      mod_files:
-        description: 'Base64 encoded mod files JSON'
+      mod_name:
+        description: 'Human-readable mod name'
         required: true
       loader:
-        description: 'Mod loader (fabric/forge)'
+        description: 'Mod loader (fabric or forge)'
         required: true
-      callback_url:
-        description: 'Webhook URL for completion'
+        default: 'fabric'
+      mc_version:
+        description: 'Minecraft version'
+        required: true
+        default: '1.20.4'
+      mod_files:
+        description: 'Base64-encoded JSON of mod files'
+        required: true
+      webhook_url:
+        description: 'URL to call when build completes'
+        required: true
+      webhook_secret:
+        description: 'Secret for webhook authentication'
         required: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    
     steps:
-      - uses: actions/setup-java@v4
+      - name: Setup Java 17
+        uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
           java-version: '17'
-
-      - name: Decode and extract mod files
+          distribution: 'temurin'
+      
+      - name: Create mod project
         run: |
-          echo "${{ github.event.inputs.mod_files }}" | base64 -d > mod-files.json
+          echo "Creating mod project for ${{ github.event.inputs.mod_name }}"
           mkdir -p mod-project
-          node -e "
-            const fs = require('fs');
-            const data = JSON.parse(fs.readFileSync('mod-files.json', 'utf8'));
-            for (const [path, content] of Object.entries(data.files)) {
-              const dir = require('path').dirname('mod-project/' + path);
-              fs.mkdirSync(dir, { recursive: true });
-              fs.writeFileSync('mod-project/' + path, content);
-            }
-          "
-
-      - name: Build mod
+          cd mod-project
+          
+          # Decode the base64 mod files and extract
+          echo '${{ github.event.inputs.mod_files }}' | base64 -d > files.json
+          
+          # Use Node.js to parse JSON and create files
+          node << 'EOF'
+          const fs = require('fs');
+          const path = require('path');
+          
+          const filesJson = fs.readFileSync('files.json', 'utf8');
+          const files = JSON.parse(filesJson);
+          
+          for (const [filePath, content] of Object.entries(files)) {
+            const fullPath = path.join('.', filePath);
+            const dir = path.dirname(fullPath);
+            fs.mkdirSync(dir, { recursive: true });
+            fs.writeFileSync(fullPath, content);
+            console.log(`Created: ${filePath}`);
+          }
+          EOF
+          
+          # Create gradle wrapper
+          gradle wrapper --gradle-version 8.4 || true
+          
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: '8.4'
+      
+      - name: Build with Gradle
+        id: build
         working-directory: mod-project
         run: |
-          chmod +x gradlew 2>/dev/null || true
-          ./gradlew build --no-daemon || gradle build --no-daemon
-
+          chmod +x gradlew || true
+          ./gradlew build --no-daemon --info
+          
+          # Find the built jar
+          JAR_FILE=$(find build/libs -name "*.jar" ! -name "*-sources.jar" ! -name "*-dev.jar" | head -1)
+          echo "Built JAR: $JAR_FILE"
+          echo "jar_file=$JAR_FILE" >> $GITHUB_OUTPUT
+          echo "jar_name=$(basename $JAR_FILE)" >> $GITHUB_OUTPUT
+      
       - name: Upload to R2
         id: upload
         env:
@@ -52,20 +95,65 @@ jobs:
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
           R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME }}
           R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_PUBLIC_URL: ${{ secrets.R2_PUBLIC_URL }}
         run: |
-          JAR_FILE=$(find mod-project/build/libs -name "*.jar" ! -name "*-sources.jar" | head -1)
-          # Upload using AWS CLI to R2
+          cd mod-project
+          JAR_FILE="${{ steps.build.outputs.jar_file }}"
+          JAR_NAME="${{ steps.build.outputs.jar_name }}"
+          MOD_ID="${{ github.event.inputs.mod_id }}"
+          
+          # Install AWS CLI for S3-compatible upload
           pip install awscli
+          
+          # Configure AWS CLI for R2
           aws configure set aws_access_key_id $R2_ACCESS_KEY_ID
           aws configure set aws_secret_access_key $R2_SECRET_ACCESS_KEY
-          aws s3 cp "$JAR_FILE" "s3://$R2_BUCKET_NAME/mods/${{ github.event.inputs.mod_id }}.jar" --endpoint-url "https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com"
-          echo "jar_url=${{ secrets.R2_PUBLIC_URL }}/mods/${{ github.event.inputs.mod_id }}.jar" >> $GITHUB_OUTPUT
-
-      - name: Notify completion
-        if: always()
+          aws configure set region auto
+          
+          # Upload to R2
+          TIMESTAMP=$(date +%s)
+          KEY="compiled-mods/${MOD_ID}/${TIMESTAMP}_${JAR_NAME}"
+          
+          aws s3 cp "$JAR_FILE" "s3://${R2_BUCKET_NAME}/${KEY}" \
+            --endpoint-url "https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com" \
+            --content-type "application/java-archive"
+          
+          # Construct public URL
+          if [ -n "$R2_PUBLIC_URL" ]; then
+            PUBLIC_URL="${R2_PUBLIC_URL}/${KEY}"
+          else
+            PUBLIC_URL="https://${R2_BUCKET_NAME}.r2.dev/${KEY}"
+          fi
+          
+          echo "Uploaded to: $PUBLIC_URL"
+          echo "jar_url=$PUBLIC_URL" >> $GITHUB_OUTPUT
+      
+      - name: Notify webhook on success
+        if: success()
+        env:
+          WEBHOOK_URL: ${{ github.event.inputs.webhook_url }}
+          WEBHOOK_SECRET: ${{ github.event.inputs.webhook_secret }}
         run: |
-          STATUS="${{ job.status == 'success' && 'success' || 'failed' }}"
-          curl -X POST "${{ github.event.inputs.callback_url }}" \
+          JAR_URL="${{ steps.upload.outputs.jar_url }}"
+          MOD_ID="${{ github.event.inputs.mod_id }}"
+          
+          curl -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
-            -H "x-webhook-secret: ${{ secrets.CRON_SECRET }}" \
-            -d "{\"modId\":\"${{ github.event.inputs.mod_id }}\",\"status\":\"$STATUS\",\"compiledJarUrl\":\"${{ steps.upload.outputs.jar_url }}\"}"
+            -H "x-webhook-secret: $WEBHOOK_SECRET" \
+            -d "{\"modId\": \"$MOD_ID\", \"status\": \"success\", \"compiledJarUrl\": \"$JAR_URL\"}"
+      
+      - name: Notify webhook on failure
+        if: failure()
+        env:
+          WEBHOOK_URL: ${{ github.event.inputs.webhook_url }}
+          WEBHOOK_SECRET: ${{ github.event.inputs.webhook_secret }}
+        run: |
+          MOD_ID="${{ github.event.inputs.mod_id }}"
+          
+          curl -X POST "$WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -H "x-webhook-secret: $WEBHOOK_SECRET" \
+            -d "{\"modId\": \"$MOD_ID\", \"status\": \"failed\", \"error\": \"Build failed - check GitHub Actions logs\"}"
+Make sure your GitHub repo also has these 5 secrets configured: R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, R2_BUCKET_NAME, R2_ACCOUNT_ID, R2_PUBLIC_URL.
+
+
