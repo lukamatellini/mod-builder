@@ -154,6 +154,5 @@ jobs:
             -H "Content-Type: application/json" \
             -H "x-webhook-secret: $WEBHOOK_SECRET" \
             -d "{\"modId\": \"$MOD_ID\", \"status\": \"failed\", \"error\": \"Build failed - check GitHub Actions logs\"}"
-Make sure your GitHub repo also has these 5 secrets configured: R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, R2_BUCKET_NAME, R2_ACCOUNT_ID, R2_PUBLIC_URL.
 
 
