@@ -1,0 +1,71 @@
+name: Build Minecraft Mod
+
+on:
+  workflow_dispatch:
+    inputs:
+      mod_id:
+        description: 'Mod ID from database'
+        required: true
+      mod_files:
+        description: 'Base64 encoded mod files JSON'
+        required: true
+      loader:
+        description: 'Mod loader (fabric/forge)'
+        required: true
+      callback_url:
+        description: 'Webhook URL for completion'
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Decode and extract mod files
+        run: |
+          echo "${{ github.event.inputs.mod_files }}" | base64 -d > mod-files.json
+          mkdir -p mod-project
+          node -e "
+            const fs = require('fs');
+            const data = JSON.parse(fs.readFileSync('mod-files.json', 'utf8'));
+            for (const [path, content] of Object.entries(data.files)) {
+              const dir = require('path').dirname('mod-project/' + path);
+              fs.mkdirSync(dir, { recursive: true });
+              fs.writeFileSync('mod-project/' + path, content);
+            }
+          "
+
+      - name: Build mod
+        working-directory: mod-project
+        run: |
+          chmod +x gradlew 2>/dev/null || true
+          ./gradlew build --no-daemon || gradle build --no-daemon
+
+      - name: Upload to R2
+        id: upload
+        env:
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME }}
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+        run: |
+          JAR_FILE=$(find mod-project/build/libs -name "*.jar" ! -name "*-sources.jar" | head -1)
+          # Upload using AWS CLI to R2
+          pip install awscli
+          aws configure set aws_access_key_id $R2_ACCESS_KEY_ID
+          aws configure set aws_secret_access_key $R2_SECRET_ACCESS_KEY
+          aws s3 cp "$JAR_FILE" "s3://$R2_BUCKET_NAME/mods/${{ github.event.inputs.mod_id }}.jar" --endpoint-url "https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com"
+          echo "jar_url=${{ secrets.R2_PUBLIC_URL }}/mods/${{ github.event.inputs.mod_id }}.jar" >> $GITHUB_OUTPUT
+
+      - name: Notify completion
+        if: always()
+        run: |
+          STATUS="${{ job.status == 'success' && 'success' || 'failed' }}"
+          curl -X POST "${{ github.event.inputs.callback_url }}" \
+            -H "Content-Type: application/json" \
+            -H "x-webhook-secret: ${{ secrets.CRON_SECRET }}" \
+            -d "{\"modId\":\"${{ github.event.inputs.mod_id }}\",\"status\":\"$STATUS\",\"compiledJarUrl\":\"${{ steps.upload.outputs.jar_url }}\"}"
