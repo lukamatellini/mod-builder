@@ -66,27 +66,24 @@ jobs:
             console.log(`Created: ${filePath}`);
           }
           EOF
-          
-          # Create gradle wrapper
-          gradle wrapper --gradle-version 8.4 || true
-          
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
         with:
           gradle-version: '8.4'
-      
+
       - name: Build with Gradle
         id: build
         working-directory: mod-project
         run: |
-          chmod +x gradlew || true
-          ./gradlew build --no-daemon --info
+          gradle build --no-daemon --info
           
           # Find the built jar
           JAR_FILE=$(find build/libs -name "*.jar" ! -name "*-sources.jar" ! -name "*-dev.jar" | head -1)
           echo "Built JAR: $JAR_FILE"
           echo "jar_file=$JAR_FILE" >> $GITHUB_OUTPUT
           echo "jar_name=$(basename $JAR_FILE)" >> $GITHUB_OUTPUT
+        
+
       
       - name: Upload to R2
         id: upload
