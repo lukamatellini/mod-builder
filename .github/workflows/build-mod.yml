@@ -29,7 +29,16 @@ jobs:
           node-version: "20"
 
       # ----------------------------
-      # 3. Read build-config.json
+      # 3. Ensure unzip exists (safe)
+      # ----------------------------
+      - name: Ensure unzip is available
+        run: |
+          set -e
+          sudo apt-get update
+          sudo apt-get install -y unzip
+
+      # ----------------------------
+      # 4. Read build-config.json
       # ----------------------------
       - name: Read build-config.json
         id: buildconfig
@@ -59,7 +68,23 @@ jobs:
           done < /tmp/buildcfg.txt
 
       # ----------------------------
-      # 4. Validate Fabric metadata
+      # 5. Guardrails from build-config.json (recommended)
+      # ----------------------------
+      - name: Guardrails from build-config.json
+        run: |
+          set -e
+          if [ "${{ steps.buildconfig.outputs.loader }}" != "fabric" ]; then
+            echo "ERROR: loader must be fabric (got '${{ steps.buildconfig.outputs.loader }}')"
+            exit 1
+          fi
+
+          case "${{ steps.buildconfig.outputs.mcVersion }}" in
+            1.21.*) echo "OK: mcVersion allowed: ${{ steps.buildconfig.outputs.mcVersion }}" ;;
+            *) echo "ERROR: mcVersion must be 1.21.x (got '${{ steps.buildconfig.outputs.mcVersion }}')"; exit 1 ;;
+          esac
+
+      # ----------------------------
+      # 6. Validate Fabric metadata
       # ----------------------------
       - name: Validate fabric.mod.json
         id: modmeta
@@ -89,7 +114,7 @@ jobs:
           echo "modid=$(cat /tmp/modid.txt)" >> $GITHUB_OUTPUT
 
       # ----------------------------
-      # 5. Java + Gradle
+      # 7. Java + Gradle
       # ----------------------------
       - name: Set up Java 21
         uses: actions/setup-java@v4
@@ -103,7 +128,7 @@ jobs:
           gradle-version: "8.4"
 
       # ----------------------------
-      # 6. Build mod
+      # 8. Build mod
       # ----------------------------
       - name: Build mod with Gradle
         id: build
@@ -133,7 +158,7 @@ jobs:
           echo "jar_name=$(basename $JAR_FILE)" >> $GITHUB_OUTPUT
 
       # ----------------------------
-      # 7. HARD validation (real mod)
+      # 9. HARD validation (real mod)
       # ----------------------------
       - name: Validate real mod jar
         env:
@@ -149,7 +174,7 @@ jobs:
           unzip -l "$JAR" | grep -q "data/$MODID/" || (echo "Missing data/$MODID/" && exit 1)
 
       # ----------------------------
-      # 8. Upload artifact (optional)
+      # 10. Upload artifact (optional)
       # ----------------------------
       - name: Upload mod jar
         uses: actions/upload-artifact@v4
@@ -158,24 +183,32 @@ jobs:
           path: ${{ steps.build.outputs.jar_file }}
 
       # ----------------------------
-      # 9. Webhook success
+      # 11. Webhook success
       # ----------------------------
       - name: Notify webhook (success)
         if: success()
         run: |
+          set -e
           curl -X POST "${{ steps.buildconfig.outputs.webhookUrl }}" \
             -H "Content-Type: application/json" \
             -d "{\"status\":\"success\",\"modId\":\"${{ steps.modmeta.outputs.modid }}\",\"branch\":\"${GITHUB_REF_NAME}\",\"commit\":\"${GITHUB_SHA}\"}"
 
       # ----------------------------
-      # 10. Webhook failure
+      # 12. Webhook failure (SAFE if build-config read failed)
       # ----------------------------
       - name: Notify webhook (failure)
         if: failure()
         run: |
-          curl -X POST "${{ steps.buildconfig.outputs.webhookUrl }}" \
+          set -e
+          WEBHOOK="${{ steps.buildconfig.outputs.webhookUrl }}"
+          if [ -z "$WEBHOOK" ]; then
+            echo "No webhookUrl available (build-config.json missing or read failed). Skipping webhook."
+            exit 0
+          fi
+          curl -X POST "$WEBHOOK" \
             -H "Content-Type: application/json" \
             -d "{\"status\":\"failed\",\"branch\":\"${GITHUB_REF_NAME}\",\"commit\":\"${GITHUB_SHA}\"}"
+
 
 
 
