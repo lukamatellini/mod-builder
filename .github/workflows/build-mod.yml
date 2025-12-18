@@ -13,7 +13,7 @@ jobs:
 
     steps:
       # ----------------------------
-      # 1. Checkout generated mod
+      # 1) Checkout generated mod
       # ----------------------------
       - name: Checkout generated mod project
         uses: actions/checkout@v4
@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 1
 
       # ----------------------------
-      # 2. Setup Node (for JSON parsing)
+      # 2) Setup Node (for JSON parsing)
       # ----------------------------
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -29,7 +29,7 @@ jobs:
           node-version: "20"
 
       # ----------------------------
-      # 3. Ensure unzip exists (safe)
+      # 3) Ensure unzip exists (safe)
       # ----------------------------
       - name: Ensure unzip is available
         run: |
@@ -38,37 +38,34 @@ jobs:
           sudo apt-get install -y unzip
 
       # ----------------------------
-      # 4. Read build-config.json
+      # 4) Read build-config.json (SAFE: no heredoc)
       # ----------------------------
       - name: Read build-config.json
         id: buildconfig
         run: |
           set -e
-          node << 'EOF'
-          const fs = require('fs');
+          node -e "
+            const fs = require('fs');
 
-          const path = 'build-config.json';
-          if (!fs.existsSync(path)) {
-            throw new Error('Missing build-config.json (Lovable must generate this)');
-          }
+            const path = 'build-config.json';
+            if (!fs.existsSync(path)) {
+              throw new Error('Missing build-config.json (Lovable must generate this)');
+            }
 
-          const cfg = JSON.parse(fs.readFileSync(path, 'utf8'));
+            const cfg = JSON.parse(fs.readFileSync(path, 'utf8'));
 
-          if (!cfg.webhookUrl) throw new Error('build-config.json missing webhookUrl');
-          if (!cfg.loader) throw new Error('build-config.json missing loader');
-          if (!cfg.mcVersion) throw new Error('build-config.json missing mcVersion');
+            if (!cfg.webhookUrl) throw new Error('build-config.json missing webhookUrl');
+            if (!cfg.loader) throw new Error('build-config.json missing loader');
+            if (!cfg.mcVersion) throw new Error('build-config.json missing mcVersion');
 
-          console.log(`webhookUrl=${cfg.webhookUrl}`);
-          console.log(`loader=${cfg.loader}`);
-          console.log(`mcVersion=${cfg.mcVersion}`);
-          EOF > /tmp/buildcfg.txt
-
-          while read line; do
-            echo "$line" >> $GITHUB_OUTPUT
-          done < /tmp/buildcfg.txt
+            const out = process.env.GITHUB_OUTPUT;
+            fs.appendFileSync(out, 'webhookUrl=' + cfg.webhookUrl + '\\n');
+            fs.appendFileSync(out, 'loader=' + cfg.loader + '\\n');
+            fs.appendFileSync(out, 'mcVersion=' + cfg.mcVersion + '\\n');
+          "
 
       # ----------------------------
-      # 5. Guardrails from build-config.json (recommended)
+      # 5) Guardrails from build-config.json (recommended)
       # ----------------------------
       - name: Guardrails from build-config.json
         run: |
@@ -84,37 +81,34 @@ jobs:
           esac
 
       # ----------------------------
-      # 6. Validate Fabric metadata
+      # 6) Validate Fabric metadata
       # ----------------------------
       - name: Validate fabric.mod.json
         id: modmeta
         run: |
           set -e
-          node << 'EOF'
-          const fs = require('fs');
+          node -e "
+            const fs = require('fs');
 
-          const p = 'src/main/resources/fabric.mod.json';
-          if (!fs.existsSync(p)) throw new Error(`Missing ${p}`);
+            const p = 'src/main/resources/fabric.mod.json';
+            if (!fs.existsSync(p)) throw new Error('Missing ' + p);
 
-          const meta = JSON.parse(fs.readFileSync(p, 'utf8'));
+            const meta = JSON.parse(fs.readFileSync(p, 'utf8'));
 
-          if (!meta.id) throw new Error('fabric.mod.json missing id');
-          if (!meta.depends || !meta.depends.minecraft) {
-            throw new Error('fabric.mod.json missing depends.minecraft');
-          }
+            if (!meta.id) throw new Error('fabric.mod.json missing id');
+            if (!meta.depends || !meta.depends.minecraft) throw new Error('fabric.mod.json missing depends.minecraft');
 
-          const mc = String(meta.depends.minecraft).replace(/\s+/g,'');
-          if (!(mc.includes('>=1.21') && mc.includes('<1.22'))) {
-            throw new Error(`Minecraft range must be >=1.21 <1.22, found ${meta.depends.minecraft}`);
-          }
+            const mc = String(meta.depends.minecraft).replace(/\\s+/g,'');
+            if (!(mc.includes('>=1.21') && mc.includes('<1.22'))) {
+              throw new Error('Minecraft range must be >=1.21 <1.22, found ' + meta.depends.minecraft);
+            }
 
-          console.log(meta.id);
-          EOF > /tmp/modid.txt
-
-          echo "modid=$(cat /tmp/modid.txt)" >> $GITHUB_OUTPUT
+            const out = process.env.GITHUB_OUTPUT;
+            fs.appendFileSync(out, 'modid=' + meta.id + '\\n');
+          "
 
       # ----------------------------
-      # 7. Java + Gradle
+      # 7) Java + Gradle
       # ----------------------------
       - name: Set up Java 21
         uses: actions/setup-java@v4
@@ -128,7 +122,7 @@ jobs:
           gradle-version: "8.4"
 
       # ----------------------------
-      # 8. Build mod
+      # 8) Build mod
       # ----------------------------
       - name: Build mod with Gradle
         id: build
@@ -154,11 +148,11 @@ jobs:
             exit 1
           fi
 
-          echo "jar_file=$JAR_FILE" >> $GITHUB_OUTPUT
-          echo "jar_name=$(basename $JAR_FILE)" >> $GITHUB_OUTPUT
+          echo "jar_file=$JAR_FILE" >> "$GITHUB_OUTPUT"
+          echo "jar_name=$(basename "$JAR_FILE")" >> "$GITHUB_OUTPUT"
 
       # ----------------------------
-      # 9. HARD validation (real mod)
+      # 9) HARD validation (real mod)
       # ----------------------------
       - name: Validate real mod jar
         env:
@@ -174,7 +168,7 @@ jobs:
           unzip -l "$JAR" | grep -q "data/$MODID/" || (echo "Missing data/$MODID/" && exit 1)
 
       # ----------------------------
-      # 10. Upload artifact (optional)
+      # 10) Upload artifact (optional)
       # ----------------------------
       - name: Upload mod jar
         uses: actions/upload-artifact@v4
@@ -183,7 +177,7 @@ jobs:
           path: ${{ steps.build.outputs.jar_file }}
 
       # ----------------------------
-      # 11. Webhook success
+      # 11) Webhook success
       # ----------------------------
       - name: Notify webhook (success)
         if: success()
@@ -194,7 +188,7 @@ jobs:
             -d "{\"status\":\"success\",\"modId\":\"${{ steps.modmeta.outputs.modid }}\",\"branch\":\"${GITHUB_REF_NAME}\",\"commit\":\"${GITHUB_SHA}\"}"
 
       # ----------------------------
-      # 12. Webhook failure (SAFE if build-config read failed)
+      # 12) Webhook failure (SAFE if build-config read failed)
       # ----------------------------
       - name: Notify webhook (failure)
         if: failure()
@@ -208,6 +202,7 @@ jobs:
           curl -X POST "$WEBHOOK" \
             -H "Content-Type: application/json" \
             -d "{\"status\":\"failed\",\"branch\":\"${GITHUB_REF_NAME}\",\"commit\":\"${GITHUB_SHA}\"}"
+
 
 
 
