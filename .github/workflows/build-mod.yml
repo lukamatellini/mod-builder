@@ -1,103 +1,97 @@
-name: Build Minecraft Mod
+name: Build Minecraft Mod (Push Trigger)
 
 on:
+  push:
+    branches:
+      - "build/**"
   workflow_dispatch:
-    inputs:
-      mod_id:
-        description: "Mod UUID from database"
-        required: true
-      mod_name:
-        description: "Human-readable mod name"
-        required: true
-      loader:
-        description: "Mod loader (fabric or forge)"
-        required: true
-        default: "fabric"
-      mc_version:
-        description: "Minecraft version (must be 1.21.x)"
-        required: true
-        default: "1.21.11"
-      mod_files:
-        description: "Base64-encoded JSON of mod files"
-        required: true
-      webhook_url:
-        description: "URL to call when build completes"
-        required: true
-      webhook_secret:
-        description: "Secret for webhook authentication"
-        required: true
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    timeout-minutes: 35
+    runs-on: ubuntu-22.04
+    timeout-minutes: 45
 
     steps:
-      - name: Guardrails (Fabric + MC 1.21.x only)
-        run: |
-          set -e
-          if [ "${{ github.event.inputs.loader }}" != "fabric" ]; then
-            echo "ERROR: This workflow supports Fabric only."
-            exit 1
-          fi
-          MC="${{ github.event.inputs.mc_version }}"
-          case "$MC" in
-            1.21.*) echo "OK: MC version allowed: $MC" ;;
-            *) echo "ERROR: Unsupported mc_version: $MC (allow only 1.21.x)"; exit 1 ;;
-          esac
+      # ----------------------------
+      # 1. Checkout generated mod
+      # ----------------------------
+      - name: Checkout generated mod project
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
-      - name: Set up Node.js (unpack + validation scripts)
+      # ----------------------------
+      # 2. Setup Node (for JSON parsing)
+      # ----------------------------
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
-      - name: Create mod project from mod_files
+      # ----------------------------
+      # 3. Read build-config.json
+      # ----------------------------
+      - name: Read build-config.json
+        id: buildconfig
         run: |
           set -e
-          mkdir -p mod-project
-          cd mod-project
-
-          echo '${{ github.event.inputs.mod_files }}' | base64 -d > files.json
-
           node << 'EOF'
           const fs = require('fs');
-          const path = require('path');
 
-          const files = JSON.parse(fs.readFileSync('files.json', 'utf8'));
-          for (const [filePath, content] of Object.entries(files)) {
-            const fullPath = path.join('.', filePath);
-            fs.mkdirSync(path.dirname(fullPath), { recursive: true });
-            fs.writeFileSync(fullPath, content);
+          const path = 'build-config.json';
+          if (!fs.existsSync(path)) {
+            throw new Error('Missing build-config.json (Lovable must generate this)');
           }
-          console.log("Unpacked files:", Object.keys(files).length);
-          EOF
 
-      - name: Read modid from fabric.mod.json + check MC range declaration
+          const cfg = JSON.parse(fs.readFileSync(path, 'utf8'));
+
+          if (!cfg.webhookUrl) throw new Error('build-config.json missing webhookUrl');
+          if (!cfg.loader) throw new Error('build-config.json missing loader');
+          if (!cfg.mcVersion) throw new Error('build-config.json missing mcVersion');
+
+          console.log(`webhookUrl=${cfg.webhookUrl}`);
+          console.log(`loader=${cfg.loader}`);
+          console.log(`mcVersion=${cfg.mcVersion}`);
+          EOF > /tmp/buildcfg.txt
+
+          while read line; do
+            echo "$line" >> $GITHUB_OUTPUT
+          done < /tmp/buildcfg.txt
+
+      # ----------------------------
+      # 4. Validate Fabric metadata
+      # ----------------------------
+      - name: Validate fabric.mod.json
         id: modmeta
-        working-directory: mod-project
         run: |
           set -e
           node << 'EOF'
           const fs = require('fs');
+
           const p = 'src/main/resources/fabric.mod.json';
           if (!fs.existsSync(p)) throw new Error(`Missing ${p}`);
-          const meta = JSON.parse(fs.readFileSync(p,'utf8'));
 
-          if (!meta.id) throw new Error("fabric.mod.json missing 'id'");
-          if (!meta.depends || !meta.depends.minecraft) throw new Error("fabric.mod.json missing depends.minecraft");
+          const meta = JSON.parse(fs.readFileSync(p, 'utf8'));
+
+          if (!meta.id) throw new Error('fabric.mod.json missing id');
+          if (!meta.depends || !meta.depends.minecraft) {
+            throw new Error('fabric.mod.json missing depends.minecraft');
+          }
 
           const mc = String(meta.depends.minecraft).replace(/\s+/g,'');
-          if (!(mc.includes(">=1.21") && mc.includes("<1.22"))) {
-            throw new Error(`depends.minecraft must include ">=1.21 <1.22". Found: ${meta.depends.minecraft}`);
+          if (!(mc.includes('>=1.21') && mc.includes('<1.22'))) {
+            throw new Error(`Minecraft range must be >=1.21 <1.22, found ${meta.depends.minecraft}`);
           }
 
           console.log(meta.id);
           EOF > /tmp/modid.txt
 
           echo "modid=$(cat /tmp/modid.txt)" >> $GITHUB_OUTPUT
-          echo "Detected modid: $(cat /tmp/modid.txt)"
 
-      - name: Set up Java 21 (Minecraft 1.21.x)
+      # ----------------------------
+      # 5. Java + Gradle
+      # ----------------------------
+      - name: Set up Java 21
         uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -108,9 +102,11 @@ jobs:
         with:
           gradle-version: "8.4"
 
-      - name: Build with Gradle (prefer wrapper, produce remapped jar)
+      # ----------------------------
+      # 6. Build mod
+      # ----------------------------
+      - name: Build mod with Gradle
         id: build
-        working-directory: mod-project
         run: |
           set -e
 
@@ -121,230 +117,66 @@ jobs:
             gradle clean build remapJar --no-daemon --info
           fi
 
-          echo "==== build/libs contents ===="
+          echo "Build output:"
           ls -lah build/libs || true
 
-          # Choose the largest distributable jar (exclude sources/javadoc/dev)
           JAR_FILE=$(ls -1S build/libs/*.jar \
             | grep -vE '(sources|javadoc|dev)\.jar$' \
             | head -n 1)
 
           if [ -z "$JAR_FILE" ]; then
-            echo "ERROR: No distributable jar found in build/libs"
+            echo "ERROR: No distributable jar produced"
             exit 1
           fi
 
           echo "jar_file=$JAR_FILE" >> $GITHUB_OUTPUT
           echo "jar_name=$(basename $JAR_FILE)" >> $GITHUB_OUTPUT
-          echo "Built JAR: $JAR_FILE"
 
-      - name: Validate jar (base + build plan + module-driven content)
-        working-directory: mod-project
+      # ----------------------------
+      # 7. HARD validation (real mod)
+      # ----------------------------
+      - name: Validate real mod jar
         env:
-          JAR_PATH: ${{ steps.build.outputs.jar_file }}
           MODID: ${{ steps.modmeta.outputs.modid }}
+          JAR: ${{ steps.build.outputs.jar_file }}
         run: |
           set -e
-          JAR="$JAR_PATH"
-          MODID="$MODID"
 
-          echo "Validating jar: $JAR"
+          unzip -l "$JAR" | grep -q "fabric.mod.json" || (echo "Missing fabric.mod.json in jar" && exit 1)
+          unzip -l "$JAR" | grep -q "\.class$" || (echo "No compiled classes in jar" && exit 1)
+          unzip -l "$JAR" | grep -q "build-plan.json" || (echo "Missing build-plan.json in jar" && exit 1)
+          unzip -l "$JAR" | grep -q "assets/$MODID/" || (echo "Missing assets/$MODID/" && exit 1)
+          unzip -l "$JAR" | grep -q "data/$MODID/" || (echo "Missing data/$MODID/" && exit 1)
 
-          # Base: must be a real Fabric mod jar
-          unzip -l "$JAR" | grep -q "fabric.mod.json" || (echo "ERROR: Missing fabric.mod.json inside jar" && exit 1)
-          unzip -l "$JAR" | grep -qE "\.class$" || (echo "ERROR: No compiled .class files found inside jar" && exit 1)
+      # ----------------------------
+      # 8. Upload artifact (optional)
+      # ----------------------------
+      - name: Upload mod jar
+        uses: actions/upload-artifact@v4
+        with:
+          name: minecraft-mod
+          path: ${{ steps.build.outputs.jar_file }}
 
-          # Mandatory: build-plan.json must exist (per your new architecture)
-          unzip -l "$JAR" | grep -q "build-plan.json" || (echo "ERROR: Missing build-plan.json inside jar" && exit 1)
-
-          # Extract build-plan.json
-          rm -f /tmp/build-plan.json
-          unzip -p "$JAR" build-plan.json > /tmp/build-plan.json || (echo "ERROR: Could not read build-plan.json" && exit 1)
-
-          # Plan-driven checks (schema tolerant):
-          # - reads enabledModules (or modulesEnabled)
-          # - reads minecraftRange
-          # - attempts expectedContent checks with common fallback keys
-          node << 'EOF'
-          const fs = require('fs');
-          const { execSync } = require('child_process');
-
-          const jar = process.env.JAR_PATH;
-          const modid = process.env.MODID;
-
-          const plan = JSON.parse(fs.readFileSync('/tmp/build-plan.json','utf8'));
-
-          // 1) minecraft range sanity
-          const range = String(plan.minecraftRange || plan.mcRange || plan.minecraft || '');
-          if (!(range.includes(">=1.21") && range.includes("<1.22"))) {
-            throw new Error(`build-plan.json minecraftRange must include ">=1.21 <1.22". Found: ${range}`);
-          }
-
-          // 2) enabled modules (allow either field name)
-          const enabledArr = plan.enabledModules || plan.modulesEnabled || plan.modules || [];
-          if (!Array.isArray(enabledArr)) throw new Error("build-plan.json must include enabledModules[] (or modulesEnabled[])");
-          const enabled = new Set(enabledArr.map(String));
-
-          // 3) expected content counts (optional but enforced if present)
-          const expected = plan.expectedContent || plan.expectedCounts || plan.counts || {};
-          const getCount = (keys) => {
-            for (const k of keys) {
-              if (expected && Object.prototype.hasOwnProperty.call(expected, k)) return Number(expected[k]);
-            }
-            return null;
-          };
-          const requireMinIfKeyExists = (moduleName, keys, min=1) => {
-            if (!enabled.has(moduleName)) return;
-            const v = getCount(keys);
-            if (v === null) return; // schema doesn't provide a count key; fallback to file-based checks below
-            if (!Number.isFinite(v) || v < min) {
-              throw new Error(`Module "${moduleName}" enabled but expectedContent ${keys.join("/")} < ${min} (got ${v})`);
-            }
-          };
-
-          // common module names (adjust if you use different names in build-plan.json)
-          requireMinIfKeyExists("quests", ["quests","questCount"], 1);
-          requireMinIfKeyExists("dialogue", ["dialogueNodes","dialogues","dialogue","dialogueCount"], 1);
-          requireMinIfKeyExists("items", ["items","itemCount"], 1);
-          requireMinIfKeyExists("structures", ["structures","structureCount"], 1);
-          requireMinIfKeyExists("biomes", ["biomes","biomeCount"], 1);
-          requireMinIfKeyExists("dimensions", ["dimensions","dimensionCount"], 1);
-          requireMinIfKeyExists("npcs", ["npcs","npcCount"], 1);
-
-          // Helper: check jar listing once
-          const list = execSync(`unzip -l "${jar}"`).toString('utf8');
-
-          const hasAny = (regex) => new RegExp(regex, 'm').test(list);
-          const hasPath = (substr) => list.includes(substr);
-
-          // 4) File-based enforcement (authoritative even if expected counts absent)
-          if (enabled.has("quests")) {
-            if (!hasAny(`data\\/${modid}\\/quests\\/.+\\.json$`)) {
-              throw new Error(`Quests enabled but missing data/${modid}/quests/*.json`);
-            }
-          }
-
-          if (enabled.has("dialogue")) {
-            if (!hasAny(`data\\/${modid}\\/dialogue\\/.+\\.json$`)) {
-              throw new Error(`Dialogue enabled but missing data/${modid}/dialogue/*.json`);
-            }
-          }
-
-          // Items: enforce asset folders + at least one model JSON when enabled
-          if (enabled.has("items")) {
-            if (!hasPath(`assets/${modid}/lang/`)) throw new Error(`Items enabled but missing assets/${modid}/lang/`);
-            if (!hasPath(`assets/${modid}/models/`)) throw new Error(`Items enabled but missing assets/${modid}/models/`);
-            if (!hasPath(`assets/${modid}/textures/`)) throw new Error(`Items enabled but missing assets/${modid}/textures/`);
-            if (!hasAny(`assets\\/${modid}\\/models\\/.+\\.json$`)) throw new Error(`Items enabled but no item model .json found under assets/${modid}/models/`);
-          }
-
-          // World content: accept multiple possible paths (Lovable may move structure data)
-          const worldEnabled = enabled.has("structures") || enabled.has("biomes") || enabled.has("dimensions");
-          if (worldEnabled) {
-            const ok =
-              hasPath(`data/${modid}/worldgen/`) ||
-              hasPath(`data/${modid}/structures/`) ||
-              hasPath(`data/${modid}/structure/`) ||
-              hasPath(`data/${modid}/templates/`) ||
-              hasPath(`data/${modid}/dimensions/`) ||
-              hasPath(`data/${modid}/biomes/`) ||
-              hasPath(`data/${modid}/world/`);
-
-            if (!ok) {
-              throw new Error(
-                `World-content module enabled but no known data folder found. Expected one of: ` +
-                `data/${modid}/worldgen/, structures/, templates/, biomes/, dimensions/, world/. ` +
-                `Update CI checks to match your actual generator output paths.`
-              );
-            }
-
-            // Require at least one JSON somewhere under data/<modid>/ for world content
-            // (keeps it strict, but tolerant to folder naming)
-            if (!hasAny(`data\\/${modid}\\/.+\\.json$`)) {
-              throw new Error(`World-content enabled but no JSON definitions found under data/${modid}/`);
-            }
-          }
-
-          // NPCs: if enabled, ensure at least something in data or assets indicates NPC content
-          // (Exact folder may vary; this prevents "enabled but empty".)
-          if (enabled.has("npcs")) {
-            const npcOk =
-              hasPath(`data/${modid}/npcs/`) ||
-              hasPath(`data/${modid}/npc/`) ||
-              hasPath(`data/${modid}/entities/`) ||
-              hasPath(`assets/${modid}/textures/entity/`) ||
-              hasPath(`assets/${modid}/models/`);
-
-            if (!npcOk) {
-              // We don't force entity textures because you may use vanilla look,
-              // but we DO require some sign of NPC definitions if module is enabled.
-              throw new Error(`NPCs enabled but no recognizable NPC definitions/assets found in jar for modid=${modid}`);
-            }
-          }
-
-          console.log("Plan-driven validation passed.");
-          EOF
-
-      - name: Upload to R2
-        id: upload
-        env:
-          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
-          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
-          R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME }}
-          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
-          R2_PUBLIC_URL: ${{ secrets.R2_PUBLIC_URL }}
-        run: |
-          set -e
-          cd mod-project
-          JAR_FILE="${{ steps.build.outputs.jar_file }}"
-          JAR_NAME="${{ steps.build.outputs.jar_name }}"
-          MOD_ID="${{ github.event.inputs.mod_id }}"
-
-          pip install awscli
-
-          aws configure set aws_access_key_id "$R2_ACCESS_KEY_ID"
-          aws configure set aws_secret_access_key "$R2_SECRET_ACCESS_KEY"
-          aws configure set region auto
-
-          TIMESTAMP=$(date +%s)
-          KEY="compiled-mods/${MOD_ID}/${TIMESTAMP}_${JAR_NAME}"
-
-          aws s3 cp "$JAR_FILE" "s3://${R2_BUCKET_NAME}/${KEY}" \
-            --endpoint-url "https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com" \
-            --content-type "application/java-archive"
-
-          if [ -n "$R2_PUBLIC_URL" ]; then
-            PUBLIC_URL="${R2_PUBLIC_URL}/${KEY}"
-          else
-            PUBLIC_URL="https://${R2_BUCKET_NAME}.r2.dev/${KEY}"
-          fi
-
-          echo "jar_url=$PUBLIC_URL" >> $GITHUB_OUTPUT
-          echo "Uploaded to: $PUBLIC_URL"
-
-      - name: Notify webhook on success
+      # ----------------------------
+      # 9. Webhook success
+      # ----------------------------
+      - name: Notify webhook (success)
         if: success()
-        env:
-          WEBHOOK_URL: ${{ github.event.inputs.webhook_url }}
-          WEBHOOK_SECRET: ${{ github.event.inputs.webhook_secret }}
         run: |
-          set -e
-          curl -X POST "$WEBHOOK_URL" \
+          curl -X POST "${{ steps.buildconfig.outputs.webhookUrl }}" \
             -H "Content-Type: application/json" \
-            -H "x-webhook-secret: $WEBHOOK_SECRET" \
-            -d "{\"modId\":\"${{ github.event.inputs.mod_id }}\",\"status\":\"success\",\"compiledJarUrl\":\"${{ steps.upload.outputs.jar_url }}\"}"
+            -d "{\"status\":\"success\",\"modId\":\"${{ steps.modmeta.outputs.modid }}\",\"branch\":\"${GITHUB_REF_NAME}\",\"commit\":\"${GITHUB_SHA}\"}"
 
-      - name: Notify webhook on failure
+      # ----------------------------
+      # 10. Webhook failure
+      # ----------------------------
+      - name: Notify webhook (failure)
         if: failure()
-        env:
-          WEBHOOK_URL: ${{ github.event.inputs.webhook_url }}
-          WEBHOOK_SECRET: ${{ github.event.inputs.webhook_secret }}
         run: |
-          set -e
-          curl -X POST "$WEBHOOK_URL" \
+          curl -X POST "${{ steps.buildconfig.outputs.webhookUrl }}" \
             -H "Content-Type: application/json" \
-            -H "x-webhook-secret: $WEBHOOK_SECRET" \
-            -d "{\"modId\":\"${{ github.event.inputs.mod_id }}\",\"status\":\"failed\",\"error\":\"Build failed - check GitHub Actions logs\"}"
+            -d "{\"status\":\"failed\",\"branch\":\"${GITHUB_REF_NAME}\",\"commit\":\"${GITHUB_SHA}\"}"
+
 
 
 
