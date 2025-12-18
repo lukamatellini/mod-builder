@@ -1,0 +1,8 @@
+{
+  "_placeholder": true,
+  "_note": "This is a placeholder. In production, generate a proper PNG texture.",
+  "itemId": "banana_wand",
+  "itemName": "Banana Wand",
+  "itemType": "wand",
+  "textureHint": "wand_texture"
+}
