@@ -30,7 +30,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
 
     steps:
       - name: Guardrails (Fabric + MC 1.21.x only)
@@ -40,14 +40,13 @@ jobs:
             echo "ERROR: This workflow supports Fabric only."
             exit 1
           fi
-
           MC="${{ github.event.inputs.mc_version }}"
           case "$MC" in
             1.21.*) echo "OK: MC version allowed: $MC" ;;
             *) echo "ERROR: Unsupported mc_version: $MC (allow only 1.21.x)"; exit 1 ;;
           esac
 
-      - name: Set up Node.js (for unpacking mod_files)
+      - name: Set up Node.js (for unpacking + validation)
         uses: actions/setup-node@v4
         with:
           node-version: "20"
@@ -83,10 +82,10 @@ jobs:
           const p = 'src/main/resources/fabric.mod.json';
           if (!fs.existsSync(p)) throw new Error(`Missing ${p}`);
           const meta = JSON.parse(fs.readFileSync(p,'utf8'));
+
           if (!meta.id) throw new Error("fabric.mod.json missing 'id'");
           if (!meta.depends || !meta.depends.minecraft) throw new Error("fabric.mod.json missing depends.minecraft");
 
-          // Require: >=1.21 <1.22 (your stated goal: all 1.21.*)
           const mc = String(meta.depends.minecraft).replace(/\s+/g,'');
           if (!(mc.includes(">=1.21") && mc.includes("<1.22"))) {
             throw new Error(`depends.minecraft must include ">=1.21 <1.22". Found: ${meta.depends.minecraft}`);
@@ -109,7 +108,7 @@ jobs:
         with:
           gradle-version: "8.4"
 
-      - name: Build with Gradle (prefer wrapper)
+      - name: Build with Gradle (prefer wrapper, build remapped jar)
         id: build
         working-directory: mod-project
         run: |
@@ -117,29 +116,33 @@ jobs:
 
           if [ -f "./gradlew" ]; then
             chmod +x ./gradlew
-            ./gradlew clean build --no-daemon --info
+            ./gradlew clean build remapJar --no-daemon --info
           else
-            gradle clean build --no-daemon --info
+            gradle clean build remapJar --no-daemon --info
           fi
 
           echo "==== build/libs contents ===="
           ls -lah build/libs || true
 
-          # Pick the largest distributable jar (exclude sources/javadoc/dev)
-          JAR_FILE=$(ls -1S build/libs/*.jar \
-            | grep -vE '(sources|javadoc|dev)\.jar$' \
-            | head -n 1)
+          # Prefer Loom's remapped jar if it exists
+          REMAP_JAR=$(ls -1 build/libs/*-all.jar 2>/dev/null || true)
+          if [ -z "$REMAP_JAR" ]; then
+            # Many Loom setups output: *-fabric.jar or just the main jar after remap
+            REMAP_JAR=$(ls -1S build/libs/*.jar \
+              | grep -vE '(sources|javadoc|dev)\.jar$' \
+              | head -n 1)
+          fi
 
-          if [ -z "$JAR_FILE" ]; then
+          if [ -z "$REMAP_JAR" ]; then
             echo "ERROR: No distributable jar found in build/libs"
             exit 1
           fi
 
-          echo "jar_file=$JAR_FILE" >> $GITHUB_OUTPUT
-          echo "jar_name=$(basename $JAR_FILE)" >> $GITHUB_OUTPUT
-          echo "Built JAR: $JAR_FILE"
+          echo "jar_file=$REMAP_JAR" >> $GITHUB_OUTPUT
+          echo "jar_name=$(basename $REMAP_JAR)" >> $GITHUB_OUTPUT
+          echo "Built JAR: $REMAP_JAR"
 
-      - name: Validate jar (base + conditional features)
+      - name: Validate jar (base + build-plan single source of truth)
         working-directory: mod-project
         run: |
           set -e
@@ -152,33 +155,93 @@ jobs:
           unzip -l "$JAR" | grep -q "fabric.mod.json" || (echo "ERROR: Missing fabric.mod.json inside jar" && exit 1)
           unzip -l "$JAR" | grep -qE "\.class$" || (echo "ERROR: No compiled .class files found inside jar" && exit 1)
 
-          # Conditional: quests (only enforce if folder exists)
-          if unzip -l "$JAR" | grep -q "data/$MODID/quests/"; then
-            unzip -l "$JAR" | grep -qE "data/$MODID/quests/.+\.json$" || (echo "ERROR: quests folder exists but no quest .json files" && exit 1)
-          else
-            echo "INFO: No quests folder (ok if user didn’t request quests)."
-          fi
+          # NEW: build-plan.json is mandatory under your new architecture
+          unzip -l "$JAR" | grep -q "build-plan.json" || (echo "ERROR: Missing build-plan.json inside jar" && exit 1)
 
-          # Conditional: dialogue (only enforce if folder exists)
-          if unzip -l "$JAR" | grep -q "data/$MODID/dialogue/"; then
-            unzip -l "$JAR" | grep -qE "data/$MODID/dialogue/.+\.json$" || (echo "ERROR: dialogue folder exists but no dialogue .json files" && exit 1)
-          else
-            echo "INFO: No dialogue folder (ok if user didn’t request NPC dialogue)."
-          fi
+          # Extract build-plan.json for plan-driven validation
+          rm -f /tmp/build-plan.json
+          unzip -p "$JAR" build-plan.json > /tmp/build-plan.json || (echo "ERROR: Could not read build-plan.json" && exit 1)
 
-          # Conditional: worldgen (structures/biomes/dimensions)
-          if unzip -l "$JAR" | grep -q "data/$MODID/worldgen/"; then
-            unzip -l "$JAR" | grep -qE "data/$MODID/worldgen/.+\.json$" || (echo "ERROR: worldgen folder exists but no worldgen .json files" && exit 1)
-          else
-            echo "INFO: No worldgen folder (ok if user didn’t request structures/biomes/dimensions)."
-          fi
+          # Plan sanity + module expectations (adjust keys here if your build-plan fields differ)
+          node << 'EOF'
+          const fs = require('fs');
 
-          # Nice-to-have warnings
-          unzip -l "$JAR" | grep -q "assets/$MODID/lang/" || echo "WARN: Missing assets/$MODID/lang/"
-          unzip -l "$JAR" | grep -q "assets/$MODID/textures/" || echo "WARN: Missing assets/$MODID/textures/ (ok if no custom visuals requested)"
-          unzip -l "$JAR" | grep -q "assets/$MODID/sounds.json" || echo "WARN: Missing assets/$MODID/sounds.json (ok if only vanilla sounds used)"
+          const plan = JSON.parse(fs.readFileSync('/tmp/build-plan.json','utf8'));
+          const range = String(plan.minecraftRange || '');
 
-          echo "Validation passed."
+          if (!(range.includes(">=1.21") && range.includes("<1.22"))) {
+            throw new Error(`build-plan.json minecraftRange must include ">=1.21 <1.22". Found: ${range}`);
+          }
+
+          const enabled = new Set(plan.enabledModules || []);
+          const expected = plan.expectedContent || {};
+
+          function expectMin(moduleName, key, min = 1) {
+            if (enabled.has(moduleName)) {
+              const v = Number(expected[key] ?? 0);
+              if (!Number.isFinite(v) || v < min) {
+                throw new Error(`Module "${moduleName}" enabled but expectedContent.${key} < ${min} (got ${expected[key]})`);
+              }
+            }
+          }
+
+          // These keys MUST match your build-plan.json schema:
+          expectMin("quests", "quests", 1);
+          expectMin("dialogue", "dialogueNodes", 1);
+          expectMin("items", "items", 1);
+          expectMin("structures", "structures", 1);
+          expectMin("biomes", "biomes", 1);
+          expectMin("dimensions", "dimensions", 1);
+
+          console.log("Build plan sanity checks passed.");
+          EOF
+
+          # File presence checks driven by build plan modules
+          node << 'EOF'
+          const fs = require('fs');
+          const { execSync } = require('child_process');
+
+          const jar = process.env.JAR_PATH;
+          const modid = process.env.MODID;
+          const plan = JSON.parse(fs.readFileSync('/tmp/build-plan.json','utf8'));
+          const enabled = new Set(plan.enabledModules || []);
+
+          function jarHas(pattern) {
+            const out = execSync(`unzip -l "${jar}"`).toString('utf8');
+            return out.includes(pattern);
+          }
+
+          function requireAnyRegex(regex, err) {
+            const out = execSync(`unzip -l "${jar}"`).toString('utf8');
+            if (!new RegExp(regex).test(out)) throw new Error(err);
+          }
+
+          if (enabled.has("quests")) {
+            requireAnyRegex(`data/${modid}/quests/.+\\.json$`, `Missing quest jsons in data/${modid}/quests/`);
+          }
+          if (enabled.has("dialogue")) {
+            requireAnyRegex(`data/${modid}/dialogue/.+\\.json$`, `Missing dialogue jsons in data/${modid}/dialogue/`);
+          }
+          if (enabled.has("structures") || enabled.has("biomes") || enabled.has("dimensions")) {
+            // World content should at least ship some worldgen definitions OR templates used by your command-based placement.
+            // If your system uses a different folder, update this.
+            if (!jarHas(`data/${modid}/worldgen/`)) {
+              throw new Error(`World-content module enabled but missing data/${modid}/worldgen/ (update this check if you use another path)`);
+            }
+            requireAnyRegex(`data/${modid}/worldgen/.+\\.json$`, `Worldgen folder exists but contains no json files`);
+          }
+          if (enabled.has("items")) {
+            // Basic assets sanity (textures/models/lang). If your build-plan guarantees these, enforce them.
+            if (!jarHas(`assets/${modid}/lang/`)) throw new Error(`Items enabled but missing assets/${modid}/lang/`);
+            if (!jarHas(`assets/${modid}/textures/`)) throw new Error(`Items enabled but missing assets/${modid}/textures/`);
+            if (!jarHas(`assets/${modid}/models/`)) throw new Error(`Items enabled but missing assets/${modid}/models/`);
+          }
+
+          console.log("Plan-driven jar content checks passed.");
+          EOF
+        env:
+          JAR_PATH: ${{ steps.build.outputs.jar_file }}
+          MODID: ${{ steps.modmeta.outputs.modid }}
 
       - name: Upload to R2
         id: upload
@@ -240,6 +303,7 @@ jobs:
             -H "Content-Type: application/json" \
             -H "x-webhook-secret: $WEBHOOK_SECRET" \
             -d "{\"modId\":\"${{ github.event.inputs.mod_id }}\",\"status\":\"failed\",\"error\":\"Build failed - check GitHub Actions logs\"}"
+
 
 
 
