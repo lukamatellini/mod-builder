@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "thunderstruckwand:item/lightning_wand"
+  }
+}
