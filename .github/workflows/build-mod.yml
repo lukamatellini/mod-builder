@@ -1,10 +1,12 @@
-name: Build Minecraft Mod (Push Trigger)
+name: Build Minecraft Mod (Main-Controlled)
 
 on:
-  push:
-    branches:
-      - "build/**"
   workflow_dispatch:
+    inputs:
+      build_ref:
+        description: "Branch to build (e.g. build/<id>/<timestamp>)"
+        required: true
+        type: string
 
 jobs:
   build:
@@ -13,11 +15,12 @@ jobs:
 
     steps:
       # ----------------------------
-      # 1) Checkout generated mod
+      # 1) Checkout generated mod (the build/** branch passed in)
       # ----------------------------
       - name: Checkout generated mod project
         uses: actions/checkout@v4
         with:
+          ref: ${{ inputs.build_ref }}
           fetch-depth: 1
 
       # ----------------------------
@@ -104,14 +107,13 @@ jobs:
           distribution: temurin
           java-version: "21"
 
-      # Ensures a Gradle installation is available even when no wrapper exists yet
       - name: Setup Gradle (for wrapper generation)
         uses: gradle/actions/setup-gradle@v3
         with:
           gradle-version: "8.8"
 
       # ----------------------------
-      # 8) Ensure Gradle wrapper exists (NEW - fixes your failure)
+      # 8) Ensure Gradle wrapper exists
       # ----------------------------
       - name: Ensure Gradle wrapper exists
         run: |
@@ -125,7 +127,7 @@ jobs:
           ls -lah gradle/wrapper || true
 
       # ----------------------------
-      # 9) Wrapper sanity check (optional, now AFTER generation)
+      # 9) Wrapper sanity check (optional, but useful)
       # ----------------------------
       - name: Validate Gradle wrapper jar
         run: |
@@ -192,7 +194,7 @@ jobs:
           set -e
           curl -X POST "${{ steps.buildconfig.outputs.webhookUrl }}" \
             -H "Content-Type: application/json" \
-            -d "{\"status\":\"success\",\"modId\":\"${{ steps.modmeta.outputs.modid }}\",\"branch\":\"${GITHUB_REF_NAME}\",\"commit\":\"${GITHUB_SHA}\"}"
+            -d "{\"status\":\"success\",\"modId\":\"${{ steps.modmeta.outputs.modid }}\",\"branch\":\"${{ inputs.build_ref }}\",\"commit\":\"${GITHUB_SHA}\"}"
 
       # ----------------------------
       # 14) Webhook failure (safe)
@@ -208,4 +210,4 @@ jobs:
           fi
           curl -X POST "$WEBHOOK" \
             -H "Content-Type: application/json" \
-            -d "{\"status\":\"failed\",\"branch\":\"${GITHUB_REF_NAME}\",\"commit\":\"${GITHUB_SHA}\"}"
+            -d "{\"status\":\"failed\",\"branch\":\"${{ inputs.build_ref }}\",\"commit\":\"${GITHUB_SHA}\"}"
