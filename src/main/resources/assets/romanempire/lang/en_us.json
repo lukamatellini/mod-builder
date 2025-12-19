@@ -1,0 +1,22 @@
+{
+  "itemGroup.romanempire.main": "Roman Empire",
+  "item.romanempire.gladius": "Gladius",
+  "item.romanempire.pugio": "Pugio",
+  "item.romanempire.pilum": "Pilum",
+  "item.romanempire.scutum": "Scutum",
+  "item.romanempire.lorica_segmentata_helmet": "Lorica Segmentata (Helmet)",
+  "item.romanempire.lorica_segmentata_chestplate": "Lorica Segmentata (Chestplate)",
+  "item.romanempire.lorica_segmentata_leggings": "Lorica Segmentata (Leggings)",
+  "item.romanempire.lorica_segmentata_boots": "Lorica Segmentata (Boots)",
+  "item.romanempire.galea": "Galea",
+  "item.romanempire.roman_standard": "Roman Standard",
+  "item.romanempire.laurel_wreath": "Laurel Wreath",
+  "item.romanempire.denarius": "Denarius",
+  "item.romanempire.emperor_s_gladius": "Emperor's Gladius",
+  "entity.romanempire.roman_legionary": "Roman Legionary",
+  "entity.romanempire.roman_centurion": "Roman Centurion",
+  "entity.romanempire.roman_emperor": "Roman Emperor",
+  "structure.romanempire.roman_camp": "Roman Camp",
+  "structure.romanempire.roman_fort": "Roman Fort",
+  "structure.romanempire.imperial_palace": "Imperial Palace"
+}

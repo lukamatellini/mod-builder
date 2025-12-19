@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "romanempire:item/lorica_segmentata_leggings"
+  }
+}

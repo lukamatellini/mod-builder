@@ -1,0 +1,56 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-19T23:03:25.778Z",
+  "enabledModules": {
+    "quests": false,
+    "npcs": false,
+    "dialogue": false,
+    "trading": false,
+    "structures": true,
+    "dimensions": false,
+    "biomes": false,
+    "commands": true,
+    "items": true,
+    "mobs": true,
+    "events": false
+  },
+  "inferenceReasons": [
+    "Structures enabled: 3 structures defined in spec",
+    "Items enabled: 13 items defined in spec",
+    "Mobs enabled: 3 mobs defined in spec",
+    "Commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 13,
+    "mobs": 3,
+    "structures": 3,
+    "dimensions": 0,
+    "quests": 0,
+    "npcs": 0,
+    "events": 0
+  },
+  "expectedDataFiles": [
+    "data/romanempire/worldgen/structure/roman_camp.json",
+    "data/romanempire/worldgen/structure/roman_fort.json",
+    "data/romanempire/worldgen/structure/imperial_palace.json"
+  ],
+  "expectedAssetFiles": [
+    "assets/romanempire/lang/en_us.json",
+    "assets/romanempire/models/item/gladius.json",
+    "assets/romanempire/models/item/pugio.json",
+    "assets/romanempire/models/item/pilum.json",
+    "assets/romanempire/models/item/scutum.json",
+    "assets/romanempire/models/item/lorica_segmentata_helmet.json",
+    "assets/romanempire/models/item/lorica_segmentata_chestplate.json",
+    "assets/romanempire/models/item/lorica_segmentata_leggings.json",
+    "assets/romanempire/models/item/lorica_segmentata_boots.json",
+    "assets/romanempire/models/item/galea.json",
+    "assets/romanempire/models/item/roman_standard.json",
+    "assets/romanempire/models/item/laurel_wreath.json",
+    "assets/romanempire/models/item/denarius.json",
+    "assets/romanempire/models/item/emperor_s_gladius.json"
+  ]
+}
