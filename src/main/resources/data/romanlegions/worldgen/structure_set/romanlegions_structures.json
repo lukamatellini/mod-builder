@@ -1,0 +1,22 @@
+{
+  "structures": [
+    {
+      "structure": "romanlegions:castrum",
+      "weight": 1
+    },
+    {
+      "structure": "romanlegions:roman_outpost",
+      "weight": 1
+    },
+    {
+      "structure": "romanlegions:barbarian_camp",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 8,
+    "salt": 373661219
+  }
+}

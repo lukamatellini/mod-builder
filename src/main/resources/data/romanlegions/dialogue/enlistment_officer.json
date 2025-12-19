@@ -1,0 +1,19 @@
+{
+  "npcId": "enlistment_officer",
+  "npcName": "Enlistment Officer",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "Hail, citizen! Do you possess the courage and discipline to serve the Legion? Speak with me to learn about conscription or enlistment."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

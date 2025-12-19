@@ -1,0 +1,19 @@
+{
+  "npcId": "quartermaster",
+  "npcName": "Quartermaster",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "Greetings, Legionary. I supply all provisions and equipment needed for our glorious campaigns. What may I get for you?"
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

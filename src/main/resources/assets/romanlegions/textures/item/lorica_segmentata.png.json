@@ -1,0 +1,8 @@
+{
+  "_placeholder": true,
+  "_note": "This is a placeholder. In production, generate a proper PNG texture.",
+  "itemId": "lorica_segmentata",
+  "itemName": "Lorica Segmentata",
+  "itemType": "chestplate",
+  "textureHint": "chestplate_texture"
+}

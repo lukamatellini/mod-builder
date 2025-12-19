@@ -1,0 +1,61 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-19T23:37:54.695Z",
+  "enabledModules": {
+    "quests": true,
+    "npcs": true,
+    "dialogue": true,
+    "trading": false,
+    "structures": true,
+    "dimensions": false,
+    "biomes": false,
+    "commands": true,
+    "items": true,
+    "mobs": true,
+    "events": true
+  },
+  "inferenceReasons": [
+    "Quest system enabled: 2 quests defined in spec",
+    "NPC system enabled: 2 NPCs defined in spec",
+    "Dialogue UI enabled: NPC interactions require dialogue system",
+    "Structures enabled: 3 structures defined in spec",
+    "Items enabled: 10 items defined in spec",
+    "Mobs enabled: 4 mobs defined in spec",
+    "Events enabled: 2 events defined in spec",
+    "Commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 10,
+    "mobs": 4,
+    "structures": 3,
+    "dimensions": 0,
+    "quests": 2,
+    "npcs": 2,
+    "events": 2
+  },
+  "expectedDataFiles": [
+    "data/romanlegions/quests/initiation_rite.json",
+    "data/romanlegions/quests/first_campaign.json",
+    "data/romanlegions/dialogue/enlistment_officer.json",
+    "data/romanlegions/dialogue/quartermaster.json",
+    "data/romanlegions/worldgen/structure/castrum.json",
+    "data/romanlegions/worldgen/structure/roman_outpost.json",
+    "data/romanlegions/worldgen/structure/barbarian_camp.json"
+  ],
+  "expectedAssetFiles": [
+    "assets/romanlegions/lang/en_us.json",
+    "assets/romanlegions/models/item/gladius.json",
+    "assets/romanlegions/models/item/pugio.json",
+    "assets/romanlegions/models/item/pilum.json",
+    "assets/romanlegions/models/item/scutum.json",
+    "assets/romanlegions/models/item/lorica_segmentata.json",
+    "assets/romanlegions/models/item/galea.json",
+    "assets/romanlegions/models/item/caligae.json",
+    "assets/romanlegions/models/item/balteus.json",
+    "assets/romanlegions/models/item/legion_standard.json",
+    "assets/romanlegions/models/item/denarii.json"
+  ]
+}

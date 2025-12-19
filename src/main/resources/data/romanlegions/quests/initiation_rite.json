@@ -1,0 +1,28 @@
+{
+  "id": "initiation_rite",
+  "name": "The Citizen's Call",
+  "description": "Prove your worth as a recruit by undergoing fundamental Legionary training. Show your strength, discipline, and resourcefulness.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Complete basic combat training at the Castrum, march with a Legionary patrol, and construct a palisade.",
+      "targetId": "",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: The Citizen's Call",
+  "completeMessage": "Completed: The Citizen's Call!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

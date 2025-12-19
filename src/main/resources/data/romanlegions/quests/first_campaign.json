@@ -1,0 +1,28 @@
+{
+  "id": "first_campaign",
+  "name": "Clearing the Woods",
+  "description": "Your first true test in the Legion. Locate and neutralize a barbarian threat to secure our supply lines.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Clear a barbarian camp in the nearby forest biome and defeat its leader.",
+      "targetId": "",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Clearing the Woods",
+  "completeMessage": "Completed: Clearing the Woods!",
+  "repeatable": false,
+  "giverNpcId": ""
+}
