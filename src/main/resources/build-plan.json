@@ -1,0 +1,60 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-19T20:05:35.594Z",
+  "enabledModules": {
+    "quests": false,
+    "npcs": false,
+    "dialogue": false,
+    "trading": false,
+    "structures": true,
+    "dimensions": false,
+    "biomes": false,
+    "commands": true,
+    "items": true,
+    "mobs": true,
+    "events": false
+  },
+  "inferenceReasons": [
+    "Structures enabled: 3 structures defined in spec",
+    "Items enabled: 17 items defined in spec",
+    "Mobs enabled: 3 mobs defined in spec",
+    "Commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 17,
+    "mobs": 3,
+    "structures": 3,
+    "dimensions": 0,
+    "quests": 0,
+    "npcs": 0,
+    "events": 0
+  },
+  "expectedDataFiles": [
+    "data/romanconquests/worldgen/structure/roman_camp.json",
+    "data/romanconquests/worldgen/structure/roman_fort.json",
+    "data/romanconquests/worldgen/structure/imperial_palace.json"
+  ],
+  "expectedAssetFiles": [
+    "assets/romanconquests/lang/en_us.json",
+    "assets/romanconquests/models/item/gladius.json",
+    "assets/romanconquests/models/item/pugio.json",
+    "assets/romanconquests/models/item/pilum.json",
+    "assets/romanconquests/models/item/scutum.json",
+    "assets/romanconquests/models/item/lorica_segmentata_helmet.json",
+    "assets/romanconquests/models/item/lorica_segmentata_chestplate.json",
+    "assets/romanconquests/models/item/lorica_segmentata_leggings.json",
+    "assets/romanconquests/models/item/lorica_segmentata_boots.json",
+    "assets/romanconquests/models/item/roman_standard.json",
+    "assets/romanconquests/models/item/laurel_wreath.json",
+    "assets/romanconquests/models/item/denarius.json",
+    "assets/romanconquests/models/item/roman_brick.json",
+    "assets/romanconquests/models/item/toga_cloth.json",
+    "assets/romanconquests/models/item/marble_block.json",
+    "assets/romanconquests/models/item/chiseled_marble.json",
+    "assets/romanconquests/models/item/pillar_block.json",
+    "assets/romanconquests/models/item/mosaic_tile.json"
+  ]
+}
