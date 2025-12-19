@@ -1,0 +1,17 @@
+{
+  "ui_click": {
+    "sounds": [
+      "minecraft:ui.button.click"
+    ]
+  },
+  "quest_complete": {
+    "sounds": [
+      "minecraft:entity.player.levelup"
+    ]
+  },
+  "npc_greet": {
+    "sounds": [
+      "minecraft:entity.villager.ambient"
+    ]
+  }
+}
