@@ -1,4 +1,5 @@
 name: Build Minecraft Mod (Main-Controlled)
+
 on:
   workflow_dispatch:
     inputs:
@@ -40,7 +41,7 @@ jobs:
           sudo apt-get install -y unzip file
 
       # ----------------------------
-      # 4) Read build-config.json (NOW includes webhookSecret)
+      # 4) Read build-config.json (includes webhookSecret + modId UUID)
       # ----------------------------
       - name: Read build-config.json
         id: buildconfig
@@ -48,28 +49,36 @@ jobs:
           set -e
           node -e "
             const fs = require('fs');
+
             const path = 'build-config.json';
-            if (!fs.existsSync(path)) throw new Error('Missing build-config.json (Lovable must generate this)');
+            if (!fs.existsSync(path)) throw new Error('Missing build-config.json on build branch');
+
             const cfg = JSON.parse(fs.readFileSync(path, 'utf8'));
 
-            // Required fields
+            // REQUIRED for webhook + DB update
+            if (!cfg.modId) throw new Error('build-config.json missing modId (UUID)');
             if (!cfg.webhookUrl) throw new Error('build-config.json missing webhookUrl');
             if (!cfg.webhookSecret) throw new Error('build-config.json missing webhookSecret');
             if (!cfg.loader) throw new Error('build-config.json missing loader');
             if (!cfg.mcVersion) throw new Error('build-config.json missing mcVersion');
 
-            // Basic URL sanity
+            const modId = String(cfg.modId).trim();
             const url = String(cfg.webhookUrl).trim();
+            const secret = String(cfg.webhookSecret).trim();
+            const loader = String(cfg.loader).trim();
+            const mcVersion = String(cfg.mcVersion).trim();
+
             if (!/^https?:\\/\\//.test(url)) throw new Error('webhookUrl must start with http:// or https://');
 
             // Mask secret in logs
-            console.log('::add-mask::' + cfg.webhookSecret);
+            console.log('::add-mask::' + secret);
 
             const out = process.env.GITHUB_OUTPUT;
+            fs.appendFileSync(out, 'modId=' + modId + '\\n');
             fs.appendFileSync(out, 'webhookUrl=' + url + '\\n');
-            fs.appendFileSync(out, 'webhookSecret=' + String(cfg.webhookSecret).trim() + '\\n');
-            fs.appendFileSync(out, 'loader=' + String(cfg.loader).trim() + '\\n');
-            fs.appendFileSync(out, 'mcVersion=' + String(cfg.mcVersion).trim() + '\\n');
+            fs.appendFileSync(out, 'webhookSecret=' + secret + '\\n');
+            fs.appendFileSync(out, 'loader=' + loader + '\\n');
+            fs.appendFileSync(out, 'mcVersion=' + mcVersion + '\\n');
           "
 
       # ----------------------------
@@ -88,7 +97,7 @@ jobs:
           esac
 
       # ----------------------------
-      # 6) Validate fabric.mod.json
+      # 6) Validate fabric.mod.json (still useful sanity check)
       # ----------------------------
       - name: Validate fabric.mod.json
         id: modmeta
@@ -188,7 +197,7 @@ jobs:
           unzip -l "$JAR" | grep -q "data/$MODID/" || (echo "Missing data/$MODID/" && exit 1)
 
       # ----------------------------
-      # 12) Upload artifact
+      # 12) Upload artifact (GitHub artifact)
       # ----------------------------
       - name: Upload mod jar
         uses: actions/upload-artifact@v4
@@ -197,7 +206,7 @@ jobs:
           path: ${{ steps.build.outputs.jar_file }}
 
       # ----------------------------
-      # 13) Webhook success (NOW includes secret header)
+      # 13) Webhook success (includes secret + run_id so backend can fetch artifact)
       # ----------------------------
       - name: Notify webhook (success)
         if: success()
@@ -205,19 +214,31 @@ jobs:
           set -e
           WEBHOOK_URL="${{ steps.buildconfig.outputs.webhookUrl }}"
           WEBHOOK_SECRET="${{ steps.buildconfig.outputs.webhookSecret }}"
+          MOD_UUID="${{ steps.buildconfig.outputs.modId }}"
+
+          echo "Webhook URL: $WEBHOOK_URL"
+          echo "Mod UUID: $MOD_UUID"
+          echo "Run ID: ${{ github.run_id }}"
 
           if [ -z "$WEBHOOK_URL" ]; then
             echo "ERROR: webhookUrl is empty (check build-config.json)"
             exit 1
           fi
+          if [ -z "$MOD_UUID" ]; then
+            echo "ERROR: modId is empty (check build-config.json)"
+            exit 1
+          fi
 
-          curl -X POST "$WEBHOOK_URL" \
+          RESP=$(curl --fail-with-body -sS -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
             -H "x-webhook-secret: $WEBHOOK_SECRET" \
-            -d "{\"status\":\"success\",\"modId\":\"${{ steps.modmeta.outputs.modid }}\",\"branch\":\"${{ inputs.build_ref }}\",\"commit\":\"${GITHUB_SHA}\"}"
+            -d "{\"status\":\"success\",\"modId\":\"$MOD_UUID\",\"branch\":\"${{ inputs.build_ref }}\",\"commit\":\"${GITHUB_SHA}\",\"workflowRunId\":${{ github.run_id }},\"artifactName\":\"minecraft-mod\"}" \
+          ) || (echo "Webhook call failed" && exit 1)
+
+          echo "Webhook response: $RESP"
 
       # ----------------------------
-      # 14) Webhook failure (NOW includes secret header)
+      # 14) Webhook failure (includes secret)
       # ----------------------------
       - name: Notify webhook (failure)
         if: failure()
@@ -225,14 +246,17 @@ jobs:
           set -e
           WEBHOOK_URL="${{ steps.buildconfig.outputs.webhookUrl }}"
           WEBHOOK_SECRET="${{ steps.buildconfig.outputs.webhookSecret }}"
+          MOD_UUID="${{ steps.buildconfig.outputs.modId }}"
 
           if [ -z "$WEBHOOK_URL" ]; then
             echo "No webhookUrl available; skipping webhook."
             exit 0
           fi
 
-          curl -X POST "$WEBHOOK_URL" \
+          curl --fail-with-body -sS -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
             -H "x-webhook-secret: $WEBHOOK_SECRET" \
-            -d "{\"status\":\"failed\",\"branch\":\"${{ inputs.build_ref }}\",\"commit\":\"${GITHUB_SHA}\"}"
+            -d "{\"status\":\"failed\",\"modId\":\"$MOD_UUID\",\"branch\":\"${{ inputs.build_ref }}\",\"commit\":\"${GITHUB_SHA}\",\"workflowRunId\":${{ github.run_id }},\"artifactName\":\"minecraft-mod\"}" \
+          || true
+
 
