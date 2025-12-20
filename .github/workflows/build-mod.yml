@@ -41,7 +41,7 @@ jobs:
           sudo apt-get install -y unzip file
 
       # ----------------------------
-      # 4) Read build-config.json (includes webhookSecret + modId UUID)
+      # 4) Read build-config.json (NOW includes modId + webhookSecret)
       # ----------------------------
       - name: Read build-config.json
         id: buildconfig
@@ -49,36 +49,30 @@ jobs:
           set -e
           node -e "
             const fs = require('fs');
-
             const path = 'build-config.json';
-            if (!fs.existsSync(path)) throw new Error('Missing build-config.json on build branch');
-
+            if (!fs.existsSync(path)) throw new Error('Missing build-config.json (Lovable must generate this)');
             const cfg = JSON.parse(fs.readFileSync(path, 'utf8'));
 
-            // REQUIRED for webhook + DB update
-            if (!cfg.modId) throw new Error('build-config.json missing modId (UUID)');
+            // Required fields
+            if (!cfg.modId) throw new Error('build-config.json missing modId (DB UUID)');
             if (!cfg.webhookUrl) throw new Error('build-config.json missing webhookUrl');
             if (!cfg.webhookSecret) throw new Error('build-config.json missing webhookSecret');
             if (!cfg.loader) throw new Error('build-config.json missing loader');
             if (!cfg.mcVersion) throw new Error('build-config.json missing mcVersion');
 
-            const modId = String(cfg.modId).trim();
+            // Basic URL sanity
             const url = String(cfg.webhookUrl).trim();
-            const secret = String(cfg.webhookSecret).trim();
-            const loader = String(cfg.loader).trim();
-            const mcVersion = String(cfg.mcVersion).trim();
-
             if (!/^https?:\\/\\//.test(url)) throw new Error('webhookUrl must start with http:// or https://');
 
             // Mask secret in logs
-            console.log('::add-mask::' + secret);
+            console.log('::add-mask::' + cfg.webhookSecret);
 
             const out = process.env.GITHUB_OUTPUT;
-            fs.appendFileSync(out, 'modId=' + modId + '\\n');
+            fs.appendFileSync(out, 'modUuid=' + String(cfg.modId).trim() + '\\n');
             fs.appendFileSync(out, 'webhookUrl=' + url + '\\n');
-            fs.appendFileSync(out, 'webhookSecret=' + secret + '\\n');
-            fs.appendFileSync(out, 'loader=' + loader + '\\n');
-            fs.appendFileSync(out, 'mcVersion=' + mcVersion + '\\n');
+            fs.appendFileSync(out, 'webhookSecret=' + String(cfg.webhookSecret).trim() + '\\n');
+            fs.appendFileSync(out, 'loader=' + String(cfg.loader).trim() + '\\n');
+            fs.appendFileSync(out, 'mcVersion=' + String(cfg.mcVersion).trim() + '\\n');
           "
 
       # ----------------------------
@@ -97,7 +91,7 @@ jobs:
           esac
 
       # ----------------------------
-      # 6) Validate fabric.mod.json (still useful sanity check)
+      # 6) Validate fabric.mod.json
       # ----------------------------
       - name: Validate fabric.mod.json
         id: modmeta
@@ -115,11 +109,11 @@ jobs:
               throw new Error('Minecraft range must be >=1.21 <1.22');
             }
             const out = process.env.GITHUB_OUTPUT;
-            fs.appendFileSync(out, 'modid=' + meta.id + '\\n');
+            fs.appendFileSync(out, 'modslug=' + meta.id + '\\n');
           "
 
       # ----------------------------
-      # 7) Java + Gradle
+      # 7) Java + Gradle (ensure `gradle` exists)
       # ----------------------------
       - name: Set up Java 21
         uses: actions/setup-java@v4
@@ -147,7 +141,7 @@ jobs:
           ls -lah gradle/wrapper || true
 
       # ----------------------------
-      # 9) Wrapper sanity check
+      # 9) Wrapper sanity check (optional, but useful)
       # ----------------------------
       - name: Validate Gradle wrapper jar
         run: |
@@ -161,7 +155,7 @@ jobs:
             || (echo "ERROR: GradleWrapperMain NOT in jar (jar corrupt/wrong)" && exit 1)
 
       # ----------------------------
-      # 10) Build mod
+      # 10) Build mod (WRAPPER ONLY)
       # ----------------------------
       - name: Build mod with Gradle
         id: build
@@ -186,18 +180,18 @@ jobs:
       # ----------------------------
       - name: Validate real mod jar
         env:
-          MODID: ${{ steps.modmeta.outputs.modid }}
+          MODSLUG: ${{ steps.modmeta.outputs.modslug }}
           JAR: ${{ steps.build.outputs.jar_file }}
         run: |
           set -e
           unzip -l "$JAR" | grep -q "fabric.mod.json" || (echo "Missing fabric.mod.json in jar" && exit 1)
           unzip -l "$JAR" | grep -q "\.class$" || (echo "No compiled classes in jar" && exit 1)
           unzip -l "$JAR" | grep -q "build-plan.json" || (echo "Missing build-plan.json in jar" && exit 1)
-          unzip -l "$JAR" | grep -q "assets/$MODID/" || (echo "Missing assets/$MODID/" && exit 1)
-          unzip -l "$JAR" | grep -q "data/$MODID/" || (echo "Missing data/$MODID/" && exit 1)
+          unzip -l "$JAR" | grep -q "assets/$MODSLUG/" || (echo "Missing assets/$MODSLUG/" && exit 1)
+          unzip -l "$JAR" | grep -q "data/$MODSLUG/" || (echo "Missing data/$MODSLUG/" && exit 1)
 
       # ----------------------------
-      # 12) Upload artifact (GitHub artifact)
+      # 12) Upload artifact
       # ----------------------------
       - name: Upload mod jar
         uses: actions/upload-artifact@v4
@@ -206,7 +200,7 @@ jobs:
           path: ${{ steps.build.outputs.jar_file }}
 
       # ----------------------------
-      # 13) Webhook success (includes secret + run_id so backend can fetch artifact)
+      # 13) Webhook success (FIXED: uses DB UUID + secret header)
       # ----------------------------
       - name: Notify webhook (success)
         if: success()
@@ -214,31 +208,15 @@ jobs:
           set -e
           WEBHOOK_URL="${{ steps.buildconfig.outputs.webhookUrl }}"
           WEBHOOK_SECRET="${{ steps.buildconfig.outputs.webhookSecret }}"
-          MOD_UUID="${{ steps.buildconfig.outputs.modId }}"
+          MOD_UUID="${{ steps.buildconfig.outputs.modUuid }}"
 
-          echo "Webhook URL: $WEBHOOK_URL"
-          echo "Mod UUID: $MOD_UUID"
-          echo "Run ID: ${{ github.run_id }}"
-
-          if [ -z "$WEBHOOK_URL" ]; then
-            echo "ERROR: webhookUrl is empty (check build-config.json)"
-            exit 1
-          fi
-          if [ -z "$MOD_UUID" ]; then
-            echo "ERROR: modId is empty (check build-config.json)"
-            exit 1
-          fi
-
-          RESP=$(curl --fail-with-body -sS -X POST "$WEBHOOK_URL" \
+          curl -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
             -H "x-webhook-secret: $WEBHOOK_SECRET" \
-            -d "{\"status\":\"success\",\"modId\":\"$MOD_UUID\",\"branch\":\"${{ inputs.build_ref }}\",\"commit\":\"${GITHUB_SHA}\",\"workflowRunId\":${{ github.run_id }},\"artifactName\":\"minecraft-mod\"}" \
-          ) || (echo "Webhook call failed" && exit 1)
-
-          echo "Webhook response: $RESP"
+            -d "{\"modId\":\"$MOD_UUID\",\"status\":\"success\",\"branch\":\"${{ inputs.build_ref }}\",\"commit\":\"${GITHUB_SHA}\",\"workflowRunId\":\"${GITHUB_RUN_ID}\"}"
 
       # ----------------------------
-      # 14) Webhook failure (includes secret)
+      # 14) Webhook failure (FIXED: uses DB UUID + secret header)
       # ----------------------------
       - name: Notify webhook (failure)
         if: failure()
@@ -246,17 +224,15 @@ jobs:
           set -e
           WEBHOOK_URL="${{ steps.buildconfig.outputs.webhookUrl }}"
           WEBHOOK_SECRET="${{ steps.buildconfig.outputs.webhookSecret }}"
-          MOD_UUID="${{ steps.buildconfig.outputs.modId }}"
+          MOD_UUID="${{ steps.buildconfig.outputs.modUuid }}"
 
           if [ -z "$WEBHOOK_URL" ]; then
             echo "No webhookUrl available; skipping webhook."
             exit 0
           fi
 
-          curl --fail-with-body -sS -X POST "$WEBHOOK_URL" \
+          curl -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
             -H "x-webhook-secret: $WEBHOOK_SECRET" \
-            -d "{\"status\":\"failed\",\"modId\":\"$MOD_UUID\",\"branch\":\"${{ inputs.build_ref }}\",\"commit\":\"${GITHUB_SHA}\",\"workflowRunId\":${{ github.run_id }},\"artifactName\":\"minecraft-mod\"}" \
-          || true
-
+            -d "{\"modId\":\"$MOD_UUID\",\"status\":\"failed\",\"branch\":\"${{ inputs.build_ref }}\",\"commit\":\"${GITHUB_SHA}\",\"workflowRunId\":\"${GITHUB_RUN_ID}\"}"
 
