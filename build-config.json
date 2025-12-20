@@ -1,0 +1,9 @@
+{
+  "webhookUrl": "https://jhhqehkjffldkoqjqbzx.supabase.co/functions/v1/build-webhook",
+  "loader": "fabric",
+  "mcVersion": "1.21.1",
+  "modId": "cfad49b1-76e0-4b94-9c3a-d438cfd6bf0c",
+  "modName": "Stormcaller Wand",
+  "webhookSecret": "za8f3c2b1e49840b28a7c4c11d9a0de92",
+  "generatedAt": "2025-12-20T01:09:02.185Z"
+}
