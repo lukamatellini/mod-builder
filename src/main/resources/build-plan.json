@@ -1,0 +1,44 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-20T21:55:36.626Z",
+  "enabledModules": {
+    "quests": false,
+    "npcs": false,
+    "dialogue": false,
+    "trading": false,
+    "structures": true,
+    "dimensions": false,
+    "biomes": false,
+    "commands": true,
+    "items": true,
+    "mobs": true,
+    "events": false
+  },
+  "inferenceReasons": [
+    "Structures enabled: 1 structures defined in spec",
+    "Items enabled: 3 items defined in spec",
+    "Mobs enabled: 1 mobs defined in spec",
+    "Commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 3,
+    "mobs": 1,
+    "structures": 1,
+    "dimensions": 0,
+    "quests": 0,
+    "npcs": 0,
+    "events": 0
+  },
+  "expectedDataFiles": [
+    "data/arcaneessentials/worldgen/structure/sunken_chest_alcove.json"
+  ],
+  "expectedAssetFiles": [
+    "assets/arcaneessentials/lang/en_us.json",
+    "assets/arcaneessentials/models/item/lightning_wand.json",
+    "assets/arcaneessentials/models/item/endurance_amulet.json",
+    "assets/arcaneessentials/models/item/lurker_hide.json"
+  ]
+}
