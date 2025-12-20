@@ -1,0 +1,8 @@
+{
+  "_placeholder": true,
+  "_note": "This is a placeholder. In production, generate a proper PNG texture.",
+  "itemId": "swift_gem",
+  "itemName": "Swift Gem",
+  "itemType": "misc",
+  "textureHint": "misc_texture"
+}
