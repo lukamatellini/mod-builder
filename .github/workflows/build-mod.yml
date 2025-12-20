@@ -1,5 +1,4 @@
 name: Build Minecraft Mod (Main-Controlled)
-
 on:
   workflow_dispatch:
     inputs:
@@ -7,15 +6,13 @@ on:
         description: "Branch to build (e.g. build/<id>/<timestamp>)"
         required: true
         type: string
-
 jobs:
   build:
     runs-on: ubuntu-22.04
     timeout-minutes: 45
-
     steps:
       # ----------------------------
-      # 1) Checkout generated mod (the build/** branch passed in)
+      # 1) Checkout generated mod project
       # ----------------------------
       - name: Checkout generated mod project
         uses: actions/checkout@v4
@@ -52,22 +49,17 @@ jobs:
             const path = 'build-config.json';
             if (!fs.existsSync(path)) throw new Error('Missing build-config.json');
             const cfg = JSON.parse(fs.readFileSync(path, 'utf8'));
-
             if (!cfg.modId) throw new Error('build-config.json missing modId (DB UUID)');
             if (!cfg.webhookUrl) throw new Error('build-config.json missing webhookUrl');
             if (!cfg.webhookSecret) throw new Error('build-config.json missing webhookSecret');
             if (!cfg.loader) throw new Error('build-config.json missing loader');
             if (!cfg.mcVersion) throw new Error('build-config.json missing mcVersion');
-
             const url = String(cfg.webhookUrl).trim();
             if (!/^https?:\\/\\//.test(url)) throw new Error('webhookUrl must start with http:// or https://');
-
             const modUuid = String(cfg.modId).trim();
             const uuidRe = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$/;
             if (!uuidRe.test(modUuid)) throw new Error('modId is not a valid UUID: ' + modUuid);
-
             console.log('::add-mask::' + String(cfg.webhookSecret).trim());
-
             const out = process.env.GITHUB_OUTPUT;
             fs.appendFileSync(out, 'modUuid=' + modUuid + '\\n');
             fs.appendFileSync(out, 'webhookUrl=' + url + '\\n');
@@ -187,6 +179,38 @@ jobs:
           unzip -l "$JAR" | grep -q "data/$MODID/" || (echo "Missing data/$MODID/" && exit 1)
 
       # ----------------------------
+      # 11b) EXTRA QUALITY GATE (makes YAML + Lovable quality plan "in sync")
+      # ----------------------------
+      - name: Validate jar has lang/models/textures + reasonable size
+        env:
+          MODID: ${{ steps.modmeta.outputs.modid }}
+          JAR: ${{ steps.build.outputs.jar_file }}
+        run: |
+          set -e
+          echo "Jar file: $JAR"
+          ls -lah "$JAR" || true
+          JAR_SIZE=$(stat -c%s "$JAR")
+          echo "Jar size bytes: $JAR_SIZE"
+
+          # Must have at least one lang file (most basic UX requirement)
+          unzip -l "$JAR" | grep -q "assets/$MODID/lang/en_us.json" \
+            || (echo "Missing assets/$MODID/lang/en_us.json" && exit 1)
+
+          # Must have at least one model json somewhere under models/
+          unzip -l "$JAR" | grep -q "assets/$MODID/models/.*\.json" \
+            || (echo "Missing any assets/$MODID/models/*.json" && exit 1)
+
+          # Must have at least one png texture somewhere under textures/
+          unzip -l "$JAR" | grep -q "assets/$MODID/textures/.*\.png" \
+            || (echo "Missing any assets/$MODID/textures/*.png" && exit 1)
+
+          # Safety: jar shouldn't be absurdly tiny (avoid false positives; keep low threshold)
+          if [ "$JAR_SIZE" -lt 20000 ]; then
+            echo "ERROR: Jar is suspiciously small (< 20KB). Likely missing content."
+            exit 1
+          fi
+
+      # ----------------------------
       # 12) Upload artifact (GitHub)
       # ----------------------------
       - name: Upload mod jar (GitHub artifact)
@@ -212,24 +236,19 @@ jobs:
           aws configure set aws_access_key_id "$R2_ACCESS_KEY_ID"
           aws configure set aws_secret_access_key "$R2_SECRET_ACCESS_KEY"
           aws configure set region auto
-
           JAR_FILE="${{ steps.build.outputs.jar_file }}"
           JAR_NAME="${{ steps.build.outputs.jar_name }}"
           MOD_UUID="${{ steps.buildconfig.outputs.modUuid }}"
-
           TIMESTAMP=$(date +%s)
           KEY="compiled-mods/${MOD_UUID}/${TIMESTAMP}_${JAR_NAME}"
-
           aws s3 cp "$JAR_FILE" "s3://${R2_BUCKET_NAME}/${KEY}" \
             --endpoint-url "https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com" \
             --content-type "application/java-archive"
-
           if [ -n "$R2_PUBLIC_URL" ]; then
             PUBLIC_URL="${R2_PUBLIC_URL}/${KEY}"
           else
             PUBLIC_URL="https://${R2_BUCKET_NAME}.r2.dev/${KEY}"
           fi
-
           echo "storage_path=$KEY" >> "$GITHUB_OUTPUT"
           echo "compiled_jar_url=$PUBLIC_URL" >> "$GITHUB_OUTPUT"
 
@@ -245,8 +264,6 @@ jobs:
           MOD_UUID="${{ steps.buildconfig.outputs.modUuid }}"
           STORAGE_PATH="${{ steps.r2.outputs.storage_path }}"
           COMPILED_URL="${{ steps.r2.outputs.compiled_jar_url }}"
-
-          # Build JSON safely (no broken quotes)
           PAYLOAD=$(jq -n \
             --arg modId "$MOD_UUID" \
             --arg status "completed" \
@@ -255,11 +272,8 @@ jobs:
             --arg compiledJarUrl "$COMPILED_URL" \
             --arg compiled_jar_url "$COMPILED_URL" \
             '{modId:$modId,status:$status,storagePath:$storagePath,storage_path:$storage_path,compiledJarUrl:$compiledJarUrl,compiled_jar_url:$compiled_jar_url}')
-
           echo "Webhook URL: $WEBHOOK_URL"
           echo "Payload: $PAYLOAD"
-
-          # Fail the workflow if webhook returns non-2xx, and show body
           curl --fail-with-body -sS \
             -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
@@ -276,17 +290,13 @@ jobs:
           WEBHOOK_URL="${{ steps.buildconfig.outputs.webhookUrl }}"
           WEBHOOK_SECRET="${{ steps.buildconfig.outputs.webhookSecret }}"
           MOD_UUID="${{ steps.buildconfig.outputs.modUuid }}"
-
           if [ -z "$WEBHOOK_URL" ]; then
             echo "No webhookUrl available; skipping webhook."
             exit 0
           fi
-
           PAYLOAD=$(jq -n --arg modId "$MOD_UUID" --arg status "failed" '{modId:$modId,status:$status}')
-
           echo "Webhook URL: $WEBHOOK_URL"
           echo "Payload: $PAYLOAD"
-
           curl --fail-with-body -sS \
             -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
