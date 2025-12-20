@@ -6,10 +6,12 @@ on:
         description: "Branch to build (e.g. build/<id>/<timestamp>)"
         required: true
         type: string
+
 jobs:
   build:
     runs-on: ubuntu-22.04
     timeout-minutes: 45
+
     steps:
       # ----------------------------
       # 1) Checkout generated mod (the build/** branch passed in)
@@ -19,6 +21,7 @@ jobs:
         with:
           ref: ${{ inputs.build_ref }}
           fetch-depth: 1
+
       # ----------------------------
       # 2) Setup Node (JSON parsing)
       # ----------------------------
@@ -26,6 +29,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+
       # ----------------------------
       # 3) Ensure unzip + file exist (for wrapper inspection)
       # ----------------------------
@@ -34,8 +38,9 @@ jobs:
           set -e
           sudo apt-get update
           sudo apt-get install -y unzip file
+
       # ----------------------------
-      # 4) Read build-config.json
+      # 4) Read build-config.json (NOW includes webhookSecret)
       # ----------------------------
       - name: Read build-config.json
         id: buildconfig
@@ -46,17 +51,27 @@ jobs:
             const path = 'build-config.json';
             if (!fs.existsSync(path)) throw new Error('Missing build-config.json (Lovable must generate this)');
             const cfg = JSON.parse(fs.readFileSync(path, 'utf8'));
+
+            // Required fields
             if (!cfg.webhookUrl) throw new Error('build-config.json missing webhookUrl');
-            if (!cfg.webhookSecret) throw new Error('build-config.json missing webhookSecret'); // ✅ NEW (critical)
+            if (!cfg.webhookSecret) throw new Error('build-config.json missing webhookSecret');
             if (!cfg.loader) throw new Error('build-config.json missing loader');
             if (!cfg.mcVersion) throw new Error('build-config.json missing mcVersion');
+
+            // Basic URL sanity
+            const url = String(cfg.webhookUrl).trim();
+            if (!/^https?:\\/\\//.test(url)) throw new Error('webhookUrl must start with http:// or https://');
+
+            // Mask secret in logs
+            console.log('::add-mask::' + cfg.webhookSecret);
+
             const out = process.env.GITHUB_OUTPUT;
-            fs.appendFileSync(out, 'webhookUrl=' + cfg.webhookUrl + '\\n');
-            fs.appendFileSync(out, 'webhookSecret=' + cfg.webhookSecret + '\\n'); // ✅ NEW (critical)
-            fs.appendFileSync(out, 'loader=' + cfg.loader + '\\n');
-            fs.appendFileSync(out, 'mcVersion=' + cfg.mcVersion + '\\n');
-            console.log('::add-mask::' + cfg.webhookSecret); // ✅ NEW (safe logs)
+            fs.appendFileSync(out, 'webhookUrl=' + url + '\\n');
+            fs.appendFileSync(out, 'webhookSecret=' + String(cfg.webhookSecret).trim() + '\\n');
+            fs.appendFileSync(out, 'loader=' + String(cfg.loader).trim() + '\\n');
+            fs.appendFileSync(out, 'mcVersion=' + String(cfg.mcVersion).trim() + '\\n');
           "
+
       # ----------------------------
       # 5) Guardrails (platform rules)
       # ----------------------------
@@ -71,6 +86,7 @@ jobs:
             1.21.*) echo "OK: mcVersion ${{ steps.buildconfig.outputs.mcVersion }}" ;;
             *) echo "ERROR: mcVersion must be 1.21.x"; exit 1 ;;
           esac
+
       # ----------------------------
       # 6) Validate fabric.mod.json
       # ----------------------------
@@ -92,18 +108,21 @@ jobs:
             const out = process.env.GITHUB_OUTPUT;
             fs.appendFileSync(out, 'modid=' + meta.id + '\\n');
           "
+
       # ----------------------------
-      # 7) Java + Gradle (ensure `gradle` exists)
+      # 7) Java + Gradle
       # ----------------------------
       - name: Set up Java 21
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: "21"
+
       - name: Setup Gradle (for wrapper generation)
         uses: gradle/actions/setup-gradle@v3
         with:
           gradle-version: "8.8"
+
       # ----------------------------
       # 8) Ensure Gradle wrapper exists
       # ----------------------------
@@ -117,8 +136,9 @@ jobs:
           chmod +x ./gradlew
           echo "=== wrapper folder ==="
           ls -lah gradle/wrapper || true
+
       # ----------------------------
-      # 9) Wrapper sanity check (optional, but useful)
+      # 9) Wrapper sanity check
       # ----------------------------
       - name: Validate Gradle wrapper jar
         run: |
@@ -130,8 +150,9 @@ jobs:
           unzip -l gradle/wrapper/gradle-wrapper.jar | grep -q "org/gradle/wrapper/GradleWrapperMain.class" \
             && echo "OK: GradleWrapperMain present" \
             || (echo "ERROR: GradleWrapperMain NOT in jar (jar corrupt/wrong)" && exit 1)
+
       # ----------------------------
-      # 10) Build mod (WRAPPER ONLY)
+      # 10) Build mod
       # ----------------------------
       - name: Build mod with Gradle
         id: build
@@ -150,6 +171,7 @@ jobs:
           fi
           echo "jar_file=$JAR_FILE" >> "$GITHUB_OUTPUT"
           echo "jar_name=$(basename "$JAR_FILE")" >> "$GITHUB_OUTPUT"
+
       # ----------------------------
       # 11) HARD validation (real mod)
       # ----------------------------
@@ -164,6 +186,7 @@ jobs:
           unzip -l "$JAR" | grep -q "build-plan.json" || (echo "Missing build-plan.json in jar" && exit 1)
           unzip -l "$JAR" | grep -q "assets/$MODID/" || (echo "Missing assets/$MODID/" && exit 1)
           unzip -l "$JAR" | grep -q "data/$MODID/" || (echo "Missing data/$MODID/" && exit 1)
+
       # ----------------------------
       # 12) Upload artifact
       # ----------------------------
@@ -172,31 +195,44 @@ jobs:
         with:
           name: minecraft-mod
           path: ${{ steps.build.outputs.jar_file }}
+
       # ----------------------------
-      # 13) Webhook success
+      # 13) Webhook success (NOW includes secret header)
       # ----------------------------
       - name: Notify webhook (success)
         if: success()
         run: |
           set -e
-          curl -X POST "${{ steps.buildconfig.outputs.webhookUrl }}" \
+          WEBHOOK_URL="${{ steps.buildconfig.outputs.webhookUrl }}"
+          WEBHOOK_SECRET="${{ steps.buildconfig.outputs.webhookSecret }}"
+
+          if [ -z "$WEBHOOK_URL" ]; then
+            echo "ERROR: webhookUrl is empty (check build-config.json)"
+            exit 1
+          fi
+
+          curl -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
-            -H "x-webhook-secret: ${{ steps.buildconfig.outputs.webhookSecret }}" \  # ✅ NEW (critical)
+            -H "x-webhook-secret: $WEBHOOK_SECRET" \
             -d "{\"status\":\"success\",\"modId\":\"${{ steps.modmeta.outputs.modid }}\",\"branch\":\"${{ inputs.build_ref }}\",\"commit\":\"${GITHUB_SHA}\"}"
+
       # ----------------------------
-      # 14) Webhook failure (safe)
+      # 14) Webhook failure (NOW includes secret header)
       # ----------------------------
       - name: Notify webhook (failure)
         if: failure()
         run: |
           set -e
-          WEBHOOK="${{ steps.buildconfig.outputs.webhookUrl }}"
-          if [ -z "$WEBHOOK" ]; then
+          WEBHOOK_URL="${{ steps.buildconfig.outputs.webhookUrl }}"
+          WEBHOOK_SECRET="${{ steps.buildconfig.outputs.webhookSecret }}"
+
+          if [ -z "$WEBHOOK_URL" ]; then
             echo "No webhookUrl available; skipping webhook."
             exit 0
           fi
-          curl -X POST "$WEBHOOK" \
+
+          curl -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
-            -H "x-webhook-secret: ${{ steps.buildconfig.outputs.webhookSecret }}" \  # ✅ NEW (critical)
+            -H "x-webhook-secret: $WEBHOOK_SECRET" \
             -d "{\"status\":\"failed\",\"branch\":\"${{ inputs.build_ref }}\",\"commit\":\"${GITHUB_SHA}\"}"
 
