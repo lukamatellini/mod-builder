@@ -1,4 +1,5 @@
 name: Build Minecraft Mod (Main-Controlled)
+
 on:
   workflow_dispatch:
     inputs:
@@ -31,16 +32,16 @@ jobs:
           node-version: "20"
 
       # ----------------------------
-      # 3) Ensure unzip + file exist (for wrapper inspection)
+      # 3) Ensure tools are available (unzip/file/pip/jq)
       # ----------------------------
-      - name: Ensure unzip + file are available
+      - name: Ensure unzip + file + jq are available
         run: |
           set -e
           sudo apt-get update
-          sudo apt-get install -y unzip file python3-pip
+          sudo apt-get install -y unzip file python3-pip jq
 
       # ----------------------------
-      # 4) Read build-config.json (NOW includes modId + webhookSecret)
+      # 4) Read build-config.json (includes modId + webhookSecret)
       # ----------------------------
       - name: Read build-config.json
         id: buildconfig
@@ -61,10 +62,14 @@ jobs:
             const url = String(cfg.webhookUrl).trim();
             if (!/^https?:\\/\\//.test(url)) throw new Error('webhookUrl must start with http:// or https://');
 
-            console.log('::add-mask::' + cfg.webhookSecret);
+            const modUuid = String(cfg.modId).trim();
+            const uuidRe = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$/;
+            if (!uuidRe.test(modUuid)) throw new Error('modId is not a valid UUID: ' + modUuid);
+
+            console.log('::add-mask::' + String(cfg.webhookSecret).trim());
 
             const out = process.env.GITHUB_OUTPUT;
-            fs.appendFileSync(out, 'modUuid=' + String(cfg.modId).trim() + '\\n');
+            fs.appendFileSync(out, 'modUuid=' + modUuid + '\\n');
             fs.appendFileSync(out, 'webhookUrl=' + url + '\\n');
             fs.appendFileSync(out, 'webhookSecret=' + String(cfg.webhookSecret).trim() + '\\n');
             fs.appendFileSync(out, 'loader=' + String(cfg.loader).trim() + '\\n');
@@ -87,7 +92,7 @@ jobs:
           esac
 
       # ----------------------------
-      # 6) Validate fabric.mod.json (keep as-is)
+      # 6) Validate fabric.mod.json
       # ----------------------------
       - name: Validate fabric.mod.json
         id: modmeta
@@ -133,7 +138,6 @@ jobs:
             gradle wrapper --gradle-version 8.8
           fi
           chmod +x ./gradlew
-          echo "=== wrapper folder ==="
           ls -lah gradle/wrapper || true
 
       # ----------------------------
@@ -145,7 +149,6 @@ jobs:
           test -f ./gradlew || (echo "ERROR: gradlew missing" && exit 1)
           test -f gradle/wrapper/gradle-wrapper.properties || (echo "ERROR: gradle-wrapper.properties missing" && exit 1)
           test -f gradle/wrapper/gradle-wrapper.jar || (echo "ERROR: gradle-wrapper.jar missing" && exit 1)
-          file gradle/wrapper/gradle-wrapper.jar || true
           unzip -l gradle/wrapper/gradle-wrapper.jar | grep -q "org/gradle/wrapper/GradleWrapperMain.class" \
             && echo "OK: GradleWrapperMain present" \
             || (echo "ERROR: GradleWrapperMain NOT in jar" && exit 1)
@@ -159,7 +162,6 @@ jobs:
           set -e
           ./gradlew --version
           ./gradlew clean build remapJar --no-daemon --info
-          echo "Build output:"
           ls -lah build/libs || true
           JAR_FILE=$(ls -1S build/libs/*.jar | grep -vE '(sources|javadoc|dev)\.jar$' | head -n 1)
           if [ -z "$JAR_FILE" ]; then
@@ -185,7 +187,7 @@ jobs:
           unzip -l "$JAR" | grep -q "data/$MODID/" || (echo "Missing data/$MODID/" && exit 1)
 
       # ----------------------------
-      # 12) Upload artifact (keep this)
+      # 12) Upload artifact (GitHub)
       # ----------------------------
       - name: Upload mod jar (GitHub artifact)
         uses: actions/upload-artifact@v4
@@ -194,7 +196,7 @@ jobs:
           path: ${{ steps.build.outputs.jar_file }}
 
       # ----------------------------
-      # 12b) Upload to R2 (THIS is what makes the download button possible)
+      # 12b) Upload to R2 (for in-app download)
       # ----------------------------
       - name: Upload mod jar to R2
         id: r2
@@ -206,13 +208,7 @@ jobs:
           R2_PUBLIC_URL: ${{ secrets.R2_PUBLIC_URL }}
         run: |
           set -e
-          if [ -z "$R2_ACCESS_KEY_ID" ] || [ -z "$R2_SECRET_ACCESS_KEY" ] || [ -z "$R2_BUCKET_NAME" ] || [ -z "$R2_ACCOUNT_ID" ]; then
-            echo "ERROR: Missing R2 secrets in repo settings"
-            exit 1
-          fi
-
           pip3 install awscli --quiet
-
           aws configure set aws_access_key_id "$R2_ACCESS_KEY_ID"
           aws configure set aws_secret_access_key "$R2_SECRET_ACCESS_KEY"
           aws configure set region auto
@@ -220,8 +216,8 @@ jobs:
           JAR_FILE="${{ steps.build.outputs.jar_file }}"
           JAR_NAME="${{ steps.build.outputs.jar_name }}"
           MOD_UUID="${{ steps.buildconfig.outputs.modUuid }}"
-          TIMESTAMP=$(date +%s)
 
+          TIMESTAMP=$(date +%s)
           KEY="compiled-mods/${MOD_UUID}/${TIMESTAMP}_${JAR_NAME}"
 
           aws s3 cp "$JAR_FILE" "s3://${R2_BUCKET_NAME}/${KEY}" \
@@ -238,7 +234,7 @@ jobs:
           echo "compiled_jar_url=$PUBLIC_URL" >> "$GITHUB_OUTPUT"
 
       # ----------------------------
-      # 13) Webhook success (USES DB UUID + secret + storage info)
+      # 13) Webhook success (STRICT + logs)
       # ----------------------------
       - name: Notify webhook (success)
         if: success()
@@ -250,13 +246,28 @@ jobs:
           STORAGE_PATH="${{ steps.r2.outputs.storage_path }}"
           COMPILED_URL="${{ steps.r2.outputs.compiled_jar_url }}"
 
-          curl -X POST "$WEBHOOK_URL" \
+          # Build JSON safely (no broken quotes)
+          PAYLOAD=$(jq -n \
+            --arg modId "$MOD_UUID" \
+            --arg status "completed" \
+            --arg storagePath "$STORAGE_PATH" \
+            --arg storage_path "$STORAGE_PATH" \
+            --arg compiledJarUrl "$COMPILED_URL" \
+            --arg compiled_jar_url "$COMPILED_URL" \
+            '{modId:$modId,status:$status,storagePath:$storagePath,storage_path:$storage_path,compiledJarUrl:$compiledJarUrl,compiled_jar_url:$compiled_jar_url}')
+
+          echo "Webhook URL: $WEBHOOK_URL"
+          echo "Payload: $PAYLOAD"
+
+          # Fail the workflow if webhook returns non-2xx, and show body
+          curl --fail-with-body -sS \
+            -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
             -H "x-webhook-secret: $WEBHOOK_SECRET" \
-            -d "{\"modId\":\"$MOD_UUID\",\"status\":\"completed\",\"storagePath\":\"$STORAGE_PATH\",\"compiledJarUrl\":\"$COMPILED_URL\"}"
+            -d "$PAYLOAD"
 
       # ----------------------------
-      # 14) Webhook failure
+      # 14) Webhook failure (STRICT + logs)
       # ----------------------------
       - name: Notify webhook (failure)
         if: failure()
@@ -271,9 +282,14 @@ jobs:
             exit 0
           fi
 
-          curl -X POST "$WEBHOOK_URL" \
+          PAYLOAD=$(jq -n --arg modId "$MOD_UUID" --arg status "failed" '{modId:$modId,status:$status}')
+
+          echo "Webhook URL: $WEBHOOK_URL"
+          echo "Payload: $PAYLOAD"
+
+          curl --fail-with-body -sS \
+            -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
             -H "x-webhook-secret: $WEBHOOK_SECRET" \
-            -d "{\"modId\":\"$MOD_UUID\",\"status\":\"failed\"}"
-
+            -d "$PAYLOAD"
 
