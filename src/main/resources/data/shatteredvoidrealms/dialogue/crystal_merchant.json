@@ -1,0 +1,19 @@
+{
+  "npcId": "crystal_merchant",
+  "npcName": "Crystal Merchant",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "Seek power in crystalline form? I can assist. / My crystals hold secrets of the Void."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

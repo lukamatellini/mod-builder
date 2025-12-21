@@ -1,0 +1,19 @@
+{
+  "npcId": "void_scholar",
+  "npcName": "The Void Scholar",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "The Void dimension holds untold power. Will you conquer it? / Your destiny lies within the Citadel's dark heart."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

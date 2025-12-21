@@ -1,0 +1,22 @@
+{
+  "structures": [
+    {
+      "structure": "shatteredvoidrealms:void_citadel",
+      "weight": 1
+    },
+    {
+      "structure": "shatteredvoidrealms:crystal_cave",
+      "weight": 1
+    },
+    {
+      "structure": "shatteredvoidrealms:abandoned_outpost",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 8,
+    "salt": 977298772
+  }
+}
