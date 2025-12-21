@@ -1,0 +1,22 @@
+{
+  "structures": [
+    {
+      "structure": "voidconquest:void_citadel",
+      "weight": 1
+    },
+    {
+      "structure": "voidconquest:crystal_cave",
+      "weight": 1
+    },
+    {
+      "structure": "voidconquest:abandoned_outpost",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 8,
+    "salt": 485472925
+  }
+}

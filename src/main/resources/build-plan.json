@@ -1,0 +1,65 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-21T03:10:14.517Z",
+  "enabledModules": {
+    "quests": true,
+    "npcs": true,
+    "dialogue": true,
+    "trading": true,
+    "structures": true,
+    "dimensions": true,
+    "biomes": false,
+    "commands": true,
+    "items": true,
+    "mobs": true,
+    "events": true
+  },
+  "inferenceReasons": [
+    "Quest system enabled: 2 quests defined in spec",
+    "NPC system enabled: 2 NPCs defined in spec",
+    "Dialogue UI enabled: NPCs require dialogue system",
+    "Trading system enabled: 1 NPCs have trades defined",
+    "Reputation system enabled: Trading requires reputation tracking",
+    "Structures enabled: 3 structures defined in spec",
+    "Dimensions enabled: 1 dimensions defined in spec",
+    "Items enabled: 9 items defined in spec",
+    "Mobs enabled: 5 mobs defined in spec",
+    "Events enabled: 2 events defined in spec",
+    "Commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 9,
+    "mobs": 5,
+    "structures": 3,
+    "dimensions": 1,
+    "quests": 2,
+    "npcs": 2,
+    "events": 2
+  },
+  "expectedDataFiles": [
+    "data/voidconquest/quests/conquer_the_void.json",
+    "data/voidconquest/quests/crystal_collector.json",
+    "data/voidconquest/dialogue/void_scholar.json",
+    "data/voidconquest/dialogue/crystal_merchant.json",
+    "data/voidconquest/dimension/shattered_void.json",
+    "data/voidconquest/dimension_type/shattered_void.json",
+    "data/voidconquest/worldgen/structure/void_citadel.json",
+    "data/voidconquest/worldgen/structure/crystal_cave.json",
+    "data/voidconquest/worldgen/structure/abandoned_outpost.json"
+  ],
+  "expectedAssetFiles": [
+    "assets/voidconquest/lang/en_us.json",
+    "assets/voidconquest/models/item/void_reaper.json",
+    "assets/voidconquest/models/item/crystal_staff.json",
+    "assets/voidconquest/models/item/titan_helmet.json",
+    "assets/voidconquest/models/item/titan_chestplate.json",
+    "assets/voidconquest/models/item/titan_leggings.json",
+    "assets/voidconquest/models/item/titan_boots.json",
+    "assets/voidconquest/models/item/void_key.json",
+    "assets/voidconquest/models/item/soul_lantern.json",
+    "assets/voidconquest/models/item/health_injector.json"
+  ]
+}

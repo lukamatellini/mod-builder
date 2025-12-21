@@ -1,0 +1,28 @@
+{
+  "id": "crystal_collector",
+  "name": "Crystal Collector",
+  "description": "Gather raw crystals from the Crystal Golems to aid in crafting powerful artifacts.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Collect 20 Crystals.",
+      "targetId": "",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Crystal Collector",
+  "completeMessage": "Completed: Crystal Collector!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

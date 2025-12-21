@@ -1,0 +1,19 @@
+{
+  "npcId": "crystal_merchant",
+  "npcName": "Crystal Merchant",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "Hello, I am Crystal Merchant!"
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}
