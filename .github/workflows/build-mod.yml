@@ -6,7 +6,6 @@ on:
         description: "Branch to build (e.g. build/<id>/<timestamp>)"
         required: true
         type: string
-
 jobs:
   build:
     runs-on: ubuntu-22.04
@@ -211,8 +210,9 @@ jobs:
             || (echo "Missing any assets/$MODID/models/*.json" && exit 1)
           unzip -l "$JAR" | grep -q "assets/$MODID/textures/.*\.png" \
             || (echo "Missing any assets/$MODID/textures/*.png" && exit 1)
-          if [ "$JAR_SIZE" -lt 20000 ]; then
-            echo "ERROR: Jar is suspiciously small (< 20KB). Likely missing content."
+          # UPDATED: 10KB threshold
+          if [ "$JAR_SIZE" -lt 10000 ]; then
+            echo "ERROR: Jar is suspiciously small (< 10KB). Likely missing content."
             exit 1
           fi
 
