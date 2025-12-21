@@ -1,0 +1,28 @@
+{
+  "id": "crystal_collector",
+  "name": "Crystal Collector",
+  "description": "Collect 20 Void Crystals (dropped by Crystal Golems).",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Collect 20 Void Crystals (dropped by Crystal Golems).",
+      "targetId": "",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Crystal Collector",
+  "completeMessage": "Completed: Crystal Collector!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

@@ -1,0 +1,19 @@
+{
+  "npcId": "crystal_merchant",
+  "npcName": "Crystal Merchant",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "My crystals shimmer with ancient energy. What will you offer for their power?"
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

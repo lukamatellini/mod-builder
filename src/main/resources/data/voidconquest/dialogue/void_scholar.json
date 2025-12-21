@@ -1,0 +1,19 @@
+{
+  "npcId": "void_scholar",
+  "npcName": "The Void Scholar",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "Welcome traveler! The Void dimension holds untold power. Will you conquer it?"
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

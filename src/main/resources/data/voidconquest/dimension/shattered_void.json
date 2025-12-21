@@ -1,0 +1,7 @@
+{
+  "type": "voidconquest:shattered_void",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "minecraft:overworld"
+  }
+}

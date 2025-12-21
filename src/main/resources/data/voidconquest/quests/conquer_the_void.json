@@ -1,0 +1,28 @@
+{
+  "id": "conquer_the_void",
+  "name": "Conquer the Void",
+  "description": "Kill the Void Wraith boss.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Kill the Void Wraith boss.",
+      "targetId": "",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Conquer the Void",
+  "completeMessage": "Completed: Conquer the Void!",
+  "repeatable": false,
+  "giverNpcId": ""
+}
