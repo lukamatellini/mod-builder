@@ -6,6 +6,7 @@ on:
         description: "Branch to build (e.g. build/<id>/<timestamp>)"
         required: true
         type: string
+
 jobs:
   build:
     runs-on: ubuntu-22.04
@@ -106,6 +107,19 @@ jobs:
           "
 
       # ----------------------------
+      # 6b) Verify build-plan.json exists (early sanity check)  ✅ NEW
+      # ----------------------------
+      - name: Verify build-plan.json exists
+        run: |
+          set -e
+          if [ ! -f "src/main/resources/build-plan.json" ]; then
+            echo "ERROR: build-plan.json not found in source tree"
+            echo "This indicates a template engine failure - the mod cannot be built"
+            exit 1
+          fi
+          echo "OK: build-plan.json found"
+
+      # ----------------------------
       # 7) Java + Gradle
       # ----------------------------
       - name: Set up Java 21
@@ -179,7 +193,7 @@ jobs:
           unzip -l "$JAR" | grep -q "data/$MODID/" || (echo "Missing data/$MODID/" && exit 1)
 
       # ----------------------------
-      # 11b) EXTRA QUALITY GATE (makes YAML + Lovable quality plan "in sync")
+      # 11b) EXTRA QUALITY GATE
       # ----------------------------
       - name: Validate jar has lang/models/textures + reasonable size
         env:
@@ -191,20 +205,12 @@ jobs:
           ls -lah "$JAR" || true
           JAR_SIZE=$(stat -c%s "$JAR")
           echo "Jar size bytes: $JAR_SIZE"
-
-          # Must have at least one lang file (most basic UX requirement)
           unzip -l "$JAR" | grep -q "assets/$MODID/lang/en_us.json" \
             || (echo "Missing assets/$MODID/lang/en_us.json" && exit 1)
-
-          # Must have at least one model json somewhere under models/
           unzip -l "$JAR" | grep -q "assets/$MODID/models/.*\.json" \
             || (echo "Missing any assets/$MODID/models/*.json" && exit 1)
-
-          # Must have at least one png texture somewhere under textures/
           unzip -l "$JAR" | grep -q "assets/$MODID/textures/.*\.png" \
             || (echo "Missing any assets/$MODID/textures/*.png" && exit 1)
-
-          # Safety: jar shouldn't be absurdly tiny (avoid false positives; keep low threshold)
           if [ "$JAR_SIZE" -lt 20000 ]; then
             echo "ERROR: Jar is suspiciously small (< 20KB). Likely missing content."
             exit 1
@@ -281,7 +287,7 @@ jobs:
             -d "$PAYLOAD"
 
       # ----------------------------
-      # 14) Webhook failure (STRICT + logs)
+      # 14) Webhook failure (STRICT + logs) ✅ UPDATED payload
       # ----------------------------
       - name: Notify webhook (failure)
         if: failure()
@@ -294,7 +300,12 @@ jobs:
             echo "No webhookUrl available; skipping webhook."
             exit 0
           fi
-          PAYLOAD=$(jq -n --arg modId "$MOD_UUID" --arg status "failed" '{modId:$modId,status:$status}')
+          PAYLOAD=$(jq -n \
+            --arg modId "$MOD_UUID" \
+            --arg status "failed" \
+            --argjson storage_path null \
+            --argjson storagePath null \
+            '{modId:$modId,status:$status,storage_path:$storage_path,storagePath:$storagePath}')
           echo "Webhook URL: $WEBHOOK_URL"
           echo "Payload: $PAYLOAD"
           curl --fail-with-body -sS \
@@ -302,4 +313,3 @@ jobs:
             -H "Content-Type: application/json" \
             -H "x-webhook-secret: $WEBHOOK_SECRET" \
             -d "$PAYLOAD"
-
