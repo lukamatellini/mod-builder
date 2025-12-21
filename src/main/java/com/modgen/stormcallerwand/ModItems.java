@@ -1,0 +1,30 @@
+package com.modgen.stormcallerwand;
+
+import net.minecraft.component.type.FoodComponent;
+import net.minecraft.item.*;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
+
+import com.modgen.stormcallerwand.item.LightningWandItem;
+
+public class ModItems {
+    public static final Item LIGHTNING_WAND = registerItem("lightning_wand", new LightningWandItem(new Item.Settings().maxCount(1).maxDamage(100).rarity(Rarity.RARE)));
+
+    private static Item registerItem(String name, Item item) {
+        return Registry.register(Registries.ITEM, Identifier.of(StormcallerWand.MOD_ID, name), item);
+    }
+
+    public static void registerItems() {
+        StormcallerWand.LOGGER.info("Registering items for " + StormcallerWand.MOD_ID);
+    }
+    
+    public static Item getFirstItem() {
+        return LIGHTNING_WAND;
+    }
+    
+    public static void addToCreativeTab(ItemGroup.Entries entries) {
+        entries.add(LIGHTNING_WAND);
+    }
+}
