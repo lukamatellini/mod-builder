@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "luckyomen:lucky_block",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 8,
+    "salt": 566430598
+  }
+}
