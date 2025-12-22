@@ -1,0 +1,9 @@
+{
+  "webhookUrl": "https://jhhqehkjffldkoqjqbzx.supabase.co/functions/v1/build-webhook",
+  "loader": "fabric",
+  "mcVersion": "1.21.1",
+  "modId": "6d6aef22-5d2b-432f-99be-0b9e1a37146c",
+  "modName": "Cheese Blockers",
+  "webhookSecret": "za8f3c2b1e49840b28a7c4c11d9a0de92",
+  "generatedAt": "2025-12-22T00:57:13.036Z"
+}

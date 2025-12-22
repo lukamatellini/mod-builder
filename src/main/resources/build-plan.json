@@ -1,0 +1,43 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-22T00:57:11.720Z",
+  "enabledModules": {
+    "quests": false,
+    "npcs": false,
+    "dialogue": false,
+    "trading": false,
+    "structures": true,
+    "dimensions": false,
+    "biomes": false,
+    "commands": true,
+    "items": true,
+    "mobs": false,
+    "events": false
+  },
+  "inferenceReasons": [
+    "Structures enabled: 1 structures defined in spec",
+    "Items enabled: 3 items defined in spec",
+    "Commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 3,
+    "mobs": 0,
+    "structures": 1,
+    "dimensions": 0,
+    "quests": 0,
+    "npcs": 0,
+    "events": 0
+  },
+  "expectedDataFiles": [
+    "data/cheeseblockers/worldgen/structure/salt_ore.json"
+  ],
+  "expectedAssetFiles": [
+    "assets/cheeseblockers/lang/en_us.json",
+    "assets/cheeseblockers/models/item/cheese_slice.json",
+    "assets/cheeseblockers/models/item/salt.json",
+    "assets/cheeseblockers/models/item/block_of_cheese.json"
+  ]
+}
