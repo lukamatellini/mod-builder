@@ -1,0 +1,9 @@
+{
+  "webhookUrl": "https://jhhqehkjffldkoqjqbzx.supabase.co/functions/v1/build-webhook",
+  "loader": "fabric",
+  "mcVersion": "1.21.1",
+  "modId": "22a7523c-beaa-4efa-9613-d223ebf06127",
+  "modName": "Winter Gifts",
+  "webhookSecret": "za8f3c2b1e49840b28a7c4c11d9a0de92",
+  "generatedAt": "2025-12-22T00:17:40.681Z"
+}
