@@ -1,4 +1,5 @@
 name: Build Minecraft Mod (Main-Controlled)
+
 on:
   workflow_dispatch:
     inputs:
@@ -6,10 +7,12 @@ on:
         description: "Branch to build (e.g. build/<id>/<timestamp>)"
         required: true
         type: string
+
 jobs:
   build:
     runs-on: ubuntu-22.04
     timeout-minutes: 45
+
     steps:
       # ----------------------------
       # 1) Checkout generated mod project
@@ -127,22 +130,19 @@ jobs:
           MODID: ${{ steps.modmeta.outputs.modid }}
         run: |
           set -e
-          # Check for main class
           MAIN_CLASS=$(find src/main/java -name "*.java" -type f | head -1)
           if [ -z "$MAIN_CLASS" ]; then
             echo "ERROR: No Java source files found"
             exit 1
           fi
           echo "OK: Found source files"
-          
-          # Check for assets
+
           if [ ! -d "src/main/resources/assets/$MODID" ]; then
             echo "ERROR: Missing assets directory for mod $MODID"
             exit 1
           fi
           echo "OK: Assets directory found"
-          
-          # Check for data pack
+
           if [ ! -d "src/main/resources/data/$MODID" ]; then
             echo "ERROR: Missing data directory for mod $MODID"
             exit 1
@@ -161,7 +161,7 @@ jobs:
       - name: Setup Gradle (for wrapper generation)
         uses: gradle/actions/setup-gradle@v3
         with:
-          gradle-version: "8.8"
+          gradle-version: "8.11.1"
 
       # ----------------------------
       # 8) Ensure Gradle wrapper exists
@@ -170,8 +170,8 @@ jobs:
         run: |
           set -e
           if [ ! -f "./gradlew" ]; then
-            echo "No ./gradlew found — generating wrapper with Gradle 8.8"
-            gradle wrapper --gradle-version 8.8
+            echo "No ./gradlew found — generating wrapper with Gradle 8.11.1"
+            gradle wrapper --gradle-version 8.11.1
           fi
           chmod +x ./gradlew
           ls -lah gradle/wrapper || true
@@ -199,8 +199,7 @@ jobs:
           ./gradlew --version
           ./gradlew clean build remapJar --no-daemon --info 2>&1 | tee build.log
           ls -lah build/libs || true
-          
-          # Find the remapped JAR (not sources, javadoc, or dev)
+
           JAR_FILE=$(ls -1S build/libs/*.jar 2>/dev/null | grep -vE '(sources|javadoc|dev)\.jar$' | head -n 1)
           if [ -z "$JAR_FILE" ]; then
             echo "ERROR: No distributable jar produced"
@@ -208,7 +207,7 @@ jobs:
             tail -100 build.log
             exit 1
           fi
-          
+
           echo "Found JAR: $JAR_FILE"
           echo "jar_file=$JAR_FILE" >> "$GITHUB_OUTPUT"
           echo "jar_name=$(basename "$JAR_FILE")" >> "$GITHUB_OUTPUT"
@@ -223,16 +222,14 @@ jobs:
         run: |
           set -e
           echo "Validating JAR: $JAR"
-          
-          # Core files
+
           unzip -l "$JAR" | grep -q "fabric.mod.json" || (echo "Missing fabric.mod.json in jar" && exit 1)
           unzip -l "$JAR" | grep -q "\.class$" || (echo "No compiled classes in jar" && exit 1)
           unzip -l "$JAR" | grep -q "build-plan.json" || (echo "Missing build-plan.json in jar" && exit 1)
-          
-          # Mod-specific directories
+
           unzip -l "$JAR" | grep -q "assets/$MODID/" || (echo "Missing assets/$MODID/" && exit 1)
           unzip -l "$JAR" | grep -q "data/$MODID/" || (echo "Missing data/$MODID/" && exit 1)
-          
+
           echo "OK: All core files present"
 
       # ----------------------------
@@ -248,33 +245,30 @@ jobs:
           ls -lah "$JAR" || true
           JAR_SIZE=$(stat -c%s "$JAR")
           echo "Jar size bytes: $JAR_SIZE"
-          
-          # Required assets
+
           unzip -l "$JAR" | grep -q "assets/$MODID/lang/en_us.json" \
             || (echo "Missing assets/$MODID/lang/en_us.json" && exit 1)
           unzip -l "$JAR" | grep -q "assets/$MODID/models/.*\.json" \
             || (echo "Missing any assets/$MODID/models/*.json" && exit 1)
           unzip -l "$JAR" | grep -q "assets/$MODID/textures/.*\.png" \
             || (echo "Missing any assets/$MODID/textures/*.png" && exit 1)
-          
-          # Count class files (should have multiple for a real mod)
+
           CLASS_COUNT=$(unzip -l "$JAR" | grep -c "\.class$" || echo "0")
           echo "Class files in jar: $CLASS_COUNT"
           if [ "$CLASS_COUNT" -lt 5 ]; then
             echo "ERROR: Too few class files ($CLASS_COUNT). Expected at least 5 for a real mod."
             exit 1
           fi
-          
-          # Size check (10KB minimum)
+
           if [ "$JAR_SIZE" -lt 10000 ]; then
             echo "ERROR: Jar is suspiciously small (< 10KB). Likely missing content."
             exit 1
           fi
-          
+
           echo "OK: Quality gate passed (size: ${JAR_SIZE} bytes, classes: ${CLASS_COUNT})"
 
       # ----------------------------
-      # 11c) Validate loot tables have content
+      # 11c) Validate loot tables have content (warn-only)
       # ----------------------------
       - name: Validate loot tables have content
         env:
@@ -284,18 +278,16 @@ jobs:
           set -e
           TEMP_DIR=$(mktemp -d)
           unzip -q "$JAR" -d "$TEMP_DIR"
-          
-          # Check loot tables for actual content
+
           LOOT_DIR="$TEMP_DIR/data/$MODID/loot_tables"
           if [ -d "$LOOT_DIR" ]; then
             for loot_file in $(find "$LOOT_DIR" -name "*.json" -type f 2>/dev/null); do
-              # Check if loot table has pools with entries
               if ! jq -e '.pools | length > 0' "$loot_file" > /dev/null 2>&1; then
                 echo "WARNING: Empty loot table: $loot_file"
               fi
             done
           fi
-          
+
           rm -rf "$TEMP_DIR"
           echo "OK: Loot table validation complete"
 
@@ -326,24 +318,24 @@ jobs:
           aws configure set aws_access_key_id "$R2_ACCESS_KEY_ID"
           aws configure set aws_secret_access_key "$R2_SECRET_ACCESS_KEY"
           aws configure set region auto
-          
+
           JAR_FILE="${{ steps.build.outputs.jar_file }}"
           JAR_NAME="${{ steps.build.outputs.jar_name }}"
           MOD_UUID="${{ steps.buildconfig.outputs.modUuid }}"
           TIMESTAMP=$(date +%s)
           KEY="compiled-mods/${MOD_UUID}/${TIMESTAMP}_${JAR_NAME}"
-          
+
           echo "Uploading to R2: $KEY"
           aws s3 cp "$JAR_FILE" "s3://${R2_BUCKET_NAME}/${KEY}" \
             --endpoint-url "https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com" \
             --content-type "application/java-archive"
-          
+
           if [ -n "$R2_PUBLIC_URL" ]; then
             PUBLIC_URL="${R2_PUBLIC_URL}/${KEY}"
           else
             PUBLIC_URL="https://${R2_BUCKET_NAME}.r2.dev/${KEY}"
           fi
-          
+
           echo "storage_path=$KEY" >> "$GITHUB_OUTPUT"
           echo "compiled_jar_url=$PUBLIC_URL" >> "$GITHUB_OUTPUT"
           echo "OK: Uploaded to $PUBLIC_URL"
@@ -360,8 +352,7 @@ jobs:
           MOD_UUID="${{ steps.buildconfig.outputs.modUuid }}"
           STORAGE_PATH="${{ steps.r2.outputs.storage_path }}"
           COMPILED_URL="${{ steps.r2.outputs.compiled_jar_url }}"
-          
-          # Build payload with both camelCase and snake_case for compatibility
+
           PAYLOAD=$(jq -n \
             --arg modId "$MOD_UUID" \
             --arg status "completed" \
@@ -370,23 +361,23 @@ jobs:
             --arg compiledJarUrl "$COMPILED_URL" \
             --arg compiled_jar_url "$COMPILED_URL" \
             '{modId:$modId,status:$status,storagePath:$storagePath,storage_path:$storage_path,compiledJarUrl:$compiledJarUrl,compiled_jar_url:$compiled_jar_url}')
-          
+
           echo "Webhook URL: $WEBHOOK_URL"
           echo "Payload: $PAYLOAD"
-          
+
           RESPONSE=$(curl --fail-with-body -sS \
             -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
             -H "x-webhook-secret: $WEBHOOK_SECRET" \
             -d "$PAYLOAD" \
             -w "\n%{http_code}")
-          
+
           HTTP_CODE=$(echo "$RESPONSE" | tail -1)
           BODY=$(echo "$RESPONSE" | head -n -1)
-          
+
           echo "Response code: $HTTP_CODE"
           echo "Response body: $BODY"
-          
+
           if [ "$HTTP_CODE" -lt 200 ] || [ "$HTTP_CODE" -ge 300 ]; then
             echo "ERROR: Webhook returned non-2xx status"
             exit 1
@@ -402,18 +393,17 @@ jobs:
           WEBHOOK_URL="${{ steps.buildconfig.outputs.webhookUrl }}"
           WEBHOOK_SECRET="${{ steps.buildconfig.outputs.webhookSecret }}"
           MOD_UUID="${{ steps.buildconfig.outputs.modUuid }}"
-          
+
           if [ -z "$WEBHOOK_URL" ]; then
             echo "No webhookUrl available; skipping webhook."
             exit 0
           fi
-          
-          # Try to extract error from build log
+
           ERROR_MSG="Build failed"
           if [ -f "build.log" ]; then
-            ERROR_MSG=$(grep -i "error:" build.log | head -5 | tr '\n' ' ' | cut -c1-500 || echo "Build failed - see logs")
+            ERROR_MSG=$(grep -iE "error:|FAILURE:|Exception" build.log | head -8 | tr '\n' ' ' | cut -c1-800 || echo "Build failed - see logs")
           fi
-          
+
           PAYLOAD=$(jq -n \
             --arg modId "$MOD_UUID" \
             --arg status "failed" \
@@ -421,10 +411,10 @@ jobs:
             --argjson storage_path null \
             --argjson storagePath null \
             '{modId:$modId,status:$status,error:$error,storage_path:$storage_path,storagePath:$storagePath}')
-          
+
           echo "Webhook URL: $WEBHOOK_URL"
           echo "Payload: $PAYLOAD"
-          
+
           curl --fail-with-body -sS \
             -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
@@ -441,3 +431,4 @@ jobs:
           name: build-log
           path: build.log
           retention-days: 3
+
