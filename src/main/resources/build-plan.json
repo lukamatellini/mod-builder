@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-22T00:44:49.662Z",
+  "enabledModules": {
+    "quests": false,
+    "npcs": false,
+    "dialogue": false,
+    "trading": false,
+    "structures": true,
+    "dimensions": false,
+    "biomes": false,
+    "commands": true,
+    "items": true,
+    "mobs": false,
+    "events": false
+  },
+  "inferenceReasons": [
+    "Structures enabled: 1 structures defined in spec",
+    "Items enabled: 1 items defined in spec",
+    "Commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 1,
+    "mobs": 0,
+    "structures": 1,
+    "dimensions": 0,
+    "quests": 0,
+    "npcs": 0,
+    "events": 0
+  },
+  "expectedDataFiles": [
+    "data/festiveloot/worldgen/structure/christmas_present_block.json"
+  ],
+  "expectedAssetFiles": [
+    "assets/festiveloot/lang/en_us.json",
+    "assets/festiveloot/models/item/candy_cane.json"
+  ]
+}
