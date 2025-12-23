@@ -42,6 +42,7 @@ jobs:
 
       # ----------------------------
       # 4) Read build-config.json (includes modId + webhookSecret)
+      #    HARD LOCK: enforce mcVersion === 1.21.1 and loader === fabric
       # ----------------------------
       - name: Read build-config.json
         id: buildconfig
@@ -57,26 +58,34 @@ jobs:
             if (!cfg.webhookSecret) throw new Error('build-config.json missing webhookSecret');
             if (!cfg.loader) throw new Error('build-config.json missing loader');
             if (!cfg.mcVersion) throw new Error('build-config.json missing mcVersion');
+
+            const mc = String(cfg.mcVersion).trim();
+            const loader = String(cfg.loader).trim();
+
+            if (loader !== 'fabric') throw new Error('Only fabric loader is supported (got: ' + loader + ')');
+            if (mc !== '1.21.1') throw new Error('Only Minecraft 1.21.1 is supported (got: ' + mc + ')');
+
             const url = String(cfg.webhookUrl).trim();
             if (!/^https?:\\/\\//.test(url)) throw new Error('webhookUrl must start with http:// or https://');
             const modUuid = String(cfg.modId).trim();
             const uuidRe = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$/;
             if (!uuidRe.test(modUuid)) throw new Error('modId is not a valid UUID: ' + modUuid);
+
             console.log('::add-mask::' + String(cfg.webhookSecret).trim());
             const out = process.env.GITHUB_OUTPUT;
             fs.appendFileSync(out, 'modUuid=' + modUuid + '\\n');
             fs.appendFileSync(out, 'webhookUrl=' + url + '\\n');
             fs.appendFileSync(out, 'webhookSecret=' + String(cfg.webhookSecret).trim() + '\\n');
-            fs.appendFileSync(out, 'loader=' + String(cfg.loader).trim() + '\\n');
-            fs.appendFileSync(out, 'mcVersion=' + String(cfg.mcVersion).trim() + '\\n');
+            fs.appendFileSync(out, 'loader=' + loader + '\\n');
+            fs.appendFileSync(out, 'mcVersion=' + mc + '\\n');
             fs.appendFileSync(out, 'modName=' + String(cfg.modName || 'Minecraft Mod').trim() + '\\n');
           "
 
       # ----------------------------
-      # 5) STRICT GUARDRAILS - Explicit Allowlist (NO WILDCARDS)
-      #    IMPORTANT: 1.21.4 Fabric API is 0.119.4+1.21.4 (NOT 0.119.5+1.21.4)
+      # 5) STRICT GUARDRAILS - HARD LOCK (NO WILDCARDS)
+      #    Only Minecraft 1.21.1 is allowed in single-version mode.
       # ----------------------------
-      - name: Guardrails - Strict version allowlist
+      - name: Guardrails - Hard lock Minecraft 1.21.1
         id: guardrails
         run: |
           set -e
@@ -88,45 +97,21 @@ jobs:
             exit 1
           fi
 
-          case "$MC_VERSION" in
-            1.21.4)
-              GRADLE_VER="8.11.1"
-              LOOM_VER="1.9.2"
-              YARN_VER="1.21.4+build.8"
-              LOADER_VER="0.16.9"
-              FABRIC_API_VER="0.119.4+1.21.4"
-              ;;
-            1.21.3)
-              GRADLE_VER="8.10.2"
-              LOOM_VER="1.8.12"
-              YARN_VER="1.21.3+build.2"
-              LOADER_VER="0.16.9"
-              FABRIC_API_VER="0.112.2+1.21.3"
-              ;;
-            1.21.1)
-              GRADLE_VER="8.10.2"
-              LOOM_VER="1.8.12"
-              YARN_VER="1.21.1+build.3"
-              LOADER_VER="0.16.9"
-              FABRIC_API_VER="0.116.7+1.21.1"
-              ;;
-            *)
-              echo "============================================"
-              echo "ERROR: Minecraft $MC_VERSION is NOT supported"
-              echo "============================================"
-              echo ""
-              echo "Allowed versions (strict allowlist):"
-              echo "  - 1.21.4"
-              echo "  - 1.21.3"
-              echo "  - 1.21.1"
-              echo ""
-              echo "This is a HARD FAIL. No wildcards, no fallbacks."
-              exit 1
-              ;;
-          esac
+          if [ "$MC_VERSION" != "1.21.1" ]; then
+            echo "============================================"
+            echo "ERROR: Only Minecraft 1.21.1 is supported"
+            echo "Got: $MC_VERSION"
+            echo "============================================"
+            exit 1
+          fi
 
-          echo "OK: Minecraft $MC_VERSION is in allowlist"
+          GRADLE_VER="8.10.2"
+          LOOM_VER="1.8.12"
+          YARN_VER="1.21.1+build.3"
+          LOADER_VER="0.16.9"
+          FABRIC_API_VER="0.116.7+1.21.1"
 
+          echo "OK: Minecraft $MC_VERSION is allowed (hard lock)"
           echo "gradle_version=$GRADLE_VER" >> "$GITHUB_OUTPUT"
           echo "loom_version=$LOOM_VER" >> "$GITHUB_OUTPUT"
           echo "yarn_version=$YARN_VER" >> "$GITHUB_OUTPUT"
@@ -143,7 +128,7 @@ jobs:
           echo "  Fabric API:$FABRIC_API_VER"
 
       # ----------------------------
-      # 6) Validate fabric.mod.json
+      # 6) Validate fabric.mod.json (HARD LOCK depends.minecraft)
       # ----------------------------
       - name: Validate fabric.mod.json
         id: modmeta
@@ -156,6 +141,8 @@ jobs:
             const meta = JSON.parse(fs.readFileSync(p, 'utf8'));
             if (!meta.id) throw new Error('fabric.mod.json missing id');
             if (!meta.depends || !meta.depends.minecraft) throw new Error('fabric.mod.json missing depends.minecraft');
+            const mc = String(meta.depends.minecraft).trim();
+            if (mc !== '1.21.1') throw new Error('fabric.mod.json depends.minecraft must be exactly 1.21.1 (got: ' + mc + ')');
             const out = process.env.GITHUB_OUTPUT;
             fs.appendFileSync(out, 'modid=' + meta.id + '\\n');
           "
@@ -187,13 +174,11 @@ jobs:
             exit 1
           fi
           echo "OK: Found source files"
-
           if [ ! -d "src/main/resources/assets/$MODID" ]; then
             echo "ERROR: Missing assets directory for mod $MODID"
             exit 1
           fi
           echo "OK: Assets directory found"
-
           if [ ! -d "src/main/resources/data/$MODID" ]; then
             echo "ERROR: Missing data directory for mod $MODID"
             exit 1
@@ -216,37 +201,29 @@ jobs:
           set -e
           echo "=== Validating toolchain for MC $MC_VERSION ==="
           ERRORS=0
-
           # ---- gradle.properties ----
           if [ -f gradle.properties ]; then
             ACTUAL_MC=$(grep "^minecraft_version=" gradle.properties | cut -d'=' -f2 | tr -d ' \r')
             ACTUAL_YARN=$(grep "^yarn_mappings=" gradle.properties | cut -d'=' -f2 | tr -d ' \r')
             ACTUAL_LOADER=$(grep "^loader_version=" gradle.properties | cut -d'=' -f2 | tr -d ' \r')
             ACTUAL_FABRIC=$(grep "^fabric_version=" gradle.properties | cut -d'=' -f2 | tr -d ' \r')
-
             echo "minecraft_version: $ACTUAL_MC (expected: $MC_VERSION)"
             [ "$ACTUAL_MC" = "$MC_VERSION" ] || (echo "ERROR: minecraft_version mismatch" && ERRORS=$((ERRORS+1)))
-
             echo "yarn_mappings:     $ACTUAL_YARN (expected: $EXPECTED_YARN)"
             [ "$ACTUAL_YARN" = "$EXPECTED_YARN" ] || (echo "ERROR: yarn_mappings mismatch" && ERRORS=$((ERRORS+1)))
-
             echo "loader_version:   $ACTUAL_LOADER (expected: $EXPECTED_LOADER)"
             [ "$ACTUAL_LOADER" = "$EXPECTED_LOADER" ] || (echo "ERROR: loader_version mismatch" && ERRORS=$((ERRORS+1)))
-
             echo "fabric_version:   $ACTUAL_FABRIC (expected: $EXPECTED_FABRIC_API)"
             [ "$ACTUAL_FABRIC" = "$EXPECTED_FABRIC_API" ] || (echo "ERROR: fabric_version mismatch" && ERRORS=$((ERRORS+1)))
           else
             echo "ERROR: gradle.properties not found"
             ERRORS=$((ERRORS+1))
           fi
-
           echo ""
-
           # ---- build.gradle / build.gradle.kts (loom plugin) ----
           GRADLE_FILE=""
           if [ -f build.gradle ]; then GRADLE_FILE="build.gradle"; fi
           if [ -f build.gradle.kts ]; then GRADLE_FILE="build.gradle.kts"; fi
-
           if [ -n "$GRADLE_FILE" ]; then
             echo "Checking $GRADLE_FILE for Loom version..."
             ACTUAL_LOOM=$(grep -oP "fabric-loom['\"]?\s+version\s+['\"]?\K[0-9.]+" "$GRADLE_FILE" 2>/dev/null || \
@@ -263,9 +240,7 @@ jobs:
             echo "ERROR: build.gradle(.kts) not found"
             ERRORS=$((ERRORS+1))
           fi
-
           echo ""
-
           # ---- gradle wrapper ----
           if [ -f gradle/wrapper/gradle-wrapper.properties ]; then
             ACTUAL_GRADLE=$(grep -oP "gradle-\K[0-9.]+" gradle/wrapper/gradle-wrapper.properties | head -1)
@@ -274,7 +249,6 @@ jobs:
           else
             echo "NOTE: gradle-wrapper.properties not found yet (will be generated)"
           fi
-
           echo ""
           if [ $ERRORS -gt 0 ]; then
             echo "============================================"
@@ -288,7 +262,6 @@ jobs:
             echo "  Fabric API:$EXPECTED_FABRIC_API"
             exit 1
           fi
-
           echo "=== Toolchain validation PASSED ==="
 
       # ----------------------------
@@ -301,7 +274,7 @@ jobs:
           java-version: "21"
 
       # ----------------------------
-      # 9) Setup Gradle (dynamic version from allowlist)
+      # 9) Setup Gradle (dynamic version from guardrails)
       # ----------------------------
       - name: Setup Gradle (dynamic version)
         uses: gradle/actions/setup-gradle@v3
@@ -317,7 +290,6 @@ jobs:
         run: |
           set -e
           echo "Required Gradle version: $GRADLE_VERSION"
-
           if [ ! -f "./gradlew" ]; then
             echo "No ./gradlew found — generating wrapper with Gradle $GRADLE_VERSION"
             gradle wrapper --gradle-version "$GRADLE_VERSION"
@@ -333,7 +305,6 @@ jobs:
               fi
             fi
           fi
-
           chmod +x ./gradlew
           ls -lah gradle/wrapper || true
 
@@ -360,7 +331,6 @@ jobs:
           ./gradlew --version
           ./gradlew clean build remapJar --no-daemon --info 2>&1 | tee build.log
           ls -lah build/libs || true
-
           JAR_FILE=$(ls -1S build/libs/*.jar 2>/dev/null | grep -vE '(sources|javadoc|dev)\.jar$' | head -n 1)
           if [ -z "$JAR_FILE" ]; then
             echo "ERROR: No distributable jar produced"
@@ -368,7 +338,6 @@ jobs:
             tail -100 build.log
             exit 1
           fi
-
           echo "Found JAR: $JAR_FILE"
           echo "jar_file=$JAR_FILE" >> "$GITHUB_OUTPUT"
           echo "jar_name=$(basename "$JAR_FILE")" >> "$GITHUB_OUTPUT"
@@ -403,14 +372,12 @@ jobs:
           ls -lah "$JAR" || true
           JAR_SIZE=$(stat -c%s "$JAR")
           echo "Jar size bytes: $JAR_SIZE"
-
           unzip -l "$JAR" | grep -q "assets/$MODID/lang/en_us.json" \
             || (echo "Missing assets/$MODID/lang/en_us.json" && exit 1)
           unzip -l "$JAR" | grep -q "assets/$MODID/models/.*\.json" \
             || (echo "Missing any assets/$MODID/models/*.json" && exit 1)
           unzip -l "$JAR" | grep -q "assets/$MODID/textures/.*\.png" \
             || (echo "Missing any assets/$MODID/textures/*.png" && exit 1)
-
           CLASS_COUNT=$(unzip -l "$JAR" | grep -c "\.class$" || echo "0")
           echo "Class files in jar: $CLASS_COUNT"
           if [ "$CLASS_COUNT" -lt 5 ]; then
@@ -472,24 +439,20 @@ jobs:
           aws configure set aws_access_key_id "$R2_ACCESS_KEY_ID"
           aws configure set aws_secret_access_key "$R2_SECRET_ACCESS_KEY"
           aws configure set region auto
-
           JAR_FILE="${{ steps.build.outputs.jar_file }}"
           JAR_NAME="${{ steps.build.outputs.jar_name }}"
           MOD_UUID="${{ steps.buildconfig.outputs.modUuid }}"
           TIMESTAMP=$(date +%s)
           KEY="compiled-mods/${MOD_UUID}/${TIMESTAMP}_${JAR_NAME}"
-
           echo "Uploading to R2: $KEY"
           aws s3 cp "$JAR_FILE" "s3://${R2_BUCKET_NAME}/${KEY}" \
             --endpoint-url "https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com" \
             --content-type "application/java-archive"
-
           if [ -n "$R2_PUBLIC_URL" ]; then
             PUBLIC_URL="${R2_PUBLIC_URL}/${KEY}"
           else
             PUBLIC_URL="https://${R2_BUCKET_NAME}.r2.dev/${KEY}"
           fi
-
           echo "storage_path=$KEY" >> "$GITHUB_OUTPUT"
           echo "compiled_jar_url=$PUBLIC_URL" >> "$GITHUB_OUTPUT"
           echo "OK: Uploaded to $PUBLIC_URL"
@@ -506,7 +469,6 @@ jobs:
           MOD_UUID="${{ steps.buildconfig.outputs.modUuid }}"
           STORAGE_PATH="${{ steps.r2.outputs.storage_path }}"
           COMPILED_URL="${{ steps.r2.outputs.compiled_jar_url }}"
-
           PAYLOAD=$(jq -n \
             --arg modId "$MOD_UUID" \
             --arg status "completed" \
@@ -515,20 +477,16 @@ jobs:
             --arg compiledJarUrl "$COMPILED_URL" \
             --arg compiled_jar_url "$COMPILED_URL" \
             '{modId:$modId,status:$status,storagePath:$storagePath,storage_path:$storage_path,compiledJarUrl:$compiledJarUrl,compiled_jar_url:$compiled_jar_url}')
-
           RESPONSE=$(curl --fail-with-body -sS \
             -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
             -H "x-webhook-secret: $WEBHOOK_SECRET" \
             -d "$PAYLOAD" \
             -w "\n%{http_code}")
-
           HTTP_CODE=$(echo "$RESPONSE" | tail -1)
           BODY=$(echo "$RESPONSE" | head -n -1)
-
           echo "Response code: $HTTP_CODE"
           echo "Response body: $BODY"
-
           if [ "$HTTP_CODE" -lt 200 ] || [ "$HTTP_CODE" -ge 300 ]; then
             echo "ERROR: Webhook returned non-2xx status"
             exit 1
@@ -544,17 +502,14 @@ jobs:
           WEBHOOK_URL="${{ steps.buildconfig.outputs.webhookUrl }}"
           WEBHOOK_SECRET="${{ steps.buildconfig.outputs.webhookSecret }}"
           MOD_UUID="${{ steps.buildconfig.outputs.modUuid }}"
-
           if [ -z "$WEBHOOK_URL" ]; then
             echo "No webhookUrl available; skipping webhook."
             exit 0
           fi
-
           ERROR_MSG="Build failed"
           if [ -f "build.log" ]; then
             ERROR_MSG=$(grep -iE "error:|FAILURE:|Exception" build.log | head -8 | tr '\n' ' ' | cut -c1-800 || echo "Build failed - see logs")
           fi
-
           PAYLOAD=$(jq -n \
             --arg modId "$MOD_UUID" \
             --arg status "failed" \
@@ -562,7 +517,6 @@ jobs:
             --argjson storage_path null \
             --argjson storagePath null \
             '{modId:$modId,status:$status,error:$error,storage_path:$storage_path,storagePath:$storagePath}')
-
           curl --fail-with-body -sS \
             -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
