@@ -1,0 +1,9 @@
+{
+  "webhookUrl": "https://jhhqehkjffldkoqjqbzx.supabase.co/functions/v1/build-webhook",
+  "loader": "fabric",
+  "mcVersion": "1.21.4",
+  "modId": "9d36130f-59aa-4d1a-aa2c-8e9e41e4dffb",
+  "modName": "Lucky Surprises",
+  "webhookSecret": "za8f3c2b1e49840b28a7c4c11d9a0de92",
+  "generatedAt": "2025-12-23T11:31:36.536Z"
+}
