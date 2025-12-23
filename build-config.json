@@ -1,0 +1,9 @@
+{
+  "webhookUrl": "https://jhhqehkjffldkoqjqbzx.supabase.co/functions/v1/build-webhook",
+  "loader": "fabric",
+  "mcVersion": "1.21.4",
+  "modId": "f3581c0f-3976-4680-b9c3-e93835ec8a69",
+  "modName": "Skybolt Wand",
+  "webhookSecret": "za8f3c2b1e49840b28a7c4c11d9a0de92",
+  "generatedAt": "2025-12-23T02:44:35.954Z"
+}
