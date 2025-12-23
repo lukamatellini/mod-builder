@@ -1,0 +1,19 @@
+{
+  "npcId": "cloud_weaver",
+  "npcName": "Cloud Weaver",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "My wares are woven from the clouds themselves. They offer protection from the Aether's harsh magic."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

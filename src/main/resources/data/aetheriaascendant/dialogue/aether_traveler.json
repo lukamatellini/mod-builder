@@ -1,0 +1,19 @@
+{
+  "npcId": "aether_traveler",
+  "npcName": "Aether Traveler",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "Greetings, adventurer! The Aether is a perilous, yet magical place. Seek out the Celestial Guardian for true power!"
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

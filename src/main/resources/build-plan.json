@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21.1",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-23T03:08:38.192Z",
+  "enabledModules": {
+    "quests": false,
+    "npcs": true,
+    "dialogue": true,
+    "trading": true,
+    "structures": true,
+    "dimensions": true,
+    "biomes": true,
+    "commands": true,
+    "items": true,
+    "mobs": true,
+    "events": false
+  },
+  "inferenceReasons": [
+    "NPC system enabled: 2 NPCs defined in spec",
+    "Dialogue UI enabled: NPCs require dialogue system",
+    "Trading system enabled: 2 NPCs have trades defined",
+    "Reputation system enabled: Trading requires reputation tracking",
+    "Structures enabled: 3 structures defined in spec",
+    "Dimensions enabled: 1 dimensions defined in spec",
+    "Biomes enabled: 1 biomes defined in spec",
+    "Items enabled: 6 items defined in spec",
+    "Mobs enabled: 3 mobs defined in spec",
+    "Commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 6,
+    "mobs": 3,
+    "structures": 3,
+    "dimensions": 1,
+    "quests": 0,
+    "npcs": 2,
+    "events": 0
+  },
+  "expectedDataFiles": [
+    "data/aetheriaascendant/dialogue/aether_traveler.json",
+    "data/aetheriaascendant/dialogue/cloud_weaver.json",
+    "data/aetheriaascendant/dimension/aether.json",
+    "data/aetheriaascendant/dimension_type/aether.json",
+    "data/aetheriaascendant/worldgen/structure/sky_temple.json",
+    "data/aetheriaascendant/worldgen/structure/cloud_village.json",
+    "data/aetheriaascendant/worldgen/structure/aether_structure.json"
+  ],
+  "expectedAssetFiles": [
+    "assets/aetheriaascendant/lang/en_us.json",
+    "assets/aetheriaascendant/models/item/thunder_wand.json",
+    "assets/aetheriaascendant/models/item/aether_blade.json",
+    "assets/aetheriaascendant/models/item/cloud_strider_boots.json",
+    "assets/aetheriaascendant/models/item/healing_staff.json",
+    "assets/aetheriaascendant/models/item/teleportation_scroll.json",
+    "assets/aetheriaascendant/models/item/aether_portal_igniter.json"
+  ]
+}

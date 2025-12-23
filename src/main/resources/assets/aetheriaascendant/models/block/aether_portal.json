@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "aetheriaascendant:block/aether_portal",
+    "particle": "aetheriaascendant:block/aether_portal"
+  },
+  "render_type": "translucent"
+}

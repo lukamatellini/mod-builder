@@ -1,0 +1,9 @@
+{
+  "webhookUrl": "https://jhhqehkjffldkoqjqbzx.supabase.co/functions/v1/build-webhook",
+  "loader": "fabric",
+  "mcVersion": "1.21.4",
+  "modId": "06182f1e-0730-40b9-9476-9135f9607b1d",
+  "modName": "Aetheria Ascendant",
+  "webhookSecret": "za8f3c2b1e49840b28a7c4c11d9a0de92",
+  "generatedAt": "2025-12-23T03:08:39.911Z"
+}

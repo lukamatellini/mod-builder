@@ -1,0 +1,18 @@
+{
+  "itemGroup.aetheriaascendant.main": "Aetheria Ascendant",
+  "item.aetheriaascendant.thunder_wand": "Thunder Wand",
+  "item.aetheriaascendant.aether_blade": "Aether Blade",
+  "item.aetheriaascendant.cloud_strider_boots": "Cloud Strider Boots",
+  "item.aetheriaascendant.healing_staff": "Healing Staff",
+  "item.aetheriaascendant.teleportation_scroll": "Teleportation Scroll",
+  "item.aetheriaascendant.aether_portal_igniter": "The Aether Portal Key",
+  "entity.aetheriaascendant.aether_golem": "Aether Golem",
+  "entity.aetheriaascendant.cloud_serpent": "Cloud Serpent",
+  "entity.aetheriaascendant.celestial_guardian": "Celestial Guardian",
+  "structure.aetheriaascendant.sky_temple": "Sky Temple",
+  "structure.aetheriaascendant.cloud_village": "Cloud Village",
+  "structure.aetheriaascendant.aether_structure": "The Aether Sanctuary",
+  "npc.aetheriaascendant.aether_traveler": "Aether Traveler",
+  "npc.aetheriaascendant.cloud_weaver": "Cloud Weaver",
+  "dimension.aetheriaascendant.aether": "The Aether"
+}
