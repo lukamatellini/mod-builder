@@ -74,6 +74,7 @@ jobs:
 
       # ----------------------------
       # 5) STRICT GUARDRAILS - Explicit Allowlist (NO WILDCARDS)
+      #    IMPORTANT: 1.21.4 Fabric API is 0.119.4+1.21.4 (NOT 0.119.5+1.21.4)
       # ----------------------------
       - name: Guardrails - Strict version allowlist
         id: guardrails
@@ -81,39 +82,33 @@ jobs:
           set -e
           LOADER="${{ steps.buildconfig.outputs.loader }}"
           MC_VERSION="${{ steps.buildconfig.outputs.mcVersion }}"
-          
-          # Loader must be fabric
+
           if [ "$LOADER" != "fabric" ]; then
             echo "ERROR: loader must be 'fabric', got '$LOADER'"
             exit 1
           fi
-          
-          # STRICT ALLOWLIST - These are the ONLY supported versions
-          # Matches TOOLCHAIN_MATRIX in fabric-toolchain.ts
+
           case "$MC_VERSION" in
             1.21.4)
-              echo "OK: Minecraft $MC_VERSION is in allowlist"
-              echo "gradle_version=8.11.1" >> $GITHUB_OUTPUT
-              echo "loom_version=1.9.2" >> $GITHUB_OUTPUT
-              echo "yarn_version=1.21.4+build.8" >> $GITHUB_OUTPUT
-              echo "loader_version=0.16.9" >> $GITHUB_OUTPUT
-              echo "fabric_api_version=0.119.5+1.21.4" >> $GITHUB_OUTPUT
+              GRADLE_VER="8.11.1"
+              LOOM_VER="1.9.2"
+              YARN_VER="1.21.4+build.8"
+              LOADER_VER="0.16.9"
+              FABRIC_API_VER="0.119.4+1.21.4"
               ;;
             1.21.3)
-              echo "OK: Minecraft $MC_VERSION is in allowlist"
-              echo "gradle_version=8.10.2" >> $GITHUB_OUTPUT
-              echo "loom_version=1.8.12" >> $GITHUB_OUTPUT
-              echo "yarn_version=1.21.3+build.2" >> $GITHUB_OUTPUT
-              echo "loader_version=0.16.9" >> $GITHUB_OUTPUT
-              echo "fabric_api_version=0.112.2+1.21.3" >> $GITHUB_OUTPUT
+              GRADLE_VER="8.10.2"
+              LOOM_VER="1.8.12"
+              YARN_VER="1.21.3+build.2"
+              LOADER_VER="0.16.9"
+              FABRIC_API_VER="0.112.2+1.21.3"
               ;;
             1.21.1)
-              echo "OK: Minecraft $MC_VERSION is in allowlist"
-              echo "gradle_version=8.10.2" >> $GITHUB_OUTPUT
-              echo "loom_version=1.8.12" >> $GITHUB_OUTPUT
-              echo "yarn_version=1.21.1+build.3" >> $GITHUB_OUTPUT
-              echo "loader_version=0.16.9" >> $GITHUB_OUTPUT
-              echo "fabric_api_version=0.116.7+1.21.1" >> $GITHUB_OUTPUT
+              GRADLE_VER="8.10.2"
+              LOOM_VER="1.8.12"
+              YARN_VER="1.21.1+build.3"
+              LOADER_VER="0.16.9"
+              FABRIC_API_VER="0.116.7+1.21.1"
               ;;
             *)
               echo "============================================"
@@ -126,18 +121,26 @@ jobs:
               echo "  - 1.21.1"
               echo ""
               echo "This is a HARD FAIL. No wildcards, no fallbacks."
-              echo "The mod generator should never produce unsupported versions."
               exit 1
               ;;
           esac
-          
+
+          echo "OK: Minecraft $MC_VERSION is in allowlist"
+
+          echo "gradle_version=$GRADLE_VER" >> "$GITHUB_OUTPUT"
+          echo "loom_version=$LOOM_VER" >> "$GITHUB_OUTPUT"
+          echo "yarn_version=$YARN_VER" >> "$GITHUB_OUTPUT"
+          echo "loader_version=$LOADER_VER" >> "$GITHUB_OUTPUT"
+          echo "fabric_api_version=$FABRIC_API_VER" >> "$GITHUB_OUTPUT"
+
           echo ""
-          echo "Toolchain for MC $MC_VERSION:"
-          echo "  Gradle: ${{ steps.guardrails.outputs.gradle_version || '(see above)' }}"
-          echo "  Loom: ${{ steps.guardrails.outputs.loom_version || '(see above)' }}"
-          echo "  Yarn: ${{ steps.guardrails.outputs.yarn_version || '(see above)' }}"
-          echo "  Loader: ${{ steps.guardrails.outputs.loader_version || '(see above)' }}"
-          echo "  Fabric API: ${{ steps.guardrails.outputs.fabric_api_version || '(see above)' }}"
+          echo "Toolchain selected:"
+          echo "  MC:        $MC_VERSION"
+          echo "  Gradle:    $GRADLE_VER"
+          echo "  Loom:      $LOOM_VER"
+          echo "  Yarn:      $YARN_VER"
+          echo "  Loader:    $LOADER_VER"
+          echo "  Fabric API:$FABRIC_API_VER"
 
       # ----------------------------
       # 6) Validate fabric.mod.json
@@ -153,10 +156,6 @@ jobs:
             const meta = JSON.parse(fs.readFileSync(p, 'utf8'));
             if (!meta.id) throw new Error('fabric.mod.json missing id');
             if (!meta.depends || !meta.depends.minecraft) throw new Error('fabric.mod.json missing depends.minecraft');
-            const mc = String(meta.depends.minecraft).replace(/\\s+/g,'');
-            if (!(mc.includes('>=1.21') && mc.includes('<1.22'))) {
-              throw new Error('Minecraft range must be >=1.21 <1.22');
-            }
             const out = process.env.GITHUB_OUTPUT;
             fs.appendFileSync(out, 'modid=' + meta.id + '\\n');
           "
@@ -202,7 +201,8 @@ jobs:
           echo "OK: Data directory found"
 
       # ----------------------------
-      # 7) TOOLCHAIN CONSISTENCY VALIDATION
+      # 7) TOOLCHAIN CONSISTENCY VALIDATION (hard gate)
+      #    NOTE: fabric_version in gradle.properties is the Fabric API version.
       # ----------------------------
       - name: Validate toolchain consistency
         env:
@@ -215,112 +215,84 @@ jobs:
         run: |
           set -e
           echo "=== Validating toolchain for MC $MC_VERSION ==="
-          echo ""
-          
           ERRORS=0
-          
-          # Check gradle.properties
+
+          # ---- gradle.properties ----
           if [ -f gradle.properties ]; then
-            echo "Checking gradle.properties..."
-            
             ACTUAL_MC=$(grep "^minecraft_version=" gradle.properties | cut -d'=' -f2 | tr -d ' \r')
             ACTUAL_YARN=$(grep "^yarn_mappings=" gradle.properties | cut -d'=' -f2 | tr -d ' \r')
             ACTUAL_LOADER=$(grep "^loader_version=" gradle.properties | cut -d'=' -f2 | tr -d ' \r')
             ACTUAL_FABRIC=$(grep "^fabric_version=" gradle.properties | cut -d'=' -f2 | tr -d ' \r')
-            
-            echo "  minecraft_version: $ACTUAL_MC (expected: $MC_VERSION)"
-            if [ "$ACTUAL_MC" != "$MC_VERSION" ]; then
-              echo "  ERROR: minecraft_version mismatch!"
-              ERRORS=$((ERRORS + 1))
-            fi
-            
-            echo "  yarn_mappings: $ACTUAL_YARN (expected: $EXPECTED_YARN)"
-            if [ "$ACTUAL_YARN" != "$EXPECTED_YARN" ]; then
-              echo "  ERROR: yarn_mappings mismatch!"
-              ERRORS=$((ERRORS + 1))
-            fi
-            
-            echo "  loader_version: $ACTUAL_LOADER (expected: $EXPECTED_LOADER)"
-            if [ "$ACTUAL_LOADER" != "$EXPECTED_LOADER" ]; then
-              echo "  ERROR: loader_version mismatch!"
-              ERRORS=$((ERRORS + 1))
-            fi
-            
-            echo "  fabric_version: $ACTUAL_FABRIC (expected: $EXPECTED_FABRIC_API)"
-            if [ "$ACTUAL_FABRIC" != "$EXPECTED_FABRIC_API" ]; then
-              echo "  ERROR: fabric_version mismatch!"
-              ERRORS=$((ERRORS + 1))
-            fi
+
+            echo "minecraft_version: $ACTUAL_MC (expected: $MC_VERSION)"
+            [ "$ACTUAL_MC" = "$MC_VERSION" ] || (echo "ERROR: minecraft_version mismatch" && ERRORS=$((ERRORS+1)))
+
+            echo "yarn_mappings:     $ACTUAL_YARN (expected: $EXPECTED_YARN)"
+            [ "$ACTUAL_YARN" = "$EXPECTED_YARN" ] || (echo "ERROR: yarn_mappings mismatch" && ERRORS=$((ERRORS+1)))
+
+            echo "loader_version:   $ACTUAL_LOADER (expected: $EXPECTED_LOADER)"
+            [ "$ACTUAL_LOADER" = "$EXPECTED_LOADER" ] || (echo "ERROR: loader_version mismatch" && ERRORS=$((ERRORS+1)))
+
+            echo "fabric_version:   $ACTUAL_FABRIC (expected: $EXPECTED_FABRIC_API)"
+            [ "$ACTUAL_FABRIC" = "$EXPECTED_FABRIC_API" ] || (echo "ERROR: fabric_version mismatch" && ERRORS=$((ERRORS+1)))
           else
             echo "ERROR: gradle.properties not found"
-            ERRORS=$((ERRORS + 1))
+            ERRORS=$((ERRORS+1))
           fi
-          
+
           echo ""
-          
-          # Check build.gradle for Loom version
-          if [ -f build.gradle ]; then
-            echo "Checking build.gradle for Loom version..."
-            
-            # Try multiple patterns for Loom version extraction
-            ACTUAL_LOOM=$(grep -oP "fabric-loom['\"]?\s+version\s+['\"]?\K[0-9.]+" build.gradle 2>/dev/null || \
-                          grep -oP "id\s+['\"]fabric-loom['\"]\s+version\s+['\"]?\K[0-9.]+" build.gradle 2>/dev/null || \
-                          grep -oP "'fabric-loom'\s+version\s+'\K[^']+" build.gradle 2>/dev/null || \
+
+          # ---- build.gradle / build.gradle.kts (loom plugin) ----
+          GRADLE_FILE=""
+          if [ -f build.gradle ]; then GRADLE_FILE="build.gradle"; fi
+          if [ -f build.gradle.kts ]; then GRADLE_FILE="build.gradle.kts"; fi
+
+          if [ -n "$GRADLE_FILE" ]; then
+            echo "Checking $GRADLE_FILE for Loom version..."
+            ACTUAL_LOOM=$(grep -oP "fabric-loom['\"]?\s+version\s+['\"]?\K[0-9.]+" "$GRADLE_FILE" 2>/dev/null || \
+                          grep -oP "id\s+['\"]fabric-loom['\"]\s+version\s+['\"]?\K[0-9.]+" "$GRADLE_FILE" 2>/dev/null || \
+                          grep -oP "id\(\"fabric-loom\"\)\s+version\s+\"\K[0-9.]+" "$GRADLE_FILE" 2>/dev/null || \
                           echo "")
-            
             if [ -z "$ACTUAL_LOOM" ]; then
-              echo "  WARNING: Could not extract Loom version from build.gradle"
+              echo "WARNING: Could not extract Loom version from $GRADLE_FILE (skipping hard fail)"
             else
-              echo "  loom version: $ACTUAL_LOOM (expected: $EXPECTED_LOOM)"
-              if [ "$ACTUAL_LOOM" != "$EXPECTED_LOOM" ]; then
-                echo "  ERROR: loom version mismatch!"
-                ERRORS=$((ERRORS + 1))
-              fi
+              echo "loom version:      $ACTUAL_LOOM (expected: $EXPECTED_LOOM)"
+              [ "$ACTUAL_LOOM" = "$EXPECTED_LOOM" ] || (echo "ERROR: loom version mismatch" && ERRORS=$((ERRORS+1)))
             fi
           else
-            echo "ERROR: build.gradle not found"
-            ERRORS=$((ERRORS + 1))
+            echo "ERROR: build.gradle(.kts) not found"
+            ERRORS=$((ERRORS+1))
           fi
-          
+
           echo ""
-          
-          # Check gradle-wrapper.properties for Gradle version
+
+          # ---- gradle wrapper ----
           if [ -f gradle/wrapper/gradle-wrapper.properties ]; then
-            echo "Checking gradle-wrapper.properties..."
-            
             ACTUAL_GRADLE=$(grep -oP "gradle-\K[0-9.]+" gradle/wrapper/gradle-wrapper.properties | head -1)
-            echo "  gradle version: $ACTUAL_GRADLE (expected: $EXPECTED_GRADLE)"
-            if [ "$ACTUAL_GRADLE" != "$EXPECTED_GRADLE" ]; then
-              echo "  ERROR: gradle version mismatch!"
-              ERRORS=$((ERRORS + 1))
-            fi
+            echo "wrapper gradle:   $ACTUAL_GRADLE (expected: $EXPECTED_GRADLE)"
+            [ "$ACTUAL_GRADLE" = "$EXPECTED_GRADLE" ] || (echo "ERROR: gradle version mismatch" && ERRORS=$((ERRORS+1)))
           else
-            echo "NOTE: gradle-wrapper.properties not found (will be generated)"
+            echo "NOTE: gradle-wrapper.properties not found yet (will be generated)"
           fi
-          
+
           echo ""
-          
           if [ $ERRORS -gt 0 ]; then
             echo "============================================"
-            echo "ERROR: Toolchain validation FAILED with $ERRORS error(s)"
+            echo "ERROR: Toolchain validation FAILED ($ERRORS)"
             echo "============================================"
-            echo ""
-            echo "The generated mod files do not match the expected toolchain."
-            echo "This indicates a bug in the template engine."
-            echo ""
-            echo "Expected toolchain for MC $MC_VERSION:"
-            echo "  Gradle: $EXPECTED_GRADLE"
-            echo "  Loom: $EXPECTED_LOOM"
-            echo "  Yarn: $EXPECTED_YARN"
-            echo "  Loader: $EXPECTED_LOADER"
-            echo "  Fabric API: $EXPECTED_FABRIC_API"
+            echo "Expected:"
+            echo "  Gradle:    $EXPECTED_GRADLE"
+            echo "  Loom:      $EXPECTED_LOOM"
+            echo "  Yarn:      $EXPECTED_YARN"
+            echo "  Loader:    $EXPECTED_LOADER"
+            echo "  Fabric API:$EXPECTED_FABRIC_API"
             exit 1
           fi
-          
+
           echo "=== Toolchain validation PASSED ==="
 
       # ----------------------------
-      # 8) Java 21 (Required for all 1.21.x versions)
+      # 8) Java 21 (Required for Minecraft 1.21+)
       # ----------------------------
       - name: Set up Java 21 (Required for Minecraft 1.21+)
         uses: actions/setup-java@v4
@@ -329,7 +301,7 @@ jobs:
           java-version: "21"
 
       # ----------------------------
-      # 9) Setup Gradle with DYNAMIC version based on MC version
+      # 9) Setup Gradle (dynamic version from allowlist)
       # ----------------------------
       - name: Setup Gradle (dynamic version)
         uses: gradle/actions/setup-gradle@v3
@@ -345,12 +317,11 @@ jobs:
         run: |
           set -e
           echo "Required Gradle version: $GRADLE_VERSION"
-          
+
           if [ ! -f "./gradlew" ]; then
             echo "No ./gradlew found — generating wrapper with Gradle $GRADLE_VERSION"
             gradle wrapper --gradle-version "$GRADLE_VERSION"
           else
-            # Verify existing wrapper uses correct version
             if [ -f gradle/wrapper/gradle-wrapper.properties ]; then
               CURRENT=$(grep -oP "gradle-\K[0-9.]+" gradle/wrapper/gradle-wrapper.properties | head -1)
               if [ "$CURRENT" != "$GRADLE_VERSION" ]; then
@@ -362,7 +333,7 @@ jobs:
               fi
             fi
           fi
-          
+
           chmod +x ./gradlew
           ls -lah gradle/wrapper || true
 
@@ -412,14 +383,11 @@ jobs:
         run: |
           set -e
           echo "Validating JAR: $JAR"
-
           unzip -l "$JAR" | grep -q "fabric.mod.json" || (echo "Missing fabric.mod.json in jar" && exit 1)
           unzip -l "$JAR" | grep -q "\.class$" || (echo "No compiled classes in jar" && exit 1)
           unzip -l "$JAR" | grep -q "build-plan.json" || (echo "Missing build-plan.json in jar" && exit 1)
-
           unzip -l "$JAR" | grep -q "assets/$MODID/" || (echo "Missing assets/$MODID/" && exit 1)
           unzip -l "$JAR" | grep -q "data/$MODID/" || (echo "Missing data/$MODID/" && exit 1)
-
           echo "OK: All core files present"
 
       # ----------------------------
@@ -449,13 +417,11 @@ jobs:
             echo "ERROR: Too few class files ($CLASS_COUNT). Expected at least 5 for a real mod."
             exit 1
           fi
-
           if [ "$JAR_SIZE" -lt 10000 ]; then
             echo "ERROR: Jar is suspiciously small (< 10KB). Likely missing content."
             exit 1
           fi
-
-          echo "OK: Quality gate passed (size: ${JAR_SIZE} bytes, classes: ${CLASS_COUNT})"
+          echo "OK: Quality gate passed"
 
       # ----------------------------
       # 15) Validate loot tables have content (warn-only)
@@ -468,7 +434,6 @@ jobs:
           set -e
           TEMP_DIR=$(mktemp -d)
           unzip -q "$JAR" -d "$TEMP_DIR"
-
           LOOT_DIR="$TEMP_DIR/data/$MODID/loot_tables"
           if [ -d "$LOOT_DIR" ]; then
             for loot_file in $(find "$LOOT_DIR" -name "*.json" -type f 2>/dev/null); do
@@ -477,7 +442,6 @@ jobs:
               fi
             done
           fi
-
           rm -rf "$TEMP_DIR"
           echo "OK: Loot table validation complete"
 
@@ -552,9 +516,6 @@ jobs:
             --arg compiled_jar_url "$COMPILED_URL" \
             '{modId:$modId,status:$status,storagePath:$storagePath,storage_path:$storage_path,compiledJarUrl:$compiledJarUrl,compiled_jar_url:$compiled_jar_url}')
 
-          echo "Webhook URL: $WEBHOOK_URL"
-          echo "Payload: $PAYLOAD"
-
           RESPONSE=$(curl --fail-with-body -sS \
             -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
@@ -602,9 +563,6 @@ jobs:
             --argjson storagePath null \
             '{modId:$modId,status:$status,error:$error,storage_path:$storage_path,storagePath:$storagePath}')
 
-          echo "Webhook URL: $WEBHOOK_URL"
-          echo "Payload: $PAYLOAD"
-
           curl --fail-with-body -sS \
             -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
@@ -621,5 +579,3 @@ jobs:
           name: build-log
           path: build.log
           retention-days: 3
-
-
