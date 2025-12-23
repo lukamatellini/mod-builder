@@ -1,0 +1,9 @@
+{
+  "webhookUrl": "https://jhhqehkjffldkoqjqbzx.supabase.co/functions/v1/build-webhook",
+  "loader": "fabric",
+  "mcVersion": "1.21.4",
+  "modId": "6a09b369-a09a-4a20-9b7c-f56a6adbf391",
+  "modName": "Thunder Staff",
+  "webhookSecret": "za8f3c2b1e49840b28a7c4c11d9a0de92",
+  "generatedAt": "2025-12-23T02:51:52.806Z"
+}
