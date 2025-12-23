@@ -1,0 +1,9 @@
+{
+  "webhookUrl": "https://jhhqehkjffldkoqjqbzx.supabase.co/functions/v1/build-webhook",
+  "loader": "fabric",
+  "mcVersion": "1.21.4",
+  "modId": "a3769038-dfbd-4a81-98b4-93c5d17423a8",
+  "modName": "Storm Caller",
+  "webhookSecret": "za8f3c2b1e49840b28a7c4c11d9a0de92",
+  "generatedAt": "2025-12-23T02:20:42.997Z"
+}
