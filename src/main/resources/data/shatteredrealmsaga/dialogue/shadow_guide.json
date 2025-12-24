@@ -1,0 +1,19 @@
+{
+  "npcId": "shadow_guide",
+  "npcName": "Shadow Guide",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "The low gravity here can be tricky. Use it to your advantage, and always keep an eye out for floating islands that might hide danger or treasure. Portal linking with Warp Pedestals is key for efficient travel."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

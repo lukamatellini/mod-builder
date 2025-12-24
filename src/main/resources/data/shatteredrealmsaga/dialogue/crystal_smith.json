@@ -1,0 +1,19 @@
+{
+  "npcId": "crystal_smith",
+  "npcName": "Crystal Smith",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "My forge glows with the power of the crystals. I can offer you sturdy gear, if you have the resources."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

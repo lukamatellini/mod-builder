@@ -1,0 +1,26 @@
+{
+  "structures": [
+    {
+      "structure": "shatteredrealmsaga:void_shrine",
+      "weight": 1
+    },
+    {
+      "structure": "shatteredrealmsaga:crystal_cavern",
+      "weight": 1
+    },
+    {
+      "structure": "shatteredrealmsaga:titans_arena",
+      "weight": 1
+    },
+    {
+      "structure": "shatteredrealmsaga:the_shattered_realm_structure",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 8,
+    "salt": 536782845
+  }
+}

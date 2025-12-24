@@ -1,0 +1,35 @@
+{
+  "parent": "shatteredrealmsaga:root",
+  "display": {
+    "icon": {
+      "id": "shatteredrealmsaga:void_helmet"
+    },
+    "title": {
+      "text": "Crystal Harvest"
+    },
+    "description": {
+      "text": "Collect 16 Crystals by mining Crystal Ore."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "shatteredrealmsaga:unknown"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

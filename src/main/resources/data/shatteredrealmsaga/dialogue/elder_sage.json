@@ -1,0 +1,19 @@
+{
+  "npcId": "elder_sage",
+  "npcName": "Elder Sage",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "Welcome traveler! The Shattered Realm holds many secrets, and even more dangers. Seek wisdom and courage, for only then can you conquer the chaos within."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

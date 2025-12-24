@@ -1,0 +1,35 @@
+{
+  "parent": "shatteredrealmsaga:root",
+  "display": {
+    "icon": {
+      "id": "shatteredrealmsaga:void_helmet"
+    },
+    "title": {
+      "text": "The Crystal Throne"
+    },
+    "description": {
+      "text": "Defeat the Crystal Empress."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "shatteredrealmsaga:unknown"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}
