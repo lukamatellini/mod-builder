@@ -1,0 +1,35 @@
+{
+  "parent": "voidrealms:root",
+  "display": {
+    "icon": {
+      "id": "voidrealms:void_helmet"
+    },
+    "title": {
+      "text": "Crystal Harvest"
+    },
+    "description": {
+      "text": "Collect 16 Void Crystals from mining Crystal Ore."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "voidrealms:unknown"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

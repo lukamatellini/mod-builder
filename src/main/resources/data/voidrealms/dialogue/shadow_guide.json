@@ -1,0 +1,19 @@
+{
+  "npcId": "shadow_guide",
+  "npcName": "Shadow Guide",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "To enter the Shattered Realm, construct a portal frame of Void Stone and activate it with a Soul Orb. Be warned, the Void is not for the faint of heart."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21.1",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-24T02:32:12.761Z",
+  "enabledModules": {
+    "quests": true,
+    "npcs": true,
+    "dialogue": true,
+    "trading": false,
+    "structures": true,
+    "dimensions": true,
+    "biomes": true,
+    "commands": true,
+    "items": true,
+    "mobs": true,
+    "events": true
+  },
+  "inferenceReasons": [
+    "Quest system enabled: 5 quests defined in spec",
+    "NPC system enabled: 3 NPCs defined in spec",
+    "Dialogue UI enabled: NPCs require dialogue system",
+    "Structures enabled: 5 structures defined in spec",
+    "Dimensions enabled: 1 dimensions defined in spec",
+    "Biomes enabled: 1 biomes defined in spec",
+    "Items enabled: 9 items defined in spec",
+    "Mobs enabled: 5 mobs defined in spec",
+    "Events enabled: 2 events defined in spec",
+    "Commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 9,
+    "mobs": 5,
+    "structures": 5,
+    "dimensions": 1,
+    "quests": 5,
+    "npcs": 3,
+    "events": 2
+  },
+  "expectedDataFiles": [
+    "data/voidrealms/quests/welcome_to_the_void.json",
+    "data/voidrealms/quests/crystal_harvest.json",
+    "data/voidrealms/quests/the_corruption_spreads.json",
+    "data/voidrealms/quests/titans_reckoning.json",
+    "data/voidrealms/quests/the_crystal_throne.json",
+    "data/voidrealms/dialogue/elder_sage.json",
+    "data/voidrealms/dialogue/crystal_smith.json",
+    "data/voidrealms/dialogue/shadow_guide.json",
+    "data/voidrealms/dimension/shattered_realm.json",
+    "data/voidrealms/dimension_type/shattered_realm.json",
+    "data/voidrealms/worldgen/structure/void_shrine.json",
+    "data/voidrealms/worldgen/structure/crystal_cavern.json",
+    "data/voidrealms/worldgen/structure/titans_arena.json",
+    "data/voidrealms/worldgen/structure/crystal_throneroom.json",
+    "data/voidrealms/worldgen/structure/shattered_realm_structure.json"
+  ],
+  "expectedAssetFiles": [
+    "assets/voidrealms/lang/en_us.json",
+    "assets/voidrealms/models/item/void_helmet.json",
+    "assets/voidrealms/models/item/void_chestplate.json",
+    "assets/voidrealms/models/item/void_leggings.json",
+    "assets/voidrealms/models/item/void_boots.json",
+    "assets/voidrealms/models/item/shardbreaker_sword.json",
+    "assets/voidrealms/models/item/crystal_staff.json",
+    "assets/voidrealms/models/item/abyssal_pickaxe.json",
+    "assets/voidrealms/models/item/soul_orb.json",
+    "assets/voidrealms/models/item/shattered_realm_portal_igniter.json"
+  ]
+}

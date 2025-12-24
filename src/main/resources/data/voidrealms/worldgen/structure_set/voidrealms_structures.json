@@ -1,0 +1,30 @@
+{
+  "structures": [
+    {
+      "structure": "voidrealms:void_shrine",
+      "weight": 1
+    },
+    {
+      "structure": "voidrealms:crystal_cavern",
+      "weight": 1
+    },
+    {
+      "structure": "voidrealms:titans_arena",
+      "weight": 1
+    },
+    {
+      "structure": "voidrealms:crystal_throneroom",
+      "weight": 1
+    },
+    {
+      "structure": "voidrealms:shattered_realm_structure",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 8,
+    "salt": 599431638
+  }
+}

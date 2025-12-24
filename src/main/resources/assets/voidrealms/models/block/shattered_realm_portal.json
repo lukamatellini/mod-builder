@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "voidrealms:block/shattered_realm_portal",
+    "particle": "voidrealms:block/shattered_realm_portal"
+  },
+  "render_type": "translucent"
+}

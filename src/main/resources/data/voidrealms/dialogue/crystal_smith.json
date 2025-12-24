@@ -1,0 +1,19 @@
+{
+  "npcId": "crystal_smith",
+  "npcName": "Crystal Smith",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "I work with the very essence of the Void. My craft can forge powerful tools and armor, if you bring me the right materials."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

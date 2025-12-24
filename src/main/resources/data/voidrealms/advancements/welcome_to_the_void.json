@@ -1,0 +1,35 @@
+{
+  "parent": "voidrealms:root",
+  "display": {
+    "icon": {
+      "id": "voidrealms:void_helmet"
+    },
+    "title": {
+      "text": "Welcome to the Void"
+    },
+    "description": {
+      "text": "Talk to the Elder Sage upon entering the Shattered Realm."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "voidrealms:unknown"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}
