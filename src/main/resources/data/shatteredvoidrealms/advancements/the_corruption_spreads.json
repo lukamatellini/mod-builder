@@ -1,0 +1,35 @@
+{
+  "parent": "shatteredvoidrealms:root",
+  "display": {
+    "icon": {
+      "id": "shatteredvoidrealms:void_stone"
+    },
+    "title": {
+      "text": "The Corruption Spreads"
+    },
+    "description": {
+      "text": "Kill 20 Void Walkers."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "shatteredvoidrealms:unknown"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "crystal_throne",
+  "name": "The Crystal Throne",
+  "description": "Defeat the Crystal Empress.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Defeat the Crystal Empress.",
+      "targetId": "",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: The Crystal Throne",
+  "completeMessage": "Completed: The Crystal Throne!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

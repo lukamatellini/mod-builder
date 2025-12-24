@@ -1,0 +1,19 @@
+{
+  "npcId": "crystal_smith",
+  "npcName": "Crystal Smith",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "My forge glows with the power of these crystals. What do you seek?"
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

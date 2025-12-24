@@ -1,0 +1,19 @@
+{
+  "npcId": "shadow_guide",
+  "npcName": "Shadow Guide",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "The veil between worlds is thin here. Tread carefully, traveler."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

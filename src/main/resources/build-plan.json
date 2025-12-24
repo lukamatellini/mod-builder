@@ -1,0 +1,67 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21.1",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-24T02:18:22.406Z",
+  "enabledModules": {
+    "quests": true,
+    "npcs": true,
+    "dialogue": true,
+    "trading": true,
+    "structures": true,
+    "dimensions": true,
+    "biomes": true,
+    "commands": true,
+    "items": true,
+    "mobs": true,
+    "events": true
+  },
+  "inferenceReasons": [
+    "Quest system enabled: 5 quests defined in spec",
+    "NPC system enabled: 3 NPCs defined in spec",
+    "Dialogue UI enabled: NPCs require dialogue system",
+    "Trading system enabled: 1 NPCs have trades defined",
+    "Reputation system enabled: Trading requires reputation tracking",
+    "Structures enabled: 4 structures defined in spec",
+    "Dimensions enabled: 1 dimensions defined in spec",
+    "Biomes enabled: 1 biomes defined in spec",
+    "Items enabled: 5 items defined in spec",
+    "Mobs enabled: 5 mobs defined in spec",
+    "Events enabled: 2 events defined in spec",
+    "Commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 5,
+    "mobs": 5,
+    "structures": 4,
+    "dimensions": 1,
+    "quests": 5,
+    "npcs": 3,
+    "events": 2
+  },
+  "expectedDataFiles": [
+    "data/shatteredvoidrealms/quests/welcome_to_the_void.json",
+    "data/shatteredvoidrealms/quests/crystal_harvest.json",
+    "data/shatteredvoidrealms/quests/the_corruption_spreads.json",
+    "data/shatteredvoidrealms/quests/titan_reckoning.json",
+    "data/shatteredvoidrealms/quests/crystal_throne.json",
+    "data/shatteredvoidrealms/dialogue/elder_sage.json",
+    "data/shatteredvoidrealms/dialogue/crystal_smith.json",
+    "data/shatteredvoidrealms/dialogue/shadow_guide.json",
+    "data/shatteredvoidrealms/dimension/shattered_realm.json",
+    "data/shatteredvoidrealms/dimension_type/shattered_realm.json",
+    "data/shatteredvoidrealms/worldgen/structure/void_shrine.json",
+    "data/shatteredvoidrealms/worldgen/structure/crystal_cavern.json",
+    "data/shatteredvoidrealms/worldgen/structure/titan_arena.json",
+    "data/shatteredvoidrealms/worldgen/structure/shattered_realm_structure.json"
+  ],
+  "expectedAssetFiles": [
+    "assets/shatteredvoidrealms/lang/en_us.json",
+    "assets/shatteredvoidrealms/models/item/void_stone.json",
+    "assets/shatteredvoidrealms/models/item/crystal_ore.json",
+    "assets/shatteredvoidrealms/models/item/abyssal_altar.json",
+    "assets/shatteredvoidrealms/models/item/warp_pedestal.json",
+    "assets/shatteredvoidrealms/models/item/shattered_realm_portal_igniter.json"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "shatteredvoidrealms:root",
+  "display": {
+    "icon": {
+      "id": "shatteredvoidrealms:void_stone"
+    },
+    "title": {
+      "text": "Crystal Harvest"
+    },
+    "description": {
+      "text": "Collect 16 Abyssal Crystals from mining Crystal Ore."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "shatteredvoidrealms:unknown"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}
