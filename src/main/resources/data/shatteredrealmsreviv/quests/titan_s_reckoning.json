@@ -1,0 +1,28 @@
+{
+  "id": "titan_s_reckoning",
+  "name": "Titan's Reckoning",
+  "description": "The Void Titan is a formidable foe. Prepare yourself and challenge it at an Abyssal Altar.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Defeat The Void Titan",
+      "targetId": "",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Titan's Reckoning",
+  "completeMessage": "Completed: Titan's Reckoning!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

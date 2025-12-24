@@ -1,0 +1,35 @@
+{
+  "parent": "shatteredrealmsreviv:root",
+  "display": {
+    "icon": {
+      "id": "shatteredrealmsreviv:void_helmet"
+    },
+    "title": {
+      "text": "Titan's Reckoning"
+    },
+    "description": {
+      "text": "The Void Titan is a formidable foe. Prepare yourself and challenge it at an Abyssal Altar."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "shatteredrealmsreviv:unknown"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

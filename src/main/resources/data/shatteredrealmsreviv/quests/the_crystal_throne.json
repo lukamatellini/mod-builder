@@ -1,0 +1,28 @@
+{
+  "id": "the_crystal_throne",
+  "name": "The Crystal Throne",
+  "description": "The Crystal Empress holds dominion over the Crystal Forest. Challenge her in her throne room.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Defeat Crystal Empress",
+      "targetId": "",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: The Crystal Throne",
+  "completeMessage": "Completed: The Crystal Throne!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

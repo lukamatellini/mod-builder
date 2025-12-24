@@ -1,0 +1,30 @@
+{
+  "structures": [
+    {
+      "structure": "shatteredrealmsreviv:void_shrine",
+      "weight": 1
+    },
+    {
+      "structure": "shatteredrealmsreviv:crystal_cavern",
+      "weight": 1
+    },
+    {
+      "structure": "shatteredrealmsreviv:titan_s_arena",
+      "weight": 1
+    },
+    {
+      "structure": "shatteredrealmsreviv:the_crystal_throne",
+      "weight": 1
+    },
+    {
+      "structure": "shatteredrealmsreviv:shattered_realm_structure",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 8,
+    "salt": 370450776
+  }
+}

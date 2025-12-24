@@ -1,0 +1,28 @@
+{
+  "id": "crystal_harvest",
+  "name": "Crystal Harvest",
+  "description": "The Elder Sage requests raw crystals for his research. Find crystal ore and mine it.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Collect 16 Raw Crystals by mining Crystal Ore",
+      "targetId": "",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Crystal Harvest",
+  "completeMessage": "Completed: Crystal Harvest!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

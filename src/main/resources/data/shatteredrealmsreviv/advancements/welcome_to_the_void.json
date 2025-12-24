@@ -1,0 +1,35 @@
+{
+  "parent": "shatteredrealmsreviv:root",
+  "display": {
+    "icon": {
+      "id": "shatteredrealmsreviv:void_helmet"
+    },
+    "title": {
+      "text": "Welcome to the Void"
+    },
+    "description": {
+      "text": "The Elder Sage has knowledge of this realm. Seek him out for guidance."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "shatteredrealmsreviv:unknown"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

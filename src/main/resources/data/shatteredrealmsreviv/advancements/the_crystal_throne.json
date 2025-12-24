@@ -1,0 +1,35 @@
+{
+  "parent": "shatteredrealmsreviv:root",
+  "display": {
+    "icon": {
+      "id": "shatteredrealmsreviv:void_helmet"
+    },
+    "title": {
+      "text": "The Crystal Throne"
+    },
+    "description": {
+      "text": "The Crystal Empress holds dominion over the Crystal Forest. Challenge her in her throne room."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "shatteredrealmsreviv:unknown"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}
