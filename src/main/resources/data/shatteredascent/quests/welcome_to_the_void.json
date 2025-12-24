@@ -1,0 +1,28 @@
+{
+  "id": "welcome_to_the_void",
+  "name": "Welcome to the Void",
+  "description": "Begin your journey into the Shattered Realm by seeking out the wise Elder Sage.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Talk to the Elder Sage in the Void Shrine.",
+      "targetId": "",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Welcome to the Void",
+  "completeMessage": "Completed: Welcome to the Void!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

@@ -1,0 +1,28 @@
+{
+  "id": "the_crystal_throne",
+  "name": "The Crystal Throne",
+  "description": "Deep within the caverns lies the Crystal Empress, her power immense. Challenge her reign!",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Defeat the Crystal Empress in her Crystal Cavern.",
+      "targetId": "",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: The Crystal Throne",
+  "completeMessage": "Completed: The Crystal Throne!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

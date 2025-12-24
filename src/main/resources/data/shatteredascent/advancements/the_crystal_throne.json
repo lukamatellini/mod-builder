@@ -1,0 +1,35 @@
+{
+  "parent": "shatteredascent:root",
+  "display": {
+    "icon": {
+      "id": "shatteredascent:void_helmet"
+    },
+    "title": {
+      "text": "The Crystal Throne"
+    },
+    "description": {
+      "text": "Deep within the caverns lies the Crystal Empress, her power immense. Challenge her reign!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "shatteredascent:unknown"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

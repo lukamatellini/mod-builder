@@ -1,0 +1,28 @@
+{
+  "id": "the_corruption_spreads",
+  "name": "The Corruption Spreads",
+  "description": "The Void Walkers are growing in number, threatening the balance of the realm. Vanquish them!",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Kill 20 Void Walkers.",
+      "targetId": "",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: The Corruption Spreads",
+  "completeMessage": "Completed: The Corruption Spreads!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

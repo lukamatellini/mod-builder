@@ -1,0 +1,28 @@
+{
+  "id": "crystal_harvest",
+  "name": "Crystal Harvest",
+  "description": "The crystals hum with energy. Gather them for the Crystal Smith.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Collect 16 crystal_shards from mining Crystal Ore.",
+      "targetId": "",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Crystal Harvest",
+  "completeMessage": "Completed: Crystal Harvest!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

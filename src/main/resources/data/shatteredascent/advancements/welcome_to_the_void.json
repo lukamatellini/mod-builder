@@ -1,0 +1,35 @@
+{
+  "parent": "shatteredascent:root",
+  "display": {
+    "icon": {
+      "id": "shatteredascent:void_helmet"
+    },
+    "title": {
+      "text": "Welcome to the Void"
+    },
+    "description": {
+      "text": "Begin your journey into the Shattered Realm by seeking out the wise Elder Sage."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "shatteredascent:unknown"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

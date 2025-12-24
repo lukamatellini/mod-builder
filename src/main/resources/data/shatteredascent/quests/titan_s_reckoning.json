@@ -1,0 +1,28 @@
+{
+  "id": "titan_s_reckoning",
+  "name": "Titan's Reckoning",
+  "description": "The ancient Titan awakens, its fury shaking the very foundations of the Shattered Realm. Confront it!",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Defeat The Void Titan in the Titan's Arena.",
+      "targetId": "",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Titan's Reckoning",
+  "completeMessage": "Completed: Titan's Reckoning!",
+  "repeatable": false,
+  "giverNpcId": ""
+}
