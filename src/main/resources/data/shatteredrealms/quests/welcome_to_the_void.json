@@ -1,0 +1,28 @@
+{
+  "id": "welcome_to_the_void",
+  "name": "Welcome to the Void",
+  "description": "The first step on your journey begins with understanding this strange new world.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Talk to the Elder Sage upon first entering The Shattered Realm.",
+      "targetId": "",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Welcome to the Void",
+  "completeMessage": "Completed: Welcome to the Void!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

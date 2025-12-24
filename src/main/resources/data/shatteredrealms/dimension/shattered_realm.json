@@ -1,0 +1,7 @@
+{
+  "type": "shatteredrealms:shattered_realm",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "minecraft:overworld"
+  }
+}

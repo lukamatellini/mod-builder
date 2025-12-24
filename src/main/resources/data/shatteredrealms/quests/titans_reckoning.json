@@ -1,0 +1,28 @@
+{
+  "id": "titans_reckoning",
+  "name": "Titan's Reckoning",
+  "description": "The behemoth known as the Void Titan looms. Only by confronting it can you truly progress.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Defeat The Void Titan.",
+      "targetId": "",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Titan's Reckoning",
+  "completeMessage": "Completed: Titan's Reckoning!",
+  "repeatable": false,
+  "giverNpcId": ""
+}
