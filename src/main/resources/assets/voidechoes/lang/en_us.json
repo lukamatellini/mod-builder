@@ -1,0 +1,11 @@
+{
+  "itemGroup.voidechoes.main": "Void Echoes",
+  "item.voidechoes.void_infused_blade": "Void-Infused Blade",
+  "item.voidechoes.echoing_bow": "Echoing Bow",
+  "item.voidechoes.amulet_of_whispers": "Amulet of Whispers",
+  "item.voidechoes.void_infused_ingot": "Void-Infused Ingot",
+  "item.voidechoes.void_shard": "Void Shard",
+  "item.voidechoes.void_infused_string": "Void-Infused String",
+  "entity.voidechoes.voidling": "Voidling",
+  "entity.voidechoes.echo_bat": "Echo Bat"
+}

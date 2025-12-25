@@ -1,0 +1,44 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21.1",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-25T01:38:02.047Z",
+  "enabledModules": {
+    "quests": false,
+    "npcs": false,
+    "dialogue": false,
+    "trading": false,
+    "structures": false,
+    "dimensions": false,
+    "biomes": false,
+    "commands": true,
+    "items": true,
+    "mobs": true,
+    "events": false
+  },
+  "inferenceReasons": [
+    "Items enabled: 6 items defined in spec",
+    "Mobs enabled: 2 mobs defined in spec",
+    "Commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 6,
+    "mobs": 2,
+    "structures": 0,
+    "dimensions": 0,
+    "quests": 0,
+    "npcs": 0,
+    "events": 0
+  },
+  "expectedDataFiles": [],
+  "expectedAssetFiles": [
+    "assets/voidechoes/lang/en_us.json",
+    "assets/voidechoes/models/item/void_infused_blade.json",
+    "assets/voidechoes/models/item/echoing_bow.json",
+    "assets/voidechoes/models/item/amulet_of_whispers.json",
+    "assets/voidechoes/models/item/void_infused_ingot.json",
+    "assets/voidechoes/models/item/void_shard.json",
+    "assets/voidechoes/models/item/void_infused_string.json"
+  ]
+}
