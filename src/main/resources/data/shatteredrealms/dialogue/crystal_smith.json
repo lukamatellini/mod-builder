@@ -1,0 +1,19 @@
+{
+  "npcId": "crystal_smith",
+  "npcName": "Crystal Smith",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "My anvils whisper ancient secrets, forged in the heart of crystal. What treasures do you seek?"
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

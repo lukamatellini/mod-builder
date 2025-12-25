@@ -1,0 +1,28 @@
+{
+  "id": "crystal_harvest",
+  "name": "Crystal Harvest",
+  "description": "Mine 16 Shattered Crystals.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Mine 16 Shattered Crystals.",
+      "targetId": "",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Crystal Harvest",
+  "completeMessage": "Completed: Crystal Harvest!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

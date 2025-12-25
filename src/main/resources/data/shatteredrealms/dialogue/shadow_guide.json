@@ -1,0 +1,19 @@
+{
+  "npcId": "shadow_guide",
+  "npcName": "Shadow Guide",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "To cross the veil into the Shattered Realm, you'll need a key. Seek out the Elder Sage; he holds the knowledge you desire."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}
