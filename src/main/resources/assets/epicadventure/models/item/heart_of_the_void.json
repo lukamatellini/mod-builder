@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "epicadventure:item/heart_of_the_void"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "npcId": "crystal_smith",
+  "npcName": "Crystal Smith",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "I trade in the shimmering essence of this realm. Perhaps we can make a deal, traveler?"
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

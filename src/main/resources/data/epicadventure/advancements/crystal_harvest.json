@@ -1,0 +1,35 @@
+{
+  "parent": "epicadventure:root",
+  "display": {
+    "icon": {
+      "id": "epicadventure:void_helmet"
+    },
+    "title": {
+      "text": "Crystal Harvest"
+    },
+    "description": {
+      "text": "Collect 16 Crystal Shards."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "epicadventure:unknown"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

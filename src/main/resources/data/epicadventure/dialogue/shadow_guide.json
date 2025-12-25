@@ -1,0 +1,19 @@
+{
+  "npcId": "shadow_guide",
+  "npcName": "Shadow Guide",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "The void has its own unique rules. Gravity is different here, and these Warp Pedestals will be crucial for your travels."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}
