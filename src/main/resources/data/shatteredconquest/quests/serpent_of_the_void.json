@@ -1,0 +1,28 @@
+{
+  "id": "serpent_of_the_void",
+  "name": "Taming the Void Serpent",
+  "description": "The Void Serpent, a creature of immense power, terrorizes the Void. Slay it to prove your might.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "kill_mob",
+      "description": "Defeat the Void Serpent",
+      "targetId": "void_serpent",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "shadow_essence",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Taming the Void Serpent",
+  "completeMessage": "Completed: Taming the Void Serpent!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

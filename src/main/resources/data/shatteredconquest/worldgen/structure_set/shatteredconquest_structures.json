@@ -1,0 +1,26 @@
+{
+  "structures": [
+    {
+      "structure": "shatteredconquest:shadow_altar",
+      "weight": 1
+    },
+    {
+      "structure": "shatteredconquest:crystal_cavern",
+      "weight": 1
+    },
+    {
+      "structure": "shatteredconquest:void_islets",
+      "weight": 1
+    },
+    {
+      "structure": "shatteredconquest:void_dimension_structure",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 8,
+    "salt": 807404306
+  }
+}

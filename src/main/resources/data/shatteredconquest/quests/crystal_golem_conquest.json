@@ -1,0 +1,28 @@
+{
+  "id": "crystal_golem_conquest",
+  "name": "Crush the Crystal Golem",
+  "description": "A massive golem made of pure crystal stands guard over a hidden treasure. Destroy it and claim your prize.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "kill_mob",
+      "description": "Defeat the Crystal Golem",
+      "targetId": "crystal_golem",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "shadow_essence",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Crush the Crystal Golem",
+  "completeMessage": "Completed: Crush the Crystal Golem!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

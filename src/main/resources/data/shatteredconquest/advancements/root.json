@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "shatteredconquest:shadow_essence"
+    },
+    "title": {
+      "text": "Shattered Conquest"
+    },
+    "description": {
+      "text": "Welcome to Shattered Conquest!"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

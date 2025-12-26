@@ -1,0 +1,19 @@
+{
+  "npcId": "shattered_explorer",
+  "npcName": "Shattered Explorer",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "I've been searching for a way out of these shattered realms. Perhaps you can help me, and I can help you."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

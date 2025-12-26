@@ -1,0 +1,126 @@
+package com.modgen.shatteredconquest;
+
+import com.modgen.shatteredconquest.engine.ModGenEngine;
+import com.modgen.shatteredconquest.engine.BuildPlanValidator;
+import com.modgen.shatteredconquest.command.ModGenCommand;
+import com.modgen.shatteredconquest.engine.QuestEngine;
+import com.modgen.shatteredconquest.engine.NPCManager;
+import com.modgen.shatteredconquest.engine.StructureRegistry;
+import com.modgen.shatteredconquest.engine.TradingSystem;
+import com.modgen.shatteredconquest.engine.ReputationSystem;
+import com.modgen.shatteredconquest.network.ModNetworking;
+import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class ShatteredConquest implements ModInitializer {
+    public static final String MOD_ID = "shatteredconquest";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+    
+    public static final Identifier ITEM_GROUP_ID = Identifier.of(MOD_ID, "main");
+    
+    // Engine instances - ONLY fields for enabled systems
+    public static ModGenEngine ENGINE;
+    public static BuildPlanValidator VALIDATOR;
+    public static QuestEngine QUEST_ENGINE;
+    public static NPCManager NPC_MANAGER;
+    public static StructureRegistry STRUCTURE_REGISTRY;
+    public static TradingSystem TRADING_SYSTEM;
+    public static ReputationSystem REPUTATION_SYSTEM;
+
+    @Override
+    public void onInitialize() {
+        LOGGER.info("╔════════════════════════════════════════╗");
+        LOGGER.info("║  Shattered Conquest                    ║");
+        LOGGER.info("║  Loading... (Fabric 1.21.x)            ║");
+        LOGGER.info("╚════════════════════════════════════════╝");
+        
+        // Initialize engine and validator - ONLY enabled systems
+        ENGINE = new ModGenEngine();
+        VALIDATOR = new BuildPlanValidator();
+        QUEST_ENGINE = new QuestEngine();
+        NPC_MANAGER = new NPCManager();
+        STRUCTURE_REGISTRY = new StructureRegistry();
+        TRADING_SYSTEM = new TradingSystem();
+        REPUTATION_SYSTEM = new ReputationSystem();
+        
+        // Print enabled modules from build plan
+        VALIDATOR.printEnabledModules();
+        
+        // Register sounds
+        ModSounds.registerSounds();
+        
+        // Register server-side networking
+        ModNetworking.registerServerPackets();
+
+        // Register commands
+        ModGenCommand.register();
+
+        
+        // Register items
+        ModItems.registerItems();
+        
+        // Register creative tab
+        Registry.register(Registries.ITEM_GROUP, ITEM_GROUP_ID, 
+            FabricItemGroup.builder()
+                .icon(() -> new ItemStack(ModItems.getFirstItem()))
+                .displayName(Text.translatable("itemGroup." + MOD_ID + ".main"))
+                .entries((context, entries) -> ModItems.addToCreativeTab(entries))
+                .build()
+        );
+        LOGGER.info("  ✓ Registered 11 items");
+
+        // Register entities (mobs + NPCs)
+        ModEntities.registerEntities();
+        LOGGER.info("  ✓ Registered 6 mobs + 2 NPC types");
+
+        // Register structures
+        ModStructures.registerStructures();
+        LOGGER.info("  ✓ Registered 4 structures");
+
+        // Register dimensions
+        ModDimensions.registerDimensions();
+        LOGGER.info("  ✓ Registered 1 dimensions");
+
+        // Server lifecycle events
+        ServerLifecycleEvents.SERVER_STARTED.register(server -> {
+            int questCount = QUEST_ENGINE.loadQuestsFromResources(server);
+            int npcCount = NPC_MANAGER.loadNPCsFromResources(server);
+            
+            // VALIDATE AGAINST BUILD PLAN - SINGLE SOURCE OF TRUTH
+            VALIDATOR.validate(
+                questCount,
+                npcCount,
+                11,
+                6,
+                4,
+                1
+            );
+            
+            // FAIL LOUDLY if critical validation errors
+            if (VALIDATOR.getValidationErrors() > 0) {
+                LOGGER.error("╔════════════════════════════════════════════════════╗");
+                LOGGER.error("║  !!! MOD VALIDATION FAILED !!!                     ║");
+                LOGGER.error("║  Features exist in build plan but failed to load  ║");
+                LOGGER.error("║  Check logs above for ORPHAN FEATURE errors       ║");
+                LOGGER.error("╚════════════════════════════════════════════════════╝");
+            }
+        });
+        
+        // Save quest state on shutdown
+        ServerLifecycleEvents.SERVER_STOPPING.register(server -> {
+            QUEST_ENGINE.saveAllPlayerStates(server);
+            LOGGER.info("Saved all player quest states");
+        });
+
+        LOGGER.info("Shattered Conquest initialized successfully!");
+    }
+}

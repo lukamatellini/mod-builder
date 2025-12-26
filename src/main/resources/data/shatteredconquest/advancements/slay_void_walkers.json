@@ -1,0 +1,38 @@
+{
+  "parent": "shatteredconquest:root",
+  "display": {
+    "icon": {
+      "id": "shatteredconquest:shadow_essence"
+    },
+    "title": {
+      "text": "Purging the Walkers"
+    },
+    "description": {
+      "text": "These creatures infest the Void. Eliminate them to make the dimension safer for passage."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "shatteredconquest:void_walker"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

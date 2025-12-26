@@ -1,0 +1,37 @@
+{
+  "parent": "shatteredconquest:root",
+  "display": {
+    "icon": {
+      "id": "shatteredconquest:shadow_essence"
+    },
+    "title": {
+      "text": "Shards of the Void"
+    },
+    "description": {
+      "text": "The Void Merchant seeks Void Shards to power his ancient devices. Gather enough to earn his trust."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "shatteredconquest:void_shard"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

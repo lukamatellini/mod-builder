@@ -1,0 +1,2424 @@
+{
+  "modId": "shatteredconquest",
+  "modName": "Shattered Conquest",
+  "generatedAt": "2025-12-26T20:07:30.401Z",
+  "mcVersion": "1.21.1",
+  "overallStatus": "failed",
+  "totalChecks": 155,
+  "passedChecks": 139,
+  "failedChecks": 8,
+  "warningChecks": 7,
+  "skippedChecks": 1,
+  "categories": [
+    {
+      "category": "trades",
+      "total": 7,
+      "passed": 2,
+      "failed": 5,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "npc_trades_void_merchant",
+          "name": "NPC Trades: Void Merchant",
+          "category": "trades",
+          "status": "passed",
+          "message": "3 trades defined"
+        },
+        {
+          "id": "npc_trade_item_void_merchant_0",
+          "name": "Trade Item: Void Merchant #1",
+          "category": "trades",
+          "status": "failed",
+          "message": "Trade result \"1\" not found in mod items",
+          "suggestion": "Add 1 to items or use minecraft: prefix for vanilla items"
+        },
+        {
+          "id": "npc_trade_item_void_merchant_1",
+          "name": "Trade Item: Void Merchant #2",
+          "category": "trades",
+          "status": "failed",
+          "message": "Trade result \"1\" not found in mod items",
+          "suggestion": "Add 1 to items or use minecraft: prefix for vanilla items"
+        },
+        {
+          "id": "npc_trade_item_void_merchant_2",
+          "name": "Trade Item: Void Merchant #3",
+          "category": "trades",
+          "status": "failed",
+          "message": "Trade result \"1\" not found in mod items",
+          "suggestion": "Add 1 to items or use minecraft: prefix for vanilla items"
+        },
+        {
+          "id": "npc_trades_shattered_explorer",
+          "name": "NPC Trades: Shattered Explorer",
+          "category": "trades",
+          "status": "passed",
+          "message": "2 trades defined"
+        },
+        {
+          "id": "npc_trade_item_shattered_explorer_0",
+          "name": "Trade Item: Shattered Explorer #1",
+          "category": "trades",
+          "status": "failed",
+          "message": "Trade result \"1\" not found in mod items",
+          "suggestion": "Add 1 to items or use minecraft: prefix for vanilla items"
+        },
+        {
+          "id": "npc_trade_item_shattered_explorer_1",
+          "name": "Trade Item: Shattered Explorer #2",
+          "category": "trades",
+          "status": "failed",
+          "message": "Trade result \"1\" not found in mod items",
+          "suggestion": "Add 1 to items or use minecraft: prefix for vanilla items"
+        }
+      ]
+    },
+    {
+      "category": "mobs",
+      "total": 25,
+      "passed": 22,
+      "failed": 3,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "mobs_existence",
+          "name": "Mobs Defined",
+          "category": "mobs",
+          "status": "passed",
+          "message": "6 mobs defined"
+        },
+        {
+          "id": "mob_class_shadow_lord",
+          "name": "Mob Class: Shadow Lord",
+          "category": "mobs",
+          "status": "failed",
+          "message": "Missing entity class ShadowLordEntity",
+          "filePath": "src/main/java/com/modgen/shatteredconquest/entity/ShadowLordEntity.java"
+        },
+        {
+          "id": "mob_drops_shadow_lord",
+          "name": "Mob Drops: Shadow Lord",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Drops: Shadow Lord validated successfully"
+        },
+        {
+          "id": "mob_loot_shadow_lord",
+          "name": "Mob Loot Table: Shadow Lord",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Loot Table: Shadow Lord validated successfully"
+        },
+        {
+          "id": "mob_texture_shadow_lord",
+          "name": "Mob Texture: Shadow Lord",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Texture: Shadow Lord validated successfully"
+        },
+        {
+          "id": "mob_class_crystal_golem",
+          "name": "Mob Class: Crystal Golem",
+          "category": "mobs",
+          "status": "failed",
+          "message": "Missing entity class CrystalGolemEntity",
+          "filePath": "src/main/java/com/modgen/shatteredconquest/entity/CrystalGolemEntity.java"
+        },
+        {
+          "id": "mob_drops_crystal_golem",
+          "name": "Mob Drops: Crystal Golem",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Drops: Crystal Golem validated successfully"
+        },
+        {
+          "id": "mob_loot_crystal_golem",
+          "name": "Mob Loot Table: Crystal Golem",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Loot Table: Crystal Golem validated successfully"
+        },
+        {
+          "id": "mob_texture_crystal_golem",
+          "name": "Mob Texture: Crystal Golem",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Texture: Crystal Golem validated successfully"
+        },
+        {
+          "id": "mob_class_void_serpent",
+          "name": "Mob Class: Void Serpent",
+          "category": "mobs",
+          "status": "failed",
+          "message": "Missing entity class VoidSerpentEntity",
+          "filePath": "src/main/java/com/modgen/shatteredconquest/entity/VoidSerpentEntity.java"
+        },
+        {
+          "id": "mob_drops_void_serpent",
+          "name": "Mob Drops: Void Serpent",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Drops: Void Serpent validated successfully"
+        },
+        {
+          "id": "mob_loot_void_serpent",
+          "name": "Mob Loot Table: Void Serpent",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Loot Table: Void Serpent validated successfully"
+        },
+        {
+          "id": "mob_texture_void_serpent",
+          "name": "Mob Texture: Void Serpent",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Texture: Void Serpent validated successfully"
+        },
+        {
+          "id": "mob_class_shadow_minion",
+          "name": "Mob Class: Shadow Minion",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Class: Shadow Minion validated successfully"
+        },
+        {
+          "id": "mob_drops_shadow_minion",
+          "name": "Mob Drops: Shadow Minion",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Drops: Shadow Minion validated successfully"
+        },
+        {
+          "id": "mob_loot_shadow_minion",
+          "name": "Mob Loot Table: Shadow Minion",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Loot Table: Shadow Minion validated successfully"
+        },
+        {
+          "id": "mob_texture_shadow_minion",
+          "name": "Mob Texture: Shadow Minion",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Texture: Shadow Minion validated successfully"
+        },
+        {
+          "id": "mob_class_void_walker",
+          "name": "Mob Class: Void Walker",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Class: Void Walker validated successfully"
+        },
+        {
+          "id": "mob_drops_void_walker",
+          "name": "Mob Drops: Void Walker",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Drops: Void Walker validated successfully"
+        },
+        {
+          "id": "mob_loot_void_walker",
+          "name": "Mob Loot Table: Void Walker",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Loot Table: Void Walker validated successfully"
+        },
+        {
+          "id": "mob_texture_void_walker",
+          "name": "Mob Texture: Void Walker",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Texture: Void Walker validated successfully"
+        },
+        {
+          "id": "mob_class_void_serpent_hatchling",
+          "name": "Mob Class: Void Serpent Hatchling",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Class: Void Serpent Hatchling validated successfully"
+        },
+        {
+          "id": "mob_drops_void_serpent_hatchling",
+          "name": "Mob Drops: Void Serpent Hatchling",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Drops: Void Serpent Hatchling validated successfully"
+        },
+        {
+          "id": "mob_loot_void_serpent_hatchling",
+          "name": "Mob Loot Table: Void Serpent Hatchling",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Loot Table: Void Serpent Hatchling validated successfully"
+        },
+        {
+          "id": "mob_texture_void_serpent_hatchling",
+          "name": "Mob Texture: Void Serpent Hatchling",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Texture: Void Serpent Hatchling validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "items",
+      "total": 34,
+      "passed": 34,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "items_existence",
+          "name": "Items Defined",
+          "category": "items",
+          "status": "passed",
+          "message": "11 items defined"
+        },
+        {
+          "id": "item_model_shadow_essence",
+          "name": "Item Model: Shadow Essence",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Shadow Essence validated successfully"
+        },
+        {
+          "id": "item_texture_shadow_essence",
+          "name": "Item Texture: Shadow Essence",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Shadow Essence validated successfully"
+        },
+        {
+          "id": "item_model_crystal_shard",
+          "name": "Item Model: Crystal Shard",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Crystal Shard validated successfully"
+        },
+        {
+          "id": "item_texture_crystal_shard",
+          "name": "Item Texture: Crystal Shard",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Crystal Shard validated successfully"
+        },
+        {
+          "id": "item_model_void_scale",
+          "name": "Item Model: Void Scale",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Void Scale validated successfully"
+        },
+        {
+          "id": "item_texture_void_scale",
+          "name": "Item Texture: Void Scale",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Void Scale validated successfully"
+        },
+        {
+          "id": "item_model_shadow_blade",
+          "name": "Item Model: Shadow Blade",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Shadow Blade validated successfully"
+        },
+        {
+          "id": "item_texture_shadow_blade",
+          "name": "Item Texture: Shadow Blade",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Shadow Blade validated successfully"
+        },
+        {
+          "id": "item_model_crystal_pickaxe",
+          "name": "Item Model: Crystal Pickaxe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Crystal Pickaxe validated successfully"
+        },
+        {
+          "id": "item_texture_crystal_pickaxe",
+          "name": "Item Texture: Crystal Pickaxe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Crystal Pickaxe validated successfully"
+        },
+        {
+          "id": "item_model_void_bow",
+          "name": "Item Model: Void Bow",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Void Bow validated successfully"
+        },
+        {
+          "id": "item_texture_void_bow",
+          "name": "Item Texture: Void Bow",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Void Bow validated successfully"
+        },
+        {
+          "id": "item_model_void_staff",
+          "name": "Item Model: Void Staff",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Void Staff validated successfully"
+        },
+        {
+          "id": "item_texture_void_staff",
+          "name": "Item Texture: Void Staff",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Void Staff validated successfully"
+        },
+        {
+          "id": "item_model_void_warp_item",
+          "name": "Item Model: Void Warp",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Void Warp validated successfully"
+        },
+        {
+          "id": "item_texture_void_warp_item",
+          "name": "Item Texture: Void Warp",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Void Warp validated successfully"
+        },
+        {
+          "id": "item_model_obsidian_powder",
+          "name": "Item Model: Obsidian Powder",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Obsidian Powder validated successfully"
+        },
+        {
+          "id": "item_texture_obsidian_powder",
+          "name": "Item Texture: Obsidian Powder",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Obsidian Powder validated successfully"
+        },
+        {
+          "id": "item_model_void_shard",
+          "name": "Item Model: Void Shard",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Void Shard validated successfully"
+        },
+        {
+          "id": "item_texture_void_shard",
+          "name": "Item Texture: Void Shard",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Void Shard validated successfully"
+        },
+        {
+          "id": "item_model_void_dimension_portal_igniter",
+          "name": "Item Model: The Void Portal Key",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: The Void Portal Key validated successfully"
+        },
+        {
+          "id": "item_texture_void_dimension_portal_igniter",
+          "name": "Item Texture: The Void Portal Key",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: The Void Portal Key validated successfully"
+        },
+        {
+          "id": "item_lang_shadow_essence",
+          "name": "Item Localization: Shadow Essence",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Shadow Essence validated successfully"
+        },
+        {
+          "id": "item_lang_crystal_shard",
+          "name": "Item Localization: Crystal Shard",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Crystal Shard validated successfully"
+        },
+        {
+          "id": "item_lang_void_scale",
+          "name": "Item Localization: Void Scale",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Void Scale validated successfully"
+        },
+        {
+          "id": "item_lang_shadow_blade",
+          "name": "Item Localization: Shadow Blade",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Shadow Blade validated successfully"
+        },
+        {
+          "id": "item_lang_crystal_pickaxe",
+          "name": "Item Localization: Crystal Pickaxe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Crystal Pickaxe validated successfully"
+        },
+        {
+          "id": "item_lang_void_bow",
+          "name": "Item Localization: Void Bow",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Void Bow validated successfully"
+        },
+        {
+          "id": "item_lang_void_staff",
+          "name": "Item Localization: Void Staff",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Void Staff validated successfully"
+        },
+        {
+          "id": "item_lang_void_warp_item",
+          "name": "Item Localization: Void Warp",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Void Warp validated successfully"
+        },
+        {
+          "id": "item_lang_obsidian_powder",
+          "name": "Item Localization: Obsidian Powder",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Obsidian Powder validated successfully"
+        },
+        {
+          "id": "item_lang_void_shard",
+          "name": "Item Localization: Void Shard",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Void Shard validated successfully"
+        },
+        {
+          "id": "item_lang_void_dimension_portal_igniter",
+          "name": "Item Localization: The Void Portal Key",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: The Void Portal Key validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "blocks",
+      "total": 7,
+      "passed": 7,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "blocks_existence",
+          "name": "Blocks Defined",
+          "category": "blocks",
+          "status": "passed",
+          "message": "2 blocks defined"
+        },
+        {
+          "id": "block_state_void_stone",
+          "name": "Blockstate: Void Stone",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Void Stone validated successfully"
+        },
+        {
+          "id": "block_loot_void_stone",
+          "name": "Block Loot: Void Stone",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Loot: Void Stone validated successfully"
+        },
+        {
+          "id": "block_item_void_stone",
+          "name": "Block Item Model: Void Stone",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Void Stone validated successfully"
+        },
+        {
+          "id": "block_state_void_ore",
+          "name": "Blockstate: Void Ore",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Void Ore validated successfully"
+        },
+        {
+          "id": "block_loot_void_ore",
+          "name": "Block Loot: Void Ore",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Loot: Void Ore validated successfully"
+        },
+        {
+          "id": "block_item_void_ore",
+          "name": "Block Item Model: Void Ore",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Void Ore validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "recipes",
+      "total": 28,
+      "passed": 28,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "recipes_existence",
+          "name": "Recipes Defined",
+          "category": "recipes",
+          "status": "passed",
+          "message": "11 recipes expected"
+        },
+        {
+          "id": "recipe_files",
+          "name": "Recipe Files Generated",
+          "category": "recipes",
+          "status": "passed",
+          "message": "13 recipe files generated"
+        },
+        {
+          "id": "recipe_output_void_stone",
+          "name": "Recipe Output: void_stone",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: void_stone validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_void_stone",
+          "name": "Recipe Ingredients: void_stone",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: void_stone validated successfully"
+        },
+        {
+          "id": "recipe_output_void_ore",
+          "name": "Recipe Output: void_ore",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: void_ore validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_void_ore",
+          "name": "Recipe Ingredients: void_ore",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: void_ore validated successfully"
+        },
+        {
+          "id": "recipe_output_shadow_essence",
+          "name": "Recipe Output: shadow_essence",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: shadow_essence validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_shadow_essence",
+          "name": "Recipe Ingredients: shadow_essence",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: shadow_essence validated successfully"
+        },
+        {
+          "id": "recipe_output_crystal_shard",
+          "name": "Recipe Output: crystal_shard",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: crystal_shard validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_crystal_shard",
+          "name": "Recipe Ingredients: crystal_shard",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: crystal_shard validated successfully"
+        },
+        {
+          "id": "recipe_output_void_scale",
+          "name": "Recipe Output: void_scale",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: void_scale validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_void_scale",
+          "name": "Recipe Ingredients: void_scale",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: void_scale validated successfully"
+        },
+        {
+          "id": "recipe_output_shadow_blade",
+          "name": "Recipe Output: shadow_blade",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: shadow_blade validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_shadow_blade",
+          "name": "Recipe Ingredients: shadow_blade",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: shadow_blade validated successfully"
+        },
+        {
+          "id": "recipe_output_crystal_pickaxe",
+          "name": "Recipe Output: crystal_pickaxe",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: crystal_pickaxe validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_crystal_pickaxe",
+          "name": "Recipe Ingredients: crystal_pickaxe",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: crystal_pickaxe validated successfully"
+        },
+        {
+          "id": "recipe_output_void_bow",
+          "name": "Recipe Output: void_bow",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: void_bow validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_void_bow",
+          "name": "Recipe Ingredients: void_bow",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: void_bow validated successfully"
+        },
+        {
+          "id": "recipe_output_void_staff",
+          "name": "Recipe Output: void_staff",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: void_staff validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_void_staff",
+          "name": "Recipe Ingredients: void_staff",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: void_staff validated successfully"
+        },
+        {
+          "id": "recipe_output_void_warp_item",
+          "name": "Recipe Output: void_warp_item",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: void_warp_item validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_void_warp_item",
+          "name": "Recipe Ingredients: void_warp_item",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: void_warp_item validated successfully"
+        },
+        {
+          "id": "recipe_output_obsidian_powder",
+          "name": "Recipe Output: obsidian_powder",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: obsidian_powder validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_obsidian_powder",
+          "name": "Recipe Ingredients: obsidian_powder",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: obsidian_powder validated successfully"
+        },
+        {
+          "id": "recipe_output_void_shard",
+          "name": "Recipe Output: void_shard",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: void_shard validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_void_shard",
+          "name": "Recipe Ingredients: void_shard",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: void_shard validated successfully"
+        },
+        {
+          "id": "recipe_output_void_dimension_portal_igniter",
+          "name": "Recipe Output: void_dimension_portal_igniter",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: void_dimension_portal_igniter validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_void_dimension_portal_igniter",
+          "name": "Recipe Ingredients: void_dimension_portal_igniter",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: void_dimension_portal_igniter validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "bosses",
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "mob_boss_shadow_lord",
+          "name": "Boss Flag: Shadow Lord",
+          "category": "bosses",
+          "status": "passed",
+          "message": "Boss Flag: Shadow Lord validated successfully"
+        },
+        {
+          "id": "mob_boss_crystal_golem",
+          "name": "Boss Flag: Crystal Golem",
+          "category": "bosses",
+          "status": "passed",
+          "message": "Boss Flag: Crystal Golem validated successfully"
+        },
+        {
+          "id": "mob_boss_void_serpent",
+          "name": "Boss Flag: Void Serpent",
+          "category": "bosses",
+          "status": "passed",
+          "message": "Boss Flag: Void Serpent validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "npcs",
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "npcs_existence",
+          "name": "NPCs Defined",
+          "category": "npcs",
+          "status": "passed",
+          "message": "2 NPCs defined"
+        }
+      ]
+    },
+    {
+      "category": "dialogue",
+      "total": 6,
+      "passed": 4,
+      "failed": 0,
+      "warnings": 2,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "npc_dialogue_void_merchant",
+          "name": "NPC Dialogue: Void Merchant",
+          "category": "dialogue",
+          "status": "passed",
+          "message": "NPC Dialogue: Void Merchant validated successfully"
+        },
+        {
+          "id": "dialogue_refs_void_merchant",
+          "name": "Dialogue References: Void Merchant",
+          "category": "dialogue",
+          "status": "passed",
+          "message": "Dialogue References: Void Merchant validated successfully"
+        },
+        {
+          "id": "dialogue_orphans_void_merchant",
+          "name": "Dialogue Orphans: Void Merchant",
+          "category": "dialogue",
+          "status": "warning",
+          "message": "Dialogue has unreachable nodes: greeting",
+          "details": [
+            "greeting"
+          ]
+        },
+        {
+          "id": "npc_dialogue_shattered_explorer",
+          "name": "NPC Dialogue: Shattered Explorer",
+          "category": "dialogue",
+          "status": "passed",
+          "message": "NPC Dialogue: Shattered Explorer validated successfully"
+        },
+        {
+          "id": "dialogue_refs_shattered_explorer",
+          "name": "Dialogue References: Shattered Explorer",
+          "category": "dialogue",
+          "status": "passed",
+          "message": "Dialogue References: Shattered Explorer validated successfully"
+        },
+        {
+          "id": "dialogue_orphans_shattered_explorer",
+          "name": "Dialogue Orphans: Shattered Explorer",
+          "category": "dialogue",
+          "status": "warning",
+          "message": "Dialogue has unreachable nodes: greeting",
+          "details": [
+            "greeting"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "quests",
+      "total": 11,
+      "passed": 11,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "quests_existence",
+          "name": "Quests Defined",
+          "category": "quests",
+          "status": "passed",
+          "message": "5 quests defined"
+        },
+        {
+          "id": "quest_objectives_void_shard_collection",
+          "name": "Quest Objectives: Shards of the Void",
+          "category": "quests",
+          "status": "passed",
+          "message": "1 objectives"
+        },
+        {
+          "id": "quest_rewards_void_shard_collection",
+          "name": "Quest Rewards: Shards of the Void",
+          "category": "quests",
+          "status": "passed",
+          "message": "1 rewards"
+        },
+        {
+          "id": "quest_objectives_slay_void_walkers",
+          "name": "Quest Objectives: Purging the Walkers",
+          "category": "quests",
+          "status": "passed",
+          "message": "1 objectives"
+        },
+        {
+          "id": "quest_rewards_slay_void_walkers",
+          "name": "Quest Rewards: Purging the Walkers",
+          "category": "quests",
+          "status": "passed",
+          "message": "1 rewards"
+        },
+        {
+          "id": "quest_objectives_shadow_lord_hunt",
+          "name": "Quest Objectives: Hunt the Shadow Lord",
+          "category": "quests",
+          "status": "passed",
+          "message": "1 objectives"
+        },
+        {
+          "id": "quest_rewards_shadow_lord_hunt",
+          "name": "Quest Rewards: Hunt the Shadow Lord",
+          "category": "quests",
+          "status": "passed",
+          "message": "1 rewards"
+        },
+        {
+          "id": "quest_objectives_crystal_golem_conquest",
+          "name": "Quest Objectives: Crush the Crystal Golem",
+          "category": "quests",
+          "status": "passed",
+          "message": "1 objectives"
+        },
+        {
+          "id": "quest_rewards_crystal_golem_conquest",
+          "name": "Quest Rewards: Crush the Crystal Golem",
+          "category": "quests",
+          "status": "passed",
+          "message": "1 rewards"
+        },
+        {
+          "id": "quest_objectives_serpent_of_the_void",
+          "name": "Quest Objectives: Taming the Void Serpent",
+          "category": "quests",
+          "status": "passed",
+          "message": "1 objectives"
+        },
+        {
+          "id": "quest_rewards_serpent_of_the_void",
+          "name": "Quest Rewards: Taming the Void Serpent",
+          "category": "quests",
+          "status": "passed",
+          "message": "1 rewards"
+        }
+      ]
+    },
+    {
+      "category": "advancements",
+      "total": 13,
+      "passed": 13,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "advancements_existence",
+          "name": "Advancements Defined",
+          "category": "advancements",
+          "status": "passed",
+          "message": "6 advancements generated"
+        },
+        {
+          "id": "adv_criteria_root",
+          "name": "Advancement Criteria: root",
+          "category": "advancements",
+          "status": "passed",
+          "message": "Advancement Criteria: root validated successfully"
+        },
+        {
+          "id": "adv_icon_root",
+          "name": "Advancement Icon: root",
+          "category": "advancements",
+          "status": "passed",
+          "message": "Advancement Icon: root validated successfully"
+        },
+        {
+          "id": "adv_criteria_void_shard_collection",
+          "name": "Advancement Criteria: void_shard_collection",
+          "category": "advancements",
+          "status": "passed",
+          "message": "Advancement Criteria: void_shard_collection validated successfully"
+        },
+        {
+          "id": "adv_icon_void_shard_collection",
+          "name": "Advancement Icon: void_shard_collection",
+          "category": "advancements",
+          "status": "passed",
+          "message": "Advancement Icon: void_shard_collection validated successfully"
+        },
+        {
+          "id": "adv_criteria_slay_void_walkers",
+          "name": "Advancement Criteria: slay_void_walkers",
+          "category": "advancements",
+          "status": "passed",
+          "message": "Advancement Criteria: slay_void_walkers validated successfully"
+        },
+        {
+          "id": "adv_icon_slay_void_walkers",
+          "name": "Advancement Icon: slay_void_walkers",
+          "category": "advancements",
+          "status": "passed",
+          "message": "Advancement Icon: slay_void_walkers validated successfully"
+        },
+        {
+          "id": "adv_criteria_shadow_lord_hunt",
+          "name": "Advancement Criteria: shadow_lord_hunt",
+          "category": "advancements",
+          "status": "passed",
+          "message": "Advancement Criteria: shadow_lord_hunt validated successfully"
+        },
+        {
+          "id": "adv_icon_shadow_lord_hunt",
+          "name": "Advancement Icon: shadow_lord_hunt",
+          "category": "advancements",
+          "status": "passed",
+          "message": "Advancement Icon: shadow_lord_hunt validated successfully"
+        },
+        {
+          "id": "adv_criteria_crystal_golem_conquest",
+          "name": "Advancement Criteria: crystal_golem_conquest",
+          "category": "advancements",
+          "status": "passed",
+          "message": "Advancement Criteria: crystal_golem_conquest validated successfully"
+        },
+        {
+          "id": "adv_icon_crystal_golem_conquest",
+          "name": "Advancement Icon: crystal_golem_conquest",
+          "category": "advancements",
+          "status": "passed",
+          "message": "Advancement Icon: crystal_golem_conquest validated successfully"
+        },
+        {
+          "id": "adv_criteria_serpent_of_the_void",
+          "name": "Advancement Criteria: serpent_of_the_void",
+          "category": "advancements",
+          "status": "passed",
+          "message": "Advancement Criteria: serpent_of_the_void validated successfully"
+        },
+        {
+          "id": "adv_icon_serpent_of_the_void",
+          "name": "Advancement Icon: serpent_of_the_void",
+          "category": "advancements",
+          "status": "passed",
+          "message": "Advancement Icon: serpent_of_the_void validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "dimensions",
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "dimensions_existence",
+          "name": "Dimensions Defined",
+          "category": "dimensions",
+          "status": "passed",
+          "message": "1 dimensions defined"
+        },
+        {
+          "id": "dim_json_void_dimension",
+          "name": "Dimension JSON: The Void",
+          "category": "dimensions",
+          "status": "passed",
+          "message": "Dimension JSON: The Void validated successfully"
+        },
+        {
+          "id": "dim_type_void_dimension",
+          "name": "Dimension Type: The Void",
+          "category": "dimensions",
+          "status": "passed",
+          "message": "Dimension Type: The Void validated successfully"
+        },
+        {
+          "id": "dim_portal_void_dimension",
+          "name": "Dimension Portal: The Void",
+          "category": "dimensions",
+          "status": "passed",
+          "message": "Dimension Portal: The Void validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "biomes",
+      "total": 3,
+      "passed": 2,
+      "failed": 0,
+      "warnings": 1,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "biomes_existence",
+          "name": "Biomes Defined",
+          "category": "biomes",
+          "status": "passed",
+          "message": "1 biomes defined"
+        },
+        {
+          "id": "biome_json_void_dimension_biome",
+          "name": "Biome JSON: The Void Biome",
+          "category": "biomes",
+          "status": "passed",
+          "message": "Biome JSON: The Void Biome validated successfully"
+        },
+        {
+          "id": "biome_features_void_dimension_biome",
+          "name": "Biome Features: The Void Biome",
+          "category": "biomes",
+          "status": "warning",
+          "message": "Biome has no features defined"
+        }
+      ]
+    },
+    {
+      "category": "structures",
+      "total": 12,
+      "passed": 8,
+      "failed": 0,
+      "warnings": 4,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "structures_existence",
+          "name": "Structures Defined",
+          "category": "structures",
+          "status": "passed",
+          "message": "4 structures defined"
+        },
+        {
+          "id": "structure_json_shadow_altar",
+          "name": "Structure JSON: Shadow Altar",
+          "category": "structures",
+          "status": "passed",
+          "message": "Structure JSON: Shadow Altar validated successfully"
+        },
+        {
+          "id": "structure_set_shadow_altar",
+          "name": "Structure Set: Shadow Altar",
+          "category": "structures",
+          "status": "warning",
+          "message": "Missing structure_set (structure may not spawn)"
+        },
+        {
+          "id": "structure_loot_shadow_altar",
+          "name": "Structure Loot: Shadow Altar",
+          "category": "structures",
+          "status": "passed",
+          "message": "Structure Loot: Shadow Altar validated successfully"
+        },
+        {
+          "id": "structure_json_crystal_cavern",
+          "name": "Structure JSON: Crystal Cavern",
+          "category": "structures",
+          "status": "passed",
+          "message": "Structure JSON: Crystal Cavern validated successfully"
+        },
+        {
+          "id": "structure_set_crystal_cavern",
+          "name": "Structure Set: Crystal Cavern",
+          "category": "structures",
+          "status": "warning",
+          "message": "Missing structure_set (structure may not spawn)"
+        },
+        {
+          "id": "structure_loot_crystal_cavern",
+          "name": "Structure Loot: Crystal Cavern",
+          "category": "structures",
+          "status": "passed",
+          "message": "Structure Loot: Crystal Cavern validated successfully"
+        },
+        {
+          "id": "structure_json_void_islets",
+          "name": "Structure JSON: Void Islets",
+          "category": "structures",
+          "status": "passed",
+          "message": "Structure JSON: Void Islets validated successfully"
+        },
+        {
+          "id": "structure_set_void_islets",
+          "name": "Structure Set: Void Islets",
+          "category": "structures",
+          "status": "warning",
+          "message": "Missing structure_set (structure may not spawn)"
+        },
+        {
+          "id": "structure_json_void_dimension_structure",
+          "name": "Structure JSON: The Void Obelisk",
+          "category": "structures",
+          "status": "passed",
+          "message": "Structure JSON: The Void Obelisk validated successfully"
+        },
+        {
+          "id": "structure_set_void_dimension_structure",
+          "name": "Structure Set: The Void Obelisk",
+          "category": "structures",
+          "status": "warning",
+          "message": "Missing structure_set (structure may not spawn)"
+        },
+        {
+          "id": "structure_loot_void_dimension_structure",
+          "name": "Structure Loot: The Void Obelisk",
+          "category": "structures",
+          "status": "passed",
+          "message": "Structure Loot: The Void Obelisk validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "events",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "events_existence",
+          "name": "Events Defined",
+          "category": "events",
+          "status": "skipped",
+          "message": "No events defined in spec"
+        }
+      ]
+    }
+  ],
+  "criticalFailures": [
+    {
+      "id": "mob_class_shadow_lord",
+      "name": "Mob Class: Shadow Lord",
+      "category": "mobs",
+      "status": "failed",
+      "message": "Missing entity class ShadowLordEntity",
+      "filePath": "src/main/java/com/modgen/shatteredconquest/entity/ShadowLordEntity.java"
+    },
+    {
+      "id": "mob_class_crystal_golem",
+      "name": "Mob Class: Crystal Golem",
+      "category": "mobs",
+      "status": "failed",
+      "message": "Missing entity class CrystalGolemEntity",
+      "filePath": "src/main/java/com/modgen/shatteredconquest/entity/CrystalGolemEntity.java"
+    },
+    {
+      "id": "mob_class_void_serpent",
+      "name": "Mob Class: Void Serpent",
+      "category": "mobs",
+      "status": "failed",
+      "message": "Missing entity class VoidSerpentEntity",
+      "filePath": "src/main/java/com/modgen/shatteredconquest/entity/VoidSerpentEntity.java"
+    },
+    {
+      "id": "npc_trade_item_void_merchant_0",
+      "name": "Trade Item: Void Merchant #1",
+      "category": "trades",
+      "status": "failed",
+      "message": "Trade result \"1\" not found in mod items",
+      "suggestion": "Add 1 to items or use minecraft: prefix for vanilla items"
+    },
+    {
+      "id": "npc_trade_item_void_merchant_1",
+      "name": "Trade Item: Void Merchant #2",
+      "category": "trades",
+      "status": "failed",
+      "message": "Trade result \"1\" not found in mod items",
+      "suggestion": "Add 1 to items or use minecraft: prefix for vanilla items"
+    },
+    {
+      "id": "npc_trade_item_void_merchant_2",
+      "name": "Trade Item: Void Merchant #3",
+      "category": "trades",
+      "status": "failed",
+      "message": "Trade result \"1\" not found in mod items",
+      "suggestion": "Add 1 to items or use minecraft: prefix for vanilla items"
+    },
+    {
+      "id": "npc_trade_item_shattered_explorer_0",
+      "name": "Trade Item: Shattered Explorer #1",
+      "category": "trades",
+      "status": "failed",
+      "message": "Trade result \"1\" not found in mod items",
+      "suggestion": "Add 1 to items or use minecraft: prefix for vanilla items"
+    },
+    {
+      "id": "npc_trade_item_shattered_explorer_1",
+      "name": "Trade Item: Shattered Explorer #2",
+      "category": "trades",
+      "status": "failed",
+      "message": "Trade result \"1\" not found in mod items",
+      "suggestion": "Add 1 to items or use minecraft: prefix for vanilla items"
+    }
+  ],
+  "allChecks": [
+    {
+      "id": "items_existence",
+      "name": "Items Defined",
+      "category": "items",
+      "status": "passed",
+      "message": "11 items defined"
+    },
+    {
+      "id": "item_model_shadow_essence",
+      "name": "Item Model: Shadow Essence",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Shadow Essence validated successfully"
+    },
+    {
+      "id": "item_texture_shadow_essence",
+      "name": "Item Texture: Shadow Essence",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Shadow Essence validated successfully"
+    },
+    {
+      "id": "item_model_crystal_shard",
+      "name": "Item Model: Crystal Shard",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Crystal Shard validated successfully"
+    },
+    {
+      "id": "item_texture_crystal_shard",
+      "name": "Item Texture: Crystal Shard",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Crystal Shard validated successfully"
+    },
+    {
+      "id": "item_model_void_scale",
+      "name": "Item Model: Void Scale",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Void Scale validated successfully"
+    },
+    {
+      "id": "item_texture_void_scale",
+      "name": "Item Texture: Void Scale",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Void Scale validated successfully"
+    },
+    {
+      "id": "item_model_shadow_blade",
+      "name": "Item Model: Shadow Blade",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Shadow Blade validated successfully"
+    },
+    {
+      "id": "item_texture_shadow_blade",
+      "name": "Item Texture: Shadow Blade",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Shadow Blade validated successfully"
+    },
+    {
+      "id": "item_model_crystal_pickaxe",
+      "name": "Item Model: Crystal Pickaxe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Crystal Pickaxe validated successfully"
+    },
+    {
+      "id": "item_texture_crystal_pickaxe",
+      "name": "Item Texture: Crystal Pickaxe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Crystal Pickaxe validated successfully"
+    },
+    {
+      "id": "item_model_void_bow",
+      "name": "Item Model: Void Bow",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Void Bow validated successfully"
+    },
+    {
+      "id": "item_texture_void_bow",
+      "name": "Item Texture: Void Bow",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Void Bow validated successfully"
+    },
+    {
+      "id": "item_model_void_staff",
+      "name": "Item Model: Void Staff",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Void Staff validated successfully"
+    },
+    {
+      "id": "item_texture_void_staff",
+      "name": "Item Texture: Void Staff",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Void Staff validated successfully"
+    },
+    {
+      "id": "item_model_void_warp_item",
+      "name": "Item Model: Void Warp",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Void Warp validated successfully"
+    },
+    {
+      "id": "item_texture_void_warp_item",
+      "name": "Item Texture: Void Warp",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Void Warp validated successfully"
+    },
+    {
+      "id": "item_model_obsidian_powder",
+      "name": "Item Model: Obsidian Powder",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Obsidian Powder validated successfully"
+    },
+    {
+      "id": "item_texture_obsidian_powder",
+      "name": "Item Texture: Obsidian Powder",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Obsidian Powder validated successfully"
+    },
+    {
+      "id": "item_model_void_shard",
+      "name": "Item Model: Void Shard",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Void Shard validated successfully"
+    },
+    {
+      "id": "item_texture_void_shard",
+      "name": "Item Texture: Void Shard",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Void Shard validated successfully"
+    },
+    {
+      "id": "item_model_void_dimension_portal_igniter",
+      "name": "Item Model: The Void Portal Key",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: The Void Portal Key validated successfully"
+    },
+    {
+      "id": "item_texture_void_dimension_portal_igniter",
+      "name": "Item Texture: The Void Portal Key",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: The Void Portal Key validated successfully"
+    },
+    {
+      "id": "item_lang_shadow_essence",
+      "name": "Item Localization: Shadow Essence",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Shadow Essence validated successfully"
+    },
+    {
+      "id": "item_lang_crystal_shard",
+      "name": "Item Localization: Crystal Shard",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Crystal Shard validated successfully"
+    },
+    {
+      "id": "item_lang_void_scale",
+      "name": "Item Localization: Void Scale",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Void Scale validated successfully"
+    },
+    {
+      "id": "item_lang_shadow_blade",
+      "name": "Item Localization: Shadow Blade",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Shadow Blade validated successfully"
+    },
+    {
+      "id": "item_lang_crystal_pickaxe",
+      "name": "Item Localization: Crystal Pickaxe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Crystal Pickaxe validated successfully"
+    },
+    {
+      "id": "item_lang_void_bow",
+      "name": "Item Localization: Void Bow",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Void Bow validated successfully"
+    },
+    {
+      "id": "item_lang_void_staff",
+      "name": "Item Localization: Void Staff",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Void Staff validated successfully"
+    },
+    {
+      "id": "item_lang_void_warp_item",
+      "name": "Item Localization: Void Warp",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Void Warp validated successfully"
+    },
+    {
+      "id": "item_lang_obsidian_powder",
+      "name": "Item Localization: Obsidian Powder",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Obsidian Powder validated successfully"
+    },
+    {
+      "id": "item_lang_void_shard",
+      "name": "Item Localization: Void Shard",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Void Shard validated successfully"
+    },
+    {
+      "id": "item_lang_void_dimension_portal_igniter",
+      "name": "Item Localization: The Void Portal Key",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: The Void Portal Key validated successfully"
+    },
+    {
+      "id": "blocks_existence",
+      "name": "Blocks Defined",
+      "category": "blocks",
+      "status": "passed",
+      "message": "2 blocks defined"
+    },
+    {
+      "id": "block_state_void_stone",
+      "name": "Blockstate: Void Stone",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Void Stone validated successfully"
+    },
+    {
+      "id": "block_loot_void_stone",
+      "name": "Block Loot: Void Stone",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Loot: Void Stone validated successfully"
+    },
+    {
+      "id": "block_item_void_stone",
+      "name": "Block Item Model: Void Stone",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Void Stone validated successfully"
+    },
+    {
+      "id": "block_state_void_ore",
+      "name": "Blockstate: Void Ore",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Void Ore validated successfully"
+    },
+    {
+      "id": "block_loot_void_ore",
+      "name": "Block Loot: Void Ore",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Loot: Void Ore validated successfully"
+    },
+    {
+      "id": "block_item_void_ore",
+      "name": "Block Item Model: Void Ore",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Void Ore validated successfully"
+    },
+    {
+      "id": "recipes_existence",
+      "name": "Recipes Defined",
+      "category": "recipes",
+      "status": "passed",
+      "message": "11 recipes expected"
+    },
+    {
+      "id": "recipe_files",
+      "name": "Recipe Files Generated",
+      "category": "recipes",
+      "status": "passed",
+      "message": "13 recipe files generated"
+    },
+    {
+      "id": "recipe_output_void_stone",
+      "name": "Recipe Output: void_stone",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: void_stone validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_void_stone",
+      "name": "Recipe Ingredients: void_stone",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: void_stone validated successfully"
+    },
+    {
+      "id": "recipe_output_void_ore",
+      "name": "Recipe Output: void_ore",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: void_ore validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_void_ore",
+      "name": "Recipe Ingredients: void_ore",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: void_ore validated successfully"
+    },
+    {
+      "id": "recipe_output_shadow_essence",
+      "name": "Recipe Output: shadow_essence",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: shadow_essence validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_shadow_essence",
+      "name": "Recipe Ingredients: shadow_essence",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: shadow_essence validated successfully"
+    },
+    {
+      "id": "recipe_output_crystal_shard",
+      "name": "Recipe Output: crystal_shard",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: crystal_shard validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_crystal_shard",
+      "name": "Recipe Ingredients: crystal_shard",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: crystal_shard validated successfully"
+    },
+    {
+      "id": "recipe_output_void_scale",
+      "name": "Recipe Output: void_scale",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: void_scale validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_void_scale",
+      "name": "Recipe Ingredients: void_scale",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: void_scale validated successfully"
+    },
+    {
+      "id": "recipe_output_shadow_blade",
+      "name": "Recipe Output: shadow_blade",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: shadow_blade validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_shadow_blade",
+      "name": "Recipe Ingredients: shadow_blade",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: shadow_blade validated successfully"
+    },
+    {
+      "id": "recipe_output_crystal_pickaxe",
+      "name": "Recipe Output: crystal_pickaxe",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: crystal_pickaxe validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_crystal_pickaxe",
+      "name": "Recipe Ingredients: crystal_pickaxe",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: crystal_pickaxe validated successfully"
+    },
+    {
+      "id": "recipe_output_void_bow",
+      "name": "Recipe Output: void_bow",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: void_bow validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_void_bow",
+      "name": "Recipe Ingredients: void_bow",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: void_bow validated successfully"
+    },
+    {
+      "id": "recipe_output_void_staff",
+      "name": "Recipe Output: void_staff",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: void_staff validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_void_staff",
+      "name": "Recipe Ingredients: void_staff",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: void_staff validated successfully"
+    },
+    {
+      "id": "recipe_output_void_warp_item",
+      "name": "Recipe Output: void_warp_item",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: void_warp_item validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_void_warp_item",
+      "name": "Recipe Ingredients: void_warp_item",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: void_warp_item validated successfully"
+    },
+    {
+      "id": "recipe_output_obsidian_powder",
+      "name": "Recipe Output: obsidian_powder",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: obsidian_powder validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_obsidian_powder",
+      "name": "Recipe Ingredients: obsidian_powder",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: obsidian_powder validated successfully"
+    },
+    {
+      "id": "recipe_output_void_shard",
+      "name": "Recipe Output: void_shard",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: void_shard validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_void_shard",
+      "name": "Recipe Ingredients: void_shard",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: void_shard validated successfully"
+    },
+    {
+      "id": "recipe_output_void_dimension_portal_igniter",
+      "name": "Recipe Output: void_dimension_portal_igniter",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: void_dimension_portal_igniter validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_void_dimension_portal_igniter",
+      "name": "Recipe Ingredients: void_dimension_portal_igniter",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: void_dimension_portal_igniter validated successfully"
+    },
+    {
+      "id": "mobs_existence",
+      "name": "Mobs Defined",
+      "category": "mobs",
+      "status": "passed",
+      "message": "6 mobs defined"
+    },
+    {
+      "id": "mob_class_shadow_lord",
+      "name": "Mob Class: Shadow Lord",
+      "category": "mobs",
+      "status": "failed",
+      "message": "Missing entity class ShadowLordEntity",
+      "filePath": "src/main/java/com/modgen/shatteredconquest/entity/ShadowLordEntity.java"
+    },
+    {
+      "id": "mob_drops_shadow_lord",
+      "name": "Mob Drops: Shadow Lord",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Drops: Shadow Lord validated successfully"
+    },
+    {
+      "id": "mob_loot_shadow_lord",
+      "name": "Mob Loot Table: Shadow Lord",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Loot Table: Shadow Lord validated successfully"
+    },
+    {
+      "id": "mob_texture_shadow_lord",
+      "name": "Mob Texture: Shadow Lord",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Texture: Shadow Lord validated successfully"
+    },
+    {
+      "id": "mob_boss_shadow_lord",
+      "name": "Boss Flag: Shadow Lord",
+      "category": "bosses",
+      "status": "passed",
+      "message": "Boss Flag: Shadow Lord validated successfully"
+    },
+    {
+      "id": "mob_class_crystal_golem",
+      "name": "Mob Class: Crystal Golem",
+      "category": "mobs",
+      "status": "failed",
+      "message": "Missing entity class CrystalGolemEntity",
+      "filePath": "src/main/java/com/modgen/shatteredconquest/entity/CrystalGolemEntity.java"
+    },
+    {
+      "id": "mob_drops_crystal_golem",
+      "name": "Mob Drops: Crystal Golem",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Drops: Crystal Golem validated successfully"
+    },
+    {
+      "id": "mob_loot_crystal_golem",
+      "name": "Mob Loot Table: Crystal Golem",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Loot Table: Crystal Golem validated successfully"
+    },
+    {
+      "id": "mob_texture_crystal_golem",
+      "name": "Mob Texture: Crystal Golem",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Texture: Crystal Golem validated successfully"
+    },
+    {
+      "id": "mob_boss_crystal_golem",
+      "name": "Boss Flag: Crystal Golem",
+      "category": "bosses",
+      "status": "passed",
+      "message": "Boss Flag: Crystal Golem validated successfully"
+    },
+    {
+      "id": "mob_class_void_serpent",
+      "name": "Mob Class: Void Serpent",
+      "category": "mobs",
+      "status": "failed",
+      "message": "Missing entity class VoidSerpentEntity",
+      "filePath": "src/main/java/com/modgen/shatteredconquest/entity/VoidSerpentEntity.java"
+    },
+    {
+      "id": "mob_drops_void_serpent",
+      "name": "Mob Drops: Void Serpent",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Drops: Void Serpent validated successfully"
+    },
+    {
+      "id": "mob_loot_void_serpent",
+      "name": "Mob Loot Table: Void Serpent",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Loot Table: Void Serpent validated successfully"
+    },
+    {
+      "id": "mob_texture_void_serpent",
+      "name": "Mob Texture: Void Serpent",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Texture: Void Serpent validated successfully"
+    },
+    {
+      "id": "mob_boss_void_serpent",
+      "name": "Boss Flag: Void Serpent",
+      "category": "bosses",
+      "status": "passed",
+      "message": "Boss Flag: Void Serpent validated successfully"
+    },
+    {
+      "id": "mob_class_shadow_minion",
+      "name": "Mob Class: Shadow Minion",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Class: Shadow Minion validated successfully"
+    },
+    {
+      "id": "mob_drops_shadow_minion",
+      "name": "Mob Drops: Shadow Minion",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Drops: Shadow Minion validated successfully"
+    },
+    {
+      "id": "mob_loot_shadow_minion",
+      "name": "Mob Loot Table: Shadow Minion",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Loot Table: Shadow Minion validated successfully"
+    },
+    {
+      "id": "mob_texture_shadow_minion",
+      "name": "Mob Texture: Shadow Minion",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Texture: Shadow Minion validated successfully"
+    },
+    {
+      "id": "mob_class_void_walker",
+      "name": "Mob Class: Void Walker",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Class: Void Walker validated successfully"
+    },
+    {
+      "id": "mob_drops_void_walker",
+      "name": "Mob Drops: Void Walker",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Drops: Void Walker validated successfully"
+    },
+    {
+      "id": "mob_loot_void_walker",
+      "name": "Mob Loot Table: Void Walker",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Loot Table: Void Walker validated successfully"
+    },
+    {
+      "id": "mob_texture_void_walker",
+      "name": "Mob Texture: Void Walker",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Texture: Void Walker validated successfully"
+    },
+    {
+      "id": "mob_class_void_serpent_hatchling",
+      "name": "Mob Class: Void Serpent Hatchling",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Class: Void Serpent Hatchling validated successfully"
+    },
+    {
+      "id": "mob_drops_void_serpent_hatchling",
+      "name": "Mob Drops: Void Serpent Hatchling",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Drops: Void Serpent Hatchling validated successfully"
+    },
+    {
+      "id": "mob_loot_void_serpent_hatchling",
+      "name": "Mob Loot Table: Void Serpent Hatchling",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Loot Table: Void Serpent Hatchling validated successfully"
+    },
+    {
+      "id": "mob_texture_void_serpent_hatchling",
+      "name": "Mob Texture: Void Serpent Hatchling",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Texture: Void Serpent Hatchling validated successfully"
+    },
+    {
+      "id": "npcs_existence",
+      "name": "NPCs Defined",
+      "category": "npcs",
+      "status": "passed",
+      "message": "2 NPCs defined"
+    },
+    {
+      "id": "npc_dialogue_void_merchant",
+      "name": "NPC Dialogue: Void Merchant",
+      "category": "dialogue",
+      "status": "passed",
+      "message": "NPC Dialogue: Void Merchant validated successfully"
+    },
+    {
+      "id": "dialogue_refs_void_merchant",
+      "name": "Dialogue References: Void Merchant",
+      "category": "dialogue",
+      "status": "passed",
+      "message": "Dialogue References: Void Merchant validated successfully"
+    },
+    {
+      "id": "dialogue_orphans_void_merchant",
+      "name": "Dialogue Orphans: Void Merchant",
+      "category": "dialogue",
+      "status": "warning",
+      "message": "Dialogue has unreachable nodes: greeting",
+      "details": [
+        "greeting"
+      ]
+    },
+    {
+      "id": "npc_trades_void_merchant",
+      "name": "NPC Trades: Void Merchant",
+      "category": "trades",
+      "status": "passed",
+      "message": "3 trades defined"
+    },
+    {
+      "id": "npc_trade_item_void_merchant_0",
+      "name": "Trade Item: Void Merchant #1",
+      "category": "trades",
+      "status": "failed",
+      "message": "Trade result \"1\" not found in mod items",
+      "suggestion": "Add 1 to items or use minecraft: prefix for vanilla items"
+    },
+    {
+      "id": "npc_trade_item_void_merchant_1",
+      "name": "Trade Item: Void Merchant #2",
+      "category": "trades",
+      "status": "failed",
+      "message": "Trade result \"1\" not found in mod items",
+      "suggestion": "Add 1 to items or use minecraft: prefix for vanilla items"
+    },
+    {
+      "id": "npc_trade_item_void_merchant_2",
+      "name": "Trade Item: Void Merchant #3",
+      "category": "trades",
+      "status": "failed",
+      "message": "Trade result \"1\" not found in mod items",
+      "suggestion": "Add 1 to items or use minecraft: prefix for vanilla items"
+    },
+    {
+      "id": "npc_dialogue_shattered_explorer",
+      "name": "NPC Dialogue: Shattered Explorer",
+      "category": "dialogue",
+      "status": "passed",
+      "message": "NPC Dialogue: Shattered Explorer validated successfully"
+    },
+    {
+      "id": "dialogue_refs_shattered_explorer",
+      "name": "Dialogue References: Shattered Explorer",
+      "category": "dialogue",
+      "status": "passed",
+      "message": "Dialogue References: Shattered Explorer validated successfully"
+    },
+    {
+      "id": "dialogue_orphans_shattered_explorer",
+      "name": "Dialogue Orphans: Shattered Explorer",
+      "category": "dialogue",
+      "status": "warning",
+      "message": "Dialogue has unreachable nodes: greeting",
+      "details": [
+        "greeting"
+      ]
+    },
+    {
+      "id": "npc_trades_shattered_explorer",
+      "name": "NPC Trades: Shattered Explorer",
+      "category": "trades",
+      "status": "passed",
+      "message": "2 trades defined"
+    },
+    {
+      "id": "npc_trade_item_shattered_explorer_0",
+      "name": "Trade Item: Shattered Explorer #1",
+      "category": "trades",
+      "status": "failed",
+      "message": "Trade result \"1\" not found in mod items",
+      "suggestion": "Add 1 to items or use minecraft: prefix for vanilla items"
+    },
+    {
+      "id": "npc_trade_item_shattered_explorer_1",
+      "name": "Trade Item: Shattered Explorer #2",
+      "category": "trades",
+      "status": "failed",
+      "message": "Trade result \"1\" not found in mod items",
+      "suggestion": "Add 1 to items or use minecraft: prefix for vanilla items"
+    },
+    {
+      "id": "quests_existence",
+      "name": "Quests Defined",
+      "category": "quests",
+      "status": "passed",
+      "message": "5 quests defined"
+    },
+    {
+      "id": "quest_objectives_void_shard_collection",
+      "name": "Quest Objectives: Shards of the Void",
+      "category": "quests",
+      "status": "passed",
+      "message": "1 objectives"
+    },
+    {
+      "id": "quest_rewards_void_shard_collection",
+      "name": "Quest Rewards: Shards of the Void",
+      "category": "quests",
+      "status": "passed",
+      "message": "1 rewards"
+    },
+    {
+      "id": "quest_objectives_slay_void_walkers",
+      "name": "Quest Objectives: Purging the Walkers",
+      "category": "quests",
+      "status": "passed",
+      "message": "1 objectives"
+    },
+    {
+      "id": "quest_rewards_slay_void_walkers",
+      "name": "Quest Rewards: Purging the Walkers",
+      "category": "quests",
+      "status": "passed",
+      "message": "1 rewards"
+    },
+    {
+      "id": "quest_objectives_shadow_lord_hunt",
+      "name": "Quest Objectives: Hunt the Shadow Lord",
+      "category": "quests",
+      "status": "passed",
+      "message": "1 objectives"
+    },
+    {
+      "id": "quest_rewards_shadow_lord_hunt",
+      "name": "Quest Rewards: Hunt the Shadow Lord",
+      "category": "quests",
+      "status": "passed",
+      "message": "1 rewards"
+    },
+    {
+      "id": "quest_objectives_crystal_golem_conquest",
+      "name": "Quest Objectives: Crush the Crystal Golem",
+      "category": "quests",
+      "status": "passed",
+      "message": "1 objectives"
+    },
+    {
+      "id": "quest_rewards_crystal_golem_conquest",
+      "name": "Quest Rewards: Crush the Crystal Golem",
+      "category": "quests",
+      "status": "passed",
+      "message": "1 rewards"
+    },
+    {
+      "id": "quest_objectives_serpent_of_the_void",
+      "name": "Quest Objectives: Taming the Void Serpent",
+      "category": "quests",
+      "status": "passed",
+      "message": "1 objectives"
+    },
+    {
+      "id": "quest_rewards_serpent_of_the_void",
+      "name": "Quest Rewards: Taming the Void Serpent",
+      "category": "quests",
+      "status": "passed",
+      "message": "1 rewards"
+    },
+    {
+      "id": "advancements_existence",
+      "name": "Advancements Defined",
+      "category": "advancements",
+      "status": "passed",
+      "message": "6 advancements generated"
+    },
+    {
+      "id": "adv_criteria_root",
+      "name": "Advancement Criteria: root",
+      "category": "advancements",
+      "status": "passed",
+      "message": "Advancement Criteria: root validated successfully"
+    },
+    {
+      "id": "adv_icon_root",
+      "name": "Advancement Icon: root",
+      "category": "advancements",
+      "status": "passed",
+      "message": "Advancement Icon: root validated successfully"
+    },
+    {
+      "id": "adv_criteria_void_shard_collection",
+      "name": "Advancement Criteria: void_shard_collection",
+      "category": "advancements",
+      "status": "passed",
+      "message": "Advancement Criteria: void_shard_collection validated successfully"
+    },
+    {
+      "id": "adv_icon_void_shard_collection",
+      "name": "Advancement Icon: void_shard_collection",
+      "category": "advancements",
+      "status": "passed",
+      "message": "Advancement Icon: void_shard_collection validated successfully"
+    },
+    {
+      "id": "adv_criteria_slay_void_walkers",
+      "name": "Advancement Criteria: slay_void_walkers",
+      "category": "advancements",
+      "status": "passed",
+      "message": "Advancement Criteria: slay_void_walkers validated successfully"
+    },
+    {
+      "id": "adv_icon_slay_void_walkers",
+      "name": "Advancement Icon: slay_void_walkers",
+      "category": "advancements",
+      "status": "passed",
+      "message": "Advancement Icon: slay_void_walkers validated successfully"
+    },
+    {
+      "id": "adv_criteria_shadow_lord_hunt",
+      "name": "Advancement Criteria: shadow_lord_hunt",
+      "category": "advancements",
+      "status": "passed",
+      "message": "Advancement Criteria: shadow_lord_hunt validated successfully"
+    },
+    {
+      "id": "adv_icon_shadow_lord_hunt",
+      "name": "Advancement Icon: shadow_lord_hunt",
+      "category": "advancements",
+      "status": "passed",
+      "message": "Advancement Icon: shadow_lord_hunt validated successfully"
+    },
+    {
+      "id": "adv_criteria_crystal_golem_conquest",
+      "name": "Advancement Criteria: crystal_golem_conquest",
+      "category": "advancements",
+      "status": "passed",
+      "message": "Advancement Criteria: crystal_golem_conquest validated successfully"
+    },
+    {
+      "id": "adv_icon_crystal_golem_conquest",
+      "name": "Advancement Icon: crystal_golem_conquest",
+      "category": "advancements",
+      "status": "passed",
+      "message": "Advancement Icon: crystal_golem_conquest validated successfully"
+    },
+    {
+      "id": "adv_criteria_serpent_of_the_void",
+      "name": "Advancement Criteria: serpent_of_the_void",
+      "category": "advancements",
+      "status": "passed",
+      "message": "Advancement Criteria: serpent_of_the_void validated successfully"
+    },
+    {
+      "id": "adv_icon_serpent_of_the_void",
+      "name": "Advancement Icon: serpent_of_the_void",
+      "category": "advancements",
+      "status": "passed",
+      "message": "Advancement Icon: serpent_of_the_void validated successfully"
+    },
+    {
+      "id": "dimensions_existence",
+      "name": "Dimensions Defined",
+      "category": "dimensions",
+      "status": "passed",
+      "message": "1 dimensions defined"
+    },
+    {
+      "id": "dim_json_void_dimension",
+      "name": "Dimension JSON: The Void",
+      "category": "dimensions",
+      "status": "passed",
+      "message": "Dimension JSON: The Void validated successfully"
+    },
+    {
+      "id": "dim_type_void_dimension",
+      "name": "Dimension Type: The Void",
+      "category": "dimensions",
+      "status": "passed",
+      "message": "Dimension Type: The Void validated successfully"
+    },
+    {
+      "id": "dim_portal_void_dimension",
+      "name": "Dimension Portal: The Void",
+      "category": "dimensions",
+      "status": "passed",
+      "message": "Dimension Portal: The Void validated successfully"
+    },
+    {
+      "id": "biomes_existence",
+      "name": "Biomes Defined",
+      "category": "biomes",
+      "status": "passed",
+      "message": "1 biomes defined"
+    },
+    {
+      "id": "biome_json_void_dimension_biome",
+      "name": "Biome JSON: The Void Biome",
+      "category": "biomes",
+      "status": "passed",
+      "message": "Biome JSON: The Void Biome validated successfully"
+    },
+    {
+      "id": "biome_features_void_dimension_biome",
+      "name": "Biome Features: The Void Biome",
+      "category": "biomes",
+      "status": "warning",
+      "message": "Biome has no features defined"
+    },
+    {
+      "id": "structures_existence",
+      "name": "Structures Defined",
+      "category": "structures",
+      "status": "passed",
+      "message": "4 structures defined"
+    },
+    {
+      "id": "structure_json_shadow_altar",
+      "name": "Structure JSON: Shadow Altar",
+      "category": "structures",
+      "status": "passed",
+      "message": "Structure JSON: Shadow Altar validated successfully"
+    },
+    {
+      "id": "structure_set_shadow_altar",
+      "name": "Structure Set: Shadow Altar",
+      "category": "structures",
+      "status": "warning",
+      "message": "Missing structure_set (structure may not spawn)"
+    },
+    {
+      "id": "structure_loot_shadow_altar",
+      "name": "Structure Loot: Shadow Altar",
+      "category": "structures",
+      "status": "passed",
+      "message": "Structure Loot: Shadow Altar validated successfully"
+    },
+    {
+      "id": "structure_json_crystal_cavern",
+      "name": "Structure JSON: Crystal Cavern",
+      "category": "structures",
+      "status": "passed",
+      "message": "Structure JSON: Crystal Cavern validated successfully"
+    },
+    {
+      "id": "structure_set_crystal_cavern",
+      "name": "Structure Set: Crystal Cavern",
+      "category": "structures",
+      "status": "warning",
+      "message": "Missing structure_set (structure may not spawn)"
+    },
+    {
+      "id": "structure_loot_crystal_cavern",
+      "name": "Structure Loot: Crystal Cavern",
+      "category": "structures",
+      "status": "passed",
+      "message": "Structure Loot: Crystal Cavern validated successfully"
+    },
+    {
+      "id": "structure_json_void_islets",
+      "name": "Structure JSON: Void Islets",
+      "category": "structures",
+      "status": "passed",
+      "message": "Structure JSON: Void Islets validated successfully"
+    },
+    {
+      "id": "structure_set_void_islets",
+      "name": "Structure Set: Void Islets",
+      "category": "structures",
+      "status": "warning",
+      "message": "Missing structure_set (structure may not spawn)"
+    },
+    {
+      "id": "structure_json_void_dimension_structure",
+      "name": "Structure JSON: The Void Obelisk",
+      "category": "structures",
+      "status": "passed",
+      "message": "Structure JSON: The Void Obelisk validated successfully"
+    },
+    {
+      "id": "structure_set_void_dimension_structure",
+      "name": "Structure Set: The Void Obelisk",
+      "category": "structures",
+      "status": "warning",
+      "message": "Missing structure_set (structure may not spawn)"
+    },
+    {
+      "id": "structure_loot_void_dimension_structure",
+      "name": "Structure Loot: The Void Obelisk",
+      "category": "structures",
+      "status": "passed",
+      "message": "Structure Loot: The Void Obelisk validated successfully"
+    },
+    {
+      "id": "events_existence",
+      "name": "Events Defined",
+      "category": "events",
+      "status": "skipped",
+      "message": "No events defined in spec"
+    }
+  ],
+  "summary": "# Feature Audit Report: Shattered Conquest\nGenerated: 2025-12-26T20:07:30.401Z\nMinecraft Version: 1.21.1\n\n## ❌ VALIDATION FAILED\nTotal: 139 passed, 8 failed, 7 warnings, 1 skipped\n\n## Category Breakdown\n\n❌ **trades**: 2/7 passed\n❌ **mobs**: 22/25 passed\n✅ **items**: 34/34 passed\n✅ **blocks**: 7/7 passed\n✅ **recipes**: 28/28 passed\n✅ **bosses**: 3/3 passed\n✅ **npcs**: 1/1 passed\n⚠️ **dialogue**: 4/6 passed\n✅ **quests**: 11/11 passed\n✅ **advancements**: 13/13 passed\n✅ **dimensions**: 4/4 passed\n⚠️ **biomes**: 2/3 passed\n⚠️ **structures**: 8/12 passed\n✅ **events**: 0/1 passed\n\n## Critical Failures\n\n- **Mob Class: Shadow Lord**: Missing entity class ShadowLordEntity\n  - File: `src/main/java/com/modgen/shatteredconquest/entity/ShadowLordEntity.java`\n- **Mob Class: Crystal Golem**: Missing entity class CrystalGolemEntity\n  - File: `src/main/java/com/modgen/shatteredconquest/entity/CrystalGolemEntity.java`\n- **Mob Class: Void Serpent**: Missing entity class VoidSerpentEntity\n  - File: `src/main/java/com/modgen/shatteredconquest/entity/VoidSerpentEntity.java`\n- **Trade Item: Void Merchant #1**: Trade result \"1\" not found in mod items\n- **Trade Item: Void Merchant #2**: Trade result \"1\" not found in mod items\n- **Trade Item: Void Merchant #3**: Trade result \"1\" not found in mod items\n- **Trade Item: Shattered Explorer #1**: Trade result \"1\" not found in mod items\n- **Trade Item: Shattered Explorer #2**: Trade result \"1\" not found in mod items",
+  "suggestions": [
+    "Add 1 to items or use minecraft: prefix for vanilla items"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "parent": "shatteredconquest:root",
+  "display": {
+    "icon": {
+      "id": "shatteredconquest:shadow_essence"
+    },
+    "title": {
+      "text": "Crush the Crystal Golem"
+    },
+    "description": {
+      "text": "A massive golem made of pure crystal stands guard over a hidden treasure. Destroy it and claim your prize."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "shatteredconquest:crystal_golem"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

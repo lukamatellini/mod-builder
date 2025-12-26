@@ -1,0 +1,38 @@
+{
+  "parent": "shatteredconquest:root",
+  "display": {
+    "icon": {
+      "id": "shatteredconquest:shadow_essence"
+    },
+    "title": {
+      "text": "Hunt the Shadow Lord"
+    },
+    "description": {
+      "text": "The Shadow Lord's influence corrupts the land. Only its defeat can bring balance."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "shatteredconquest:shadow_lord"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21.1",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-26T20:07:29.607Z",
+  "enabledModules": {
+    "quests": true,
+    "npcs": true,
+    "dialogue": true,
+    "trading": true,
+    "structures": true,
+    "dimensions": true,
+    "biomes": true,
+    "commands": true,
+    "items": true,
+    "mobs": true,
+    "events": false
+  },
+  "inferenceReasons": [
+    "Quest system enabled: 5 quests defined in spec",
+    "NPC system enabled: 2 NPCs defined in spec",
+    "Dialogue UI enabled: NPCs require dialogue system",
+    "Trading system enabled: 2 NPCs have trades defined",
+    "Reputation system enabled: Trading requires reputation tracking",
+    "Structures enabled: 4 structures defined in spec",
+    "Dimensions enabled: 1 dimensions defined in spec",
+    "Biomes enabled: 1 biomes defined in spec",
+    "Items enabled: 11 items defined in spec",
+    "Mobs enabled: 6 mobs defined in spec",
+    "Commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 11,
+    "mobs": 6,
+    "structures": 4,
+    "dimensions": 1,
+    "quests": 5,
+    "npcs": 2,
+    "events": 0
+  },
+  "expectedDataFiles": [
+    "data/shatteredconquest/quests/void_shard_collection.json",
+    "data/shatteredconquest/quests/slay_void_walkers.json",
+    "data/shatteredconquest/quests/shadow_lord_hunt.json",
+    "data/shatteredconquest/quests/crystal_golem_conquest.json",
+    "data/shatteredconquest/quests/serpent_of_the_void.json",
+    "data/shatteredconquest/dialogue/void_merchant.json",
+    "data/shatteredconquest/dialogue/shattered_explorer.json",
+    "data/shatteredconquest/dimension/void_dimension.json",
+    "data/shatteredconquest/dimension_type/void_dimension.json",
+    "data/shatteredconquest/worldgen/structure/shadow_altar.json",
+    "data/shatteredconquest/worldgen/structure/crystal_cavern.json",
+    "data/shatteredconquest/worldgen/structure/void_islets.json",
+    "data/shatteredconquest/worldgen/structure/void_dimension_structure.json"
+  ],
+  "expectedAssetFiles": [
+    "assets/shatteredconquest/lang/en_us.json",
+    "assets/shatteredconquest/models/item/shadow_essence.json",
+    "assets/shatteredconquest/models/item/crystal_shard.json",
+    "assets/shatteredconquest/models/item/void_scale.json",
+    "assets/shatteredconquest/models/item/shadow_blade.json",
+    "assets/shatteredconquest/models/item/crystal_pickaxe.json",
+    "assets/shatteredconquest/models/item/void_bow.json",
+    "assets/shatteredconquest/models/item/void_staff.json",
+    "assets/shatteredconquest/models/item/void_warp_item.json",
+    "assets/shatteredconquest/models/item/obsidian_powder.json",
+    "assets/shatteredconquest/models/item/void_shard.json",
+    "assets/shatteredconquest/models/item/void_dimension_portal_igniter.json"
+  ]
+}

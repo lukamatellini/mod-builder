@@ -1,0 +1,28 @@
+{
+  "id": "shadow_lord_hunt",
+  "name": "Hunt the Shadow Lord",
+  "description": "The Shadow Lord's influence corrupts the land. Only its defeat can bring balance.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "kill_mob",
+      "description": "Defeat the Shadow Lord",
+      "targetId": "shadow_lord",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "shadow_essence",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Hunt the Shadow Lord",
+  "completeMessage": "Completed: Hunt the Shadow Lord!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

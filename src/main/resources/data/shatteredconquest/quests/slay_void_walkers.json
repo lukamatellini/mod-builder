@@ -1,0 +1,28 @@
+{
+  "id": "slay_void_walkers",
+  "name": "Purging the Walkers",
+  "description": "These creatures infest the Void. Eliminate them to make the dimension safer for passage.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "kill_mob",
+      "description": "Kill 15 Void Walkers",
+      "targetId": "void_walker",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "shadow_essence",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Purging the Walkers",
+  "completeMessage": "Completed: Purging the Walkers!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

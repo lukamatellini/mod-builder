@@ -1,0 +1,11 @@
+{
+  "type": "shatteredconquest:void_dimension",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "shatteredconquest:void_dimension_biome"
+    }
+  }
+}

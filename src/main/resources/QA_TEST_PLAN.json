@@ -1,0 +1,1092 @@
+{
+  "modId": "shatteredconquest",
+  "modName": "Shattered Conquest",
+  "mcVersion": "1.21.1",
+  "generatedAt": "2025-12-26T20:07:30.403Z",
+  "totalTests": 81,
+  "categories": [
+    {
+      "name": "Items",
+      "tests": [
+        {
+          "category": "Items",
+          "name": "Shadow Essence Registration",
+          "command": "/give @p shatteredconquest:shadow_essence",
+          "steps": [
+            "Run: /give @p shatteredconquest:shadow_essence",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Crystal Shard Registration",
+          "command": "/give @p shatteredconquest:crystal_shard",
+          "steps": [
+            "Run: /give @p shatteredconquest:crystal_shard",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Void Scale Registration",
+          "command": "/give @p shatteredconquest:void_scale",
+          "steps": [
+            "Run: /give @p shatteredconquest:void_scale",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Shadow Blade Registration",
+          "command": "/give @p shatteredconquest:shadow_blade",
+          "steps": [
+            "Run: /give @p shatteredconquest:shadow_blade",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Crystal Pickaxe Registration",
+          "command": "/give @p shatteredconquest:crystal_pickaxe",
+          "steps": [
+            "Run: /give @p shatteredconquest:crystal_pickaxe",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Void Bow Registration",
+          "command": "/give @p shatteredconquest:void_bow",
+          "steps": [
+            "Run: /give @p shatteredconquest:void_bow",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Void Staff Registration",
+          "command": "/give @p shatteredconquest:void_staff",
+          "steps": [
+            "Run: /give @p shatteredconquest:void_staff",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Void Warp Registration",
+          "command": "/give @p shatteredconquest:void_warp_item",
+          "steps": [
+            "Run: /give @p shatteredconquest:void_warp_item",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Obsidian Powder Registration",
+          "command": "/give @p shatteredconquest:obsidian_powder",
+          "steps": [
+            "Run: /give @p shatteredconquest:obsidian_powder",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Void Shard Registration",
+          "command": "/give @p shatteredconquest:void_shard",
+          "steps": [
+            "Run: /give @p shatteredconquest:void_shard",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "The Void Portal Key Registration",
+          "command": "/give @p shatteredconquest:void_dimension_portal_igniter",
+          "steps": [
+            "Run: /give @p shatteredconquest:void_dimension_portal_igniter",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        }
+      ]
+    },
+    {
+      "name": "Recipes",
+      "tests": [
+        {
+          "category": "Recipes",
+          "name": "Shadow Essence Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:obsidian\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Shadow Essence",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Crystal Shard Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:diamond\",\"minecraft:stick\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Crystal Shard",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Void Scale Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:diamond\",\"minecraft:stick\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Void Scale",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Shadow Blade Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:netherite_ingot\",\"minecraft:stick\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Shadow Blade",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Crystal Pickaxe Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:stick\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Crystal Pickaxe",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Void Bow Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:diamond\",\"minecraft:stick\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Void Bow",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Void Staff Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:stick\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Void Staff",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Void Warp Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:obsidian\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Void Warp",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Obsidian Powder Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:obsidian\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Obsidian Powder",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Void Shard Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:cobblestone\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Void Shard",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "The Void Portal Key Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:ender_pearl\",\"minecraft:ender_pearl\",\"minecraft:ender_eye\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft The Void Portal Key",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Item Effects",
+      "tests": [
+        {
+          "category": "Item Effects",
+          "name": "Shadow Blade on_hit Effect",
+          "steps": [
+            "Give yourself the item: /give @p shatteredconquest:shadow_blade",
+            "Hit a mob with the item",
+            "Observe minecraft:wither activation"
+          ],
+          "expectedResult": "minecraft:wither activates correctly",
+          "automated": false
+        },
+        {
+          "category": "Item Effects",
+          "name": "Crystal Pickaxe passive Effect",
+          "steps": [
+            "Give yourself the item: /give @p shatteredconquest:crystal_pickaxe",
+            "Hold item and wait",
+            "Observe minecraft:speed activation"
+          ],
+          "expectedResult": "minecraft:speed activates correctly",
+          "automated": false
+        },
+        {
+          "category": "Item Effects",
+          "name": "Void Bow on_hit Effect",
+          "steps": [
+            "Give yourself the item: /give @p shatteredconquest:void_bow",
+            "Hit a mob with the item",
+            "Observe minecraft:slowness activation"
+          ],
+          "expectedResult": "minecraft:slowness activates correctly",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Blocks",
+      "tests": [
+        {
+          "category": "Blocks",
+          "name": "Void Stone Placement",
+          "command": "/give @p shatteredconquest:void_stone",
+          "steps": [
+            "Run: /give @p shatteredconquest:void_stone",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        },
+        {
+          "category": "Blocks",
+          "name": "Void Ore Placement",
+          "command": "/give @p shatteredconquest:void_ore",
+          "steps": [
+            "Run: /give @p shatteredconquest:void_ore",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Mobs",
+      "tests": [
+        {
+          "category": "Mobs",
+          "name": "Shadow Lord Spawn",
+          "command": "/summon shatteredconquest:shadow_lord",
+          "steps": [
+            "Run: /summon shatteredconquest:shadow_lord",
+            "Verify mob spawns without crash",
+            "Check mob texture is not purple/black",
+            "Verify mob has expected health"
+          ],
+          "expectedResult": "Mob spawns with correct model and attributes",
+          "automated": true
+        },
+        {
+          "category": "Mobs",
+          "name": "Shadow Lord AI Behavior",
+          "steps": [
+            "Summon mob: /summon shatteredconquest:shadow_lord",
+            "Approach mob (should attack)",
+            "Observe movement patterns",
+            "Check mob responds to player presence"
+          ],
+          "expectedResult": "Mob attacks player on sight",
+          "automated": false
+        },
+        {
+          "category": "Mobs",
+          "name": "Crystal Golem Spawn",
+          "command": "/summon shatteredconquest:crystal_golem",
+          "steps": [
+            "Run: /summon shatteredconquest:crystal_golem",
+            "Verify mob spawns without crash",
+            "Check mob texture is not purple/black",
+            "Verify mob has expected health"
+          ],
+          "expectedResult": "Mob spawns with correct model and attributes",
+          "automated": true
+        },
+        {
+          "category": "Mobs",
+          "name": "Crystal Golem AI Behavior",
+          "steps": [
+            "Summon mob: /summon shatteredconquest:crystal_golem",
+            "Approach mob (should attack)",
+            "Observe movement patterns",
+            "Check mob responds to player presence"
+          ],
+          "expectedResult": "Mob attacks player on sight",
+          "automated": false
+        },
+        {
+          "category": "Mobs",
+          "name": "Void Serpent Spawn",
+          "command": "/summon shatteredconquest:void_serpent",
+          "steps": [
+            "Run: /summon shatteredconquest:void_serpent",
+            "Verify mob spawns without crash",
+            "Check mob texture is not purple/black",
+            "Verify mob has expected health"
+          ],
+          "expectedResult": "Mob spawns with correct model and attributes",
+          "automated": true
+        },
+        {
+          "category": "Mobs",
+          "name": "Void Serpent AI Behavior",
+          "steps": [
+            "Summon mob: /summon shatteredconquest:void_serpent",
+            "Approach mob (should attack)",
+            "Observe movement patterns",
+            "Check mob responds to player presence"
+          ],
+          "expectedResult": "Mob attacks player on sight",
+          "automated": false
+        },
+        {
+          "category": "Mobs",
+          "name": "Shadow Minion Spawn",
+          "command": "/summon shatteredconquest:shadow_minion",
+          "steps": [
+            "Run: /summon shatteredconquest:shadow_minion",
+            "Verify mob spawns without crash",
+            "Check mob texture is not purple/black",
+            "Verify mob has expected health"
+          ],
+          "expectedResult": "Mob spawns with correct model and attributes",
+          "automated": true
+        },
+        {
+          "category": "Mobs",
+          "name": "Shadow Minion AI Behavior",
+          "steps": [
+            "Summon mob: /summon shatteredconquest:shadow_minion",
+            "Approach mob (should attack)",
+            "Observe movement patterns",
+            "Check mob responds to player presence"
+          ],
+          "expectedResult": "Mob attacks player on sight",
+          "automated": false
+        },
+        {
+          "category": "Mobs",
+          "name": "Void Walker Spawn",
+          "command": "/summon shatteredconquest:void_walker",
+          "steps": [
+            "Run: /summon shatteredconquest:void_walker",
+            "Verify mob spawns without crash",
+            "Check mob texture is not purple/black",
+            "Verify mob has expected health"
+          ],
+          "expectedResult": "Mob spawns with correct model and attributes",
+          "automated": true
+        },
+        {
+          "category": "Mobs",
+          "name": "Void Walker AI Behavior",
+          "steps": [
+            "Summon mob: /summon shatteredconquest:void_walker",
+            "Approach mob (should attack)",
+            "Observe movement patterns",
+            "Check mob responds to player presence"
+          ],
+          "expectedResult": "Mob attacks player on sight",
+          "automated": false
+        },
+        {
+          "category": "Mobs",
+          "name": "Void Serpent Hatchling Spawn",
+          "command": "/summon shatteredconquest:void_serpent_hatchling",
+          "steps": [
+            "Run: /summon shatteredconquest:void_serpent_hatchling",
+            "Verify mob spawns without crash",
+            "Check mob texture is not purple/black",
+            "Verify mob has expected health"
+          ],
+          "expectedResult": "Mob spawns with correct model and attributes",
+          "automated": true
+        },
+        {
+          "category": "Mobs",
+          "name": "Void Serpent Hatchling AI Behavior",
+          "steps": [
+            "Summon mob: /summon shatteredconquest:void_serpent_hatchling",
+            "Approach mob (should attack)",
+            "Observe movement patterns",
+            "Check mob responds to player presence"
+          ],
+          "expectedResult": "Mob attacks player on sight",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Mob Drops",
+      "tests": [
+        {
+          "category": "Mob Drops",
+          "name": "Shadow Lord Loot",
+          "steps": [
+            "Summon mob: /summon shatteredconquest:shadow_lord",
+            "Kill the mob (use /kill if needed)",
+            "Collect dropped items",
+            "Verify drops match expected loot table"
+          ],
+          "expectedResult": "Drops: shatteredconquest:shadow_essence",
+          "automated": false
+        },
+        {
+          "category": "Mob Drops",
+          "name": "Crystal Golem Loot",
+          "steps": [
+            "Summon mob: /summon shatteredconquest:crystal_golem",
+            "Kill the mob (use /kill if needed)",
+            "Collect dropped items",
+            "Verify drops match expected loot table"
+          ],
+          "expectedResult": "Drops: shatteredconquest:crystal_shard",
+          "automated": false
+        },
+        {
+          "category": "Mob Drops",
+          "name": "Void Serpent Loot",
+          "steps": [
+            "Summon mob: /summon shatteredconquest:void_serpent",
+            "Kill the mob (use /kill if needed)",
+            "Collect dropped items",
+            "Verify drops match expected loot table"
+          ],
+          "expectedResult": "Drops: shatteredconquest:void_shard",
+          "automated": false
+        },
+        {
+          "category": "Mob Drops",
+          "name": "Shadow Minion Loot",
+          "steps": [
+            "Summon mob: /summon shatteredconquest:shadow_minion",
+            "Kill the mob (use /kill if needed)",
+            "Collect dropped items",
+            "Verify drops match expected loot table"
+          ],
+          "expectedResult": "Drops: shadow_essence",
+          "automated": false
+        },
+        {
+          "category": "Mob Drops",
+          "name": "Void Walker Loot",
+          "steps": [
+            "Summon mob: /summon shatteredconquest:void_walker",
+            "Kill the mob (use /kill if needed)",
+            "Collect dropped items",
+            "Verify drops match expected loot table"
+          ],
+          "expectedResult": "Drops: void_shard",
+          "automated": false
+        },
+        {
+          "category": "Mob Drops",
+          "name": "Void Serpent Hatchling Loot",
+          "steps": [
+            "Summon mob: /summon shatteredconquest:void_serpent_hatchling",
+            "Kill the mob (use /kill if needed)",
+            "Collect dropped items",
+            "Verify drops match expected loot table"
+          ],
+          "expectedResult": "Drops: void_scale",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Bosses",
+      "tests": [
+        {
+          "category": "Bosses",
+          "name": "Shadow Lord Boss Bar",
+          "steps": [
+            "Summon boss: /summon shatteredconquest:shadow_lord",
+            "Move close to boss",
+            "Verify boss bar appears at top of screen",
+            "Damage boss and verify bar updates"
+          ],
+          "expectedResult": "Boss bar displays and tracks health correctly",
+          "automated": false
+        },
+        {
+          "category": "Bosses",
+          "name": "Crystal Golem Boss Bar",
+          "steps": [
+            "Summon boss: /summon shatteredconquest:crystal_golem",
+            "Move close to boss",
+            "Verify boss bar appears at top of screen",
+            "Damage boss and verify bar updates"
+          ],
+          "expectedResult": "Boss bar displays and tracks health correctly",
+          "automated": false
+        },
+        {
+          "category": "Bosses",
+          "name": "Void Serpent Boss Bar",
+          "steps": [
+            "Summon boss: /summon shatteredconquest:void_serpent",
+            "Move close to boss",
+            "Verify boss bar appears at top of screen",
+            "Damage boss and verify bar updates"
+          ],
+          "expectedResult": "Boss bar displays and tracks health correctly",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "NPCs",
+      "tests": [
+        {
+          "category": "NPCs",
+          "name": "Void Merchant Dialogue",
+          "steps": [
+            "Summon NPC: /summon shatteredconquest:void_merchant",
+            "Right-click on NPC",
+            "Verify dialogue screen opens",
+            "Test each dialogue option",
+            "Verify dialogue branches work"
+          ],
+          "expectedResult": "Dialogue opens and all branches are navigable",
+          "automated": false
+        },
+        {
+          "category": "NPCs",
+          "name": "Shattered Explorer Dialogue",
+          "steps": [
+            "Summon NPC: /summon shatteredconquest:shattered_explorer",
+            "Right-click on NPC",
+            "Verify dialogue screen opens",
+            "Test each dialogue option",
+            "Verify dialogue branches work"
+          ],
+          "expectedResult": "Dialogue opens and all branches are navigable",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Trading",
+      "tests": [
+        {
+          "category": "Trading",
+          "name": "Void Merchant Trades",
+          "steps": [
+            "Summon NPC: /summon shatteredconquest:void_merchant",
+            "Open trade interface",
+            "Verify 3 trades available",
+            "Complete at least one trade",
+            "Verify received item is correct"
+          ],
+          "expectedResult": "All trades work and provide correct items",
+          "automated": false
+        },
+        {
+          "category": "Trading",
+          "name": "Shattered Explorer Trades",
+          "steps": [
+            "Summon NPC: /summon shatteredconquest:shattered_explorer",
+            "Open trade interface",
+            "Verify 2 trades available",
+            "Complete at least one trade",
+            "Verify received item is correct"
+          ],
+          "expectedResult": "All trades work and provide correct items",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Quests",
+      "tests": [
+        {
+          "category": "Quests",
+          "name": "Shards of the Void Activation",
+          "steps": [
+            "Check quest is visible in quest log/journal",
+            "Accept quest if required",
+            "Verify objectives display correctly"
+          ],
+          "expectedResult": "Quest appears and objectives are trackable",
+          "automated": false
+        },
+        {
+          "category": "Quests",
+          "name": "Purging the Walkers Activation",
+          "steps": [
+            "Check quest is visible in quest log/journal",
+            "Accept quest if required",
+            "Verify objectives display correctly"
+          ],
+          "expectedResult": "Quest appears and objectives are trackable",
+          "automated": false
+        },
+        {
+          "category": "Quests",
+          "name": "Hunt the Shadow Lord Activation",
+          "steps": [
+            "Check quest is visible in quest log/journal",
+            "Accept quest if required",
+            "Verify objectives display correctly"
+          ],
+          "expectedResult": "Quest appears and objectives are trackable",
+          "automated": false
+        },
+        {
+          "category": "Quests",
+          "name": "Crush the Crystal Golem Activation",
+          "steps": [
+            "Check quest is visible in quest log/journal",
+            "Accept quest if required",
+            "Verify objectives display correctly"
+          ],
+          "expectedResult": "Quest appears and objectives are trackable",
+          "automated": false
+        },
+        {
+          "category": "Quests",
+          "name": "Taming the Void Serpent Activation",
+          "steps": [
+            "Check quest is visible in quest log/journal",
+            "Accept quest if required",
+            "Verify objectives display correctly"
+          ],
+          "expectedResult": "Quest appears and objectives are trackable",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Quest Objectives",
+      "tests": [
+        {
+          "category": "Quest Objectives",
+          "name": "Shards of the Void Objective 1",
+          "steps": [
+            "Complete objective: collect_item void_shard",
+            "Verify progress updates",
+            "Check completion state"
+          ],
+          "expectedResult": "Objective can be completed and tracks correctly",
+          "automated": false
+        },
+        {
+          "category": "Quest Objectives",
+          "name": "Purging the Walkers Objective 1",
+          "steps": [
+            "Complete objective: kill_mob void_walker",
+            "Verify progress updates",
+            "Check completion state"
+          ],
+          "expectedResult": "Objective can be completed and tracks correctly",
+          "automated": false
+        },
+        {
+          "category": "Quest Objectives",
+          "name": "Hunt the Shadow Lord Objective 1",
+          "steps": [
+            "Complete objective: kill_mob shadow_lord",
+            "Verify progress updates",
+            "Check completion state"
+          ],
+          "expectedResult": "Objective can be completed and tracks correctly",
+          "automated": false
+        },
+        {
+          "category": "Quest Objectives",
+          "name": "Crush the Crystal Golem Objective 1",
+          "steps": [
+            "Complete objective: kill_mob crystal_golem",
+            "Verify progress updates",
+            "Check completion state"
+          ],
+          "expectedResult": "Objective can be completed and tracks correctly",
+          "automated": false
+        },
+        {
+          "category": "Quest Objectives",
+          "name": "Taming the Void Serpent Objective 1",
+          "steps": [
+            "Complete objective: kill_mob void_serpent",
+            "Verify progress updates",
+            "Check completion state"
+          ],
+          "expectedResult": "Objective can be completed and tracks correctly",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Quest Rewards",
+      "tests": [
+        {
+          "category": "Quest Rewards",
+          "name": "Shards of the Void Completion",
+          "steps": [
+            "Complete all quest objectives",
+            "Turn in quest if required",
+            "Verify rewards are granted"
+          ],
+          "expectedResult": "Receive: shadow_essence",
+          "automated": false
+        },
+        {
+          "category": "Quest Rewards",
+          "name": "Purging the Walkers Completion",
+          "steps": [
+            "Complete all quest objectives",
+            "Turn in quest if required",
+            "Verify rewards are granted"
+          ],
+          "expectedResult": "Receive: shadow_essence",
+          "automated": false
+        },
+        {
+          "category": "Quest Rewards",
+          "name": "Hunt the Shadow Lord Completion",
+          "steps": [
+            "Complete all quest objectives",
+            "Turn in quest if required",
+            "Verify rewards are granted"
+          ],
+          "expectedResult": "Receive: shadow_essence",
+          "automated": false
+        },
+        {
+          "category": "Quest Rewards",
+          "name": "Crush the Crystal Golem Completion",
+          "steps": [
+            "Complete all quest objectives",
+            "Turn in quest if required",
+            "Verify rewards are granted"
+          ],
+          "expectedResult": "Receive: shadow_essence",
+          "automated": false
+        },
+        {
+          "category": "Quest Rewards",
+          "name": "Taming the Void Serpent Completion",
+          "steps": [
+            "Complete all quest objectives",
+            "Turn in quest if required",
+            "Verify rewards are granted"
+          ],
+          "expectedResult": "Receive: shadow_essence",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Dimensions",
+      "tests": [
+        {
+          "category": "Dimensions",
+          "name": "The Void Portal Entry",
+          "steps": [
+            "Build or activate dimension portal",
+            "Enter portal",
+            "Verify teleport to dimension",
+            "Check dimension generates correctly"
+          ],
+          "expectedResult": "Successfully enter dimension without crash",
+          "automated": false
+        },
+        {
+          "category": "Dimensions",
+          "name": "The Void World Generation",
+          "command": "/execute in shatteredconquest:void_dimension run tp @p ~ 100 ~",
+          "steps": [
+            "Teleport: /execute in shatteredconquest:void_dimension run tp @p ~ 100 ~",
+            "Explore dimension terrain",
+            "Verify expected biomes/features",
+            "Check lighting and sky render correctly"
+          ],
+          "expectedResult": "Dimension terrain generates with expected features",
+          "automated": false
+        },
+        {
+          "category": "Dimensions",
+          "name": "The Void Return Portal",
+          "steps": [
+            "While in dimension, activate return portal",
+            "Enter portal",
+            "Verify return to overworld"
+          ],
+          "expectedResult": "Successfully return from dimension",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Biomes",
+      "tests": [
+        {
+          "category": "Biomes",
+          "name": "The Void Biome Generation",
+          "command": "/locatebiome shatteredconquest:void_dimension_biome",
+          "steps": [
+            "Run: /locatebiome shatteredconquest:void_dimension_biome",
+            "Teleport to biome location",
+            "Verify biome features are present",
+            "Check mob spawns are correct"
+          ],
+          "expectedResult": "Biome generates with expected features and spawns",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Structures",
+      "tests": [
+        {
+          "category": "Structures",
+          "name": "Shadow Altar Location",
+          "command": "/locate structure shatteredconquest:shadow_altar",
+          "steps": [
+            "Run: /locate structure shatteredconquest:shadow_altar",
+            "Teleport to structure",
+            "Verify structure generated correctly"
+          ],
+          "expectedResult": "Structure can be located and renders correctly",
+          "automated": false
+        },
+        {
+          "category": "Structures",
+          "name": "Crystal Cavern Location",
+          "command": "/locate structure shatteredconquest:crystal_cavern",
+          "steps": [
+            "Run: /locate structure shatteredconquest:crystal_cavern",
+            "Teleport to structure",
+            "Verify structure generated correctly"
+          ],
+          "expectedResult": "Structure can be located and renders correctly",
+          "automated": false
+        },
+        {
+          "category": "Structures",
+          "name": "Void Islets Location",
+          "command": "/locate structure shatteredconquest:void_islets",
+          "steps": [
+            "Run: /locate structure shatteredconquest:void_islets",
+            "Teleport to structure",
+            "Verify structure generated correctly"
+          ],
+          "expectedResult": "Structure can be located and renders correctly",
+          "automated": false
+        },
+        {
+          "category": "Structures",
+          "name": "The Void Obelisk Location",
+          "command": "/locate structure shatteredconquest:void_dimension_structure",
+          "steps": [
+            "Run: /locate structure shatteredconquest:void_dimension_structure",
+            "Teleport to structure",
+            "Verify structure generated correctly"
+          ],
+          "expectedResult": "Structure can be located and renders correctly",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Structure Loot",
+      "tests": [
+        {
+          "category": "Structure Loot",
+          "name": "Shadow Altar Chest Loot",
+          "steps": [
+            "Locate structure",
+            "Find loot chests",
+            "Open chests",
+            "Verify loot is generated"
+          ],
+          "expectedResult": "Chests contain expected loot",
+          "automated": false
+        },
+        {
+          "category": "Structure Loot",
+          "name": "Crystal Cavern Chest Loot",
+          "steps": [
+            "Locate structure",
+            "Find loot chests",
+            "Open chests",
+            "Verify loot is generated"
+          ],
+          "expectedResult": "Chests contain expected loot",
+          "automated": false
+        },
+        {
+          "category": "Structure Loot",
+          "name": "The Void Obelisk Chest Loot",
+          "steps": [
+            "Locate structure",
+            "Find loot chests",
+            "Open chests",
+            "Verify loot is generated"
+          ],
+          "expectedResult": "Chests contain expected loot",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Structure Spawners",
+      "tests": [
+        {
+          "category": "Structure Spawners",
+          "name": "Shadow Altar Spawners",
+          "steps": [
+            "Locate structure",
+            "Find spawner blocks",
+            "Wait for mobs to spawn",
+            "Verify correct mob type spawns"
+          ],
+          "expectedResult": "Spawners activate and spawn correct mobs",
+          "automated": false
+        },
+        {
+          "category": "Structure Spawners",
+          "name": "Void Islets Spawners",
+          "steps": [
+            "Locate structure",
+            "Find spawner blocks",
+            "Wait for mobs to spawn",
+            "Verify correct mob type spawns"
+          ],
+          "expectedResult": "Spawners activate and spawn correct mobs",
+          "automated": false
+        },
+        {
+          "category": "Structure Spawners",
+          "name": "The Void Obelisk Spawners",
+          "steps": [
+            "Locate structure",
+            "Find spawner blocks",
+            "Wait for mobs to spawn",
+            "Verify correct mob type spawns"
+          ],
+          "expectedResult": "Spawners activate and spawn correct mobs",
+          "automated": false
+        }
+      ]
+    }
+  ],
+  "quickCommands": [
+    "/give @p shatteredconquest:shadow_essence",
+    "/give @p shatteredconquest:crystal_shard",
+    "/give @p shatteredconquest:void_scale",
+    "/give @p shatteredconquest:shadow_blade",
+    "/give @p shatteredconquest:crystal_pickaxe",
+    "/give @p shatteredconquest:void_bow",
+    "/give @p shatteredconquest:void_staff",
+    "/give @p shatteredconquest:void_warp_item",
+    "/give @p shatteredconquest:obsidian_powder",
+    "/give @p shatteredconquest:void_shard",
+    "/give @p shatteredconquest:void_dimension_portal_igniter",
+    "/summon shatteredconquest:shadow_lord",
+    "/summon shatteredconquest:crystal_golem",
+    "/summon shatteredconquest:void_serpent",
+    "/summon shatteredconquest:shadow_minion",
+    "/summon shatteredconquest:void_walker",
+    "/summon shatteredconquest:void_serpent_hatchling",
+    "/execute in shatteredconquest:void_dimension run tp @p ~ 100 ~"
+  ]
+}

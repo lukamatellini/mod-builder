@@ -1,0 +1,28 @@
+{
+  "id": "void_shard_collection",
+  "name": "Shards of the Void",
+  "description": "The Void Merchant seeks Void Shards to power his ancient devices. Gather enough to earn his trust.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Collect 20 Void Shards",
+      "targetId": "void_shard",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "shadow_essence",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Shards of the Void",
+  "completeMessage": "Completed: Shards of the Void!",
+  "repeatable": false,
+  "giverNpcId": ""
+}
