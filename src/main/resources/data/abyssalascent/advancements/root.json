@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "abyssalascent:void_silk"
+    },
+    "title": {
+      "text": "Abyssal Ascent"
+    },
+    "description": {
+      "text": "Welcome to Abyssal Ascent!"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

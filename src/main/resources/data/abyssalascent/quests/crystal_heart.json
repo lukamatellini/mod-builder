@@ -1,0 +1,28 @@
+{
+  "id": "crystal_heart",
+  "name": "Crystal Heart",
+  "description": "Prove your worth to the Crystal Guardian by bringing them Crystal Shards from the Caverns.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Deliver 32 crystal_shard to the Crystal Guardian",
+      "targetId": "void_silk",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "void_silk",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Crystal Heart",
+  "completeMessage": "Completed: Crystal Heart!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

@@ -1,0 +1,19 @@
+{
+  "npcId": "void_kings_herald",
+  "npcName": "Void King's Herald",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "You have felled a king, mortal, but the Abyss knows no true end. This is merely a prelude... a taste of what is yet to come. Take your reward, and await the true awakening."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

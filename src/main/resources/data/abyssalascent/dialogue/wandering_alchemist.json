@@ -1,0 +1,19 @@
+{
+  "npcId": "wandering_alchemist",
+  "npcName": "Wandering Alchemist",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "Greetings, traveler. My elixirs can aid you against the Void's corruption. What troubles you, or perhaps, what do you seek?"
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

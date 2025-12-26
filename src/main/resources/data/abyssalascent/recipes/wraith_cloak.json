@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "M M",
+    "MMM",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "item": "minecraft:leather_chestplate"
+    }
+  },
+  "result": {
+    "id": "abyssalascent:wraith_cloak",
+    "count": 1
+  }
+}

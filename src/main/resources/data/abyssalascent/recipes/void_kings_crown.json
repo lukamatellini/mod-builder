@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MMM",
+    "M M",
+    "   "
+  ],
+  "key": {
+    "M": {
+      "item": "minecraft:netherite_helmet"
+    }
+  },
+  "result": {
+    "id": "abyssalascent:void_kings_crown",
+    "count": 1
+  }
+}

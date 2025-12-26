@@ -1,0 +1,37 @@
+{
+  "parent": "abyssalascent:root",
+  "display": {
+    "icon": {
+      "id": "abyssalascent:void_silk"
+    },
+    "title": {
+      "text": "Gathering Darkness"
+    },
+    "description": {
+      "text": "The Elder Sage has tasked you with gathering Void Silk to learn more about the Abyss's influence."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "abyssalascent:void_silk"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

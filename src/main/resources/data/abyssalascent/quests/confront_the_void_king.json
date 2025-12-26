@@ -1,0 +1,28 @@
+{
+  "id": "confront_the_void_king",
+  "name": "Confront the Void King",
+  "description": "The time has come. All preparation has led to this moment. Confront The Void King and save the Overworld from the corruption of the Abyss.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "kill_mob",
+      "description": "Defeat The Void King in his arena",
+      "targetId": "void_king",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "void_silk",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Confront the Void King",
+  "completeMessage": "Completed: Confront the Void King!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

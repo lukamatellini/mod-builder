@@ -1,0 +1,38 @@
+{
+  "parent": "abyssalascent:root",
+  "display": {
+    "icon": {
+      "id": "abyssalascent:void_silk"
+    },
+    "title": {
+      "text": "The Corrupted Must Fall"
+    },
+    "description": {
+      "text": "The Corrupted Villagers are a blight on the Void. Purify their numbers and find the source of their corruption."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "abyssalascent:corrupted_villager"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

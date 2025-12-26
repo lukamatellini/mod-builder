@@ -1,0 +1,38 @@
+{
+  "structures": [
+    {
+      "structure": "abyssalascent:ruined_alchemist_lab",
+      "weight": 1
+    },
+    {
+      "structure": "abyssalascent:crystal_forge",
+      "weight": 1
+    },
+    {
+      "structure": "abyssalascent:void_obelisk",
+      "weight": 1
+    },
+    {
+      "structure": "abyssalascent:corrupted_village",
+      "weight": 1
+    },
+    {
+      "structure": "abyssalascent:shadow_shrine",
+      "weight": 1
+    },
+    {
+      "structure": "abyssalascent:void_kings_citadel",
+      "weight": 1
+    },
+    {
+      "structure": "abyssalascent:abyssal_void_structure",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 8,
+    "salt": 403210460
+  }
+}

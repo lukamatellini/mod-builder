@@ -1,0 +1,37 @@
+{
+  "parent": "abyssalascent:root",
+  "display": {
+    "icon": {
+      "id": "abyssalascent:void_silk"
+    },
+    "title": {
+      "text": "Crystal Heart"
+    },
+    "description": {
+      "text": "Prove your worth to the Crystal Guardian by bringing them Crystal Shards from the Caverns."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "abyssalascent:void_silk"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}
