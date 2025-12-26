@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "key": {
+    "M": {
+      "item": "epicadventure:void_blade_handle"
+    }
+  },
+  "result": {
+    "id": "epicadventure:void_blade",
+    "count": 1
+  }
+}

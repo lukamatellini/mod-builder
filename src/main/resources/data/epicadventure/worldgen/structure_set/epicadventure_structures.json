@@ -1,0 +1,38 @@
+{
+  "structures": [
+    {
+      "structure": "epicadventure:ruined_alchemist_lab",
+      "weight": 1
+    },
+    {
+      "structure": "epicadventure:crystal_forge",
+      "weight": 1
+    },
+    {
+      "structure": "epicadventure:void_obelisk",
+      "weight": 1
+    },
+    {
+      "structure": "epicadventure:corrupted_village",
+      "weight": 1
+    },
+    {
+      "structure": "epicadventure:shadow_shrine",
+      "weight": 1
+    },
+    {
+      "structure": "epicadventure:void_kings_citadel",
+      "weight": 1
+    },
+    {
+      "structure": "epicadventure:the_abyssal_void_structure",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 8,
+    "salt": 603226247
+  }
+}

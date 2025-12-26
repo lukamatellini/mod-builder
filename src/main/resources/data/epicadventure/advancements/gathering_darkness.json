@@ -1,0 +1,37 @@
+{
+  "parent": "epicadventure:root",
+  "display": {
+    "icon": {
+      "id": "epicadventure:void_silk"
+    },
+    "title": {
+      "text": "Gathering Darkness"
+    },
+    "description": {
+      "text": "The Elder Sage needs Void Silk to help him understand the encroaching darkness from the Abyss."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "epicadventure:void_silk"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

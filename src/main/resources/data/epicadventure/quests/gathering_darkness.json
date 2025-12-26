@@ -1,0 +1,28 @@
+{
+  "id": "gathering_darkness",
+  "name": "Gathering Darkness",
+  "description": "The Elder Sage needs Void Silk to help him understand the encroaching darkness from the Abyss.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Collect 16 Void Silk from Void Crawlers.",
+      "targetId": "void_silk",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "void_silk",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Gathering Darkness",
+  "completeMessage": "Completed: Gathering Darkness!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

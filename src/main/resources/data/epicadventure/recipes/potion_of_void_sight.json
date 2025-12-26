@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "epicadventure:wraith_essence"
+    },
+    {
+      "item": "minecraft:awkward_potion"
+    }
+  ],
+  "result": {
+    "id": "epicadventure:potion_of_void_sight",
+    "count": 1
+  }
+}

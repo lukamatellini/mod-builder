@@ -1,0 +1,37 @@
+{
+  "parent": "epicadventure:root",
+  "display": {
+    "icon": {
+      "id": "epicadventure:void_silk"
+    },
+    "title": {
+      "text": "Crystal Heart"
+    },
+    "description": {
+      "text": "The Crystal Guardian requires more Crystal Shards to power the Crystal Forge and maintain its protective aura."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "epicadventure:void_silk"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

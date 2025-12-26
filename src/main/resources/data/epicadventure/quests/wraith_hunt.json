@@ -1,0 +1,28 @@
+{
+  "id": "wraith_hunt",
+  "name": "Wraith Hunt",
+  "description": "The Elder Sage needs you to thin out the Shadows Wraiths that plague the Abyssal Void.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "kill_mob",
+      "description": "Slay 10 Shadow Wraiths.",
+      "targetId": "shadow_wraith",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "void_silk",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Wraith Hunt",
+  "completeMessage": "Completed: Wraith Hunt!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

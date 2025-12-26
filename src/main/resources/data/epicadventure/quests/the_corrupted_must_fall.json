@@ -1,0 +1,28 @@
+{
+  "id": "the_corrupted_must_fall",
+  "name": "The Corrupted Must Fall",
+  "description": "The Elder Sage believes that by purifying the corrupted, the portal to the Abyss can be controlled.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "kill_mob",
+      "description": "Kill 20 Corrupted Villagers and acquire 1 Corrupted Heart.",
+      "targetId": "corrupted_villager",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "void_silk",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: The Corrupted Must Fall",
+  "completeMessage": "Completed: The Corrupted Must Fall!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

@@ -1,0 +1,19 @@
+{
+  "npcId": "wandering_alchemist",
+  "npcName": "Wandering Alchemist",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "Tell me about this dimension., What do you know of The Void King?, Show me your wares."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

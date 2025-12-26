@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "key": {
+    "M": {
+      "item": "minecraft:glowing_obsidian"
+    }
+  },
+  "result": {
+    "id": "epicadventure:boss_altar",
+    "count": 1
+  }
+}

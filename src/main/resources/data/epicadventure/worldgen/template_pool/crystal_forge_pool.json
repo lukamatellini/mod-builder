@@ -1,0 +1,13 @@
+{
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:feature_pool_element",
+        "feature": "epicadventure:crystal_forge_structure_feature",
+        "projection": "rigid"
+      }
+    }
+  ]
+}

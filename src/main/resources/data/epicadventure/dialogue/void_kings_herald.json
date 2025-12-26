@@ -1,0 +1,19 @@
+{
+  "npcId": "void_kings_herald",
+  "npcName": "Void King's Herald",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "The Void King has been silenced for now, but the true darkness merely slumbers. Prepare yourself, for the Abyss will awaken once more, and a new threat will arise!"
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}
