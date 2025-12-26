@@ -1,0 +1,19 @@
+{
+  "npcId": "shattered_explorer",
+  "npcName": "Shattered Explorer",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "The realms are fractured, my friend, and danger lurks in every shadow. But with peril comes reward. Are you brave enough to seize it?"
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

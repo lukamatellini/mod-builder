@@ -1,0 +1,38 @@
+{
+  "parent": "voidconquest:root",
+  "display": {
+    "icon": {
+      "id": "voidconquest:shadow_essence"
+    },
+    "title": {
+      "text": "Hunt The Shadow Lord"
+    },
+    "description": {
+      "text": "The Shadow Lord, a master of darkness, must be stopped. Venture to its altar and defeat it! (Given by Shattered Explorer)"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "voidconquest:shadow_lord"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

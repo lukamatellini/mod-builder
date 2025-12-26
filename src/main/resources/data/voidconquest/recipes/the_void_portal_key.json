@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "key": {
+    "M": {
+      "item": "voidconquest:shadow_essence"
+    }
+  },
+  "result": {
+    "id": "voidconquest:the_void_portal_key",
+    "count": 1
+  }
+}

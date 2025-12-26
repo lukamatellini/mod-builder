@@ -1,0 +1,19 @@
+{
+  "npcId": "void_merchant",
+  "npcName": "Void Merchant",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "Greetings, adventurer. The Void holds many secrets, and I hold the keys to some. What do you seek?"
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

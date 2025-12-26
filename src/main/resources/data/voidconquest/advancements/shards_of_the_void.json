@@ -1,0 +1,37 @@
+{
+  "parent": "voidconquest:root",
+  "display": {
+    "icon": {
+      "id": "voidconquest:shadow_essence"
+    },
+    "title": {
+      "text": "Shards Of The Void"
+    },
+    "description": {
+      "text": "The energies of the Void can be harnessed, but first, we need Void Shards. Bring me 20. (Given by Shattered Explorer)"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "voidconquest:void_shard"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

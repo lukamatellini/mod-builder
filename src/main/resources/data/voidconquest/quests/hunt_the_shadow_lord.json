@@ -1,0 +1,28 @@
+{
+  "id": "hunt_the_shadow_lord",
+  "name": "Hunt The Shadow Lord",
+  "description": "The Shadow Lord, a master of darkness, must be stopped. Venture to its altar and defeat it! (Given by Shattered Explorer)",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "kill_mob",
+      "description": "Kill the Shadow Lord.",
+      "targetId": "shadow_lord",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "shadow_essence",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Hunt The Shadow Lord",
+  "completeMessage": "Completed: Hunt The Shadow Lord!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

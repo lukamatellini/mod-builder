@@ -1,0 +1,28 @@
+{
+  "id": "crush_the_crystal_golem",
+  "name": "Crush The Crystal Golem",
+  "description": "The Crystal Golem guards ancient secrets, but its destructive power must be contained. Seek it out and shatter its crystalline form! (Given by Void Merchant)",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "kill_mob",
+      "description": "Kill the Crystal Golem.",
+      "targetId": "crystal_golem",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "shadow_essence",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Crush The Crystal Golem",
+  "completeMessage": "Completed: Crush The Crystal Golem!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

@@ -1,0 +1,26 @@
+{
+  "structures": [
+    {
+      "structure": "voidconquest:shadow_altar",
+      "weight": 1
+    },
+    {
+      "structure": "voidconquest:crystal_cavern",
+      "weight": 1
+    },
+    {
+      "structure": "voidconquest:void_islets",
+      "weight": 1
+    },
+    {
+      "structure": "voidconquest:the_void_obelisk",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 8,
+    "salt": 380887070
+  }
+}

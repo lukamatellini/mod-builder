@@ -1,0 +1,38 @@
+{
+  "parent": "voidconquest:root",
+  "display": {
+    "icon": {
+      "id": "voidconquest:shadow_essence"
+    },
+    "title": {
+      "text": "Crush The Crystal Golem"
+    },
+    "description": {
+      "text": "The Crystal Golem guards ancient secrets, but its destructive power must be contained. Seek it out and shatter its crystalline form! (Given by Void Merchant)"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "voidconquest:crystal_golem"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

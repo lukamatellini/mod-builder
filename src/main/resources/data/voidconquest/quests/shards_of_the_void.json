@@ -1,0 +1,28 @@
+{
+  "id": "shards_of_the_void",
+  "name": "Shards Of The Void",
+  "description": "The energies of the Void can be harnessed, but first, we need Void Shards. Bring me 20. (Given by Shattered Explorer)",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Collect 20 Void Shards.",
+      "targetId": "void_shard",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "shadow_essence",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Shards Of The Void",
+  "completeMessage": "Completed: Shards Of The Void!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

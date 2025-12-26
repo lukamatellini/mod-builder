@@ -1,0 +1,38 @@
+{
+  "parent": "voidconquest:root",
+  "display": {
+    "icon": {
+      "id": "voidconquest:shadow_essence"
+    },
+    "title": {
+      "text": "Taming The Void Serpent"
+    },
+    "description": {
+      "text": "The Void Serpent, a creature of boundless malice, terrorizes the deepest parts of the Void. Conquer it! (Given by Void Merchant)"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "voidconquest:void_serpent"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

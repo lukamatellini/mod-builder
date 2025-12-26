@@ -1,0 +1,28 @@
+{
+  "id": "purging_the_walkers",
+  "name": "Purging The Walkers",
+  "description": "The Void Walkers are growing bolder, threatening to spill into our world. Eliminate 15 of them. (Given by Shattered Explorer)",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "kill_mob",
+      "description": "Kill 15 Void Walkers.",
+      "targetId": "void_walker",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "shadow_essence",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Purging The Walkers",
+  "completeMessage": "Completed: Purging The Walkers!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

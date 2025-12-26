@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "key": {
+    "M": {
+      "item": "voidconquest:void_scale"
+    }
+  },
+  "result": {
+    "id": "voidconquest:void_bow",
+    "count": 1
+  }
+}

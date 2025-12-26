@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "key": {
+    "M": {
+      "item": "voidconquest:crystal_shard"
+    }
+  },
+  "result": {
+    "id": "voidconquest:crystal_pickaxe",
+    "count": 1
+  }
+}
