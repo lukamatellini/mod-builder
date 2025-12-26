@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "key": {
+    "M": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "id": "epicadventure:void_portal_frame",
+    "count": 1
+  }
+}

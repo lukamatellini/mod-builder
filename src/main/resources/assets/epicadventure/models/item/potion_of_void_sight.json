@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "epicadventure:item/potion_of_void_sight"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:prismarine_shard"
+    }
+  ],
+  "result": {
+    "id": "epicadventure:abyssal_scale",
+    "count": 1
+  }
+}

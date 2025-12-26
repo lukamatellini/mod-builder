@@ -1,0 +1,28 @@
+{
+  "id": "wraith_hunt",
+  "name": "Wraith Hunt",
+  "description": "Slay 10 Shadow Wraiths.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "kill_mob",
+      "description": "Slay 10 Shadow Wraiths.",
+      "targetId": "shadow_wraith",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "void_silk",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Wraith Hunt",
+  "completeMessage": "Completed: Wraith Hunt!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

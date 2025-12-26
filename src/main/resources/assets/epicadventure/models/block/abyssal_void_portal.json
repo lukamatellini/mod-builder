@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "epicadventure:block/abyssal_void_portal",
+    "particle": "epicadventure:block/abyssal_void_portal"
+  },
+  "render_type": "translucent"
+}

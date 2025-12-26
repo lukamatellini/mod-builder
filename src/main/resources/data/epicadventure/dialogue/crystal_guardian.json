@@ -1,0 +1,19 @@
+{
+  "npcId": "crystal_guardian",
+  "npcName": "Crystal Guardian",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "I come in peace.; Give me access now."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

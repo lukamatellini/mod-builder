@@ -1,0 +1,19 @@
+{
+  "npcId": "void_kings_herald",
+  "npcName": "Void King's Herald",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "The Void's grasp extends even further. Prepare yourself, for greater challenges lie ahead..."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

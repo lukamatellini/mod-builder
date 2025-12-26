@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "key": {
+    "M": {
+      "item": "minecraft:ender_eye"
+    }
+  },
+  "result": {
+    "id": "epicadventure:void_catalyst",
+    "count": 1
+  }
+}
