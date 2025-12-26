@@ -1,0 +1,19 @@
+{
+  "npcId": "wandering_scholar",
+  "npcName": "Wandering Scholar",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "Ah, another seeker of knowledge!"
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

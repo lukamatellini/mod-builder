@@ -1,0 +1,29 @@
+{
+  "parent": "aherosbeginning:root",
+  "display": {
+    "icon": {
+      "id": "aherosbeginning:void_scepter"
+    },
+    "title": {
+      "text": "Path to the Void"
+    },
+    "description": {
+      "text": "Reach the Ethereal Citadel in The Ethereal Void dimension and talk to mod:void_oracle."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:tick",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

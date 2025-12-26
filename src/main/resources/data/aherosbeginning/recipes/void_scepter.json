@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "key": {
+    "M": {
+      "item": "aherosbeginning:void_essence"
+    }
+  },
+  "result": {
+    "id": "aherosbeginning:void_scepter",
+    "count": 1
+  }
+}

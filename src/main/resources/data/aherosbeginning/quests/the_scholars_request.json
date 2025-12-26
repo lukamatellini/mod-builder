@@ -1,0 +1,28 @@
+{
+  "id": "the_scholars_request",
+  "name": "The Scholar's Request",
+  "description": "Collect 5x mod:ancient_fragment from dungeons (e.g., Ruined Villages, Crystal Caves, vanilla dungeons) and deliver to mod:wandering_scholar.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Collect 5x mod:ancient_fragment from dungeons (e.g., Ruined Villages, Crystal Caves, vanilla dungeons) and deliver to mod:wandering_scholar.",
+      "targetId": "ancient_fragment",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "void_scepter",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: The Scholar's Request",
+  "completeMessage": "Completed: The Scholar's Request!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

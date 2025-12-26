@@ -1,0 +1,70 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21.1",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-26T17:31:31.489Z",
+  "enabledModules": {
+    "quests": true,
+    "npcs": true,
+    "dialogue": true,
+    "trading": false,
+    "structures": true,
+    "dimensions": true,
+    "biomes": true,
+    "commands": true,
+    "items": true,
+    "mobs": true,
+    "events": false
+  },
+  "inferenceReasons": [
+    "Quest system enabled: 4 quests defined in spec",
+    "NPC system enabled: 3 NPCs defined in spec",
+    "Dialogue UI enabled: NPCs require dialogue system",
+    "Structures enabled: 4 structures defined in spec",
+    "Dimensions enabled: 1 dimensions defined in spec",
+    "Biomes enabled: 1 biomes defined in spec",
+    "Items enabled: 12 items defined in spec",
+    "Mobs enabled: 4 mobs defined in spec",
+    "Commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 12,
+    "mobs": 4,
+    "structures": 4,
+    "dimensions": 1,
+    "quests": 4,
+    "npcs": 3,
+    "events": 0
+  },
+  "expectedDataFiles": [
+    "data/aherosbeginning/quests/the_scholars_request.json",
+    "data/aherosbeginning/quests/path_to_the_void.json",
+    "data/aherosbeginning/quests/gathering_power.json",
+    "data/aherosbeginning/quests/defeat_the_void_overlord.json",
+    "data/aherosbeginning/dialogue/void_oracle.json",
+    "data/aherosbeginning/dialogue/wandering_scholar.json",
+    "data/aherosbeginning/dialogue/village_elder.json",
+    "data/aherosbeginning/dimension/ethereal_void.json",
+    "data/aherosbeginning/dimension_type/ethereal_void.json",
+    "data/aherosbeginning/worldgen/structure/ethereal_citadel.json",
+    "data/aherosbeginning/worldgen/structure/ruined_village.json",
+    "data/aherosbeginning/worldgen/structure/crystal_cave.json",
+    "data/aherosbeginning/worldgen/structure/ethereal_void_structure.json"
+  ],
+  "expectedAssetFiles": [
+    "assets/aherosbeginning/lang/en_us.json",
+    "assets/aherosbeginning/models/item/void_scepter.json",
+    "assets/aherosbeginning/models/item/void_blade.json",
+    "assets/aherosbeginning/models/item/crystal_heart.json",
+    "assets/aherosbeginning/models/item/void_shard.json",
+    "assets/aherosbeginning/models/item/ancient_fragment.json",
+    "assets/aherosbeginning/models/item/ancient_tome.json",
+    "assets/aherosbeginning/models/item/void_essence.json",
+    "assets/aherosbeginning/models/item/crystal_helmet.json",
+    "assets/aherosbeginning/models/item/crystal_chestplate.json",
+    "assets/aherosbeginning/models/item/crystal_leggings.json",
+    "assets/aherosbeginning/models/item/crystal_boots.json",
+    "assets/aherosbeginning/models/item/ethereal_void_portal_igniter.json"
+  ]
+}

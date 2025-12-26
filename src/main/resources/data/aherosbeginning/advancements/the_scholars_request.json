@@ -1,0 +1,37 @@
+{
+  "parent": "aherosbeginning:root",
+  "display": {
+    "icon": {
+      "id": "aherosbeginning:void_scepter"
+    },
+    "title": {
+      "text": "The Scholar's Request"
+    },
+    "description": {
+      "text": "Collect 5x mod:ancient_fragment from dungeons (e.g., Ruined Villages, Crystal Caves, vanilla dungeons) and deliver to mod:wandering_scholar."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aherosbeginning:ancient_fragment"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

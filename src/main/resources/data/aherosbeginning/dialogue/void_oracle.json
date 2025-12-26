@@ -1,0 +1,19 @@
+{
+  "npcId": "void_oracle",
+  "npcName": "The Void Oracle",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "Traveler... the shards call to you..."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

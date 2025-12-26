@@ -1,0 +1,28 @@
+{
+  "id": "gathering_power",
+  "name": "Gathering Power",
+  "description": "Collect 3x mod:void_shard (dropped by mod:void_wisp in The Ethereal Void) -> Collect 1x mod:crystal_heart (dropped by mod:crystal_golem in Crystal Wastes/Crystal Caves).",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Collect 3x mod:void_shard (dropped by mod:void_wisp in The Ethereal Void) -> Collect 1x mod:crystal_heart (dropped by mod:crystal_golem in Crystal Wastes/Crystal Caves).",
+      "targetId": "crystal_heart",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "void_scepter",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Gathering Power",
+  "completeMessage": "Completed: Gathering Power!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

@@ -1,0 +1,19 @@
+{
+  "npcId": "village_elder",
+  "npcName": "Village Elder",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "Hero! Our village needs you!"
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

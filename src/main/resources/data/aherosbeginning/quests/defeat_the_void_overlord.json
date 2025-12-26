@@ -1,0 +1,28 @@
+{
+  "id": "defeat_the_void_overlord",
+  "name": "Defeat the Void Overlord",
+  "description": "Enter the boss room at the top of the Ethereal Citadel and defeat the mod:void_overlord.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "kill_mob",
+      "description": "Enter the boss room at the top of the Ethereal Citadel and defeat the mod:void_overlord.",
+      "targetId": "void_overlord",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "void_scepter",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Defeat the Void Overlord",
+  "completeMessage": "Completed: Defeat the Void Overlord!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

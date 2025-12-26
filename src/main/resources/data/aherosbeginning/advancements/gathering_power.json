@@ -1,0 +1,37 @@
+{
+  "parent": "aherosbeginning:root",
+  "display": {
+    "icon": {
+      "id": "aherosbeginning:void_scepter"
+    },
+    "title": {
+      "text": "Gathering Power"
+    },
+    "description": {
+      "text": "Collect 3x mod:void_shard (dropped by mod:void_wisp in The Ethereal Void) -> Collect 1x mod:crystal_heart (dropped by mod:crystal_golem in Crystal Wastes/Crystal Caves)."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aherosbeginning:crystal_heart"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

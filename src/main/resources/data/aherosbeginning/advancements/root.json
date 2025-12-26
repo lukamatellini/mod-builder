@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "aherosbeginning:void_scepter"
+    },
+    "title": {
+      "text": "A Hero's Beginning"
+    },
+    "description": {
+      "text": "Welcome to A Hero's Beginning!"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

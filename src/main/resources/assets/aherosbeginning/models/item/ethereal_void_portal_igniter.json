@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "aherosbeginning:item/ethereal_void_portal_igniter"
+  }
+}
