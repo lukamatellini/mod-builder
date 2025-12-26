@@ -1,0 +1,38 @@
+{
+  "parent": "epicadventure:root",
+  "display": {
+    "icon": {
+      "id": "epicadventure:void_silk"
+    },
+    "title": {
+      "text": "Confront the Void King"
+    },
+    "description": {
+      "text": "The time has come to face the source of the corruption. Enter the Void King's Citadel and challenge the Void King."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "epicadventure:the_void_king"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

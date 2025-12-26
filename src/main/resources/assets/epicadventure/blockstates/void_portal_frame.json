@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "epicadventure:block/void_portal_frame"
+    }
+  }
+}

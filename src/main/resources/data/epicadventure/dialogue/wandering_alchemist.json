@@ -1,0 +1,19 @@
+{
+  "npcId": "wandering_alchemist",
+  "npcName": "Wandering Alchemist",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "Hello, traveler! What brings you to this desolate place?"
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

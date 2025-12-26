@@ -1,0 +1,38 @@
+{
+  "parent": "epicadventure:root",
+  "display": {
+    "icon": {
+      "id": "epicadventure:void_silk"
+    },
+    "title": {
+      "text": "Wraith Hunt"
+    },
+    "description": {
+      "text": "Shadow Wraiths are a constant menace in the Corrupted Wastes. The Elder Sage wants you to eliminate some of them."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "epicadventure:shadow_wraith"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}
