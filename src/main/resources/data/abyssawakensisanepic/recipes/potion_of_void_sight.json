@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "abyssawakensisanepic:wraith_essence"
+    },
+    {
+      "item": "minecraft:awkward_potion"
+    }
+  ],
+  "result": {
+    "id": "abyssawakensisanepic:potion_of_void_sight",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "npcId": "void_kings_herald",
+  "npcName": "Void King's Herald",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "The King has fallen, but the shadows stir... a new threat gathers on the horizon. Your trials are not yet over, champion."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

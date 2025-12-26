@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "abyssawakensisanepic:wraith_essence"
+    },
+    {
+      "item": "abyssawakensisanepic:void_silk"
+    },
+    {
+      "item": "minecraft:compass"
+    }
+  ],
+  "result": {
+    "id": "abyssawakensisanepic:abyssal_compass",
+    "count": 1
+  }
+}

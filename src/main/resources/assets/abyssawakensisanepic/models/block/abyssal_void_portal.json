@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "abyssawakensisanepic:block/abyssal_void_portal",
+    "particle": "abyssawakensisanepic:block/abyssal_void_portal"
+  },
+  "render_type": "translucent"
+}

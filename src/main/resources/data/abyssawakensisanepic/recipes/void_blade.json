@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " A ",
+    "BCB",
+    " D "
+  ],
+  "key": {
+    "A": {
+      "item": "abyssawakensisanepic:wraith_essence"
+    },
+    "B": {
+      "item": "abyssawakensisanepic:void_silk"
+    },
+    "C": {
+      "item": "abyssawakensisanepic:void_stone"
+    },
+    "D": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "abyssawakensisanepic:void_blade",
+    "count": 1
+  }
+}

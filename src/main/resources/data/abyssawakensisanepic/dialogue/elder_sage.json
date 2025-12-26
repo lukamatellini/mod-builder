@@ -1,0 +1,19 @@
+{
+  "npcId": "elder_sage",
+  "npcName": "Elder Sage",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "Ah, another brave soul seeks the truth of the Abyss... The Abyssal Void is a dimension of unimaginable dangers, ruled by The Void King. Only the bravest, or most foolish, dare to challenge his domain. Take heed, for the shadows there are ancient and hungry."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

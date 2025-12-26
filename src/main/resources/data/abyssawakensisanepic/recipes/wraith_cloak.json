@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "BBB"
+  ],
+  "key": {
+    "A": {
+      "item": "abyssawakensisanepic:wraith_essence"
+    },
+    "B": {
+      "item": "abyssawakensisanepic:void_silk"
+    },
+    "C": {
+      "item": "abyssawakensisanepic:void_stone"
+    }
+  },
+  "result": {
+    "id": "abyssawakensisanepic:wraith_cloak",
+    "count": 1
+  }
+}

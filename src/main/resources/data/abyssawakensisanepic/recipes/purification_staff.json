@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " A ",
+    "BCB",
+    " D "
+  ],
+  "key": {
+    "A": {
+      "item": "abyssawakensisanepic:crystal_shard"
+    },
+    "B": {
+      "item": "abyssawakensisanepic:void_stone"
+    },
+    "C": {
+      "item": "abyssawakensisanepic:corrupted_heart"
+    },
+    "D": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "abyssawakensisanepic:purification_staff",
+    "count": 1
+  }
+}

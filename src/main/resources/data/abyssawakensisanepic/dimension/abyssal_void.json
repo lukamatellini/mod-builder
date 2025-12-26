@@ -1,0 +1,11 @@
+{
+  "type": "abyssawakensisanepic:abyssal_void",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "abyssawakensisanepic:abyssal_void_biome"
+    }
+  }
+}

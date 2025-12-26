@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "abyssawakensisanepic:crystal_shard"
+    },
+    "B": {
+      "item": "abyssawakensisanepic:void_stone"
+    },
+    "C": {
+      "item": "minecraft:crafting_table"
+    }
+  },
+  "result": {
+    "id": "abyssawakensisanepic:crystal_forge_block",
+    "count": 1
+  }
+}

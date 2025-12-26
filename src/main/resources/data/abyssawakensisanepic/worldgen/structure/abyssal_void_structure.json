@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:jigsaw",
+  "start_pool": "abyssawakensisanepic:abyssal_void_structure_pool",
+  "size": 1,
+  "max_distance_from_center": 80,
+  "biomes": "#minecraft:is_overworld",
+  "step": "surface_structures",
+  "spawn_overrides": {}
+}
