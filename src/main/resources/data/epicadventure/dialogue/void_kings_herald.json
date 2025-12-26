@@ -1,0 +1,19 @@
+{
+  "npcId": "void_kings_herald",
+  "npcName": "Void King's Herald",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "Delivers cryptic messages teasing future content/sequel, congratulates the player. Unlocks a special dialogue that offers the legendary reward."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}

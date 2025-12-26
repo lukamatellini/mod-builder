@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "key": {
+    "M": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "id": "epicadventure:lore_tablet",
+    "count": 1
+  }
+}

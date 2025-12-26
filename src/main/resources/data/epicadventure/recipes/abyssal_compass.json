@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "key": {
+    "M": {
+      "item": "minecraft:compass"
+    }
+  },
+  "result": {
+    "id": "epicadventure:abyssal_compass",
+    "count": 1
+  }
+}

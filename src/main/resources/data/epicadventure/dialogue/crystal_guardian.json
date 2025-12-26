@@ -1,0 +1,19 @@
+{
+  "npcId": "crystal_guardian",
+  "npcName": "Crystal Guardian",
+  "startNode": "greeting",
+  "nodes": {
+    "greeting": {
+      "id": "greeting",
+      "lines": [
+        "Prevents access to the Crystal Forge until Quest: 'Crystal Heart' is completed. Dialogue includes choices: 'I come in peace' (leads to quest prompt) or 'Give me access now' (leads to a hostile response and possible combat)."
+      ],
+      "choices": [
+        {
+          "text": "Goodbye",
+          "nextNode": null
+        }
+      ]
+    }
+  }
+}
