@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MMM",
+    "MMM",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "item": "cheesyblocks:cheese_block"
+    }
+  },
+  "result": {
+    "id": "cheesyblocks:cheese_sword",
+    "count": 1
+  }
+}
