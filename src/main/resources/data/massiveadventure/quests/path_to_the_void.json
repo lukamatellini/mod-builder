@@ -1,0 +1,28 @@
+{
+  "id": "path_to_the_void",
+  "name": "Path to the Void",
+  "description": "Reach the Ethereal Citadel in the Ethereal Void dimension, Talk to The Void Oracle",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "talk_to_npc",
+      "description": "Reach the Ethereal Citadel in the Ethereal Void dimension, Talk to The Void Oracle",
+      "targetId": "void_oracle",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "void_scepter",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Path to the Void",
+  "completeMessage": "Completed: Path to the Void!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

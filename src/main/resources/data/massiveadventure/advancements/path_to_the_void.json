@@ -1,0 +1,29 @@
+{
+  "parent": "massiveadventure:root",
+  "display": {
+    "icon": {
+      "id": "massiveadventure:void_scepter"
+    },
+    "title": {
+      "text": "Path to the Void"
+    },
+    "description": {
+      "text": "Reach the Ethereal Citadel in the Ethereal Void dimension, Talk to The Void Oracle"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:tick",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

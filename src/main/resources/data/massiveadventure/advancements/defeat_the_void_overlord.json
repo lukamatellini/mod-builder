@@ -1,0 +1,38 @@
+{
+  "parent": "massiveadventure:root",
+  "display": {
+    "icon": {
+      "id": "massiveadventure:void_scepter"
+    },
+    "title": {
+      "text": "Defeat the Void Overlord"
+    },
+    "description": {
+      "text": "Enter the boss room of the Ethereal Citadel, Defeat the Void Overlord"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "massiveadventure:void_overlord"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

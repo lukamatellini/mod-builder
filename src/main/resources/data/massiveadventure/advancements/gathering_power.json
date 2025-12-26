@@ -1,0 +1,37 @@
+{
+  "parent": "massiveadventure:root",
+  "display": {
+    "icon": {
+      "id": "massiveadventure:void_scepter"
+    },
+    "title": {
+      "text": "Gathering Power"
+    },
+    "description": {
+      "text": "Collect 3 void_shard (dropped by Void Wisps), Collect 1 crystal_heart (dropped by Crystal Golems)"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "massiveadventure:crystal_heart"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

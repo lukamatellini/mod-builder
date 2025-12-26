@@ -1,0 +1,28 @@
+{
+  "id": "gathering_power",
+  "name": "Gathering Power",
+  "description": "Collect 3 void_shard (dropped by Void Wisps), Collect 1 crystal_heart (dropped by Crystal Golems)",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Collect 3 void_shard (dropped by Void Wisps), Collect 1 crystal_heart (dropped by Crystal Golems)",
+      "targetId": "crystal_heart",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "void_scepter",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Gathering Power",
+  "completeMessage": "Completed: Gathering Power!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

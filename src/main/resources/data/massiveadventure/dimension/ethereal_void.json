@@ -1,0 +1,11 @@
+{
+  "type": "massiveadventure:ethereal_void",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "massiveadventure:ethereal_void_biome"
+    }
+  }
+}

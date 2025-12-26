@@ -1,0 +1,26 @@
+{
+  "structures": [
+    {
+      "structure": "massiveadventure:ethereal_citadel",
+      "weight": 1
+    },
+    {
+      "structure": "massiveadventure:ruined_village",
+      "weight": 1
+    },
+    {
+      "structure": "massiveadventure:crystal_cave",
+      "weight": 1
+    },
+    {
+      "structure": "massiveadventure:ethereal_void_structure",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 8,
+    "salt": 145800411
+  }
+}

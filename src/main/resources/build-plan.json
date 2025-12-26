@@ -1,0 +1,72 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21.1",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-26T16:49:10.139Z",
+  "enabledModules": {
+    "quests": true,
+    "npcs": true,
+    "dialogue": true,
+    "trading": true,
+    "structures": true,
+    "dimensions": true,
+    "biomes": true,
+    "commands": true,
+    "items": true,
+    "mobs": true,
+    "events": false
+  },
+  "inferenceReasons": [
+    "Quest system enabled: 4 quests defined in spec",
+    "NPC system enabled: 3 NPCs defined in spec",
+    "Dialogue UI enabled: NPCs require dialogue system",
+    "Trading system enabled: 1 NPCs have trades defined",
+    "Reputation system enabled: Trading requires reputation tracking",
+    "Structures enabled: 4 structures defined in spec",
+    "Dimensions enabled: 1 dimensions defined in spec",
+    "Biomes enabled: 1 biomes defined in spec",
+    "Items enabled: 12 items defined in spec",
+    "Mobs enabled: 4 mobs defined in spec",
+    "Commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 12,
+    "mobs": 4,
+    "structures": 4,
+    "dimensions": 1,
+    "quests": 4,
+    "npcs": 3,
+    "events": 0
+  },
+  "expectedDataFiles": [
+    "data/massiveadventure/quests/the_scholars_request.json",
+    "data/massiveadventure/quests/path_to_the_void.json",
+    "data/massiveadventure/quests/gathering_power.json",
+    "data/massiveadventure/quests/defeat_the_void_overlord.json",
+    "data/massiveadventure/dialogue/void_oracle.json",
+    "data/massiveadventure/dialogue/wandering_scholar.json",
+    "data/massiveadventure/dialogue/village_elder.json",
+    "data/massiveadventure/dimension/ethereal_void.json",
+    "data/massiveadventure/dimension_type/ethereal_void.json",
+    "data/massiveadventure/worldgen/structure/ethereal_citadel.json",
+    "data/massiveadventure/worldgen/structure/ruined_village.json",
+    "data/massiveadventure/worldgen/structure/crystal_cave.json",
+    "data/massiveadventure/worldgen/structure/ethereal_void_structure.json"
+  ],
+  "expectedAssetFiles": [
+    "assets/massiveadventure/lang/en_us.json",
+    "assets/massiveadventure/models/item/void_scepter.json",
+    "assets/massiveadventure/models/item/void_blade.json",
+    "assets/massiveadventure/models/item/crystal_heart.json",
+    "assets/massiveadventure/models/item/void_shard.json",
+    "assets/massiveadventure/models/item/ancient_fragment.json",
+    "assets/massiveadventure/models/item/ancient_tome.json",
+    "assets/massiveadventure/models/item/void_essence.json",
+    "assets/massiveadventure/models/item/crystal_helmet.json",
+    "assets/massiveadventure/models/item/crystal_chestplate.json",
+    "assets/massiveadventure/models/item/crystal_leggings.json",
+    "assets/massiveadventure/models/item/crystal_boots.json",
+    "assets/massiveadventure/models/item/ethereal_void_portal_igniter.json"
+  ]
+}

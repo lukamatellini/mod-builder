@@ -1,0 +1,28 @@
+{
+  "id": "the_scholars_request",
+  "name": "The Scholar's Request",
+  "description": "Collect 5 ancient_fragment from dungeon chests, Deliver the ancient_fragment to the Wandering Scholar",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Collect 5 ancient_fragment from dungeon chests, Deliver the ancient_fragment to the Wandering Scholar",
+      "targetId": "ancient_fragment",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "void_scepter",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: The Scholar's Request",
+  "completeMessage": "Completed: The Scholar's Request!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

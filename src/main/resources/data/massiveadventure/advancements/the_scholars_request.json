@@ -1,0 +1,37 @@
+{
+  "parent": "massiveadventure:root",
+  "display": {
+    "icon": {
+      "id": "massiveadventure:void_scepter"
+    },
+    "title": {
+      "text": "The Scholar's Request"
+    },
+    "description": {
+      "text": "Collect 5 ancient_fragment from dungeon chests, Deliver the ancient_fragment to the Wandering Scholar"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "massiveadventure:ancient_fragment"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}
