@@ -1,0 +1,437 @@
+{
+  "modId": "luckyblocks",
+  "modName": "Lucky Blocks",
+  "generatedAt": "2025-12-26T21:28:08.734Z",
+  "mcVersion": "1.21.1",
+  "overallStatus": "warnings",
+  "totalChecks": 22,
+  "passedChecks": 13,
+  "failedChecks": 0,
+  "warningChecks": 1,
+  "skippedChecks": 8,
+  "categories": [
+    {
+      "category": "items",
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "items_existence",
+          "name": "Items Defined",
+          "category": "items",
+          "status": "passed",
+          "message": "1 items defined"
+        },
+        {
+          "id": "item_model_lucky_block_event",
+          "name": "Item Model: Lucky Block Event Trigger",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Lucky Block Event Trigger validated successfully"
+        },
+        {
+          "id": "item_texture_lucky_block_event",
+          "name": "Item Texture: Lucky Block Event Trigger",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Lucky Block Event Trigger validated successfully"
+        },
+        {
+          "id": "item_lang_lucky_block_event",
+          "name": "Item Localization: Lucky Block Event Trigger",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Lucky Block Event Trigger validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "blocks",
+      "total": 4,
+      "passed": 3,
+      "failed": 0,
+      "warnings": 1,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "blocks_existence",
+          "name": "Blocks Defined",
+          "category": "blocks",
+          "status": "passed",
+          "message": "1 blocks defined"
+        },
+        {
+          "id": "block_state_lucky_block",
+          "name": "Blockstate: Lucky Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Lucky Block validated successfully"
+        },
+        {
+          "id": "block_loot_lucky_block",
+          "name": "Block Loot: Lucky Block",
+          "category": "blocks",
+          "status": "warning",
+          "message": "Missing loot table (block may not drop anything)"
+        },
+        {
+          "id": "block_item_lucky_block",
+          "name": "Block Item Model: Lucky Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Lucky Block validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "recipes",
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "recipes_existence",
+          "name": "Recipes Defined",
+          "category": "recipes",
+          "status": "passed",
+          "message": "1 recipes expected"
+        },
+        {
+          "id": "recipe_files",
+          "name": "Recipe Files Generated",
+          "category": "recipes",
+          "status": "passed",
+          "message": "2 recipe files generated"
+        },
+        {
+          "id": "recipe_output_lucky_block",
+          "name": "Recipe Output: lucky_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: lucky_block validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_lucky_block",
+          "name": "Recipe Ingredients: lucky_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: lucky_block validated successfully"
+        },
+        {
+          "id": "recipe_output_lucky_block_event",
+          "name": "Recipe Output: lucky_block_event",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: lucky_block_event validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_lucky_block_event",
+          "name": "Recipe Ingredients: lucky_block_event",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: lucky_block_event validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "mobs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "mobs_existence",
+          "name": "Mobs Defined",
+          "category": "mobs",
+          "status": "skipped",
+          "message": "No mobs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "npcs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "npcs_existence",
+          "name": "NPCs Defined",
+          "category": "npcs",
+          "status": "skipped",
+          "message": "No NPCs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "quests",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "quests_existence",
+          "name": "Quests Defined",
+          "category": "quests",
+          "status": "skipped",
+          "message": "No quests defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "advancements",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "advancements_existence",
+          "name": "Advancements Defined",
+          "category": "advancements",
+          "status": "skipped",
+          "message": "No advancements generated"
+        }
+      ]
+    },
+    {
+      "category": "dimensions",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "dimensions_existence",
+          "name": "Dimensions Defined",
+          "category": "dimensions",
+          "status": "skipped",
+          "message": "No dimensions defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "biomes",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "biomes_existence",
+          "name": "Biomes Defined",
+          "category": "biomes",
+          "status": "skipped",
+          "message": "No biomes defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "structures",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "structures_existence",
+          "name": "Structures Defined",
+          "category": "structures",
+          "status": "skipped",
+          "message": "No structures defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "events",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "events_existence",
+          "name": "Events Defined",
+          "category": "events",
+          "status": "skipped",
+          "message": "No events defined in spec"
+        }
+      ]
+    }
+  ],
+  "criticalFailures": [],
+  "allChecks": [
+    {
+      "id": "items_existence",
+      "name": "Items Defined",
+      "category": "items",
+      "status": "passed",
+      "message": "1 items defined"
+    },
+    {
+      "id": "item_model_lucky_block_event",
+      "name": "Item Model: Lucky Block Event Trigger",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Lucky Block Event Trigger validated successfully"
+    },
+    {
+      "id": "item_texture_lucky_block_event",
+      "name": "Item Texture: Lucky Block Event Trigger",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Lucky Block Event Trigger validated successfully"
+    },
+    {
+      "id": "item_lang_lucky_block_event",
+      "name": "Item Localization: Lucky Block Event Trigger",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Lucky Block Event Trigger validated successfully"
+    },
+    {
+      "id": "blocks_existence",
+      "name": "Blocks Defined",
+      "category": "blocks",
+      "status": "passed",
+      "message": "1 blocks defined"
+    },
+    {
+      "id": "block_state_lucky_block",
+      "name": "Blockstate: Lucky Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Lucky Block validated successfully"
+    },
+    {
+      "id": "block_loot_lucky_block",
+      "name": "Block Loot: Lucky Block",
+      "category": "blocks",
+      "status": "warning",
+      "message": "Missing loot table (block may not drop anything)"
+    },
+    {
+      "id": "block_item_lucky_block",
+      "name": "Block Item Model: Lucky Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Lucky Block validated successfully"
+    },
+    {
+      "id": "recipes_existence",
+      "name": "Recipes Defined",
+      "category": "recipes",
+      "status": "passed",
+      "message": "1 recipes expected"
+    },
+    {
+      "id": "recipe_files",
+      "name": "Recipe Files Generated",
+      "category": "recipes",
+      "status": "passed",
+      "message": "2 recipe files generated"
+    },
+    {
+      "id": "recipe_output_lucky_block",
+      "name": "Recipe Output: lucky_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: lucky_block validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_lucky_block",
+      "name": "Recipe Ingredients: lucky_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: lucky_block validated successfully"
+    },
+    {
+      "id": "recipe_output_lucky_block_event",
+      "name": "Recipe Output: lucky_block_event",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: lucky_block_event validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_lucky_block_event",
+      "name": "Recipe Ingredients: lucky_block_event",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: lucky_block_event validated successfully"
+    },
+    {
+      "id": "mobs_existence",
+      "name": "Mobs Defined",
+      "category": "mobs",
+      "status": "skipped",
+      "message": "No mobs defined in spec"
+    },
+    {
+      "id": "npcs_existence",
+      "name": "NPCs Defined",
+      "category": "npcs",
+      "status": "skipped",
+      "message": "No NPCs defined in spec"
+    },
+    {
+      "id": "quests_existence",
+      "name": "Quests Defined",
+      "category": "quests",
+      "status": "skipped",
+      "message": "No quests defined in spec"
+    },
+    {
+      "id": "advancements_existence",
+      "name": "Advancements Defined",
+      "category": "advancements",
+      "status": "skipped",
+      "message": "No advancements generated"
+    },
+    {
+      "id": "dimensions_existence",
+      "name": "Dimensions Defined",
+      "category": "dimensions",
+      "status": "skipped",
+      "message": "No dimensions defined in spec"
+    },
+    {
+      "id": "biomes_existence",
+      "name": "Biomes Defined",
+      "category": "biomes",
+      "status": "skipped",
+      "message": "No biomes defined in spec"
+    },
+    {
+      "id": "structures_existence",
+      "name": "Structures Defined",
+      "category": "structures",
+      "status": "skipped",
+      "message": "No structures defined in spec"
+    },
+    {
+      "id": "events_existence",
+      "name": "Events Defined",
+      "category": "events",
+      "status": "skipped",
+      "message": "No events defined in spec"
+    }
+  ],
+  "summary": "# Feature Audit Report: Lucky Blocks\nGenerated: 2025-12-26T21:28:08.734Z\nMinecraft Version: 1.21.1\n\n## ⚠️ PASSED WITH WARNINGS\nTotal: 13 passed, 1 warnings, 8 skipped\n\n## Category Breakdown\n\n✅ **items**: 4/4 passed\n⚠️ **blocks**: 3/4 passed\n✅ **recipes**: 6/6 passed\n✅ **mobs**: 0/1 passed\n✅ **npcs**: 0/1 passed\n✅ **quests**: 0/1 passed\n✅ **advancements**: 0/1 passed\n✅ **dimensions**: 0/1 passed\n✅ **biomes**: 0/1 passed\n✅ **structures**: 0/1 passed\n✅ **events**: 0/1 passed",
+  "suggestions": []
+}

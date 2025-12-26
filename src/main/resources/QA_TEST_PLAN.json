@@ -1,0 +1,65 @@
+{
+  "modId": "luckyblocks",
+  "modName": "Lucky Blocks",
+  "mcVersion": "1.21.1",
+  "generatedAt": "2025-12-26T21:28:08.734Z",
+  "totalTests": 3,
+  "categories": [
+    {
+      "name": "Items",
+      "tests": [
+        {
+          "category": "Items",
+          "name": "Lucky Block Event Trigger Registration",
+          "command": "/give @p luckyblocks:lucky_block_event",
+          "steps": [
+            "Run: /give @p luckyblocks:lucky_block_event",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        }
+      ]
+    },
+    {
+      "name": "Recipes",
+      "tests": [
+        {
+          "category": "Recipes",
+          "name": "Lucky Block Event Trigger Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:dirt\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Lucky Block Event Trigger",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Blocks",
+      "tests": [
+        {
+          "category": "Blocks",
+          "name": "Lucky Block Placement",
+          "command": "/give @p luckyblocks:lucky_block",
+          "steps": [
+            "Run: /give @p luckyblocks:lucky_block",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        }
+      ]
+    }
+  ],
+  "quickCommands": [
+    "/give @p luckyblocks:lucky_block_event"
+  ]
+}
