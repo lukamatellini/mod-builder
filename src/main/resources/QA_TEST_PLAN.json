@@ -1,0 +1,103 @@
+{
+  "modId": "strideenchant",
+  "modName": "Stride Enchant",
+  "mcVersion": "1.21.1",
+  "generatedAt": "2025-12-26T22:38:30.799Z",
+  "totalTests": 6,
+  "categories": [
+    {
+      "name": "Items",
+      "tests": [
+        {
+          "category": "Items",
+          "name": "Swift Feather Registration",
+          "command": "/give @p strideenchant:swift_feather",
+          "steps": [
+            "Run: /give @p strideenchant:swift_feather",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Swift Gem Registration",
+          "command": "/give @p strideenchant:swift_gem",
+          "steps": [
+            "Run: /give @p strideenchant:swift_gem",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Swiftstride Boots Registration",
+          "command": "/give @p strideenchant:swiftstride_boots",
+          "steps": [
+            "Run: /give @p strideenchant:swiftstride_boots",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        }
+      ]
+    },
+    {
+      "name": "Recipes",
+      "tests": [
+        {
+          "category": "Recipes",
+          "name": "Swift Gem Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:diamond\",\"minecraft:sugar\",\"minecraft:emerald\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Swift Gem",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Swiftstride Boots Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:diamond_boots\",\"minecraft:diamond\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Swiftstride Boots",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Item Effects",
+      "tests": [
+        {
+          "category": "Item Effects",
+          "name": "Swiftstride Boots passive Effect",
+          "steps": [
+            "Give yourself the item: /give @p strideenchant:swiftstride_boots",
+            "Hold item and wait",
+            "Observe minecraft:speed activation"
+          ],
+          "expectedResult": "minecraft:speed activates correctly",
+          "automated": false
+        }
+      ]
+    }
+  ],
+  "quickCommands": [
+    "/give @p strideenchant:swift_feather",
+    "/give @p strideenchant:swift_gem",
+    "/give @p strideenchant:swiftstride_boots"
+  ]
+}

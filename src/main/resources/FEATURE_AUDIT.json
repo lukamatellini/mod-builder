@@ -1,0 +1,479 @@
+{
+  "modId": "strideenchant",
+  "modName": "Stride Enchant",
+  "generatedAt": "2025-12-26T22:38:30.799Z",
+  "mcVersion": "1.21.1",
+  "overallStatus": "passed",
+  "totalChecks": 25,
+  "passedChecks": 16,
+  "failedChecks": 0,
+  "warningChecks": 0,
+  "skippedChecks": 9,
+  "categories": [
+    {
+      "category": "items",
+      "total": 10,
+      "passed": 10,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "items_existence",
+          "name": "Items Defined",
+          "category": "items",
+          "status": "passed",
+          "message": "3 items defined"
+        },
+        {
+          "id": "item_model_swift_feather",
+          "name": "Item Model: Swift Feather",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Swift Feather validated successfully"
+        },
+        {
+          "id": "item_texture_swift_feather",
+          "name": "Item Texture: Swift Feather",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Swift Feather validated successfully"
+        },
+        {
+          "id": "item_model_swift_gem",
+          "name": "Item Model: Swift Gem",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Swift Gem validated successfully"
+        },
+        {
+          "id": "item_texture_swift_gem",
+          "name": "Item Texture: Swift Gem",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Swift Gem validated successfully"
+        },
+        {
+          "id": "item_model_swiftstride_boots",
+          "name": "Item Model: Swiftstride Boots",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Swiftstride Boots validated successfully"
+        },
+        {
+          "id": "item_texture_swiftstride_boots",
+          "name": "Item Texture: Swiftstride Boots",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Swiftstride Boots validated successfully"
+        },
+        {
+          "id": "item_lang_swift_feather",
+          "name": "Item Localization: Swift Feather",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Swift Feather validated successfully"
+        },
+        {
+          "id": "item_lang_swift_gem",
+          "name": "Item Localization: Swift Gem",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Swift Gem validated successfully"
+        },
+        {
+          "id": "item_lang_swiftstride_boots",
+          "name": "Item Localization: Swiftstride Boots",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Swiftstride Boots validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "blocks",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "blocks_existence",
+          "name": "Blocks Defined",
+          "category": "blocks",
+          "status": "skipped",
+          "message": "No blocks defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "recipes",
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "recipes_existence",
+          "name": "Recipes Defined",
+          "category": "recipes",
+          "status": "passed",
+          "message": "2 recipes expected"
+        },
+        {
+          "id": "recipe_files",
+          "name": "Recipe Files Generated",
+          "category": "recipes",
+          "status": "passed",
+          "message": "2 recipe files generated"
+        },
+        {
+          "id": "recipe_output_swift_gem",
+          "name": "Recipe Output: swift_gem",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: swift_gem validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_swift_gem",
+          "name": "Recipe Ingredients: swift_gem",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: swift_gem validated successfully"
+        },
+        {
+          "id": "recipe_output_swiftstride_boots",
+          "name": "Recipe Output: swiftstride_boots",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: swiftstride_boots validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_swiftstride_boots",
+          "name": "Recipe Ingredients: swiftstride_boots",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: swiftstride_boots validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "mobs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "mobs_existence",
+          "name": "Mobs Defined",
+          "category": "mobs",
+          "status": "skipped",
+          "message": "No mobs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "npcs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "npcs_existence",
+          "name": "NPCs Defined",
+          "category": "npcs",
+          "status": "skipped",
+          "message": "No NPCs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "quests",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "quests_existence",
+          "name": "Quests Defined",
+          "category": "quests",
+          "status": "skipped",
+          "message": "No quests defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "advancements",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "advancements_existence",
+          "name": "Advancements Defined",
+          "category": "advancements",
+          "status": "skipped",
+          "message": "No advancements generated"
+        }
+      ]
+    },
+    {
+      "category": "dimensions",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "dimensions_existence",
+          "name": "Dimensions Defined",
+          "category": "dimensions",
+          "status": "skipped",
+          "message": "No dimensions defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "biomes",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "biomes_existence",
+          "name": "Biomes Defined",
+          "category": "biomes",
+          "status": "skipped",
+          "message": "No biomes defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "structures",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "structures_existence",
+          "name": "Structures Defined",
+          "category": "structures",
+          "status": "skipped",
+          "message": "No structures defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "events",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "events_existence",
+          "name": "Events Defined",
+          "category": "events",
+          "status": "skipped",
+          "message": "No events defined in spec"
+        }
+      ]
+    }
+  ],
+  "criticalFailures": [],
+  "allChecks": [
+    {
+      "id": "items_existence",
+      "name": "Items Defined",
+      "category": "items",
+      "status": "passed",
+      "message": "3 items defined"
+    },
+    {
+      "id": "item_model_swift_feather",
+      "name": "Item Model: Swift Feather",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Swift Feather validated successfully"
+    },
+    {
+      "id": "item_texture_swift_feather",
+      "name": "Item Texture: Swift Feather",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Swift Feather validated successfully"
+    },
+    {
+      "id": "item_model_swift_gem",
+      "name": "Item Model: Swift Gem",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Swift Gem validated successfully"
+    },
+    {
+      "id": "item_texture_swift_gem",
+      "name": "Item Texture: Swift Gem",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Swift Gem validated successfully"
+    },
+    {
+      "id": "item_model_swiftstride_boots",
+      "name": "Item Model: Swiftstride Boots",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Swiftstride Boots validated successfully"
+    },
+    {
+      "id": "item_texture_swiftstride_boots",
+      "name": "Item Texture: Swiftstride Boots",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Swiftstride Boots validated successfully"
+    },
+    {
+      "id": "item_lang_swift_feather",
+      "name": "Item Localization: Swift Feather",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Swift Feather validated successfully"
+    },
+    {
+      "id": "item_lang_swift_gem",
+      "name": "Item Localization: Swift Gem",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Swift Gem validated successfully"
+    },
+    {
+      "id": "item_lang_swiftstride_boots",
+      "name": "Item Localization: Swiftstride Boots",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Swiftstride Boots validated successfully"
+    },
+    {
+      "id": "blocks_existence",
+      "name": "Blocks Defined",
+      "category": "blocks",
+      "status": "skipped",
+      "message": "No blocks defined in spec"
+    },
+    {
+      "id": "recipes_existence",
+      "name": "Recipes Defined",
+      "category": "recipes",
+      "status": "passed",
+      "message": "2 recipes expected"
+    },
+    {
+      "id": "recipe_files",
+      "name": "Recipe Files Generated",
+      "category": "recipes",
+      "status": "passed",
+      "message": "2 recipe files generated"
+    },
+    {
+      "id": "recipe_output_swift_gem",
+      "name": "Recipe Output: swift_gem",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: swift_gem validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_swift_gem",
+      "name": "Recipe Ingredients: swift_gem",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: swift_gem validated successfully"
+    },
+    {
+      "id": "recipe_output_swiftstride_boots",
+      "name": "Recipe Output: swiftstride_boots",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: swiftstride_boots validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_swiftstride_boots",
+      "name": "Recipe Ingredients: swiftstride_boots",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: swiftstride_boots validated successfully"
+    },
+    {
+      "id": "mobs_existence",
+      "name": "Mobs Defined",
+      "category": "mobs",
+      "status": "skipped",
+      "message": "No mobs defined in spec"
+    },
+    {
+      "id": "npcs_existence",
+      "name": "NPCs Defined",
+      "category": "npcs",
+      "status": "skipped",
+      "message": "No NPCs defined in spec"
+    },
+    {
+      "id": "quests_existence",
+      "name": "Quests Defined",
+      "category": "quests",
+      "status": "skipped",
+      "message": "No quests defined in spec"
+    },
+    {
+      "id": "advancements_existence",
+      "name": "Advancements Defined",
+      "category": "advancements",
+      "status": "skipped",
+      "message": "No advancements generated"
+    },
+    {
+      "id": "dimensions_existence",
+      "name": "Dimensions Defined",
+      "category": "dimensions",
+      "status": "skipped",
+      "message": "No dimensions defined in spec"
+    },
+    {
+      "id": "biomes_existence",
+      "name": "Biomes Defined",
+      "category": "biomes",
+      "status": "skipped",
+      "message": "No biomes defined in spec"
+    },
+    {
+      "id": "structures_existence",
+      "name": "Structures Defined",
+      "category": "structures",
+      "status": "skipped",
+      "message": "No structures defined in spec"
+    },
+    {
+      "id": "events_existence",
+      "name": "Events Defined",
+      "category": "events",
+      "status": "skipped",
+      "message": "No events defined in spec"
+    }
+  ],
+  "summary": "# Feature Audit Report: Stride Enchant\nGenerated: 2025-12-26T22:38:30.799Z\nMinecraft Version: 1.21.1\n\n## ✅ ALL CHECKS PASSED\nTotal: 16 passed, 9 skipped\n\n## Category Breakdown\n\n✅ **items**: 10/10 passed\n✅ **blocks**: 0/1 passed\n✅ **recipes**: 6/6 passed\n✅ **mobs**: 0/1 passed\n✅ **npcs**: 0/1 passed\n✅ **quests**: 0/1 passed\n✅ **advancements**: 0/1 passed\n✅ **dimensions**: 0/1 passed\n✅ **biomes**: 0/1 passed\n✅ **structures**: 0/1 passed\n✅ **events**: 0/1 passed",
+  "suggestions": []
+}
