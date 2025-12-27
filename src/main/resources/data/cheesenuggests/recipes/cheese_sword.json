@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "key": {
+    "M": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "cheesenuggests:cheese_sword",
+    "count": 1
+  }
+}

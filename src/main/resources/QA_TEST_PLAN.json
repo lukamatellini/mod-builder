@@ -1,0 +1,133 @@
+{
+  "modId": "cheesenuggests",
+  "modName": "Cheese Nuggests",
+  "mcVersion": "1.21.1",
+  "generatedAt": "2025-12-27T01:06:28.526Z",
+  "totalTests": 8,
+  "categories": [
+    {
+      "name": "Items",
+      "tests": [
+        {
+          "category": "Items",
+          "name": "Cheese Nugget Registration",
+          "command": "/give @p cheesenuggests:cheese_nugget",
+          "steps": [
+            "Run: /give @p cheesenuggests:cheese_nugget",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Cheese Sword Registration",
+          "command": "/give @p cheesenuggests:cheese_sword",
+          "steps": [
+            "Run: /give @p cheesenuggests:cheese_sword",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        }
+      ]
+    },
+    {
+      "name": "Recipes",
+      "tests": [
+        {
+          "category": "Recipes",
+          "name": "Cheese Nugget Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:iron_ore\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Cheese Nugget",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Cheese Sword Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:stick\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Cheese Sword",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Item Effects",
+      "tests": [
+        {
+          "category": "Item Effects",
+          "name": "Cheese Sword on_hit Effect",
+          "steps": [
+            "Give yourself the item: /give @p cheesenuggests:cheese_sword",
+            "Hit a mob with the item",
+            "Observe minecraft:slowness activation"
+          ],
+          "expectedResult": "minecraft:slowness activates correctly",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Blocks",
+      "tests": [
+        {
+          "category": "Blocks",
+          "name": "Cheese Block Placement",
+          "command": "/give @p cheesenuggests:cheese_block",
+          "steps": [
+            "Run: /give @p cheesenuggests:cheese_block",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        },
+        {
+          "category": "Blocks",
+          "name": "Cheese Ore Placement",
+          "command": "/give @p cheesenuggests:cheese_ore",
+          "steps": [
+            "Run: /give @p cheesenuggests:cheese_ore",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        },
+        {
+          "category": "Blocks",
+          "name": "Cheese Ore Block Placement",
+          "command": "/give @p cheesenuggests:cheese_ore_block",
+          "steps": [
+            "Run: /give @p cheesenuggests:cheese_ore_block",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        }
+      ]
+    }
+  ],
+  "quickCommands": [
+    "/give @p cheesenuggests:cheese_nugget",
+    "/give @p cheesenuggests:cheese_sword"
+  ]
+}

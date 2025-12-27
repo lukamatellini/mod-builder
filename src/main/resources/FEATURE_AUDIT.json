@@ -1,0 +1,619 @@
+{
+  "modId": "cheesenuggests",
+  "modName": "Cheese Nuggests",
+  "generatedAt": "2025-12-27T01:06:28.525Z",
+  "mcVersion": "1.21.1",
+  "overallStatus": "warnings",
+  "totalChecks": 35,
+  "passedChecks": 25,
+  "failedChecks": 0,
+  "warningChecks": 2,
+  "skippedChecks": 8,
+  "categories": [
+    {
+      "category": "items",
+      "total": 7,
+      "passed": 7,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "items_existence",
+          "name": "Items Defined",
+          "category": "items",
+          "status": "passed",
+          "message": "2 items defined"
+        },
+        {
+          "id": "item_model_cheese_nugget",
+          "name": "Item Model: Cheese Nugget",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Cheese Nugget validated successfully"
+        },
+        {
+          "id": "item_texture_cheese_nugget",
+          "name": "Item Texture: Cheese Nugget",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Cheese Nugget validated successfully"
+        },
+        {
+          "id": "item_model_cheese_sword",
+          "name": "Item Model: Cheese Sword",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Cheese Sword validated successfully"
+        },
+        {
+          "id": "item_texture_cheese_sword",
+          "name": "Item Texture: Cheese Sword",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Cheese Sword validated successfully"
+        },
+        {
+          "id": "item_lang_cheese_nugget",
+          "name": "Item Localization: Cheese Nugget",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Cheese Nugget validated successfully"
+        },
+        {
+          "id": "item_lang_cheese_sword",
+          "name": "Item Localization: Cheese Sword",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Cheese Sword validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "blocks",
+      "total": 10,
+      "passed": 8,
+      "failed": 0,
+      "warnings": 2,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "blocks_existence",
+          "name": "Blocks Defined",
+          "category": "blocks",
+          "status": "passed",
+          "message": "3 blocks defined"
+        },
+        {
+          "id": "block_state_cheese_block",
+          "name": "Blockstate: Cheese Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Cheese Block validated successfully"
+        },
+        {
+          "id": "block_loot_cheese_block",
+          "name": "Block Loot: Cheese Block",
+          "category": "blocks",
+          "status": "warning",
+          "message": "Missing loot table (block may not drop anything)"
+        },
+        {
+          "id": "block_item_cheese_block",
+          "name": "Block Item Model: Cheese Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Cheese Block validated successfully"
+        },
+        {
+          "id": "block_state_cheese_ore",
+          "name": "Blockstate: Cheese Ore",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Cheese Ore validated successfully"
+        },
+        {
+          "id": "block_loot_cheese_ore",
+          "name": "Block Loot: Cheese Ore",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Loot: Cheese Ore validated successfully"
+        },
+        {
+          "id": "block_item_cheese_ore",
+          "name": "Block Item Model: Cheese Ore",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Cheese Ore validated successfully"
+        },
+        {
+          "id": "block_state_cheese_ore_block",
+          "name": "Blockstate: Cheese Ore Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Cheese Ore Block validated successfully"
+        },
+        {
+          "id": "block_loot_cheese_ore_block",
+          "name": "Block Loot: Cheese Ore Block",
+          "category": "blocks",
+          "status": "warning",
+          "message": "Missing loot table (block may not drop anything)"
+        },
+        {
+          "id": "block_item_cheese_ore_block",
+          "name": "Block Item Model: Cheese Ore Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Cheese Ore Block validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "recipes",
+      "total": 10,
+      "passed": 10,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "recipes_existence",
+          "name": "Recipes Defined",
+          "category": "recipes",
+          "status": "passed",
+          "message": "2 recipes expected"
+        },
+        {
+          "id": "recipe_files",
+          "name": "Recipe Files Generated",
+          "category": "recipes",
+          "status": "passed",
+          "message": "4 recipe files generated"
+        },
+        {
+          "id": "recipe_output_cheese_block",
+          "name": "Recipe Output: cheese_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: cheese_block validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_cheese_block",
+          "name": "Recipe Ingredients: cheese_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: cheese_block validated successfully"
+        },
+        {
+          "id": "recipe_output_cheese_ore_block",
+          "name": "Recipe Output: cheese_ore_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: cheese_ore_block validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_cheese_ore_block",
+          "name": "Recipe Ingredients: cheese_ore_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: cheese_ore_block validated successfully"
+        },
+        {
+          "id": "recipe_output_cheese_nugget",
+          "name": "Recipe Output: cheese_nugget",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: cheese_nugget validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_cheese_nugget",
+          "name": "Recipe Ingredients: cheese_nugget",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: cheese_nugget validated successfully"
+        },
+        {
+          "id": "recipe_output_cheese_sword",
+          "name": "Recipe Output: cheese_sword",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: cheese_sword validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_cheese_sword",
+          "name": "Recipe Ingredients: cheese_sword",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: cheese_sword validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "mobs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "mobs_existence",
+          "name": "Mobs Defined",
+          "category": "mobs",
+          "status": "skipped",
+          "message": "No mobs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "npcs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "npcs_existence",
+          "name": "NPCs Defined",
+          "category": "npcs",
+          "status": "skipped",
+          "message": "No NPCs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "quests",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "quests_existence",
+          "name": "Quests Defined",
+          "category": "quests",
+          "status": "skipped",
+          "message": "No quests defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "advancements",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "advancements_existence",
+          "name": "Advancements Defined",
+          "category": "advancements",
+          "status": "skipped",
+          "message": "No advancements generated"
+        }
+      ]
+    },
+    {
+      "category": "dimensions",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "dimensions_existence",
+          "name": "Dimensions Defined",
+          "category": "dimensions",
+          "status": "skipped",
+          "message": "No dimensions defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "biomes",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "biomes_existence",
+          "name": "Biomes Defined",
+          "category": "biomes",
+          "status": "skipped",
+          "message": "No biomes defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "structures",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "structures_existence",
+          "name": "Structures Defined",
+          "category": "structures",
+          "status": "skipped",
+          "message": "No structures defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "events",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "events_existence",
+          "name": "Events Defined",
+          "category": "events",
+          "status": "skipped",
+          "message": "No events defined in spec"
+        }
+      ]
+    }
+  ],
+  "criticalFailures": [],
+  "allChecks": [
+    {
+      "id": "items_existence",
+      "name": "Items Defined",
+      "category": "items",
+      "status": "passed",
+      "message": "2 items defined"
+    },
+    {
+      "id": "item_model_cheese_nugget",
+      "name": "Item Model: Cheese Nugget",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Cheese Nugget validated successfully"
+    },
+    {
+      "id": "item_texture_cheese_nugget",
+      "name": "Item Texture: Cheese Nugget",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Cheese Nugget validated successfully"
+    },
+    {
+      "id": "item_model_cheese_sword",
+      "name": "Item Model: Cheese Sword",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Cheese Sword validated successfully"
+    },
+    {
+      "id": "item_texture_cheese_sword",
+      "name": "Item Texture: Cheese Sword",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Cheese Sword validated successfully"
+    },
+    {
+      "id": "item_lang_cheese_nugget",
+      "name": "Item Localization: Cheese Nugget",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Cheese Nugget validated successfully"
+    },
+    {
+      "id": "item_lang_cheese_sword",
+      "name": "Item Localization: Cheese Sword",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Cheese Sword validated successfully"
+    },
+    {
+      "id": "blocks_existence",
+      "name": "Blocks Defined",
+      "category": "blocks",
+      "status": "passed",
+      "message": "3 blocks defined"
+    },
+    {
+      "id": "block_state_cheese_block",
+      "name": "Blockstate: Cheese Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Cheese Block validated successfully"
+    },
+    {
+      "id": "block_loot_cheese_block",
+      "name": "Block Loot: Cheese Block",
+      "category": "blocks",
+      "status": "warning",
+      "message": "Missing loot table (block may not drop anything)"
+    },
+    {
+      "id": "block_item_cheese_block",
+      "name": "Block Item Model: Cheese Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Cheese Block validated successfully"
+    },
+    {
+      "id": "block_state_cheese_ore",
+      "name": "Blockstate: Cheese Ore",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Cheese Ore validated successfully"
+    },
+    {
+      "id": "block_loot_cheese_ore",
+      "name": "Block Loot: Cheese Ore",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Loot: Cheese Ore validated successfully"
+    },
+    {
+      "id": "block_item_cheese_ore",
+      "name": "Block Item Model: Cheese Ore",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Cheese Ore validated successfully"
+    },
+    {
+      "id": "block_state_cheese_ore_block",
+      "name": "Blockstate: Cheese Ore Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Cheese Ore Block validated successfully"
+    },
+    {
+      "id": "block_loot_cheese_ore_block",
+      "name": "Block Loot: Cheese Ore Block",
+      "category": "blocks",
+      "status": "warning",
+      "message": "Missing loot table (block may not drop anything)"
+    },
+    {
+      "id": "block_item_cheese_ore_block",
+      "name": "Block Item Model: Cheese Ore Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Cheese Ore Block validated successfully"
+    },
+    {
+      "id": "recipes_existence",
+      "name": "Recipes Defined",
+      "category": "recipes",
+      "status": "passed",
+      "message": "2 recipes expected"
+    },
+    {
+      "id": "recipe_files",
+      "name": "Recipe Files Generated",
+      "category": "recipes",
+      "status": "passed",
+      "message": "4 recipe files generated"
+    },
+    {
+      "id": "recipe_output_cheese_block",
+      "name": "Recipe Output: cheese_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: cheese_block validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_cheese_block",
+      "name": "Recipe Ingredients: cheese_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: cheese_block validated successfully"
+    },
+    {
+      "id": "recipe_output_cheese_ore_block",
+      "name": "Recipe Output: cheese_ore_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: cheese_ore_block validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_cheese_ore_block",
+      "name": "Recipe Ingredients: cheese_ore_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: cheese_ore_block validated successfully"
+    },
+    {
+      "id": "recipe_output_cheese_nugget",
+      "name": "Recipe Output: cheese_nugget",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: cheese_nugget validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_cheese_nugget",
+      "name": "Recipe Ingredients: cheese_nugget",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: cheese_nugget validated successfully"
+    },
+    {
+      "id": "recipe_output_cheese_sword",
+      "name": "Recipe Output: cheese_sword",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: cheese_sword validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_cheese_sword",
+      "name": "Recipe Ingredients: cheese_sword",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: cheese_sword validated successfully"
+    },
+    {
+      "id": "mobs_existence",
+      "name": "Mobs Defined",
+      "category": "mobs",
+      "status": "skipped",
+      "message": "No mobs defined in spec"
+    },
+    {
+      "id": "npcs_existence",
+      "name": "NPCs Defined",
+      "category": "npcs",
+      "status": "skipped",
+      "message": "No NPCs defined in spec"
+    },
+    {
+      "id": "quests_existence",
+      "name": "Quests Defined",
+      "category": "quests",
+      "status": "skipped",
+      "message": "No quests defined in spec"
+    },
+    {
+      "id": "advancements_existence",
+      "name": "Advancements Defined",
+      "category": "advancements",
+      "status": "skipped",
+      "message": "No advancements generated"
+    },
+    {
+      "id": "dimensions_existence",
+      "name": "Dimensions Defined",
+      "category": "dimensions",
+      "status": "skipped",
+      "message": "No dimensions defined in spec"
+    },
+    {
+      "id": "biomes_existence",
+      "name": "Biomes Defined",
+      "category": "biomes",
+      "status": "skipped",
+      "message": "No biomes defined in spec"
+    },
+    {
+      "id": "structures_existence",
+      "name": "Structures Defined",
+      "category": "structures",
+      "status": "skipped",
+      "message": "No structures defined in spec"
+    },
+    {
+      "id": "events_existence",
+      "name": "Events Defined",
+      "category": "events",
+      "status": "skipped",
+      "message": "No events defined in spec"
+    }
+  ],
+  "summary": "# Feature Audit Report: Cheese Nuggests\nGenerated: 2025-12-27T01:06:28.525Z\nMinecraft Version: 1.21.1\n\n## ⚠️ PASSED WITH WARNINGS\nTotal: 25 passed, 2 warnings, 8 skipped\n\n## Category Breakdown\n\n✅ **items**: 7/7 passed\n⚠️ **blocks**: 8/10 passed\n✅ **recipes**: 10/10 passed\n✅ **mobs**: 0/1 passed\n✅ **npcs**: 0/1 passed\n✅ **quests**: 0/1 passed\n✅ **advancements**: 0/1 passed\n✅ **dimensions**: 0/1 passed\n✅ **biomes**: 0/1 passed\n✅ **structures**: 0/1 passed\n✅ **events**: 0/1 passed",
+  "suggestions": []
+}
