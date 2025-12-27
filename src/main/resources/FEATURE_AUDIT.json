@@ -1,0 +1,1025 @@
+{
+  "modId": "enhancedlava",
+  "modName": "Enhanced Lava",
+  "generatedAt": "2025-12-27T17:25:59.168Z",
+  "mcVersion": "1.21.1",
+  "overallStatus": "warnings",
+  "totalChecks": 64,
+  "passedChecks": 54,
+  "failedChecks": 0,
+  "warningChecks": 2,
+  "skippedChecks": 8,
+  "categories": [
+    {
+      "category": "items",
+      "total": 25,
+      "passed": 25,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "items_existence",
+          "name": "Items Defined",
+          "category": "items",
+          "status": "passed",
+          "message": "8 items defined"
+        },
+        {
+          "id": "item_model_raw_lava_shard",
+          "name": "Item Model: Raw Lava Shard",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Raw Lava Shard validated successfully"
+        },
+        {
+          "id": "item_texture_raw_lava_shard",
+          "name": "Item Texture: Raw Lava Shard",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Raw Lava Shard validated successfully"
+        },
+        {
+          "id": "item_model_lava_crystal",
+          "name": "Item Model: Lava Crystal",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Lava Crystal validated successfully"
+        },
+        {
+          "id": "item_texture_lava_crystal",
+          "name": "Item Texture: Lava Crystal",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Lava Crystal validated successfully"
+        },
+        {
+          "id": "item_model_ignited_lava_shard",
+          "name": "Item Model: Ignited Lava Shard",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Ignited Lava Shard validated successfully"
+        },
+        {
+          "id": "item_texture_ignited_lava_shard",
+          "name": "Item Texture: Ignited Lava Shard",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Ignited Lava Shard validated successfully"
+        },
+        {
+          "id": "item_model_volcanic_pickaxe",
+          "name": "Item Model: Volcanic Pickaxe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Volcanic Pickaxe validated successfully"
+        },
+        {
+          "id": "item_texture_volcanic_pickaxe",
+          "name": "Item Texture: Volcanic Pickaxe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Volcanic Pickaxe validated successfully"
+        },
+        {
+          "id": "item_model_volcanic_sword",
+          "name": "Item Model: Volcanic Sword",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Volcanic Sword validated successfully"
+        },
+        {
+          "id": "item_texture_volcanic_sword",
+          "name": "Item Texture: Volcanic Sword",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Volcanic Sword validated successfully"
+        },
+        {
+          "id": "item_model_lava_infused_apple",
+          "name": "Item Model: Lava Infused Apple",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Lava Infused Apple validated successfully"
+        },
+        {
+          "id": "item_texture_lava_infused_apple",
+          "name": "Item Texture: Lava Infused Apple",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Lava Infused Apple validated successfully"
+        },
+        {
+          "id": "item_model_crystal_shard",
+          "name": "Item Model: Crystal Shard",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Crystal Shard validated successfully"
+        },
+        {
+          "id": "item_texture_crystal_shard",
+          "name": "Item Texture: Crystal Shard",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Crystal Shard validated successfully"
+        },
+        {
+          "id": "item_model_hardened_lava_block",
+          "name": "Item Model: Hardened Lava Block",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Hardened Lava Block validated successfully"
+        },
+        {
+          "id": "item_texture_hardened_lava_block",
+          "name": "Item Texture: Hardened Lava Block",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Hardened Lava Block validated successfully"
+        },
+        {
+          "id": "item_lang_raw_lava_shard",
+          "name": "Item Localization: Raw Lava Shard",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Raw Lava Shard validated successfully"
+        },
+        {
+          "id": "item_lang_lava_crystal",
+          "name": "Item Localization: Lava Crystal",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Lava Crystal validated successfully"
+        },
+        {
+          "id": "item_lang_ignited_lava_shard",
+          "name": "Item Localization: Ignited Lava Shard",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Ignited Lava Shard validated successfully"
+        },
+        {
+          "id": "item_lang_volcanic_pickaxe",
+          "name": "Item Localization: Volcanic Pickaxe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Volcanic Pickaxe validated successfully"
+        },
+        {
+          "id": "item_lang_volcanic_sword",
+          "name": "Item Localization: Volcanic Sword",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Volcanic Sword validated successfully"
+        },
+        {
+          "id": "item_lang_lava_infused_apple",
+          "name": "Item Localization: Lava Infused Apple",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Lava Infused Apple validated successfully"
+        },
+        {
+          "id": "item_lang_crystal_shard",
+          "name": "Item Localization: Crystal Shard",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Crystal Shard validated successfully"
+        },
+        {
+          "id": "item_lang_hardened_lava_block",
+          "name": "Item Localization: Hardened Lava Block",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Hardened Lava Block validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "blocks",
+      "total": 13,
+      "passed": 11,
+      "failed": 0,
+      "warnings": 2,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "blocks_existence",
+          "name": "Blocks Defined",
+          "category": "blocks",
+          "status": "passed",
+          "message": "4 blocks defined"
+        },
+        {
+          "id": "block_state_volcanic_core",
+          "name": "Blockstate: Volcanic Core",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Volcanic Core validated successfully"
+        },
+        {
+          "id": "block_loot_volcanic_core",
+          "name": "Block Loot: Volcanic Core",
+          "category": "blocks",
+          "status": "warning",
+          "message": "Missing loot table (block may not drop anything)"
+        },
+        {
+          "id": "block_item_volcanic_core",
+          "name": "Block Item Model: Volcanic Core",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Volcanic Core validated successfully"
+        },
+        {
+          "id": "block_state_hardened_lava_block",
+          "name": "Blockstate: Hardened Lava Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Hardened Lava Block validated successfully"
+        },
+        {
+          "id": "block_loot_hardened_lava_block",
+          "name": "Block Loot: Hardened Lava Block",
+          "category": "blocks",
+          "status": "warning",
+          "message": "Missing loot table (block may not drop anything)"
+        },
+        {
+          "id": "block_item_hardened_lava_block",
+          "name": "Block Item Model: Hardened Lava Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Hardened Lava Block validated successfully"
+        },
+        {
+          "id": "block_state_lava_crystal_ore",
+          "name": "Blockstate: Lava Crystal Ore",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Lava Crystal Ore validated successfully"
+        },
+        {
+          "id": "block_loot_lava_crystal_ore",
+          "name": "Block Loot: Lava Crystal Ore",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Loot: Lava Crystal Ore validated successfully"
+        },
+        {
+          "id": "block_item_lava_crystal_ore",
+          "name": "Block Item Model: Lava Crystal Ore",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Lava Crystal Ore validated successfully"
+        },
+        {
+          "id": "block_state_lava_block",
+          "name": "Blockstate: Enhanced Lava",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Enhanced Lava validated successfully"
+        },
+        {
+          "id": "block_loot_lava_block",
+          "name": "Block Loot: Enhanced Lava",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Loot: Enhanced Lava validated successfully"
+        },
+        {
+          "id": "block_item_lava_block",
+          "name": "Block Item Model: Enhanced Lava",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Enhanced Lava validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "recipes",
+      "total": 18,
+      "passed": 18,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "recipes_existence",
+          "name": "Recipes Defined",
+          "category": "recipes",
+          "status": "passed",
+          "message": "7 recipes expected"
+        },
+        {
+          "id": "recipe_files",
+          "name": "Recipe Files Generated",
+          "category": "recipes",
+          "status": "passed",
+          "message": "8 recipe files generated"
+        },
+        {
+          "id": "recipe_output_volcanic_core",
+          "name": "Recipe Output: volcanic_core",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: volcanic_core validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_volcanic_core",
+          "name": "Recipe Ingredients: volcanic_core",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: volcanic_core validated successfully"
+        },
+        {
+          "id": "recipe_output_hardened_lava_block",
+          "name": "Recipe Output: hardened_lava_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: hardened_lava_block validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_hardened_lava_block",
+          "name": "Recipe Ingredients: hardened_lava_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: hardened_lava_block validated successfully"
+        },
+        {
+          "id": "recipe_output_raw_lava_shard",
+          "name": "Recipe Output: raw_lava_shard",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: raw_lava_shard validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_raw_lava_shard",
+          "name": "Recipe Ingredients: raw_lava_shard",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: raw_lava_shard validated successfully"
+        },
+        {
+          "id": "recipe_output_lava_crystal",
+          "name": "Recipe Output: lava_crystal",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: lava_crystal validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_lava_crystal",
+          "name": "Recipe Ingredients: lava_crystal",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: lava_crystal validated successfully"
+        },
+        {
+          "id": "recipe_output_ignited_lava_shard",
+          "name": "Recipe Output: ignited_lava_shard",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: ignited_lava_shard validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_ignited_lava_shard",
+          "name": "Recipe Ingredients: ignited_lava_shard",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: ignited_lava_shard validated successfully"
+        },
+        {
+          "id": "recipe_output_volcanic_pickaxe",
+          "name": "Recipe Output: volcanic_pickaxe",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: volcanic_pickaxe validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_volcanic_pickaxe",
+          "name": "Recipe Ingredients: volcanic_pickaxe",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: volcanic_pickaxe validated successfully"
+        },
+        {
+          "id": "recipe_output_volcanic_sword",
+          "name": "Recipe Output: volcanic_sword",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: volcanic_sword validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_volcanic_sword",
+          "name": "Recipe Ingredients: volcanic_sword",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: volcanic_sword validated successfully"
+        },
+        {
+          "id": "recipe_output_lava_infused_apple",
+          "name": "Recipe Output: lava_infused_apple",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: lava_infused_apple validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_lava_infused_apple",
+          "name": "Recipe Ingredients: lava_infused_apple",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: lava_infused_apple validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "mobs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "mobs_existence",
+          "name": "Mobs Defined",
+          "category": "mobs",
+          "status": "skipped",
+          "message": "No mobs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "npcs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "npcs_existence",
+          "name": "NPCs Defined",
+          "category": "npcs",
+          "status": "skipped",
+          "message": "No NPCs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "quests",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "quests_existence",
+          "name": "Quests Defined",
+          "category": "quests",
+          "status": "skipped",
+          "message": "No quests defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "advancements",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "advancements_existence",
+          "name": "Advancements Defined",
+          "category": "advancements",
+          "status": "skipped",
+          "message": "No advancements generated"
+        }
+      ]
+    },
+    {
+      "category": "dimensions",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "dimensions_existence",
+          "name": "Dimensions Defined",
+          "category": "dimensions",
+          "status": "skipped",
+          "message": "No dimensions defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "biomes",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "biomes_existence",
+          "name": "Biomes Defined",
+          "category": "biomes",
+          "status": "skipped",
+          "message": "No biomes defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "structures",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "structures_existence",
+          "name": "Structures Defined",
+          "category": "structures",
+          "status": "skipped",
+          "message": "No structures defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "events",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "events_existence",
+          "name": "Events Defined",
+          "category": "events",
+          "status": "skipped",
+          "message": "No events defined in spec"
+        }
+      ]
+    }
+  ],
+  "criticalFailures": [],
+  "allChecks": [
+    {
+      "id": "items_existence",
+      "name": "Items Defined",
+      "category": "items",
+      "status": "passed",
+      "message": "8 items defined"
+    },
+    {
+      "id": "item_model_raw_lava_shard",
+      "name": "Item Model: Raw Lava Shard",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Raw Lava Shard validated successfully"
+    },
+    {
+      "id": "item_texture_raw_lava_shard",
+      "name": "Item Texture: Raw Lava Shard",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Raw Lava Shard validated successfully"
+    },
+    {
+      "id": "item_model_lava_crystal",
+      "name": "Item Model: Lava Crystal",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Lava Crystal validated successfully"
+    },
+    {
+      "id": "item_texture_lava_crystal",
+      "name": "Item Texture: Lava Crystal",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Lava Crystal validated successfully"
+    },
+    {
+      "id": "item_model_ignited_lava_shard",
+      "name": "Item Model: Ignited Lava Shard",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Ignited Lava Shard validated successfully"
+    },
+    {
+      "id": "item_texture_ignited_lava_shard",
+      "name": "Item Texture: Ignited Lava Shard",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Ignited Lava Shard validated successfully"
+    },
+    {
+      "id": "item_model_volcanic_pickaxe",
+      "name": "Item Model: Volcanic Pickaxe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Volcanic Pickaxe validated successfully"
+    },
+    {
+      "id": "item_texture_volcanic_pickaxe",
+      "name": "Item Texture: Volcanic Pickaxe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Volcanic Pickaxe validated successfully"
+    },
+    {
+      "id": "item_model_volcanic_sword",
+      "name": "Item Model: Volcanic Sword",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Volcanic Sword validated successfully"
+    },
+    {
+      "id": "item_texture_volcanic_sword",
+      "name": "Item Texture: Volcanic Sword",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Volcanic Sword validated successfully"
+    },
+    {
+      "id": "item_model_lava_infused_apple",
+      "name": "Item Model: Lava Infused Apple",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Lava Infused Apple validated successfully"
+    },
+    {
+      "id": "item_texture_lava_infused_apple",
+      "name": "Item Texture: Lava Infused Apple",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Lava Infused Apple validated successfully"
+    },
+    {
+      "id": "item_model_crystal_shard",
+      "name": "Item Model: Crystal Shard",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Crystal Shard validated successfully"
+    },
+    {
+      "id": "item_texture_crystal_shard",
+      "name": "Item Texture: Crystal Shard",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Crystal Shard validated successfully"
+    },
+    {
+      "id": "item_model_hardened_lava_block",
+      "name": "Item Model: Hardened Lava Block",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Hardened Lava Block validated successfully"
+    },
+    {
+      "id": "item_texture_hardened_lava_block",
+      "name": "Item Texture: Hardened Lava Block",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Hardened Lava Block validated successfully"
+    },
+    {
+      "id": "item_lang_raw_lava_shard",
+      "name": "Item Localization: Raw Lava Shard",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Raw Lava Shard validated successfully"
+    },
+    {
+      "id": "item_lang_lava_crystal",
+      "name": "Item Localization: Lava Crystal",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Lava Crystal validated successfully"
+    },
+    {
+      "id": "item_lang_ignited_lava_shard",
+      "name": "Item Localization: Ignited Lava Shard",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Ignited Lava Shard validated successfully"
+    },
+    {
+      "id": "item_lang_volcanic_pickaxe",
+      "name": "Item Localization: Volcanic Pickaxe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Volcanic Pickaxe validated successfully"
+    },
+    {
+      "id": "item_lang_volcanic_sword",
+      "name": "Item Localization: Volcanic Sword",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Volcanic Sword validated successfully"
+    },
+    {
+      "id": "item_lang_lava_infused_apple",
+      "name": "Item Localization: Lava Infused Apple",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Lava Infused Apple validated successfully"
+    },
+    {
+      "id": "item_lang_crystal_shard",
+      "name": "Item Localization: Crystal Shard",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Crystal Shard validated successfully"
+    },
+    {
+      "id": "item_lang_hardened_lava_block",
+      "name": "Item Localization: Hardened Lava Block",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Hardened Lava Block validated successfully"
+    },
+    {
+      "id": "blocks_existence",
+      "name": "Blocks Defined",
+      "category": "blocks",
+      "status": "passed",
+      "message": "4 blocks defined"
+    },
+    {
+      "id": "block_state_volcanic_core",
+      "name": "Blockstate: Volcanic Core",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Volcanic Core validated successfully"
+    },
+    {
+      "id": "block_loot_volcanic_core",
+      "name": "Block Loot: Volcanic Core",
+      "category": "blocks",
+      "status": "warning",
+      "message": "Missing loot table (block may not drop anything)"
+    },
+    {
+      "id": "block_item_volcanic_core",
+      "name": "Block Item Model: Volcanic Core",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Volcanic Core validated successfully"
+    },
+    {
+      "id": "block_state_hardened_lava_block",
+      "name": "Blockstate: Hardened Lava Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Hardened Lava Block validated successfully"
+    },
+    {
+      "id": "block_loot_hardened_lava_block",
+      "name": "Block Loot: Hardened Lava Block",
+      "category": "blocks",
+      "status": "warning",
+      "message": "Missing loot table (block may not drop anything)"
+    },
+    {
+      "id": "block_item_hardened_lava_block",
+      "name": "Block Item Model: Hardened Lava Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Hardened Lava Block validated successfully"
+    },
+    {
+      "id": "block_state_lava_crystal_ore",
+      "name": "Blockstate: Lava Crystal Ore",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Lava Crystal Ore validated successfully"
+    },
+    {
+      "id": "block_loot_lava_crystal_ore",
+      "name": "Block Loot: Lava Crystal Ore",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Loot: Lava Crystal Ore validated successfully"
+    },
+    {
+      "id": "block_item_lava_crystal_ore",
+      "name": "Block Item Model: Lava Crystal Ore",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Lava Crystal Ore validated successfully"
+    },
+    {
+      "id": "block_state_lava_block",
+      "name": "Blockstate: Enhanced Lava",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Enhanced Lava validated successfully"
+    },
+    {
+      "id": "block_loot_lava_block",
+      "name": "Block Loot: Enhanced Lava",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Loot: Enhanced Lava validated successfully"
+    },
+    {
+      "id": "block_item_lava_block",
+      "name": "Block Item Model: Enhanced Lava",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Enhanced Lava validated successfully"
+    },
+    {
+      "id": "recipes_existence",
+      "name": "Recipes Defined",
+      "category": "recipes",
+      "status": "passed",
+      "message": "7 recipes expected"
+    },
+    {
+      "id": "recipe_files",
+      "name": "Recipe Files Generated",
+      "category": "recipes",
+      "status": "passed",
+      "message": "8 recipe files generated"
+    },
+    {
+      "id": "recipe_output_volcanic_core",
+      "name": "Recipe Output: volcanic_core",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: volcanic_core validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_volcanic_core",
+      "name": "Recipe Ingredients: volcanic_core",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: volcanic_core validated successfully"
+    },
+    {
+      "id": "recipe_output_hardened_lava_block",
+      "name": "Recipe Output: hardened_lava_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: hardened_lava_block validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_hardened_lava_block",
+      "name": "Recipe Ingredients: hardened_lava_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: hardened_lava_block validated successfully"
+    },
+    {
+      "id": "recipe_output_raw_lava_shard",
+      "name": "Recipe Output: raw_lava_shard",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: raw_lava_shard validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_raw_lava_shard",
+      "name": "Recipe Ingredients: raw_lava_shard",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: raw_lava_shard validated successfully"
+    },
+    {
+      "id": "recipe_output_lava_crystal",
+      "name": "Recipe Output: lava_crystal",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: lava_crystal validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_lava_crystal",
+      "name": "Recipe Ingredients: lava_crystal",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: lava_crystal validated successfully"
+    },
+    {
+      "id": "recipe_output_ignited_lava_shard",
+      "name": "Recipe Output: ignited_lava_shard",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: ignited_lava_shard validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_ignited_lava_shard",
+      "name": "Recipe Ingredients: ignited_lava_shard",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: ignited_lava_shard validated successfully"
+    },
+    {
+      "id": "recipe_output_volcanic_pickaxe",
+      "name": "Recipe Output: volcanic_pickaxe",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: volcanic_pickaxe validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_volcanic_pickaxe",
+      "name": "Recipe Ingredients: volcanic_pickaxe",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: volcanic_pickaxe validated successfully"
+    },
+    {
+      "id": "recipe_output_volcanic_sword",
+      "name": "Recipe Output: volcanic_sword",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: volcanic_sword validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_volcanic_sword",
+      "name": "Recipe Ingredients: volcanic_sword",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: volcanic_sword validated successfully"
+    },
+    {
+      "id": "recipe_output_lava_infused_apple",
+      "name": "Recipe Output: lava_infused_apple",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: lava_infused_apple validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_lava_infused_apple",
+      "name": "Recipe Ingredients: lava_infused_apple",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: lava_infused_apple validated successfully"
+    },
+    {
+      "id": "mobs_existence",
+      "name": "Mobs Defined",
+      "category": "mobs",
+      "status": "skipped",
+      "message": "No mobs defined in spec"
+    },
+    {
+      "id": "npcs_existence",
+      "name": "NPCs Defined",
+      "category": "npcs",
+      "status": "skipped",
+      "message": "No NPCs defined in spec"
+    },
+    {
+      "id": "quests_existence",
+      "name": "Quests Defined",
+      "category": "quests",
+      "status": "skipped",
+      "message": "No quests defined in spec"
+    },
+    {
+      "id": "advancements_existence",
+      "name": "Advancements Defined",
+      "category": "advancements",
+      "status": "skipped",
+      "message": "No advancements generated"
+    },
+    {
+      "id": "dimensions_existence",
+      "name": "Dimensions Defined",
+      "category": "dimensions",
+      "status": "skipped",
+      "message": "No dimensions defined in spec"
+    },
+    {
+      "id": "biomes_existence",
+      "name": "Biomes Defined",
+      "category": "biomes",
+      "status": "skipped",
+      "message": "No biomes defined in spec"
+    },
+    {
+      "id": "structures_existence",
+      "name": "Structures Defined",
+      "category": "structures",
+      "status": "skipped",
+      "message": "No structures defined in spec"
+    },
+    {
+      "id": "events_existence",
+      "name": "Events Defined",
+      "category": "events",
+      "status": "skipped",
+      "message": "No events defined in spec"
+    }
+  ],
+  "summary": "# Feature Audit Report: Enhanced Lava\nGenerated: 2025-12-27T17:25:59.168Z\nMinecraft Version: 1.21.1\n\n## ⚠️ PASSED WITH WARNINGS\nTotal: 54 passed, 2 warnings, 8 skipped\n\n## Category Breakdown\n\n✅ **items**: 25/25 passed\n⚠️ **blocks**: 11/13 passed\n✅ **recipes**: 18/18 passed\n✅ **mobs**: 0/1 passed\n✅ **npcs**: 0/1 passed\n✅ **quests**: 0/1 passed\n✅ **advancements**: 0/1 passed\n✅ **dimensions**: 0/1 passed\n✅ **biomes**: 0/1 passed\n✅ **structures**: 0/1 passed\n✅ **events**: 0/1 passed",
+  "suggestions": []
+}

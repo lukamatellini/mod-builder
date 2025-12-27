@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "enhancedlava:block/lava_crystal_ore"
+    }
+  }
+}

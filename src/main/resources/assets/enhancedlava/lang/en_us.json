@@ -1,0 +1,15 @@
+{
+  "itemGroup.enhancedlava.main": "Enhanced Lava",
+  "item.enhancedlava.raw_lava_shard": "Raw Lava Shard",
+  "item.enhancedlava.lava_crystal": "Lava Crystal",
+  "item.enhancedlava.ignited_lava_shard": "Ignited Lava Shard",
+  "item.enhancedlava.volcanic_pickaxe": "Volcanic Pickaxe",
+  "item.enhancedlava.volcanic_sword": "Volcanic Sword",
+  "item.enhancedlava.lava_infused_apple": "Lava Infused Apple",
+  "item.enhancedlava.crystal_shard": "Crystal Shard",
+  "item.enhancedlava.hardened_lava_block": "Hardened Lava Block",
+  "block.enhancedlava.volcanic_core": "Volcanic Core",
+  "block.enhancedlava.hardened_lava_block": "Hardened Lava Block",
+  "block.enhancedlava.lava_crystal_ore": "Lava Crystal Ore",
+  "block.enhancedlava.lava_block": "Enhanced Lava"
+}

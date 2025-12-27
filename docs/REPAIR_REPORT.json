@@ -1,0 +1,345 @@
+{
+  "summary": {
+    "totalRecipesScanned": 8,
+    "totalRepairs": 11,
+    "autoCreatedItems": 1,
+    "fallbacksUsed": 11,
+    "externalRemaps": 0,
+    "unresolvedReferences": 0,
+    "success": true
+  },
+  "repairs": [
+    {
+      "recipe": "raw_lava_shard (spec)",
+      "type": "fallback",
+      "before": "minecraft:diamond",
+      "after": "minecraft:magma_cream",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "raw_lava_shard (spec)",
+      "type": "auto_create",
+      "before": "enhancedlava:crystal_shard",
+      "after": "enhancedlava:crystal_shard",
+      "reason": "Auto-created missing mod item: Crystal Shard"
+    },
+    {
+      "recipe": "lava_crystal (spec)",
+      "type": "fallback",
+      "before": "minecraft:diamond",
+      "after": "minecraft:magma_cream",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "lava_crystal (spec)",
+      "type": "auto_create",
+      "before": "enhancedlava:crystal_shard",
+      "after": "enhancedlava:crystal_shard",
+      "reason": "Auto-created missing mod item: Crystal Shard"
+    },
+    {
+      "recipe": "ignited_lava_shard (spec)",
+      "type": "auto_create",
+      "before": "enhancedlava:raw_lava_shard",
+      "after": "enhancedlava:raw_lava_shard",
+      "reason": "Auto-created missing mod item: Raw Lava Shard"
+    },
+    {
+      "recipe": "volcanic_pickaxe (spec)",
+      "type": "auto_create",
+      "before": "enhancedlava:hardened_lava_block",
+      "after": "enhancedlava:hardened_lava_block",
+      "reason": "Auto-created missing mod item: Hardened Lava Block"
+    },
+    {
+      "recipe": "volcanic_pickaxe (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:magma_cream",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "volcanic_pickaxe (spec)",
+      "type": "fallback",
+      "before": "minecraft:blaze_rod",
+      "after": "minecraft:magma_cream",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "volcanic_pickaxe (spec)",
+      "type": "auto_create",
+      "before": "enhancedlava:hardened_lava_block",
+      "after": "enhancedlava:hardened_lava_block",
+      "reason": "Auto-created missing mod item: Hardened Lava Block"
+    },
+    {
+      "recipe": "volcanic_pickaxe (spec)",
+      "type": "auto_create",
+      "before": "enhancedlava:lava_crystal",
+      "after": "enhancedlava:lava_crystal",
+      "reason": "Auto-created missing mod item: Lava Crystal"
+    },
+    {
+      "recipe": "volcanic_sword (spec)",
+      "type": "auto_create",
+      "before": "enhancedlava:hardened_lava_block",
+      "after": "enhancedlava:hardened_lava_block",
+      "reason": "Auto-created missing mod item: Hardened Lava Block"
+    },
+    {
+      "recipe": "volcanic_sword (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:magma_cream",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "volcanic_sword (spec)",
+      "type": "fallback",
+      "before": "minecraft:blaze_rod",
+      "after": "minecraft:magma_cream",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "volcanic_sword (spec)",
+      "type": "auto_create",
+      "before": "enhancedlava:hardened_lava_block",
+      "after": "enhancedlava:hardened_lava_block",
+      "reason": "Auto-created missing mod item: Hardened Lava Block"
+    },
+    {
+      "recipe": "lava_infused_apple (spec)",
+      "type": "auto_create",
+      "before": "enhancedlava:ignited_lava_shard",
+      "after": "enhancedlava:ignited_lava_shard",
+      "reason": "Auto-created missing mod item: Ignited Lava Shard"
+    },
+    {
+      "recipe": "lava_infused_apple (spec)",
+      "type": "fallback",
+      "before": "minecraft:apple",
+      "after": "minecraft:magma_cream",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "lava_infused_apple (spec)",
+      "type": "auto_create",
+      "before": "enhancedlava:ignited_lava_shard",
+      "after": "enhancedlava:ignited_lava_shard",
+      "reason": "Auto-created missing mod item: Ignited Lava Shard"
+    },
+    {
+      "recipe": "volcanic_core (spec)",
+      "type": "auto_create",
+      "before": "enhancedlava:lava_crystal",
+      "after": "enhancedlava:lava_crystal",
+      "reason": "Auto-created missing mod item: Lava Crystal"
+    },
+    {
+      "recipe": "volcanic_core",
+      "type": "auto_create",
+      "before": "enhancedlava:lava_crystal",
+      "after": "enhancedlava:lava_crystal",
+      "reason": "Auto-created missing mod item: Lava Crystal"
+    },
+    {
+      "recipe": "volcanic_core",
+      "type": "auto_create",
+      "before": "enhancedlava:volcanic_core",
+      "after": "enhancedlava:volcanic_core",
+      "reason": "Auto-created missing mod item: Volcanic Core"
+    },
+    {
+      "recipe": "hardened_lava_block",
+      "type": "auto_create",
+      "before": "enhancedlava:lava_block",
+      "after": "enhancedlava:lava_block",
+      "reason": "Auto-created missing mod item: Lava Block"
+    },
+    {
+      "recipe": "hardened_lava_block",
+      "type": "auto_create",
+      "before": "enhancedlava:hardened_lava_block",
+      "after": "enhancedlava:hardened_lava_block",
+      "reason": "Auto-created missing mod item: Hardened Lava Block"
+    },
+    {
+      "recipe": "raw_lava_shard",
+      "type": "fallback",
+      "before": "minecraft:diamond",
+      "after": "minecraft:magma_cream",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "raw_lava_shard",
+      "type": "auto_create",
+      "before": "enhancedlava:crystal_shard",
+      "after": "enhancedlava:crystal_shard",
+      "reason": "Auto-created missing mod item: Crystal Shard"
+    },
+    {
+      "recipe": "raw_lava_shard",
+      "type": "auto_create",
+      "before": "enhancedlava:raw_lava_shard",
+      "after": "enhancedlava:raw_lava_shard",
+      "reason": "Auto-created missing mod item: Raw Lava Shard"
+    },
+    {
+      "recipe": "lava_crystal",
+      "type": "fallback",
+      "before": "minecraft:diamond",
+      "after": "minecraft:magma_cream",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "lava_crystal",
+      "type": "auto_create",
+      "before": "enhancedlava:crystal_shard",
+      "after": "enhancedlava:crystal_shard",
+      "reason": "Auto-created missing mod item: Crystal Shard"
+    },
+    {
+      "recipe": "lava_crystal",
+      "type": "auto_create",
+      "before": "enhancedlava:lava_crystal",
+      "after": "enhancedlava:lava_crystal",
+      "reason": "Auto-created missing mod item: Lava Crystal"
+    },
+    {
+      "recipe": "ignited_lava_shard",
+      "type": "auto_create",
+      "before": "enhancedlava:raw_lava_shard",
+      "after": "enhancedlava:raw_lava_shard",
+      "reason": "Auto-created missing mod item: Raw Lava Shard"
+    },
+    {
+      "recipe": "ignited_lava_shard",
+      "type": "auto_create",
+      "before": "enhancedlava:ignited_lava_shard",
+      "after": "enhancedlava:ignited_lava_shard",
+      "reason": "Auto-created missing mod item: Ignited Lava Shard"
+    },
+    {
+      "recipe": "volcanic_pickaxe",
+      "type": "auto_create",
+      "before": "enhancedlava:hardened_lava_block",
+      "after": "enhancedlava:hardened_lava_block",
+      "reason": "Auto-created missing mod item: Hardened Lava Block"
+    },
+    {
+      "recipe": "volcanic_pickaxe",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:magma_cream",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "volcanic_pickaxe",
+      "type": "auto_create",
+      "before": "enhancedlava:volcanic_pickaxe",
+      "after": "enhancedlava:volcanic_pickaxe",
+      "reason": "Auto-created missing mod item: Volcanic Pickaxe"
+    },
+    {
+      "recipe": "volcanic_sword",
+      "type": "auto_create",
+      "before": "enhancedlava:hardened_lava_block",
+      "after": "enhancedlava:hardened_lava_block",
+      "reason": "Auto-created missing mod item: Hardened Lava Block"
+    },
+    {
+      "recipe": "volcanic_sword",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:magma_cream",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "volcanic_sword",
+      "type": "auto_create",
+      "before": "enhancedlava:volcanic_sword",
+      "after": "enhancedlava:volcanic_sword",
+      "reason": "Auto-created missing mod item: Volcanic Sword"
+    },
+    {
+      "recipe": "lava_infused_apple",
+      "type": "auto_create",
+      "before": "enhancedlava:ignited_lava_shard",
+      "after": "enhancedlava:ignited_lava_shard",
+      "reason": "Auto-created missing mod item: Ignited Lava Shard"
+    },
+    {
+      "recipe": "lava_infused_apple",
+      "type": "auto_create",
+      "before": "enhancedlava:lava_infused_apple",
+      "after": "enhancedlava:lava_infused_apple",
+      "reason": "Auto-created missing mod item: Lava Infused Apple"
+    }
+  ],
+  "autoCreatedItems": [
+    {
+      "id": "hardened_lava_block",
+      "name": "Hardened Lava Block",
+      "type": "misc",
+      "reason": "Auto-created: referenced in volcanic_pickaxe (spec) recipe but not defined"
+    }
+  ],
+  "fallbacks": [
+    {
+      "recipe": "raw_lava_shard (spec)",
+      "original": "minecraft:diamond",
+      "fallback": "minecraft:magma_cream"
+    },
+    {
+      "recipe": "lava_crystal (spec)",
+      "original": "minecraft:diamond",
+      "fallback": "minecraft:magma_cream"
+    },
+    {
+      "recipe": "volcanic_pickaxe (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:magma_cream"
+    },
+    {
+      "recipe": "volcanic_pickaxe (spec)",
+      "original": "minecraft:blaze_rod",
+      "fallback": "minecraft:magma_cream"
+    },
+    {
+      "recipe": "volcanic_sword (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:magma_cream"
+    },
+    {
+      "recipe": "volcanic_sword (spec)",
+      "original": "minecraft:blaze_rod",
+      "fallback": "minecraft:magma_cream"
+    },
+    {
+      "recipe": "lava_infused_apple (spec)",
+      "original": "minecraft:apple",
+      "fallback": "minecraft:magma_cream"
+    },
+    {
+      "recipe": "raw_lava_shard",
+      "original": "minecraft:diamond",
+      "fallback": "minecraft:magma_cream"
+    },
+    {
+      "recipe": "lava_crystal",
+      "original": "minecraft:diamond",
+      "fallback": "minecraft:magma_cream"
+    },
+    {
+      "recipe": "volcanic_pickaxe",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:magma_cream"
+    },
+    {
+      "recipe": "volcanic_sword",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:magma_cream"
+    }
+  ],
+  "externalRemaps": []
+}

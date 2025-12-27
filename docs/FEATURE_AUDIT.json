@@ -1,0 +1,421 @@
+{
+  "modId": "enhancedlava",
+  "modName": "Enhanced Lava",
+  "generatedAt": "2025-12-27T17:25:59.124Z",
+  "mcVersion": "1.21.1",
+  "categories": {
+    "items": {
+      "name": "Items",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "raw_lava_shard: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "raw_lava_shard: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "lava_crystal: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lava_crystal: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "ignited_lava_shard: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "ignited_lava_shard: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "volcanic_pickaxe: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "volcanic_pickaxe: Weapon stats",
+          "status": "passed",
+          "message": "Damage: 7, Durability: 2000"
+        },
+        {
+          "name": "volcanic_pickaxe: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "volcanic_sword: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "volcanic_sword: Weapon stats",
+          "status": "passed",
+          "message": "Damage: 9, Durability: 1500"
+        },
+        {
+          "name": "volcanic_sword: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "lava_infused_apple: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lava_infused_apple: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "crystal_shard: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "crystal_shard: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        }
+      ],
+      "notes": "7 items audited"
+    },
+    "blocks": {
+      "name": "Blocks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "volcanic_core: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "volcanic_core: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "volcanic_core: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "hardened_lava_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "hardened_lava_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "hardened_lava_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "lava_crystal_ore: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lava_crystal_ore: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "lava_crystal_ore: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "lava_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lava_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "lava_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        }
+      ],
+      "notes": "4 blocks audited"
+    },
+    "mobs": {
+      "name": "Mobs",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No mobs defined",
+          "status": "skipped",
+          "message": "No mobs to audit"
+        }
+      ]
+    },
+    "structures": {
+      "name": "Structures",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No structures defined",
+          "status": "skipped",
+          "message": "No structures to audit"
+        }
+      ]
+    },
+    "recipes": {
+      "name": "Recipes",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Items with recipes",
+          "status": "passed",
+          "message": "6/7 items have recipes"
+        },
+        {
+          "name": "raw_lava_shard: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "lava_crystal: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "ignited_lava_shard: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "volcanic_pickaxe: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "volcanic_sword: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "lava_infused_apple: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        }
+      ],
+      "notes": "8 recipes audited"
+    },
+    "lootTables": {
+      "name": "Loot Tables",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "volcanic_core: Block loot",
+          "status": "warn",
+          "message": "No block loot table"
+        },
+        {
+          "name": "hardened_lava_block: Block loot",
+          "status": "warn",
+          "message": "No block loot table"
+        },
+        {
+          "name": "lava_crystal_ore: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        },
+        {
+          "name": "lava_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        }
+      ],
+      "notes": "0 mob loot tables audited"
+    },
+    "textures": {
+      "name": "Textures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Texture files generated",
+          "status": "passed",
+          "message": "15 textures generated (expected at least 11)"
+        },
+        {
+          "name": "volcanic_core.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "hardened_lava_block.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "lava_crystal_ore.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "lava_block.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "fallback.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "raw_lava_shard.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "lava_crystal.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "ignited_lava_shard.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "volcanic_pickaxe.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "volcanic_sword.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        }
+      ],
+      "notes": "15 texture files"
+    },
+    "quests": {
+      "name": "Quests",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No quests defined",
+          "status": "skipped",
+          "message": "No quests to audit"
+        }
+      ]
+    },
+    "advancements": {
+      "name": "Advancements",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Advancement files",
+          "status": "warn",
+          "message": "0 advancement files generated"
+        },
+        {
+          "name": "Root advancement",
+          "status": "warn",
+          "message": "No root advancement"
+        }
+      ],
+      "notes": "0 advancements"
+    },
+    "compilation": {
+      "name": "Compilation",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "build.gradle",
+          "status": "passed",
+          "message": "Build file exists"
+        },
+        {
+          "name": "fabric.mod.json",
+          "status": "passed",
+          "message": "Mod descriptor exists"
+        },
+        {
+          "name": "Minecraft version",
+          "status": "passed",
+          "message": "Correct MC version"
+        },
+        {
+          "name": "Java source files",
+          "status": "passed",
+          "message": "10 Java files generated"
+        }
+      ],
+      "notes": "Build configuration audit"
+    },
+    "apiSafety": {
+      "name": "API Safety",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "API safety scan",
+          "status": "passed",
+          "message": "No forbidden patterns detected"
+        }
+      ],
+      "notes": "MC 1.21.1 API compatibility check"
+    },
+    "vanillaFallbacks": {
+      "name": "Vanilla Fallbacks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Vanilla recipe ingredients",
+          "status": "passed",
+          "message": "7 vanilla ingredients used (intentional)",
+          "details": "raw_lava_shard uses minecraft:diamond, lava_crystal uses minecraft:diamond, volcanic_pickaxe uses minecraft:stick, volcanic_pickaxe uses minecraft:blaze_rod, volcanic_sword uses minecraft:stick, volcanic_sword uses minecraft:blaze_rod, lava_infused_apple uses minecraft:apple"
+        }
+      ],
+      "notes": "Tracks use of vanilla content vs custom generation"
+    },
+    "inferredContent": {
+      "name": "Inferred Content",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Theme inference",
+          "status": "passed",
+          "message": "Inferred theme: mystical steampunk",
+          "details": "Primary themes: lava, volcanic, lava, lava, lava, Power level: legendary"
+        },
+        {
+          "name": "Inferred item recipes",
+          "status": "passed",
+          "message": "6/7 items have recipes"
+        }
+      ],
+      "notes": "Tracks auto-completed and inferred content"
+    }
+  },
+  "summary": {
+    "totalChecks": 63,
+    "passed": 56,
+    "failed": 0,
+    "warnings": 4,
+    "skipped": 3,
+    "overallStatus": "warn"
+  }
+}

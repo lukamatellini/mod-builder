@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MMM",
+    "MMM",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "item": "enhancedlava:lava_crystal"
+    }
+  },
+  "result": {
+    "id": "enhancedlava:volcanic_core",
+    "count": 1
+  }
+}

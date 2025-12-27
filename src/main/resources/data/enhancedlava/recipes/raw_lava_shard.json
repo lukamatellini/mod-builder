@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:magma_cream"
+    },
+    {
+      "item": "enhancedlava:crystal_shard"
+    }
+  ],
+  "result": {
+    "id": "enhancedlava:raw_lava_shard",
+    "count": 1
+  }
+}

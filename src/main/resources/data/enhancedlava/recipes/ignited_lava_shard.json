@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "enhancedlava:raw_lava_shard"
+  },
+  "result": {
+    "id": "enhancedlava:ignited_lava_shard",
+    "count": 1
+  },
+  "experience": 0.7,
+  "cookingtime": 200
+}

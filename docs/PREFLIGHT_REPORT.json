@@ -1,0 +1,49 @@
+{
+  "summary": {
+    "scannedLocations": 19,
+    "totalRepairs": 4,
+    "autoCreatedStubs": 1,
+    "unresolvedReferences": 0,
+    "success": true
+  },
+  "repairs": [
+    {
+      "location": "recipe raw_lava_shard ingredient 1",
+      "type": "auto_create",
+      "original": "crystal_shard",
+      "repaired": "enhancedlava:crystal_shard",
+      "reason": "Auto-created missing item stub"
+    },
+    {
+      "location": "recipe lava_crystal ingredient 1",
+      "type": "namespace_fix",
+      "original": "crystal_shard",
+      "repaired": "enhancedlava:crystal_shard",
+      "reason": "Added mod namespace"
+    },
+    {
+      "location": "block lava_crystal_ore drop 0",
+      "type": "namespace_fix",
+      "original": "lava_crystal",
+      "repaired": "enhancedlava:lava_crystal",
+      "reason": "Added mod namespace"
+    },
+    {
+      "location": "block lava_block drop 0",
+      "type": "vanilla_canonicalize",
+      "original": "lava_bucket",
+      "repaired": "minecraft:lava_bucket",
+      "reason": "Added minecraft: namespace to vanilla item"
+    }
+  ],
+  "autoCreatedStubs": [
+    {
+      "id": "crystal_shard",
+      "name": "Crystal Shard",
+      "type": "item",
+      "reason": "Referenced in recipe raw_lava_shard ingredient 1 but not defined"
+    }
+  ],
+  "unresolvedReferences": [],
+  "generatedAt": "2025-12-27T17:25:59.123Z"
+}

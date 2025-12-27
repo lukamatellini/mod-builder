@@ -1,0 +1,22 @@
+{
+  "version": "java-import-audit@1",
+  "locked": {
+    "mcVersion": "1.21.1",
+    "loader": "fabric"
+  },
+  "stage": "post_recipe_autocreate",
+  "mcVersion": "1.21.1",
+  "loader": "fabric",
+  "auditedFiles": 10,
+  "totalImportsAdded": 1,
+  "repairs": [
+    {
+      "filePath": "src/main/java/com/modgen/enhancedlava/ModItems.java",
+      "addedImports": [
+        "net.minecraft.item.Items"
+      ]
+    }
+  ],
+  "errors": [],
+  "timestamp": "2025-12-27T17:25:59.157Z"
+}

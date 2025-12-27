@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "enhancedlava:block/hardened_lava_block"
+    }
+  }
+}

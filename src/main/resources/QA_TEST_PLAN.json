@@ -1,0 +1,301 @@
+{
+  "modId": "enhancedlava",
+  "modName": "Enhanced Lava",
+  "mcVersion": "1.21.1",
+  "generatedAt": "2025-12-27T17:25:59.169Z",
+  "totalTests": 21,
+  "categories": [
+    {
+      "name": "Items",
+      "tests": [
+        {
+          "category": "Items",
+          "name": "Raw Lava Shard Registration",
+          "command": "/give @p enhancedlava:raw_lava_shard",
+          "steps": [
+            "Run: /give @p enhancedlava:raw_lava_shard",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Lava Crystal Registration",
+          "command": "/give @p enhancedlava:lava_crystal",
+          "steps": [
+            "Run: /give @p enhancedlava:lava_crystal",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Ignited Lava Shard Registration",
+          "command": "/give @p enhancedlava:ignited_lava_shard",
+          "steps": [
+            "Run: /give @p enhancedlava:ignited_lava_shard",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Volcanic Pickaxe Registration",
+          "command": "/give @p enhancedlava:volcanic_pickaxe",
+          "steps": [
+            "Run: /give @p enhancedlava:volcanic_pickaxe",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Volcanic Sword Registration",
+          "command": "/give @p enhancedlava:volcanic_sword",
+          "steps": [
+            "Run: /give @p enhancedlava:volcanic_sword",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Lava Infused Apple Registration",
+          "command": "/give @p enhancedlava:lava_infused_apple",
+          "steps": [
+            "Run: /give @p enhancedlava:lava_infused_apple",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Crystal Shard Registration",
+          "command": "/give @p enhancedlava:crystal_shard",
+          "steps": [
+            "Run: /give @p enhancedlava:crystal_shard",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Hardened Lava Block Registration",
+          "command": "/give @p enhancedlava:hardened_lava_block",
+          "steps": [
+            "Run: /give @p enhancedlava:hardened_lava_block",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        }
+      ]
+    },
+    {
+      "name": "Recipes",
+      "tests": [
+        {
+          "category": "Recipes",
+          "name": "Raw Lava Shard Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:magma_cream\",\"enhancedlava:crystal_shard\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Raw Lava Shard",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Lava Crystal Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:magma_cream\",\"enhancedlava:crystal_shard\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Lava Crystal",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Ignited Lava Shard Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"enhancedlava:raw_lava_shard\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Ignited Lava Shard",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Volcanic Pickaxe Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:magma_cream\",\"enhancedlava:hardened_lava_block\",\"enhancedlava:lava_crystal\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Volcanic Pickaxe",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Volcanic Sword Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:magma_cream\",\"enhancedlava:hardened_lava_block\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Volcanic Sword",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Lava Infused Apple Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:magma_cream\",\"enhancedlava:ignited_lava_shard\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Lava Infused Apple",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Hardened Lava Block Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:magma_cream\",\"minecraft:iron_ingot\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Hardened Lava Block",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Item Effects",
+      "tests": [
+        {
+          "category": "Item Effects",
+          "name": "Volcanic Sword on_hit Effect",
+          "steps": [
+            "Give yourself the item: /give @p enhancedlava:volcanic_sword",
+            "Hit a mob with the item",
+            "Observe minecraft:fire_resistance activation"
+          ],
+          "expectedResult": "minecraft:fire_resistance activates correctly",
+          "automated": false
+        },
+        {
+          "category": "Item Effects",
+          "name": "Lava Infused Apple passive Effect",
+          "steps": [
+            "Give yourself the item: /give @p enhancedlava:lava_infused_apple",
+            "Hold item and wait",
+            "Observe minecraft:fire_resistance activation"
+          ],
+          "expectedResult": "minecraft:fire_resistance activates correctly",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Blocks",
+      "tests": [
+        {
+          "category": "Blocks",
+          "name": "Volcanic Core Placement",
+          "command": "/give @p enhancedlava:volcanic_core",
+          "steps": [
+            "Run: /give @p enhancedlava:volcanic_core",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        },
+        {
+          "category": "Blocks",
+          "name": "Hardened Lava Block Placement",
+          "command": "/give @p enhancedlava:hardened_lava_block",
+          "steps": [
+            "Run: /give @p enhancedlava:hardened_lava_block",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        },
+        {
+          "category": "Blocks",
+          "name": "Lava Crystal Ore Placement",
+          "command": "/give @p enhancedlava:lava_crystal_ore",
+          "steps": [
+            "Run: /give @p enhancedlava:lava_crystal_ore",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        },
+        {
+          "category": "Blocks",
+          "name": "Enhanced Lava Placement",
+          "command": "/give @p enhancedlava:lava_block",
+          "steps": [
+            "Run: /give @p enhancedlava:lava_block",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        }
+      ]
+    }
+  ],
+  "quickCommands": [
+    "/give @p enhancedlava:raw_lava_shard",
+    "/give @p enhancedlava:lava_crystal",
+    "/give @p enhancedlava:ignited_lava_shard",
+    "/give @p enhancedlava:volcanic_pickaxe",
+    "/give @p enhancedlava:volcanic_sword",
+    "/give @p enhancedlava:lava_infused_apple",
+    "/give @p enhancedlava:crystal_shard",
+    "/give @p enhancedlava:hardened_lava_block"
+  ]
+}

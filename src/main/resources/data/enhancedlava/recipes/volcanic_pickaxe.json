@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " M ",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "M": {
+      "item": "enhancedlava:hardened_lava_block"
+    },
+    "S": {
+      "item": "minecraft:magma_cream"
+    }
+  },
+  "result": {
+    "id": "enhancedlava:volcanic_pickaxe",
+    "count": 1
+  }
+}
