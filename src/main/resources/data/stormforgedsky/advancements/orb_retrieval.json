@@ -1,0 +1,37 @@
+{
+  "parent": "stormforgedsky:root",
+  "display": {
+    "icon": {
+      "id": "stormforgedsky:storm_wand"
+    },
+    "title": {
+      "text": "Orb Retrieval"
+    },
+    "description": {
+      "text": "Explorers have reported strange, floating ruins in the sky, guarded by ethereal beings. These 'Sky Watchers' are said to carry mysterious orbs that radiate a soft glow. Bring one back for further study."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "objective_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "stormforgedsky:storm_wand"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "objective_0"
+    ]
+  ]
+}

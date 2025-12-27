@@ -1,0 +1,359 @@
+{
+  "modId": "stormforgedsky",
+  "modName": "Stormforged Sky",
+  "generatedAt": "2025-12-27T20:48:55.334Z",
+  "mcVersion": "1.21.1",
+  "categories": {
+    "items": {
+      "name": "Items",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "storm_wand: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "storm_wand: Right-click action",
+          "status": "passed",
+          "message": "Action: projectile"
+        },
+        {
+          "name": "storm_wand: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "heavenly_orb: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "heavenly_orb: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "storm_essence: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "storm_essence: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        }
+      ],
+      "notes": "3 items audited"
+    },
+    "blocks": {
+      "name": "Blocks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "glowing_cobblestone: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "glowing_cobblestone: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "glowing_cobblestone: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        }
+      ],
+      "notes": "1 blocks audited"
+    },
+    "mobs": {
+      "name": "Mobs",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "sky_watcher: Required fields",
+          "status": "passed",
+          "message": "Health: 40, Damage: 8"
+        },
+        {
+          "name": "sky_watcher: Drops",
+          "status": "passed",
+          "message": "1 drops defined"
+        },
+        {
+          "name": "sky_watcher: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains"
+        }
+      ],
+      "notes": "1 mobs audited (0 bosses)"
+    },
+    "structures": {
+      "name": "Structures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "sky_ruins: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "sky_ruins: Features",
+          "status": "passed",
+          "message": "2 features defined"
+        }
+      ],
+      "notes": "1 structures audited"
+    },
+    "recipes": {
+      "name": "Recipes",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Items with recipes",
+          "status": "passed",
+          "message": "2/3 items have recipes"
+        },
+        {
+          "name": "storm_wand: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "heavenly_orb: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        }
+      ],
+      "notes": "3 recipes audited"
+    },
+    "lootTables": {
+      "name": "Loot Tables",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "sky_watcher: Loot table",
+          "status": "passed",
+          "message": "Loot table generated"
+        },
+        {
+          "name": "sky_watcher: Loot table content",
+          "status": "passed",
+          "message": "Loot table has entries"
+        },
+        {
+          "name": "glowing_cobblestone: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        }
+      ],
+      "notes": "1 mob loot tables audited"
+    },
+    "textures": {
+      "name": "Textures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Texture files generated",
+          "status": "passed",
+          "message": "9 textures generated (expected at least 4)"
+        },
+        {
+          "name": "glowing_cobblestone.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "sky_watcher.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "quest_journal.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "fallback.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "storm_wand.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "heavenly_orb.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "storm_essence.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "flame.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "orb_retrieval.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        }
+      ],
+      "notes": "9 texture files"
+    },
+    "quests": {
+      "name": "Quests",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "orb_retrieval: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "orb_retrieval: Objective 1",
+          "status": "passed",
+          "message": "Valid collect_item objective"
+        }
+      ],
+      "notes": "1 quests audited"
+    },
+    "advancements": {
+      "name": "Advancements",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "Advancement files",
+          "status": "passed",
+          "message": "3 advancement files generated"
+        },
+        {
+          "name": "Root advancement",
+          "status": "passed",
+          "message": "Root advancement exists"
+        },
+        {
+          "name": "root.json: Structure",
+          "status": "passed",
+          "message": "Valid structure"
+        },
+        {
+          "name": "orb_retrieval.png: Parse",
+          "status": "failed",
+          "message": "Invalid JSON"
+        },
+        {
+          "name": "orb_retrieval.json: Structure",
+          "status": "passed",
+          "message": "Valid structure"
+        }
+      ],
+      "notes": "3 advancements"
+    },
+    "compilation": {
+      "name": "Compilation",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "build.gradle",
+          "status": "passed",
+          "message": "Build file exists"
+        },
+        {
+          "name": "fabric.mod.json",
+          "status": "passed",
+          "message": "Mod descriptor exists"
+        },
+        {
+          "name": "Minecraft version",
+          "status": "passed",
+          "message": "Correct MC version"
+        },
+        {
+          "name": "Java source files",
+          "status": "passed",
+          "message": "18 Java files generated"
+        }
+      ],
+      "notes": "Build configuration audit"
+    },
+    "apiSafety": {
+      "name": "API Safety",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "API safety scan",
+          "status": "passed",
+          "message": "No forbidden patterns detected"
+        }
+      ],
+      "notes": "MC 1.21.1 API compatibility check"
+    },
+    "vanillaFallbacks": {
+      "name": "Vanilla Fallbacks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Vanilla recipe ingredients",
+          "status": "passed",
+          "message": "5 vanilla ingredients used (intentional)",
+          "details": "storm_wand uses minecraft:iron_ingot, storm_wand uses minecraft:stick, storm_wand uses minecraft:iron_ingot, storm_wand uses minecraft:stick, heavenly_orb uses minecraft:diamond"
+        }
+      ],
+      "notes": "Tracks use of vanilla content vs custom generation"
+    },
+    "inferredContent": {
+      "name": "Inferred Content",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Theme inference",
+          "status": "passed",
+          "message": "Inferred theme: neutral realistic",
+          "details": "Primary themes: storm, iron, balanced, Power level: mid-game"
+        },
+        {
+          "name": "Inferred item recipes",
+          "status": "passed",
+          "message": "2/3 items have recipes"
+        },
+        {
+          "name": "Inferred abilities",
+          "status": "passed",
+          "message": "1/1 wands/staves have abilities"
+        },
+        {
+          "name": "Inferred mob drops",
+          "status": "passed",
+          "message": "1/1 mobs have drops"
+        },
+        {
+          "name": "Inferred spawn rules",
+          "status": "passed",
+          "message": "1/1 mobs have spawn rules"
+        },
+        {
+          "name": "Inferred structure features",
+          "status": "passed",
+          "message": "1/1 structures have features"
+        }
+      ],
+      "notes": "Tracks auto-completed and inferred content"
+    }
+  },
+  "summary": {
+    "totalChecks": 50,
+    "passed": 49,
+    "failed": 1,
+    "warnings": 0,
+    "skipped": 0,
+    "overallStatus": "failed"
+  }
+}

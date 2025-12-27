@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:prismarine_crystals"
+    },
+    {
+      "item": "stormforgedsky:heavenly_orb"
+    }
+  ],
+  "result": {
+    "id": "stormforgedsky:glowing_cobblestone",
+    "count": 1
+  }
+}

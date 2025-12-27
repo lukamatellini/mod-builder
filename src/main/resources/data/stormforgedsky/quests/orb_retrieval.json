@@ -1,0 +1,28 @@
+{
+  "id": "orb_retrieval",
+  "name": "Orb Retrieval",
+  "description": "Explorers have reported strange, floating ruins in the sky, guarded by ethereal beings. These 'Sky Watchers' are said to carry mysterious orbs that radiate a soft glow. Bring one back for further study.",
+  "type": "fetch",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "id": "main",
+      "type": "collect_item",
+      "description": "Retrieve a Heavenly Orb from a Sky Watcher.",
+      "targetId": "storm_wand",
+      "count": 1,
+      "optional": false
+    }
+  ],
+  "rewards": [
+    {
+      "type": "item",
+      "itemId": "stormforgedsky:storm_wand",
+      "amount": 1
+    }
+  ],
+  "startMessage": "Started quest: Orb Retrieval",
+  "completeMessage": "Completed: Orb Retrieval!",
+  "repeatable": false,
+  "giverNpcId": ""
+}

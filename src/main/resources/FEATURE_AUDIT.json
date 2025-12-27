@@ -1,0 +1,731 @@
+{
+  "modId": "stormforgedsky",
+  "modName": "Stormforged Sky",
+  "generatedAt": "2025-12-27T20:48:55.382Z",
+  "mcVersion": "1.21.1",
+  "overallStatus": "warnings",
+  "totalChecks": 43,
+  "passedChecks": 38,
+  "failedChecks": 0,
+  "warningChecks": 1,
+  "skippedChecks": 4,
+  "categories": [
+    {
+      "category": "items",
+      "total": 10,
+      "passed": 10,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "items_existence",
+          "name": "Items Defined",
+          "category": "items",
+          "status": "passed",
+          "message": "3 items defined"
+        },
+        {
+          "id": "item_model_storm_wand",
+          "name": "Item Model: Storm Wand",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Storm Wand validated successfully"
+        },
+        {
+          "id": "item_texture_storm_wand",
+          "name": "Item Texture: Storm Wand",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Storm Wand validated successfully"
+        },
+        {
+          "id": "item_model_heavenly_orb",
+          "name": "Item Model: Heavenly Orb",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Heavenly Orb validated successfully"
+        },
+        {
+          "id": "item_texture_heavenly_orb",
+          "name": "Item Texture: Heavenly Orb",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Heavenly Orb validated successfully"
+        },
+        {
+          "id": "item_model_storm_essence",
+          "name": "Item Model: Storm Essence",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Storm Essence validated successfully"
+        },
+        {
+          "id": "item_texture_storm_essence",
+          "name": "Item Texture: Storm Essence",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Storm Essence validated successfully"
+        },
+        {
+          "id": "item_lang_storm_wand",
+          "name": "Item Localization: Storm Wand",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Storm Wand validated successfully"
+        },
+        {
+          "id": "item_lang_heavenly_orb",
+          "name": "Item Localization: Heavenly Orb",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Heavenly Orb validated successfully"
+        },
+        {
+          "id": "item_lang_storm_essence",
+          "name": "Item Localization: Storm Essence",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Storm Essence validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "blocks",
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "blocks_existence",
+          "name": "Blocks Defined",
+          "category": "blocks",
+          "status": "passed",
+          "message": "1 blocks defined"
+        },
+        {
+          "id": "block_state_glowing_cobblestone",
+          "name": "Blockstate: Glowing Cobblestone",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Glowing Cobblestone validated successfully"
+        },
+        {
+          "id": "block_loot_glowing_cobblestone",
+          "name": "Block Loot: Glowing Cobblestone",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Loot: Glowing Cobblestone validated successfully"
+        },
+        {
+          "id": "block_item_glowing_cobblestone",
+          "name": "Block Item Model: Glowing Cobblestone",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Glowing Cobblestone validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "recipes",
+      "total": 8,
+      "passed": 8,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "recipes_existence",
+          "name": "Recipes Defined",
+          "category": "recipes",
+          "status": "passed",
+          "message": "2 recipes expected"
+        },
+        {
+          "id": "recipe_files",
+          "name": "Recipe Files Generated",
+          "category": "recipes",
+          "status": "passed",
+          "message": "3 recipe files generated"
+        },
+        {
+          "id": "recipe_output_glowing_cobblestone",
+          "name": "Recipe Output: glowing_cobblestone",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: glowing_cobblestone validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_glowing_cobblestone",
+          "name": "Recipe Ingredients: glowing_cobblestone",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: glowing_cobblestone validated successfully"
+        },
+        {
+          "id": "recipe_output_storm_wand",
+          "name": "Recipe Output: storm_wand",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: storm_wand validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_storm_wand",
+          "name": "Recipe Ingredients: storm_wand",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: storm_wand validated successfully"
+        },
+        {
+          "id": "recipe_output_heavenly_orb",
+          "name": "Recipe Output: heavenly_orb",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: heavenly_orb validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_heavenly_orb",
+          "name": "Recipe Ingredients: heavenly_orb",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: heavenly_orb validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "mobs",
+      "total": 5,
+      "passed": 5,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "mobs_existence",
+          "name": "Mobs Defined",
+          "category": "mobs",
+          "status": "passed",
+          "message": "1 mobs defined"
+        },
+        {
+          "id": "mob_class_sky_watcher",
+          "name": "Mob Class: Sky Watcher",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Class: Sky Watcher validated successfully"
+        },
+        {
+          "id": "mob_drops_sky_watcher",
+          "name": "Mob Drops: Sky Watcher",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Drops: Sky Watcher validated successfully"
+        },
+        {
+          "id": "mob_loot_sky_watcher",
+          "name": "Mob Loot Table: Sky Watcher",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Loot Table: Sky Watcher validated successfully"
+        },
+        {
+          "id": "mob_texture_sky_watcher",
+          "name": "Mob Texture: Sky Watcher",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Texture: Sky Watcher validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "npcs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "npcs_existence",
+          "name": "NPCs Defined",
+          "category": "npcs",
+          "status": "skipped",
+          "message": "No NPCs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "quests",
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "quests_existence",
+          "name": "Quests Defined",
+          "category": "quests",
+          "status": "passed",
+          "message": "1 quests defined"
+        },
+        {
+          "id": "quest_objectives_orb_retrieval",
+          "name": "Quest Objectives: Orb Retrieval",
+          "category": "quests",
+          "status": "passed",
+          "message": "1 objectives"
+        },
+        {
+          "id": "quest_rewards_orb_retrieval",
+          "name": "Quest Rewards: Orb Retrieval",
+          "category": "quests",
+          "status": "passed",
+          "message": "1 rewards"
+        }
+      ]
+    },
+    {
+      "category": "advancements",
+      "total": 5,
+      "passed": 5,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "advancements_existence",
+          "name": "Advancements Defined",
+          "category": "advancements",
+          "status": "passed",
+          "message": "2 advancements generated"
+        },
+        {
+          "id": "adv_criteria_root",
+          "name": "Advancement Criteria: root",
+          "category": "advancements",
+          "status": "passed",
+          "message": "Advancement Criteria: root validated successfully"
+        },
+        {
+          "id": "adv_icon_root",
+          "name": "Advancement Icon: root",
+          "category": "advancements",
+          "status": "passed",
+          "message": "Advancement Icon: root validated successfully"
+        },
+        {
+          "id": "adv_criteria_orb_retrieval",
+          "name": "Advancement Criteria: orb_retrieval",
+          "category": "advancements",
+          "status": "passed",
+          "message": "Advancement Criteria: orb_retrieval validated successfully"
+        },
+        {
+          "id": "adv_icon_orb_retrieval",
+          "name": "Advancement Icon: orb_retrieval",
+          "category": "advancements",
+          "status": "passed",
+          "message": "Advancement Icon: orb_retrieval validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "dimensions",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "dimensions_existence",
+          "name": "Dimensions Defined",
+          "category": "dimensions",
+          "status": "skipped",
+          "message": "No dimensions defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "biomes",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "biomes_existence",
+          "name": "Biomes Defined",
+          "category": "biomes",
+          "status": "skipped",
+          "message": "No biomes defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "structures",
+      "total": 4,
+      "passed": 3,
+      "failed": 0,
+      "warnings": 1,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "structures_existence",
+          "name": "Structures Defined",
+          "category": "structures",
+          "status": "passed",
+          "message": "1 structures defined"
+        },
+        {
+          "id": "structure_json_sky_ruins",
+          "name": "Structure JSON: Sky Ruins",
+          "category": "structures",
+          "status": "passed",
+          "message": "Structure JSON: Sky Ruins validated successfully"
+        },
+        {
+          "id": "structure_set_sky_ruins",
+          "name": "Structure Set: Sky Ruins",
+          "category": "structures",
+          "status": "warning",
+          "message": "Missing structure_set (structure may not spawn)"
+        },
+        {
+          "id": "structure_loot_sky_ruins",
+          "name": "Structure Loot: Sky Ruins",
+          "category": "structures",
+          "status": "passed",
+          "message": "Structure Loot: Sky Ruins validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "events",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "events_existence",
+          "name": "Events Defined",
+          "category": "events",
+          "status": "skipped",
+          "message": "No events defined in spec"
+        }
+      ]
+    }
+  ],
+  "criticalFailures": [],
+  "allChecks": [
+    {
+      "id": "items_existence",
+      "name": "Items Defined",
+      "category": "items",
+      "status": "passed",
+      "message": "3 items defined"
+    },
+    {
+      "id": "item_model_storm_wand",
+      "name": "Item Model: Storm Wand",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Storm Wand validated successfully"
+    },
+    {
+      "id": "item_texture_storm_wand",
+      "name": "Item Texture: Storm Wand",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Storm Wand validated successfully"
+    },
+    {
+      "id": "item_model_heavenly_orb",
+      "name": "Item Model: Heavenly Orb",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Heavenly Orb validated successfully"
+    },
+    {
+      "id": "item_texture_heavenly_orb",
+      "name": "Item Texture: Heavenly Orb",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Heavenly Orb validated successfully"
+    },
+    {
+      "id": "item_model_storm_essence",
+      "name": "Item Model: Storm Essence",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Storm Essence validated successfully"
+    },
+    {
+      "id": "item_texture_storm_essence",
+      "name": "Item Texture: Storm Essence",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Storm Essence validated successfully"
+    },
+    {
+      "id": "item_lang_storm_wand",
+      "name": "Item Localization: Storm Wand",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Storm Wand validated successfully"
+    },
+    {
+      "id": "item_lang_heavenly_orb",
+      "name": "Item Localization: Heavenly Orb",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Heavenly Orb validated successfully"
+    },
+    {
+      "id": "item_lang_storm_essence",
+      "name": "Item Localization: Storm Essence",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Storm Essence validated successfully"
+    },
+    {
+      "id": "blocks_existence",
+      "name": "Blocks Defined",
+      "category": "blocks",
+      "status": "passed",
+      "message": "1 blocks defined"
+    },
+    {
+      "id": "block_state_glowing_cobblestone",
+      "name": "Blockstate: Glowing Cobblestone",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Glowing Cobblestone validated successfully"
+    },
+    {
+      "id": "block_loot_glowing_cobblestone",
+      "name": "Block Loot: Glowing Cobblestone",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Loot: Glowing Cobblestone validated successfully"
+    },
+    {
+      "id": "block_item_glowing_cobblestone",
+      "name": "Block Item Model: Glowing Cobblestone",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Glowing Cobblestone validated successfully"
+    },
+    {
+      "id": "recipes_existence",
+      "name": "Recipes Defined",
+      "category": "recipes",
+      "status": "passed",
+      "message": "2 recipes expected"
+    },
+    {
+      "id": "recipe_files",
+      "name": "Recipe Files Generated",
+      "category": "recipes",
+      "status": "passed",
+      "message": "3 recipe files generated"
+    },
+    {
+      "id": "recipe_output_glowing_cobblestone",
+      "name": "Recipe Output: glowing_cobblestone",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: glowing_cobblestone validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_glowing_cobblestone",
+      "name": "Recipe Ingredients: glowing_cobblestone",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: glowing_cobblestone validated successfully"
+    },
+    {
+      "id": "recipe_output_storm_wand",
+      "name": "Recipe Output: storm_wand",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: storm_wand validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_storm_wand",
+      "name": "Recipe Ingredients: storm_wand",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: storm_wand validated successfully"
+    },
+    {
+      "id": "recipe_output_heavenly_orb",
+      "name": "Recipe Output: heavenly_orb",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: heavenly_orb validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_heavenly_orb",
+      "name": "Recipe Ingredients: heavenly_orb",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: heavenly_orb validated successfully"
+    },
+    {
+      "id": "mobs_existence",
+      "name": "Mobs Defined",
+      "category": "mobs",
+      "status": "passed",
+      "message": "1 mobs defined"
+    },
+    {
+      "id": "mob_class_sky_watcher",
+      "name": "Mob Class: Sky Watcher",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Class: Sky Watcher validated successfully"
+    },
+    {
+      "id": "mob_drops_sky_watcher",
+      "name": "Mob Drops: Sky Watcher",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Drops: Sky Watcher validated successfully"
+    },
+    {
+      "id": "mob_loot_sky_watcher",
+      "name": "Mob Loot Table: Sky Watcher",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Loot Table: Sky Watcher validated successfully"
+    },
+    {
+      "id": "mob_texture_sky_watcher",
+      "name": "Mob Texture: Sky Watcher",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Texture: Sky Watcher validated successfully"
+    },
+    {
+      "id": "npcs_existence",
+      "name": "NPCs Defined",
+      "category": "npcs",
+      "status": "skipped",
+      "message": "No NPCs defined in spec"
+    },
+    {
+      "id": "quests_existence",
+      "name": "Quests Defined",
+      "category": "quests",
+      "status": "passed",
+      "message": "1 quests defined"
+    },
+    {
+      "id": "quest_objectives_orb_retrieval",
+      "name": "Quest Objectives: Orb Retrieval",
+      "category": "quests",
+      "status": "passed",
+      "message": "1 objectives"
+    },
+    {
+      "id": "quest_rewards_orb_retrieval",
+      "name": "Quest Rewards: Orb Retrieval",
+      "category": "quests",
+      "status": "passed",
+      "message": "1 rewards"
+    },
+    {
+      "id": "advancements_existence",
+      "name": "Advancements Defined",
+      "category": "advancements",
+      "status": "passed",
+      "message": "2 advancements generated"
+    },
+    {
+      "id": "adv_criteria_root",
+      "name": "Advancement Criteria: root",
+      "category": "advancements",
+      "status": "passed",
+      "message": "Advancement Criteria: root validated successfully"
+    },
+    {
+      "id": "adv_icon_root",
+      "name": "Advancement Icon: root",
+      "category": "advancements",
+      "status": "passed",
+      "message": "Advancement Icon: root validated successfully"
+    },
+    {
+      "id": "adv_criteria_orb_retrieval",
+      "name": "Advancement Criteria: orb_retrieval",
+      "category": "advancements",
+      "status": "passed",
+      "message": "Advancement Criteria: orb_retrieval validated successfully"
+    },
+    {
+      "id": "adv_icon_orb_retrieval",
+      "name": "Advancement Icon: orb_retrieval",
+      "category": "advancements",
+      "status": "passed",
+      "message": "Advancement Icon: orb_retrieval validated successfully"
+    },
+    {
+      "id": "dimensions_existence",
+      "name": "Dimensions Defined",
+      "category": "dimensions",
+      "status": "skipped",
+      "message": "No dimensions defined in spec"
+    },
+    {
+      "id": "biomes_existence",
+      "name": "Biomes Defined",
+      "category": "biomes",
+      "status": "skipped",
+      "message": "No biomes defined in spec"
+    },
+    {
+      "id": "structures_existence",
+      "name": "Structures Defined",
+      "category": "structures",
+      "status": "passed",
+      "message": "1 structures defined"
+    },
+    {
+      "id": "structure_json_sky_ruins",
+      "name": "Structure JSON: Sky Ruins",
+      "category": "structures",
+      "status": "passed",
+      "message": "Structure JSON: Sky Ruins validated successfully"
+    },
+    {
+      "id": "structure_set_sky_ruins",
+      "name": "Structure Set: Sky Ruins",
+      "category": "structures",
+      "status": "warning",
+      "message": "Missing structure_set (structure may not spawn)"
+    },
+    {
+      "id": "structure_loot_sky_ruins",
+      "name": "Structure Loot: Sky Ruins",
+      "category": "structures",
+      "status": "passed",
+      "message": "Structure Loot: Sky Ruins validated successfully"
+    },
+    {
+      "id": "events_existence",
+      "name": "Events Defined",
+      "category": "events",
+      "status": "skipped",
+      "message": "No events defined in spec"
+    }
+  ],
+  "summary": "# Feature Audit Report: Stormforged Sky\nGenerated: 2025-12-27T20:48:55.382Z\nMinecraft Version: 1.21.1\n\n## ⚠️ PASSED WITH WARNINGS\nTotal: 38 passed, 1 warnings, 4 skipped\n\n## Category Breakdown\n\n✅ **items**: 10/10 passed\n✅ **blocks**: 4/4 passed\n✅ **recipes**: 8/8 passed\n✅ **mobs**: 5/5 passed\n✅ **npcs**: 0/1 passed\n✅ **quests**: 3/3 passed\n✅ **advancements**: 5/5 passed\n✅ **dimensions**: 0/1 passed\n✅ **biomes**: 0/1 passed\n⚠️ **structures**: 3/4 passed\n✅ **events**: 0/1 passed",
+  "suggestions": []
+}

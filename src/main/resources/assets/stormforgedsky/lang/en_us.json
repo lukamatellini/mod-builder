@@ -1,0 +1,11 @@
+{
+  "itemGroup.stormforgedsky.main": "Stormforged Sky",
+  "item.stormforgedsky.storm_wand": "Storm Wand",
+  "item.stormforgedsky.heavenly_orb": "Heavenly Orb",
+  "item.stormforgedsky.storm_essence": "Storm Essence",
+  "block.stormforgedsky.glowing_cobblestone": "Glowing Cobblestone",
+  "entity.stormforgedsky.sky_watcher": "Sky Watcher",
+  "structure.stormforgedsky.sky_ruins": "Sky Ruins",
+  "quest.stormforgedsky.orb_retrieval": "Orb Retrieval",
+  "quest.stormforgedsky.orb_retrieval.description": "Explorers have reported strange, floating ruins in the sky, guarded by ethereal beings. These 'Sky Watchers' are said to carry mysterious orbs that radiate a soft glow. Bring one back for further study."
+}

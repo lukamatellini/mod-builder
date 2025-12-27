@@ -1,0 +1,93 @@
+{
+  "summary": {
+    "scannedLocations": 38,
+    "totalRepairs": 6,
+    "autoCreatedStubs": 6,
+    "unresolvedReferences": 0,
+    "success": true
+  },
+  "repairs": [
+    {
+      "location": "src/main/resources/build-plan.json .inferenceReasons[0]",
+      "type": "auto_create",
+      "original": "Quest system enabled: 1 quests defined in spec",
+      "repaired": "stormforgedsky:quest system enabled: 1 quests defined in spec",
+      "reason": "Auto-created missing item stub"
+    },
+    {
+      "location": "src/main/resources/build-plan.json .inferenceReasons[1]",
+      "type": "auto_create",
+      "original": "Structures enabled: 1 structures defined in spec",
+      "repaired": "stormforgedsky:structures enabled: 1 structures defined in spec",
+      "reason": "Auto-created missing item stub"
+    },
+    {
+      "location": "src/main/resources/build-plan.json .inferenceReasons[2]",
+      "type": "auto_create",
+      "original": "Items enabled: 3 items defined in spec",
+      "repaired": "stormforgedsky:items enabled: 3 items defined in spec",
+      "reason": "Auto-created missing item stub"
+    },
+    {
+      "location": "src/main/resources/build-plan.json .inferenceReasons[3]",
+      "type": "auto_create",
+      "original": "Mobs enabled: 1 mobs defined in spec",
+      "repaired": "stormforgedsky:mobs enabled: 1 mobs defined in spec",
+      "reason": "Auto-created missing item stub"
+    },
+    {
+      "location": "src/main/resources/build-plan.json .inferenceReasons[4]",
+      "type": "auto_create",
+      "original": "Commands enabled: mandatory fallback surface for testing",
+      "repaired": "stormforgedsky:commands enabled: mandatory fallback surface for testing",
+      "reason": "Auto-created missing item stub"
+    },
+    {
+      "location": "src/main/resources/data/stormforgedsky/tags/worldgen/structure/stormforgedsky_structures.json .values[0]",
+      "type": "auto_create",
+      "original": "stormforgedsky:sky_ruins",
+      "repaired": "stormforgedsky:sky_ruins",
+      "reason": "Auto-created missing item stub"
+    }
+  ],
+  "autoCreatedStubs": [
+    {
+      "id": "quest system enabled: 1 quests defined in spec",
+      "name": "Quest system enabled: 1 quests defined in spec",
+      "type": "item",
+      "reason": "Referenced in src/main/resources/build-plan.json .inferenceReasons[0] but not defined"
+    },
+    {
+      "id": "structures enabled: 1 structures defined in spec",
+      "name": "Structures enabled: 1 structures defined in spec",
+      "type": "item",
+      "reason": "Referenced in src/main/resources/build-plan.json .inferenceReasons[1] but not defined"
+    },
+    {
+      "id": "items enabled: 3 items defined in spec",
+      "name": "Items enabled: 3 items defined in spec",
+      "type": "item",
+      "reason": "Referenced in src/main/resources/build-plan.json .inferenceReasons[2] but not defined"
+    },
+    {
+      "id": "mobs enabled: 1 mobs defined in spec",
+      "name": "Mobs enabled: 1 mobs defined in spec",
+      "type": "item",
+      "reason": "Referenced in src/main/resources/build-plan.json .inferenceReasons[3] but not defined"
+    },
+    {
+      "id": "commands enabled: mandatory fallback surface for testing",
+      "name": "Commands enabled: mandatory fallback surface for testing",
+      "type": "item",
+      "reason": "Referenced in src/main/resources/build-plan.json .inferenceReasons[4] but not defined"
+    },
+    {
+      "id": "sky_ruins",
+      "name": "Sky Ruins",
+      "type": "item",
+      "reason": "Referenced in src/main/resources/data/stormforgedsky/tags/worldgen/structure/stormforgedsky_structures.json .values[0] but not defined"
+    }
+  ],
+  "unresolvedReferences": [],
+  "generatedAt": "2025-12-27T20:48:55.333Z"
+}

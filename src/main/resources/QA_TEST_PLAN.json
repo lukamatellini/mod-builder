@@ -1,0 +1,252 @@
+{
+  "modId": "stormforgedsky",
+  "modName": "Stormforged Sky",
+  "mcVersion": "1.21.1",
+  "generatedAt": "2025-12-27T20:48:55.383Z",
+  "totalTests": 15,
+  "categories": [
+    {
+      "name": "Items",
+      "tests": [
+        {
+          "category": "Items",
+          "name": "Storm Wand Registration",
+          "command": "/give @p stormforgedsky:storm_wand",
+          "steps": [
+            "Run: /give @p stormforgedsky:storm_wand",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Heavenly Orb Registration",
+          "command": "/give @p stormforgedsky:heavenly_orb",
+          "steps": [
+            "Run: /give @p stormforgedsky:heavenly_orb",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Storm Essence Registration",
+          "command": "/give @p stormforgedsky:storm_essence",
+          "steps": [
+            "Run: /give @p stormforgedsky:storm_essence",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        }
+      ]
+    },
+    {
+      "name": "Recipes",
+      "tests": [
+        {
+          "category": "Recipes",
+          "name": "Storm Wand Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:prismarine_crystals\",\"minecraft:prismarine_crystals\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Storm Wand",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Heavenly Orb Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:prismarine_crystals\",\"stormforgedsky:storm_essence\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Heavenly Orb",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Blocks",
+      "tests": [
+        {
+          "category": "Blocks",
+          "name": "Glowing Cobblestone Placement",
+          "command": "/give @p stormforgedsky:glowing_cobblestone",
+          "steps": [
+            "Run: /give @p stormforgedsky:glowing_cobblestone",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Mobs",
+      "tests": [
+        {
+          "category": "Mobs",
+          "name": "Sky Watcher Spawn",
+          "command": "/summon stormforgedsky:sky_watcher",
+          "steps": [
+            "Run: /summon stormforgedsky:sky_watcher",
+            "Verify mob spawns without crash",
+            "Check mob texture is not purple/black",
+            "Verify mob has expected health"
+          ],
+          "expectedResult": "Mob spawns with correct model and attributes",
+          "automated": true
+        },
+        {
+          "category": "Mobs",
+          "name": "Sky Watcher AI Behavior",
+          "steps": [
+            "Summon mob: /summon stormforgedsky:sky_watcher",
+            "Approach mob (should attack)",
+            "Observe movement patterns",
+            "Check mob responds to player presence"
+          ],
+          "expectedResult": "Mob attacks player on sight",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Mob Drops",
+      "tests": [
+        {
+          "category": "Mob Drops",
+          "name": "Sky Watcher Loot",
+          "steps": [
+            "Summon mob: /summon stormforgedsky:sky_watcher",
+            "Kill the mob (use /kill if needed)",
+            "Collect dropped items",
+            "Verify drops match expected loot table"
+          ],
+          "expectedResult": "Drops: stormforgedsky:heavenly_orb",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Quests",
+      "tests": [
+        {
+          "category": "Quests",
+          "name": "Orb Retrieval Activation",
+          "steps": [
+            "Check quest is visible in quest log/journal",
+            "Accept quest if required",
+            "Verify objectives display correctly"
+          ],
+          "expectedResult": "Quest appears and objectives are trackable",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Quest Objectives",
+      "tests": [
+        {
+          "category": "Quest Objectives",
+          "name": "Orb Retrieval Objective 1",
+          "steps": [
+            "Complete objective: collect_item storm_wand",
+            "Verify progress updates",
+            "Check completion state"
+          ],
+          "expectedResult": "Objective can be completed and tracks correctly",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Quest Rewards",
+      "tests": [
+        {
+          "category": "Quest Rewards",
+          "name": "Orb Retrieval Completion",
+          "steps": [
+            "Complete all quest objectives",
+            "Turn in quest if required",
+            "Verify rewards are granted"
+          ],
+          "expectedResult": "Receive: stormforgedsky:storm_wand",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Structures",
+      "tests": [
+        {
+          "category": "Structures",
+          "name": "Sky Ruins Location",
+          "command": "/locate structure stormforgedsky:sky_ruins",
+          "steps": [
+            "Run: /locate structure stormforgedsky:sky_ruins",
+            "Teleport to structure",
+            "Verify structure generated correctly"
+          ],
+          "expectedResult": "Structure can be located and renders correctly",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Structure Loot",
+      "tests": [
+        {
+          "category": "Structure Loot",
+          "name": "Sky Ruins Chest Loot",
+          "steps": [
+            "Locate structure",
+            "Find loot chests",
+            "Open chests",
+            "Verify loot is generated"
+          ],
+          "expectedResult": "Chests contain expected loot",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Structure Spawners",
+      "tests": [
+        {
+          "category": "Structure Spawners",
+          "name": "Sky Ruins Spawners",
+          "steps": [
+            "Locate structure",
+            "Find spawner blocks",
+            "Wait for mobs to spawn",
+            "Verify correct mob type spawns"
+          ],
+          "expectedResult": "Spawners activate and spawn correct mobs",
+          "automated": false
+        }
+      ]
+    }
+  ],
+  "quickCommands": [
+    "/give @p stormforgedsky:storm_wand",
+    "/give @p stormforgedsky:heavenly_orb",
+    "/give @p stormforgedsky:storm_essence",
+    "/summon stormforgedsky:sky_watcher"
+  ]
+}

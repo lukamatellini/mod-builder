@@ -1,0 +1,112 @@
+{
+  "version": "1.0",
+  "timestamp": "2025-12-27T20:48:55.181Z",
+  "pipeline": "generate-mod",
+  "modId": "stormforgedsky",
+  "mcVersion": "1.21.1",
+  "registryAutoCreations": [],
+  "javaImportRepairs": [],
+  "javaSymbolRepairs": [],
+  "versionParityRepairs": [],
+  "textureModelAutoGens": [],
+  "idResolutionRepairs": [],
+  "recipeRepairs": [
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:iron_ingot",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:iron_ingot",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "stormforgedsky:storm_essence",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Storm Essence"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:cobblestone",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "stormforgedsky:heavenly_orb",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Heavenly Orb"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "stormforgedsky:glowing_cobblestone",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Glowing Cobblestone"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:iron_ingot",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "stormforgedsky:storm_wand",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Storm Wand"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "stormforgedsky:storm_essence",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Storm Essence"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "stormforgedsky:heavenly_orb",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Heavenly Orb"
+    }
+  ],
+  "omissions": [],
+  "summary": {
+    "totalRepairs": 9,
+    "totalAutoCreations": 0,
+    "totalOmissions": 0,
+    "warnings": []
+  }
+}

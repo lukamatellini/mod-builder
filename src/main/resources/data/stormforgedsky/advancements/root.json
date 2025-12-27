@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "stormforgedsky:storm_wand"
+    },
+    "title": {
+      "text": "Stormforged Sky"
+    },
+    "description": {
+      "text": "A neutral realistic mod featuring storm, iron, balanced."
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}
