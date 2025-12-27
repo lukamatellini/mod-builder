@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21.1",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-27T14:26:09.507Z",
+  "enabledModules": {
+    "quests": false,
+    "npcs": false,
+    "dialogue": false,
+    "trading": false,
+    "structures": false,
+    "dimensions": false,
+    "biomes": false,
+    "commands": true,
+    "items": true,
+    "mobs": false,
+    "events": false
+  },
+  "inferenceReasons": [
+    "Items enabled: 1 items defined in spec",
+    "Commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 1,
+    "mobs": 0,
+    "structures": 0,
+    "dimensions": 0,
+    "quests": 0,
+    "npcs": 0,
+    "events": 0
+  },
+  "expectedDataFiles": [],
+  "expectedAssetFiles": [
+    "assets/stormweaver/lang/en_us.json",
+    "assets/stormweaver/models/item/lightning_wand.json"
+  ]
+}

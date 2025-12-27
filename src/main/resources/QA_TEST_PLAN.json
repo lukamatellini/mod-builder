@@ -1,0 +1,47 @@
+{
+  "modId": "stormweaver",
+  "modName": "Storm Weaver",
+  "mcVersion": "1.21.1",
+  "generatedAt": "2025-12-27T14:26:09.528Z",
+  "totalTests": 2,
+  "categories": [
+    {
+      "name": "Items",
+      "tests": [
+        {
+          "category": "Items",
+          "name": "Lightning Wand Registration",
+          "command": "/give @p stormweaver:lightning_wand",
+          "steps": [
+            "Run: /give @p stormweaver:lightning_wand",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        }
+      ]
+    },
+    {
+      "name": "Recipes",
+      "tests": [
+        {
+          "category": "Recipes",
+          "name": "Lightning Wand Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:diamond\",\"minecraft:stick\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Lightning Wand",
+          "automated": false
+        }
+      ]
+    }
+  ],
+  "quickCommands": [
+    "/give @p stormweaver:lightning_wand"
+  ]
+}
