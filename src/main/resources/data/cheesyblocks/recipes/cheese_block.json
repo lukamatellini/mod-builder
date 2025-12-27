@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:milk_buckets"
+    }
+  ],
+  "result": {
+    "id": "cheesyblocks:cheese_block",
+    "count": 1
+  }
+}
