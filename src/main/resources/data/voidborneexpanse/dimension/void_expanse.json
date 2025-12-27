@@ -1,0 +1,11 @@
+{
+  "type": "voidborneexpanse:void_expanse",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "voidborneexpanse:void_expanse_biome"
+    }
+  }
+}

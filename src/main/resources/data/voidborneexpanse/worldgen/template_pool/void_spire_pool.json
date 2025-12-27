@@ -1,0 +1,13 @@
+{
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:feature_pool_element",
+        "feature": "voidborneexpanse:void_spire_structure_feature",
+        "projection": "rigid"
+      }
+    }
+  ]
+}

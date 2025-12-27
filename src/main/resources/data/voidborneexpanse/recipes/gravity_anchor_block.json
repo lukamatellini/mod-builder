@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "key": {
+    "M": {
+      "item": "voidborneexpanse:void_shard"
+    }
+  },
+  "result": {
+    "id": "voidborneexpanse:gravity_anchor_block",
+    "count": 1
+  }
+}

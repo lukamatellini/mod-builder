@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "voidborneexpanse:block/void_expanse_portal",
+    "particle": "voidborneexpanse:block/void_expanse_portal"
+  },
+  "render_type": "translucent"
+}

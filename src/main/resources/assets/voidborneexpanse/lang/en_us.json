@@ -1,0 +1,20 @@
+{
+  "itemGroup.voidborneexpanse.main": "Voidborne Expanse",
+  "item.voidborneexpanse.ethereal_crystal": "Ethereal Crystal",
+  "item.voidborneexpanse.gravity_core": "Gravity Core",
+  "item.voidborneexpanse.void_shard": "Void Shard",
+  "item.voidborneexpanse.weightless_boots": "Weightless Boots",
+  "item.voidborneexpanse.ethereal_pickaxe": "Ethereal Pickaxe",
+  "item.voidborneexpanse.gravity_manipulator": "Gravity Manipulator",
+  "item.voidborneexpanse.void_expanse_portal_igniter": "Void Expanse Portal Key",
+  "item.voidborneexpanse.ethereal_crystal_ore": "Ethereal Crystal Ore",
+  "block.voidborneexpanse.voidstone": "Voidstone",
+  "block.voidborneexpanse.ethereal_crystal_ore": "Ethereal Crystal Ore",
+  "block.voidborneexpanse.gravity_anchor_block": "Gravity Anchor Block",
+  "block.voidborneexpanse.weightless_grass_block": "Weightless Grass Block",
+  "block.voidborneexpanse.void_shroom": "Void Shroom",
+  "block.voidborneexpanse.ethereal_wood_log": "Ethereal Wood Log",
+  "structure.voidborneexpanse.void_spire": "Void Spire",
+  "structure.voidborneexpanse.void_expanse_structure": "Void Expanse Obelisk",
+  "dimension.voidborneexpanse.void_expanse": "Void Expanse"
+}

@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "voidborneexpanse:void_spire",
+      "weight": 1
+    },
+    {
+      "structure": "voidborneexpanse:void_expanse_structure",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 8,
+    "salt": 408547068
+  }
+}

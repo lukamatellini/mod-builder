@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21.1",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-27T16:17:02.213Z",
+  "enabledModules": {
+    "quests": false,
+    "npcs": false,
+    "dialogue": false,
+    "trading": false,
+    "structures": true,
+    "dimensions": true,
+    "biomes": true,
+    "commands": true,
+    "items": true,
+    "mobs": false,
+    "events": false
+  },
+  "inferenceReasons": [
+    "Structures enabled: 2 structures defined in spec",
+    "Dimensions enabled: 1 dimensions defined in spec",
+    "Biomes enabled: 1 biomes defined in spec",
+    "Items enabled: 8 items defined in spec",
+    "Commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 8,
+    "mobs": 0,
+    "structures": 2,
+    "dimensions": 1,
+    "quests": 0,
+    "npcs": 0,
+    "events": 0
+  },
+  "expectedDataFiles": [
+    "data/voidborneexpanse/dimension/void_expanse.json",
+    "data/voidborneexpanse/dimension_type/void_expanse.json",
+    "data/voidborneexpanse/worldgen/structure/void_spire.json",
+    "data/voidborneexpanse/worldgen/structure/void_expanse_structure.json"
+  ],
+  "expectedAssetFiles": [
+    "assets/voidborneexpanse/lang/en_us.json",
+    "assets/voidborneexpanse/models/item/ethereal_crystal.json",
+    "assets/voidborneexpanse/models/item/gravity_core.json",
+    "assets/voidborneexpanse/models/item/void_shard.json",
+    "assets/voidborneexpanse/models/item/weightless_boots.json",
+    "assets/voidborneexpanse/models/item/ethereal_pickaxe.json",
+    "assets/voidborneexpanse/models/item/gravity_manipulator.json",
+    "assets/voidborneexpanse/models/item/void_expanse_portal_igniter.json",
+    "assets/voidborneexpanse/models/item/ethereal_crystal_ore.json"
+  ]
+}

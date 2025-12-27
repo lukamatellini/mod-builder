@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "key": {
+    "M": {
+      "item": "voidborneexpanse:ethereal_crystal"
+    }
+  },
+  "result": {
+    "id": "voidborneexpanse:weightless_boots",
+    "count": 1
+  }
+}

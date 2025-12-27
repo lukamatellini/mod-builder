@@ -1,0 +1,463 @@
+{
+  "modId": "voidborneexpanse",
+  "modName": "Voidborne Expanse",
+  "mcVersion": "1.21.1",
+  "generatedAt": "2025-12-27T16:17:02.366Z",
+  "totalTests": 32,
+  "categories": [
+    {
+      "name": "Items",
+      "tests": [
+        {
+          "category": "Items",
+          "name": "Ethereal Crystal Registration",
+          "command": "/give @p voidborneexpanse:ethereal_crystal",
+          "steps": [
+            "Run: /give @p voidborneexpanse:ethereal_crystal",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Gravity Core Registration",
+          "command": "/give @p voidborneexpanse:gravity_core",
+          "steps": [
+            "Run: /give @p voidborneexpanse:gravity_core",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Void Shard Registration",
+          "command": "/give @p voidborneexpanse:void_shard",
+          "steps": [
+            "Run: /give @p voidborneexpanse:void_shard",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Weightless Boots Registration",
+          "command": "/give @p voidborneexpanse:weightless_boots",
+          "steps": [
+            "Run: /give @p voidborneexpanse:weightless_boots",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Ethereal Pickaxe Registration",
+          "command": "/give @p voidborneexpanse:ethereal_pickaxe",
+          "steps": [
+            "Run: /give @p voidborneexpanse:ethereal_pickaxe",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Gravity Manipulator Registration",
+          "command": "/give @p voidborneexpanse:gravity_manipulator",
+          "steps": [
+            "Run: /give @p voidborneexpanse:gravity_manipulator",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Void Expanse Portal Key Registration",
+          "command": "/give @p voidborneexpanse:void_expanse_portal_igniter",
+          "steps": [
+            "Run: /give @p voidborneexpanse:void_expanse_portal_igniter",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Ethereal Crystal Ore Registration",
+          "command": "/give @p voidborneexpanse:ethereal_crystal_ore",
+          "steps": [
+            "Run: /give @p voidborneexpanse:ethereal_crystal_ore",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        }
+      ]
+    },
+    {
+      "name": "Recipes",
+      "tests": [
+        {
+          "category": "Recipes",
+          "name": "Ethereal Crystal Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"voidborneexpanse:ethereal_crystal_ore\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Ethereal Crystal",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Gravity Core Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:coal\",\"minecraft:coal\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Gravity Core",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Void Shard Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:coal\",\"minecraft:coal\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Void Shard",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Weightless Boots Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"voidborneexpanse:ethereal_crystal\",\"voidborneexpanse:void_shard\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Weightless Boots",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Ethereal Pickaxe Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:coal\",\"voidborneexpanse:ethereal_crystal\",\"voidborneexpanse:void_shard\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Ethereal Pickaxe",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Gravity Manipulator Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"voidborneexpanse:void_shard\",\"voidborneexpanse:ethereal_crystal\",\"voidborneexpanse:gravity_core\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Gravity Manipulator",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Void Expanse Portal Key Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:coal\",\"minecraft:coal\",\"minecraft:coal\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Void Expanse Portal Key",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Ethereal Crystal Ore Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:coal\",\"minecraft:iron_ingot\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Ethereal Crystal Ore",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Item Effects",
+      "tests": [
+        {
+          "category": "Item Effects",
+          "name": "Weightless Boots passive Effect",
+          "steps": [
+            "Give yourself the item: /give @p voidborneexpanse:weightless_boots",
+            "Hold item and wait",
+            "Observe minecraft:glowing activation"
+          ],
+          "expectedResult": "minecraft:glowing activates correctly",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Blocks",
+      "tests": [
+        {
+          "category": "Blocks",
+          "name": "Voidstone Placement",
+          "command": "/give @p voidborneexpanse:voidstone",
+          "steps": [
+            "Run: /give @p voidborneexpanse:voidstone",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        },
+        {
+          "category": "Blocks",
+          "name": "Ethereal Crystal Ore Placement",
+          "command": "/give @p voidborneexpanse:ethereal_crystal_ore",
+          "steps": [
+            "Run: /give @p voidborneexpanse:ethereal_crystal_ore",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        },
+        {
+          "category": "Blocks",
+          "name": "Gravity Anchor Block Placement",
+          "command": "/give @p voidborneexpanse:gravity_anchor_block",
+          "steps": [
+            "Run: /give @p voidborneexpanse:gravity_anchor_block",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        },
+        {
+          "category": "Blocks",
+          "name": "Weightless Grass Block Placement",
+          "command": "/give @p voidborneexpanse:weightless_grass_block",
+          "steps": [
+            "Run: /give @p voidborneexpanse:weightless_grass_block",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        },
+        {
+          "category": "Blocks",
+          "name": "Void Shroom Placement",
+          "command": "/give @p voidborneexpanse:void_shroom",
+          "steps": [
+            "Run: /give @p voidborneexpanse:void_shroom",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        },
+        {
+          "category": "Blocks",
+          "name": "Ethereal Wood Log Placement",
+          "command": "/give @p voidborneexpanse:ethereal_wood_log",
+          "steps": [
+            "Run: /give @p voidborneexpanse:ethereal_wood_log",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Dimensions",
+      "tests": [
+        {
+          "category": "Dimensions",
+          "name": "Void Expanse Portal Entry",
+          "steps": [
+            "Build or activate dimension portal",
+            "Enter portal",
+            "Verify teleport to dimension",
+            "Check dimension generates correctly"
+          ],
+          "expectedResult": "Successfully enter dimension without crash",
+          "automated": false
+        },
+        {
+          "category": "Dimensions",
+          "name": "Void Expanse World Generation",
+          "command": "/execute in voidborneexpanse:void_expanse run tp @p ~ 100 ~",
+          "steps": [
+            "Teleport: /execute in voidborneexpanse:void_expanse run tp @p ~ 100 ~",
+            "Explore dimension terrain",
+            "Verify expected biomes/features",
+            "Check lighting and sky render correctly"
+          ],
+          "expectedResult": "Dimension terrain generates with expected features",
+          "automated": false
+        },
+        {
+          "category": "Dimensions",
+          "name": "Void Expanse Return Portal",
+          "steps": [
+            "While in dimension, activate return portal",
+            "Enter portal",
+            "Verify return to overworld"
+          ],
+          "expectedResult": "Successfully return from dimension",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Biomes",
+      "tests": [
+        {
+          "category": "Biomes",
+          "name": "Void Expanse Biome Generation",
+          "command": "/locatebiome voidborneexpanse:void_expanse_biome",
+          "steps": [
+            "Run: /locatebiome voidborneexpanse:void_expanse_biome",
+            "Teleport to biome location",
+            "Verify biome features are present",
+            "Check mob spawns are correct"
+          ],
+          "expectedResult": "Biome generates with expected features and spawns",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Structures",
+      "tests": [
+        {
+          "category": "Structures",
+          "name": "Void Spire Location",
+          "command": "/locate structure voidborneexpanse:void_spire",
+          "steps": [
+            "Run: /locate structure voidborneexpanse:void_spire",
+            "Teleport to structure",
+            "Verify structure generated correctly"
+          ],
+          "expectedResult": "Structure can be located and renders correctly",
+          "automated": false
+        },
+        {
+          "category": "Structures",
+          "name": "Void Expanse Obelisk Location",
+          "command": "/locate structure voidborneexpanse:void_expanse_structure",
+          "steps": [
+            "Run: /locate structure voidborneexpanse:void_expanse_structure",
+            "Teleport to structure",
+            "Verify structure generated correctly"
+          ],
+          "expectedResult": "Structure can be located and renders correctly",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Structure Loot",
+      "tests": [
+        {
+          "category": "Structure Loot",
+          "name": "Void Spire Chest Loot",
+          "steps": [
+            "Locate structure",
+            "Find loot chests",
+            "Open chests",
+            "Verify loot is generated"
+          ],
+          "expectedResult": "Chests contain expected loot",
+          "automated": false
+        },
+        {
+          "category": "Structure Loot",
+          "name": "Void Expanse Obelisk Chest Loot",
+          "steps": [
+            "Locate structure",
+            "Find loot chests",
+            "Open chests",
+            "Verify loot is generated"
+          ],
+          "expectedResult": "Chests contain expected loot",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Structure Spawners",
+      "tests": [
+        {
+          "category": "Structure Spawners",
+          "name": "Void Expanse Obelisk Spawners",
+          "steps": [
+            "Locate structure",
+            "Find spawner blocks",
+            "Wait for mobs to spawn",
+            "Verify correct mob type spawns"
+          ],
+          "expectedResult": "Spawners activate and spawn correct mobs",
+          "automated": false
+        }
+      ]
+    }
+  ],
+  "quickCommands": [
+    "/give @p voidborneexpanse:ethereal_crystal",
+    "/give @p voidborneexpanse:gravity_core",
+    "/give @p voidborneexpanse:void_shard",
+    "/give @p voidborneexpanse:weightless_boots",
+    "/give @p voidborneexpanse:ethereal_pickaxe",
+    "/give @p voidborneexpanse:gravity_manipulator",
+    "/give @p voidborneexpanse:void_expanse_portal_igniter",
+    "/give @p voidborneexpanse:ethereal_crystal_ore",
+    "/execute in voidborneexpanse:void_expanse run tp @p ~ 100 ~"
+  ]
+}

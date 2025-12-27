@@ -1,0 +1,439 @@
+{
+  "summary": {
+    "totalRecipesScanned": 8,
+    "totalRepairs": 20,
+    "autoCreatedItems": 1,
+    "fallbacksUsed": 20,
+    "externalRemaps": 0,
+    "unresolvedReferences": 0,
+    "success": true
+  },
+  "repairs": [
+    {
+      "recipe": "ethereal_crystal (spec)",
+      "type": "auto_create",
+      "before": "voidborneexpanse:ethereal_crystal_ore",
+      "after": "voidborneexpanse:ethereal_crystal_ore",
+      "reason": "Auto-created missing mod item: Ethereal Crystal Ore"
+    },
+    {
+      "recipe": "gravity_core (spec)",
+      "type": "fallback",
+      "before": "minecraft:diamond",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "gravity_core (spec)",
+      "type": "fallback",
+      "before": "void_essence",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "void_shard (spec)",
+      "type": "fallback",
+      "before": "minecraft:diamond",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "void_shard (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "void_shard (spec)",
+      "type": "fallback",
+      "before": "minecraft:diamond",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "void_shard (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "weightless_boots (spec)",
+      "type": "auto_create",
+      "before": "voidborneexpanse:ethereal_crystal",
+      "after": "voidborneexpanse:ethereal_crystal",
+      "reason": "Auto-created missing mod item: Ethereal Crystal"
+    },
+    {
+      "recipe": "weightless_boots (spec)",
+      "type": "auto_create",
+      "before": "voidborneexpanse:ethereal_crystal",
+      "after": "voidborneexpanse:ethereal_crystal",
+      "reason": "Auto-created missing mod item: Ethereal Crystal"
+    },
+    {
+      "recipe": "weightless_boots (spec)",
+      "type": "auto_create",
+      "before": "voidborneexpanse:void_shard",
+      "after": "voidborneexpanse:void_shard",
+      "reason": "Auto-created missing mod item: Void Shard"
+    },
+    {
+      "recipe": "ethereal_pickaxe (spec)",
+      "type": "auto_create",
+      "before": "voidborneexpanse:ethereal_crystal",
+      "after": "voidborneexpanse:ethereal_crystal",
+      "reason": "Auto-created missing mod item: Ethereal Crystal"
+    },
+    {
+      "recipe": "ethereal_pickaxe (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "ethereal_pickaxe (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "ethereal_pickaxe (spec)",
+      "type": "auto_create",
+      "before": "voidborneexpanse:ethereal_crystal",
+      "after": "voidborneexpanse:ethereal_crystal",
+      "reason": "Auto-created missing mod item: Ethereal Crystal"
+    },
+    {
+      "recipe": "ethereal_pickaxe (spec)",
+      "type": "auto_create",
+      "before": "voidborneexpanse:void_shard",
+      "after": "voidborneexpanse:void_shard",
+      "reason": "Auto-created missing mod item: Void Shard"
+    },
+    {
+      "recipe": "gravity_manipulator (spec)",
+      "type": "auto_create",
+      "before": "voidborneexpanse:void_shard",
+      "after": "voidborneexpanse:void_shard",
+      "reason": "Auto-created missing mod item: Void Shard"
+    },
+    {
+      "recipe": "gravity_manipulator (spec)",
+      "type": "auto_create",
+      "before": "voidborneexpanse:void_shard",
+      "after": "voidborneexpanse:void_shard",
+      "reason": "Auto-created missing mod item: Void Shard"
+    },
+    {
+      "recipe": "gravity_manipulator (spec)",
+      "type": "auto_create",
+      "before": "voidborneexpanse:ethereal_crystal",
+      "after": "voidborneexpanse:ethereal_crystal",
+      "reason": "Auto-created missing mod item: Ethereal Crystal"
+    },
+    {
+      "recipe": "gravity_manipulator (spec)",
+      "type": "auto_create",
+      "before": "voidborneexpanse:gravity_core",
+      "after": "voidborneexpanse:gravity_core",
+      "reason": "Auto-created missing mod item: Gravity Core"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter (spec)",
+      "type": "fallback",
+      "before": "minecraft:ender_pearl",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter (spec)",
+      "type": "fallback",
+      "before": "minecraft:ender_eye",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter (spec)",
+      "type": "fallback",
+      "before": "minecraft:ender_pearl",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter (spec)",
+      "type": "fallback",
+      "before": "minecraft:ender_pearl",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter (spec)",
+      "type": "fallback",
+      "before": "minecraft:ender_eye",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "gravity_anchor_block (spec)",
+      "type": "auto_create",
+      "before": "voidborneexpanse:void_shard",
+      "after": "voidborneexpanse:void_shard",
+      "reason": "Auto-created missing mod item: Void Shard"
+    },
+    {
+      "recipe": "gravity_anchor_block",
+      "type": "auto_create",
+      "before": "voidborneexpanse:void_shard",
+      "after": "voidborneexpanse:void_shard",
+      "reason": "Auto-created missing mod item: Void Shard"
+    },
+    {
+      "recipe": "gravity_anchor_block",
+      "type": "auto_create",
+      "before": "voidborneexpanse:gravity_anchor_block",
+      "after": "voidborneexpanse:gravity_anchor_block",
+      "reason": "Auto-created missing mod item: Gravity Anchor Block"
+    },
+    {
+      "recipe": "ethereal_crystal",
+      "type": "auto_create",
+      "before": "voidborneexpanse:ethereal_crystal_ore",
+      "after": "voidborneexpanse:ethereal_crystal_ore",
+      "reason": "Auto-created missing mod item: Ethereal Crystal Ore"
+    },
+    {
+      "recipe": "ethereal_crystal",
+      "type": "auto_create",
+      "before": "voidborneexpanse:ethereal_crystal",
+      "after": "voidborneexpanse:ethereal_crystal",
+      "reason": "Auto-created missing mod item: Ethereal Crystal"
+    },
+    {
+      "recipe": "gravity_core",
+      "type": "fallback",
+      "before": "minecraft:diamond",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "gravity_core",
+      "type": "fallback",
+      "before": "void_essence",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "gravity_core",
+      "type": "auto_create",
+      "before": "voidborneexpanse:gravity_core",
+      "after": "voidborneexpanse:gravity_core",
+      "reason": "Auto-created missing mod item: Gravity Core"
+    },
+    {
+      "recipe": "void_shard",
+      "type": "fallback",
+      "before": "minecraft:diamond",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "void_shard",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "void_shard",
+      "type": "auto_create",
+      "before": "voidborneexpanse:void_shard",
+      "after": "voidborneexpanse:void_shard",
+      "reason": "Auto-created missing mod item: Void Shard"
+    },
+    {
+      "recipe": "weightless_boots",
+      "type": "auto_create",
+      "before": "voidborneexpanse:ethereal_crystal",
+      "after": "voidborneexpanse:ethereal_crystal",
+      "reason": "Auto-created missing mod item: Ethereal Crystal"
+    },
+    {
+      "recipe": "weightless_boots",
+      "type": "auto_create",
+      "before": "voidborneexpanse:weightless_boots",
+      "after": "voidborneexpanse:weightless_boots",
+      "reason": "Auto-created missing mod item: Weightless Boots"
+    },
+    {
+      "recipe": "ethereal_pickaxe",
+      "type": "auto_create",
+      "before": "voidborneexpanse:ethereal_crystal",
+      "after": "voidborneexpanse:ethereal_crystal",
+      "reason": "Auto-created missing mod item: Ethereal Crystal"
+    },
+    {
+      "recipe": "ethereal_pickaxe",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "ethereal_pickaxe",
+      "type": "auto_create",
+      "before": "voidborneexpanse:ethereal_pickaxe",
+      "after": "voidborneexpanse:ethereal_pickaxe",
+      "reason": "Auto-created missing mod item: Ethereal Pickaxe"
+    },
+    {
+      "recipe": "gravity_manipulator",
+      "type": "auto_create",
+      "before": "voidborneexpanse:void_shard",
+      "after": "voidborneexpanse:void_shard",
+      "reason": "Auto-created missing mod item: Void Shard"
+    },
+    {
+      "recipe": "gravity_manipulator",
+      "type": "auto_create",
+      "before": "voidborneexpanse:gravity_manipulator",
+      "after": "voidborneexpanse:gravity_manipulator",
+      "reason": "Auto-created missing mod item: Gravity Manipulator"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter",
+      "type": "fallback",
+      "before": "minecraft:ender_pearl",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter",
+      "type": "fallback",
+      "before": "minecraft:ender_eye",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter",
+      "type": "auto_create",
+      "before": "voidborneexpanse:void_expanse_portal_igniter",
+      "after": "voidborneexpanse:void_expanse_portal_igniter",
+      "reason": "Auto-created missing mod item: Void Expanse Portal Igniter"
+    }
+  ],
+  "autoCreatedItems": [
+    {
+      "id": "ethereal_crystal_ore",
+      "name": "Ethereal Crystal Ore",
+      "type": "misc",
+      "reason": "Auto-created: referenced in ethereal_crystal (spec) recipe but not defined"
+    }
+  ],
+  "fallbacks": [
+    {
+      "recipe": "gravity_core (spec)",
+      "original": "minecraft:diamond",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "gravity_core (spec)",
+      "original": "void_essence",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_shard (spec)",
+      "original": "minecraft:diamond",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_shard (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_shard (spec)",
+      "original": "minecraft:diamond",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_shard (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "ethereal_pickaxe (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "ethereal_pickaxe (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter (spec)",
+      "original": "minecraft:ender_pearl",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter (spec)",
+      "original": "minecraft:ender_eye",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter (spec)",
+      "original": "minecraft:ender_pearl",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter (spec)",
+      "original": "minecraft:ender_pearl",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter (spec)",
+      "original": "minecraft:ender_eye",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "gravity_core",
+      "original": "minecraft:diamond",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "gravity_core",
+      "original": "void_essence",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_shard",
+      "original": "minecraft:diamond",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_shard",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "ethereal_pickaxe",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter",
+      "original": "minecraft:ender_pearl",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter",
+      "original": "minecraft:ender_eye",
+      "fallback": "minecraft:coal"
+    }
+  ],
+  "externalRemaps": []
+}

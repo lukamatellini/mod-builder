@@ -1,0 +1,1291 @@
+{
+  "modId": "voidborneexpanse",
+  "modName": "Voidborne Expanse",
+  "generatedAt": "2025-12-27T16:17:02.365Z",
+  "mcVersion": "1.21.1",
+  "overallStatus": "warnings",
+  "totalChecks": 83,
+  "passedChecks": 75,
+  "failedChecks": 0,
+  "warningChecks": 3,
+  "skippedChecks": 5,
+  "categories": [
+    {
+      "category": "items",
+      "total": 25,
+      "passed": 25,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "items_existence",
+          "name": "Items Defined",
+          "category": "items",
+          "status": "passed",
+          "message": "8 items defined"
+        },
+        {
+          "id": "item_model_ethereal_crystal",
+          "name": "Item Model: Ethereal Crystal",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Ethereal Crystal validated successfully"
+        },
+        {
+          "id": "item_texture_ethereal_crystal",
+          "name": "Item Texture: Ethereal Crystal",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Ethereal Crystal validated successfully"
+        },
+        {
+          "id": "item_model_gravity_core",
+          "name": "Item Model: Gravity Core",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Gravity Core validated successfully"
+        },
+        {
+          "id": "item_texture_gravity_core",
+          "name": "Item Texture: Gravity Core",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Gravity Core validated successfully"
+        },
+        {
+          "id": "item_model_void_shard",
+          "name": "Item Model: Void Shard",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Void Shard validated successfully"
+        },
+        {
+          "id": "item_texture_void_shard",
+          "name": "Item Texture: Void Shard",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Void Shard validated successfully"
+        },
+        {
+          "id": "item_model_weightless_boots",
+          "name": "Item Model: Weightless Boots",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Weightless Boots validated successfully"
+        },
+        {
+          "id": "item_texture_weightless_boots",
+          "name": "Item Texture: Weightless Boots",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Weightless Boots validated successfully"
+        },
+        {
+          "id": "item_model_ethereal_pickaxe",
+          "name": "Item Model: Ethereal Pickaxe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Ethereal Pickaxe validated successfully"
+        },
+        {
+          "id": "item_texture_ethereal_pickaxe",
+          "name": "Item Texture: Ethereal Pickaxe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Ethereal Pickaxe validated successfully"
+        },
+        {
+          "id": "item_model_gravity_manipulator",
+          "name": "Item Model: Gravity Manipulator",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Gravity Manipulator validated successfully"
+        },
+        {
+          "id": "item_texture_gravity_manipulator",
+          "name": "Item Texture: Gravity Manipulator",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Gravity Manipulator validated successfully"
+        },
+        {
+          "id": "item_model_void_expanse_portal_igniter",
+          "name": "Item Model: Void Expanse Portal Key",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Void Expanse Portal Key validated successfully"
+        },
+        {
+          "id": "item_texture_void_expanse_portal_igniter",
+          "name": "Item Texture: Void Expanse Portal Key",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Void Expanse Portal Key validated successfully"
+        },
+        {
+          "id": "item_model_ethereal_crystal_ore",
+          "name": "Item Model: Ethereal Crystal Ore",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Ethereal Crystal Ore validated successfully"
+        },
+        {
+          "id": "item_texture_ethereal_crystal_ore",
+          "name": "Item Texture: Ethereal Crystal Ore",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Ethereal Crystal Ore validated successfully"
+        },
+        {
+          "id": "item_lang_ethereal_crystal",
+          "name": "Item Localization: Ethereal Crystal",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Ethereal Crystal validated successfully"
+        },
+        {
+          "id": "item_lang_gravity_core",
+          "name": "Item Localization: Gravity Core",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Gravity Core validated successfully"
+        },
+        {
+          "id": "item_lang_void_shard",
+          "name": "Item Localization: Void Shard",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Void Shard validated successfully"
+        },
+        {
+          "id": "item_lang_weightless_boots",
+          "name": "Item Localization: Weightless Boots",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Weightless Boots validated successfully"
+        },
+        {
+          "id": "item_lang_ethereal_pickaxe",
+          "name": "Item Localization: Ethereal Pickaxe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Ethereal Pickaxe validated successfully"
+        },
+        {
+          "id": "item_lang_gravity_manipulator",
+          "name": "Item Localization: Gravity Manipulator",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Gravity Manipulator validated successfully"
+        },
+        {
+          "id": "item_lang_void_expanse_portal_igniter",
+          "name": "Item Localization: Void Expanse Portal Key",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Void Expanse Portal Key validated successfully"
+        },
+        {
+          "id": "item_lang_ethereal_crystal_ore",
+          "name": "Item Localization: Ethereal Crystal Ore",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Ethereal Crystal Ore validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "blocks",
+      "total": 19,
+      "passed": 19,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "blocks_existence",
+          "name": "Blocks Defined",
+          "category": "blocks",
+          "status": "passed",
+          "message": "6 blocks defined"
+        },
+        {
+          "id": "block_state_voidstone",
+          "name": "Blockstate: Voidstone",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Voidstone validated successfully"
+        },
+        {
+          "id": "block_loot_voidstone",
+          "name": "Block Loot: Voidstone",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Loot: Voidstone validated successfully"
+        },
+        {
+          "id": "block_item_voidstone",
+          "name": "Block Item Model: Voidstone",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Voidstone validated successfully"
+        },
+        {
+          "id": "block_state_ethereal_crystal_ore",
+          "name": "Blockstate: Ethereal Crystal Ore",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Ethereal Crystal Ore validated successfully"
+        },
+        {
+          "id": "block_loot_ethereal_crystal_ore",
+          "name": "Block Loot: Ethereal Crystal Ore",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Loot: Ethereal Crystal Ore validated successfully"
+        },
+        {
+          "id": "block_item_ethereal_crystal_ore",
+          "name": "Block Item Model: Ethereal Crystal Ore",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Ethereal Crystal Ore validated successfully"
+        },
+        {
+          "id": "block_state_gravity_anchor_block",
+          "name": "Blockstate: Gravity Anchor Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Gravity Anchor Block validated successfully"
+        },
+        {
+          "id": "block_loot_gravity_anchor_block",
+          "name": "Block Loot: Gravity Anchor Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Loot: Gravity Anchor Block validated successfully"
+        },
+        {
+          "id": "block_item_gravity_anchor_block",
+          "name": "Block Item Model: Gravity Anchor Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Gravity Anchor Block validated successfully"
+        },
+        {
+          "id": "block_state_weightless_grass_block",
+          "name": "Blockstate: Weightless Grass Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Weightless Grass Block validated successfully"
+        },
+        {
+          "id": "block_loot_weightless_grass_block",
+          "name": "Block Loot: Weightless Grass Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Loot: Weightless Grass Block validated successfully"
+        },
+        {
+          "id": "block_item_weightless_grass_block",
+          "name": "Block Item Model: Weightless Grass Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Weightless Grass Block validated successfully"
+        },
+        {
+          "id": "block_state_void_shroom",
+          "name": "Blockstate: Void Shroom",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Void Shroom validated successfully"
+        },
+        {
+          "id": "block_loot_void_shroom",
+          "name": "Block Loot: Void Shroom",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Loot: Void Shroom validated successfully"
+        },
+        {
+          "id": "block_item_void_shroom",
+          "name": "Block Item Model: Void Shroom",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Void Shroom validated successfully"
+        },
+        {
+          "id": "block_state_ethereal_wood_log",
+          "name": "Blockstate: Ethereal Wood Log",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Ethereal Wood Log validated successfully"
+        },
+        {
+          "id": "block_loot_ethereal_wood_log",
+          "name": "Block Loot: Ethereal Wood Log",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Loot: Ethereal Wood Log validated successfully"
+        },
+        {
+          "id": "block_item_ethereal_wood_log",
+          "name": "Block Item Model: Ethereal Wood Log",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Ethereal Wood Log validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "recipes",
+      "total": 20,
+      "passed": 20,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "recipes_existence",
+          "name": "Recipes Defined",
+          "category": "recipes",
+          "status": "passed",
+          "message": "8 recipes expected"
+        },
+        {
+          "id": "recipe_files",
+          "name": "Recipe Files Generated",
+          "category": "recipes",
+          "status": "passed",
+          "message": "9 recipe files generated"
+        },
+        {
+          "id": "recipe_output_gravity_anchor_block",
+          "name": "Recipe Output: gravity_anchor_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: gravity_anchor_block validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_gravity_anchor_block",
+          "name": "Recipe Ingredients: gravity_anchor_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: gravity_anchor_block validated successfully"
+        },
+        {
+          "id": "recipe_output_ethereal_crystal",
+          "name": "Recipe Output: ethereal_crystal",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: ethereal_crystal validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_ethereal_crystal",
+          "name": "Recipe Ingredients: ethereal_crystal",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: ethereal_crystal validated successfully"
+        },
+        {
+          "id": "recipe_output_gravity_core",
+          "name": "Recipe Output: gravity_core",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: gravity_core validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_gravity_core",
+          "name": "Recipe Ingredients: gravity_core",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: gravity_core validated successfully"
+        },
+        {
+          "id": "recipe_output_void_shard",
+          "name": "Recipe Output: void_shard",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: void_shard validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_void_shard",
+          "name": "Recipe Ingredients: void_shard",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: void_shard validated successfully"
+        },
+        {
+          "id": "recipe_output_weightless_boots",
+          "name": "Recipe Output: weightless_boots",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: weightless_boots validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_weightless_boots",
+          "name": "Recipe Ingredients: weightless_boots",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: weightless_boots validated successfully"
+        },
+        {
+          "id": "recipe_output_ethereal_pickaxe",
+          "name": "Recipe Output: ethereal_pickaxe",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: ethereal_pickaxe validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_ethereal_pickaxe",
+          "name": "Recipe Ingredients: ethereal_pickaxe",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: ethereal_pickaxe validated successfully"
+        },
+        {
+          "id": "recipe_output_gravity_manipulator",
+          "name": "Recipe Output: gravity_manipulator",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: gravity_manipulator validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_gravity_manipulator",
+          "name": "Recipe Ingredients: gravity_manipulator",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: gravity_manipulator validated successfully"
+        },
+        {
+          "id": "recipe_output_void_expanse_portal_igniter",
+          "name": "Recipe Output: void_expanse_portal_igniter",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: void_expanse_portal_igniter validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_void_expanse_portal_igniter",
+          "name": "Recipe Ingredients: void_expanse_portal_igniter",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: void_expanse_portal_igniter validated successfully"
+        },
+        {
+          "id": "recipe_output_ethereal_crystal_ore",
+          "name": "Recipe Output: ethereal_crystal_ore",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: ethereal_crystal_ore validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_ethereal_crystal_ore",
+          "name": "Recipe Ingredients: ethereal_crystal_ore",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: ethereal_crystal_ore validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "mobs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "mobs_existence",
+          "name": "Mobs Defined",
+          "category": "mobs",
+          "status": "skipped",
+          "message": "No mobs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "npcs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "npcs_existence",
+          "name": "NPCs Defined",
+          "category": "npcs",
+          "status": "skipped",
+          "message": "No NPCs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "quests",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "quests_existence",
+          "name": "Quests Defined",
+          "category": "quests",
+          "status": "skipped",
+          "message": "No quests defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "advancements",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "advancements_existence",
+          "name": "Advancements Defined",
+          "category": "advancements",
+          "status": "skipped",
+          "message": "No advancements generated"
+        }
+      ]
+    },
+    {
+      "category": "dimensions",
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "dimensions_existence",
+          "name": "Dimensions Defined",
+          "category": "dimensions",
+          "status": "passed",
+          "message": "1 dimensions defined"
+        },
+        {
+          "id": "dim_json_void_expanse",
+          "name": "Dimension JSON: Void Expanse",
+          "category": "dimensions",
+          "status": "passed",
+          "message": "Dimension JSON: Void Expanse validated successfully"
+        },
+        {
+          "id": "dim_type_void_expanse",
+          "name": "Dimension Type: Void Expanse",
+          "category": "dimensions",
+          "status": "passed",
+          "message": "Dimension Type: Void Expanse validated successfully"
+        },
+        {
+          "id": "dim_portal_void_expanse",
+          "name": "Dimension Portal: Void Expanse",
+          "category": "dimensions",
+          "status": "passed",
+          "message": "Dimension Portal: Void Expanse validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "biomes",
+      "total": 3,
+      "passed": 2,
+      "failed": 0,
+      "warnings": 1,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "biomes_existence",
+          "name": "Biomes Defined",
+          "category": "biomes",
+          "status": "passed",
+          "message": "1 biomes defined"
+        },
+        {
+          "id": "biome_json_void_expanse_biome",
+          "name": "Biome JSON: Void Expanse Biome",
+          "category": "biomes",
+          "status": "passed",
+          "message": "Biome JSON: Void Expanse Biome validated successfully"
+        },
+        {
+          "id": "biome_features_void_expanse_biome",
+          "name": "Biome Features: Void Expanse Biome",
+          "category": "biomes",
+          "status": "warning",
+          "message": "Biome has no features defined"
+        }
+      ]
+    },
+    {
+      "category": "structures",
+      "total": 7,
+      "passed": 5,
+      "failed": 0,
+      "warnings": 2,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "structures_existence",
+          "name": "Structures Defined",
+          "category": "structures",
+          "status": "passed",
+          "message": "2 structures defined"
+        },
+        {
+          "id": "structure_json_void_spire",
+          "name": "Structure JSON: Void Spire",
+          "category": "structures",
+          "status": "passed",
+          "message": "Structure JSON: Void Spire validated successfully"
+        },
+        {
+          "id": "structure_set_void_spire",
+          "name": "Structure Set: Void Spire",
+          "category": "structures",
+          "status": "warning",
+          "message": "Missing structure_set (structure may not spawn)"
+        },
+        {
+          "id": "structure_loot_void_spire",
+          "name": "Structure Loot: Void Spire",
+          "category": "structures",
+          "status": "passed",
+          "message": "Structure Loot: Void Spire validated successfully"
+        },
+        {
+          "id": "structure_json_void_expanse_structure",
+          "name": "Structure JSON: Void Expanse Obelisk",
+          "category": "structures",
+          "status": "passed",
+          "message": "Structure JSON: Void Expanse Obelisk validated successfully"
+        },
+        {
+          "id": "structure_set_void_expanse_structure",
+          "name": "Structure Set: Void Expanse Obelisk",
+          "category": "structures",
+          "status": "warning",
+          "message": "Missing structure_set (structure may not spawn)"
+        },
+        {
+          "id": "structure_loot_void_expanse_structure",
+          "name": "Structure Loot: Void Expanse Obelisk",
+          "category": "structures",
+          "status": "passed",
+          "message": "Structure Loot: Void Expanse Obelisk validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "events",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "events_existence",
+          "name": "Events Defined",
+          "category": "events",
+          "status": "skipped",
+          "message": "No events defined in spec"
+        }
+      ]
+    }
+  ],
+  "criticalFailures": [],
+  "allChecks": [
+    {
+      "id": "items_existence",
+      "name": "Items Defined",
+      "category": "items",
+      "status": "passed",
+      "message": "8 items defined"
+    },
+    {
+      "id": "item_model_ethereal_crystal",
+      "name": "Item Model: Ethereal Crystal",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Ethereal Crystal validated successfully"
+    },
+    {
+      "id": "item_texture_ethereal_crystal",
+      "name": "Item Texture: Ethereal Crystal",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Ethereal Crystal validated successfully"
+    },
+    {
+      "id": "item_model_gravity_core",
+      "name": "Item Model: Gravity Core",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Gravity Core validated successfully"
+    },
+    {
+      "id": "item_texture_gravity_core",
+      "name": "Item Texture: Gravity Core",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Gravity Core validated successfully"
+    },
+    {
+      "id": "item_model_void_shard",
+      "name": "Item Model: Void Shard",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Void Shard validated successfully"
+    },
+    {
+      "id": "item_texture_void_shard",
+      "name": "Item Texture: Void Shard",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Void Shard validated successfully"
+    },
+    {
+      "id": "item_model_weightless_boots",
+      "name": "Item Model: Weightless Boots",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Weightless Boots validated successfully"
+    },
+    {
+      "id": "item_texture_weightless_boots",
+      "name": "Item Texture: Weightless Boots",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Weightless Boots validated successfully"
+    },
+    {
+      "id": "item_model_ethereal_pickaxe",
+      "name": "Item Model: Ethereal Pickaxe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Ethereal Pickaxe validated successfully"
+    },
+    {
+      "id": "item_texture_ethereal_pickaxe",
+      "name": "Item Texture: Ethereal Pickaxe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Ethereal Pickaxe validated successfully"
+    },
+    {
+      "id": "item_model_gravity_manipulator",
+      "name": "Item Model: Gravity Manipulator",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Gravity Manipulator validated successfully"
+    },
+    {
+      "id": "item_texture_gravity_manipulator",
+      "name": "Item Texture: Gravity Manipulator",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Gravity Manipulator validated successfully"
+    },
+    {
+      "id": "item_model_void_expanse_portal_igniter",
+      "name": "Item Model: Void Expanse Portal Key",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Void Expanse Portal Key validated successfully"
+    },
+    {
+      "id": "item_texture_void_expanse_portal_igniter",
+      "name": "Item Texture: Void Expanse Portal Key",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Void Expanse Portal Key validated successfully"
+    },
+    {
+      "id": "item_model_ethereal_crystal_ore",
+      "name": "Item Model: Ethereal Crystal Ore",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Ethereal Crystal Ore validated successfully"
+    },
+    {
+      "id": "item_texture_ethereal_crystal_ore",
+      "name": "Item Texture: Ethereal Crystal Ore",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Ethereal Crystal Ore validated successfully"
+    },
+    {
+      "id": "item_lang_ethereal_crystal",
+      "name": "Item Localization: Ethereal Crystal",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Ethereal Crystal validated successfully"
+    },
+    {
+      "id": "item_lang_gravity_core",
+      "name": "Item Localization: Gravity Core",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Gravity Core validated successfully"
+    },
+    {
+      "id": "item_lang_void_shard",
+      "name": "Item Localization: Void Shard",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Void Shard validated successfully"
+    },
+    {
+      "id": "item_lang_weightless_boots",
+      "name": "Item Localization: Weightless Boots",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Weightless Boots validated successfully"
+    },
+    {
+      "id": "item_lang_ethereal_pickaxe",
+      "name": "Item Localization: Ethereal Pickaxe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Ethereal Pickaxe validated successfully"
+    },
+    {
+      "id": "item_lang_gravity_manipulator",
+      "name": "Item Localization: Gravity Manipulator",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Gravity Manipulator validated successfully"
+    },
+    {
+      "id": "item_lang_void_expanse_portal_igniter",
+      "name": "Item Localization: Void Expanse Portal Key",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Void Expanse Portal Key validated successfully"
+    },
+    {
+      "id": "item_lang_ethereal_crystal_ore",
+      "name": "Item Localization: Ethereal Crystal Ore",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Ethereal Crystal Ore validated successfully"
+    },
+    {
+      "id": "blocks_existence",
+      "name": "Blocks Defined",
+      "category": "blocks",
+      "status": "passed",
+      "message": "6 blocks defined"
+    },
+    {
+      "id": "block_state_voidstone",
+      "name": "Blockstate: Voidstone",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Voidstone validated successfully"
+    },
+    {
+      "id": "block_loot_voidstone",
+      "name": "Block Loot: Voidstone",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Loot: Voidstone validated successfully"
+    },
+    {
+      "id": "block_item_voidstone",
+      "name": "Block Item Model: Voidstone",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Voidstone validated successfully"
+    },
+    {
+      "id": "block_state_ethereal_crystal_ore",
+      "name": "Blockstate: Ethereal Crystal Ore",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Ethereal Crystal Ore validated successfully"
+    },
+    {
+      "id": "block_loot_ethereal_crystal_ore",
+      "name": "Block Loot: Ethereal Crystal Ore",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Loot: Ethereal Crystal Ore validated successfully"
+    },
+    {
+      "id": "block_item_ethereal_crystal_ore",
+      "name": "Block Item Model: Ethereal Crystal Ore",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Ethereal Crystal Ore validated successfully"
+    },
+    {
+      "id": "block_state_gravity_anchor_block",
+      "name": "Blockstate: Gravity Anchor Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Gravity Anchor Block validated successfully"
+    },
+    {
+      "id": "block_loot_gravity_anchor_block",
+      "name": "Block Loot: Gravity Anchor Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Loot: Gravity Anchor Block validated successfully"
+    },
+    {
+      "id": "block_item_gravity_anchor_block",
+      "name": "Block Item Model: Gravity Anchor Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Gravity Anchor Block validated successfully"
+    },
+    {
+      "id": "block_state_weightless_grass_block",
+      "name": "Blockstate: Weightless Grass Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Weightless Grass Block validated successfully"
+    },
+    {
+      "id": "block_loot_weightless_grass_block",
+      "name": "Block Loot: Weightless Grass Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Loot: Weightless Grass Block validated successfully"
+    },
+    {
+      "id": "block_item_weightless_grass_block",
+      "name": "Block Item Model: Weightless Grass Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Weightless Grass Block validated successfully"
+    },
+    {
+      "id": "block_state_void_shroom",
+      "name": "Blockstate: Void Shroom",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Void Shroom validated successfully"
+    },
+    {
+      "id": "block_loot_void_shroom",
+      "name": "Block Loot: Void Shroom",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Loot: Void Shroom validated successfully"
+    },
+    {
+      "id": "block_item_void_shroom",
+      "name": "Block Item Model: Void Shroom",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Void Shroom validated successfully"
+    },
+    {
+      "id": "block_state_ethereal_wood_log",
+      "name": "Blockstate: Ethereal Wood Log",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Ethereal Wood Log validated successfully"
+    },
+    {
+      "id": "block_loot_ethereal_wood_log",
+      "name": "Block Loot: Ethereal Wood Log",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Loot: Ethereal Wood Log validated successfully"
+    },
+    {
+      "id": "block_item_ethereal_wood_log",
+      "name": "Block Item Model: Ethereal Wood Log",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Ethereal Wood Log validated successfully"
+    },
+    {
+      "id": "recipes_existence",
+      "name": "Recipes Defined",
+      "category": "recipes",
+      "status": "passed",
+      "message": "8 recipes expected"
+    },
+    {
+      "id": "recipe_files",
+      "name": "Recipe Files Generated",
+      "category": "recipes",
+      "status": "passed",
+      "message": "9 recipe files generated"
+    },
+    {
+      "id": "recipe_output_gravity_anchor_block",
+      "name": "Recipe Output: gravity_anchor_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: gravity_anchor_block validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_gravity_anchor_block",
+      "name": "Recipe Ingredients: gravity_anchor_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: gravity_anchor_block validated successfully"
+    },
+    {
+      "id": "recipe_output_ethereal_crystal",
+      "name": "Recipe Output: ethereal_crystal",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: ethereal_crystal validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_ethereal_crystal",
+      "name": "Recipe Ingredients: ethereal_crystal",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: ethereal_crystal validated successfully"
+    },
+    {
+      "id": "recipe_output_gravity_core",
+      "name": "Recipe Output: gravity_core",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: gravity_core validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_gravity_core",
+      "name": "Recipe Ingredients: gravity_core",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: gravity_core validated successfully"
+    },
+    {
+      "id": "recipe_output_void_shard",
+      "name": "Recipe Output: void_shard",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: void_shard validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_void_shard",
+      "name": "Recipe Ingredients: void_shard",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: void_shard validated successfully"
+    },
+    {
+      "id": "recipe_output_weightless_boots",
+      "name": "Recipe Output: weightless_boots",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: weightless_boots validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_weightless_boots",
+      "name": "Recipe Ingredients: weightless_boots",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: weightless_boots validated successfully"
+    },
+    {
+      "id": "recipe_output_ethereal_pickaxe",
+      "name": "Recipe Output: ethereal_pickaxe",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: ethereal_pickaxe validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_ethereal_pickaxe",
+      "name": "Recipe Ingredients: ethereal_pickaxe",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: ethereal_pickaxe validated successfully"
+    },
+    {
+      "id": "recipe_output_gravity_manipulator",
+      "name": "Recipe Output: gravity_manipulator",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: gravity_manipulator validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_gravity_manipulator",
+      "name": "Recipe Ingredients: gravity_manipulator",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: gravity_manipulator validated successfully"
+    },
+    {
+      "id": "recipe_output_void_expanse_portal_igniter",
+      "name": "Recipe Output: void_expanse_portal_igniter",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: void_expanse_portal_igniter validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_void_expanse_portal_igniter",
+      "name": "Recipe Ingredients: void_expanse_portal_igniter",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: void_expanse_portal_igniter validated successfully"
+    },
+    {
+      "id": "recipe_output_ethereal_crystal_ore",
+      "name": "Recipe Output: ethereal_crystal_ore",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: ethereal_crystal_ore validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_ethereal_crystal_ore",
+      "name": "Recipe Ingredients: ethereal_crystal_ore",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: ethereal_crystal_ore validated successfully"
+    },
+    {
+      "id": "mobs_existence",
+      "name": "Mobs Defined",
+      "category": "mobs",
+      "status": "skipped",
+      "message": "No mobs defined in spec"
+    },
+    {
+      "id": "npcs_existence",
+      "name": "NPCs Defined",
+      "category": "npcs",
+      "status": "skipped",
+      "message": "No NPCs defined in spec"
+    },
+    {
+      "id": "quests_existence",
+      "name": "Quests Defined",
+      "category": "quests",
+      "status": "skipped",
+      "message": "No quests defined in spec"
+    },
+    {
+      "id": "advancements_existence",
+      "name": "Advancements Defined",
+      "category": "advancements",
+      "status": "skipped",
+      "message": "No advancements generated"
+    },
+    {
+      "id": "dimensions_existence",
+      "name": "Dimensions Defined",
+      "category": "dimensions",
+      "status": "passed",
+      "message": "1 dimensions defined"
+    },
+    {
+      "id": "dim_json_void_expanse",
+      "name": "Dimension JSON: Void Expanse",
+      "category": "dimensions",
+      "status": "passed",
+      "message": "Dimension JSON: Void Expanse validated successfully"
+    },
+    {
+      "id": "dim_type_void_expanse",
+      "name": "Dimension Type: Void Expanse",
+      "category": "dimensions",
+      "status": "passed",
+      "message": "Dimension Type: Void Expanse validated successfully"
+    },
+    {
+      "id": "dim_portal_void_expanse",
+      "name": "Dimension Portal: Void Expanse",
+      "category": "dimensions",
+      "status": "passed",
+      "message": "Dimension Portal: Void Expanse validated successfully"
+    },
+    {
+      "id": "biomes_existence",
+      "name": "Biomes Defined",
+      "category": "biomes",
+      "status": "passed",
+      "message": "1 biomes defined"
+    },
+    {
+      "id": "biome_json_void_expanse_biome",
+      "name": "Biome JSON: Void Expanse Biome",
+      "category": "biomes",
+      "status": "passed",
+      "message": "Biome JSON: Void Expanse Biome validated successfully"
+    },
+    {
+      "id": "biome_features_void_expanse_biome",
+      "name": "Biome Features: Void Expanse Biome",
+      "category": "biomes",
+      "status": "warning",
+      "message": "Biome has no features defined"
+    },
+    {
+      "id": "structures_existence",
+      "name": "Structures Defined",
+      "category": "structures",
+      "status": "passed",
+      "message": "2 structures defined"
+    },
+    {
+      "id": "structure_json_void_spire",
+      "name": "Structure JSON: Void Spire",
+      "category": "structures",
+      "status": "passed",
+      "message": "Structure JSON: Void Spire validated successfully"
+    },
+    {
+      "id": "structure_set_void_spire",
+      "name": "Structure Set: Void Spire",
+      "category": "structures",
+      "status": "warning",
+      "message": "Missing structure_set (structure may not spawn)"
+    },
+    {
+      "id": "structure_loot_void_spire",
+      "name": "Structure Loot: Void Spire",
+      "category": "structures",
+      "status": "passed",
+      "message": "Structure Loot: Void Spire validated successfully"
+    },
+    {
+      "id": "structure_json_void_expanse_structure",
+      "name": "Structure JSON: Void Expanse Obelisk",
+      "category": "structures",
+      "status": "passed",
+      "message": "Structure JSON: Void Expanse Obelisk validated successfully"
+    },
+    {
+      "id": "structure_set_void_expanse_structure",
+      "name": "Structure Set: Void Expanse Obelisk",
+      "category": "structures",
+      "status": "warning",
+      "message": "Missing structure_set (structure may not spawn)"
+    },
+    {
+      "id": "structure_loot_void_expanse_structure",
+      "name": "Structure Loot: Void Expanse Obelisk",
+      "category": "structures",
+      "status": "passed",
+      "message": "Structure Loot: Void Expanse Obelisk validated successfully"
+    },
+    {
+      "id": "events_existence",
+      "name": "Events Defined",
+      "category": "events",
+      "status": "skipped",
+      "message": "No events defined in spec"
+    }
+  ],
+  "summary": "# Feature Audit Report: Voidborne Expanse\nGenerated: 2025-12-27T16:17:02.365Z\nMinecraft Version: 1.21.1\n\n## ⚠️ PASSED WITH WARNINGS\nTotal: 75 passed, 3 warnings, 5 skipped\n\n## Category Breakdown\n\n✅ **items**: 25/25 passed\n✅ **blocks**: 19/19 passed\n✅ **recipes**: 20/20 passed\n✅ **mobs**: 0/1 passed\n✅ **npcs**: 0/1 passed\n✅ **quests**: 0/1 passed\n✅ **advancements**: 0/1 passed\n✅ **dimensions**: 4/4 passed\n⚠️ **biomes**: 2/3 passed\n⚠️ **structures**: 5/7 passed\n✅ **events**: 0/1 passed",
+  "suggestions": []
+}

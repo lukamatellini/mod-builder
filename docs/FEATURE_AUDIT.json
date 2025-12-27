@@ -1,0 +1,492 @@
+{
+  "modId": "voidborneexpanse",
+  "modName": "Voidborne Expanse",
+  "generatedAt": "2025-12-27T16:17:02.192Z",
+  "mcVersion": "1.21.1",
+  "categories": {
+    "items": {
+      "name": "Items",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "ethereal_crystal: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "ethereal_crystal: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "gravity_core: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "gravity_core: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "void_shard: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "void_shard: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "weightless_boots: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "weightless_boots: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "ethereal_pickaxe: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "ethereal_pickaxe: Weapon stats",
+          "status": "passed",
+          "message": "Damage: 6, Durability: 800"
+        },
+        {
+          "name": "ethereal_pickaxe: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "gravity_manipulator: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "gravity_manipulator: Right-click action",
+          "status": "passed",
+          "message": "Action: projectile"
+        },
+        {
+          "name": "gravity_manipulator: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "void_expanse_portal_igniter: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "void_expanse_portal_igniter: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        }
+      ],
+      "notes": "7 items audited"
+    },
+    "blocks": {
+      "name": "Blocks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "voidstone: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "voidstone: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "voidstone: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "ethereal_crystal_ore: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "ethereal_crystal_ore: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "ethereal_crystal_ore: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "gravity_anchor_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "gravity_anchor_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "gravity_anchor_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "weightless_grass_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "weightless_grass_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "weightless_grass_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "void_shroom: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "void_shroom: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "void_shroom: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "ethereal_wood_log: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "ethereal_wood_log: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "ethereal_wood_log: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        }
+      ],
+      "notes": "6 blocks audited"
+    },
+    "mobs": {
+      "name": "Mobs",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No mobs defined",
+          "status": "skipped",
+          "message": "No mobs to audit"
+        }
+      ]
+    },
+    "structures": {
+      "name": "Structures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "void_spire: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "void_spire: Features",
+          "status": "passed",
+          "message": "1 features defined"
+        },
+        {
+          "name": "void_expanse_structure: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "void_expanse_structure: Features",
+          "status": "passed",
+          "message": "2 features defined"
+        }
+      ],
+      "notes": "2 structures audited"
+    },
+    "recipes": {
+      "name": "Recipes",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Items with recipes",
+          "status": "passed",
+          "message": "7/7 items have recipes"
+        },
+        {
+          "name": "ethereal_crystal: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "gravity_core: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "void_shard: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "weightless_boots: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "ethereal_pickaxe: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "gravity_manipulator: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "void_expanse_portal_igniter: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        }
+      ],
+      "notes": "8 recipes audited"
+    },
+    "lootTables": {
+      "name": "Loot Tables",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "voidstone: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        },
+        {
+          "name": "ethereal_crystal_ore: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        },
+        {
+          "name": "gravity_anchor_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        },
+        {
+          "name": "weightless_grass_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        },
+        {
+          "name": "void_shroom: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        },
+        {
+          "name": "ethereal_wood_log: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        }
+      ],
+      "notes": "0 mob loot tables audited"
+    },
+    "textures": {
+      "name": "Textures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Texture files generated",
+          "status": "passed",
+          "message": "29 textures generated (expected at least 13)"
+        },
+        {
+          "name": "voidstone.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "ethereal_crystal_ore.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "gravity_anchor_block.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "weightless_grass_block.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "void_shroom.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "ethereal_wood_log.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "void_expanse_portal.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "void_expanse_portal_overlay.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "void_expanse_portal_frame.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "void_expanse_sky.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        }
+      ],
+      "notes": "29 texture files"
+    },
+    "quests": {
+      "name": "Quests",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No quests defined",
+          "status": "skipped",
+          "message": "No quests to audit"
+        }
+      ]
+    },
+    "advancements": {
+      "name": "Advancements",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Advancement files",
+          "status": "warn",
+          "message": "0 advancement files generated"
+        },
+        {
+          "name": "Root advancement",
+          "status": "warn",
+          "message": "No root advancement"
+        }
+      ],
+      "notes": "0 advancements"
+    },
+    "compilation": {
+      "name": "Compilation",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "build.gradle",
+          "status": "passed",
+          "message": "Build file exists"
+        },
+        {
+          "name": "fabric.mod.json",
+          "status": "passed",
+          "message": "Mod descriptor exists"
+        },
+        {
+          "name": "Minecraft version",
+          "status": "passed",
+          "message": "Correct MC version"
+        },
+        {
+          "name": "Java source files",
+          "status": "passed",
+          "message": "22 Java files generated"
+        }
+      ],
+      "notes": "Build configuration audit"
+    },
+    "apiSafety": {
+      "name": "API Safety",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "API safety scan",
+          "status": "passed",
+          "message": "No forbidden patterns detected"
+        }
+      ],
+      "notes": "MC 1.21.1 API compatibility check"
+    },
+    "vanillaFallbacks": {
+      "name": "Vanilla Fallbacks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Vanilla recipe ingredients",
+          "status": "passed",
+          "message": "12 vanilla ingredients used (intentional)",
+          "details": "gravity_core uses minecraft:diamond, void_shard uses minecraft:diamond, void_shard uses minecraft:stick, void_shard uses minecraft:diamond, void_shard uses minecraft:stick, ethereal_pickaxe uses minecraft:stick, ethereal_pickaxe uses minecraft:stick, void_expanse_portal_igniter uses minecraft:ender_pearl, void_expanse_portal_igniter uses minecraft:ender_eye, void_expanse_portal_igniter uses minecraft:ender_pearl"
+        }
+      ],
+      "notes": "Tracks use of vanilla content vs custom generation"
+    },
+    "inferredContent": {
+      "name": "Inferred Content",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Theme inference",
+          "status": "passed",
+          "message": "Inferred theme: dark realistic",
+          "details": "Primary themes: celestial, dark, void, crystal, diamond, Power level: legendary"
+        },
+        {
+          "name": "Inferred item recipes",
+          "status": "passed",
+          "message": "7/7 items have recipes"
+        },
+        {
+          "name": "Inferred abilities",
+          "status": "passed",
+          "message": "2/1 wands/staves have abilities"
+        },
+        {
+          "name": "Inferred structure features",
+          "status": "passed",
+          "message": "2/2 structures have features"
+        }
+      ],
+      "notes": "Tracks auto-completed and inferred content"
+    }
+  },
+  "summary": {
+    "totalChecks": 77,
+    "passed": 73,
+    "failed": 0,
+    "warnings": 2,
+    "skipped": 2,
+    "overallStatus": "warn"
+  }
+}

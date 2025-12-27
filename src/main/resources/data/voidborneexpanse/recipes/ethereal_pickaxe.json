@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " M ",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "M": {
+      "item": "voidborneexpanse:ethereal_crystal"
+    },
+    "S": {
+      "item": "minecraft:coal"
+    }
+  },
+  "result": {
+    "id": "voidborneexpanse:ethereal_pickaxe",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "voidborneexpanse:item/ethereal_pickaxe"
+  }
+}
