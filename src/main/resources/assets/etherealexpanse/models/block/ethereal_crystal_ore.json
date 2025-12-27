@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "etherealexpanse:block/ethereal_crystal_ore"
+  }
+}

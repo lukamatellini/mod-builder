@@ -1,0 +1,393 @@
+{
+  "modId": "etherealexpanse",
+  "modName": "Ethereal Expanse",
+  "generatedAt": "2025-12-27T16:00:41.985Z",
+  "mcVersion": "1.21.1",
+  "categories": {
+    "items": {
+      "name": "Items",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "ethereal_crystal: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "ethereal_crystal: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "void_compass: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "void_compass: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "anchor_boots: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "anchor_boots: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "void_expanse_portal_igniter: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "void_expanse_portal_igniter: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        }
+      ],
+      "notes": "4 items audited"
+    },
+    "blocks": {
+      "name": "Blocks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "voidstone: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "voidstone: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "voidstone: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "ethereal_crystal_ore: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "ethereal_crystal_ore: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "ethereal_crystal_ore: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "gravity_anchor: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "gravity_anchor: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "gravity_anchor: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        }
+      ],
+      "notes": "3 blocks audited"
+    },
+    "mobs": {
+      "name": "Mobs",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "void_glider: Required fields",
+          "status": "passed",
+          "message": "Health: 10, Damage: 5"
+        },
+        {
+          "name": "void_glider: Drops",
+          "status": "passed",
+          "message": "1 drops defined"
+        },
+        {
+          "name": "void_glider: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:the_end, minecraft:end_highlands"
+        }
+      ],
+      "notes": "1 mobs audited (0 bosses)"
+    },
+    "structures": {
+      "name": "Structures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "void_expanse_structure: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "void_expanse_structure: Features",
+          "status": "passed",
+          "message": "2 features defined"
+        }
+      ],
+      "notes": "1 structures audited"
+    },
+    "recipes": {
+      "name": "Recipes",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Items with recipes",
+          "status": "passed",
+          "message": "4/4 items have recipes"
+        },
+        {
+          "name": "ethereal_crystal: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "void_compass: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "anchor_boots: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "void_expanse_portal_igniter: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        }
+      ],
+      "notes": "5 recipes audited"
+    },
+    "lootTables": {
+      "name": "Loot Tables",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "void_glider: Loot table",
+          "status": "passed",
+          "message": "Loot table generated"
+        },
+        {
+          "name": "void_glider: Loot table content",
+          "status": "passed",
+          "message": "Loot table has entries"
+        },
+        {
+          "name": "voidstone: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        },
+        {
+          "name": "ethereal_crystal_ore: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        },
+        {
+          "name": "gravity_anchor: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        }
+      ],
+      "notes": "1 mob loot tables audited"
+    },
+    "textures": {
+      "name": "Textures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Texture files generated",
+          "status": "passed",
+          "message": "23 textures generated (expected at least 7)"
+        },
+        {
+          "name": "voidstone.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "ethereal_crystal_ore.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "gravity_anchor.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "void_glider.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "void_expanse_portal.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "void_expanse_portal_overlay.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "void_expanse_portal_frame.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "void_expanse_sky.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "void_expanse_sun.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "void_expanse_moon.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        }
+      ],
+      "notes": "23 texture files"
+    },
+    "quests": {
+      "name": "Quests",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No quests defined",
+          "status": "skipped",
+          "message": "No quests to audit"
+        }
+      ]
+    },
+    "advancements": {
+      "name": "Advancements",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Advancement files",
+          "status": "warn",
+          "message": "0 advancement files generated"
+        },
+        {
+          "name": "Root advancement",
+          "status": "warn",
+          "message": "No root advancement"
+        }
+      ],
+      "notes": "0 advancements"
+    },
+    "compilation": {
+      "name": "Compilation",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "build.gradle",
+          "status": "passed",
+          "message": "Build file exists"
+        },
+        {
+          "name": "fabric.mod.json",
+          "status": "passed",
+          "message": "Mod descriptor exists"
+        },
+        {
+          "name": "Minecraft version",
+          "status": "passed",
+          "message": "Correct MC version"
+        },
+        {
+          "name": "Java source files",
+          "status": "passed",
+          "message": "22 Java files generated"
+        }
+      ],
+      "notes": "Build configuration audit"
+    },
+    "apiSafety": {
+      "name": "API Safety",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "API safety scan",
+          "status": "passed",
+          "message": "No forbidden patterns detected"
+        }
+      ],
+      "notes": "MC 1.21.1 API compatibility check"
+    },
+    "vanillaFallbacks": {
+      "name": "Vanilla Fallbacks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Vanilla recipe ingredients",
+          "status": "passed",
+          "message": "8 vanilla ingredients used (intentional)",
+          "details": "ethereal_crystal uses minecraft:stick, void_compass uses minecraft:compass, anchor_boots uses minecraft:stick, void_expanse_portal_igniter uses minecraft:ender_pearl, void_expanse_portal_igniter uses minecraft:ender_eye, void_expanse_portal_igniter uses minecraft:ender_pearl, void_expanse_portal_igniter uses minecraft:ender_pearl, void_expanse_portal_igniter uses minecraft:ender_eye"
+        }
+      ],
+      "notes": "Tracks use of vanilla content vs custom generation"
+    },
+    "inferredContent": {
+      "name": "Inferred Content",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Theme inference",
+          "status": "passed",
+          "message": "Inferred theme: dark realistic",
+          "details": "Primary themes: celestial, dark, void, crystal, diamond, Power level: legendary"
+        },
+        {
+          "name": "Inferred item recipes",
+          "status": "passed",
+          "message": "4/4 items have recipes"
+        },
+        {
+          "name": "Inferred mob drops",
+          "status": "passed",
+          "message": "1/1 mobs have drops"
+        },
+        {
+          "name": "Inferred spawn rules",
+          "status": "passed",
+          "message": "1/1 mobs have spawn rules"
+        },
+        {
+          "name": "Inferred structure features",
+          "status": "passed",
+          "message": "1/1 structures have features"
+        }
+      ],
+      "notes": "Tracks auto-completed and inferred content"
+    }
+  },
+  "summary": {
+    "totalChecks": 57,
+    "passed": 54,
+    "failed": 0,
+    "warnings": 2,
+    "skipped": 1,
+    "overallStatus": "warn"
+  }
+}

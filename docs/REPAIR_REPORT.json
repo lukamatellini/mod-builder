@@ -1,0 +1,252 @@
+{
+  "summary": {
+    "totalRecipesScanned": 5,
+    "totalRepairs": 12,
+    "autoCreatedItems": 0,
+    "fallbacksUsed": 12,
+    "externalRemaps": 0,
+    "unresolvedReferences": 0,
+    "success": true
+  },
+  "repairs": [
+    {
+      "recipe": "ethereal_crystal (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "void_compass (spec)",
+      "type": "auto_create",
+      "before": "etherealexpanse:ethereal_crystal",
+      "after": "etherealexpanse:ethereal_crystal",
+      "reason": "Auto-created missing mod item: Ethereal Crystal"
+    },
+    {
+      "recipe": "void_compass (spec)",
+      "type": "fallback",
+      "before": "minecraft:compass",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "void_compass (spec)",
+      "type": "auto_create",
+      "before": "etherealexpanse:ethereal_crystal",
+      "after": "etherealexpanse:ethereal_crystal",
+      "reason": "Auto-created missing mod item: Ethereal Crystal"
+    },
+    {
+      "recipe": "anchor_boots (spec)",
+      "type": "auto_create",
+      "before": "etherealexpanse:ethereal_crystal",
+      "after": "etherealexpanse:ethereal_crystal",
+      "reason": "Auto-created missing mod item: Ethereal Crystal"
+    },
+    {
+      "recipe": "anchor_boots (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "anchor_boots (spec)",
+      "type": "auto_create",
+      "before": "etherealexpanse:ethereal_crystal",
+      "after": "etherealexpanse:ethereal_crystal",
+      "reason": "Auto-created missing mod item: Ethereal Crystal"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter (spec)",
+      "type": "fallback",
+      "before": "minecraft:ender_pearl",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter (spec)",
+      "type": "fallback",
+      "before": "minecraft:ender_eye",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter (spec)",
+      "type": "fallback",
+      "before": "minecraft:ender_pearl",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter (spec)",
+      "type": "fallback",
+      "before": "minecraft:ender_pearl",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter (spec)",
+      "type": "fallback",
+      "before": "minecraft:ender_eye",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "gravity_anchor (spec)",
+      "type": "auto_create",
+      "before": "etherealexpanse:ethereal_crystal",
+      "after": "etherealexpanse:ethereal_crystal",
+      "reason": "Auto-created missing mod item: Ethereal Crystal"
+    },
+    {
+      "recipe": "gravity_anchor",
+      "type": "auto_create",
+      "before": "etherealexpanse:ethereal_crystal",
+      "after": "etherealexpanse:ethereal_crystal",
+      "reason": "Auto-created missing mod item: Ethereal Crystal"
+    },
+    {
+      "recipe": "gravity_anchor",
+      "type": "auto_create",
+      "before": "etherealexpanse:gravity_anchor",
+      "after": "etherealexpanse:gravity_anchor",
+      "reason": "Auto-created missing mod item: Gravity Anchor"
+    },
+    {
+      "recipe": "ethereal_crystal",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "ethereal_crystal",
+      "type": "auto_create",
+      "before": "etherealexpanse:ethereal_crystal",
+      "after": "etherealexpanse:ethereal_crystal",
+      "reason": "Auto-created missing mod item: Ethereal Crystal"
+    },
+    {
+      "recipe": "void_compass",
+      "type": "auto_create",
+      "before": "etherealexpanse:ethereal_crystal",
+      "after": "etherealexpanse:ethereal_crystal",
+      "reason": "Auto-created missing mod item: Ethereal Crystal"
+    },
+    {
+      "recipe": "void_compass",
+      "type": "auto_create",
+      "before": "etherealexpanse:void_compass",
+      "after": "etherealexpanse:void_compass",
+      "reason": "Auto-created missing mod item: Void Compass"
+    },
+    {
+      "recipe": "anchor_boots",
+      "type": "auto_create",
+      "before": "etherealexpanse:ethereal_crystal",
+      "after": "etherealexpanse:ethereal_crystal",
+      "reason": "Auto-created missing mod item: Ethereal Crystal"
+    },
+    {
+      "recipe": "anchor_boots",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "anchor_boots",
+      "type": "auto_create",
+      "before": "etherealexpanse:anchor_boots",
+      "after": "etherealexpanse:anchor_boots",
+      "reason": "Auto-created missing mod item: Anchor Boots"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter",
+      "type": "fallback",
+      "before": "minecraft:ender_pearl",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter",
+      "type": "fallback",
+      "before": "minecraft:ender_eye",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter",
+      "type": "auto_create",
+      "before": "etherealexpanse:void_expanse_portal_igniter",
+      "after": "etherealexpanse:void_expanse_portal_igniter",
+      "reason": "Auto-created missing mod item: Void Expanse Portal Igniter"
+    }
+  ],
+  "autoCreatedItems": [],
+  "fallbacks": [
+    {
+      "recipe": "ethereal_crystal (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_compass (spec)",
+      "original": "minecraft:compass",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "anchor_boots (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter (spec)",
+      "original": "minecraft:ender_pearl",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter (spec)",
+      "original": "minecraft:ender_eye",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter (spec)",
+      "original": "minecraft:ender_pearl",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter (spec)",
+      "original": "minecraft:ender_pearl",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter (spec)",
+      "original": "minecraft:ender_eye",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "ethereal_crystal",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "anchor_boots",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter",
+      "original": "minecraft:ender_pearl",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "void_expanse_portal_igniter",
+      "original": "minecraft:ender_eye",
+      "fallback": "minecraft:coal"
+    }
+  ],
+  "externalRemaps": []
+}

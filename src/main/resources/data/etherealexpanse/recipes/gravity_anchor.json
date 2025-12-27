@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "key": {
+    "M": {
+      "item": "etherealexpanse:ethereal_crystal"
+    }
+  },
+  "result": {
+    "id": "etherealexpanse:gravity_anchor",
+    "count": 1
+  }
+}

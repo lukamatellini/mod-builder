@@ -1,0 +1,13 @@
+{
+  "itemGroup.etherealexpanse.main": "Ethereal Expanse",
+  "item.etherealexpanse.ethereal_crystal": "Ethereal Crystal",
+  "item.etherealexpanse.void_compass": "Void Compass",
+  "item.etherealexpanse.anchor_boots": "Anchor Boots",
+  "item.etherealexpanse.void_expanse_portal_igniter": "Void Expanse Portal Key",
+  "block.etherealexpanse.voidstone": "Voidstone",
+  "block.etherealexpanse.ethereal_crystal_ore": "Ethereal Crystal Ore",
+  "block.etherealexpanse.gravity_anchor": "Gravity Anchor",
+  "entity.etherealexpanse.void_glider": "Void Glider",
+  "structure.etherealexpanse.void_expanse_structure": "Void Expanse Obelisk",
+  "dimension.etherealexpanse.void_expanse": "Void Expanse"
+}

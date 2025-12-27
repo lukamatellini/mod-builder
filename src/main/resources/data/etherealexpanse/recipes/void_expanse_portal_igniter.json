@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:coal"
+    },
+    "B": {
+      "item": "minecraft:coal"
+    }
+  },
+  "result": {
+    "id": "etherealexpanse:void_expanse_portal_igniter",
+    "count": 1
+  }
+}

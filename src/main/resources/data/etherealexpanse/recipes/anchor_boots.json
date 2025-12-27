@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " M ",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "M": {
+      "item": "etherealexpanse:ethereal_crystal"
+    },
+    "S": {
+      "item": "minecraft:coal"
+    }
+  },
+  "result": {
+    "id": "etherealexpanse:anchor_boots",
+    "count": 1
+  }
+}
