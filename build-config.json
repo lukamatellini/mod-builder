@@ -1,0 +1,9 @@
+{
+  "webhookUrl": "https://jhhqehkjffldkoqjqbzx.supabase.co/functions/v1/build-webhook",
+  "loader": "fabric",
+  "mcVersion": "1.21.1",
+  "modId": "89b0e59d-fc0d-43e7-a773-65da52eeb424",
+  "modName": "Magic Wand",
+  "webhookSecret": "za8f3c2b1e49840b28a7c4c11d9a0de92",
+  "generatedAt": "2025-12-27T01:10:34.749Z"
+}
