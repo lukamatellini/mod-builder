@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oceanicriches:aquamarine_gem"
+    }
+  ],
+  "result": {
+    "id": "oceanicriches:aquamarine_ingot",
+    "count": 1
+  }
+}

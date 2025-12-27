@@ -1,0 +1,632 @@
+{
+  "summary": {
+    "totalRecipesScanned": 12,
+    "totalRepairs": 25,
+    "autoCreatedItems": 0,
+    "fallbacksUsed": 25,
+    "externalRemaps": 0,
+    "unresolvedReferences": 0,
+    "success": true
+  },
+  "repairs": [
+    {
+      "recipe": "raw_aquamarine (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:raw_aquamarine",
+      "after": "oceanicriches:raw_aquamarine",
+      "reason": "Auto-created missing mod item: Raw Aquamarine"
+    },
+    {
+      "recipe": "aquamarine_gem (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:raw_aquamarine",
+      "after": "oceanicriches:raw_aquamarine",
+      "reason": "Auto-created missing mod item: Raw Aquamarine"
+    },
+    {
+      "recipe": "aquamarine_gem (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_ingot (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_gem",
+      "after": "oceanicriches:aquamarine_gem",
+      "reason": "Auto-created missing mod item: Aquamarine Gem"
+    },
+    {
+      "recipe": "aquamarine_pickaxe (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_pickaxe (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_pickaxe (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_pickaxe (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_axe (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_axe (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_axe (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_axe (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_shovel (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_shovel (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_shovel (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_shovel (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_sword (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_sword (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_sword (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_sword (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_hoe (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_hoe (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_hoe (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_hoe (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_helmet (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_helmet (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_helmet (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_chestplate (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_chestplate (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_chestplate (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_leggings (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_leggings (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_leggings (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_boots (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_boots (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_boots (spec)",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "raw_aquamarine",
+      "type": "auto_create",
+      "before": "oceanicriches:raw_aquamarine",
+      "after": "oceanicriches:raw_aquamarine",
+      "reason": "Auto-created missing mod item: Raw Aquamarine"
+    },
+    {
+      "recipe": "raw_aquamarine",
+      "type": "auto_create",
+      "before": "oceanicriches:raw_aquamarine",
+      "after": "oceanicriches:raw_aquamarine",
+      "reason": "Auto-created missing mod item: Raw Aquamarine"
+    },
+    {
+      "recipe": "aquamarine_gem",
+      "type": "auto_create",
+      "before": "oceanicriches:raw_aquamarine",
+      "after": "oceanicriches:raw_aquamarine",
+      "reason": "Auto-created missing mod item: Raw Aquamarine"
+    },
+    {
+      "recipe": "aquamarine_gem",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_gem",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_gem",
+      "after": "oceanicriches:aquamarine_gem",
+      "reason": "Auto-created missing mod item: Aquamarine Gem"
+    },
+    {
+      "recipe": "aquamarine_ingot",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_gem",
+      "after": "oceanicriches:aquamarine_gem",
+      "reason": "Auto-created missing mod item: Aquamarine Gem"
+    },
+    {
+      "recipe": "aquamarine_ingot",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_pickaxe",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_pickaxe",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_pickaxe",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_pickaxe",
+      "after": "oceanicriches:aquamarine_pickaxe",
+      "reason": "Auto-created missing mod item: Aquamarine Pickaxe"
+    },
+    {
+      "recipe": "aquamarine_axe",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_axe",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_axe",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_axe",
+      "after": "oceanicriches:aquamarine_axe",
+      "reason": "Auto-created missing mod item: Aquamarine Axe"
+    },
+    {
+      "recipe": "aquamarine_shovel",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_shovel",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_shovel",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_shovel",
+      "after": "oceanicriches:aquamarine_shovel",
+      "reason": "Auto-created missing mod item: Aquamarine Shovel"
+    },
+    {
+      "recipe": "aquamarine_sword",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_sword",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_sword",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_sword",
+      "after": "oceanicriches:aquamarine_sword",
+      "reason": "Auto-created missing mod item: Aquamarine Sword"
+    },
+    {
+      "recipe": "aquamarine_hoe",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_hoe",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_hoe",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_hoe",
+      "after": "oceanicriches:aquamarine_hoe",
+      "reason": "Auto-created missing mod item: Aquamarine Hoe"
+    },
+    {
+      "recipe": "aquamarine_helmet",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_helmet",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_helmet",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_helmet",
+      "after": "oceanicriches:aquamarine_helmet",
+      "reason": "Auto-created missing mod item: Aquamarine Helmet"
+    },
+    {
+      "recipe": "aquamarine_chestplate",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_chestplate",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_chestplate",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_chestplate",
+      "after": "oceanicriches:aquamarine_chestplate",
+      "reason": "Auto-created missing mod item: Aquamarine Chestplate"
+    },
+    {
+      "recipe": "aquamarine_leggings",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_leggings",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_leggings",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_leggings",
+      "after": "oceanicriches:aquamarine_leggings",
+      "reason": "Auto-created missing mod item: Aquamarine Leggings"
+    },
+    {
+      "recipe": "aquamarine_boots",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_ingot",
+      "after": "oceanicriches:aquamarine_ingot",
+      "reason": "Auto-created missing mod item: Aquamarine Ingot"
+    },
+    {
+      "recipe": "aquamarine_boots",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:coal",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "aquamarine_boots",
+      "type": "auto_create",
+      "before": "oceanicriches:aquamarine_boots",
+      "after": "oceanicriches:aquamarine_boots",
+      "reason": "Auto-created missing mod item: Aquamarine Boots"
+    }
+  ],
+  "autoCreatedItems": [],
+  "fallbacks": [
+    {
+      "recipe": "aquamarine_gem (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_pickaxe (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_pickaxe (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_axe (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_axe (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_shovel (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_shovel (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_sword (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_sword (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_hoe (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_hoe (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_helmet (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_chestplate (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_leggings (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_boots (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_gem",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_pickaxe",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_axe",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_shovel",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_sword",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_hoe",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_helmet",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_chestplate",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_leggings",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    },
+    {
+      "recipe": "aquamarine_boots",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:coal"
+    }
+  ],
+  "externalRemaps": []
+}

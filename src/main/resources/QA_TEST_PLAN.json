@@ -1,0 +1,444 @@
+{
+  "modId": "oceanicriches",
+  "modName": "Oceanic Riches",
+  "mcVersion": "1.21.1",
+  "generatedAt": "2025-12-27T17:48:38.171Z",
+  "totalTests": 33,
+  "categories": [
+    {
+      "name": "Items",
+      "tests": [
+        {
+          "category": "Items",
+          "name": "Raw Aquamarine Registration",
+          "command": "/give @p oceanicriches:raw_aquamarine",
+          "steps": [
+            "Run: /give @p oceanicriches:raw_aquamarine",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Aquamarine Gem Registration",
+          "command": "/give @p oceanicriches:aquamarine_gem",
+          "steps": [
+            "Run: /give @p oceanicriches:aquamarine_gem",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Aquamarine Ingot Registration",
+          "command": "/give @p oceanicriches:aquamarine_ingot",
+          "steps": [
+            "Run: /give @p oceanicriches:aquamarine_ingot",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Aquamarine Pickaxe Registration",
+          "command": "/give @p oceanicriches:aquamarine_pickaxe",
+          "steps": [
+            "Run: /give @p oceanicriches:aquamarine_pickaxe",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Aquamarine Axe Registration",
+          "command": "/give @p oceanicriches:aquamarine_axe",
+          "steps": [
+            "Run: /give @p oceanicriches:aquamarine_axe",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Aquamarine Shovel Registration",
+          "command": "/give @p oceanicriches:aquamarine_shovel",
+          "steps": [
+            "Run: /give @p oceanicriches:aquamarine_shovel",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Aquamarine Sword Registration",
+          "command": "/give @p oceanicriches:aquamarine_sword",
+          "steps": [
+            "Run: /give @p oceanicriches:aquamarine_sword",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Aquamarine Hoe Registration",
+          "command": "/give @p oceanicriches:aquamarine_hoe",
+          "steps": [
+            "Run: /give @p oceanicriches:aquamarine_hoe",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Aquamarine Helmet Registration",
+          "command": "/give @p oceanicriches:aquamarine_helmet",
+          "steps": [
+            "Run: /give @p oceanicriches:aquamarine_helmet",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Aquamarine Chestplate Registration",
+          "command": "/give @p oceanicriches:aquamarine_chestplate",
+          "steps": [
+            "Run: /give @p oceanicriches:aquamarine_chestplate",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Aquamarine Leggings Registration",
+          "command": "/give @p oceanicriches:aquamarine_leggings",
+          "steps": [
+            "Run: /give @p oceanicriches:aquamarine_leggings",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Aquamarine Boots Registration",
+          "command": "/give @p oceanicriches:aquamarine_boots",
+          "steps": [
+            "Run: /give @p oceanicriches:aquamarine_boots",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        }
+      ]
+    },
+    {
+      "name": "Recipes",
+      "tests": [
+        {
+          "category": "Recipes",
+          "name": "Raw Aquamarine Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"oceanicriches:raw_aquamarine\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Raw Aquamarine",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Aquamarine Gem Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"oceanicriches:raw_aquamarine\",\"minecraft:coal\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Aquamarine Gem",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Aquamarine Ingot Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"oceanicriches:aquamarine_gem\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Aquamarine Ingot",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Aquamarine Pickaxe Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"oceanicriches:aquamarine_ingot\",\"minecraft:coal\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Aquamarine Pickaxe",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Aquamarine Axe Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"oceanicriches:aquamarine_ingot\",\"minecraft:coal\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Aquamarine Axe",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Aquamarine Shovel Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"oceanicriches:aquamarine_ingot\",\"minecraft:coal\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Aquamarine Shovel",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Aquamarine Sword Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"oceanicriches:aquamarine_ingot\",\"minecraft:coal\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Aquamarine Sword",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Aquamarine Hoe Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"oceanicriches:aquamarine_ingot\",\"minecraft:coal\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Aquamarine Hoe",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Aquamarine Helmet Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"oceanicriches:aquamarine_ingot\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Aquamarine Helmet",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Aquamarine Chestplate Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"oceanicriches:aquamarine_ingot\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Aquamarine Chestplate",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Aquamarine Leggings Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"oceanicriches:aquamarine_ingot\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Aquamarine Leggings",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Aquamarine Boots Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"oceanicriches:aquamarine_ingot\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Aquamarine Boots",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Item Effects",
+      "tests": [
+        {
+          "category": "Item Effects",
+          "name": "Aquamarine Pickaxe passive Effect",
+          "steps": [
+            "Give yourself the item: /give @p oceanicriches:aquamarine_pickaxe",
+            "Hold item and wait",
+            "Observe minecraft:glowing activation"
+          ],
+          "expectedResult": "minecraft:glowing activates correctly",
+          "automated": false
+        },
+        {
+          "category": "Item Effects",
+          "name": "Aquamarine Axe passive Effect",
+          "steps": [
+            "Give yourself the item: /give @p oceanicriches:aquamarine_axe",
+            "Hold item and wait",
+            "Observe minecraft:glowing activation"
+          ],
+          "expectedResult": "minecraft:glowing activates correctly",
+          "automated": false
+        },
+        {
+          "category": "Item Effects",
+          "name": "Aquamarine Shovel passive Effect",
+          "steps": [
+            "Give yourself the item: /give @p oceanicriches:aquamarine_shovel",
+            "Hold item and wait",
+            "Observe minecraft:glowing activation"
+          ],
+          "expectedResult": "minecraft:glowing activates correctly",
+          "automated": false
+        },
+        {
+          "category": "Item Effects",
+          "name": "Aquamarine Sword on_hit Effect",
+          "steps": [
+            "Give yourself the item: /give @p oceanicriches:aquamarine_sword",
+            "Hit a mob with the item",
+            "Observe minecraft:weakness activation"
+          ],
+          "expectedResult": "minecraft:weakness activates correctly",
+          "automated": false
+        },
+        {
+          "category": "Item Effects",
+          "name": "Aquamarine Helmet passive Effect",
+          "steps": [
+            "Give yourself the item: /give @p oceanicriches:aquamarine_helmet",
+            "Hold item and wait",
+            "Observe minecraft:glowing activation"
+          ],
+          "expectedResult": "minecraft:glowing activates correctly",
+          "automated": false
+        },
+        {
+          "category": "Item Effects",
+          "name": "Aquamarine Chestplate passive Effect",
+          "steps": [
+            "Give yourself the item: /give @p oceanicriches:aquamarine_chestplate",
+            "Hold item and wait",
+            "Observe minecraft:glowing activation"
+          ],
+          "expectedResult": "minecraft:glowing activates correctly",
+          "automated": false
+        },
+        {
+          "category": "Item Effects",
+          "name": "Aquamarine Leggings passive Effect",
+          "steps": [
+            "Give yourself the item: /give @p oceanicriches:aquamarine_leggings",
+            "Hold item and wait",
+            "Observe minecraft:glowing activation"
+          ],
+          "expectedResult": "minecraft:glowing activates correctly",
+          "automated": false
+        },
+        {
+          "category": "Item Effects",
+          "name": "Aquamarine Boots passive Effect",
+          "steps": [
+            "Give yourself the item: /give @p oceanicriches:aquamarine_boots",
+            "Hold item and wait",
+            "Observe minecraft:glowing activation"
+          ],
+          "expectedResult": "minecraft:glowing activates correctly",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Blocks",
+      "tests": [
+        {
+          "category": "Blocks",
+          "name": "Aquamarine Ore Placement",
+          "command": "/give @p oceanicriches:aquamarine_ore",
+          "steps": [
+            "Run: /give @p oceanicriches:aquamarine_ore",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        }
+      ]
+    }
+  ],
+  "quickCommands": [
+    "/give @p oceanicriches:raw_aquamarine",
+    "/give @p oceanicriches:aquamarine_gem",
+    "/give @p oceanicriches:aquamarine_ingot",
+    "/give @p oceanicriches:aquamarine_pickaxe",
+    "/give @p oceanicriches:aquamarine_axe",
+    "/give @p oceanicriches:aquamarine_shovel",
+    "/give @p oceanicriches:aquamarine_sword",
+    "/give @p oceanicriches:aquamarine_hoe",
+    "/give @p oceanicriches:aquamarine_helmet",
+    "/give @p oceanicriches:aquamarine_chestplate",
+    "/give @p oceanicriches:aquamarine_leggings",
+    "/give @p oceanicriches:aquamarine_boots"
+  ]
+}

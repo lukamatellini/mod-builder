@@ -1,0 +1,1179 @@
+{
+  "modId": "oceanicriches",
+  "modName": "Oceanic Riches",
+  "generatedAt": "2025-12-27T17:48:38.170Z",
+  "mcVersion": "1.21.1",
+  "overallStatus": "passed",
+  "totalChecks": 75,
+  "passedChecks": 67,
+  "failedChecks": 0,
+  "warningChecks": 0,
+  "skippedChecks": 8,
+  "categories": [
+    {
+      "category": "items",
+      "total": 37,
+      "passed": 37,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "items_existence",
+          "name": "Items Defined",
+          "category": "items",
+          "status": "passed",
+          "message": "12 items defined"
+        },
+        {
+          "id": "item_model_raw_aquamarine",
+          "name": "Item Model: Raw Aquamarine",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Raw Aquamarine validated successfully"
+        },
+        {
+          "id": "item_texture_raw_aquamarine",
+          "name": "Item Texture: Raw Aquamarine",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Raw Aquamarine validated successfully"
+        },
+        {
+          "id": "item_model_aquamarine_gem",
+          "name": "Item Model: Aquamarine Gem",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Aquamarine Gem validated successfully"
+        },
+        {
+          "id": "item_texture_aquamarine_gem",
+          "name": "Item Texture: Aquamarine Gem",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Aquamarine Gem validated successfully"
+        },
+        {
+          "id": "item_model_aquamarine_ingot",
+          "name": "Item Model: Aquamarine Ingot",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Aquamarine Ingot validated successfully"
+        },
+        {
+          "id": "item_texture_aquamarine_ingot",
+          "name": "Item Texture: Aquamarine Ingot",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Aquamarine Ingot validated successfully"
+        },
+        {
+          "id": "item_model_aquamarine_pickaxe",
+          "name": "Item Model: Aquamarine Pickaxe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Aquamarine Pickaxe validated successfully"
+        },
+        {
+          "id": "item_texture_aquamarine_pickaxe",
+          "name": "Item Texture: Aquamarine Pickaxe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Aquamarine Pickaxe validated successfully"
+        },
+        {
+          "id": "item_model_aquamarine_axe",
+          "name": "Item Model: Aquamarine Axe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Aquamarine Axe validated successfully"
+        },
+        {
+          "id": "item_texture_aquamarine_axe",
+          "name": "Item Texture: Aquamarine Axe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Aquamarine Axe validated successfully"
+        },
+        {
+          "id": "item_model_aquamarine_shovel",
+          "name": "Item Model: Aquamarine Shovel",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Aquamarine Shovel validated successfully"
+        },
+        {
+          "id": "item_texture_aquamarine_shovel",
+          "name": "Item Texture: Aquamarine Shovel",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Aquamarine Shovel validated successfully"
+        },
+        {
+          "id": "item_model_aquamarine_sword",
+          "name": "Item Model: Aquamarine Sword",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Aquamarine Sword validated successfully"
+        },
+        {
+          "id": "item_texture_aquamarine_sword",
+          "name": "Item Texture: Aquamarine Sword",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Aquamarine Sword validated successfully"
+        },
+        {
+          "id": "item_model_aquamarine_hoe",
+          "name": "Item Model: Aquamarine Hoe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Aquamarine Hoe validated successfully"
+        },
+        {
+          "id": "item_texture_aquamarine_hoe",
+          "name": "Item Texture: Aquamarine Hoe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Aquamarine Hoe validated successfully"
+        },
+        {
+          "id": "item_model_aquamarine_helmet",
+          "name": "Item Model: Aquamarine Helmet",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Aquamarine Helmet validated successfully"
+        },
+        {
+          "id": "item_texture_aquamarine_helmet",
+          "name": "Item Texture: Aquamarine Helmet",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Aquamarine Helmet validated successfully"
+        },
+        {
+          "id": "item_model_aquamarine_chestplate",
+          "name": "Item Model: Aquamarine Chestplate",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Aquamarine Chestplate validated successfully"
+        },
+        {
+          "id": "item_texture_aquamarine_chestplate",
+          "name": "Item Texture: Aquamarine Chestplate",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Aquamarine Chestplate validated successfully"
+        },
+        {
+          "id": "item_model_aquamarine_leggings",
+          "name": "Item Model: Aquamarine Leggings",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Aquamarine Leggings validated successfully"
+        },
+        {
+          "id": "item_texture_aquamarine_leggings",
+          "name": "Item Texture: Aquamarine Leggings",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Aquamarine Leggings validated successfully"
+        },
+        {
+          "id": "item_model_aquamarine_boots",
+          "name": "Item Model: Aquamarine Boots",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Aquamarine Boots validated successfully"
+        },
+        {
+          "id": "item_texture_aquamarine_boots",
+          "name": "Item Texture: Aquamarine Boots",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Aquamarine Boots validated successfully"
+        },
+        {
+          "id": "item_lang_raw_aquamarine",
+          "name": "Item Localization: Raw Aquamarine",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Raw Aquamarine validated successfully"
+        },
+        {
+          "id": "item_lang_aquamarine_gem",
+          "name": "Item Localization: Aquamarine Gem",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Aquamarine Gem validated successfully"
+        },
+        {
+          "id": "item_lang_aquamarine_ingot",
+          "name": "Item Localization: Aquamarine Ingot",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Aquamarine Ingot validated successfully"
+        },
+        {
+          "id": "item_lang_aquamarine_pickaxe",
+          "name": "Item Localization: Aquamarine Pickaxe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Aquamarine Pickaxe validated successfully"
+        },
+        {
+          "id": "item_lang_aquamarine_axe",
+          "name": "Item Localization: Aquamarine Axe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Aquamarine Axe validated successfully"
+        },
+        {
+          "id": "item_lang_aquamarine_shovel",
+          "name": "Item Localization: Aquamarine Shovel",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Aquamarine Shovel validated successfully"
+        },
+        {
+          "id": "item_lang_aquamarine_sword",
+          "name": "Item Localization: Aquamarine Sword",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Aquamarine Sword validated successfully"
+        },
+        {
+          "id": "item_lang_aquamarine_hoe",
+          "name": "Item Localization: Aquamarine Hoe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Aquamarine Hoe validated successfully"
+        },
+        {
+          "id": "item_lang_aquamarine_helmet",
+          "name": "Item Localization: Aquamarine Helmet",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Aquamarine Helmet validated successfully"
+        },
+        {
+          "id": "item_lang_aquamarine_chestplate",
+          "name": "Item Localization: Aquamarine Chestplate",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Aquamarine Chestplate validated successfully"
+        },
+        {
+          "id": "item_lang_aquamarine_leggings",
+          "name": "Item Localization: Aquamarine Leggings",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Aquamarine Leggings validated successfully"
+        },
+        {
+          "id": "item_lang_aquamarine_boots",
+          "name": "Item Localization: Aquamarine Boots",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Aquamarine Boots validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "blocks",
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "blocks_existence",
+          "name": "Blocks Defined",
+          "category": "blocks",
+          "status": "passed",
+          "message": "1 blocks defined"
+        },
+        {
+          "id": "block_state_aquamarine_ore",
+          "name": "Blockstate: Aquamarine Ore",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Aquamarine Ore validated successfully"
+        },
+        {
+          "id": "block_loot_aquamarine_ore",
+          "name": "Block Loot: Aquamarine Ore",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Loot: Aquamarine Ore validated successfully"
+        },
+        {
+          "id": "block_item_aquamarine_ore",
+          "name": "Block Item Model: Aquamarine Ore",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Aquamarine Ore validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "recipes",
+      "total": 26,
+      "passed": 26,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "recipes_existence",
+          "name": "Recipes Defined",
+          "category": "recipes",
+          "status": "passed",
+          "message": "12 recipes expected"
+        },
+        {
+          "id": "recipe_files",
+          "name": "Recipe Files Generated",
+          "category": "recipes",
+          "status": "passed",
+          "message": "12 recipe files generated"
+        },
+        {
+          "id": "recipe_output_raw_aquamarine",
+          "name": "Recipe Output: raw_aquamarine",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: raw_aquamarine validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_raw_aquamarine",
+          "name": "Recipe Ingredients: raw_aquamarine",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: raw_aquamarine validated successfully"
+        },
+        {
+          "id": "recipe_output_aquamarine_gem",
+          "name": "Recipe Output: aquamarine_gem",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: aquamarine_gem validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_aquamarine_gem",
+          "name": "Recipe Ingredients: aquamarine_gem",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: aquamarine_gem validated successfully"
+        },
+        {
+          "id": "recipe_output_aquamarine_ingot",
+          "name": "Recipe Output: aquamarine_ingot",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: aquamarine_ingot validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_aquamarine_ingot",
+          "name": "Recipe Ingredients: aquamarine_ingot",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: aquamarine_ingot validated successfully"
+        },
+        {
+          "id": "recipe_output_aquamarine_pickaxe",
+          "name": "Recipe Output: aquamarine_pickaxe",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: aquamarine_pickaxe validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_aquamarine_pickaxe",
+          "name": "Recipe Ingredients: aquamarine_pickaxe",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: aquamarine_pickaxe validated successfully"
+        },
+        {
+          "id": "recipe_output_aquamarine_axe",
+          "name": "Recipe Output: aquamarine_axe",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: aquamarine_axe validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_aquamarine_axe",
+          "name": "Recipe Ingredients: aquamarine_axe",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: aquamarine_axe validated successfully"
+        },
+        {
+          "id": "recipe_output_aquamarine_shovel",
+          "name": "Recipe Output: aquamarine_shovel",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: aquamarine_shovel validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_aquamarine_shovel",
+          "name": "Recipe Ingredients: aquamarine_shovel",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: aquamarine_shovel validated successfully"
+        },
+        {
+          "id": "recipe_output_aquamarine_sword",
+          "name": "Recipe Output: aquamarine_sword",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: aquamarine_sword validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_aquamarine_sword",
+          "name": "Recipe Ingredients: aquamarine_sword",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: aquamarine_sword validated successfully"
+        },
+        {
+          "id": "recipe_output_aquamarine_hoe",
+          "name": "Recipe Output: aquamarine_hoe",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: aquamarine_hoe validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_aquamarine_hoe",
+          "name": "Recipe Ingredients: aquamarine_hoe",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: aquamarine_hoe validated successfully"
+        },
+        {
+          "id": "recipe_output_aquamarine_helmet",
+          "name": "Recipe Output: aquamarine_helmet",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: aquamarine_helmet validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_aquamarine_helmet",
+          "name": "Recipe Ingredients: aquamarine_helmet",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: aquamarine_helmet validated successfully"
+        },
+        {
+          "id": "recipe_output_aquamarine_chestplate",
+          "name": "Recipe Output: aquamarine_chestplate",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: aquamarine_chestplate validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_aquamarine_chestplate",
+          "name": "Recipe Ingredients: aquamarine_chestplate",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: aquamarine_chestplate validated successfully"
+        },
+        {
+          "id": "recipe_output_aquamarine_leggings",
+          "name": "Recipe Output: aquamarine_leggings",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: aquamarine_leggings validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_aquamarine_leggings",
+          "name": "Recipe Ingredients: aquamarine_leggings",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: aquamarine_leggings validated successfully"
+        },
+        {
+          "id": "recipe_output_aquamarine_boots",
+          "name": "Recipe Output: aquamarine_boots",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: aquamarine_boots validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_aquamarine_boots",
+          "name": "Recipe Ingredients: aquamarine_boots",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: aquamarine_boots validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "mobs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "mobs_existence",
+          "name": "Mobs Defined",
+          "category": "mobs",
+          "status": "skipped",
+          "message": "No mobs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "npcs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "npcs_existence",
+          "name": "NPCs Defined",
+          "category": "npcs",
+          "status": "skipped",
+          "message": "No NPCs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "quests",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "quests_existence",
+          "name": "Quests Defined",
+          "category": "quests",
+          "status": "skipped",
+          "message": "No quests defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "advancements",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "advancements_existence",
+          "name": "Advancements Defined",
+          "category": "advancements",
+          "status": "skipped",
+          "message": "No advancements generated"
+        }
+      ]
+    },
+    {
+      "category": "dimensions",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "dimensions_existence",
+          "name": "Dimensions Defined",
+          "category": "dimensions",
+          "status": "skipped",
+          "message": "No dimensions defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "biomes",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "biomes_existence",
+          "name": "Biomes Defined",
+          "category": "biomes",
+          "status": "skipped",
+          "message": "No biomes defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "structures",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "structures_existence",
+          "name": "Structures Defined",
+          "category": "structures",
+          "status": "skipped",
+          "message": "No structures defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "events",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "events_existence",
+          "name": "Events Defined",
+          "category": "events",
+          "status": "skipped",
+          "message": "No events defined in spec"
+        }
+      ]
+    }
+  ],
+  "criticalFailures": [],
+  "allChecks": [
+    {
+      "id": "items_existence",
+      "name": "Items Defined",
+      "category": "items",
+      "status": "passed",
+      "message": "12 items defined"
+    },
+    {
+      "id": "item_model_raw_aquamarine",
+      "name": "Item Model: Raw Aquamarine",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Raw Aquamarine validated successfully"
+    },
+    {
+      "id": "item_texture_raw_aquamarine",
+      "name": "Item Texture: Raw Aquamarine",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Raw Aquamarine validated successfully"
+    },
+    {
+      "id": "item_model_aquamarine_gem",
+      "name": "Item Model: Aquamarine Gem",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Aquamarine Gem validated successfully"
+    },
+    {
+      "id": "item_texture_aquamarine_gem",
+      "name": "Item Texture: Aquamarine Gem",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Aquamarine Gem validated successfully"
+    },
+    {
+      "id": "item_model_aquamarine_ingot",
+      "name": "Item Model: Aquamarine Ingot",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Aquamarine Ingot validated successfully"
+    },
+    {
+      "id": "item_texture_aquamarine_ingot",
+      "name": "Item Texture: Aquamarine Ingot",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Aquamarine Ingot validated successfully"
+    },
+    {
+      "id": "item_model_aquamarine_pickaxe",
+      "name": "Item Model: Aquamarine Pickaxe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Aquamarine Pickaxe validated successfully"
+    },
+    {
+      "id": "item_texture_aquamarine_pickaxe",
+      "name": "Item Texture: Aquamarine Pickaxe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Aquamarine Pickaxe validated successfully"
+    },
+    {
+      "id": "item_model_aquamarine_axe",
+      "name": "Item Model: Aquamarine Axe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Aquamarine Axe validated successfully"
+    },
+    {
+      "id": "item_texture_aquamarine_axe",
+      "name": "Item Texture: Aquamarine Axe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Aquamarine Axe validated successfully"
+    },
+    {
+      "id": "item_model_aquamarine_shovel",
+      "name": "Item Model: Aquamarine Shovel",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Aquamarine Shovel validated successfully"
+    },
+    {
+      "id": "item_texture_aquamarine_shovel",
+      "name": "Item Texture: Aquamarine Shovel",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Aquamarine Shovel validated successfully"
+    },
+    {
+      "id": "item_model_aquamarine_sword",
+      "name": "Item Model: Aquamarine Sword",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Aquamarine Sword validated successfully"
+    },
+    {
+      "id": "item_texture_aquamarine_sword",
+      "name": "Item Texture: Aquamarine Sword",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Aquamarine Sword validated successfully"
+    },
+    {
+      "id": "item_model_aquamarine_hoe",
+      "name": "Item Model: Aquamarine Hoe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Aquamarine Hoe validated successfully"
+    },
+    {
+      "id": "item_texture_aquamarine_hoe",
+      "name": "Item Texture: Aquamarine Hoe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Aquamarine Hoe validated successfully"
+    },
+    {
+      "id": "item_model_aquamarine_helmet",
+      "name": "Item Model: Aquamarine Helmet",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Aquamarine Helmet validated successfully"
+    },
+    {
+      "id": "item_texture_aquamarine_helmet",
+      "name": "Item Texture: Aquamarine Helmet",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Aquamarine Helmet validated successfully"
+    },
+    {
+      "id": "item_model_aquamarine_chestplate",
+      "name": "Item Model: Aquamarine Chestplate",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Aquamarine Chestplate validated successfully"
+    },
+    {
+      "id": "item_texture_aquamarine_chestplate",
+      "name": "Item Texture: Aquamarine Chestplate",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Aquamarine Chestplate validated successfully"
+    },
+    {
+      "id": "item_model_aquamarine_leggings",
+      "name": "Item Model: Aquamarine Leggings",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Aquamarine Leggings validated successfully"
+    },
+    {
+      "id": "item_texture_aquamarine_leggings",
+      "name": "Item Texture: Aquamarine Leggings",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Aquamarine Leggings validated successfully"
+    },
+    {
+      "id": "item_model_aquamarine_boots",
+      "name": "Item Model: Aquamarine Boots",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Aquamarine Boots validated successfully"
+    },
+    {
+      "id": "item_texture_aquamarine_boots",
+      "name": "Item Texture: Aquamarine Boots",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Aquamarine Boots validated successfully"
+    },
+    {
+      "id": "item_lang_raw_aquamarine",
+      "name": "Item Localization: Raw Aquamarine",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Raw Aquamarine validated successfully"
+    },
+    {
+      "id": "item_lang_aquamarine_gem",
+      "name": "Item Localization: Aquamarine Gem",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Aquamarine Gem validated successfully"
+    },
+    {
+      "id": "item_lang_aquamarine_ingot",
+      "name": "Item Localization: Aquamarine Ingot",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Aquamarine Ingot validated successfully"
+    },
+    {
+      "id": "item_lang_aquamarine_pickaxe",
+      "name": "Item Localization: Aquamarine Pickaxe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Aquamarine Pickaxe validated successfully"
+    },
+    {
+      "id": "item_lang_aquamarine_axe",
+      "name": "Item Localization: Aquamarine Axe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Aquamarine Axe validated successfully"
+    },
+    {
+      "id": "item_lang_aquamarine_shovel",
+      "name": "Item Localization: Aquamarine Shovel",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Aquamarine Shovel validated successfully"
+    },
+    {
+      "id": "item_lang_aquamarine_sword",
+      "name": "Item Localization: Aquamarine Sword",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Aquamarine Sword validated successfully"
+    },
+    {
+      "id": "item_lang_aquamarine_hoe",
+      "name": "Item Localization: Aquamarine Hoe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Aquamarine Hoe validated successfully"
+    },
+    {
+      "id": "item_lang_aquamarine_helmet",
+      "name": "Item Localization: Aquamarine Helmet",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Aquamarine Helmet validated successfully"
+    },
+    {
+      "id": "item_lang_aquamarine_chestplate",
+      "name": "Item Localization: Aquamarine Chestplate",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Aquamarine Chestplate validated successfully"
+    },
+    {
+      "id": "item_lang_aquamarine_leggings",
+      "name": "Item Localization: Aquamarine Leggings",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Aquamarine Leggings validated successfully"
+    },
+    {
+      "id": "item_lang_aquamarine_boots",
+      "name": "Item Localization: Aquamarine Boots",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Aquamarine Boots validated successfully"
+    },
+    {
+      "id": "blocks_existence",
+      "name": "Blocks Defined",
+      "category": "blocks",
+      "status": "passed",
+      "message": "1 blocks defined"
+    },
+    {
+      "id": "block_state_aquamarine_ore",
+      "name": "Blockstate: Aquamarine Ore",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Aquamarine Ore validated successfully"
+    },
+    {
+      "id": "block_loot_aquamarine_ore",
+      "name": "Block Loot: Aquamarine Ore",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Loot: Aquamarine Ore validated successfully"
+    },
+    {
+      "id": "block_item_aquamarine_ore",
+      "name": "Block Item Model: Aquamarine Ore",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Aquamarine Ore validated successfully"
+    },
+    {
+      "id": "recipes_existence",
+      "name": "Recipes Defined",
+      "category": "recipes",
+      "status": "passed",
+      "message": "12 recipes expected"
+    },
+    {
+      "id": "recipe_files",
+      "name": "Recipe Files Generated",
+      "category": "recipes",
+      "status": "passed",
+      "message": "12 recipe files generated"
+    },
+    {
+      "id": "recipe_output_raw_aquamarine",
+      "name": "Recipe Output: raw_aquamarine",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: raw_aquamarine validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_raw_aquamarine",
+      "name": "Recipe Ingredients: raw_aquamarine",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: raw_aquamarine validated successfully"
+    },
+    {
+      "id": "recipe_output_aquamarine_gem",
+      "name": "Recipe Output: aquamarine_gem",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: aquamarine_gem validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_aquamarine_gem",
+      "name": "Recipe Ingredients: aquamarine_gem",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: aquamarine_gem validated successfully"
+    },
+    {
+      "id": "recipe_output_aquamarine_ingot",
+      "name": "Recipe Output: aquamarine_ingot",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: aquamarine_ingot validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_aquamarine_ingot",
+      "name": "Recipe Ingredients: aquamarine_ingot",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: aquamarine_ingot validated successfully"
+    },
+    {
+      "id": "recipe_output_aquamarine_pickaxe",
+      "name": "Recipe Output: aquamarine_pickaxe",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: aquamarine_pickaxe validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_aquamarine_pickaxe",
+      "name": "Recipe Ingredients: aquamarine_pickaxe",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: aquamarine_pickaxe validated successfully"
+    },
+    {
+      "id": "recipe_output_aquamarine_axe",
+      "name": "Recipe Output: aquamarine_axe",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: aquamarine_axe validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_aquamarine_axe",
+      "name": "Recipe Ingredients: aquamarine_axe",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: aquamarine_axe validated successfully"
+    },
+    {
+      "id": "recipe_output_aquamarine_shovel",
+      "name": "Recipe Output: aquamarine_shovel",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: aquamarine_shovel validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_aquamarine_shovel",
+      "name": "Recipe Ingredients: aquamarine_shovel",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: aquamarine_shovel validated successfully"
+    },
+    {
+      "id": "recipe_output_aquamarine_sword",
+      "name": "Recipe Output: aquamarine_sword",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: aquamarine_sword validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_aquamarine_sword",
+      "name": "Recipe Ingredients: aquamarine_sword",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: aquamarine_sword validated successfully"
+    },
+    {
+      "id": "recipe_output_aquamarine_hoe",
+      "name": "Recipe Output: aquamarine_hoe",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: aquamarine_hoe validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_aquamarine_hoe",
+      "name": "Recipe Ingredients: aquamarine_hoe",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: aquamarine_hoe validated successfully"
+    },
+    {
+      "id": "recipe_output_aquamarine_helmet",
+      "name": "Recipe Output: aquamarine_helmet",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: aquamarine_helmet validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_aquamarine_helmet",
+      "name": "Recipe Ingredients: aquamarine_helmet",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: aquamarine_helmet validated successfully"
+    },
+    {
+      "id": "recipe_output_aquamarine_chestplate",
+      "name": "Recipe Output: aquamarine_chestplate",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: aquamarine_chestplate validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_aquamarine_chestplate",
+      "name": "Recipe Ingredients: aquamarine_chestplate",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: aquamarine_chestplate validated successfully"
+    },
+    {
+      "id": "recipe_output_aquamarine_leggings",
+      "name": "Recipe Output: aquamarine_leggings",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: aquamarine_leggings validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_aquamarine_leggings",
+      "name": "Recipe Ingredients: aquamarine_leggings",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: aquamarine_leggings validated successfully"
+    },
+    {
+      "id": "recipe_output_aquamarine_boots",
+      "name": "Recipe Output: aquamarine_boots",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: aquamarine_boots validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_aquamarine_boots",
+      "name": "Recipe Ingredients: aquamarine_boots",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: aquamarine_boots validated successfully"
+    },
+    {
+      "id": "mobs_existence",
+      "name": "Mobs Defined",
+      "category": "mobs",
+      "status": "skipped",
+      "message": "No mobs defined in spec"
+    },
+    {
+      "id": "npcs_existence",
+      "name": "NPCs Defined",
+      "category": "npcs",
+      "status": "skipped",
+      "message": "No NPCs defined in spec"
+    },
+    {
+      "id": "quests_existence",
+      "name": "Quests Defined",
+      "category": "quests",
+      "status": "skipped",
+      "message": "No quests defined in spec"
+    },
+    {
+      "id": "advancements_existence",
+      "name": "Advancements Defined",
+      "category": "advancements",
+      "status": "skipped",
+      "message": "No advancements generated"
+    },
+    {
+      "id": "dimensions_existence",
+      "name": "Dimensions Defined",
+      "category": "dimensions",
+      "status": "skipped",
+      "message": "No dimensions defined in spec"
+    },
+    {
+      "id": "biomes_existence",
+      "name": "Biomes Defined",
+      "category": "biomes",
+      "status": "skipped",
+      "message": "No biomes defined in spec"
+    },
+    {
+      "id": "structures_existence",
+      "name": "Structures Defined",
+      "category": "structures",
+      "status": "skipped",
+      "message": "No structures defined in spec"
+    },
+    {
+      "id": "events_existence",
+      "name": "Events Defined",
+      "category": "events",
+      "status": "skipped",
+      "message": "No events defined in spec"
+    }
+  ],
+  "summary": "# Feature Audit Report: Oceanic Riches\nGenerated: 2025-12-27T17:48:38.170Z\nMinecraft Version: 1.21.1\n\n## ✅ ALL CHECKS PASSED\nTotal: 67 passed, 8 skipped\n\n## Category Breakdown\n\n✅ **items**: 37/37 passed\n✅ **blocks**: 4/4 passed\n✅ **recipes**: 26/26 passed\n✅ **mobs**: 0/1 passed\n✅ **npcs**: 0/1 passed\n✅ **quests**: 0/1 passed\n✅ **advancements**: 0/1 passed\n✅ **dimensions**: 0/1 passed\n✅ **biomes**: 0/1 passed\n✅ **structures**: 0/1 passed\n✅ **events**: 0/1 passed",
+  "suggestions": []
+}

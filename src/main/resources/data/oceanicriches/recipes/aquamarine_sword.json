@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " M ",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "M": {
+      "item": "oceanicriches:aquamarine_ingot"
+    },
+    "S": {
+      "item": "minecraft:coal"
+    }
+  },
+  "result": {
+    "id": "oceanicriches:aquamarine_sword",
+    "count": 1
+  }
+}
