@@ -1,0 +1,96 @@
+{
+  "summary": {
+    "totalRecipesScanned": 1,
+    "totalRepairs": 6,
+    "autoCreatedItems": 0,
+    "fallbacksUsed": 6,
+    "externalRemaps": 0,
+    "unresolvedReferences": 0,
+    "success": true
+  },
+  "repairs": [
+    {
+      "recipe": "lightning_wand (spec)",
+      "type": "fallback",
+      "before": "minecraft:diamond",
+      "after": "minecraft:glowstone_dust",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "lightning_wand (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:glowstone_dust",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "lightning_wand (spec)",
+      "type": "fallback",
+      "before": "minecraft:diamond",
+      "after": "minecraft:glowstone_dust",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "lightning_wand (spec)",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:glowstone_dust",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "lightning_wand",
+      "type": "fallback",
+      "before": "minecraft:diamond",
+      "after": "minecraft:glowstone_dust",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "lightning_wand",
+      "type": "fallback",
+      "before": "minecraft:stick",
+      "after": "minecraft:glowstone_dust",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipe": "lightning_wand",
+      "type": "auto_create",
+      "before": "magicwand:lightning_wand",
+      "after": "magicwand:lightning_wand",
+      "reason": "Auto-created missing mod item: Lightning Wand"
+    }
+  ],
+  "autoCreatedItems": [],
+  "fallbacks": [
+    {
+      "recipe": "lightning_wand (spec)",
+      "original": "minecraft:diamond",
+      "fallback": "minecraft:glowstone_dust"
+    },
+    {
+      "recipe": "lightning_wand (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:glowstone_dust"
+    },
+    {
+      "recipe": "lightning_wand (spec)",
+      "original": "minecraft:diamond",
+      "fallback": "minecraft:glowstone_dust"
+    },
+    {
+      "recipe": "lightning_wand (spec)",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:glowstone_dust"
+    },
+    {
+      "recipe": "lightning_wand",
+      "original": "minecraft:diamond",
+      "fallback": "minecraft:glowstone_dust"
+    },
+    {
+      "recipe": "lightning_wand",
+      "original": "minecraft:stick",
+      "fallback": "minecraft:glowstone_dust"
+    }
+  ],
+  "externalRemaps": []
+}
