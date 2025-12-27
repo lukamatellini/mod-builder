@@ -1,0 +1,82 @@
+{
+  "version": "1.0",
+  "timestamp": "2025-12-27T21:00:48.672Z",
+  "pipeline": "generate-mod",
+  "modId": "antigravitygenerator",
+  "mcVersion": "1.21.1",
+  "registryAutoCreations": [],
+  "javaImportRepairs": [],
+  "javaSymbolRepairs": [],
+  "versionParityRepairs": [],
+  "textureModelAutoGens": [],
+  "idResolutionRepairs": [],
+  "recipeRepairs": [
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:ender_pearl",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:redstone",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "antigravitygenerator:gravity_core",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Gravity Core"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "antigravitygenerator:gravity_core",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Gravity Core"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "antigravitygenerator:anti_gravity_generator",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Anti Gravity Generator"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:ender_pearl",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:redstone",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "antigravitygenerator:gravity_core",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Gravity Core"
+    }
+  ],
+  "omissions": [],
+  "summary": {
+    "totalRepairs": 6,
+    "totalAutoCreations": 0,
+    "totalOmissions": 0,
+    "warnings": []
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "key": {
+    "M": {
+      "item": "antigravitygenerator:gravity_core"
+    }
+  },
+  "result": {
+    "id": "antigravitygenerator:anti_gravity_generator",
+    "count": 1
+  }
+}

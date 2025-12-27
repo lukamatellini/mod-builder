@@ -1,0 +1,437 @@
+{
+  "modId": "antigravitygenerator",
+  "modName": "Anti-Gravity Generator",
+  "generatedAt": "2025-12-27T21:00:48.738Z",
+  "mcVersion": "1.21.1",
+  "overallStatus": "passed",
+  "totalChecks": 22,
+  "passedChecks": 14,
+  "failedChecks": 0,
+  "warningChecks": 0,
+  "skippedChecks": 8,
+  "categories": [
+    {
+      "category": "items",
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "items_existence",
+          "name": "Items Defined",
+          "category": "items",
+          "status": "passed",
+          "message": "1 items defined"
+        },
+        {
+          "id": "item_model_gravity_core",
+          "name": "Item Model: Gravity Core",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Gravity Core validated successfully"
+        },
+        {
+          "id": "item_texture_gravity_core",
+          "name": "Item Texture: Gravity Core",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Gravity Core validated successfully"
+        },
+        {
+          "id": "item_lang_gravity_core",
+          "name": "Item Localization: Gravity Core",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Gravity Core validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "blocks",
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "blocks_existence",
+          "name": "Blocks Defined",
+          "category": "blocks",
+          "status": "passed",
+          "message": "1 blocks defined"
+        },
+        {
+          "id": "block_state_anti_gravity_generator",
+          "name": "Blockstate: Anti-Gravity Generator",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Anti-Gravity Generator validated successfully"
+        },
+        {
+          "id": "block_loot_anti_gravity_generator",
+          "name": "Block Loot: Anti-Gravity Generator",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Loot: Anti-Gravity Generator validated successfully"
+        },
+        {
+          "id": "block_item_anti_gravity_generator",
+          "name": "Block Item Model: Anti-Gravity Generator",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Anti-Gravity Generator validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "recipes",
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "recipes_existence",
+          "name": "Recipes Defined",
+          "category": "recipes",
+          "status": "passed",
+          "message": "1 recipes expected"
+        },
+        {
+          "id": "recipe_files",
+          "name": "Recipe Files Generated",
+          "category": "recipes",
+          "status": "passed",
+          "message": "2 recipe files generated"
+        },
+        {
+          "id": "recipe_output_anti_gravity_generator",
+          "name": "Recipe Output: anti_gravity_generator",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: anti_gravity_generator validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_anti_gravity_generator",
+          "name": "Recipe Ingredients: anti_gravity_generator",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: anti_gravity_generator validated successfully"
+        },
+        {
+          "id": "recipe_output_gravity_core",
+          "name": "Recipe Output: gravity_core",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: gravity_core validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_gravity_core",
+          "name": "Recipe Ingredients: gravity_core",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: gravity_core validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "mobs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "mobs_existence",
+          "name": "Mobs Defined",
+          "category": "mobs",
+          "status": "skipped",
+          "message": "No mobs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "npcs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "npcs_existence",
+          "name": "NPCs Defined",
+          "category": "npcs",
+          "status": "skipped",
+          "message": "No NPCs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "quests",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "quests_existence",
+          "name": "Quests Defined",
+          "category": "quests",
+          "status": "skipped",
+          "message": "No quests defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "advancements",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "advancements_existence",
+          "name": "Advancements Defined",
+          "category": "advancements",
+          "status": "skipped",
+          "message": "No advancements generated"
+        }
+      ]
+    },
+    {
+      "category": "dimensions",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "dimensions_existence",
+          "name": "Dimensions Defined",
+          "category": "dimensions",
+          "status": "skipped",
+          "message": "No dimensions defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "biomes",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "biomes_existence",
+          "name": "Biomes Defined",
+          "category": "biomes",
+          "status": "skipped",
+          "message": "No biomes defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "structures",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "structures_existence",
+          "name": "Structures Defined",
+          "category": "structures",
+          "status": "skipped",
+          "message": "No structures defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "events",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "events_existence",
+          "name": "Events Defined",
+          "category": "events",
+          "status": "skipped",
+          "message": "No events defined in spec"
+        }
+      ]
+    }
+  ],
+  "criticalFailures": [],
+  "allChecks": [
+    {
+      "id": "items_existence",
+      "name": "Items Defined",
+      "category": "items",
+      "status": "passed",
+      "message": "1 items defined"
+    },
+    {
+      "id": "item_model_gravity_core",
+      "name": "Item Model: Gravity Core",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Gravity Core validated successfully"
+    },
+    {
+      "id": "item_texture_gravity_core",
+      "name": "Item Texture: Gravity Core",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Gravity Core validated successfully"
+    },
+    {
+      "id": "item_lang_gravity_core",
+      "name": "Item Localization: Gravity Core",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Gravity Core validated successfully"
+    },
+    {
+      "id": "blocks_existence",
+      "name": "Blocks Defined",
+      "category": "blocks",
+      "status": "passed",
+      "message": "1 blocks defined"
+    },
+    {
+      "id": "block_state_anti_gravity_generator",
+      "name": "Blockstate: Anti-Gravity Generator",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Anti-Gravity Generator validated successfully"
+    },
+    {
+      "id": "block_loot_anti_gravity_generator",
+      "name": "Block Loot: Anti-Gravity Generator",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Loot: Anti-Gravity Generator validated successfully"
+    },
+    {
+      "id": "block_item_anti_gravity_generator",
+      "name": "Block Item Model: Anti-Gravity Generator",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Anti-Gravity Generator validated successfully"
+    },
+    {
+      "id": "recipes_existence",
+      "name": "Recipes Defined",
+      "category": "recipes",
+      "status": "passed",
+      "message": "1 recipes expected"
+    },
+    {
+      "id": "recipe_files",
+      "name": "Recipe Files Generated",
+      "category": "recipes",
+      "status": "passed",
+      "message": "2 recipe files generated"
+    },
+    {
+      "id": "recipe_output_anti_gravity_generator",
+      "name": "Recipe Output: anti_gravity_generator",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: anti_gravity_generator validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_anti_gravity_generator",
+      "name": "Recipe Ingredients: anti_gravity_generator",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: anti_gravity_generator validated successfully"
+    },
+    {
+      "id": "recipe_output_gravity_core",
+      "name": "Recipe Output: gravity_core",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: gravity_core validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_gravity_core",
+      "name": "Recipe Ingredients: gravity_core",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: gravity_core validated successfully"
+    },
+    {
+      "id": "mobs_existence",
+      "name": "Mobs Defined",
+      "category": "mobs",
+      "status": "skipped",
+      "message": "No mobs defined in spec"
+    },
+    {
+      "id": "npcs_existence",
+      "name": "NPCs Defined",
+      "category": "npcs",
+      "status": "skipped",
+      "message": "No NPCs defined in spec"
+    },
+    {
+      "id": "quests_existence",
+      "name": "Quests Defined",
+      "category": "quests",
+      "status": "skipped",
+      "message": "No quests defined in spec"
+    },
+    {
+      "id": "advancements_existence",
+      "name": "Advancements Defined",
+      "category": "advancements",
+      "status": "skipped",
+      "message": "No advancements generated"
+    },
+    {
+      "id": "dimensions_existence",
+      "name": "Dimensions Defined",
+      "category": "dimensions",
+      "status": "skipped",
+      "message": "No dimensions defined in spec"
+    },
+    {
+      "id": "biomes_existence",
+      "name": "Biomes Defined",
+      "category": "biomes",
+      "status": "skipped",
+      "message": "No biomes defined in spec"
+    },
+    {
+      "id": "structures_existence",
+      "name": "Structures Defined",
+      "category": "structures",
+      "status": "skipped",
+      "message": "No structures defined in spec"
+    },
+    {
+      "id": "events_existence",
+      "name": "Events Defined",
+      "category": "events",
+      "status": "skipped",
+      "message": "No events defined in spec"
+    }
+  ],
+  "summary": "# Feature Audit Report: Anti-Gravity Generator\nGenerated: 2025-12-27T21:00:48.738Z\nMinecraft Version: 1.21.1\n\n## ✅ ALL CHECKS PASSED\nTotal: 14 passed, 8 skipped\n\n## Category Breakdown\n\n✅ **items**: 4/4 passed\n✅ **blocks**: 4/4 passed\n✅ **recipes**: 6/6 passed\n✅ **mobs**: 0/1 passed\n✅ **npcs**: 0/1 passed\n✅ **quests**: 0/1 passed\n✅ **advancements**: 0/1 passed\n✅ **dimensions**: 0/1 passed\n✅ **biomes**: 0/1 passed\n✅ **structures**: 0/1 passed\n✅ **events**: 0/1 passed",
+  "suggestions": []
+}
