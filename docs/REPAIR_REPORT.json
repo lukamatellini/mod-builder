@@ -1,0 +1,274 @@
+{
+  "version": "1.0",
+  "timestamp": "2025-12-28T00:24:38.859Z",
+  "pipeline": "generate-mod",
+  "modId": "strengthi",
+  "mcVersion": "1.21.1",
+  "registryAutoCreations": [],
+  "javaImportRepairs": [],
+  "javaSymbolRepairs": [],
+  "versionParityRepairs": [],
+  "textureModelAutoGens": [],
+  "idResolutionRepairs": [],
+  "recipeRepairs": [
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_slice",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Slice"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_slice",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Slice"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_slice",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Slice"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_slice",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Slice"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_slice",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Slice"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_slice",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Slice"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_slice",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Slice"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:melted_cheese",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Melted Cheese"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_slice",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Slice"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:aged_cheese",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Aged Cheese"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_pickaxe",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Pickaxe"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_sword",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Sword"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_helmet",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Helmet"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_chestplate",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Chestplate"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_leggings",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Leggings"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "strengthi:cheese_boots",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Boots"
+    }
+  ],
+  "omissions": [],
+  "summary": {
+    "totalRepairs": 4,
+    "totalAutoCreations": 0,
+    "totalOmissions": 0,
+    "warnings": []
+  }
+}

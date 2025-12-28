@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MMM",
+    "MMM",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "item": "strengthi:cheese_block"
+    }
+  },
+  "result": {
+    "id": "strengthi:cheese_leggings",
+    "count": 1
+  }
+}

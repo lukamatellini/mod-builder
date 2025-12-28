@@ -1,0 +1,396 @@
+{
+  "modId": "strengthi",
+  "modName": "Strength I",
+  "generatedAt": "2025-12-28T00:24:38.924Z",
+  "mcVersion": "1.21.1",
+  "categories": {
+    "items": {
+      "name": "Items",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "cheese_slice: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cheese_slice: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "melted_cheese: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "melted_cheese: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "aged_cheese: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "aged_cheese: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "cheese_pickaxe: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cheese_pickaxe: Weapon stats",
+          "status": "passed",
+          "message": "Damage: 3, Durability: 100"
+        },
+        {
+          "name": "cheese_pickaxe: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "cheese_sword: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cheese_sword: Weapon stats",
+          "status": "passed",
+          "message": "Damage: 5, Durability: 120"
+        },
+        {
+          "name": "cheese_sword: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "cheese_helmet: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cheese_helmet: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "cheese_chestplate: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cheese_chestplate: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "cheese_leggings: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cheese_leggings: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "cheese_boots: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cheese_boots: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        }
+      ],
+      "notes": "9 items audited"
+    },
+    "blocks": {
+      "name": "Blocks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "cheese_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cheese_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "cheese_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        }
+      ],
+      "notes": "1 blocks audited"
+    },
+    "mobs": {
+      "name": "Mobs",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No mobs defined",
+          "status": "skipped",
+          "message": "No mobs to audit"
+        }
+      ]
+    },
+    "structures": {
+      "name": "Structures",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No structures defined",
+          "status": "skipped",
+          "message": "No structures to audit"
+        }
+      ]
+    },
+    "recipes": {
+      "name": "Recipes",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Items with recipes",
+          "status": "passed",
+          "message": "9/9 items have recipes"
+        },
+        {
+          "name": "cheese_slice: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "melted_cheese: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "aged_cheese: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "cheese_pickaxe: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "cheese_sword: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "cheese_helmet: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "cheese_chestplate: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "cheese_leggings: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "cheese_boots: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        }
+      ],
+      "notes": "10 recipes audited"
+    },
+    "lootTables": {
+      "name": "Loot Tables",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "cheese_block: Block loot",
+          "status": "warn",
+          "message": "No block loot table"
+        }
+      ],
+      "notes": "0 mob loot tables audited"
+    },
+    "textures": {
+      "name": "Textures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Texture files generated",
+          "status": "passed",
+          "message": "13 textures generated (expected at least 10)"
+        },
+        {
+          "name": "cheese_block.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "fallback.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "cheese_slice.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "melted_cheese.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "aged_cheese.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "cheese_pickaxe.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "cheese_sword.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "cheese_helmet.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "cheese_chestplate.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "cheese_leggings.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        }
+      ],
+      "notes": "13 texture files"
+    },
+    "quests": {
+      "name": "Quests",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No quests defined",
+          "status": "skipped",
+          "message": "No quests to audit"
+        }
+      ]
+    },
+    "advancements": {
+      "name": "Advancements",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Advancement files",
+          "status": "warn",
+          "message": "0 advancement files generated"
+        },
+        {
+          "name": "Root advancement",
+          "status": "warn",
+          "message": "No root advancement"
+        }
+      ],
+      "notes": "0 advancements"
+    },
+    "compilation": {
+      "name": "Compilation",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "build.gradle",
+          "status": "passed",
+          "message": "Build file exists"
+        },
+        {
+          "name": "fabric.mod.json",
+          "status": "passed",
+          "message": "Mod descriptor exists"
+        },
+        {
+          "name": "Minecraft version",
+          "status": "passed",
+          "message": "Correct MC version"
+        },
+        {
+          "name": "Java source files",
+          "status": "passed",
+          "message": "9 Java files generated"
+        }
+      ],
+      "notes": "Build configuration audit"
+    },
+    "apiSafety": {
+      "name": "API Safety",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "API safety scan",
+          "status": "passed",
+          "message": "No forbidden patterns detected"
+        }
+      ],
+      "notes": "MC 1.21.1 API compatibility check"
+    },
+    "vanillaFallbacks": {
+      "name": "Vanilla Fallbacks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Vanilla recipe ingredients",
+          "status": "passed",
+          "message": "2 vanilla ingredients used (intentional)",
+          "details": "cheese_pickaxe uses minecraft:stick, cheese_sword uses minecraft:stick"
+        }
+      ],
+      "notes": "Tracks use of vanilla content vs custom generation"
+    },
+    "inferredContent": {
+      "name": "Inferred Content",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Theme inference",
+          "status": "passed",
+          "message": "Inferred theme: neutral realistic",
+          "details": "Primary themes: stone, iron, Power level: starter"
+        },
+        {
+          "name": "Inferred item recipes",
+          "status": "passed",
+          "message": "9/9 items have recipes"
+        }
+      ],
+      "notes": "Tracks auto-completed and inferred content"
+    }
+  },
+  "summary": {
+    "totalChecks": 58,
+    "passed": 52,
+    "failed": 0,
+    "warnings": 3,
+    "skipped": 3,
+    "overallStatus": "warn"
+  }
+}

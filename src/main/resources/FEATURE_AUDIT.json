@@ -1,0 +1,1039 @@
+{
+  "modId": "strengthi",
+  "modName": "Strength I",
+  "generatedAt": "2025-12-28T00:24:38.974Z",
+  "mcVersion": "1.21.1",
+  "overallStatus": "warnings",
+  "totalChecks": 65,
+  "passedChecks": 56,
+  "failedChecks": 0,
+  "warningChecks": 1,
+  "skippedChecks": 8,
+  "categories": [
+    {
+      "category": "items",
+      "total": 31,
+      "passed": 31,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "items_existence",
+          "name": "Items Defined",
+          "category": "items",
+          "status": "passed",
+          "message": "10 items defined"
+        },
+        {
+          "id": "item_model_cheese_slice",
+          "name": "Item Model: Cheese Slice",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Cheese Slice validated successfully"
+        },
+        {
+          "id": "item_texture_cheese_slice",
+          "name": "Item Texture: Cheese Slice",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Cheese Slice validated successfully"
+        },
+        {
+          "id": "item_model_melted_cheese",
+          "name": "Item Model: Melted Cheese",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Melted Cheese validated successfully"
+        },
+        {
+          "id": "item_texture_melted_cheese",
+          "name": "Item Texture: Melted Cheese",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Melted Cheese validated successfully"
+        },
+        {
+          "id": "item_model_aged_cheese",
+          "name": "Item Model: Aged Cheese",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Aged Cheese validated successfully"
+        },
+        {
+          "id": "item_texture_aged_cheese",
+          "name": "Item Texture: Aged Cheese",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Aged Cheese validated successfully"
+        },
+        {
+          "id": "item_model_cheese_pickaxe",
+          "name": "Item Model: Cheese Pickaxe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Cheese Pickaxe validated successfully"
+        },
+        {
+          "id": "item_texture_cheese_pickaxe",
+          "name": "Item Texture: Cheese Pickaxe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Cheese Pickaxe validated successfully"
+        },
+        {
+          "id": "item_model_cheese_sword",
+          "name": "Item Model: Cheese Sword",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Cheese Sword validated successfully"
+        },
+        {
+          "id": "item_texture_cheese_sword",
+          "name": "Item Texture: Cheese Sword",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Cheese Sword validated successfully"
+        },
+        {
+          "id": "item_model_cheese_helmet",
+          "name": "Item Model: Cheese Helmet",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Cheese Helmet validated successfully"
+        },
+        {
+          "id": "item_texture_cheese_helmet",
+          "name": "Item Texture: Cheese Helmet",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Cheese Helmet validated successfully"
+        },
+        {
+          "id": "item_model_cheese_chestplate",
+          "name": "Item Model: Cheese Chestplate",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Cheese Chestplate validated successfully"
+        },
+        {
+          "id": "item_texture_cheese_chestplate",
+          "name": "Item Texture: Cheese Chestplate",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Cheese Chestplate validated successfully"
+        },
+        {
+          "id": "item_model_cheese_leggings",
+          "name": "Item Model: Cheese Leggings",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Cheese Leggings validated successfully"
+        },
+        {
+          "id": "item_texture_cheese_leggings",
+          "name": "Item Texture: Cheese Leggings",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Cheese Leggings validated successfully"
+        },
+        {
+          "id": "item_model_cheese_boots",
+          "name": "Item Model: Cheese Boots",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Cheese Boots validated successfully"
+        },
+        {
+          "id": "item_texture_cheese_boots",
+          "name": "Item Texture: Cheese Boots",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Cheese Boots validated successfully"
+        },
+        {
+          "id": "item_model_cheese_block",
+          "name": "Item Model: Cheese Block",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Cheese Block validated successfully"
+        },
+        {
+          "id": "item_texture_cheese_block",
+          "name": "Item Texture: Cheese Block",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Cheese Block validated successfully"
+        },
+        {
+          "id": "item_lang_cheese_slice",
+          "name": "Item Localization: Cheese Slice",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Cheese Slice validated successfully"
+        },
+        {
+          "id": "item_lang_melted_cheese",
+          "name": "Item Localization: Melted Cheese",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Melted Cheese validated successfully"
+        },
+        {
+          "id": "item_lang_aged_cheese",
+          "name": "Item Localization: Aged Cheese",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Aged Cheese validated successfully"
+        },
+        {
+          "id": "item_lang_cheese_pickaxe",
+          "name": "Item Localization: Cheese Pickaxe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Cheese Pickaxe validated successfully"
+        },
+        {
+          "id": "item_lang_cheese_sword",
+          "name": "Item Localization: Cheese Sword",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Cheese Sword validated successfully"
+        },
+        {
+          "id": "item_lang_cheese_helmet",
+          "name": "Item Localization: Cheese Helmet",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Cheese Helmet validated successfully"
+        },
+        {
+          "id": "item_lang_cheese_chestplate",
+          "name": "Item Localization: Cheese Chestplate",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Cheese Chestplate validated successfully"
+        },
+        {
+          "id": "item_lang_cheese_leggings",
+          "name": "Item Localization: Cheese Leggings",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Cheese Leggings validated successfully"
+        },
+        {
+          "id": "item_lang_cheese_boots",
+          "name": "Item Localization: Cheese Boots",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Cheese Boots validated successfully"
+        },
+        {
+          "id": "item_lang_cheese_block",
+          "name": "Item Localization: Cheese Block",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Cheese Block validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "blocks",
+      "total": 4,
+      "passed": 3,
+      "failed": 0,
+      "warnings": 1,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "blocks_existence",
+          "name": "Blocks Defined",
+          "category": "blocks",
+          "status": "passed",
+          "message": "1 blocks defined"
+        },
+        {
+          "id": "block_state_cheese_block",
+          "name": "Blockstate: Cheese Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Cheese Block validated successfully"
+        },
+        {
+          "id": "block_loot_cheese_block",
+          "name": "Block Loot: Cheese Block",
+          "category": "blocks",
+          "status": "warning",
+          "message": "Missing loot table (block may not drop anything)"
+        },
+        {
+          "id": "block_item_cheese_block",
+          "name": "Block Item Model: Cheese Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Cheese Block validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "recipes",
+      "total": 22,
+      "passed": 22,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "recipes_existence",
+          "name": "Recipes Defined",
+          "category": "recipes",
+          "status": "passed",
+          "message": "10 recipes expected"
+        },
+        {
+          "id": "recipe_files",
+          "name": "Recipe Files Generated",
+          "category": "recipes",
+          "status": "passed",
+          "message": "10 recipe files generated"
+        },
+        {
+          "id": "recipe_output_cheese_block",
+          "name": "Recipe Output: cheese_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: cheese_block validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_cheese_block",
+          "name": "Recipe Ingredients: cheese_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: cheese_block validated successfully"
+        },
+        {
+          "id": "recipe_output_cheese_slice",
+          "name": "Recipe Output: cheese_slice",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: cheese_slice validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_cheese_slice",
+          "name": "Recipe Ingredients: cheese_slice",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: cheese_slice validated successfully"
+        },
+        {
+          "id": "recipe_output_melted_cheese",
+          "name": "Recipe Output: melted_cheese",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: melted_cheese validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_melted_cheese",
+          "name": "Recipe Ingredients: melted_cheese",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: melted_cheese validated successfully"
+        },
+        {
+          "id": "recipe_output_aged_cheese",
+          "name": "Recipe Output: aged_cheese",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: aged_cheese validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_aged_cheese",
+          "name": "Recipe Ingredients: aged_cheese",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: aged_cheese validated successfully"
+        },
+        {
+          "id": "recipe_output_cheese_pickaxe",
+          "name": "Recipe Output: cheese_pickaxe",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: cheese_pickaxe validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_cheese_pickaxe",
+          "name": "Recipe Ingredients: cheese_pickaxe",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: cheese_pickaxe validated successfully"
+        },
+        {
+          "id": "recipe_output_cheese_sword",
+          "name": "Recipe Output: cheese_sword",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: cheese_sword validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_cheese_sword",
+          "name": "Recipe Ingredients: cheese_sword",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: cheese_sword validated successfully"
+        },
+        {
+          "id": "recipe_output_cheese_helmet",
+          "name": "Recipe Output: cheese_helmet",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: cheese_helmet validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_cheese_helmet",
+          "name": "Recipe Ingredients: cheese_helmet",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: cheese_helmet validated successfully"
+        },
+        {
+          "id": "recipe_output_cheese_chestplate",
+          "name": "Recipe Output: cheese_chestplate",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: cheese_chestplate validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_cheese_chestplate",
+          "name": "Recipe Ingredients: cheese_chestplate",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: cheese_chestplate validated successfully"
+        },
+        {
+          "id": "recipe_output_cheese_leggings",
+          "name": "Recipe Output: cheese_leggings",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: cheese_leggings validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_cheese_leggings",
+          "name": "Recipe Ingredients: cheese_leggings",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: cheese_leggings validated successfully"
+        },
+        {
+          "id": "recipe_output_cheese_boots",
+          "name": "Recipe Output: cheese_boots",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: cheese_boots validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_cheese_boots",
+          "name": "Recipe Ingredients: cheese_boots",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: cheese_boots validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "mobs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "mobs_existence",
+          "name": "Mobs Defined",
+          "category": "mobs",
+          "status": "skipped",
+          "message": "No mobs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "npcs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "npcs_existence",
+          "name": "NPCs Defined",
+          "category": "npcs",
+          "status": "skipped",
+          "message": "No NPCs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "quests",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "quests_existence",
+          "name": "Quests Defined",
+          "category": "quests",
+          "status": "skipped",
+          "message": "No quests defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "advancements",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "advancements_existence",
+          "name": "Advancements Defined",
+          "category": "advancements",
+          "status": "skipped",
+          "message": "No advancements generated"
+        }
+      ]
+    },
+    {
+      "category": "dimensions",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "dimensions_existence",
+          "name": "Dimensions Defined",
+          "category": "dimensions",
+          "status": "skipped",
+          "message": "No dimensions defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "biomes",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "biomes_existence",
+          "name": "Biomes Defined",
+          "category": "biomes",
+          "status": "skipped",
+          "message": "No biomes defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "structures",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "structures_existence",
+          "name": "Structures Defined",
+          "category": "structures",
+          "status": "skipped",
+          "message": "No structures defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "events",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "events_existence",
+          "name": "Events Defined",
+          "category": "events",
+          "status": "skipped",
+          "message": "No events defined in spec"
+        }
+      ]
+    }
+  ],
+  "criticalFailures": [],
+  "allChecks": [
+    {
+      "id": "items_existence",
+      "name": "Items Defined",
+      "category": "items",
+      "status": "passed",
+      "message": "10 items defined"
+    },
+    {
+      "id": "item_model_cheese_slice",
+      "name": "Item Model: Cheese Slice",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Cheese Slice validated successfully"
+    },
+    {
+      "id": "item_texture_cheese_slice",
+      "name": "Item Texture: Cheese Slice",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Cheese Slice validated successfully"
+    },
+    {
+      "id": "item_model_melted_cheese",
+      "name": "Item Model: Melted Cheese",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Melted Cheese validated successfully"
+    },
+    {
+      "id": "item_texture_melted_cheese",
+      "name": "Item Texture: Melted Cheese",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Melted Cheese validated successfully"
+    },
+    {
+      "id": "item_model_aged_cheese",
+      "name": "Item Model: Aged Cheese",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Aged Cheese validated successfully"
+    },
+    {
+      "id": "item_texture_aged_cheese",
+      "name": "Item Texture: Aged Cheese",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Aged Cheese validated successfully"
+    },
+    {
+      "id": "item_model_cheese_pickaxe",
+      "name": "Item Model: Cheese Pickaxe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Cheese Pickaxe validated successfully"
+    },
+    {
+      "id": "item_texture_cheese_pickaxe",
+      "name": "Item Texture: Cheese Pickaxe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Cheese Pickaxe validated successfully"
+    },
+    {
+      "id": "item_model_cheese_sword",
+      "name": "Item Model: Cheese Sword",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Cheese Sword validated successfully"
+    },
+    {
+      "id": "item_texture_cheese_sword",
+      "name": "Item Texture: Cheese Sword",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Cheese Sword validated successfully"
+    },
+    {
+      "id": "item_model_cheese_helmet",
+      "name": "Item Model: Cheese Helmet",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Cheese Helmet validated successfully"
+    },
+    {
+      "id": "item_texture_cheese_helmet",
+      "name": "Item Texture: Cheese Helmet",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Cheese Helmet validated successfully"
+    },
+    {
+      "id": "item_model_cheese_chestplate",
+      "name": "Item Model: Cheese Chestplate",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Cheese Chestplate validated successfully"
+    },
+    {
+      "id": "item_texture_cheese_chestplate",
+      "name": "Item Texture: Cheese Chestplate",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Cheese Chestplate validated successfully"
+    },
+    {
+      "id": "item_model_cheese_leggings",
+      "name": "Item Model: Cheese Leggings",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Cheese Leggings validated successfully"
+    },
+    {
+      "id": "item_texture_cheese_leggings",
+      "name": "Item Texture: Cheese Leggings",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Cheese Leggings validated successfully"
+    },
+    {
+      "id": "item_model_cheese_boots",
+      "name": "Item Model: Cheese Boots",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Cheese Boots validated successfully"
+    },
+    {
+      "id": "item_texture_cheese_boots",
+      "name": "Item Texture: Cheese Boots",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Cheese Boots validated successfully"
+    },
+    {
+      "id": "item_model_cheese_block",
+      "name": "Item Model: Cheese Block",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Cheese Block validated successfully"
+    },
+    {
+      "id": "item_texture_cheese_block",
+      "name": "Item Texture: Cheese Block",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Cheese Block validated successfully"
+    },
+    {
+      "id": "item_lang_cheese_slice",
+      "name": "Item Localization: Cheese Slice",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Cheese Slice validated successfully"
+    },
+    {
+      "id": "item_lang_melted_cheese",
+      "name": "Item Localization: Melted Cheese",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Melted Cheese validated successfully"
+    },
+    {
+      "id": "item_lang_aged_cheese",
+      "name": "Item Localization: Aged Cheese",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Aged Cheese validated successfully"
+    },
+    {
+      "id": "item_lang_cheese_pickaxe",
+      "name": "Item Localization: Cheese Pickaxe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Cheese Pickaxe validated successfully"
+    },
+    {
+      "id": "item_lang_cheese_sword",
+      "name": "Item Localization: Cheese Sword",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Cheese Sword validated successfully"
+    },
+    {
+      "id": "item_lang_cheese_helmet",
+      "name": "Item Localization: Cheese Helmet",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Cheese Helmet validated successfully"
+    },
+    {
+      "id": "item_lang_cheese_chestplate",
+      "name": "Item Localization: Cheese Chestplate",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Cheese Chestplate validated successfully"
+    },
+    {
+      "id": "item_lang_cheese_leggings",
+      "name": "Item Localization: Cheese Leggings",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Cheese Leggings validated successfully"
+    },
+    {
+      "id": "item_lang_cheese_boots",
+      "name": "Item Localization: Cheese Boots",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Cheese Boots validated successfully"
+    },
+    {
+      "id": "item_lang_cheese_block",
+      "name": "Item Localization: Cheese Block",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Cheese Block validated successfully"
+    },
+    {
+      "id": "blocks_existence",
+      "name": "Blocks Defined",
+      "category": "blocks",
+      "status": "passed",
+      "message": "1 blocks defined"
+    },
+    {
+      "id": "block_state_cheese_block",
+      "name": "Blockstate: Cheese Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Cheese Block validated successfully"
+    },
+    {
+      "id": "block_loot_cheese_block",
+      "name": "Block Loot: Cheese Block",
+      "category": "blocks",
+      "status": "warning",
+      "message": "Missing loot table (block may not drop anything)"
+    },
+    {
+      "id": "block_item_cheese_block",
+      "name": "Block Item Model: Cheese Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Cheese Block validated successfully"
+    },
+    {
+      "id": "recipes_existence",
+      "name": "Recipes Defined",
+      "category": "recipes",
+      "status": "passed",
+      "message": "10 recipes expected"
+    },
+    {
+      "id": "recipe_files",
+      "name": "Recipe Files Generated",
+      "category": "recipes",
+      "status": "passed",
+      "message": "10 recipe files generated"
+    },
+    {
+      "id": "recipe_output_cheese_block",
+      "name": "Recipe Output: cheese_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: cheese_block validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_cheese_block",
+      "name": "Recipe Ingredients: cheese_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: cheese_block validated successfully"
+    },
+    {
+      "id": "recipe_output_cheese_slice",
+      "name": "Recipe Output: cheese_slice",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: cheese_slice validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_cheese_slice",
+      "name": "Recipe Ingredients: cheese_slice",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: cheese_slice validated successfully"
+    },
+    {
+      "id": "recipe_output_melted_cheese",
+      "name": "Recipe Output: melted_cheese",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: melted_cheese validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_melted_cheese",
+      "name": "Recipe Ingredients: melted_cheese",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: melted_cheese validated successfully"
+    },
+    {
+      "id": "recipe_output_aged_cheese",
+      "name": "Recipe Output: aged_cheese",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: aged_cheese validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_aged_cheese",
+      "name": "Recipe Ingredients: aged_cheese",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: aged_cheese validated successfully"
+    },
+    {
+      "id": "recipe_output_cheese_pickaxe",
+      "name": "Recipe Output: cheese_pickaxe",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: cheese_pickaxe validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_cheese_pickaxe",
+      "name": "Recipe Ingredients: cheese_pickaxe",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: cheese_pickaxe validated successfully"
+    },
+    {
+      "id": "recipe_output_cheese_sword",
+      "name": "Recipe Output: cheese_sword",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: cheese_sword validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_cheese_sword",
+      "name": "Recipe Ingredients: cheese_sword",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: cheese_sword validated successfully"
+    },
+    {
+      "id": "recipe_output_cheese_helmet",
+      "name": "Recipe Output: cheese_helmet",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: cheese_helmet validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_cheese_helmet",
+      "name": "Recipe Ingredients: cheese_helmet",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: cheese_helmet validated successfully"
+    },
+    {
+      "id": "recipe_output_cheese_chestplate",
+      "name": "Recipe Output: cheese_chestplate",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: cheese_chestplate validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_cheese_chestplate",
+      "name": "Recipe Ingredients: cheese_chestplate",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: cheese_chestplate validated successfully"
+    },
+    {
+      "id": "recipe_output_cheese_leggings",
+      "name": "Recipe Output: cheese_leggings",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: cheese_leggings validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_cheese_leggings",
+      "name": "Recipe Ingredients: cheese_leggings",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: cheese_leggings validated successfully"
+    },
+    {
+      "id": "recipe_output_cheese_boots",
+      "name": "Recipe Output: cheese_boots",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: cheese_boots validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_cheese_boots",
+      "name": "Recipe Ingredients: cheese_boots",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: cheese_boots validated successfully"
+    },
+    {
+      "id": "mobs_existence",
+      "name": "Mobs Defined",
+      "category": "mobs",
+      "status": "skipped",
+      "message": "No mobs defined in spec"
+    },
+    {
+      "id": "npcs_existence",
+      "name": "NPCs Defined",
+      "category": "npcs",
+      "status": "skipped",
+      "message": "No NPCs defined in spec"
+    },
+    {
+      "id": "quests_existence",
+      "name": "Quests Defined",
+      "category": "quests",
+      "status": "skipped",
+      "message": "No quests defined in spec"
+    },
+    {
+      "id": "advancements_existence",
+      "name": "Advancements Defined",
+      "category": "advancements",
+      "status": "skipped",
+      "message": "No advancements generated"
+    },
+    {
+      "id": "dimensions_existence",
+      "name": "Dimensions Defined",
+      "category": "dimensions",
+      "status": "skipped",
+      "message": "No dimensions defined in spec"
+    },
+    {
+      "id": "biomes_existence",
+      "name": "Biomes Defined",
+      "category": "biomes",
+      "status": "skipped",
+      "message": "No biomes defined in spec"
+    },
+    {
+      "id": "structures_existence",
+      "name": "Structures Defined",
+      "category": "structures",
+      "status": "skipped",
+      "message": "No structures defined in spec"
+    },
+    {
+      "id": "events_existence",
+      "name": "Events Defined",
+      "category": "events",
+      "status": "skipped",
+      "message": "No events defined in spec"
+    }
+  ],
+  "summary": "# Feature Audit Report: Strength I\nGenerated: 2025-12-28T00:24:38.974Z\nMinecraft Version: 1.21.1\n\n## ⚠️ PASSED WITH WARNINGS\nTotal: 56 passed, 1 warnings, 8 skipped\n\n## Category Breakdown\n\n✅ **items**: 31/31 passed\n⚠️ **blocks**: 3/4 passed\n✅ **recipes**: 22/22 passed\n✅ **mobs**: 0/1 passed\n✅ **npcs**: 0/1 passed\n✅ **quests**: 0/1 passed\n✅ **advancements**: 0/1 passed\n✅ **dimensions**: 0/1 passed\n✅ **biomes**: 0/1 passed\n✅ **structures**: 0/1 passed\n✅ **events**: 0/1 passed",
+  "suggestions": []
+}

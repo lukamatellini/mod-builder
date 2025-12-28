@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "strengthi:cheese_slice"
+  },
+  "result": {
+    "id": "strengthi:cheese_slice",
+    "count": 1
+  },
+  "experience": 0.7,
+  "cookingtime": 200
+}

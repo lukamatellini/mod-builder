@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21.1",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-28T00:24:38.940Z",
+  "enabledModules": {
+    "quests": false,
+    "npcs": false,
+    "dialogue": false,
+    "trading": false,
+    "structures": false,
+    "dimensions": false,
+    "biomes": false,
+    "commands": true,
+    "items": true,
+    "mobs": false,
+    "events": false
+  },
+  "inferenceReasons": [
+    "Items enabled: 10 items defined in spec",
+    "Commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 10,
+    "mobs": 0,
+    "structures": 0,
+    "dimensions": 0,
+    "quests": 0,
+    "npcs": 0,
+    "events": 0
+  },
+  "expectedDataFiles": [],
+  "expectedAssetFiles": [
+    "assets/strengthi/lang/en_us.json",
+    "assets/strengthi/models/item/cheese_slice.json",
+    "assets/strengthi/models/item/melted_cheese.json",
+    "assets/strengthi/models/item/aged_cheese.json",
+    "assets/strengthi/models/item/cheese_pickaxe.json",
+    "assets/strengthi/models/item/cheese_sword.json",
+    "assets/strengthi/models/item/cheese_helmet.json",
+    "assets/strengthi/models/item/cheese_chestplate.json",
+    "assets/strengthi/models/item/cheese_leggings.json",
+    "assets/strengthi/models/item/cheese_boots.json",
+    "assets/strengthi/models/item/cheese_block.json"
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "modId": "strengthi",
+  "modName": "Strength I",
+  "mcVersion": "1.21.1",
+  "generatedAt": "2025-12-28T00:24:38.975Z",
+  "totalTests": 28,
+  "categories": [
+    {
+      "name": "Items",
+      "tests": [
+        {
+          "category": "Items",
+          "name": "Cheese Slice Registration",
+          "command": "/give @p strengthi:cheese_slice",
+          "steps": [
+            "Run: /give @p strengthi:cheese_slice",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Melted Cheese Registration",
+          "command": "/give @p strengthi:melted_cheese",
+          "steps": [
+            "Run: /give @p strengthi:melted_cheese",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Aged Cheese Registration",
+          "command": "/give @p strengthi:aged_cheese",
+          "steps": [
+            "Run: /give @p strengthi:aged_cheese",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Cheese Pickaxe Registration",
+          "command": "/give @p strengthi:cheese_pickaxe",
+          "steps": [
+            "Run: /give @p strengthi:cheese_pickaxe",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Cheese Sword Registration",
+          "command": "/give @p strengthi:cheese_sword",
+          "steps": [
+            "Run: /give @p strengthi:cheese_sword",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Cheese Helmet Registration",
+          "command": "/give @p strengthi:cheese_helmet",
+          "steps": [
+            "Run: /give @p strengthi:cheese_helmet",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Cheese Chestplate Registration",
+          "command": "/give @p strengthi:cheese_chestplate",
+          "steps": [
+            "Run: /give @p strengthi:cheese_chestplate",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Cheese Leggings Registration",
+          "command": "/give @p strengthi:cheese_leggings",
+          "steps": [
+            "Run: /give @p strengthi:cheese_leggings",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Cheese Boots Registration",
+          "command": "/give @p strengthi:cheese_boots",
+          "steps": [
+            "Run: /give @p strengthi:cheese_boots",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Cheese Block Registration",
+          "command": "/give @p strengthi:cheese_block",
+          "steps": [
+            "Run: /give @p strengthi:cheese_block",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        }
+      ]
+    },
+    {
+      "name": "Recipes",
+      "tests": [
+        {
+          "category": "Recipes",
+          "name": "Cheese Slice Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"strengthi:cheese_slice\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Cheese Slice",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Melted Cheese Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"strengthi:cheese_block\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Melted Cheese",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Aged Cheese Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"strengthi:cheese_slice\",\"strengthi:cheese_block\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Aged Cheese",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Cheese Pickaxe Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"strengthi:cheese_block\",\"minecraft:cobblestone\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Cheese Pickaxe",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Cheese Sword Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"strengthi:cheese_block\",\"minecraft:cobblestone\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Cheese Sword",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Cheese Helmet Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"strengthi:cheese_block\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Cheese Helmet",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Cheese Chestplate Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"strengthi:cheese_block\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Cheese Chestplate",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Cheese Leggings Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"strengthi:cheese_block\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Cheese Leggings",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Cheese Boots Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"strengthi:cheese_block\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Cheese Boots",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Cheese Block Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:cobblestone\",\"minecraft:iron_ingot\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Cheese Block",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Item Effects",
+      "tests": [
+        {
+          "category": "Item Effects",
+          "name": "Melted Cheese passive Effect",
+          "steps": [
+            "Give yourself the item: /give @p strengthi:melted_cheese",
+            "Hold item and wait",
+            "Observe minecraft:strength activation"
+          ],
+          "expectedResult": "minecraft:strength activates correctly",
+          "automated": false
+        },
+        {
+          "category": "Item Effects",
+          "name": "Aged Cheese passive Effect",
+          "steps": [
+            "Give yourself the item: /give @p strengthi:aged_cheese",
+            "Hold item and wait",
+            "Observe minecraft:regeneration activation"
+          ],
+          "expectedResult": "minecraft:regeneration activates correctly",
+          "automated": false
+        },
+        {
+          "category": "Item Effects",
+          "name": "Cheese Pickaxe on_hit Effect",
+          "steps": [
+            "Give yourself the item: /give @p strengthi:cheese_pickaxe",
+            "Hit a mob with the item",
+            "Observe minecraft:glowing activation"
+          ],
+          "expectedResult": "minecraft:glowing activates correctly",
+          "automated": false
+        },
+        {
+          "category": "Item Effects",
+          "name": "Cheese Sword on_hit Effect",
+          "steps": [
+            "Give yourself the item: /give @p strengthi:cheese_sword",
+            "Hit a mob with the item",
+            "Observe minecraft:slowness activation"
+          ],
+          "expectedResult": "minecraft:slowness activates correctly",
+          "automated": false
+        },
+        {
+          "category": "Item Effects",
+          "name": "Cheese Helmet passive Effect",
+          "steps": [
+            "Give yourself the item: /give @p strengthi:cheese_helmet",
+            "Hold item and wait",
+            "Observe minecraft:glowing activation"
+          ],
+          "expectedResult": "minecraft:glowing activates correctly",
+          "automated": false
+        },
+        {
+          "category": "Item Effects",
+          "name": "Cheese Chestplate passive Effect",
+          "steps": [
+            "Give yourself the item: /give @p strengthi:cheese_chestplate",
+            "Hold item and wait",
+            "Observe minecraft:speed activation"
+          ],
+          "expectedResult": "minecraft:speed activates correctly",
+          "automated": false
+        },
+        {
+          "category": "Item Effects",
+          "name": "Cheese Boots passive Effect",
+          "steps": [
+            "Give yourself the item: /give @p strengthi:cheese_boots",
+            "Hold item and wait",
+            "Observe minecraft:glowing activation"
+          ],
+          "expectedResult": "minecraft:glowing activates correctly",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Blocks",
+      "tests": [
+        {
+          "category": "Blocks",
+          "name": "Cheese Block Placement",
+          "command": "/give @p strengthi:cheese_block",
+          "steps": [
+            "Run: /give @p strengthi:cheese_block",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        }
+      ]
+    }
+  ],
+  "quickCommands": [
+    "/give @p strengthi:cheese_slice",
+    "/give @p strengthi:melted_cheese",
+    "/give @p strengthi:aged_cheese",
+    "/give @p strengthi:cheese_pickaxe",
+    "/give @p strengthi:cheese_sword",
+    "/give @p strengthi:cheese_helmet",
+    "/give @p strengthi:cheese_chestplate",
+    "/give @p strengthi:cheese_leggings",
+    "/give @p strengthi:cheese_boots",
+    "/give @p strengthi:cheese_block"
+  ]
+}
