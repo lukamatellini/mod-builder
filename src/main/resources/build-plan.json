@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21.1",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-28T01:18:01.856Z",
+  "enabledModules": {
+    "quests": false,
+    "npcs": false,
+    "dialogue": false,
+    "trading": false,
+    "structures": false,
+    "dimensions": false,
+    "biomes": false,
+    "commands": true,
+    "items": true,
+    "mobs": false,
+    "events": false
+  },
+  "inferenceReasons": [
+    "swiftfootboots:items enabled: 3 items defined in spec",
+    "swiftfootboots:commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 3,
+    "mobs": 0,
+    "structures": 0,
+    "dimensions": 0,
+    "quests": 0,
+    "npcs": 0,
+    "events": 0
+  },
+  "expectedDataFiles": [],
+  "expectedAssetFiles": [
+    "assets/swiftfootboots/lang/en_us.json",
+    "assets/swiftfootboots/models/item/swiftfoot_boots.json",
+    "assets/swiftfootboots/models/item/swift_ingot.json",
+    "assets/swiftfootboots/models/item/swift_gem.json"
+  ]
+}

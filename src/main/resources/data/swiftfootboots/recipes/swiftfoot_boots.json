@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "key": {
+    "M": {
+      "item": "swiftfootboots:swift_ingot"
+    }
+  },
+  "result": {
+    "id": "swiftfootboots:swiftfoot_boots",
+    "count": 1
+  }
+}

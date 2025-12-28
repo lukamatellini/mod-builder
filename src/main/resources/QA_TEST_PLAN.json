@@ -1,0 +1,115 @@
+{
+  "modId": "swiftfootboots",
+  "modName": "Swiftfoot Boots",
+  "mcVersion": "1.21.1",
+  "generatedAt": "2025-12-28T01:18:01.959Z",
+  "totalTests": 7,
+  "categories": [
+    {
+      "name": "Items",
+      "tests": [
+        {
+          "category": "Items",
+          "name": "Swiftfoot Boots Registration",
+          "command": "/give @p swiftfootboots:swiftfoot_boots",
+          "steps": [
+            "Run: /give @p swiftfootboots:swiftfoot_boots",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Swift Ingot Registration",
+          "command": "/give @p swiftfootboots:swift_ingot",
+          "steps": [
+            "Run: /give @p swiftfootboots:swift_ingot",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Swift Gem Registration",
+          "command": "/give @p swiftfootboots:swift_gem",
+          "steps": [
+            "Run: /give @p swiftfootboots:swift_gem",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        }
+      ]
+    },
+    {
+      "name": "Recipes",
+      "tests": [
+        {
+          "category": "Recipes",
+          "name": "Swiftfoot Boots Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"swiftfootboots:swift_ingot\",\"swiftfootboots:swift_gem\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Swiftfoot Boots",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Swift Ingot Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:stick\",\"minecraft:stick\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Swift Ingot",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Swift Gem Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"swiftfootboots:swift_ingot\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Swift Gem",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Item Effects",
+      "tests": [
+        {
+          "category": "Item Effects",
+          "name": "Swiftfoot Boots passive Effect",
+          "steps": [
+            "Give yourself the item: /give @p swiftfootboots:swiftfoot_boots",
+            "Hold item and wait",
+            "Observe minecraft:speed activation"
+          ],
+          "expectedResult": "minecraft:speed activates correctly",
+          "automated": false
+        }
+      ]
+    }
+  ],
+  "quickCommands": [
+    "/give @p swiftfootboots:swiftfoot_boots",
+    "/give @p swiftfootboots:swift_ingot",
+    "/give @p swiftfootboots:swift_gem"
+  ]
+}
