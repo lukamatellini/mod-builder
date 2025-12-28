@@ -1,0 +1,100 @@
+{
+  "version": "1.0",
+  "timestamp": "2025-12-28T19:23:36.617Z",
+  "pipeline": "generate-mod",
+  "modId": "luckyblocks",
+  "mcVersion": "1.21.1",
+  "registryAutoCreations": [],
+  "javaImportRepairs": [],
+  "javaSymbolRepairs": [],
+  "versionParityRepairs": [],
+  "textureModelAutoGens": [],
+  "idResolutionRepairs": [],
+  "recipeRepairs": [
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:gold_ingot",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:gold_ingot",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:lucky_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Lucky Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:lucky_diamond_sword",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Lucky Diamond Sword"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:lucky_diamond_pickaxe",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Lucky Diamond Pickaxe"
+    }
+  ],
+  "omissions": [],
+  "summary": {
+    "totalRepairs": 10,
+    "totalAutoCreations": 0,
+    "totalOmissions": 0,
+    "warnings": []
+  }
+}
