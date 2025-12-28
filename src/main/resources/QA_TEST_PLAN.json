@@ -1,0 +1,73 @@
+{
+  "modId": "stormcallersrod",
+  "modName": "Stormcallers Rod",
+  "mcVersion": "1.21.1",
+  "generatedAt": "2025-12-28T01:07:49.779Z",
+  "totalTests": 4,
+  "categories": [
+    {
+      "name": "Items",
+      "tests": [
+        {
+          "category": "Items",
+          "name": "Power Shard Registration",
+          "command": "/give @p stormcallersrod:power_shard",
+          "steps": [
+            "Run: /give @p stormcallersrod:power_shard",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Lightning Wand Registration",
+          "command": "/give @p stormcallersrod:lightning_wand",
+          "steps": [
+            "Run: /give @p stormcallersrod:lightning_wand",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        }
+      ]
+    },
+    {
+      "name": "Recipes",
+      "tests": [
+        {
+          "category": "Recipes",
+          "name": "Power Shard Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:blaze_powder\",\"minecraft:blaze_powder\",\"minecraft:blaze_powder\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Power Shard",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Lightning Wand Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"stormcallersrod:power_shard\",\"minecraft:blaze_powder\",\"minecraft:blaze_powder\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Lightning Wand",
+          "automated": false
+        }
+      ]
+    }
+  ],
+  "quickCommands": [
+    "/give @p stormcallersrod:power_shard",
+    "/give @p stormcallersrod:lightning_wand"
+  ]
+}
