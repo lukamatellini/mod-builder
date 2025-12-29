@@ -1,0 +1,16 @@
+{
+  "sanitized": true,
+  "totalRepairs": 1,
+  "contentRepairs": 1,
+  "filenameRepairs": 0,
+  "repairs": [
+    {
+      "file": "docs/CLOSURE_PROOF_REPORT.json",
+      "original": "\"luckyblock:minecraft:diamond\"",
+      "fixed": "\"minecraft:diamond\"",
+      "reason": "Double namespace detected"
+    }
+  ],
+  "filenameChanges": [],
+  "timestamp": "2025-12-29T11:12:51.538Z"
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "luckyblock:refined_ingot"
+    }
+  ],
+  "result": {
+    "id": "luckyblock:worm_scale",
+    "count": 1
+  }
+}

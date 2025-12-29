@@ -1,0 +1,165 @@
+{
+  "version": "1.0",
+  "timestamp": "2025-12-29T11:12:51.419Z",
+  "pipeline": "generate-mod",
+  "modId": "luckyblock",
+  "mcVersion": "1.21.1",
+  "registryAutoCreations": [
+    {
+      "type": "item",
+      "id": "worm_scales",
+      "name": "Worm Scales",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    },
+    {
+      "type": "item",
+      "id": "minecraftslime_ball",
+      "name": "Minecraftslime Ball",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    },
+    {
+      "type": "block",
+      "id": "minecraftstone",
+      "name": "Minecraftstone",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    }
+  ],
+  "javaImportRepairs": [],
+  "javaSymbolRepairs": [],
+  "versionParityRepairs": [],
+  "textureModelAutoGens": [],
+  "idResolutionRepairs": [
+    {
+      "location": "global-inference",
+      "original": "worm_scales",
+      "resolved": "luckyblock:worm_scales",
+      "reason": "Auto-created missing entity"
+    },
+    {
+      "location": "global-inference",
+      "original": "minecraftslime_ball",
+      "resolved": "luckyblock:minecraftslime_ball",
+      "reason": "Auto-created missing entity"
+    },
+    {
+      "location": "global-inference",
+      "original": "minecraftstone",
+      "resolved": "luckyblock:minecraftstone",
+      "reason": "Auto-created missing entity"
+    }
+  ],
+  "recipeRepairs": [
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:refined_ingot",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Refined Ingot"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:refined_ingot",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Refined Ingot"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stone",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:lucky_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Lucky Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:worm_scale",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Worm Scale"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:refined_ingot",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Refined Ingot"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:worm_scales",
+      "ingredientResolved": "",
+      "reason": "Normalized plural to singular: luckyblock:worm_scales → luckyblock:worm_scale"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:refined_ingot",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Refined Ingot"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:minecraftslime_ball",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Minecraftslime Ball"
+    }
+  ],
+  "omissions": [],
+  "summary": {
+    "totalRepairs": 14,
+    "totalAutoCreations": 3,
+    "totalOmissions": 0,
+    "warnings": []
+  }
+}

@@ -1,0 +1,717 @@
+{
+  "modId": "luckyblock",
+  "modName": "Lucky Block",
+  "generatedAt": "2025-12-29T11:12:51.590Z",
+  "mcVersion": "1.21.1",
+  "overallStatus": "passed",
+  "totalChecks": 42,
+  "passedChecks": 35,
+  "failedChecks": 0,
+  "warningChecks": 0,
+  "skippedChecks": 7,
+  "categories": [
+    {
+      "category": "items",
+      "total": 13,
+      "passed": 13,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "items_existence",
+          "name": "Items Defined",
+          "category": "items",
+          "status": "passed",
+          "message": "4 items defined"
+        },
+        {
+          "id": "item_model_worm_scale",
+          "name": "Item Model: Worm Scale",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Worm Scale validated successfully"
+        },
+        {
+          "id": "item_texture_worm_scale",
+          "name": "Item Texture: Worm Scale",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Worm Scale validated successfully"
+        },
+        {
+          "id": "item_model_worm_scales",
+          "name": "Item Model: Worm Scales",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Worm Scales validated successfully"
+        },
+        {
+          "id": "item_texture_worm_scales",
+          "name": "Item Texture: Worm Scales",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Worm Scales validated successfully"
+        },
+        {
+          "id": "item_model_minecraftslime_ball",
+          "name": "Item Model: Minecraftslime Ball",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Minecraftslime Ball validated successfully"
+        },
+        {
+          "id": "item_texture_minecraftslime_ball",
+          "name": "Item Texture: Minecraftslime Ball",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Minecraftslime Ball validated successfully"
+        },
+        {
+          "id": "item_model_refined_ingot",
+          "name": "Item Model: Refined Ingot",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Refined Ingot validated successfully"
+        },
+        {
+          "id": "item_texture_refined_ingot",
+          "name": "Item Texture: Refined Ingot",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Refined Ingot validated successfully"
+        },
+        {
+          "id": "item_lang_worm_scale",
+          "name": "Item Localization: Worm Scale",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Worm Scale validated successfully"
+        },
+        {
+          "id": "item_lang_worm_scales",
+          "name": "Item Localization: Worm Scales",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Worm Scales validated successfully"
+        },
+        {
+          "id": "item_lang_minecraftslime_ball",
+          "name": "Item Localization: Minecraftslime Ball",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Minecraftslime Ball validated successfully"
+        },
+        {
+          "id": "item_lang_refined_ingot",
+          "name": "Item Localization: Refined Ingot",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Refined Ingot validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "blocks",
+      "total": 7,
+      "passed": 7,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "blocks_existence",
+          "name": "Blocks Defined",
+          "category": "blocks",
+          "status": "passed",
+          "message": "2 blocks defined"
+        },
+        {
+          "id": "block_state_lucky_block",
+          "name": "Blockstate: Lucky Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Lucky Block validated successfully"
+        },
+        {
+          "id": "block_loot_lucky_block",
+          "name": "Block Loot: Lucky Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Loot: Lucky Block validated successfully"
+        },
+        {
+          "id": "block_item_lucky_block",
+          "name": "Block Item Model: Lucky Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Lucky Block validated successfully"
+        },
+        {
+          "id": "block_state_minecraftstone",
+          "name": "Blockstate: Minecraftstone",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Minecraftstone validated successfully"
+        },
+        {
+          "id": "block_loot_minecraftstone",
+          "name": "Block Loot: Minecraftstone",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Loot: Minecraftstone validated successfully"
+        },
+        {
+          "id": "block_item_minecraftstone",
+          "name": "Block Item Model: Minecraftstone",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Minecraftstone validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "recipes",
+      "total": 10,
+      "passed": 10,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "recipes_existence",
+          "name": "Recipes Defined",
+          "category": "recipes",
+          "status": "passed",
+          "message": "3 recipes expected"
+        },
+        {
+          "id": "recipe_files",
+          "name": "Recipe Files Generated",
+          "category": "recipes",
+          "status": "passed",
+          "message": "4 recipe files generated"
+        },
+        {
+          "id": "recipe_output_lucky_block",
+          "name": "Recipe Output: lucky_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: lucky_block validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_lucky_block",
+          "name": "Recipe Ingredients: lucky_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: lucky_block validated successfully"
+        },
+        {
+          "id": "recipe_output_worm_scale",
+          "name": "Recipe Output: worm_scale",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: worm_scale validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_worm_scale",
+          "name": "Recipe Ingredients: worm_scale",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: worm_scale validated successfully"
+        },
+        {
+          "id": "recipe_output_worm_scales",
+          "name": "Recipe Output: worm_scales",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: worm_scales validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_worm_scales",
+          "name": "Recipe Ingredients: worm_scales",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: worm_scales validated successfully"
+        },
+        {
+          "id": "recipe_output_minecraftslime_ball",
+          "name": "Recipe Output: minecraftslime_ball",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: minecraftslime_ball validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_minecraftslime_ball",
+          "name": "Recipe Ingredients: minecraftslime_ball",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: minecraftslime_ball validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "mobs",
+      "total": 5,
+      "passed": 5,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "mobs_existence",
+          "name": "Mobs Defined",
+          "category": "mobs",
+          "status": "passed",
+          "message": "1 mobs defined"
+        },
+        {
+          "id": "mob_class_giant_worm",
+          "name": "Mob Class: Giant Worm",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Class: Giant Worm validated successfully"
+        },
+        {
+          "id": "mob_drops_giant_worm",
+          "name": "Mob Drops: Giant Worm",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Drops: Giant Worm validated successfully"
+        },
+        {
+          "id": "mob_loot_giant_worm",
+          "name": "Mob Loot Table: Giant Worm",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Loot Table: Giant Worm validated successfully"
+        },
+        {
+          "id": "mob_texture_giant_worm",
+          "name": "Mob Texture: Giant Worm",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Texture: Giant Worm validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "npcs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "npcs_existence",
+          "name": "NPCs Defined",
+          "category": "npcs",
+          "status": "skipped",
+          "message": "No NPCs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "quests",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "quests_existence",
+          "name": "Quests Defined",
+          "category": "quests",
+          "status": "skipped",
+          "message": "No quests defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "advancements",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "advancements_existence",
+          "name": "Advancements Defined",
+          "category": "advancements",
+          "status": "skipped",
+          "message": "No advancements generated"
+        }
+      ]
+    },
+    {
+      "category": "dimensions",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "dimensions_existence",
+          "name": "Dimensions Defined",
+          "category": "dimensions",
+          "status": "skipped",
+          "message": "No dimensions defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "biomes",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "biomes_existence",
+          "name": "Biomes Defined",
+          "category": "biomes",
+          "status": "skipped",
+          "message": "No biomes defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "structures",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "structures_existence",
+          "name": "Structures Defined",
+          "category": "structures",
+          "status": "skipped",
+          "message": "No structures defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "events",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "events_existence",
+          "name": "Events Defined",
+          "category": "events",
+          "status": "skipped",
+          "message": "No events defined in spec"
+        }
+      ]
+    }
+  ],
+  "criticalFailures": [],
+  "allChecks": [
+    {
+      "id": "items_existence",
+      "name": "Items Defined",
+      "category": "items",
+      "status": "passed",
+      "message": "4 items defined"
+    },
+    {
+      "id": "item_model_worm_scale",
+      "name": "Item Model: Worm Scale",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Worm Scale validated successfully"
+    },
+    {
+      "id": "item_texture_worm_scale",
+      "name": "Item Texture: Worm Scale",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Worm Scale validated successfully"
+    },
+    {
+      "id": "item_model_worm_scales",
+      "name": "Item Model: Worm Scales",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Worm Scales validated successfully"
+    },
+    {
+      "id": "item_texture_worm_scales",
+      "name": "Item Texture: Worm Scales",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Worm Scales validated successfully"
+    },
+    {
+      "id": "item_model_minecraftslime_ball",
+      "name": "Item Model: Minecraftslime Ball",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Minecraftslime Ball validated successfully"
+    },
+    {
+      "id": "item_texture_minecraftslime_ball",
+      "name": "Item Texture: Minecraftslime Ball",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Minecraftslime Ball validated successfully"
+    },
+    {
+      "id": "item_model_refined_ingot",
+      "name": "Item Model: Refined Ingot",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Refined Ingot validated successfully"
+    },
+    {
+      "id": "item_texture_refined_ingot",
+      "name": "Item Texture: Refined Ingot",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Refined Ingot validated successfully"
+    },
+    {
+      "id": "item_lang_worm_scale",
+      "name": "Item Localization: Worm Scale",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Worm Scale validated successfully"
+    },
+    {
+      "id": "item_lang_worm_scales",
+      "name": "Item Localization: Worm Scales",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Worm Scales validated successfully"
+    },
+    {
+      "id": "item_lang_minecraftslime_ball",
+      "name": "Item Localization: Minecraftslime Ball",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Minecraftslime Ball validated successfully"
+    },
+    {
+      "id": "item_lang_refined_ingot",
+      "name": "Item Localization: Refined Ingot",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Refined Ingot validated successfully"
+    },
+    {
+      "id": "blocks_existence",
+      "name": "Blocks Defined",
+      "category": "blocks",
+      "status": "passed",
+      "message": "2 blocks defined"
+    },
+    {
+      "id": "block_state_lucky_block",
+      "name": "Blockstate: Lucky Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Lucky Block validated successfully"
+    },
+    {
+      "id": "block_loot_lucky_block",
+      "name": "Block Loot: Lucky Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Loot: Lucky Block validated successfully"
+    },
+    {
+      "id": "block_item_lucky_block",
+      "name": "Block Item Model: Lucky Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Lucky Block validated successfully"
+    },
+    {
+      "id": "block_state_minecraftstone",
+      "name": "Blockstate: Minecraftstone",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Minecraftstone validated successfully"
+    },
+    {
+      "id": "block_loot_minecraftstone",
+      "name": "Block Loot: Minecraftstone",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Loot: Minecraftstone validated successfully"
+    },
+    {
+      "id": "block_item_minecraftstone",
+      "name": "Block Item Model: Minecraftstone",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Minecraftstone validated successfully"
+    },
+    {
+      "id": "recipes_existence",
+      "name": "Recipes Defined",
+      "category": "recipes",
+      "status": "passed",
+      "message": "3 recipes expected"
+    },
+    {
+      "id": "recipe_files",
+      "name": "Recipe Files Generated",
+      "category": "recipes",
+      "status": "passed",
+      "message": "4 recipe files generated"
+    },
+    {
+      "id": "recipe_output_lucky_block",
+      "name": "Recipe Output: lucky_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: lucky_block validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_lucky_block",
+      "name": "Recipe Ingredients: lucky_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: lucky_block validated successfully"
+    },
+    {
+      "id": "recipe_output_worm_scale",
+      "name": "Recipe Output: worm_scale",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: worm_scale validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_worm_scale",
+      "name": "Recipe Ingredients: worm_scale",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: worm_scale validated successfully"
+    },
+    {
+      "id": "recipe_output_worm_scales",
+      "name": "Recipe Output: worm_scales",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: worm_scales validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_worm_scales",
+      "name": "Recipe Ingredients: worm_scales",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: worm_scales validated successfully"
+    },
+    {
+      "id": "recipe_output_minecraftslime_ball",
+      "name": "Recipe Output: minecraftslime_ball",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: minecraftslime_ball validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_minecraftslime_ball",
+      "name": "Recipe Ingredients: minecraftslime_ball",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: minecraftslime_ball validated successfully"
+    },
+    {
+      "id": "mobs_existence",
+      "name": "Mobs Defined",
+      "category": "mobs",
+      "status": "passed",
+      "message": "1 mobs defined"
+    },
+    {
+      "id": "mob_class_giant_worm",
+      "name": "Mob Class: Giant Worm",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Class: Giant Worm validated successfully"
+    },
+    {
+      "id": "mob_drops_giant_worm",
+      "name": "Mob Drops: Giant Worm",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Drops: Giant Worm validated successfully"
+    },
+    {
+      "id": "mob_loot_giant_worm",
+      "name": "Mob Loot Table: Giant Worm",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Loot Table: Giant Worm validated successfully"
+    },
+    {
+      "id": "mob_texture_giant_worm",
+      "name": "Mob Texture: Giant Worm",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Texture: Giant Worm validated successfully"
+    },
+    {
+      "id": "npcs_existence",
+      "name": "NPCs Defined",
+      "category": "npcs",
+      "status": "skipped",
+      "message": "No NPCs defined in spec"
+    },
+    {
+      "id": "quests_existence",
+      "name": "Quests Defined",
+      "category": "quests",
+      "status": "skipped",
+      "message": "No quests defined in spec"
+    },
+    {
+      "id": "advancements_existence",
+      "name": "Advancements Defined",
+      "category": "advancements",
+      "status": "skipped",
+      "message": "No advancements generated"
+    },
+    {
+      "id": "dimensions_existence",
+      "name": "Dimensions Defined",
+      "category": "dimensions",
+      "status": "skipped",
+      "message": "No dimensions defined in spec"
+    },
+    {
+      "id": "biomes_existence",
+      "name": "Biomes Defined",
+      "category": "biomes",
+      "status": "skipped",
+      "message": "No biomes defined in spec"
+    },
+    {
+      "id": "structures_existence",
+      "name": "Structures Defined",
+      "category": "structures",
+      "status": "skipped",
+      "message": "No structures defined in spec"
+    },
+    {
+      "id": "events_existence",
+      "name": "Events Defined",
+      "category": "events",
+      "status": "skipped",
+      "message": "No events defined in spec"
+    }
+  ],
+  "summary": "# Feature Audit Report: Lucky Block\nGenerated: 2025-12-29T11:12:51.590Z\nMinecraft Version: 1.21.1\n\n## ✅ ALL CHECKS PASSED\nTotal: 35 passed, 7 skipped\n\n## Category Breakdown\n\n✅ **items**: 13/13 passed\n✅ **blocks**: 7/7 passed\n✅ **recipes**: 10/10 passed\n✅ **mobs**: 5/5 passed\n✅ **npcs**: 0/1 passed\n✅ **quests**: 0/1 passed\n✅ **advancements**: 0/1 passed\n✅ **dimensions**: 0/1 passed\n✅ **biomes**: 0/1 passed\n✅ **structures**: 0/1 passed\n✅ **events**: 0/1 passed",
+  "suggestions": []
+}
