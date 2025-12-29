@@ -1,0 +1,521 @@
+{
+  "modId": "luckyblocks",
+  "modName": "Lucky Blocks",
+  "generatedAt": "2025-12-29T03:29:30.946Z",
+  "mcVersion": "1.21.1",
+  "overallStatus": "warnings",
+  "totalChecks": 28,
+  "passedChecks": 20,
+  "failedChecks": 0,
+  "warningChecks": 1,
+  "skippedChecks": 7,
+  "categories": [
+    {
+      "category": "items",
+      "total": 7,
+      "passed": 7,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "items_existence",
+          "name": "Items Defined",
+          "category": "items",
+          "status": "passed",
+          "message": "2 items defined"
+        },
+        {
+          "id": "item_model_minecraftair",
+          "name": "Item Model: Minecraftair",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Minecraftair validated successfully"
+        },
+        {
+          "id": "item_texture_minecraftair",
+          "name": "Item Texture: Minecraftair",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Minecraftair validated successfully"
+        },
+        {
+          "id": "item_model_living_wood",
+          "name": "Item Model: Living Wood",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Living Wood validated successfully"
+        },
+        {
+          "id": "item_texture_living_wood",
+          "name": "Item Texture: Living Wood",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Living Wood validated successfully"
+        },
+        {
+          "id": "item_lang_minecraftair",
+          "name": "Item Localization: Minecraftair",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Minecraftair validated successfully"
+        },
+        {
+          "id": "item_lang_living_wood",
+          "name": "Item Localization: Living Wood",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Living Wood validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "blocks",
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "blocks_existence",
+          "name": "Blocks Defined",
+          "category": "blocks",
+          "status": "passed",
+          "message": "1 blocks defined"
+        },
+        {
+          "id": "block_state_lucky_block",
+          "name": "Blockstate: Lucky Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Lucky Block validated successfully"
+        },
+        {
+          "id": "block_loot_lucky_block",
+          "name": "Block Loot: Lucky Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Loot: Lucky Block validated successfully"
+        },
+        {
+          "id": "block_item_lucky_block",
+          "name": "Block Item Model: Lucky Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Lucky Block validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "recipes",
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "recipes_existence",
+          "name": "Recipes Defined",
+          "category": "recipes",
+          "status": "passed",
+          "message": "1 recipes expected"
+        },
+        {
+          "id": "recipe_files",
+          "name": "Recipe Files Generated",
+          "category": "recipes",
+          "status": "passed",
+          "message": "2 recipe files generated"
+        },
+        {
+          "id": "recipe_output_lucky_block",
+          "name": "Recipe Output: lucky_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: lucky_block validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_lucky_block",
+          "name": "Recipe Ingredients: lucky_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: lucky_block validated successfully"
+        },
+        {
+          "id": "recipe_output_minecraftair",
+          "name": "Recipe Output: minecraftair",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: minecraftair validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_minecraftair",
+          "name": "Recipe Ingredients: minecraftair",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: minecraftair validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "mobs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "mobs_existence",
+          "name": "Mobs Defined",
+          "category": "mobs",
+          "status": "skipped",
+          "message": "No mobs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "npcs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "npcs_existence",
+          "name": "NPCs Defined",
+          "category": "npcs",
+          "status": "skipped",
+          "message": "No NPCs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "quests",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "quests_existence",
+          "name": "Quests Defined",
+          "category": "quests",
+          "status": "skipped",
+          "message": "No quests defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "advancements",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "advancements_existence",
+          "name": "Advancements Defined",
+          "category": "advancements",
+          "status": "skipped",
+          "message": "No advancements generated"
+        }
+      ]
+    },
+    {
+      "category": "dimensions",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "dimensions_existence",
+          "name": "Dimensions Defined",
+          "category": "dimensions",
+          "status": "skipped",
+          "message": "No dimensions defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "biomes",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "biomes_existence",
+          "name": "Biomes Defined",
+          "category": "biomes",
+          "status": "skipped",
+          "message": "No biomes defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "structures",
+      "total": 4,
+      "passed": 3,
+      "failed": 0,
+      "warnings": 1,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "structures_existence",
+          "name": "Structures Defined",
+          "category": "structures",
+          "status": "passed",
+          "message": "1 structures defined"
+        },
+        {
+          "id": "structure_json_small_stone_building",
+          "name": "Structure JSON: Small Stone Building",
+          "category": "structures",
+          "status": "passed",
+          "message": "Structure JSON: Small Stone Building validated successfully"
+        },
+        {
+          "id": "structure_set_small_stone_building",
+          "name": "Structure Set: Small Stone Building",
+          "category": "structures",
+          "status": "warning",
+          "message": "Missing structure_set (structure may not spawn)"
+        },
+        {
+          "id": "structure_loot_small_stone_building",
+          "name": "Structure Loot: Small Stone Building",
+          "category": "structures",
+          "status": "passed",
+          "message": "Structure Loot: Small Stone Building validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "events",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "events_existence",
+          "name": "Events Defined",
+          "category": "events",
+          "status": "skipped",
+          "message": "No events defined in spec"
+        }
+      ]
+    }
+  ],
+  "criticalFailures": [],
+  "allChecks": [
+    {
+      "id": "items_existence",
+      "name": "Items Defined",
+      "category": "items",
+      "status": "passed",
+      "message": "2 items defined"
+    },
+    {
+      "id": "item_model_minecraftair",
+      "name": "Item Model: Minecraftair",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Minecraftair validated successfully"
+    },
+    {
+      "id": "item_texture_minecraftair",
+      "name": "Item Texture: Minecraftair",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Minecraftair validated successfully"
+    },
+    {
+      "id": "item_model_living_wood",
+      "name": "Item Model: Living Wood",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Living Wood validated successfully"
+    },
+    {
+      "id": "item_texture_living_wood",
+      "name": "Item Texture: Living Wood",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Living Wood validated successfully"
+    },
+    {
+      "id": "item_lang_minecraftair",
+      "name": "Item Localization: Minecraftair",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Minecraftair validated successfully"
+    },
+    {
+      "id": "item_lang_living_wood",
+      "name": "Item Localization: Living Wood",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Living Wood validated successfully"
+    },
+    {
+      "id": "blocks_existence",
+      "name": "Blocks Defined",
+      "category": "blocks",
+      "status": "passed",
+      "message": "1 blocks defined"
+    },
+    {
+      "id": "block_state_lucky_block",
+      "name": "Blockstate: Lucky Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Lucky Block validated successfully"
+    },
+    {
+      "id": "block_loot_lucky_block",
+      "name": "Block Loot: Lucky Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Loot: Lucky Block validated successfully"
+    },
+    {
+      "id": "block_item_lucky_block",
+      "name": "Block Item Model: Lucky Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Lucky Block validated successfully"
+    },
+    {
+      "id": "recipes_existence",
+      "name": "Recipes Defined",
+      "category": "recipes",
+      "status": "passed",
+      "message": "1 recipes expected"
+    },
+    {
+      "id": "recipe_files",
+      "name": "Recipe Files Generated",
+      "category": "recipes",
+      "status": "passed",
+      "message": "2 recipe files generated"
+    },
+    {
+      "id": "recipe_output_lucky_block",
+      "name": "Recipe Output: lucky_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: lucky_block validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_lucky_block",
+      "name": "Recipe Ingredients: lucky_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: lucky_block validated successfully"
+    },
+    {
+      "id": "recipe_output_minecraftair",
+      "name": "Recipe Output: minecraftair",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: minecraftair validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_minecraftair",
+      "name": "Recipe Ingredients: minecraftair",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: minecraftair validated successfully"
+    },
+    {
+      "id": "mobs_existence",
+      "name": "Mobs Defined",
+      "category": "mobs",
+      "status": "skipped",
+      "message": "No mobs defined in spec"
+    },
+    {
+      "id": "npcs_existence",
+      "name": "NPCs Defined",
+      "category": "npcs",
+      "status": "skipped",
+      "message": "No NPCs defined in spec"
+    },
+    {
+      "id": "quests_existence",
+      "name": "Quests Defined",
+      "category": "quests",
+      "status": "skipped",
+      "message": "No quests defined in spec"
+    },
+    {
+      "id": "advancements_existence",
+      "name": "Advancements Defined",
+      "category": "advancements",
+      "status": "skipped",
+      "message": "No advancements generated"
+    },
+    {
+      "id": "dimensions_existence",
+      "name": "Dimensions Defined",
+      "category": "dimensions",
+      "status": "skipped",
+      "message": "No dimensions defined in spec"
+    },
+    {
+      "id": "biomes_existence",
+      "name": "Biomes Defined",
+      "category": "biomes",
+      "status": "skipped",
+      "message": "No biomes defined in spec"
+    },
+    {
+      "id": "structures_existence",
+      "name": "Structures Defined",
+      "category": "structures",
+      "status": "passed",
+      "message": "1 structures defined"
+    },
+    {
+      "id": "structure_json_small_stone_building",
+      "name": "Structure JSON: Small Stone Building",
+      "category": "structures",
+      "status": "passed",
+      "message": "Structure JSON: Small Stone Building validated successfully"
+    },
+    {
+      "id": "structure_set_small_stone_building",
+      "name": "Structure Set: Small Stone Building",
+      "category": "structures",
+      "status": "warning",
+      "message": "Missing structure_set (structure may not spawn)"
+    },
+    {
+      "id": "structure_loot_small_stone_building",
+      "name": "Structure Loot: Small Stone Building",
+      "category": "structures",
+      "status": "passed",
+      "message": "Structure Loot: Small Stone Building validated successfully"
+    },
+    {
+      "id": "events_existence",
+      "name": "Events Defined",
+      "category": "events",
+      "status": "skipped",
+      "message": "No events defined in spec"
+    }
+  ],
+  "summary": "# Feature Audit Report: Lucky Blocks\nGenerated: 2025-12-29T03:29:30.946Z\nMinecraft Version: 1.21.1\n\n## ⚠️ PASSED WITH WARNINGS\nTotal: 20 passed, 1 warnings, 7 skipped\n\n## Category Breakdown\n\n✅ **items**: 7/7 passed\n✅ **blocks**: 4/4 passed\n✅ **recipes**: 6/6 passed\n✅ **mobs**: 0/1 passed\n✅ **npcs**: 0/1 passed\n✅ **quests**: 0/1 passed\n✅ **advancements**: 0/1 passed\n✅ **dimensions**: 0/1 passed\n✅ **biomes**: 0/1 passed\n⚠️ **structures**: 3/4 passed\n✅ **events**: 0/1 passed",
+  "suggestions": []
+}

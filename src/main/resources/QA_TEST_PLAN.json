@@ -1,0 +1,113 @@
+{
+  "modId": "luckyblocks",
+  "modName": "Lucky Blocks",
+  "mcVersion": "1.21.1",
+  "generatedAt": "2025-12-29T03:29:30.947Z",
+  "totalTests": 6,
+  "categories": [
+    {
+      "name": "Items",
+      "tests": [
+        {
+          "category": "Items",
+          "name": "Minecraftair Registration",
+          "command": "/give @p luckyblocks:minecraftair",
+          "steps": [
+            "Run: /give @p luckyblocks:minecraftair",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Living Wood Registration",
+          "command": "/give @p luckyblocks:living_wood",
+          "steps": [
+            "Run: /give @p luckyblocks:living_wood",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        }
+      ]
+    },
+    {
+      "name": "Recipes",
+      "tests": [
+        {
+          "category": "Recipes",
+          "name": "Minecraftair Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:cobblestone\",\"luckyblocks:living_wood\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Minecraftair",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Blocks",
+      "tests": [
+        {
+          "category": "Blocks",
+          "name": "Lucky Block Placement",
+          "command": "/give @p luckyblocks:lucky_block",
+          "steps": [
+            "Run: /give @p luckyblocks:lucky_block",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Structures",
+      "tests": [
+        {
+          "category": "Structures",
+          "name": "Small Stone Building Location",
+          "command": "/locate structure luckyblocks:small_stone_building",
+          "steps": [
+            "Run: /locate structure luckyblocks:small_stone_building",
+            "Teleport to structure",
+            "Verify structure generated correctly"
+          ],
+          "expectedResult": "Structure can be located and renders correctly",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Structure Loot",
+      "tests": [
+        {
+          "category": "Structure Loot",
+          "name": "Small Stone Building Chest Loot",
+          "steps": [
+            "Locate structure",
+            "Find loot chests",
+            "Open chests",
+            "Verify loot is generated"
+          ],
+          "expectedResult": "Chests contain expected loot",
+          "automated": false
+        }
+      ]
+    }
+  ],
+  "quickCommands": [
+    "/give @p luckyblocks:minecraftair",
+    "/give @p luckyblocks:living_wood"
+  ]
+}

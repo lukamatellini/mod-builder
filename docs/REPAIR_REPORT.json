@@ -1,0 +1,79 @@
+{
+  "version": "1.0",
+  "timestamp": "2025-12-29T03:29:30.852Z",
+  "pipeline": "generate-mod",
+  "modId": "luckyblocks",
+  "mcVersion": "1.21.1",
+  "registryAutoCreations": [
+    {
+      "type": "item",
+      "id": "minecraftair",
+      "name": "Minecraftair",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    }
+  ],
+  "javaImportRepairs": [],
+  "javaSymbolRepairs": [],
+  "versionParityRepairs": [],
+  "textureModelAutoGens": [],
+  "idResolutionRepairs": [
+    {
+      "location": "global-inference",
+      "original": "minecraftair",
+      "resolved": "luckyblocks:minecraftair",
+      "reason": "Auto-created missing entity"
+    }
+  ],
+  "recipeRepairs": [
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:living_wood",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Living Wood"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stone",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:lucky_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Lucky Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:living_wood",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Living Wood"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:minecraftair",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Minecraftair"
+    }
+  ],
+  "omissions": [],
+  "summary": {
+    "totalRepairs": 5,
+    "totalAutoCreations": 1,
+    "totalOmissions": 0,
+    "warnings": []
+  }
+}
