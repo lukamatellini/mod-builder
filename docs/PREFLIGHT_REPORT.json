@@ -1,0 +1,28 @@
+{
+  "summary": {
+    "scannedLocations": 5,
+    "totalRepairs": 1,
+    "autoCreatedStubs": 1,
+    "unresolvedReferences": 0,
+    "success": true
+  },
+  "repairs": [
+    {
+      "location": "src/main/resources/build-plan.json .inferenceReasons[0]",
+      "type": "auto_create",
+      "original": "Commands enabled: mandatory fallback surface for testing",
+      "repaired": "luckyblocks:commands enabled: mandatory fallback surface for testing",
+      "reason": "Auto-created missing item stub"
+    }
+  ],
+  "autoCreatedStubs": [
+    {
+      "id": "commands enabled: mandatory fallback surface for testing",
+      "name": "Commands enabled: mandatory fallback surface for testing",
+      "type": "item",
+      "reason": "Referenced in src/main/resources/build-plan.json .inferenceReasons[0] but not defined"
+    }
+  ],
+  "unresolvedReferences": [],
+  "generatedAt": "2025-12-29T05:45:50.621Z"
+}

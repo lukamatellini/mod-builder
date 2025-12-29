@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "timestamp": "2025-12-29T05:45:50.596Z",
+  "pipeline": "generate-mod",
+  "modId": "luckyblocks",
+  "mcVersion": "1.21.1",
+  "registryAutoCreations": [],
+  "javaImportRepairs": [],
+  "javaSymbolRepairs": [],
+  "versionParityRepairs": [],
+  "textureModelAutoGens": [],
+  "idResolutionRepairs": [],
+  "recipeRepairs": [
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stone",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:lucky_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Lucky Block"
+    }
+  ],
+  "omissions": [],
+  "summary": {
+    "totalRepairs": 1,
+    "totalAutoCreations": 0,
+    "totalOmissions": 0,
+    "warnings": []
+  }
+}
