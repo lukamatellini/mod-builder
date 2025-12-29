@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "item": "luckyblocks:void_essence"
+    }
+  ],
+  "result": {
+    "id": "luckyblocks:no_direct_drop",
+    "count": 1
+  }
+}

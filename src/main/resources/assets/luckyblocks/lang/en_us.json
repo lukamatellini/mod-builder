@@ -1,0 +1,8 @@
+{
+  "itemGroup.luckyblocks.main": "Lucky Blocks",
+  "item.luckyblocks.no_direct_drop": "No Direct Drop",
+  "item.luckyblocks.triggers_a_random_event": "Triggers A Random Event",
+  "item.luckyblocks.void_essence": "Void Essence",
+  "block.luckyblocks.lucky_block": "Lucky Block",
+  "structure.luckyblocks.lucky_shrine": "Lucky Shrine"
+}

@@ -1,0 +1,67 @@
+{
+  "summary": {
+    "scannedLocations": 25,
+    "totalRepairs": 4,
+    "autoCreatedStubs": 4,
+    "unresolvedReferences": 0,
+    "success": true
+  },
+  "repairs": [
+    {
+      "location": "src/main/resources/build-plan.json .inferenceReasons[0]",
+      "type": "auto_create",
+      "original": "Structures enabled: 1 structures defined in spec",
+      "repaired": "luckyblocks:structures enabled: 1 structures defined in spec",
+      "reason": "Auto-created missing item stub"
+    },
+    {
+      "location": "src/main/resources/build-plan.json .inferenceReasons[1]",
+      "type": "auto_create",
+      "original": "Items enabled: 3 items defined in spec",
+      "repaired": "luckyblocks:items enabled: 3 items defined in spec",
+      "reason": "Auto-created missing item stub"
+    },
+    {
+      "location": "src/main/resources/build-plan.json .inferenceReasons[2]",
+      "type": "auto_create",
+      "original": "Commands enabled: mandatory fallback surface for testing",
+      "repaired": "luckyblocks:commands enabled: mandatory fallback surface for testing",
+      "reason": "Auto-created missing item stub"
+    },
+    {
+      "location": "src/main/resources/data/luckyblocks/tags/worldgen/structure/luckyblocks_structures.json .values[0]",
+      "type": "auto_create",
+      "original": "luckyblocks:lucky_shrine",
+      "repaired": "luckyblocks:lucky_shrine",
+      "reason": "Auto-created missing item stub"
+    }
+  ],
+  "autoCreatedStubs": [
+    {
+      "id": "structures enabled: 1 structures defined in spec",
+      "name": "Structures enabled: 1 structures defined in spec",
+      "type": "item",
+      "reason": "Referenced in src/main/resources/build-plan.json .inferenceReasons[0] but not defined"
+    },
+    {
+      "id": "items enabled: 3 items defined in spec",
+      "name": "Items enabled: 3 items defined in spec",
+      "type": "item",
+      "reason": "Referenced in src/main/resources/build-plan.json .inferenceReasons[1] but not defined"
+    },
+    {
+      "id": "commands enabled: mandatory fallback surface for testing",
+      "name": "Commands enabled: mandatory fallback surface for testing",
+      "type": "item",
+      "reason": "Referenced in src/main/resources/build-plan.json .inferenceReasons[2] but not defined"
+    },
+    {
+      "id": "lucky_shrine",
+      "name": "Lucky Shrine",
+      "type": "item",
+      "reason": "Referenced in src/main/resources/data/luckyblocks/tags/worldgen/structure/luckyblocks_structures.json .values[0] but not defined"
+    }
+  ],
+  "unresolvedReferences": [],
+  "generatedAt": "2025-12-29T01:17:44.809Z"
+}

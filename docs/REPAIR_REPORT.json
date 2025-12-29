@@ -1,0 +1,122 @@
+{
+  "version": "1.0",
+  "timestamp": "2025-12-29T01:17:44.739Z",
+  "pipeline": "generate-mod",
+  "modId": "luckyblocks",
+  "mcVersion": "1.21.1",
+  "registryAutoCreations": [
+    {
+      "type": "item",
+      "id": "no_direct_drop",
+      "name": "No Direct Drop",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    },
+    {
+      "type": "item",
+      "id": "triggers_a_random_event",
+      "name": "Triggers A Random Event",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    }
+  ],
+  "javaImportRepairs": [],
+  "javaSymbolRepairs": [],
+  "versionParityRepairs": [],
+  "textureModelAutoGens": [],
+  "idResolutionRepairs": [
+    {
+      "location": "global-inference",
+      "original": "no_direct_drop",
+      "resolved": "luckyblocks:no_direct_drop",
+      "reason": "Auto-created missing entity"
+    },
+    {
+      "location": "global-inference",
+      "original": "triggers_a_random_event",
+      "resolved": "luckyblocks:triggers_a_random_event",
+      "reason": "Auto-created missing entity"
+    }
+  ],
+  "recipeRepairs": [
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:void_essence",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Void Essence"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:void_essence",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Void Essence"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stone",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:lucky_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Lucky Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:void_essence",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Void Essence"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:no_direct_drop",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: No Direct Drop"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:void_essence",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Void Essence"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:triggers_a_random_event",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Triggers A Random Event"
+    }
+  ],
+  "omissions": [],
+  "summary": {
+    "totalRepairs": 9,
+    "totalAutoCreations": 2,
+    "totalOmissions": 0,
+    "warnings": []
+  }
+}
