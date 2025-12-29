@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "timestamp": "2025-12-29T12:22:33.257Z",
+  "pipeline": "generate-mod",
+  "modId": "agedwedge",
+  "mcVersion": "1.21.1",
+  "registryAutoCreations": [
+    {
+      "type": "block",
+      "id": "modcheese_block",
+      "name": "Modcheese Block",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    }
+  ],
+  "javaImportRepairs": [],
+  "javaSymbolRepairs": [],
+  "versionParityRepairs": [],
+  "textureModelAutoGens": [],
+  "idResolutionRepairs": [
+    {
+      "location": "global-inference",
+      "original": "modcheese_block",
+      "resolved": "agedwedge:modcheese_block",
+      "reason": "Auto-created missing entity"
+    }
+  ],
+  "recipeRepairs": [
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stone",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "agedwedge:cheese_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Cheese Block"
+    }
+  ],
+  "omissions": [],
+  "summary": {
+    "totalRepairs": 3,
+    "totalAutoCreations": 1,
+    "totalOmissions": 0,
+    "warnings": []
+  }
+}

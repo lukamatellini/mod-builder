@@ -1,0 +1,41 @@
+{
+  "modId": "agedwedge",
+  "modName": "Aged Wedge",
+  "mcVersion": "1.21.1",
+  "generatedAt": "2025-12-29T12:22:33.393Z",
+  "totalTests": 2,
+  "categories": [
+    {
+      "name": "Blocks",
+      "tests": [
+        {
+          "category": "Blocks",
+          "name": "Cheese Block Placement",
+          "command": "/give @p agedwedge:cheese_block",
+          "steps": [
+            "Run: /give @p agedwedge:cheese_block",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        },
+        {
+          "category": "Blocks",
+          "name": "Modcheese Block Placement",
+          "command": "/give @p agedwedge:modcheese_block",
+          "steps": [
+            "Run: /give @p agedwedge:modcheese_block",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        }
+      ]
+    }
+  ],
+  "quickCommands": []
+}

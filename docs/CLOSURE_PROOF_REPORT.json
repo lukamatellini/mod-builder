@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "timestamp": "2025-12-29T12:22:33.294Z",
+  "capabilities": [
+    {
+      "capabilityId": "block:add_block",
+      "capabilityType": "block",
+      "targetId": "add_block",
+      "status": "REPAIRED",
+      "repairAction": "Auto-create block \"add_block\" with default properties",
+      "proof": {
+        "description": "block \"add_block\" will be created with sensible defaults",
+        "registryEntry": "agedwedge:add_block"
+      }
+    },
+    {
+      "capabilityId": "item:tool",
+      "capabilityType": "item",
+      "targetId": "tool",
+      "status": "REPAIRED",
+      "repairAction": "Auto-create item \"tool\" with default properties",
+      "proof": {
+        "description": "item \"tool\" will be created with sensible defaults",
+        "registryEntry": "agedwedge:tool"
+      }
+    },
+    {
+      "capabilityId": "recipe:tool",
+      "capabilityType": "recipe",
+      "targetId": "tool",
+      "status": "REPAIRED",
+      "repairAction": "Auto-generate crafting recipe for \"tool\"",
+      "proof": {
+        "filePath": "data/agedwedge/recipes/tool.json",
+        "description": "Shaped recipe using common materials"
+      }
+    },
+    {
+      "capabilityId": "dimension:world",
+      "capabilityType": "dimension",
+      "targetId": "world",
+      "status": "REPAIRED",
+      "repairAction": "Auto-create dimension \"world\" with default properties",
+      "proof": {
+        "description": "dimension \"world\" will be created with sensible defaults",
+        "registryEntry": "agedwedge:world"
+      }
+    },
+    {
+      "capabilityId": "dimension_portal:world",
+      "capabilityType": "dimension_portal",
+      "targetId": "world",
+      "status": "REPAIRED",
+      "repairAction": "Auto-create portal igniter item for dimension \"world\"",
+      "proof": {
+        "registryEntry": "agedwedge:world_portal_igniter",
+        "description": "Portal igniter item created for dimension access"
+      }
+    }
+  ],
+  "summary": {
+    "total": 5,
+    "satisfied": 0,
+    "repaired": 5,
+    "needsClarification": 0,
+    "cannotFulfill": 0
+  }
+}
