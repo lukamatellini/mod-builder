@@ -1,0 +1,243 @@
+{
+  "modId": "luckyblock",
+  "modName": "Lucky Block",
+  "mcVersion": "1.21.1",
+  "generatedAt": "2025-12-29T01:43:16.826Z",
+  "totalTests": 16,
+  "categories": [
+    {
+      "name": "Items",
+      "tests": [
+        {
+          "category": "Items",
+          "name": "Randomly Drops Items Registration",
+          "command": "/give @p luckyblock:randomly_drops_items",
+          "steps": [
+            "Run: /give @p luckyblock:randomly_drops_items",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Spawns Mobs Registration",
+          "command": "/give @p luckyblock:spawns_mobs",
+          "steps": [
+            "Run: /give @p luckyblock:spawns_mobs",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Grants Effects Registration",
+          "command": "/give @p luckyblock:grants_effects",
+          "steps": [
+            "Run: /give @p luckyblock:grants_effects",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Or Triggers Events Based On Defined Good Registration",
+          "command": "/give @p luckyblock:or_triggers_events_based_on_defined_good",
+          "steps": [
+            "Run: /give @p luckyblock:or_triggers_events_based_on_defined_good",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Neutral Registration",
+          "command": "/give @p luckyblock:neutral",
+          "steps": [
+            "Run: /give @p luckyblock:neutral",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "And Bad Outcomes Registration",
+          "command": "/give @p luckyblock:and_bad_outcomes",
+          "steps": [
+            "Run: /give @p luckyblock:and_bad_outcomes",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Ember Core Registration",
+          "command": "/give @p luckyblock:ember_core",
+          "steps": [
+            "Run: /give @p luckyblock:ember_core",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        }
+      ]
+    },
+    {
+      "name": "Recipes",
+      "tests": [
+        {
+          "category": "Recipes",
+          "name": "Randomly Drops Items Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:cobblestone\",\"luckyblock:ember_core\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Randomly Drops Items",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Spawns Mobs Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:cobblestone\",\"luckyblock:ember_core\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Spawns Mobs",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Grants Effects Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:cobblestone\",\"luckyblock:ember_core\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Grants Effects",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Or Triggers Events Based On Defined Good Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:cobblestone\",\"luckyblock:ember_core\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Or Triggers Events Based On Defined Good",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Neutral Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:cobblestone\",\"luckyblock:ember_core\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Neutral",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "And Bad Outcomes Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:cobblestone\",\"luckyblock:ember_core\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft And Bad Outcomes",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Blocks",
+      "tests": [
+        {
+          "category": "Blocks",
+          "name": "Lucky Block Placement",
+          "command": "/give @p luckyblock:lucky_block",
+          "steps": [
+            "Run: /give @p luckyblock:lucky_block",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Structures",
+      "tests": [
+        {
+          "category": "Structures",
+          "name": "Lucky Shrine Location",
+          "command": "/locate structure luckyblock:lucky_shrine",
+          "steps": [
+            "Run: /locate structure luckyblock:lucky_shrine",
+            "Teleport to structure",
+            "Verify structure generated correctly"
+          ],
+          "expectedResult": "Structure can be located and renders correctly",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Structure Loot",
+      "tests": [
+        {
+          "category": "Structure Loot",
+          "name": "Lucky Shrine Chest Loot",
+          "steps": [
+            "Locate structure",
+            "Find loot chests",
+            "Open chests",
+            "Verify loot is generated"
+          ],
+          "expectedResult": "Chests contain expected loot",
+          "automated": false
+        }
+      ]
+    }
+  ],
+  "quickCommands": [
+    "/give @p luckyblock:randomly_drops_items",
+    "/give @p luckyblock:spawns_mobs",
+    "/give @p luckyblock:grants_effects",
+    "/give @p luckyblock:or_triggers_events_based_on_defined_good",
+    "/give @p luckyblock:neutral",
+    "/give @p luckyblock:and_bad_outcomes",
+    "/give @p luckyblock:ember_core"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "itemGroup.luckyblock.main": "Lucky Block",
+  "item.luckyblock.randomly_drops_items": "Randomly Drops Items",
+  "item.luckyblock.spawns_mobs": "Spawns Mobs",
+  "item.luckyblock.grants_effects": "Grants Effects",
+  "item.luckyblock.or_triggers_events_based_on_defined_good": "Or Triggers Events Based On Defined Good",
+  "item.luckyblock.neutral": "Neutral",
+  "item.luckyblock.and_bad_outcomes": "And Bad Outcomes",
+  "item.luckyblock.ember_core": "Ember Core",
+  "block.luckyblock.lucky_block": "Lucky Block",
+  "structure.luckyblock.lucky_shrine": "Lucky Shrine"
+}

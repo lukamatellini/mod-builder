@@ -1,0 +1,294 @@
+{
+  "version": "1.0",
+  "timestamp": "2025-12-29T01:43:16.706Z",
+  "pipeline": "generate-mod",
+  "modId": "luckyblock",
+  "mcVersion": "1.21.1",
+  "registryAutoCreations": [
+    {
+      "type": "item",
+      "id": "randomly_drops_items",
+      "name": "Randomly Drops Items",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    },
+    {
+      "type": "item",
+      "id": "spawns_mobs",
+      "name": "Spawns Mobs",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    },
+    {
+      "type": "item",
+      "id": "grants_effects",
+      "name": "Grants Effects",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    },
+    {
+      "type": "item",
+      "id": "or_triggers_events_based_on_defined_good",
+      "name": "Or Triggers Events Based On Defined Good",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    },
+    {
+      "type": "item",
+      "id": "neutral",
+      "name": "Neutral",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    },
+    {
+      "type": "item",
+      "id": "and_bad_outcomes",
+      "name": "And Bad Outcomes",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    }
+  ],
+  "javaImportRepairs": [],
+  "javaSymbolRepairs": [],
+  "versionParityRepairs": [],
+  "textureModelAutoGens": [],
+  "idResolutionRepairs": [
+    {
+      "location": "global-inference",
+      "original": "randomly_drops_items",
+      "resolved": "luckyblock:randomly_drops_items",
+      "reason": "Auto-created missing entity"
+    },
+    {
+      "location": "global-inference",
+      "original": "spawns_mobs",
+      "resolved": "luckyblock:spawns_mobs",
+      "reason": "Auto-created missing entity"
+    },
+    {
+      "location": "global-inference",
+      "original": "grants_effects",
+      "resolved": "luckyblock:grants_effects",
+      "reason": "Auto-created missing entity"
+    },
+    {
+      "location": "global-inference",
+      "original": "or_triggers_events_based_on_defined_good",
+      "resolved": "luckyblock:or_triggers_events_based_on_defined_good",
+      "reason": "Auto-created missing entity"
+    },
+    {
+      "location": "global-inference",
+      "original": "neutral",
+      "resolved": "luckyblock:neutral",
+      "reason": "Auto-created missing entity"
+    },
+    {
+      "location": "global-inference",
+      "original": "and_bad_outcomes",
+      "resolved": "luckyblock:and_bad_outcomes",
+      "reason": "Auto-created missing entity"
+    }
+  ],
+  "recipeRepairs": [
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:ember_core",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Ember Core"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:ember_core",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Ember Core"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:ember_core",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Ember Core"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:ember_core",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Ember Core"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:ember_core",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Ember Core"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:ember_core",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Ember Core"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stone",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:lucky_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Lucky Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:ember_core",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Ember Core"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:randomly_drops_items",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Randomly Drops Items"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:ember_core",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Ember Core"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:spawns_mobs",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Spawns Mobs"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:ember_core",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Ember Core"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:grants_effects",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Grants Effects"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:ember_core",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Ember Core"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:or_triggers_events_based_on_defined_good",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Or Triggers Events Based On Defined Good"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:ember_core",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Ember Core"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:neutral",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Neutral"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:ember_core",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Ember Core"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:and_bad_outcomes",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: And Bad Outcomes"
+    }
+  ],
+  "omissions": [],
+  "summary": {
+    "totalRepairs": 25,
+    "totalAutoCreations": 6,
+    "totalOmissions": 0,
+    "warnings": []
+  }
+}

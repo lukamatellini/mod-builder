@@ -1,0 +1,357 @@
+{
+  "modId": "luckyblock",
+  "modName": "Lucky Block",
+  "generatedAt": "2025-12-29T01:43:16.778Z",
+  "mcVersion": "1.21.1",
+  "categories": {
+    "items": {
+      "name": "Items",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "randomly_drops_items: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "randomly_drops_items: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "spawns_mobs: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "spawns_mobs: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "grants_effects: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "grants_effects: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "or_triggers_events_based_on_defined_good: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "or_triggers_events_based_on_defined_good: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "neutral: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "neutral: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "and_bad_outcomes: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "and_bad_outcomes: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "ember_core: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "ember_core: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        }
+      ],
+      "notes": "7 items audited"
+    },
+    "blocks": {
+      "name": "Blocks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lucky_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "lucky_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        }
+      ],
+      "notes": "1 blocks audited"
+    },
+    "mobs": {
+      "name": "Mobs",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No mobs defined",
+          "status": "skipped",
+          "message": "No mobs to audit"
+        }
+      ]
+    },
+    "structures": {
+      "name": "Structures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_shrine: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lucky_shrine: Features",
+          "status": "passed",
+          "message": "1 features defined"
+        }
+      ],
+      "notes": "1 structures audited"
+    },
+    "recipes": {
+      "name": "Recipes",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Items with recipes",
+          "status": "passed",
+          "message": "6/7 items have recipes"
+        },
+        {
+          "name": "randomly_drops_items: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "spawns_mobs: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "grants_effects: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "or_triggers_events_based_on_defined_good: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "neutral: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "and_bad_outcomes: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        }
+      ],
+      "notes": "7 recipes audited"
+    },
+    "lootTables": {
+      "name": "Loot Tables",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        }
+      ],
+      "notes": "0 mob loot tables audited"
+    },
+    "textures": {
+      "name": "Textures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Texture files generated",
+          "status": "passed",
+          "message": "9 textures generated (expected at least 8)"
+        },
+        {
+          "name": "lucky_block.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "fallback.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "randomly_drops_items.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "spawns_mobs.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "grants_effects.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "or_triggers_events_based_on_defined_good.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "neutral.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "and_bad_outcomes.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "ember_core.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        }
+      ],
+      "notes": "9 texture files"
+    },
+    "quests": {
+      "name": "Quests",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No quests defined",
+          "status": "skipped",
+          "message": "No quests to audit"
+        }
+      ]
+    },
+    "advancements": {
+      "name": "Advancements",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Advancement files",
+          "status": "warn",
+          "message": "0 advancement files generated"
+        },
+        {
+          "name": "Root advancement",
+          "status": "warn",
+          "message": "No root advancement"
+        }
+      ],
+      "notes": "0 advancements"
+    },
+    "compilation": {
+      "name": "Compilation",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "build.gradle",
+          "status": "passed",
+          "message": "Build file exists"
+        },
+        {
+          "name": "fabric.mod.json",
+          "status": "passed",
+          "message": "Mod descriptor exists"
+        },
+        {
+          "name": "Minecraft version",
+          "status": "passed",
+          "message": "Correct MC version"
+        },
+        {
+          "name": "Java source files",
+          "status": "passed",
+          "message": "11 Java files generated"
+        }
+      ],
+      "notes": "Build configuration audit"
+    },
+    "apiSafety": {
+      "name": "API Safety",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "API safety scan",
+          "status": "passed",
+          "message": "No forbidden patterns detected"
+        }
+      ],
+      "notes": "MC 1.21.1 API compatibility check"
+    },
+    "vanillaFallbacks": {
+      "name": "Vanilla Fallbacks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Vanilla recipe ingredients",
+          "status": "passed",
+          "message": "6 vanilla ingredients used (intentional)",
+          "details": "randomly_drops_items uses minecraft:diamond, spawns_mobs uses minecraft:diamond, grants_effects uses minecraft:diamond, or_triggers_events_based_on_defined_good uses minecraft:diamond, neutral uses minecraft:diamond, and_bad_outcomes uses minecraft:diamond"
+        }
+      ],
+      "notes": "Tracks use of vanilla content vs custom generation"
+    },
+    "inferredContent": {
+      "name": "Inferred Content",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Theme inference",
+          "status": "passed",
+          "message": "Inferred theme: whimsical realistic",
+          "details": "Primary themes: gold, forest, ancient, stone, gold, Power level: endgame"
+        },
+        {
+          "name": "Inferred item recipes",
+          "status": "passed",
+          "message": "6/7 items have recipes"
+        },
+        {
+          "name": "Inferred structure features",
+          "status": "passed",
+          "message": "1/1 structures have features"
+        }
+      ],
+      "notes": "Tracks auto-completed and inferred content"
+    }
+  },
+  "summary": {
+    "totalChecks": 50,
+    "passed": 46,
+    "failed": 0,
+    "warnings": 2,
+    "skipped": 2,
+    "overallStatus": "warn"
+  }
+}

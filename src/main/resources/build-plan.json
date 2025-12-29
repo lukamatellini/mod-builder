@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21.1",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-29T01:43:16.749Z",
+  "enabledModules": {
+    "quests": false,
+    "npcs": false,
+    "dialogue": false,
+    "trading": false,
+    "structures": true,
+    "dimensions": false,
+    "biomes": false,
+    "commands": true,
+    "items": true,
+    "mobs": false,
+    "events": false
+  },
+  "inferenceReasons": [
+    "luckyblock:structures enabled: 1 structures defined in spec",
+    "luckyblock:items enabled: 7 items defined in spec",
+    "luckyblock:commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 7,
+    "mobs": 0,
+    "structures": 1,
+    "dimensions": 0,
+    "quests": 0,
+    "npcs": 0,
+    "events": 0
+  },
+  "expectedDataFiles": [
+    "data/luckyblock/worldgen/structure/lucky_shrine.json"
+  ],
+  "expectedAssetFiles": [
+    "assets/luckyblock/lang/en_us.json",
+    "assets/luckyblock/models/item/randomly_drops_items.json",
+    "assets/luckyblock/models/item/spawns_mobs.json",
+    "assets/luckyblock/models/item/grants_effects.json",
+    "assets/luckyblock/models/item/or_triggers_events_based_on_defined_good.json",
+    "assets/luckyblock/models/item/neutral.json",
+    "assets/luckyblock/models/item/and_bad_outcomes.json",
+    "assets/luckyblock/models/item/ember_core.json"
+  ]
+}

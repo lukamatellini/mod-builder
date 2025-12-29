@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "item": "luckyblock:ember_core"
+    }
+  ],
+  "result": {
+    "id": "luckyblock:spawns_mobs",
+    "count": 1
+  }
+}

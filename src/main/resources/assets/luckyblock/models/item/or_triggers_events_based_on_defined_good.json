@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "luckyblock:item/or_triggers_events_based_on_defined_good"
+  }
+}

@@ -1,0 +1,871 @@
+{
+  "modId": "luckyblock",
+  "modName": "Lucky Block",
+  "generatedAt": "2025-12-29T01:43:16.825Z",
+  "mcVersion": "1.21.1",
+  "overallStatus": "warnings",
+  "totalChecks": 53,
+  "passedChecks": 45,
+  "failedChecks": 0,
+  "warningChecks": 1,
+  "skippedChecks": 7,
+  "categories": [
+    {
+      "category": "items",
+      "total": 22,
+      "passed": 22,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "items_existence",
+          "name": "Items Defined",
+          "category": "items",
+          "status": "passed",
+          "message": "7 items defined"
+        },
+        {
+          "id": "item_model_randomly_drops_items",
+          "name": "Item Model: Randomly Drops Items",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Randomly Drops Items validated successfully"
+        },
+        {
+          "id": "item_texture_randomly_drops_items",
+          "name": "Item Texture: Randomly Drops Items",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Randomly Drops Items validated successfully"
+        },
+        {
+          "id": "item_model_spawns_mobs",
+          "name": "Item Model: Spawns Mobs",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Spawns Mobs validated successfully"
+        },
+        {
+          "id": "item_texture_spawns_mobs",
+          "name": "Item Texture: Spawns Mobs",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Spawns Mobs validated successfully"
+        },
+        {
+          "id": "item_model_grants_effects",
+          "name": "Item Model: Grants Effects",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Grants Effects validated successfully"
+        },
+        {
+          "id": "item_texture_grants_effects",
+          "name": "Item Texture: Grants Effects",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Grants Effects validated successfully"
+        },
+        {
+          "id": "item_model_or_triggers_events_based_on_defined_good",
+          "name": "Item Model: Or Triggers Events Based On Defined Good",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Or Triggers Events Based On Defined Good validated successfully"
+        },
+        {
+          "id": "item_texture_or_triggers_events_based_on_defined_good",
+          "name": "Item Texture: Or Triggers Events Based On Defined Good",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Or Triggers Events Based On Defined Good validated successfully"
+        },
+        {
+          "id": "item_model_neutral",
+          "name": "Item Model: Neutral",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Neutral validated successfully"
+        },
+        {
+          "id": "item_texture_neutral",
+          "name": "Item Texture: Neutral",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Neutral validated successfully"
+        },
+        {
+          "id": "item_model_and_bad_outcomes",
+          "name": "Item Model: And Bad Outcomes",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: And Bad Outcomes validated successfully"
+        },
+        {
+          "id": "item_texture_and_bad_outcomes",
+          "name": "Item Texture: And Bad Outcomes",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: And Bad Outcomes validated successfully"
+        },
+        {
+          "id": "item_model_ember_core",
+          "name": "Item Model: Ember Core",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Ember Core validated successfully"
+        },
+        {
+          "id": "item_texture_ember_core",
+          "name": "Item Texture: Ember Core",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Ember Core validated successfully"
+        },
+        {
+          "id": "item_lang_randomly_drops_items",
+          "name": "Item Localization: Randomly Drops Items",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Randomly Drops Items validated successfully"
+        },
+        {
+          "id": "item_lang_spawns_mobs",
+          "name": "Item Localization: Spawns Mobs",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Spawns Mobs validated successfully"
+        },
+        {
+          "id": "item_lang_grants_effects",
+          "name": "Item Localization: Grants Effects",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Grants Effects validated successfully"
+        },
+        {
+          "id": "item_lang_or_triggers_events_based_on_defined_good",
+          "name": "Item Localization: Or Triggers Events Based On Defined Good",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Or Triggers Events Based On Defined Good validated successfully"
+        },
+        {
+          "id": "item_lang_neutral",
+          "name": "Item Localization: Neutral",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Neutral validated successfully"
+        },
+        {
+          "id": "item_lang_and_bad_outcomes",
+          "name": "Item Localization: And Bad Outcomes",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: And Bad Outcomes validated successfully"
+        },
+        {
+          "id": "item_lang_ember_core",
+          "name": "Item Localization: Ember Core",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Ember Core validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "blocks",
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "blocks_existence",
+          "name": "Blocks Defined",
+          "category": "blocks",
+          "status": "passed",
+          "message": "1 blocks defined"
+        },
+        {
+          "id": "block_state_lucky_block",
+          "name": "Blockstate: Lucky Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Lucky Block validated successfully"
+        },
+        {
+          "id": "block_loot_lucky_block",
+          "name": "Block Loot: Lucky Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Loot: Lucky Block validated successfully"
+        },
+        {
+          "id": "block_item_lucky_block",
+          "name": "Block Item Model: Lucky Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Lucky Block validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "recipes",
+      "total": 16,
+      "passed": 16,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "recipes_existence",
+          "name": "Recipes Defined",
+          "category": "recipes",
+          "status": "passed",
+          "message": "6 recipes expected"
+        },
+        {
+          "id": "recipe_files",
+          "name": "Recipe Files Generated",
+          "category": "recipes",
+          "status": "passed",
+          "message": "7 recipe files generated"
+        },
+        {
+          "id": "recipe_output_lucky_block",
+          "name": "Recipe Output: lucky_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: lucky_block validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_lucky_block",
+          "name": "Recipe Ingredients: lucky_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: lucky_block validated successfully"
+        },
+        {
+          "id": "recipe_output_randomly_drops_items",
+          "name": "Recipe Output: randomly_drops_items",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: randomly_drops_items validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_randomly_drops_items",
+          "name": "Recipe Ingredients: randomly_drops_items",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: randomly_drops_items validated successfully"
+        },
+        {
+          "id": "recipe_output_spawns_mobs",
+          "name": "Recipe Output: spawns_mobs",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: spawns_mobs validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_spawns_mobs",
+          "name": "Recipe Ingredients: spawns_mobs",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: spawns_mobs validated successfully"
+        },
+        {
+          "id": "recipe_output_grants_effects",
+          "name": "Recipe Output: grants_effects",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: grants_effects validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_grants_effects",
+          "name": "Recipe Ingredients: grants_effects",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: grants_effects validated successfully"
+        },
+        {
+          "id": "recipe_output_or_triggers_events_based_on_defined_good",
+          "name": "Recipe Output: or_triggers_events_based_on_defined_good",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: or_triggers_events_based_on_defined_good validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_or_triggers_events_based_on_defined_good",
+          "name": "Recipe Ingredients: or_triggers_events_based_on_defined_good",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: or_triggers_events_based_on_defined_good validated successfully"
+        },
+        {
+          "id": "recipe_output_neutral",
+          "name": "Recipe Output: neutral",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: neutral validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_neutral",
+          "name": "Recipe Ingredients: neutral",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: neutral validated successfully"
+        },
+        {
+          "id": "recipe_output_and_bad_outcomes",
+          "name": "Recipe Output: and_bad_outcomes",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: and_bad_outcomes validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_and_bad_outcomes",
+          "name": "Recipe Ingredients: and_bad_outcomes",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: and_bad_outcomes validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "mobs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "mobs_existence",
+          "name": "Mobs Defined",
+          "category": "mobs",
+          "status": "skipped",
+          "message": "No mobs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "npcs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "npcs_existence",
+          "name": "NPCs Defined",
+          "category": "npcs",
+          "status": "skipped",
+          "message": "No NPCs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "quests",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "quests_existence",
+          "name": "Quests Defined",
+          "category": "quests",
+          "status": "skipped",
+          "message": "No quests defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "advancements",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "advancements_existence",
+          "name": "Advancements Defined",
+          "category": "advancements",
+          "status": "skipped",
+          "message": "No advancements generated"
+        }
+      ]
+    },
+    {
+      "category": "dimensions",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "dimensions_existence",
+          "name": "Dimensions Defined",
+          "category": "dimensions",
+          "status": "skipped",
+          "message": "No dimensions defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "biomes",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "biomes_existence",
+          "name": "Biomes Defined",
+          "category": "biomes",
+          "status": "skipped",
+          "message": "No biomes defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "structures",
+      "total": 4,
+      "passed": 3,
+      "failed": 0,
+      "warnings": 1,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "structures_existence",
+          "name": "Structures Defined",
+          "category": "structures",
+          "status": "passed",
+          "message": "1 structures defined"
+        },
+        {
+          "id": "structure_json_lucky_shrine",
+          "name": "Structure JSON: Lucky Shrine",
+          "category": "structures",
+          "status": "passed",
+          "message": "Structure JSON: Lucky Shrine validated successfully"
+        },
+        {
+          "id": "structure_set_lucky_shrine",
+          "name": "Structure Set: Lucky Shrine",
+          "category": "structures",
+          "status": "warning",
+          "message": "Missing structure_set (structure may not spawn)"
+        },
+        {
+          "id": "structure_loot_lucky_shrine",
+          "name": "Structure Loot: Lucky Shrine",
+          "category": "structures",
+          "status": "passed",
+          "message": "Structure Loot: Lucky Shrine validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "events",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "events_existence",
+          "name": "Events Defined",
+          "category": "events",
+          "status": "skipped",
+          "message": "No events defined in spec"
+        }
+      ]
+    }
+  ],
+  "criticalFailures": [],
+  "allChecks": [
+    {
+      "id": "items_existence",
+      "name": "Items Defined",
+      "category": "items",
+      "status": "passed",
+      "message": "7 items defined"
+    },
+    {
+      "id": "item_model_randomly_drops_items",
+      "name": "Item Model: Randomly Drops Items",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Randomly Drops Items validated successfully"
+    },
+    {
+      "id": "item_texture_randomly_drops_items",
+      "name": "Item Texture: Randomly Drops Items",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Randomly Drops Items validated successfully"
+    },
+    {
+      "id": "item_model_spawns_mobs",
+      "name": "Item Model: Spawns Mobs",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Spawns Mobs validated successfully"
+    },
+    {
+      "id": "item_texture_spawns_mobs",
+      "name": "Item Texture: Spawns Mobs",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Spawns Mobs validated successfully"
+    },
+    {
+      "id": "item_model_grants_effects",
+      "name": "Item Model: Grants Effects",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Grants Effects validated successfully"
+    },
+    {
+      "id": "item_texture_grants_effects",
+      "name": "Item Texture: Grants Effects",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Grants Effects validated successfully"
+    },
+    {
+      "id": "item_model_or_triggers_events_based_on_defined_good",
+      "name": "Item Model: Or Triggers Events Based On Defined Good",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Or Triggers Events Based On Defined Good validated successfully"
+    },
+    {
+      "id": "item_texture_or_triggers_events_based_on_defined_good",
+      "name": "Item Texture: Or Triggers Events Based On Defined Good",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Or Triggers Events Based On Defined Good validated successfully"
+    },
+    {
+      "id": "item_model_neutral",
+      "name": "Item Model: Neutral",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Neutral validated successfully"
+    },
+    {
+      "id": "item_texture_neutral",
+      "name": "Item Texture: Neutral",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Neutral validated successfully"
+    },
+    {
+      "id": "item_model_and_bad_outcomes",
+      "name": "Item Model: And Bad Outcomes",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: And Bad Outcomes validated successfully"
+    },
+    {
+      "id": "item_texture_and_bad_outcomes",
+      "name": "Item Texture: And Bad Outcomes",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: And Bad Outcomes validated successfully"
+    },
+    {
+      "id": "item_model_ember_core",
+      "name": "Item Model: Ember Core",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Ember Core validated successfully"
+    },
+    {
+      "id": "item_texture_ember_core",
+      "name": "Item Texture: Ember Core",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Ember Core validated successfully"
+    },
+    {
+      "id": "item_lang_randomly_drops_items",
+      "name": "Item Localization: Randomly Drops Items",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Randomly Drops Items validated successfully"
+    },
+    {
+      "id": "item_lang_spawns_mobs",
+      "name": "Item Localization: Spawns Mobs",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Spawns Mobs validated successfully"
+    },
+    {
+      "id": "item_lang_grants_effects",
+      "name": "Item Localization: Grants Effects",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Grants Effects validated successfully"
+    },
+    {
+      "id": "item_lang_or_triggers_events_based_on_defined_good",
+      "name": "Item Localization: Or Triggers Events Based On Defined Good",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Or Triggers Events Based On Defined Good validated successfully"
+    },
+    {
+      "id": "item_lang_neutral",
+      "name": "Item Localization: Neutral",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Neutral validated successfully"
+    },
+    {
+      "id": "item_lang_and_bad_outcomes",
+      "name": "Item Localization: And Bad Outcomes",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: And Bad Outcomes validated successfully"
+    },
+    {
+      "id": "item_lang_ember_core",
+      "name": "Item Localization: Ember Core",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Ember Core validated successfully"
+    },
+    {
+      "id": "blocks_existence",
+      "name": "Blocks Defined",
+      "category": "blocks",
+      "status": "passed",
+      "message": "1 blocks defined"
+    },
+    {
+      "id": "block_state_lucky_block",
+      "name": "Blockstate: Lucky Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Lucky Block validated successfully"
+    },
+    {
+      "id": "block_loot_lucky_block",
+      "name": "Block Loot: Lucky Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Loot: Lucky Block validated successfully"
+    },
+    {
+      "id": "block_item_lucky_block",
+      "name": "Block Item Model: Lucky Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Lucky Block validated successfully"
+    },
+    {
+      "id": "recipes_existence",
+      "name": "Recipes Defined",
+      "category": "recipes",
+      "status": "passed",
+      "message": "6 recipes expected"
+    },
+    {
+      "id": "recipe_files",
+      "name": "Recipe Files Generated",
+      "category": "recipes",
+      "status": "passed",
+      "message": "7 recipe files generated"
+    },
+    {
+      "id": "recipe_output_lucky_block",
+      "name": "Recipe Output: lucky_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: lucky_block validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_lucky_block",
+      "name": "Recipe Ingredients: lucky_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: lucky_block validated successfully"
+    },
+    {
+      "id": "recipe_output_randomly_drops_items",
+      "name": "Recipe Output: randomly_drops_items",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: randomly_drops_items validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_randomly_drops_items",
+      "name": "Recipe Ingredients: randomly_drops_items",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: randomly_drops_items validated successfully"
+    },
+    {
+      "id": "recipe_output_spawns_mobs",
+      "name": "Recipe Output: spawns_mobs",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: spawns_mobs validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_spawns_mobs",
+      "name": "Recipe Ingredients: spawns_mobs",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: spawns_mobs validated successfully"
+    },
+    {
+      "id": "recipe_output_grants_effects",
+      "name": "Recipe Output: grants_effects",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: grants_effects validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_grants_effects",
+      "name": "Recipe Ingredients: grants_effects",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: grants_effects validated successfully"
+    },
+    {
+      "id": "recipe_output_or_triggers_events_based_on_defined_good",
+      "name": "Recipe Output: or_triggers_events_based_on_defined_good",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: or_triggers_events_based_on_defined_good validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_or_triggers_events_based_on_defined_good",
+      "name": "Recipe Ingredients: or_triggers_events_based_on_defined_good",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: or_triggers_events_based_on_defined_good validated successfully"
+    },
+    {
+      "id": "recipe_output_neutral",
+      "name": "Recipe Output: neutral",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: neutral validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_neutral",
+      "name": "Recipe Ingredients: neutral",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: neutral validated successfully"
+    },
+    {
+      "id": "recipe_output_and_bad_outcomes",
+      "name": "Recipe Output: and_bad_outcomes",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: and_bad_outcomes validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_and_bad_outcomes",
+      "name": "Recipe Ingredients: and_bad_outcomes",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: and_bad_outcomes validated successfully"
+    },
+    {
+      "id": "mobs_existence",
+      "name": "Mobs Defined",
+      "category": "mobs",
+      "status": "skipped",
+      "message": "No mobs defined in spec"
+    },
+    {
+      "id": "npcs_existence",
+      "name": "NPCs Defined",
+      "category": "npcs",
+      "status": "skipped",
+      "message": "No NPCs defined in spec"
+    },
+    {
+      "id": "quests_existence",
+      "name": "Quests Defined",
+      "category": "quests",
+      "status": "skipped",
+      "message": "No quests defined in spec"
+    },
+    {
+      "id": "advancements_existence",
+      "name": "Advancements Defined",
+      "category": "advancements",
+      "status": "skipped",
+      "message": "No advancements generated"
+    },
+    {
+      "id": "dimensions_existence",
+      "name": "Dimensions Defined",
+      "category": "dimensions",
+      "status": "skipped",
+      "message": "No dimensions defined in spec"
+    },
+    {
+      "id": "biomes_existence",
+      "name": "Biomes Defined",
+      "category": "biomes",
+      "status": "skipped",
+      "message": "No biomes defined in spec"
+    },
+    {
+      "id": "structures_existence",
+      "name": "Structures Defined",
+      "category": "structures",
+      "status": "passed",
+      "message": "1 structures defined"
+    },
+    {
+      "id": "structure_json_lucky_shrine",
+      "name": "Structure JSON: Lucky Shrine",
+      "category": "structures",
+      "status": "passed",
+      "message": "Structure JSON: Lucky Shrine validated successfully"
+    },
+    {
+      "id": "structure_set_lucky_shrine",
+      "name": "Structure Set: Lucky Shrine",
+      "category": "structures",
+      "status": "warning",
+      "message": "Missing structure_set (structure may not spawn)"
+    },
+    {
+      "id": "structure_loot_lucky_shrine",
+      "name": "Structure Loot: Lucky Shrine",
+      "category": "structures",
+      "status": "passed",
+      "message": "Structure Loot: Lucky Shrine validated successfully"
+    },
+    {
+      "id": "events_existence",
+      "name": "Events Defined",
+      "category": "events",
+      "status": "skipped",
+      "message": "No events defined in spec"
+    }
+  ],
+  "summary": "# Feature Audit Report: Lucky Block\nGenerated: 2025-12-29T01:43:16.825Z\nMinecraft Version: 1.21.1\n\n## ⚠️ PASSED WITH WARNINGS\nTotal: 45 passed, 1 warnings, 7 skipped\n\n## Category Breakdown\n\n✅ **items**: 22/22 passed\n✅ **blocks**: 4/4 passed\n✅ **recipes**: 16/16 passed\n✅ **mobs**: 0/1 passed\n✅ **npcs**: 0/1 passed\n✅ **quests**: 0/1 passed\n✅ **advancements**: 0/1 passed\n✅ **dimensions**: 0/1 passed\n✅ **biomes**: 0/1 passed\n⚠️ **structures**: 3/4 passed\n✅ **events**: 0/1 passed",
+  "suggestions": []
+}
