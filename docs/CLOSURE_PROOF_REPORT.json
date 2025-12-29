@@ -1,0 +1,175 @@
+{
+  "passed": true,
+  "timestamp": "2025-12-29T06:05:24.775Z",
+  "capabilities": [
+    {
+      "capabilityId": "block:lucky_block",
+      "capabilityType": "block",
+      "targetId": "lucky_block",
+      "status": "SATISFIED",
+      "proof": {
+        "registryEntry": "luckyblock:lucky_block",
+        "javaHook": "LuckyblockBlocks.LUCKY_BLOCK",
+        "filePath": "src/main/java/.../blocks/LuckyBlockBlock.java",
+        "description": "Block \"Lucky Block\" registered in game registry"
+      }
+    },
+    {
+      "capabilityId": "block_break_hook:lucky_block",
+      "capabilityType": "block_break_hook",
+      "targetId": "lucky_block",
+      "status": "SATISFIED",
+      "proof": {
+        "filePath": "data/luckyblock/loot_tables/blocks/lucky_block.json",
+        "jsonPath": "pools[*].entries",
+        "description": "Block break handler via loot table for \"Lucky Block\""
+      }
+    },
+    {
+      "capabilityId": "loot_table:lucky_block",
+      "capabilityType": "loot_table",
+      "targetId": "lucky_block",
+      "status": "SATISFIED",
+      "proof": {
+        "filePath": "data/luckyblock/loot_tables/**/lucky_block.json",
+        "description": "Loot table for \"lucky_block\""
+      }
+    },
+    {
+      "capabilityId": "block:add_block",
+      "capabilityType": "block",
+      "targetId": "add_block",
+      "status": "REPAIRED",
+      "repairAction": "Auto-create block \"add_block\" with default properties",
+      "proof": {
+        "description": "block \"add_block\" will be created with sensible defaults",
+        "registryEntry": "luckyblock:add_block"
+      }
+    },
+    {
+      "capabilityId": "item:tool",
+      "capabilityType": "item",
+      "targetId": "tool",
+      "status": "REPAIRED",
+      "repairAction": "Auto-create item \"tool\" with default properties",
+      "proof": {
+        "description": "item \"tool\" will be created with sensible defaults",
+        "registryEntry": "luckyblock:tool"
+      }
+    },
+    {
+      "capabilityId": "recipe:tool",
+      "capabilityType": "recipe",
+      "targetId": "tool",
+      "status": "REPAIRED",
+      "repairAction": "Auto-generate crafting recipe for \"tool\"",
+      "proof": {
+        "filePath": "data/luckyblock/recipes/tool.json",
+        "description": "Shaped recipe using common materials"
+      }
+    },
+    {
+      "capabilityId": "mob:hostile",
+      "capabilityType": "mob",
+      "targetId": "hostile",
+      "status": "REPAIRED",
+      "repairAction": "Auto-create mob \"hostile\" with default properties",
+      "proof": {
+        "description": "mob \"hostile\" will be created with sensible defaults",
+        "registryEntry": "luckyblock:hostile"
+      }
+    },
+    {
+      "capabilityId": "mob_spawn:hostile",
+      "capabilityType": "mob_spawn",
+      "targetId": "hostile",
+      "status": "REPAIRED",
+      "repairAction": "Auto-configure mob_spawn \"hostile\"",
+      "proof": {
+        "description": "mob_spawn configured automatically"
+      }
+    },
+    {
+      "capabilityId": "mob_drop:hostile",
+      "capabilityType": "mob_drop",
+      "targetId": "hostile",
+      "status": "REPAIRED",
+      "repairAction": "Auto-add default drops to mob \"hostile\"",
+      "proof": {
+        "description": "Default drops configured for mob"
+      }
+    },
+    {
+      "capabilityId": "block:lucky_block",
+      "capabilityType": "block",
+      "targetId": "lucky_block",
+      "status": "SATISFIED",
+      "proof": {
+        "registryEntry": "luckyblock:lucky_block",
+        "javaHook": "LuckyblockBlocks.LUCKY_BLOCK",
+        "filePath": "src/main/java/.../blocks/LuckyBlockBlock.java",
+        "description": "Block \"Lucky Block\" registered in game registry"
+      }
+    },
+    {
+      "capabilityId": "block_break_hook:lucky_block",
+      "capabilityType": "block_break_hook",
+      "targetId": "lucky_block",
+      "status": "SATISFIED",
+      "proof": {
+        "filePath": "data/luckyblock/loot_tables/blocks/lucky_block.json",
+        "jsonPath": "pools[*].entries",
+        "description": "Block break handler via loot table for \"Lucky Block\""
+      }
+    },
+    {
+      "capabilityId": "rng_outcome:lucky_block",
+      "capabilityType": "rng_outcome",
+      "targetId": "lucky_block",
+      "status": "REPAIRED",
+      "repairAction": "Auto-configure rng_outcome \"lucky_block\"",
+      "proof": {
+        "description": "rng_outcome configured automatically"
+      }
+    },
+    {
+      "capabilityId": "loot_table:lucky_block",
+      "capabilityType": "loot_table",
+      "targetId": "lucky_block",
+      "status": "SATISFIED",
+      "proof": {
+        "filePath": "data/luckyblock/loot_tables/**/lucky_block.json",
+        "description": "Loot table for \"lucky_block\""
+      }
+    },
+    {
+      "capabilityId": "item:minecraft:diamond",
+      "capabilityType": "item",
+      "targetId": "minecraft:diamond",
+      "status": "REPAIRED",
+      "repairAction": "Auto-create item \"minecraft:diamond\" with default properties",
+      "proof": {
+        "description": "item \"minecraft:diamond\" will be created with sensible defaults",
+        "registryEntry": "minecraft:diamond"
+      }
+    },
+    {
+      "capabilityId": "mob:lucky_mob",
+      "capabilityType": "mob",
+      "targetId": "lucky_mob",
+      "status": "REPAIRED",
+      "repairAction": "Auto-create mob \"lucky_mob\" with default properties",
+      "proof": {
+        "description": "mob \"lucky_mob\" will be created with sensible defaults",
+        "registryEntry": "luckyblock:lucky_mob"
+      }
+    }
+  ],
+  "summary": {
+    "total": 15,
+    "satisfied": 6,
+    "repaired": 9,
+    "needsClarification": 0,
+    "cannotFulfill": 0
+  }
+}

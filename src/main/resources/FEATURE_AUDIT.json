@@ -1,0 +1,745 @@
+{
+  "modId": "luckyblock",
+  "modName": "Lucky Block",
+  "generatedAt": "2025-12-29T06:05:24.826Z",
+  "mcVersion": "1.21.1",
+  "overallStatus": "passed",
+  "totalChecks": 44,
+  "passedChecks": 37,
+  "failedChecks": 0,
+  "warningChecks": 0,
+  "skippedChecks": 7,
+  "categories": [
+    {
+      "category": "items",
+      "total": 16,
+      "passed": 16,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "items_existence",
+          "name": "Items Defined",
+          "category": "items",
+          "status": "passed",
+          "message": "5 items defined"
+        },
+        {
+          "id": "item_model_rotten_flesh",
+          "name": "Item Model: Rotten Flesh",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Rotten Flesh validated successfully"
+        },
+        {
+          "id": "item_texture_rotten_flesh",
+          "name": "Item Texture: Rotten Flesh",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Rotten Flesh validated successfully"
+        },
+        {
+          "id": "item_model_carrot",
+          "name": "Item Model: Carrot",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Carrot validated successfully"
+        },
+        {
+          "id": "item_texture_carrot",
+          "name": "Item Texture: Carrot",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Carrot validated successfully"
+        },
+        {
+          "id": "item_model_potato",
+          "name": "Item Model: Potato",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Potato validated successfully"
+        },
+        {
+          "id": "item_texture_potato",
+          "name": "Item Texture: Potato",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Potato validated successfully"
+        },
+        {
+          "id": "item_model_randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+          "name": "Item Model: Randomly Drops Items From A Defined Loot Pool Or Spawns A Hostile Zombie",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Randomly Drops Items From A Defined Loot Pool Or Spawns A Hostile Zombie validated successfully"
+        },
+        {
+          "id": "item_texture_randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+          "name": "Item Texture: Randomly Drops Items From A Defined Loot Pool Or Spawns A Hostile Zombie",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Randomly Drops Items From A Defined Loot Pool Or Spawns A Hostile Zombie validated successfully"
+        },
+        {
+          "id": "item_model_refined_ingot",
+          "name": "Item Model: Refined Ingot",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Refined Ingot validated successfully"
+        },
+        {
+          "id": "item_texture_refined_ingot",
+          "name": "Item Texture: Refined Ingot",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Refined Ingot validated successfully"
+        },
+        {
+          "id": "item_lang_rotten_flesh",
+          "name": "Item Localization: Rotten Flesh",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Rotten Flesh validated successfully"
+        },
+        {
+          "id": "item_lang_carrot",
+          "name": "Item Localization: Carrot",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Carrot validated successfully"
+        },
+        {
+          "id": "item_lang_potato",
+          "name": "Item Localization: Potato",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Potato validated successfully"
+        },
+        {
+          "id": "item_lang_randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+          "name": "Item Localization: Randomly Drops Items From A Defined Loot Pool Or Spawns A Hostile Zombie",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Randomly Drops Items From A Defined Loot Pool Or Spawns A Hostile Zombie validated successfully"
+        },
+        {
+          "id": "item_lang_refined_ingot",
+          "name": "Item Localization: Refined Ingot",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Refined Ingot validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "blocks",
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "blocks_existence",
+          "name": "Blocks Defined",
+          "category": "blocks",
+          "status": "passed",
+          "message": "1 blocks defined"
+        },
+        {
+          "id": "block_state_lucky_block",
+          "name": "Blockstate: Lucky Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Lucky Block validated successfully"
+        },
+        {
+          "id": "block_loot_lucky_block",
+          "name": "Block Loot: Lucky Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Loot: Lucky Block validated successfully"
+        },
+        {
+          "id": "block_item_lucky_block",
+          "name": "Block Item Model: Lucky Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Lucky Block validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "recipes",
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "recipes_existence",
+          "name": "Recipes Defined",
+          "category": "recipes",
+          "status": "passed",
+          "message": "4 recipes expected"
+        },
+        {
+          "id": "recipe_files",
+          "name": "Recipe Files Generated",
+          "category": "recipes",
+          "status": "passed",
+          "message": "5 recipe files generated"
+        },
+        {
+          "id": "recipe_output_lucky_block",
+          "name": "Recipe Output: lucky_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: lucky_block validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_lucky_block",
+          "name": "Recipe Ingredients: lucky_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: lucky_block validated successfully"
+        },
+        {
+          "id": "recipe_output_rotten_flesh",
+          "name": "Recipe Output: rotten_flesh",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: rotten_flesh validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_rotten_flesh",
+          "name": "Recipe Ingredients: rotten_flesh",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: rotten_flesh validated successfully"
+        },
+        {
+          "id": "recipe_output_carrot",
+          "name": "Recipe Output: carrot",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: carrot validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_carrot",
+          "name": "Recipe Ingredients: carrot",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: carrot validated successfully"
+        },
+        {
+          "id": "recipe_output_potato",
+          "name": "Recipe Output: potato",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: potato validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_potato",
+          "name": "Recipe Ingredients: potato",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: potato validated successfully"
+        },
+        {
+          "id": "recipe_output_randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+          "name": "Recipe Output: randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+          "name": "Recipe Ingredients: randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "mobs",
+      "total": 5,
+      "passed": 5,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "mobs_existence",
+          "name": "Mobs Defined",
+          "category": "mobs",
+          "status": "passed",
+          "message": "1 mobs defined"
+        },
+        {
+          "id": "mob_class_lucky_zombie",
+          "name": "Mob Class: Lucky Zombie",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Class: Lucky Zombie validated successfully"
+        },
+        {
+          "id": "mob_drops_lucky_zombie",
+          "name": "Mob Drops: Lucky Zombie",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Drops: Lucky Zombie validated successfully"
+        },
+        {
+          "id": "mob_loot_lucky_zombie",
+          "name": "Mob Loot Table: Lucky Zombie",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Loot Table: Lucky Zombie validated successfully"
+        },
+        {
+          "id": "mob_texture_lucky_zombie",
+          "name": "Mob Texture: Lucky Zombie",
+          "category": "mobs",
+          "status": "passed",
+          "message": "Mob Texture: Lucky Zombie validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "npcs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "npcs_existence",
+          "name": "NPCs Defined",
+          "category": "npcs",
+          "status": "skipped",
+          "message": "No NPCs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "quests",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "quests_existence",
+          "name": "Quests Defined",
+          "category": "quests",
+          "status": "skipped",
+          "message": "No quests defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "advancements",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "advancements_existence",
+          "name": "Advancements Defined",
+          "category": "advancements",
+          "status": "skipped",
+          "message": "No advancements generated"
+        }
+      ]
+    },
+    {
+      "category": "dimensions",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "dimensions_existence",
+          "name": "Dimensions Defined",
+          "category": "dimensions",
+          "status": "skipped",
+          "message": "No dimensions defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "biomes",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "biomes_existence",
+          "name": "Biomes Defined",
+          "category": "biomes",
+          "status": "skipped",
+          "message": "No biomes defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "structures",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "structures_existence",
+          "name": "Structures Defined",
+          "category": "structures",
+          "status": "skipped",
+          "message": "No structures defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "events",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "events_existence",
+          "name": "Events Defined",
+          "category": "events",
+          "status": "skipped",
+          "message": "No events defined in spec"
+        }
+      ]
+    }
+  ],
+  "criticalFailures": [],
+  "allChecks": [
+    {
+      "id": "items_existence",
+      "name": "Items Defined",
+      "category": "items",
+      "status": "passed",
+      "message": "5 items defined"
+    },
+    {
+      "id": "item_model_rotten_flesh",
+      "name": "Item Model: Rotten Flesh",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Rotten Flesh validated successfully"
+    },
+    {
+      "id": "item_texture_rotten_flesh",
+      "name": "Item Texture: Rotten Flesh",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Rotten Flesh validated successfully"
+    },
+    {
+      "id": "item_model_carrot",
+      "name": "Item Model: Carrot",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Carrot validated successfully"
+    },
+    {
+      "id": "item_texture_carrot",
+      "name": "Item Texture: Carrot",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Carrot validated successfully"
+    },
+    {
+      "id": "item_model_potato",
+      "name": "Item Model: Potato",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Potato validated successfully"
+    },
+    {
+      "id": "item_texture_potato",
+      "name": "Item Texture: Potato",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Potato validated successfully"
+    },
+    {
+      "id": "item_model_randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+      "name": "Item Model: Randomly Drops Items From A Defined Loot Pool Or Spawns A Hostile Zombie",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Randomly Drops Items From A Defined Loot Pool Or Spawns A Hostile Zombie validated successfully"
+    },
+    {
+      "id": "item_texture_randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+      "name": "Item Texture: Randomly Drops Items From A Defined Loot Pool Or Spawns A Hostile Zombie",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Randomly Drops Items From A Defined Loot Pool Or Spawns A Hostile Zombie validated successfully"
+    },
+    {
+      "id": "item_model_refined_ingot",
+      "name": "Item Model: Refined Ingot",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Refined Ingot validated successfully"
+    },
+    {
+      "id": "item_texture_refined_ingot",
+      "name": "Item Texture: Refined Ingot",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Refined Ingot validated successfully"
+    },
+    {
+      "id": "item_lang_rotten_flesh",
+      "name": "Item Localization: Rotten Flesh",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Rotten Flesh validated successfully"
+    },
+    {
+      "id": "item_lang_carrot",
+      "name": "Item Localization: Carrot",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Carrot validated successfully"
+    },
+    {
+      "id": "item_lang_potato",
+      "name": "Item Localization: Potato",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Potato validated successfully"
+    },
+    {
+      "id": "item_lang_randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+      "name": "Item Localization: Randomly Drops Items From A Defined Loot Pool Or Spawns A Hostile Zombie",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Randomly Drops Items From A Defined Loot Pool Or Spawns A Hostile Zombie validated successfully"
+    },
+    {
+      "id": "item_lang_refined_ingot",
+      "name": "Item Localization: Refined Ingot",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Refined Ingot validated successfully"
+    },
+    {
+      "id": "blocks_existence",
+      "name": "Blocks Defined",
+      "category": "blocks",
+      "status": "passed",
+      "message": "1 blocks defined"
+    },
+    {
+      "id": "block_state_lucky_block",
+      "name": "Blockstate: Lucky Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Lucky Block validated successfully"
+    },
+    {
+      "id": "block_loot_lucky_block",
+      "name": "Block Loot: Lucky Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Loot: Lucky Block validated successfully"
+    },
+    {
+      "id": "block_item_lucky_block",
+      "name": "Block Item Model: Lucky Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Lucky Block validated successfully"
+    },
+    {
+      "id": "recipes_existence",
+      "name": "Recipes Defined",
+      "category": "recipes",
+      "status": "passed",
+      "message": "4 recipes expected"
+    },
+    {
+      "id": "recipe_files",
+      "name": "Recipe Files Generated",
+      "category": "recipes",
+      "status": "passed",
+      "message": "5 recipe files generated"
+    },
+    {
+      "id": "recipe_output_lucky_block",
+      "name": "Recipe Output: lucky_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: lucky_block validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_lucky_block",
+      "name": "Recipe Ingredients: lucky_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: lucky_block validated successfully"
+    },
+    {
+      "id": "recipe_output_rotten_flesh",
+      "name": "Recipe Output: rotten_flesh",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: rotten_flesh validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_rotten_flesh",
+      "name": "Recipe Ingredients: rotten_flesh",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: rotten_flesh validated successfully"
+    },
+    {
+      "id": "recipe_output_carrot",
+      "name": "Recipe Output: carrot",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: carrot validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_carrot",
+      "name": "Recipe Ingredients: carrot",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: carrot validated successfully"
+    },
+    {
+      "id": "recipe_output_potato",
+      "name": "Recipe Output: potato",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: potato validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_potato",
+      "name": "Recipe Ingredients: potato",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: potato validated successfully"
+    },
+    {
+      "id": "recipe_output_randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+      "name": "Recipe Output: randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+      "name": "Recipe Ingredients: randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie validated successfully"
+    },
+    {
+      "id": "mobs_existence",
+      "name": "Mobs Defined",
+      "category": "mobs",
+      "status": "passed",
+      "message": "1 mobs defined"
+    },
+    {
+      "id": "mob_class_lucky_zombie",
+      "name": "Mob Class: Lucky Zombie",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Class: Lucky Zombie validated successfully"
+    },
+    {
+      "id": "mob_drops_lucky_zombie",
+      "name": "Mob Drops: Lucky Zombie",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Drops: Lucky Zombie validated successfully"
+    },
+    {
+      "id": "mob_loot_lucky_zombie",
+      "name": "Mob Loot Table: Lucky Zombie",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Loot Table: Lucky Zombie validated successfully"
+    },
+    {
+      "id": "mob_texture_lucky_zombie",
+      "name": "Mob Texture: Lucky Zombie",
+      "category": "mobs",
+      "status": "passed",
+      "message": "Mob Texture: Lucky Zombie validated successfully"
+    },
+    {
+      "id": "npcs_existence",
+      "name": "NPCs Defined",
+      "category": "npcs",
+      "status": "skipped",
+      "message": "No NPCs defined in spec"
+    },
+    {
+      "id": "quests_existence",
+      "name": "Quests Defined",
+      "category": "quests",
+      "status": "skipped",
+      "message": "No quests defined in spec"
+    },
+    {
+      "id": "advancements_existence",
+      "name": "Advancements Defined",
+      "category": "advancements",
+      "status": "skipped",
+      "message": "No advancements generated"
+    },
+    {
+      "id": "dimensions_existence",
+      "name": "Dimensions Defined",
+      "category": "dimensions",
+      "status": "skipped",
+      "message": "No dimensions defined in spec"
+    },
+    {
+      "id": "biomes_existence",
+      "name": "Biomes Defined",
+      "category": "biomes",
+      "status": "skipped",
+      "message": "No biomes defined in spec"
+    },
+    {
+      "id": "structures_existence",
+      "name": "Structures Defined",
+      "category": "structures",
+      "status": "skipped",
+      "message": "No structures defined in spec"
+    },
+    {
+      "id": "events_existence",
+      "name": "Events Defined",
+      "category": "events",
+      "status": "skipped",
+      "message": "No events defined in spec"
+    }
+  ],
+  "summary": "# Feature Audit Report: Lucky Block\nGenerated: 2025-12-29T06:05:24.826Z\nMinecraft Version: 1.21.1\n\n## ✅ ALL CHECKS PASSED\nTotal: 37 passed, 7 skipped\n\n## Category Breakdown\n\n✅ **items**: 16/16 passed\n✅ **blocks**: 4/4 passed\n✅ **recipes**: 12/12 passed\n✅ **mobs**: 5/5 passed\n✅ **npcs**: 0/1 passed\n✅ **quests**: 0/1 passed\n✅ **advancements**: 0/1 passed\n✅ **dimensions**: 0/1 passed\n✅ **biomes**: 0/1 passed\n✅ **structures**: 0/1 passed\n✅ **events**: 0/1 passed",
+  "suggestions": []
+}

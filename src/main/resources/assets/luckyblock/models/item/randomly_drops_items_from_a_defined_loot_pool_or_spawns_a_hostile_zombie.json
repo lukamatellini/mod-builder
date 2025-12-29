@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "luckyblock:item/randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21.1",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-29T06:05:24.781Z",
+  "enabledModules": {
+    "quests": false,
+    "npcs": false,
+    "dialogue": false,
+    "trading": false,
+    "structures": false,
+    "dimensions": false,
+    "biomes": false,
+    "commands": true,
+    "items": true,
+    "mobs": true,
+    "events": false
+  },
+  "inferenceReasons": [
+    "luckyblock:items enabled: 5 items defined in spec",
+    "luckyblock:mobs enabled: 1 mobs defined in spec",
+    "luckyblock:commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 5,
+    "mobs": 1,
+    "structures": 0,
+    "dimensions": 0,
+    "quests": 0,
+    "npcs": 0,
+    "events": 0
+  },
+  "expectedDataFiles": [],
+  "expectedAssetFiles": [
+    "assets/luckyblock/lang/en_us.json",
+    "assets/luckyblock/models/item/rotten_flesh.json",
+    "assets/luckyblock/models/item/carrot.json",
+    "assets/luckyblock/models/item/potato.json",
+    "assets/luckyblock/models/item/randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie.json",
+    "assets/luckyblock/models/item/refined_ingot.json"
+  ]
+}

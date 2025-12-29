@@ -1,0 +1,54 @@
+{
+  "summary": {
+    "scannedLocations": 35,
+    "totalRepairs": 3,
+    "autoCreatedStubs": 3,
+    "unresolvedReferences": 0,
+    "success": true
+  },
+  "repairs": [
+    {
+      "location": "src/main/resources/build-plan.json .inferenceReasons[0]",
+      "type": "auto_create",
+      "original": "Items enabled: 5 items defined in spec",
+      "repaired": "luckyblock:items enabled: 5 items defined in spec",
+      "reason": "Auto-created missing item stub"
+    },
+    {
+      "location": "src/main/resources/build-plan.json .inferenceReasons[1]",
+      "type": "auto_create",
+      "original": "Mobs enabled: 1 mobs defined in spec",
+      "repaired": "luckyblock:mobs enabled: 1 mobs defined in spec",
+      "reason": "Auto-created missing item stub"
+    },
+    {
+      "location": "src/main/resources/build-plan.json .inferenceReasons[2]",
+      "type": "auto_create",
+      "original": "Commands enabled: mandatory fallback surface for testing",
+      "repaired": "luckyblock:commands enabled: mandatory fallback surface for testing",
+      "reason": "Auto-created missing item stub"
+    }
+  ],
+  "autoCreatedStubs": [
+    {
+      "id": "items enabled: 5 items defined in spec",
+      "name": "Items enabled: 5 items defined in spec",
+      "type": "item",
+      "reason": "Referenced in src/main/resources/build-plan.json .inferenceReasons[0] but not defined"
+    },
+    {
+      "id": "mobs enabled: 1 mobs defined in spec",
+      "name": "Mobs enabled: 1 mobs defined in spec",
+      "type": "item",
+      "reason": "Referenced in src/main/resources/build-plan.json .inferenceReasons[1] but not defined"
+    },
+    {
+      "id": "commands enabled: mandatory fallback surface for testing",
+      "name": "Commands enabled: mandatory fallback surface for testing",
+      "type": "item",
+      "reason": "Referenced in src/main/resources/build-plan.json .inferenceReasons[2] but not defined"
+    }
+  ],
+  "unresolvedReferences": [],
+  "generatedAt": "2025-12-29T06:05:24.799Z"
+}

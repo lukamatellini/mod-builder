@@ -1,0 +1,208 @@
+{
+  "version": "1.0",
+  "timestamp": "2025-12-29T06:05:24.756Z",
+  "pipeline": "generate-mod",
+  "modId": "luckyblock",
+  "mcVersion": "1.21.1",
+  "registryAutoCreations": [
+    {
+      "type": "item",
+      "id": "rotten_flesh",
+      "name": "Rotten Flesh",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    },
+    {
+      "type": "item",
+      "id": "carrot",
+      "name": "Carrot",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    },
+    {
+      "type": "item",
+      "id": "potato",
+      "name": "Potato",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    },
+    {
+      "type": "item",
+      "id": "randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+      "name": "Randomly Drops Items From A Defined Loot Pool Or Spawns A Hostile Zombie",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    }
+  ],
+  "javaImportRepairs": [],
+  "javaSymbolRepairs": [],
+  "versionParityRepairs": [],
+  "textureModelAutoGens": [],
+  "idResolutionRepairs": [
+    {
+      "location": "global-inference",
+      "original": "rotten_flesh",
+      "resolved": "luckyblock:rotten_flesh",
+      "reason": "Auto-created missing entity"
+    },
+    {
+      "location": "global-inference",
+      "original": "carrot",
+      "resolved": "luckyblock:carrot",
+      "reason": "Auto-created missing entity"
+    },
+    {
+      "location": "global-inference",
+      "original": "potato",
+      "resolved": "luckyblock:potato",
+      "reason": "Auto-created missing entity"
+    },
+    {
+      "location": "global-inference",
+      "original": "randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+      "resolved": "luckyblock:randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+      "reason": "Auto-created missing entity"
+    }
+  ],
+  "recipeRepairs": [
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:refined_ingot",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Refined Ingot"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:refined_ingot",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Refined Ingot"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:refined_ingot",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Refined Ingot"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:refined_ingot",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Refined Ingot"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stone",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:lucky_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Lucky Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:refined_ingot",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Refined Ingot"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:rotten_flesh",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:refined_ingot",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Refined Ingot"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:carrot",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:refined_ingot",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Refined Ingot"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:potato",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:refined_ingot",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Refined Ingot"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Randomly Drops Items From A Defined Loot Pool Or Spawns A Hostile Zombie"
+    }
+  ],
+  "omissions": [],
+  "summary": {
+    "totalRepairs": 20,
+    "totalAutoCreations": 4,
+    "totalOmissions": 0,
+    "warnings": []
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "modId": "luckyblock",
+  "modName": "Lucky Block",
+  "mcVersion": "1.21.1",
+  "generatedAt": "2025-12-29T06:05:24.827Z",
+  "totalTests": 13,
+  "categories": [
+    {
+      "name": "Items",
+      "tests": [
+        {
+          "category": "Items",
+          "name": "Rotten Flesh Registration",
+          "command": "/give @p luckyblock:rotten_flesh",
+          "steps": [
+            "Run: /give @p luckyblock:rotten_flesh",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Carrot Registration",
+          "command": "/give @p luckyblock:carrot",
+          "steps": [
+            "Run: /give @p luckyblock:carrot",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Potato Registration",
+          "command": "/give @p luckyblock:potato",
+          "steps": [
+            "Run: /give @p luckyblock:potato",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Randomly Drops Items From A Defined Loot Pool Or Spawns A Hostile Zombie Registration",
+          "command": "/give @p luckyblock:randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+          "steps": [
+            "Run: /give @p luckyblock:randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Refined Ingot Registration",
+          "command": "/give @p luckyblock:refined_ingot",
+          "steps": [
+            "Run: /give @p luckyblock:refined_ingot",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        }
+      ]
+    },
+    {
+      "name": "Recipes",
+      "tests": [
+        {
+          "category": "Recipes",
+          "name": "Rotten Flesh Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:stick\",\"luckyblock:refined_ingot\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Rotten Flesh",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Carrot Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:stick\",\"luckyblock:refined_ingot\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Carrot",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Potato Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:stick\",\"luckyblock:refined_ingot\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Potato",
+          "automated": false
+        },
+        {
+          "category": "Recipes",
+          "name": "Randomly Drops Items From A Defined Loot Pool Or Spawns A Hostile Zombie Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:stick\",\"luckyblock:refined_ingot\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Randomly Drops Items From A Defined Loot Pool Or Spawns A Hostile Zombie",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Blocks",
+      "tests": [
+        {
+          "category": "Blocks",
+          "name": "Lucky Block Placement",
+          "command": "/give @p luckyblock:lucky_block",
+          "steps": [
+            "Run: /give @p luckyblock:lucky_block",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Mobs",
+      "tests": [
+        {
+          "category": "Mobs",
+          "name": "Lucky Zombie Spawn",
+          "command": "/summon luckyblock:lucky_zombie",
+          "steps": [
+            "Run: /summon luckyblock:lucky_zombie",
+            "Verify mob spawns without crash",
+            "Check mob texture is not purple/black",
+            "Verify mob has expected health"
+          ],
+          "expectedResult": "Mob spawns with correct model and attributes",
+          "automated": true
+        },
+        {
+          "category": "Mobs",
+          "name": "Lucky Zombie AI Behavior",
+          "steps": [
+            "Summon mob: /summon luckyblock:lucky_zombie",
+            "Approach mob (should be passive)",
+            "Observe movement patterns",
+            "Check mob responds to player presence"
+          ],
+          "expectedResult": "Mob ignores or flees from player",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Mob Drops",
+      "tests": [
+        {
+          "category": "Mob Drops",
+          "name": "Lucky Zombie Loot",
+          "steps": [
+            "Summon mob: /summon luckyblock:lucky_zombie",
+            "Kill the mob (use /kill if needed)",
+            "Collect dropped items",
+            "Verify drops match expected loot table"
+          ],
+          "expectedResult": "Drops: minecraft:rotten_flesh, minecraft:iron_ingot, minecraft:carrot, minecraft:potato",
+          "automated": false
+        }
+      ]
+    }
+  ],
+  "quickCommands": [
+    "/give @p luckyblock:rotten_flesh",
+    "/give @p luckyblock:carrot",
+    "/give @p luckyblock:potato",
+    "/give @p luckyblock:randomly_drops_items_from_a_defined_loot_pool_or_spawns_a_hostile_zombie",
+    "/give @p luckyblock:refined_ingot",
+    "/summon luckyblock:lucky_zombie"
+  ]
+}
