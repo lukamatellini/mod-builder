@@ -1,0 +1,79 @@
+{
+  "version": "1.0",
+  "timestamp": "2025-12-29T01:40:14.088Z",
+  "pipeline": "generate-mod",
+  "modId": "luckyblock",
+  "mcVersion": "1.21.1",
+  "registryAutoCreations": [
+    {
+      "type": "item",
+      "id": "none",
+      "name": "None",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    }
+  ],
+  "javaImportRepairs": [],
+  "javaSymbolRepairs": [],
+  "versionParityRepairs": [],
+  "textureModelAutoGens": [],
+  "idResolutionRepairs": [
+    {
+      "location": "global-inference",
+      "original": "none",
+      "resolved": "luckyblock:none",
+      "reason": "Auto-created missing entity"
+    }
+  ],
+  "recipeRepairs": [
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:refined_ingot",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Refined Ingot"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stone",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:lucky_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Lucky Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:refined_ingot",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Refined Ingot"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblock:none",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: None"
+    }
+  ],
+  "omissions": [],
+  "summary": {
+    "totalRepairs": 5,
+    "totalAutoCreations": 1,
+    "totalOmissions": 0,
+    "warnings": []
+  }
+}
