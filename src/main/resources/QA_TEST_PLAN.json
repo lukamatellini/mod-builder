@@ -1,0 +1,79 @@
+{
+  "modId": "luckyblocks",
+  "modName": "Lucky Blocks",
+  "mcVersion": "1.21.1",
+  "generatedAt": "2025-12-29T03:13:00.220Z",
+  "totalTests": 4,
+  "categories": [
+    {
+      "name": "Items",
+      "tests": [
+        {
+          "category": "Items",
+          "name": "Triggers Random Event As Described In Onbreak No Selfdrop Registration",
+          "command": "/give @p luckyblocks:triggers_random_event_as_described_in_onbreak_no_selfdrop",
+          "steps": [
+            "Run: /give @p luckyblocks:triggers_random_event_as_described_in_onbreak_no_selfdrop",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Void Essence Registration",
+          "command": "/give @p luckyblocks:void_essence",
+          "steps": [
+            "Run: /give @p luckyblocks:void_essence",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        }
+      ]
+    },
+    {
+      "name": "Recipes",
+      "tests": [
+        {
+          "category": "Recipes",
+          "name": "Triggers Random Event As Described In Onbreak No Selfdrop Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:stick\",\"luckyblocks:void_essence\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Triggers Random Event As Described In Onbreak No Selfdrop",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Blocks",
+      "tests": [
+        {
+          "category": "Blocks",
+          "name": "Lucky Block Placement",
+          "command": "/give @p luckyblocks:lucky_block",
+          "steps": [
+            "Run: /give @p luckyblocks:lucky_block",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        }
+      ]
+    }
+  ],
+  "quickCommands": [
+    "/give @p luckyblocks:triggers_random_event_as_described_in_onbreak_no_selfdrop",
+    "/give @p luckyblocks:void_essence"
+  ]
+}

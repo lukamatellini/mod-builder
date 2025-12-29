@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21.1",
+  "javaVersion": 21,
+  "generatedAt": "2025-12-29T03:13:00.048Z",
+  "enabledModules": {
+    "quests": false,
+    "npcs": false,
+    "dialogue": false,
+    "trading": false,
+    "structures": false,
+    "dimensions": false,
+    "biomes": false,
+    "commands": true,
+    "items": true,
+    "mobs": false,
+    "events": false
+  },
+  "inferenceReasons": [
+    "luckyblocks:items enabled: 2 items defined in spec",
+    "luckyblocks:commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 2,
+    "mobs": 0,
+    "structures": 0,
+    "dimensions": 0,
+    "quests": 0,
+    "npcs": 0,
+    "events": 0
+  },
+  "expectedDataFiles": [],
+  "expectedAssetFiles": [
+    "assets/luckyblocks/lang/en_us.json",
+    "assets/luckyblocks/models/item/triggers_random_event_as_described_in_onbreak_no_selfdrop.json",
+    "assets/luckyblocks/models/item/void_essence.json"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "luckyblocks:item/triggers_random_event_as_described_in_onbreak_no_selfdrop"
+  }
+}

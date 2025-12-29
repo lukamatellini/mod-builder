@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "luckyblocks:void_essence"
+    }
+  ],
+  "result": {
+    "id": "luckyblocks:triggers_random_event_as_described_in_onbreak_no_selfdrop",
+    "count": 1
+  }
+}

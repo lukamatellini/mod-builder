@@ -1,0 +1,79 @@
+{
+  "version": "1.0",
+  "timestamp": "2025-12-29T03:13:00.003Z",
+  "pipeline": "generate-mod",
+  "modId": "luckyblocks",
+  "mcVersion": "1.21.1",
+  "registryAutoCreations": [
+    {
+      "type": "item",
+      "id": "triggers_random_event_as_described_in_onbreak_no_selfdrop",
+      "name": "Triggers Random Event As Described In Onbreak No Selfdrop",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    }
+  ],
+  "javaImportRepairs": [],
+  "javaSymbolRepairs": [],
+  "versionParityRepairs": [],
+  "textureModelAutoGens": [],
+  "idResolutionRepairs": [
+    {
+      "location": "global-inference",
+      "original": "triggers_random_event_as_described_in_onbreak_no_selfdrop",
+      "resolved": "luckyblocks:triggers_random_event_as_described_in_onbreak_no_selfdrop",
+      "reason": "Auto-created missing entity"
+    }
+  ],
+  "recipeRepairs": [
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:void_essence",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Void Essence"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stone",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:lucky_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Lucky Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:void_essence",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Void Essence"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:triggers_random_event_as_described_in_onbreak_no_selfdrop",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Triggers Random Event As Described In Onbreak No Selfdrop"
+    }
+  ],
+  "omissions": [],
+  "summary": {
+    "totalRepairs": 5,
+    "totalAutoCreations": 1,
+    "totalOmissions": 0,
+    "warnings": []
+  }
+}
