@@ -1,0 +1,79 @@
+{
+  "modId": "luckyblocks",
+  "modName": "Lucky Blocks",
+  "mcVersion": "1.21.1",
+  "generatedAt": "2025-12-29T02:54:45.654Z",
+  "totalTests": 4,
+  "categories": [
+    {
+      "name": "Items",
+      "tests": [
+        {
+          "category": "Items",
+          "name": "Random Selection From Loot Table Registration",
+          "command": "/give @p luckyblocks:random_selection_from_loot_table",
+          "steps": [
+            "Run: /give @p luckyblocks:random_selection_from_loot_table",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        },
+        {
+          "category": "Items",
+          "name": "Void Essence Registration",
+          "command": "/give @p luckyblocks:void_essence",
+          "steps": [
+            "Run: /give @p luckyblocks:void_essence",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        }
+      ]
+    },
+    {
+      "name": "Recipes",
+      "tests": [
+        {
+          "category": "Recipes",
+          "name": "Random Selection From Loot Table Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:stick\",\"luckyblocks:void_essence\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Random Selection From Loot Table",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Blocks",
+      "tests": [
+        {
+          "category": "Blocks",
+          "name": "Lucky Block Placement",
+          "command": "/give @p luckyblocks:lucky_block",
+          "steps": [
+            "Run: /give @p luckyblocks:lucky_block",
+            "Place block in world",
+            "Verify block texture is correct",
+            "Break block and verify drops"
+          ],
+          "expectedResult": "Block places with correct texture and drops correctly",
+          "automated": false
+        }
+      ]
+    }
+  ],
+  "quickCommands": [
+    "/give @p luckyblocks:random_selection_from_loot_table",
+    "/give @p luckyblocks:void_essence"
+  ]
+}

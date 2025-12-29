@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "luckyblocks:void_essence"
+    }
+  ],
+  "result": {
+    "id": "luckyblocks:random_selection_from_loot_table",
+    "count": 1
+  }
+}
