@@ -1,0 +1,15 @@
+{
+  "itemGroup.luckyblocks.main": "Lucky Blocks",
+  "item.luckyblocks.lucky_dust": "Lucky Dust",
+  "item.luckyblocks.lucky_pickaxe": "Lucky Pickaxe",
+  "item.luckyblocks.lucky_sword": "Lucky Sword",
+  "item.luckyblocks.lucky_helmet": "Lucky Helmet",
+  "item.luckyblocks.lucky_chestplate": "Lucky Chestplate",
+  "item.luckyblocks.lucky_leggings": "Lucky Leggings",
+  "item.luckyblocks.lucky_boots": "Lucky Boots",
+  "item.luckyblocks.randomly_drops_items": "Randomly Drops Items",
+  "item.luckyblocks.spawns_mobs": "Spawns Mobs",
+  "item.luckyblocks.or_triggers_events": "Or Triggers Events",
+  "item.luckyblocks.refined_ingot": "Refined Ingot",
+  "block.luckyblocks.lucky_block": "Lucky Block"
+}

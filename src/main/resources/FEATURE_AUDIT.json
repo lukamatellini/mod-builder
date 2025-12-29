@@ -1,0 +1,1109 @@
+{
+  "modId": "luckyblocks",
+  "modName": "Lucky Blocks",
+  "generatedAt": "2025-12-29T01:05:47.723Z",
+  "mcVersion": "1.21.1",
+  "overallStatus": "passed",
+  "totalChecks": 70,
+  "passedChecks": 62,
+  "failedChecks": 0,
+  "warningChecks": 0,
+  "skippedChecks": 8,
+  "categories": [
+    {
+      "category": "items",
+      "total": 34,
+      "passed": 34,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "items_existence",
+          "name": "Items Defined",
+          "category": "items",
+          "status": "passed",
+          "message": "11 items defined"
+        },
+        {
+          "id": "item_model_lucky_dust",
+          "name": "Item Model: Lucky Dust",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Lucky Dust validated successfully"
+        },
+        {
+          "id": "item_texture_lucky_dust",
+          "name": "Item Texture: Lucky Dust",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Lucky Dust validated successfully"
+        },
+        {
+          "id": "item_model_lucky_pickaxe",
+          "name": "Item Model: Lucky Pickaxe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Lucky Pickaxe validated successfully"
+        },
+        {
+          "id": "item_texture_lucky_pickaxe",
+          "name": "Item Texture: Lucky Pickaxe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Lucky Pickaxe validated successfully"
+        },
+        {
+          "id": "item_model_lucky_sword",
+          "name": "Item Model: Lucky Sword",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Lucky Sword validated successfully"
+        },
+        {
+          "id": "item_texture_lucky_sword",
+          "name": "Item Texture: Lucky Sword",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Lucky Sword validated successfully"
+        },
+        {
+          "id": "item_model_lucky_helmet",
+          "name": "Item Model: Lucky Helmet",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Lucky Helmet validated successfully"
+        },
+        {
+          "id": "item_texture_lucky_helmet",
+          "name": "Item Texture: Lucky Helmet",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Lucky Helmet validated successfully"
+        },
+        {
+          "id": "item_model_lucky_chestplate",
+          "name": "Item Model: Lucky Chestplate",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Lucky Chestplate validated successfully"
+        },
+        {
+          "id": "item_texture_lucky_chestplate",
+          "name": "Item Texture: Lucky Chestplate",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Lucky Chestplate validated successfully"
+        },
+        {
+          "id": "item_model_lucky_leggings",
+          "name": "Item Model: Lucky Leggings",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Lucky Leggings validated successfully"
+        },
+        {
+          "id": "item_texture_lucky_leggings",
+          "name": "Item Texture: Lucky Leggings",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Lucky Leggings validated successfully"
+        },
+        {
+          "id": "item_model_lucky_boots",
+          "name": "Item Model: Lucky Boots",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Lucky Boots validated successfully"
+        },
+        {
+          "id": "item_texture_lucky_boots",
+          "name": "Item Texture: Lucky Boots",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Lucky Boots validated successfully"
+        },
+        {
+          "id": "item_model_randomly_drops_items",
+          "name": "Item Model: Randomly Drops Items",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Randomly Drops Items validated successfully"
+        },
+        {
+          "id": "item_texture_randomly_drops_items",
+          "name": "Item Texture: Randomly Drops Items",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Randomly Drops Items validated successfully"
+        },
+        {
+          "id": "item_model_spawns_mobs",
+          "name": "Item Model: Spawns Mobs",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Spawns Mobs validated successfully"
+        },
+        {
+          "id": "item_texture_spawns_mobs",
+          "name": "Item Texture: Spawns Mobs",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Spawns Mobs validated successfully"
+        },
+        {
+          "id": "item_model_or_triggers_events",
+          "name": "Item Model: Or Triggers Events",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Or Triggers Events validated successfully"
+        },
+        {
+          "id": "item_texture_or_triggers_events",
+          "name": "Item Texture: Or Triggers Events",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Or Triggers Events validated successfully"
+        },
+        {
+          "id": "item_model_refined_ingot",
+          "name": "Item Model: Refined Ingot",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Refined Ingot validated successfully"
+        },
+        {
+          "id": "item_texture_refined_ingot",
+          "name": "Item Texture: Refined Ingot",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Refined Ingot validated successfully"
+        },
+        {
+          "id": "item_lang_lucky_dust",
+          "name": "Item Localization: Lucky Dust",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Lucky Dust validated successfully"
+        },
+        {
+          "id": "item_lang_lucky_pickaxe",
+          "name": "Item Localization: Lucky Pickaxe",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Lucky Pickaxe validated successfully"
+        },
+        {
+          "id": "item_lang_lucky_sword",
+          "name": "Item Localization: Lucky Sword",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Lucky Sword validated successfully"
+        },
+        {
+          "id": "item_lang_lucky_helmet",
+          "name": "Item Localization: Lucky Helmet",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Lucky Helmet validated successfully"
+        },
+        {
+          "id": "item_lang_lucky_chestplate",
+          "name": "Item Localization: Lucky Chestplate",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Lucky Chestplate validated successfully"
+        },
+        {
+          "id": "item_lang_lucky_leggings",
+          "name": "Item Localization: Lucky Leggings",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Lucky Leggings validated successfully"
+        },
+        {
+          "id": "item_lang_lucky_boots",
+          "name": "Item Localization: Lucky Boots",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Lucky Boots validated successfully"
+        },
+        {
+          "id": "item_lang_randomly_drops_items",
+          "name": "Item Localization: Randomly Drops Items",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Randomly Drops Items validated successfully"
+        },
+        {
+          "id": "item_lang_spawns_mobs",
+          "name": "Item Localization: Spawns Mobs",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Spawns Mobs validated successfully"
+        },
+        {
+          "id": "item_lang_or_triggers_events",
+          "name": "Item Localization: Or Triggers Events",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Or Triggers Events validated successfully"
+        },
+        {
+          "id": "item_lang_refined_ingot",
+          "name": "Item Localization: Refined Ingot",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Refined Ingot validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "blocks",
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "blocks_existence",
+          "name": "Blocks Defined",
+          "category": "blocks",
+          "status": "passed",
+          "message": "1 blocks defined"
+        },
+        {
+          "id": "block_state_lucky_block",
+          "name": "Blockstate: Lucky Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Blockstate: Lucky Block validated successfully"
+        },
+        {
+          "id": "block_loot_lucky_block",
+          "name": "Block Loot: Lucky Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Loot: Lucky Block validated successfully"
+        },
+        {
+          "id": "block_item_lucky_block",
+          "name": "Block Item Model: Lucky Block",
+          "category": "blocks",
+          "status": "passed",
+          "message": "Block Item Model: Lucky Block validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "recipes",
+      "total": 24,
+      "passed": 24,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "recipes_existence",
+          "name": "Recipes Defined",
+          "category": "recipes",
+          "status": "passed",
+          "message": "10 recipes expected"
+        },
+        {
+          "id": "recipe_files",
+          "name": "Recipe Files Generated",
+          "category": "recipes",
+          "status": "passed",
+          "message": "11 recipe files generated"
+        },
+        {
+          "id": "recipe_output_lucky_block",
+          "name": "Recipe Output: lucky_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: lucky_block validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_lucky_block",
+          "name": "Recipe Ingredients: lucky_block",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: lucky_block validated successfully"
+        },
+        {
+          "id": "recipe_output_lucky_dust",
+          "name": "Recipe Output: lucky_dust",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: lucky_dust validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_lucky_dust",
+          "name": "Recipe Ingredients: lucky_dust",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: lucky_dust validated successfully"
+        },
+        {
+          "id": "recipe_output_lucky_pickaxe",
+          "name": "Recipe Output: lucky_pickaxe",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: lucky_pickaxe validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_lucky_pickaxe",
+          "name": "Recipe Ingredients: lucky_pickaxe",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: lucky_pickaxe validated successfully"
+        },
+        {
+          "id": "recipe_output_lucky_sword",
+          "name": "Recipe Output: lucky_sword",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: lucky_sword validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_lucky_sword",
+          "name": "Recipe Ingredients: lucky_sword",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: lucky_sword validated successfully"
+        },
+        {
+          "id": "recipe_output_lucky_helmet",
+          "name": "Recipe Output: lucky_helmet",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: lucky_helmet validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_lucky_helmet",
+          "name": "Recipe Ingredients: lucky_helmet",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: lucky_helmet validated successfully"
+        },
+        {
+          "id": "recipe_output_lucky_chestplate",
+          "name": "Recipe Output: lucky_chestplate",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: lucky_chestplate validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_lucky_chestplate",
+          "name": "Recipe Ingredients: lucky_chestplate",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: lucky_chestplate validated successfully"
+        },
+        {
+          "id": "recipe_output_lucky_leggings",
+          "name": "Recipe Output: lucky_leggings",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: lucky_leggings validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_lucky_leggings",
+          "name": "Recipe Ingredients: lucky_leggings",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: lucky_leggings validated successfully"
+        },
+        {
+          "id": "recipe_output_lucky_boots",
+          "name": "Recipe Output: lucky_boots",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: lucky_boots validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_lucky_boots",
+          "name": "Recipe Ingredients: lucky_boots",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: lucky_boots validated successfully"
+        },
+        {
+          "id": "recipe_output_randomly_drops_items",
+          "name": "Recipe Output: randomly_drops_items",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: randomly_drops_items validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_randomly_drops_items",
+          "name": "Recipe Ingredients: randomly_drops_items",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: randomly_drops_items validated successfully"
+        },
+        {
+          "id": "recipe_output_spawns_mobs",
+          "name": "Recipe Output: spawns_mobs",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: spawns_mobs validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_spawns_mobs",
+          "name": "Recipe Ingredients: spawns_mobs",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: spawns_mobs validated successfully"
+        },
+        {
+          "id": "recipe_output_or_triggers_events",
+          "name": "Recipe Output: or_triggers_events",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: or_triggers_events validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_or_triggers_events",
+          "name": "Recipe Ingredients: or_triggers_events",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: or_triggers_events validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "mobs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "mobs_existence",
+          "name": "Mobs Defined",
+          "category": "mobs",
+          "status": "skipped",
+          "message": "No mobs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "npcs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "npcs_existence",
+          "name": "NPCs Defined",
+          "category": "npcs",
+          "status": "skipped",
+          "message": "No NPCs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "quests",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "quests_existence",
+          "name": "Quests Defined",
+          "category": "quests",
+          "status": "skipped",
+          "message": "No quests defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "advancements",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "advancements_existence",
+          "name": "Advancements Defined",
+          "category": "advancements",
+          "status": "skipped",
+          "message": "No advancements generated"
+        }
+      ]
+    },
+    {
+      "category": "dimensions",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "dimensions_existence",
+          "name": "Dimensions Defined",
+          "category": "dimensions",
+          "status": "skipped",
+          "message": "No dimensions defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "biomes",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "biomes_existence",
+          "name": "Biomes Defined",
+          "category": "biomes",
+          "status": "skipped",
+          "message": "No biomes defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "structures",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "structures_existence",
+          "name": "Structures Defined",
+          "category": "structures",
+          "status": "skipped",
+          "message": "No structures defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "events",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "events_existence",
+          "name": "Events Defined",
+          "category": "events",
+          "status": "skipped",
+          "message": "No events defined in spec"
+        }
+      ]
+    }
+  ],
+  "criticalFailures": [],
+  "allChecks": [
+    {
+      "id": "items_existence",
+      "name": "Items Defined",
+      "category": "items",
+      "status": "passed",
+      "message": "11 items defined"
+    },
+    {
+      "id": "item_model_lucky_dust",
+      "name": "Item Model: Lucky Dust",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Lucky Dust validated successfully"
+    },
+    {
+      "id": "item_texture_lucky_dust",
+      "name": "Item Texture: Lucky Dust",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Lucky Dust validated successfully"
+    },
+    {
+      "id": "item_model_lucky_pickaxe",
+      "name": "Item Model: Lucky Pickaxe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Lucky Pickaxe validated successfully"
+    },
+    {
+      "id": "item_texture_lucky_pickaxe",
+      "name": "Item Texture: Lucky Pickaxe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Lucky Pickaxe validated successfully"
+    },
+    {
+      "id": "item_model_lucky_sword",
+      "name": "Item Model: Lucky Sword",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Lucky Sword validated successfully"
+    },
+    {
+      "id": "item_texture_lucky_sword",
+      "name": "Item Texture: Lucky Sword",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Lucky Sword validated successfully"
+    },
+    {
+      "id": "item_model_lucky_helmet",
+      "name": "Item Model: Lucky Helmet",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Lucky Helmet validated successfully"
+    },
+    {
+      "id": "item_texture_lucky_helmet",
+      "name": "Item Texture: Lucky Helmet",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Lucky Helmet validated successfully"
+    },
+    {
+      "id": "item_model_lucky_chestplate",
+      "name": "Item Model: Lucky Chestplate",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Lucky Chestplate validated successfully"
+    },
+    {
+      "id": "item_texture_lucky_chestplate",
+      "name": "Item Texture: Lucky Chestplate",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Lucky Chestplate validated successfully"
+    },
+    {
+      "id": "item_model_lucky_leggings",
+      "name": "Item Model: Lucky Leggings",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Lucky Leggings validated successfully"
+    },
+    {
+      "id": "item_texture_lucky_leggings",
+      "name": "Item Texture: Lucky Leggings",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Lucky Leggings validated successfully"
+    },
+    {
+      "id": "item_model_lucky_boots",
+      "name": "Item Model: Lucky Boots",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Lucky Boots validated successfully"
+    },
+    {
+      "id": "item_texture_lucky_boots",
+      "name": "Item Texture: Lucky Boots",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Lucky Boots validated successfully"
+    },
+    {
+      "id": "item_model_randomly_drops_items",
+      "name": "Item Model: Randomly Drops Items",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Randomly Drops Items validated successfully"
+    },
+    {
+      "id": "item_texture_randomly_drops_items",
+      "name": "Item Texture: Randomly Drops Items",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Randomly Drops Items validated successfully"
+    },
+    {
+      "id": "item_model_spawns_mobs",
+      "name": "Item Model: Spawns Mobs",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Spawns Mobs validated successfully"
+    },
+    {
+      "id": "item_texture_spawns_mobs",
+      "name": "Item Texture: Spawns Mobs",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Spawns Mobs validated successfully"
+    },
+    {
+      "id": "item_model_or_triggers_events",
+      "name": "Item Model: Or Triggers Events",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Or Triggers Events validated successfully"
+    },
+    {
+      "id": "item_texture_or_triggers_events",
+      "name": "Item Texture: Or Triggers Events",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Or Triggers Events validated successfully"
+    },
+    {
+      "id": "item_model_refined_ingot",
+      "name": "Item Model: Refined Ingot",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Refined Ingot validated successfully"
+    },
+    {
+      "id": "item_texture_refined_ingot",
+      "name": "Item Texture: Refined Ingot",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Refined Ingot validated successfully"
+    },
+    {
+      "id": "item_lang_lucky_dust",
+      "name": "Item Localization: Lucky Dust",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Lucky Dust validated successfully"
+    },
+    {
+      "id": "item_lang_lucky_pickaxe",
+      "name": "Item Localization: Lucky Pickaxe",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Lucky Pickaxe validated successfully"
+    },
+    {
+      "id": "item_lang_lucky_sword",
+      "name": "Item Localization: Lucky Sword",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Lucky Sword validated successfully"
+    },
+    {
+      "id": "item_lang_lucky_helmet",
+      "name": "Item Localization: Lucky Helmet",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Lucky Helmet validated successfully"
+    },
+    {
+      "id": "item_lang_lucky_chestplate",
+      "name": "Item Localization: Lucky Chestplate",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Lucky Chestplate validated successfully"
+    },
+    {
+      "id": "item_lang_lucky_leggings",
+      "name": "Item Localization: Lucky Leggings",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Lucky Leggings validated successfully"
+    },
+    {
+      "id": "item_lang_lucky_boots",
+      "name": "Item Localization: Lucky Boots",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Lucky Boots validated successfully"
+    },
+    {
+      "id": "item_lang_randomly_drops_items",
+      "name": "Item Localization: Randomly Drops Items",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Randomly Drops Items validated successfully"
+    },
+    {
+      "id": "item_lang_spawns_mobs",
+      "name": "Item Localization: Spawns Mobs",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Spawns Mobs validated successfully"
+    },
+    {
+      "id": "item_lang_or_triggers_events",
+      "name": "Item Localization: Or Triggers Events",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Or Triggers Events validated successfully"
+    },
+    {
+      "id": "item_lang_refined_ingot",
+      "name": "Item Localization: Refined Ingot",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Refined Ingot validated successfully"
+    },
+    {
+      "id": "blocks_existence",
+      "name": "Blocks Defined",
+      "category": "blocks",
+      "status": "passed",
+      "message": "1 blocks defined"
+    },
+    {
+      "id": "block_state_lucky_block",
+      "name": "Blockstate: Lucky Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Blockstate: Lucky Block validated successfully"
+    },
+    {
+      "id": "block_loot_lucky_block",
+      "name": "Block Loot: Lucky Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Loot: Lucky Block validated successfully"
+    },
+    {
+      "id": "block_item_lucky_block",
+      "name": "Block Item Model: Lucky Block",
+      "category": "blocks",
+      "status": "passed",
+      "message": "Block Item Model: Lucky Block validated successfully"
+    },
+    {
+      "id": "recipes_existence",
+      "name": "Recipes Defined",
+      "category": "recipes",
+      "status": "passed",
+      "message": "10 recipes expected"
+    },
+    {
+      "id": "recipe_files",
+      "name": "Recipe Files Generated",
+      "category": "recipes",
+      "status": "passed",
+      "message": "11 recipe files generated"
+    },
+    {
+      "id": "recipe_output_lucky_block",
+      "name": "Recipe Output: lucky_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: lucky_block validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_lucky_block",
+      "name": "Recipe Ingredients: lucky_block",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: lucky_block validated successfully"
+    },
+    {
+      "id": "recipe_output_lucky_dust",
+      "name": "Recipe Output: lucky_dust",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: lucky_dust validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_lucky_dust",
+      "name": "Recipe Ingredients: lucky_dust",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: lucky_dust validated successfully"
+    },
+    {
+      "id": "recipe_output_lucky_pickaxe",
+      "name": "Recipe Output: lucky_pickaxe",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: lucky_pickaxe validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_lucky_pickaxe",
+      "name": "Recipe Ingredients: lucky_pickaxe",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: lucky_pickaxe validated successfully"
+    },
+    {
+      "id": "recipe_output_lucky_sword",
+      "name": "Recipe Output: lucky_sword",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: lucky_sword validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_lucky_sword",
+      "name": "Recipe Ingredients: lucky_sword",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: lucky_sword validated successfully"
+    },
+    {
+      "id": "recipe_output_lucky_helmet",
+      "name": "Recipe Output: lucky_helmet",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: lucky_helmet validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_lucky_helmet",
+      "name": "Recipe Ingredients: lucky_helmet",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: lucky_helmet validated successfully"
+    },
+    {
+      "id": "recipe_output_lucky_chestplate",
+      "name": "Recipe Output: lucky_chestplate",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: lucky_chestplate validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_lucky_chestplate",
+      "name": "Recipe Ingredients: lucky_chestplate",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: lucky_chestplate validated successfully"
+    },
+    {
+      "id": "recipe_output_lucky_leggings",
+      "name": "Recipe Output: lucky_leggings",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: lucky_leggings validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_lucky_leggings",
+      "name": "Recipe Ingredients: lucky_leggings",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: lucky_leggings validated successfully"
+    },
+    {
+      "id": "recipe_output_lucky_boots",
+      "name": "Recipe Output: lucky_boots",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: lucky_boots validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_lucky_boots",
+      "name": "Recipe Ingredients: lucky_boots",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: lucky_boots validated successfully"
+    },
+    {
+      "id": "recipe_output_randomly_drops_items",
+      "name": "Recipe Output: randomly_drops_items",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: randomly_drops_items validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_randomly_drops_items",
+      "name": "Recipe Ingredients: randomly_drops_items",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: randomly_drops_items validated successfully"
+    },
+    {
+      "id": "recipe_output_spawns_mobs",
+      "name": "Recipe Output: spawns_mobs",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: spawns_mobs validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_spawns_mobs",
+      "name": "Recipe Ingredients: spawns_mobs",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: spawns_mobs validated successfully"
+    },
+    {
+      "id": "recipe_output_or_triggers_events",
+      "name": "Recipe Output: or_triggers_events",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: or_triggers_events validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_or_triggers_events",
+      "name": "Recipe Ingredients: or_triggers_events",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: or_triggers_events validated successfully"
+    },
+    {
+      "id": "mobs_existence",
+      "name": "Mobs Defined",
+      "category": "mobs",
+      "status": "skipped",
+      "message": "No mobs defined in spec"
+    },
+    {
+      "id": "npcs_existence",
+      "name": "NPCs Defined",
+      "category": "npcs",
+      "status": "skipped",
+      "message": "No NPCs defined in spec"
+    },
+    {
+      "id": "quests_existence",
+      "name": "Quests Defined",
+      "category": "quests",
+      "status": "skipped",
+      "message": "No quests defined in spec"
+    },
+    {
+      "id": "advancements_existence",
+      "name": "Advancements Defined",
+      "category": "advancements",
+      "status": "skipped",
+      "message": "No advancements generated"
+    },
+    {
+      "id": "dimensions_existence",
+      "name": "Dimensions Defined",
+      "category": "dimensions",
+      "status": "skipped",
+      "message": "No dimensions defined in spec"
+    },
+    {
+      "id": "biomes_existence",
+      "name": "Biomes Defined",
+      "category": "biomes",
+      "status": "skipped",
+      "message": "No biomes defined in spec"
+    },
+    {
+      "id": "structures_existence",
+      "name": "Structures Defined",
+      "category": "structures",
+      "status": "skipped",
+      "message": "No structures defined in spec"
+    },
+    {
+      "id": "events_existence",
+      "name": "Events Defined",
+      "category": "events",
+      "status": "skipped",
+      "message": "No events defined in spec"
+    }
+  ],
+  "summary": "# Feature Audit Report: Lucky Blocks\nGenerated: 2025-12-29T01:05:47.723Z\nMinecraft Version: 1.21.1\n\n## ✅ ALL CHECKS PASSED\nTotal: 62 passed, 8 skipped\n\n## Category Breakdown\n\n✅ **items**: 34/34 passed\n✅ **blocks**: 4/4 passed\n✅ **recipes**: 24/24 passed\n✅ **mobs**: 0/1 passed\n✅ **npcs**: 0/1 passed\n✅ **quests**: 0/1 passed\n✅ **advancements**: 0/1 passed\n✅ **dimensions**: 0/1 passed\n✅ **biomes**: 0/1 passed\n✅ **structures**: 0/1 passed\n✅ **events**: 0/1 passed",
+  "suggestions": []
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "luckyblocks:refined_ingot"
+    }
+  ],
+  "result": {
+    "id": "luckyblocks:or_triggers_events",
+    "count": 1
+  }
+}

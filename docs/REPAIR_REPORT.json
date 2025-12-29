@@ -1,0 +1,369 @@
+{
+  "version": "1.0",
+  "timestamp": "2025-12-29T01:05:47.621Z",
+  "pipeline": "generate-mod",
+  "modId": "luckyblocks",
+  "mcVersion": "1.21.1",
+  "registryAutoCreations": [
+    {
+      "type": "item",
+      "id": "randomly_drops_items",
+      "name": "Randomly Drops Items",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    },
+    {
+      "type": "item",
+      "id": "spawns_mobs",
+      "name": "Spawns Mobs",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    },
+    {
+      "type": "item",
+      "id": "or_triggers_events",
+      "name": "Or Triggers Events",
+      "reason": "Auto-generated from reference",
+      "source": "registry-scan"
+    }
+  ],
+  "javaImportRepairs": [],
+  "javaSymbolRepairs": [],
+  "versionParityRepairs": [],
+  "textureModelAutoGens": [],
+  "idResolutionRepairs": [
+    {
+      "location": "global-inference",
+      "original": "randomly_drops_items",
+      "resolved": "luckyblocks:randomly_drops_items",
+      "reason": "Auto-created missing entity"
+    },
+    {
+      "location": "global-inference",
+      "original": "spawns_mobs",
+      "resolved": "luckyblocks:spawns_mobs",
+      "reason": "Auto-created missing entity"
+    },
+    {
+      "location": "global-inference",
+      "original": "or_triggers_events",
+      "resolved": "luckyblocks:or_triggers_events",
+      "reason": "Auto-created missing entity"
+    }
+  ],
+  "recipeRepairs": [
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:gold_ingot",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:emerald",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:iron_ingot",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:iron_ingot",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:iron_ingot",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:iron_ingot",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:iron_ingot",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:iron_ingot",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:refined_ingot",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Refined Ingot"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:refined_ingot",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Refined Ingot"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:refined_ingot",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Refined Ingot"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stone",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:lucky_block",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Lucky Block"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:gold_ingot",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:emerald",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:lucky_dust",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Lucky Dust"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:iron_ingot",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:lucky_pickaxe",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Lucky Pickaxe"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:iron_ingot",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:lucky_sword",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Lucky Sword"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:iron_ingot",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:lucky_helmet",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Lucky Helmet"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:iron_ingot",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:lucky_chestplate",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Lucky Chestplate"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:iron_ingot",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:lucky_leggings",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Lucky Leggings"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:iron_ingot",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:lucky_boots",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Lucky Boots"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:refined_ingot",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Refined Ingot"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:randomly_drops_items",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Randomly Drops Items"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:refined_ingot",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Refined Ingot"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:spawns_mobs",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Spawns Mobs"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:refined_ingot",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Refined Ingot"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "luckyblocks:or_triggers_events",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Or Triggers Events"
+    }
+  ],
+  "omissions": [],
+  "summary": {
+    "totalRepairs": 35,
+    "totalAutoCreations": 3,
+    "totalOmissions": 0,
+    "warnings": []
+  }
+}

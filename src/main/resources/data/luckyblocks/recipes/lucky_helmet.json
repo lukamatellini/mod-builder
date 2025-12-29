@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MMM",
+    "M M",
+    "   "
+  ],
+  "key": {
+    "M": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "luckyblocks:lucky_helmet",
+    "count": 1
+  }
+}
