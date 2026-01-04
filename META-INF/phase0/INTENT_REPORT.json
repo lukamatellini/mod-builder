@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "traceId": "p0_mk0b50rx_rxzkab",
+  "timestamp": "2026-01-04T22:32:47.844Z",
+  "data": {
+    "categories": [
+      "originalPrompt",
+      "categories",
+      "autoGenerateHints",
+      "expandedPrompt",
+      "detectedKeywords"
+    ],
+    "expandedPrompt": "**Overview**:\nThis mod introduces a powerful magical artifact, the \"Lightning Wand,\" allowing players to summon bolts of lightning. It adds a new way to combat foes and interact with the environment, "
+  }
+}

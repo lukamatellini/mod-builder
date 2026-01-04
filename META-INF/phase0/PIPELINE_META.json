@@ -1,0 +1,18 @@
+{
+  "plannerInvoked": true,
+  "traceId": "p0_mk0b50rx_rxzkab",
+  "timestamp": "2026-01-04T22:32:49.302Z",
+  "phase1GateResult": "PASS",
+  "phase2GateInvoked": true,
+  "phase2GateResult": "PASS",
+  "requirementsCount": 6,
+  "unsatisfiedCount": 0,
+  "clarificationCount": 0,
+  "exitPoint": "phase2_pass",
+  "phase3GateInvoked": true,
+  "phase3GateResult": "PASS",
+  "buildPlanGenerated": true,
+  "buildPlanRegistryCount": 1,
+  "buildPlanHooksCount": 1,
+  "postPlannerGateResult": "PASS"
+}
