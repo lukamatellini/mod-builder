@@ -1,0 +1,40 @@
+{
+  "traceId": "p0_mk07vnps_a7rbnr",
+  "timestamp": "2026-01-04T21:01:33.225Z",
+  "passed": true,
+  "playability": {
+    "traceId": "p0_mk07vnps_a7rbnr",
+    "timestamp": "2026-01-04T21:01:33.225Z",
+    "passed": true,
+    "violations": [],
+    "checkedFamilies": [
+      "dimensions",
+      "structures",
+      "vehicles",
+      "npcs_quests",
+      "media",
+      "projectiles"
+    ],
+    "passedFamilies": [
+      "dimensions",
+      "structures",
+      "vehicles",
+      "npcs_quests",
+      "media",
+      "projectiles"
+    ],
+    "failedFamilies": []
+  },
+  "topology": {
+    "passed": true,
+    "structuresChecked": 0,
+    "disconnectedStructures": []
+  },
+  "visualAssets": {
+    "passed": true,
+    "renderLayersValid": true,
+    "texturesConsistent": true,
+    "warnings": []
+  },
+  "blockingErrors": []
+}

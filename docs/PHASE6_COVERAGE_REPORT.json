@@ -1,0 +1,112 @@
+{
+  "traceId": "p0_mk07vnps_a7rbnr",
+  "timestamp": "2026-01-04T21:01:33.222Z",
+  "passed": false,
+  "buildPlanCoverage": {
+    "traceId": "p0_mk07vnps_a7rbnr",
+    "timestamp": "2026-01-04T21:01:33.221Z",
+    "passed": false,
+    "missingKeys": [
+      {
+        "capability": "recipe",
+        "key": "dataPack.recipes"
+      }
+    ],
+    "unassignedKeys": [],
+    "keyStatuses": [
+      {
+        "key": "registries.items",
+        "capability": "item",
+        "present": true,
+        "value": "[1 items]",
+        "assignedTo": "subsystem",
+        "subsystemFamily": "items"
+      },
+      {
+        "key": "assets.itemModels",
+        "capability": "item",
+        "present": true,
+        "value": "[1 items]",
+        "assignedTo": "subsystem",
+        "subsystemFamily": "items"
+      },
+      {
+        "key": "assets.langEntries",
+        "capability": "item",
+        "present": true,
+        "value": "[1 items]",
+        "assignedTo": "subsystem",
+        "subsystemFamily": "blocks"
+      },
+      {
+        "key": "dataPack.recipes",
+        "capability": "recipe",
+        "present": false,
+        "assignedTo": "subsystem",
+        "subsystemFamily": "recipes"
+      },
+      {
+        "key": "registries.items",
+        "capability": "item_use_hook",
+        "present": true,
+        "value": "[1 items]",
+        "assignedTo": "subsystem",
+        "subsystemFamily": "items"
+      },
+      {
+        "key": "hooks.onUse",
+        "capability": "item_use_hook",
+        "present": true,
+        "value": "[1 items]",
+        "assignedTo": "template"
+      },
+      {
+        "key": "registries.items",
+        "capability": "item_use_hook",
+        "present": true,
+        "value": "[1 items]",
+        "assignedTo": "subsystem",
+        "subsystemFamily": "items"
+      },
+      {
+        "key": "hooks.onUse",
+        "capability": "item_use_hook",
+        "present": true,
+        "value": "[1 items]",
+        "assignedTo": "template"
+      }
+    ],
+    "coverageByFamily": {
+      "items": {
+        "total": 7,
+        "present": 7,
+        "percentage": 100
+      },
+      "core": {
+        "total": 1,
+        "present": 0,
+        "percentage": 0
+      }
+    },
+    "totalRequiredKeys": 8,
+    "totalPresentKeys": 7,
+    "coveragePercentage": 88
+  },
+  "runtimePrimitiveCoverage": {
+    "traceId": "p0_mk07vnps_a7rbnr",
+    "timestamp": "2026-01-04T21:01:33.222Z",
+    "passed": true,
+    "missingPrimitives": [],
+    "duplicatePrimitives": [],
+    "primitiveStatuses": [],
+    "totalRequiredPrimitives": 0,
+    "totalEmittedPrimitives": 0
+  },
+  "blockingErrors": [
+    {
+      "gate": "BUILDPLAN_COVERAGE",
+      "code": "MISSING_KEY",
+      "message": "Capability \"recipe\" requires BuildPlan key \"dataPack.recipes\" but it is missing"
+    }
+  ]
+}

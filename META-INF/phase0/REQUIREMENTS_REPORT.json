@@ -1,0 +1,89 @@
+{
+  "status": "completed",
+  "traceId": "p0_mk07vne5_vt08r9",
+  "timestamp": "2026-01-04T21:01:31.246Z",
+  "data": {
+    "totalRequirements": 6,
+    "satisfiable": 6,
+    "requirements": [
+      {
+        "id": "req_entity_registration_lightning_1",
+        "type": "entity_registration",
+        "boundEntityIds": [
+          "lightning"
+        ],
+        "requiredCapabilities": [
+          "item"
+        ],
+        "satisfiable": true,
+        "source": "implicit_affordance",
+        "priority": "required",
+        "derivedFrom": "entity:item:lightning"
+      },
+      {
+        "id": "req_model_json_lightning_2",
+        "type": "model_json",
+        "boundEntityIds": [
+          "lightning"
+        ],
+        "requiredCapabilities": [],
+        "satisfiable": true,
+        "source": "implicit_affordance",
+        "priority": "required",
+        "derivedFrom": "entity:item:lightning"
+      },
+      {
+        "id": "req_texture_lightning_3",
+        "type": "texture",
+        "boundEntityIds": [
+          "lightning"
+        ],
+        "requiredCapabilities": [],
+        "satisfiable": true,
+        "source": "implicit_affordance",
+        "priority": "required",
+        "derivedFrom": "entity:item:lightning"
+      },
+      {
+        "id": "req_lang_entry_lightning_4",
+        "type": "lang_entry",
+        "boundEntityIds": [
+          "lightning"
+        ],
+        "requiredCapabilities": [],
+        "satisfiable": true,
+        "source": "implicit_affordance",
+        "priority": "required",
+        "derivedFrom": "entity:item:lightning"
+      },
+      {
+        "id": "req_trigger_hook_lightning_use_5",
+        "type": "trigger_hook",
+        "boundEntityIds": [
+          "lightning"
+        ],
+        "requiredCapabilities": [
+          "item_use_hook"
+        ],
+        "satisfiable": true,
+        "source": "explicit",
+        "priority": "required",
+        "derivedFrom": "entity:item:lightning"
+      },
+      {
+        "id": "req_creative_tab_lightning_6",
+        "type": "creative_tab",
+        "boundEntityIds": [
+          "lightning"
+        ],
+        "requiredCapabilities": [],
+        "satisfiable": true,
+        "source": "implicit_affordance",
+        "priority": "required",
+        "derivedFrom": "entity:item:lightning"
+      }
+    ],
+    "unsatisfiedRequirements": [],
+    "clarificationRequirements": []
+  }
+}

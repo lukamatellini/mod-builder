@@ -1,0 +1,39 @@
+{
+  "traceId": "p0_mk07vnps_a7rbnr",
+  "timestamp": "2026-01-04T21:01:33.225Z",
+  "passed": false,
+  "violations": [
+    {
+      "entityType": "item",
+      "entityId": "lightning",
+      "missing": "lang",
+      "details": "Missing lang key \"item.magicwand.lightning\""
+    },
+    {
+      "entityType": "item",
+      "entityId": "lightning",
+      "missing": "model",
+      "details": "Missing item model at \"src/main/resources/assets/magicwand/models/item/lightning.json\""
+    },
+    {
+      "entityType": "item",
+      "entityId": "lightning",
+      "missing": "texture",
+      "details": "Missing item texture at \"src/main/resources/assets/magicwand/textures/item/lightning.png\""
+    }
+  ],
+  "summary": {
+    "blocks": {
+      "total": 0,
+      "complete": 0
+    },
+    "items": {
+      "total": 1,
+      "complete": 0
+    },
+    "entities": {
+      "total": 0,
+      "complete": 0
+    }
+  }
+}
