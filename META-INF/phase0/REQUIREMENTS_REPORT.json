@@ -1,0 +1,75 @@
+{
+  "status": "completed",
+  "traceId": "p0_mk0bledb_qar5hf",
+  "timestamp": "2026-01-04T22:45:31.425Z",
+  "data": {
+    "totalRequirements": 5,
+    "satisfiable": 5,
+    "requirements": [
+      {
+        "id": "req_entity_registration_speed_1",
+        "type": "entity_registration",
+        "boundEntityIds": [
+          "speed"
+        ],
+        "requiredCapabilities": [
+          "item"
+        ],
+        "satisfiable": true,
+        "source": "implicit_affordance",
+        "priority": "required",
+        "derivedFrom": "entity:item:speed"
+      },
+      {
+        "id": "req_model_json_speed_2",
+        "type": "model_json",
+        "boundEntityIds": [
+          "speed"
+        ],
+        "requiredCapabilities": [],
+        "satisfiable": true,
+        "source": "implicit_affordance",
+        "priority": "required",
+        "derivedFrom": "entity:item:speed"
+      },
+      {
+        "id": "req_texture_speed_3",
+        "type": "texture",
+        "boundEntityIds": [
+          "speed"
+        ],
+        "requiredCapabilities": [],
+        "satisfiable": true,
+        "source": "implicit_affordance",
+        "priority": "required",
+        "derivedFrom": "entity:item:speed"
+      },
+      {
+        "id": "req_lang_entry_speed_4",
+        "type": "lang_entry",
+        "boundEntityIds": [
+          "speed"
+        ],
+        "requiredCapabilities": [],
+        "satisfiable": true,
+        "source": "implicit_affordance",
+        "priority": "required",
+        "derivedFrom": "entity:item:speed"
+      },
+      {
+        "id": "req_creative_tab_speed_5",
+        "type": "creative_tab",
+        "boundEntityIds": [
+          "speed"
+        ],
+        "requiredCapabilities": [],
+        "satisfiable": true,
+        "source": "implicit_affordance",
+        "priority": "required",
+        "derivedFrom": "entity:item:speed"
+      }
+    ],
+    "unsatisfiedRequirements": [],
+    "clarificationRequirements": []
+  }
+}

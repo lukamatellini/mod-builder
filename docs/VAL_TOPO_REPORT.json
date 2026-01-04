@@ -1,0 +1,109 @@
+{
+  "status": "pass",
+  "reasons": [],
+  "checks": {
+    "items": {
+      "status": "pass",
+      "details": {
+        "count": 1,
+        "errors": 0
+      }
+    },
+    "blocks": {
+      "status": "pass",
+      "details": {
+        "count": 0,
+        "errors": 0
+      }
+    },
+    "mobs": {
+      "status": "pass",
+      "details": {
+        "count": 0,
+        "errors": 0
+      }
+    },
+    "structures": {
+      "status": "pass",
+      "details": {
+        "count": 0,
+        "errors": 0
+      }
+    },
+    "dimensions_biomes": {
+      "status": "pass",
+      "details": {
+        "dimensions": 0,
+        "biomes": 0,
+        "errors": 0
+      }
+    },
+    "recipes_loot": {
+      "status": "pass",
+      "details": {
+        "errors": 0
+      }
+    },
+    "theme_manifest": {
+      "status": "pass",
+      "details": {
+        "tokens": 8,
+        "mappings": 4
+      }
+    }
+  },
+  "assetIndex": {
+    "textures": [
+      {
+        "id": "fallback",
+        "path": "src/main/resources/assets/speedboots/textures/item/fallback.png",
+        "kind": "item",
+        "w": 16,
+        "h": 16,
+        "hash": "jxns4p"
+      },
+      {
+        "id": "speed_boots",
+        "path": "src/main/resources/assets/speedboots/textures/item/speed_boots.png",
+        "kind": "item",
+        "w": 16,
+        "h": 16,
+        "hash": "dhg7cc"
+      },
+      {
+        "id": "speed_layer_1",
+        "path": "src/main/resources/assets/speedboots/textures/models/armor/speed_layer_1.png",
+        "kind": "other",
+        "w": 64,
+        "h": 32,
+        "hash": "sbw37m"
+      },
+      {
+        "id": "speed_layer_2",
+        "path": "src/main/resources/assets/speedboots/textures/models/armor/speed_layer_2.png",
+        "kind": "other",
+        "w": 64,
+        "h": 32,
+        "hash": "xckhj0"
+      }
+    ],
+    "models": [
+      {
+        "id": "speed_boots",
+        "path": "src/main/resources/assets/speedboots/models/item/speed_boots.json"
+      }
+    ],
+    "langKeys": [
+      "itemGroup.speedboots.main",
+      "item.speedboots.speed_boots",
+      "category.speedboots.keys",
+      "key.speedboots.open_quest_journal",
+      "key.speedboots.open_achievements"
+    ],
+    "lootTables": [],
+    "recipes": [
+      "speed_boots"
+    ],
+    "blockstates": []
+  }
+}

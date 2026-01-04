@@ -1,0 +1,82 @@
+{
+  "traceId": "p0_mk0bleo3_2z4tac",
+  "timestamp": "2026-01-04T22:45:32.782Z",
+  "passed": false,
+  "buildPlanCoverage": {
+    "traceId": "p0_mk0bleo3_2z4tac",
+    "timestamp": "2026-01-04T22:45:32.781Z",
+    "passed": false,
+    "missingKeys": [
+      {
+        "capability": "recipe",
+        "key": "dataPack.recipes"
+      }
+    ],
+    "unassignedKeys": [],
+    "keyStatuses": [
+      {
+        "key": "registries.items",
+        "capability": "item",
+        "present": true,
+        "value": "[1 items]",
+        "assignedTo": "subsystem",
+        "subsystemFamily": "items"
+      },
+      {
+        "key": "assets.itemModels",
+        "capability": "item",
+        "present": true,
+        "value": "[1 items]",
+        "assignedTo": "subsystem",
+        "subsystemFamily": "items"
+      },
+      {
+        "key": "assets.langEntries",
+        "capability": "item",
+        "present": true,
+        "value": "[1 items]",
+        "assignedTo": "subsystem",
+        "subsystemFamily": "blocks"
+      },
+      {
+        "key": "dataPack.recipes",
+        "capability": "recipe",
+        "present": false,
+        "assignedTo": "subsystem",
+        "subsystemFamily": "recipes"
+      }
+    ],
+    "coverageByFamily": {
+      "items": {
+        "total": 3,
+        "present": 3,
+        "percentage": 100
+      },
+      "core": {
+        "total": 1,
+        "present": 0,
+        "percentage": 0
+      }
+    },
+    "totalRequiredKeys": 4,
+    "totalPresentKeys": 3,
+    "coveragePercentage": 75
+  },
+  "runtimePrimitiveCoverage": {
+    "traceId": "p0_mk0bleo3_2z4tac",
+    "timestamp": "2026-01-04T22:45:32.782Z",
+    "passed": true,
+    "missingPrimitives": [],
+    "duplicatePrimitives": [],
+    "primitiveStatuses": [],
+    "totalRequiredPrimitives": 0,
+    "totalEmittedPrimitives": 0
+  },
+  "blockingErrors": [
+    {
+      "gate": "BUILDPLAN_COVERAGE",
+      "code": "MISSING_KEY",
+      "message": "Capability \"recipe\" requires BuildPlan key \"dataPack.recipes\" but it is missing"
+    }
+  ]
+}

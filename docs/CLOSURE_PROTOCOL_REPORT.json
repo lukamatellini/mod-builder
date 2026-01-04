@@ -1,0 +1,123 @@
+{
+  "traceId": "p0_mk0bleo3_2z4tac",
+  "timestamp": "2026-01-04T22:45:32.786Z",
+  "modId": "speedboots",
+  "overallStatus": "BLOCKED",
+  "capabilityStatuses": [
+    {
+      "capability": "item",
+      "phase5_conflicts": true,
+      "phase5_ownership": false,
+      "phase5_boundary": true,
+      "phase5_mixin": true,
+      "phase6_buildplan_coverage": true,
+      "phase6_runtime_primitives": true,
+      "phase6_asset_pipeline": false,
+      "phase7_presence": true,
+      "phase7_reference_integrity": false,
+      "phase7_enhanced_refs": true,
+      "phase8_semantics": true,
+      "phase8_visual_completeness": false,
+      "phase9_build": "DEFERRED",
+      "phase9_jar": "DEFERRED",
+      "phase9_smokeload": "DEFERRED",
+      "pos_e2e": "NOT_RUN",
+      "neg_e2e": "NOT_RUN",
+      "finalStatus": "INCOMPLETE_SPEC"
+    },
+    {
+      "capability": "recipe",
+      "phase5_conflicts": true,
+      "phase5_ownership": false,
+      "phase5_boundary": true,
+      "phase5_mixin": true,
+      "phase6_buildplan_coverage": false,
+      "phase6_runtime_primitives": true,
+      "phase6_asset_pipeline": false,
+      "phase7_presence": true,
+      "phase7_reference_integrity": false,
+      "phase7_enhanced_refs": true,
+      "phase8_semantics": true,
+      "phase8_visual_completeness": false,
+      "phase9_build": "DEFERRED",
+      "phase9_jar": "DEFERRED",
+      "phase9_smokeload": "DEFERRED",
+      "pos_e2e": "NOT_RUN",
+      "neg_e2e": "NOT_RUN",
+      "finalStatus": "INCOMPLETE_SPEC"
+    }
+  ],
+  "phase5Summary": {
+    "passed": false,
+    "blockingErrors": 0,
+    "mixinPassed": true
+  },
+  "phase6Summary": {
+    "passed": false,
+    "missingKeys": 1,
+    "missingPrimitives": 0,
+    "assetPipelinePassed": false
+  },
+  "phase7Summary": {
+    "passed": false,
+    "missingArtifacts": 0,
+    "danglingRefs": 1,
+    "enhancedRefsPassed": true
+  },
+  "phase8Summary": {
+    "passed": false,
+    "violations": 3,
+    "visualCompletenessPassed": false
+  },
+  "phase9Summary": {
+    "status": "NOT_RUN",
+    "buildPassed": null,
+    "jarPassed": null,
+    "smokePassed": null
+  },
+  "allBlockingErrors": [
+    {
+      "phase": "PHASE6",
+      "gate": "BUILDPLAN_COVERAGE",
+      "code": "MISSING_KEY",
+      "message": "Capability \"recipe\" requires BuildPlan key \"dataPack.recipes\" but it is missing"
+    },
+    {
+      "phase": "PHASE6_ASSETS",
+      "code": "MISSING_ASSET",
+      "message": "Missing texture: speed"
+    },
+    {
+      "phase": "PHASE6_ASSETS",
+      "code": "MISSING_ASSET",
+      "message": "Missing model: speed"
+    },
+    {
+      "phase": "PHASE7",
+      "gate": "REFERENCE_INTEGRITY",
+      "code": "DANGLING_LANG",
+      "message": "Missing lang entry for item \"speed\""
+    },
+    {
+      "phase": "PHASE8_VISUAL",
+      "code": "MISSING_LANG",
+      "message": "Missing lang key \"item.speedboots.speed\""
+    },
+    {
+      "phase": "PHASE8_VISUAL",
+      "code": "MISSING_MODEL",
+      "message": "Missing item model at \"src/main/resources/assets/speedboots/models/item/speed.json\""
+    },
+    {
+      "phase": "PHASE8_VISUAL",
+      "code": "MISSING_TEXTURE",
+      "message": "Missing item texture at \"src/main/resources/assets/speedboots/textures/item/speed.png\""
+    }
+  ],
+  "productionReadyCapabilities": [],
+  "phase9RequiredCapabilities": [],
+  "blockedCapabilities": [
+    "item",
+    "recipe"
+  ]
+}

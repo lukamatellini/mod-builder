@@ -1,0 +1,100 @@
+{
+  "traceId": "p0_mk0bleo3_2z4tac",
+  "timestamp": "2026-01-04T22:45:32.781Z",
+  "passed": false,
+  "fileCollision": {
+    "traceId": "p0_mk0bleo3_2z4tac",
+    "timestamp": "2026-01-04T22:45:32.779Z",
+    "collisions": [],
+    "passed": true,
+    "totalFilesAnalyzed": 29,
+    "totalCollisions": 0,
+    "resolvedCollisions": 0,
+    "unresolvedCollisions": 0
+  },
+  "registryOwnership": {
+    "traceId": "p0_mk0bleo3_2z4tac",
+    "timestamp": "2026-01-04T22:45:32.780Z",
+    "entries": [
+      {
+        "key": "speedboots:speed",
+        "type": "item",
+        "owner": "template",
+        "ownerType": "template",
+        "hasAssets": false,
+        "requiredAssets": [
+          "src/main/resources/assets/speedboots/models/item/speed.json",
+          "src/main/resources/assets/speedboots/textures/item/speed.png"
+        ],
+        "foundAssets": [
+          "src/main/resources/assets/speedboots/models/item/speed_boots.json",
+          "src/main/resources/assets/speedboots/textures/item/speed_boots.png"
+        ]
+      }
+    ],
+    "passed": false,
+    "duplicateRegistrations": [],
+    "unreferencedKeys": [
+      {
+        "key": "speedboots:speed_boots",
+        "type": "unknown",
+        "referencedIn": [
+          "src/main/resources/data/speedboots/recipes/speed_boots.json"
+        ]
+      },
+      {
+        "key": "speedboots:item",
+        "type": "unknown",
+        "referencedIn": [
+          "src/main/resources/assets/speedboots/models/item/speed_boots.json"
+        ]
+      }
+    ],
+    "registeredButNoAssets": [
+      {
+        "key": "speedboots:speed",
+        "type": "item",
+        "missingAssets": [
+          "src/main/resources/assets/speedboots/models/item/speed.json",
+          "src/main/resources/assets/speedboots/textures/item/speed.png"
+        ]
+      }
+    ]
+  },
+  "clientServerBoundary": {
+    "traceId": "p0_mk0bleo3_2z4tac",
+    "timestamp": "2026-01-04T22:45:32.781Z",
+    "passed": true,
+    "violations": [],
+    "clientOnlyClasses": [
+      "src/client/java/com/modgen/speedboots/client/SpeedBootsClient.java",
+      "src/client/java/com/modgen/speedboots/client/SpeedBootsClient.java",
+      "src/client/java/com/modgen/speedboots/client/ModClientNetworking.java",
+      "src/client/java/com/modgen/speedboots/client/ModClientNetworking.java",
+      "src/client/java/com/modgen/speedboots/client/screen/ProgressBarHud.java",
+      "src/client/java/com/modgen/speedboots/client/screen/ProgressBarHud.java",
+      "src/client/java/com/modgen/speedboots/client/screen/ProgressBarHud.java",
+      "src/client/java/com/modgen/speedboots/client/screen/BossHealthBar.java",
+      "src/client/java/com/modgen/speedboots/client/screen/BossHealthBar.java",
+      "src/client/java/com/modgen/speedboots/client/screen/BossHealthBar.java",
+      "src/client/java/com/modgen/speedboots/client/ModHudOverlay.java",
+      "src/client/java/com/modgen/speedboots/client/ModHudOverlay.java",
+      "src/client/java/com/modgen/speedboots/client/ModHudOverlay.java",
+      "src/client/java/com/modgen/speedboots/client/ModHudOverlay.java"
+    ],
+    "serverOnlyClasses": [],
+    "commonClasses": [
+      "src/main/java/com/modgen/speedboots/engine/BuildPlanValidator.java",
+      "src/main/java/com/modgen/speedboots/SpeedBoots.java",
+      "src/main/java/com/modgen/speedboots/engine/ModGenEngine.java",
+      "src/main/java/com/modgen/speedboots/network/ModNetworking.java",
+      "src/main/java/com/modgen/speedboots/network/ModPackets.java",
+      "src/main/java/com/modgen/speedboots/ModSounds.java",
+      "src/main/java/com/modgen/speedboots/ModItems.java"
+    ],
+    "hasClientEntrypoint": true,
+    "hasServerEntrypoint": true,
+    "registeredPackets": []
+  },
+  "blockingErrors": []
+}

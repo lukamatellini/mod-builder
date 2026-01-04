@@ -1,0 +1,101 @@
+{
+  "traceId": "p0_mk0bleo3_2z4tac",
+  "timestamp": "2026-01-04T22:45:32.784Z",
+  "passed": false,
+  "artifactPresence": {
+    "traceId": "p0_mk0bleo3_2z4tac",
+    "timestamp": "2026-01-04T22:45:32.783Z",
+    "passed": true,
+    "missingArtifacts": [],
+    "invalidSchemas": [],
+    "artifactStatuses": [
+      {
+        "glob": "src/main/java/**/ModItems.java",
+        "kind": "java_entrypoint",
+        "description": "Item registration class",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/java/com/modgen/speedboots/ModItems.java"
+        ]
+      },
+      {
+        "glob": "src/main/resources/assets/speedboots/models/item/*.json",
+        "kind": "json_schema",
+        "description": "Item model JSON",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/assets/speedboots/models/item/speed_boots.json"
+        ],
+        "schemaValid": true,
+        "schemaErrors": []
+      },
+      {
+        "glob": "src/main/resources/assets/speedboots/textures/item/*.png",
+        "kind": "png",
+        "description": "Item texture",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/assets/speedboots/textures/item/fallback.png",
+          "src/main/resources/assets/speedboots/textures/item/speed_boots.png"
+        ]
+      },
+      {
+        "glob": "src/main/resources/data/speedboots/recipes/*.json",
+        "kind": "json_schema",
+        "description": "Recipe JSON file",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/data/speedboots/recipes/speed_boots.json"
+        ],
+        "schemaValid": true,
+        "schemaErrors": []
+      }
+    ],
+    "totalRequired": 4,
+    "totalFound": 4
+  },
+  "referenceIntegrity": {
+    "traceId": "p0_mk0bleo3_2z4tac",
+    "timestamp": "2026-01-04T22:45:32.784Z",
+    "passed": false,
+    "danglingReferences": [
+      {
+        "sourceFile": "assets/speedboots/lang/en_us.json",
+        "referenceType": "lang",
+        "reference": "item.speedboots.speed",
+        "reason": "Missing lang entry for item \"speed\""
+      }
+    ],
+    "modelTextureIntegrity": {
+      "checked": 2,
+      "valid": 2,
+      "invalid": 0
+    },
+    "worldgenGraphIntegrity": {
+      "checked": 0,
+      "valid": 0,
+      "invalid": 0
+    },
+    "tagIntegrity": {
+      "checked": 0,
+      "valid": 0,
+      "invalid": 0
+    },
+    "langIntegrity": {
+      "checked": 1,
+      "valid": 0,
+      "invalid": 1
+    }
+  },
+  "blockingErrors": [
+    {
+      "gate": "REFERENCE_INTEGRITY",
+      "code": "DANGLING_LANG",
+      "message": "Missing lang entry for item \"speed\""
+    }
+  ]
+}

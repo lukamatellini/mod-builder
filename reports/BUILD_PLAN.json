@@ -1,0 +1,87 @@
+{
+  "modId": "speedboots",
+  "modName": "Speed Boots",
+  "version": "1.0.0",
+  "registries": {
+    "items": [
+      {
+        "id": "speed",
+        "type": "misc",
+        "className": "SpeedItem"
+      }
+    ],
+    "blocks": [],
+    "entities": [],
+    "biomes": [],
+    "dimensions": [],
+    "structures": [],
+    "features": [],
+    "placedFeatures": [],
+    "structureSets": [],
+    "advancements": [],
+    "sounds": [],
+    "particles": []
+  },
+  "hooks": {
+    "onUse": [],
+    "onHit": [],
+    "onKill": [],
+    "onBreak": [],
+    "onTick": [],
+    "onEnterDimension": [],
+    "onProjectileHit": [],
+    "onMount": [],
+    "onDismount": [],
+    "onInteract": []
+  },
+  "dataPack": {
+    "recipes": [],
+    "lootTables": [],
+    "advancements": [],
+    "dimensionJson": [],
+    "worldgenConfigured": [],
+    "worldgenPlaced": [],
+    "structurePools": [],
+    "tags": []
+  },
+  "assets": {
+    "itemModels": [
+      {
+        "id": "speed",
+        "textureRef": "item/speed"
+      }
+    ],
+    "blockModels": [],
+    "blockstates": [],
+    "entityTextures": [],
+    "guiTextures": [],
+    "langEntries": [
+      {
+        "key": "item.speedboots.speed",
+        "value": "speed"
+      }
+    ],
+    "soundEvents": [],
+    "particleDefinitions": []
+  },
+  "worldgen": {
+    "dimensionEntry": [],
+    "spawnSafety": [],
+    "mobSpawnRules": [],
+    "biomeFeatures": [],
+    "orePlacements": [],
+    "treePlacements": []
+  },
+  "requiredCapabilities": [
+    "item"
+  ],
+  "usedRuntimePrimitives": [
+    "FabricItemSettings",
+    "Registry.register"
+  ],
+  "metadata": {
+    "generatedAt": "2026-01-04T22:45:31.426Z",
+    "traceId": "p0_mk0bleoy_96klzs",
+    "plannerVersion": "3.0.0"
+  }
+}

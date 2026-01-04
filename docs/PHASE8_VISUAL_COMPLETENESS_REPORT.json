@@ -1,0 +1,39 @@
+{
+  "traceId": "p0_mk0bleo3_2z4tac",
+  "timestamp": "2026-01-04T22:45:32.786Z",
+  "passed": false,
+  "violations": [
+    {
+      "entityType": "item",
+      "entityId": "speed",
+      "missing": "lang",
+      "details": "Missing lang key \"item.speedboots.speed\""
+    },
+    {
+      "entityType": "item",
+      "entityId": "speed",
+      "missing": "model",
+      "details": "Missing item model at \"src/main/resources/assets/speedboots/models/item/speed.json\""
+    },
+    {
+      "entityType": "item",
+      "entityId": "speed",
+      "missing": "texture",
+      "details": "Missing item texture at \"src/main/resources/assets/speedboots/textures/item/speed.png\""
+    }
+  ],
+  "summary": {
+    "blocks": {
+      "total": 0,
+      "complete": 0
+    },
+    "items": {
+      "total": 1,
+      "complete": 0
+    },
+    "entities": {
+      "total": 0,
+      "complete": 0
+    }
+  }
+}

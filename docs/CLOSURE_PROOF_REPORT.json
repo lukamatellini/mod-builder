@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "timestamp": "2026-01-04T22:45:32.745Z",
+  "capabilities": [
+    {
+      "capabilityId": "item:speed",
+      "capabilityType": "item",
+      "targetId": "speed",
+      "status": "REPAIRED",
+      "repairAction": "Auto-create item \"speed\" with default properties",
+      "proof": {
+        "description": "item \"speed\" will be created with sensible defaults",
+        "registryEntry": "speedboots:speed"
+      }
+    },
+    {
+      "capabilityId": "recipe:speed",
+      "capabilityType": "recipe",
+      "targetId": "speed",
+      "status": "REPAIRED",
+      "repairAction": "Auto-generate crafting recipe for \"speed\"",
+      "proof": {
+        "filePath": "data/speedboots/recipes/speed.json",
+        "description": "Shaped recipe using common materials"
+      }
+    }
+  ],
+  "summary": {
+    "total": 2,
+    "satisfied": 0,
+    "repaired": 2,
+    "needsClarification": 0,
+    "cannotFulfill": 0
+  }
+}

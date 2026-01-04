@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21.1",
+  "javaVersion": 21,
+  "generatedAt": "2026-01-04T22:45:32.752Z",
+  "enabledModules": {
+    "quests": false,
+    "npcs": false,
+    "dialogue": false,
+    "trading": false,
+    "structures": false,
+    "dimensions": false,
+    "biomes": false,
+    "commands": true,
+    "items": true,
+    "mobs": false,
+    "events": false
+  },
+  "inferenceReasons": [
+    "speedboots:items enabled: 1 items defined in spec",
+    "speedboots:hud overlay enabled: 0 quests, mana items: false, custom effects: true",
+    "speedboots:commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 1,
+    "mobs": 0,
+    "structures": 0,
+    "dimensions": 0,
+    "quests": 0,
+    "npcs": 0,
+    "events": 0
+  },
+  "expectedDataFiles": [],
+  "expectedAssetFiles": [
+    "assets/speedboots/lang/en_us.json",
+    "assets/speedboots/models/item/speed_boots.json"
+  ]
+}

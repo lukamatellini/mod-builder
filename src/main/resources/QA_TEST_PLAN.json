@@ -1,0 +1,63 @@
+{
+  "modId": "speedboots",
+  "modName": "Speed Boots",
+  "mcVersion": "1.21.1",
+  "generatedAt": "2026-01-04T22:45:32.832Z",
+  "totalTests": 3,
+  "categories": [
+    {
+      "name": "Items",
+      "tests": [
+        {
+          "category": "Items",
+          "name": "Speed Boots Registration",
+          "command": "/give @p speedboots:speed_boots",
+          "steps": [
+            "Run: /give @p speedboots:speed_boots",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        }
+      ]
+    },
+    {
+      "name": "Recipes",
+      "tests": [
+        {
+          "category": "Recipes",
+          "name": "Speed Boots Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:stick\",\"minecraft:stick\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Speed Boots",
+          "automated": false
+        }
+      ]
+    },
+    {
+      "name": "Item Effects",
+      "tests": [
+        {
+          "category": "Item Effects",
+          "name": "Speed Boots when_equipped Effect",
+          "steps": [
+            "Give yourself the item: /give @p speedboots:speed_boots",
+            "Trigger: when_equipped",
+            "Observe speed activation"
+          ],
+          "expectedResult": "speed activates correctly",
+          "automated": false
+        }
+      ]
+    }
+  ],
+  "quickCommands": [
+    "/give @p speedboots:speed_boots"
+  ]
+}
