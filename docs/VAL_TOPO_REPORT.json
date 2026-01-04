@@ -1,0 +1,101 @@
+{
+  "status": "pass",
+  "reasons": [],
+  "checks": {
+    "items": {
+      "status": "pass",
+      "details": {
+        "count": 1,
+        "errors": 0
+      }
+    },
+    "blocks": {
+      "status": "pass",
+      "details": {
+        "count": 0,
+        "errors": 0
+      }
+    },
+    "mobs": {
+      "status": "pass",
+      "details": {
+        "count": 0,
+        "errors": 0
+      }
+    },
+    "structures": {
+      "status": "pass",
+      "details": {
+        "count": 0,
+        "errors": 0
+      }
+    },
+    "dimensions_biomes": {
+      "status": "pass",
+      "details": {
+        "dimensions": 0,
+        "biomes": 0,
+        "errors": 0
+      }
+    },
+    "recipes_loot": {
+      "status": "pass",
+      "details": {
+        "errors": 0
+      }
+    },
+    "theme_manifest": {
+      "status": "pass",
+      "details": {
+        "tokens": 7,
+        "mappings": 3
+      }
+    }
+  },
+  "assetIndex": {
+    "textures": [
+      {
+        "id": "fallback",
+        "path": "src/main/resources/assets/magicwand/textures/item/fallback.png",
+        "kind": "item",
+        "w": 16,
+        "h": 16,
+        "hash": "jxns4p"
+      },
+      {
+        "id": "lightning_wand",
+        "path": "src/main/resources/assets/magicwand/textures/item/lightning_wand.png",
+        "kind": "item",
+        "w": 16,
+        "h": 16,
+        "hash": "t7msf2"
+      },
+      {
+        "id": "flame",
+        "path": "src/main/resources/assets/magicwand/textures/particle/flame.png",
+        "kind": "particle",
+        "w": 8,
+        "h": 8,
+        "hash": "ywqyzh"
+      }
+    ],
+    "models": [
+      {
+        "id": "lightning_wand",
+        "path": "src/main/resources/assets/magicwand/models/item/lightning_wand.json"
+      }
+    ],
+    "langKeys": [
+      "itemGroup.magicwand.main",
+      "item.magicwand.lightning_wand",
+      "category.magicwand.keys",
+      "key.magicwand.open_quest_journal",
+      "key.magicwand.open_achievements"
+    ],
+    "lootTables": [],
+    "recipes": [
+      "lightning_wand"
+    ],
+    "blockstates": []
+  }
+}

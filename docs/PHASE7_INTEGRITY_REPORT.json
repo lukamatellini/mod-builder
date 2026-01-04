@@ -1,0 +1,121 @@
+{
+  "traceId": "p0_mk0bbzub_pnn6ro",
+  "timestamp": "2026-01-04T22:38:13.682Z",
+  "passed": false,
+  "artifactPresence": {
+    "traceId": "p0_mk0bbzub_pnn6ro",
+    "timestamp": "2026-01-04T22:38:13.681Z",
+    "passed": true,
+    "missingArtifacts": [],
+    "invalidSchemas": [],
+    "artifactStatuses": [
+      {
+        "glob": "src/main/java/**/ModItems.java",
+        "kind": "java_entrypoint",
+        "description": "Item registration class",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/java/com/modgen/magicwand/ModItems.java"
+        ]
+      },
+      {
+        "glob": "src/main/resources/assets/magicwand/models/item/*.json",
+        "kind": "json_schema",
+        "description": "Item model JSON",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/assets/magicwand/models/item/lightning_wand.json"
+        ],
+        "schemaValid": true,
+        "schemaErrors": []
+      },
+      {
+        "glob": "src/main/resources/assets/magicwand/textures/item/*.png",
+        "kind": "png",
+        "description": "Item texture",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/assets/magicwand/textures/item/fallback.png",
+          "src/main/resources/assets/magicwand/textures/item/lightning_wand.png"
+        ]
+      },
+      {
+        "glob": "src/main/resources/data/magicwand/recipes/*.json",
+        "kind": "json_schema",
+        "description": "Recipe JSON file",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/data/magicwand/recipes/lightning_wand.json"
+        ],
+        "schemaValid": true,
+        "schemaErrors": []
+      },
+      {
+        "glob": "src/main/java/**/*Item.java",
+        "kind": "java_entrypoint",
+        "description": "Custom item class with use() override",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/java/com/modgen/magicwand/item/LightningWandItem.java"
+        ]
+      },
+      {
+        "glob": "src/main/java/**/*Item.java",
+        "kind": "java_entrypoint",
+        "description": "Custom item class with use() override",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/java/com/modgen/magicwand/item/LightningWandItem.java"
+        ]
+      }
+    ],
+    "totalRequired": 6,
+    "totalFound": 6
+  },
+  "referenceIntegrity": {
+    "traceId": "p0_mk0bbzub_pnn6ro",
+    "timestamp": "2026-01-04T22:38:13.681Z",
+    "passed": false,
+    "danglingReferences": [
+      {
+        "sourceFile": "assets/magicwand/lang/en_us.json",
+        "referenceType": "lang",
+        "reference": "item.magicwand.lightning",
+        "reason": "Missing lang entry for item \"lightning\""
+      }
+    ],
+    "modelTextureIntegrity": {
+      "checked": 2,
+      "valid": 2,
+      "invalid": 0
+    },
+    "worldgenGraphIntegrity": {
+      "checked": 0,
+      "valid": 0,
+      "invalid": 0
+    },
+    "tagIntegrity": {
+      "checked": 0,
+      "valid": 0,
+      "invalid": 0
+    },
+    "langIntegrity": {
+      "checked": 1,
+      "valid": 0,
+      "invalid": 1
+    }
+  },
+  "blockingErrors": [
+    {
+      "gate": "REFERENCE_INTEGRITY",
+      "code": "DANGLING_LANG",
+      "message": "Missing lang entry for item \"lightning\""
+    }
+  ]
+}

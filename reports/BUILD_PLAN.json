@@ -1,0 +1,94 @@
+{
+  "modId": "magicwand",
+  "modName": "Magic Wand",
+  "version": "1.0.0",
+  "registries": {
+    "items": [
+      {
+        "id": "lightning",
+        "type": "wand",
+        "className": "LightningItem"
+      }
+    ],
+    "blocks": [],
+    "entities": [],
+    "biomes": [],
+    "dimensions": [],
+    "structures": [],
+    "features": [],
+    "placedFeatures": [],
+    "structureSets": [],
+    "advancements": [],
+    "sounds": [],
+    "particles": []
+  },
+  "hooks": {
+    "onUse": [
+      {
+        "entityId": "lightning",
+        "effectType": "projectile"
+      }
+    ],
+    "onHit": [],
+    "onKill": [],
+    "onBreak": [],
+    "onTick": [],
+    "onEnterDimension": [],
+    "onProjectileHit": [],
+    "onMount": [],
+    "onDismount": [],
+    "onInteract": []
+  },
+  "dataPack": {
+    "recipes": [],
+    "lootTables": [],
+    "advancements": [],
+    "dimensionJson": [],
+    "worldgenConfigured": [],
+    "worldgenPlaced": [],
+    "structurePools": [],
+    "tags": []
+  },
+  "assets": {
+    "itemModels": [
+      {
+        "id": "lightning",
+        "textureRef": "item/lightning"
+      }
+    ],
+    "blockModels": [],
+    "blockstates": [],
+    "entityTextures": [],
+    "guiTextures": [],
+    "langEntries": [
+      {
+        "key": "item.magicwand.lightning",
+        "value": "lightning"
+      }
+    ],
+    "soundEvents": [],
+    "particleDefinitions": []
+  },
+  "worldgen": {
+    "dimensionEntry": [],
+    "spawnSafety": [],
+    "mobSpawnRules": [],
+    "biomeFeatures": [],
+    "orePlacements": [],
+    "treePlacements": []
+  },
+  "requiredCapabilities": [
+    "item",
+    "item_use_hook"
+  ],
+  "usedRuntimePrimitives": [
+    "FabricItemSettings",
+    "Registry.register",
+    "UseItemCallback"
+  ],
+  "metadata": {
+    "generatedAt": "2026-01-04T22:38:12.306Z",
+    "traceId": "p0_mk0bbzv6_xd5rx5",
+    "plannerVersion": "3.0.0"
+  }
+}

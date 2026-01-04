@@ -1,0 +1,26 @@
+{
+  "summary": {
+    "totalSubsystems": 0,
+    "enabledSubsystems": 0,
+    "passedSubsystems": 0,
+    "failedSubsystems": 0,
+    "totalFilesGenerated": 0,
+    "runtimeCodeFiles": 0,
+    "dataFiles": 0,
+    "assetFiles": 0,
+    "totalErrors": 0,
+    "totalWarnings": 0,
+    "overallStatus": "PHASE_9_REQUIRED"
+  },
+  "productionReadiness": {
+    "status": "PRODUCTION_READY",
+    "blockers": [],
+    "passedSubsystems": [],
+    "failedSubsystems": []
+  },
+  "errors": [],
+  "warnings": [],
+  "traceId": "p0_mk0bbzub_pnn6ro",
+  "buildPlanProvided": true,
+  "timestamp": "2026-01-04T22:38:13.671Z"
+}

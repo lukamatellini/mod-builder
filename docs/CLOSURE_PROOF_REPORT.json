@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "timestamp": "2026-01-04T22:38:13.652Z",
+  "capabilities": [
+    {
+      "capabilityId": "item:lightning",
+      "capabilityType": "item",
+      "targetId": "lightning",
+      "status": "REPAIRED",
+      "repairAction": "Auto-create item \"lightning\" with default properties",
+      "proof": {
+        "description": "item \"lightning\" will be created with sensible defaults",
+        "registryEntry": "magicwand:lightning"
+      }
+    },
+    {
+      "capabilityId": "recipe:lightning",
+      "capabilityType": "recipe",
+      "targetId": "lightning",
+      "status": "REPAIRED",
+      "repairAction": "Auto-generate crafting recipe for \"lightning\"",
+      "proof": {
+        "filePath": "data/magicwand/recipes/lightning.json",
+        "description": "Shaped recipe using common materials"
+      }
+    },
+    {
+      "capabilityId": "item_use_hook:lightning",
+      "capabilityType": "item_use_hook",
+      "targetId": "lightning",
+      "status": "REPAIRED",
+      "repairAction": "Auto-configure item_use_hook \"lightning\"",
+      "proof": {
+        "description": "item_use_hook configured automatically"
+      }
+    },
+    {
+      "capabilityId": "item_use_hook:lightning",
+      "capabilityType": "item_use_hook",
+      "targetId": "lightning",
+      "status": "REPAIRED",
+      "repairAction": "Auto-configure item_use_hook \"lightning\"",
+      "proof": {
+        "description": "item_use_hook configured automatically"
+      }
+    }
+  ],
+  "summary": {
+    "total": 4,
+    "satisfied": 0,
+    "repaired": 4,
+    "needsClarification": 0,
+    "cannotFulfill": 0
+  }
+}
