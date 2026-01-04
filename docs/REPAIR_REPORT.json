@@ -1,0 +1,64 @@
+{
+  "version": "1.0",
+  "timestamp": "2026-01-04T22:23:41.552Z",
+  "pipeline": "generate-mod",
+  "modId": "thunderclaprod",
+  "mcVersion": "1.21.1",
+  "registryAutoCreations": [],
+  "javaImportRepairs": [],
+  "javaSymbolRepairs": [],
+  "versionParityRepairs": [],
+  "textureModelAutoGens": [],
+  "idResolutionRepairs": [],
+  "recipeRepairs": [
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:glowstone_dust",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:diamond",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:glowstone_dust",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "minecraft:stick",
+      "ingredientResolved": "",
+      "reason": "Could not resolve, using thematic fallback"
+    },
+    {
+      "recipeFile": "unknown",
+      "ingredientOriginal": "thunderclaprod:lightning_wand",
+      "ingredientResolved": "",
+      "reason": "Auto-created missing mod item: Lightning Wand"
+    }
+  ],
+  "omissions": [],
+  "summary": {
+    "totalRepairs": 4,
+    "totalAutoCreations": 0,
+    "totalOmissions": 0,
+    "warnings": []
+  }
+}

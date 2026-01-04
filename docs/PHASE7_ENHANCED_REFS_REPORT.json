@@ -1,0 +1,16 @@
+{
+  "traceId": "p0_mk0atayy_wuujen",
+  "timestamp": "2026-01-04T22:23:41.593Z",
+  "passed": true,
+  "violations": [],
+  "soundIntegrity": {
+    "checked": 0,
+    "valid": 0,
+    "invalid": 0
+  },
+  "particleIntegrity": {
+    "checked": 0,
+    "valid": 0,
+    "invalid": 0
+  }
+}

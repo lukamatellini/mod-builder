@@ -1,0 +1,186 @@
+{
+  "traceId": "p0_mk0atayy_wuujen",
+  "timestamp": "2026-01-04T22:23:41.593Z",
+  "passed": false,
+  "artifactPresence": {
+    "traceId": "p0_mk0atayy_wuujen",
+    "timestamp": "2026-01-04T22:23:41.592Z",
+    "passed": true,
+    "missingArtifacts": [],
+    "invalidSchemas": [],
+    "artifactStatuses": [
+      {
+        "glob": "src/main/java/**/ModItems.java",
+        "kind": "java_entrypoint",
+        "description": "Item registration class",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/java/com/modgen/thunderclaprod/ModItems.java"
+        ]
+      },
+      {
+        "glob": "src/main/resources/assets/thunderclaprod/models/item/*.json",
+        "kind": "json_schema",
+        "description": "Item model JSON",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/assets/thunderclaprod/models/item/lightning_wand.json"
+        ],
+        "schemaValid": true,
+        "schemaErrors": []
+      },
+      {
+        "glob": "src/main/resources/assets/thunderclaprod/textures/item/*.png",
+        "kind": "png",
+        "description": "Item texture",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/assets/thunderclaprod/textures/item/fallback.png",
+          "src/main/resources/assets/thunderclaprod/textures/item/lightning_wand.png"
+        ]
+      },
+      {
+        "glob": "src/main/resources/data/thunderclaprod/recipes/*.json",
+        "kind": "json_schema",
+        "description": "Recipe JSON file",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/data/thunderclaprod/recipes/lightning_wand.json"
+        ],
+        "schemaValid": true,
+        "schemaErrors": []
+      },
+      {
+        "glob": "src/main/java/**/*Item.java",
+        "kind": "java_entrypoint",
+        "description": "Custom item class with use() override",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/java/com/modgen/thunderclaprod/item/LightningWandItem.java"
+        ]
+      },
+      {
+        "glob": "src/main/java/**/ModItems.java",
+        "kind": "java_entrypoint",
+        "description": "Item registration class",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/java/com/modgen/thunderclaprod/ModItems.java"
+        ]
+      },
+      {
+        "glob": "src/main/resources/assets/thunderclaprod/models/item/*.json",
+        "kind": "json_schema",
+        "description": "Item model JSON",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/assets/thunderclaprod/models/item/lightning_wand.json"
+        ],
+        "schemaValid": true,
+        "schemaErrors": []
+      },
+      {
+        "glob": "src/main/resources/assets/thunderclaprod/textures/item/*.png",
+        "kind": "png",
+        "description": "Item texture",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/assets/thunderclaprod/textures/item/fallback.png",
+          "src/main/resources/assets/thunderclaprod/textures/item/lightning_wand.png"
+        ]
+      },
+      {
+        "glob": "src/main/resources/data/thunderclaprod/recipes/*.json",
+        "kind": "json_schema",
+        "description": "Recipe JSON file",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/data/thunderclaprod/recipes/lightning_wand.json"
+        ],
+        "schemaValid": true,
+        "schemaErrors": []
+      },
+      {
+        "glob": "src/main/java/**/*Item.java",
+        "kind": "java_entrypoint",
+        "description": "Custom item class with use() override",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/java/com/modgen/thunderclaprod/item/LightningWandItem.java"
+        ]
+      },
+      {
+        "glob": "src/main/java/**/*Item.java",
+        "kind": "java_entrypoint",
+        "description": "Custom item class with use() override",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/java/com/modgen/thunderclaprod/item/LightningWandItem.java"
+        ]
+      },
+      {
+        "glob": "src/main/java/**/*Item.java",
+        "kind": "java_entrypoint",
+        "description": "Custom item class with use() override",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/java/com/modgen/thunderclaprod/item/LightningWandItem.java"
+        ]
+      }
+    ],
+    "totalRequired": 12,
+    "totalFound": 12
+  },
+  "referenceIntegrity": {
+    "traceId": "p0_mk0atayy_wuujen",
+    "timestamp": "2026-01-04T22:23:41.593Z",
+    "passed": false,
+    "danglingReferences": [
+      {
+        "sourceFile": "assets/thunderclaprod/lang/en_us.json",
+        "referenceType": "lang",
+        "reference": "item.thunderclaprod.lightning",
+        "reason": "Missing lang entry for item \"lightning\""
+      }
+    ],
+    "modelTextureIntegrity": {
+      "checked": 2,
+      "valid": 2,
+      "invalid": 0
+    },
+    "worldgenGraphIntegrity": {
+      "checked": 0,
+      "valid": 0,
+      "invalid": 0
+    },
+    "tagIntegrity": {
+      "checked": 0,
+      "valid": 0,
+      "invalid": 0
+    },
+    "langIntegrity": {
+      "checked": 1,
+      "valid": 0,
+      "invalid": 1
+    }
+  },
+  "blockingErrors": [
+    {
+      "gate": "REFERENCE_INTEGRITY",
+      "code": "DANGLING_LANG",
+      "message": "Missing lang entry for item \"lightning\""
+    }
+  ]
+}

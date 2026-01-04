@@ -1,0 +1,47 @@
+{
+  "modId": "thunderclaprod",
+  "modName": "Thunderclap Rod",
+  "mcVersion": "1.21.1",
+  "generatedAt": "2026-01-04T22:23:41.640Z",
+  "totalTests": 2,
+  "categories": [
+    {
+      "name": "Items",
+      "tests": [
+        {
+          "category": "Items",
+          "name": "Lightning Wand Registration",
+          "command": "/give @p thunderclaprod:lightning_wand",
+          "steps": [
+            "Run: /give @p thunderclaprod:lightning_wand",
+            "Verify item appears in inventory",
+            "Check item texture is not purple/black",
+            "Hover to verify name displays correctly"
+          ],
+          "expectedResult": "Item appears with correct texture and localized name",
+          "automated": true
+        }
+      ]
+    },
+    {
+      "name": "Recipes",
+      "tests": [
+        {
+          "category": "Recipes",
+          "name": "Lightning Wand Crafting",
+          "steps": [
+            "Open crafting table",
+            "Arrange ingredients: [\"minecraft:glowstone_dust\",\"minecraft:glowstone_dust\"]",
+            "Verify recipe shows in recipe book",
+            "Craft the item"
+          ],
+          "expectedResult": "Successfully craft Lightning Wand",
+          "automated": false
+        }
+      ]
+    }
+  ],
+  "quickCommands": [
+    "/give @p thunderclaprod:lightning_wand"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "status": "pass",
+  "reasons": [],
+  "checks": {
+    "items": {
+      "status": "pass",
+      "details": {
+        "count": 1,
+        "errors": 0
+      }
+    },
+    "blocks": {
+      "status": "pass",
+      "details": {
+        "count": 0,
+        "errors": 0
+      }
+    },
+    "mobs": {
+      "status": "pass",
+      "details": {
+        "count": 0,
+        "errors": 0
+      }
+    },
+    "structures": {
+      "status": "pass",
+      "details": {
+        "count": 0,
+        "errors": 0
+      }
+    },
+    "dimensions_biomes": {
+      "status": "pass",
+      "details": {
+        "dimensions": 0,
+        "biomes": 0,
+        "errors": 0
+      }
+    },
+    "recipes_loot": {
+      "status": "pass",
+      "details": {
+        "errors": 0
+      }
+    },
+    "theme_manifest": {
+      "status": "pass",
+      "details": {
+        "tokens": 8,
+        "mappings": 3
+      }
+    }
+  },
+  "assetIndex": {
+    "textures": [
+      {
+        "id": "fallback",
+        "path": "src/main/resources/assets/thunderclaprod/textures/item/fallback.png",
+        "kind": "item",
+        "w": 16,
+        "h": 16,
+        "hash": "jxns4p"
+      },
+      {
+        "id": "lightning_wand",
+        "path": "src/main/resources/assets/thunderclaprod/textures/item/lightning_wand.png",
+        "kind": "item",
+        "w": 16,
+        "h": 16,
+        "hash": "9eg9es"
+      },
+      {
+        "id": "flame",
+        "path": "src/main/resources/assets/thunderclaprod/textures/particle/flame.png",
+        "kind": "particle",
+        "w": 8,
+        "h": 8,
+        "hash": "un06wh"
+      }
+    ],
+    "models": [
+      {
+        "id": "lightning_wand",
+        "path": "src/main/resources/assets/thunderclaprod/models/item/lightning_wand.json"
+      }
+    ],
+    "langKeys": [
+      "itemGroup.thunderclaprod.main",
+      "item.thunderclaprod.lightning_wand",
+      "category.thunderclaprod.keys",
+      "key.thunderclaprod.open_quest_journal",
+      "key.thunderclaprod.open_achievements"
+    ],
+    "lootTables": [],
+    "recipes": [
+      "lightning_wand"
+    ],
+    "blockstates": []
+  }
+}
