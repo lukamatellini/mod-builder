@@ -1,0 +1,70 @@
+{
+  "traceId": "p0_mk07s28i_45z1c0",
+  "timestamp": "2026-01-04T20:58:44.691Z",
+  "passed": false,
+  "items": [
+    {
+      "type": "texture",
+      "id": "lightning",
+      "path": "src/main/resources/assets/stormcaller/textures/item/lightning.png",
+      "present": false,
+      "assignedTo": "template"
+    },
+    {
+      "type": "model",
+      "id": "lightning",
+      "path": "src/main/resources/assets/stormcaller/models/item/lightning.json",
+      "present": false,
+      "assignedTo": "template"
+    },
+    {
+      "type": "lang",
+      "id": "item.stormcaller.lightning",
+      "path": "src/main/resources/assets/stormcaller/lang/en_us.json",
+      "present": true,
+      "assignedTo": "template"
+    }
+  ],
+  "missingAssets": [
+    {
+      "type": "texture",
+      "id": "lightning",
+      "path": "src/main/resources/assets/stormcaller/textures/item/lightning.png",
+      "present": false,
+      "assignedTo": "template"
+    },
+    {
+      "type": "model",
+      "id": "lightning",
+      "path": "src/main/resources/assets/stormcaller/models/item/lightning.json",
+      "present": false,
+      "assignedTo": "template"
+    }
+  ],
+  "coverage": {
+    "textures": {
+      "total": 1,
+      "present": 0
+    },
+    "models": {
+      "total": 1,
+      "present": 0
+    },
+    "blockstates": {
+      "total": 0,
+      "present": 0
+    },
+    "lang": {
+      "total": 1,
+      "present": 1
+    },
+    "sounds": {
+      "total": 0,
+      "present": 0
+    },
+    "particles": {
+      "total": 0,
+      "present": 0
+    }
+  }
+}

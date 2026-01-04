@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "traceId": "p0_mk07s15g_9ipshn",
+  "timestamp": "2026-01-04T20:58:43.412Z",
+  "data": {
+    "categories": [
+      "originalPrompt",
+      "categories",
+      "autoGenerateHints",
+      "expandedPrompt",
+      "detectedKeywords"
+    ],
+    "expandedPrompt": "**Overview**:\nThis mod introduces a powerful magical wand that allows players to summon lightning bolts. It's an early-game magical item that provides a fun ranged attack option.\n\n**Items**:\n- **Light"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "timestamp": "2026-01-04T20:58:44.666Z",
+  "capabilities": [
+    {
+      "capabilityId": "item:lightning_wand",
+      "capabilityType": "item",
+      "targetId": "lightning_wand",
+      "status": "SATISFIED",
+      "proof": {
+        "registryEntry": "stormcaller:lightning_wand",
+        "javaHook": "StormcallerItems.LIGHTNING_WAND",
+        "filePath": "src/main/java/.../items/LightningWandItem.java",
+        "description": "Item \"Lightning Wand\" registered in game registry"
+      }
+    },
+    {
+      "capabilityId": "recipe:lightning_wand",
+      "capabilityType": "recipe",
+      "targetId": "lightning_wand",
+      "status": "SATISFIED",
+      "proof": {
+        "filePath": "data/stormcaller/recipes/lightning_wand.json",
+        "jsonPath": "result",
+        "description": "Recipe defined: shaped"
+      }
+    },
+    {
+      "capabilityId": "item_use_hook:lightning_wand",
+      "capabilityType": "item_use_hook",
+      "targetId": "lightning_wand",
+      "status": "REPAIRED",
+      "repairAction": "Auto-configure item_use_hook \"lightning_wand\"",
+      "proof": {
+        "description": "item_use_hook configured automatically"
+      }
+    }
+  ],
+  "summary": {
+    "total": 3,
+    "satisfied": 2,
+    "repaired": 1,
+    "needsClarification": 0,
+    "cannotFulfill": 0
+  }
+}

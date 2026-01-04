@@ -1,0 +1,39 @@
+{
+  "traceId": "p0_mk07s28i_45z1c0",
+  "timestamp": "2026-01-04T20:58:44.694Z",
+  "passed": false,
+  "violations": [
+    {
+      "entityType": "item",
+      "entityId": "lightning",
+      "missing": "lang",
+      "details": "Missing lang key \"item.stormcaller.lightning\""
+    },
+    {
+      "entityType": "item",
+      "entityId": "lightning",
+      "missing": "model",
+      "details": "Missing item model at \"src/main/resources/assets/stormcaller/models/item/lightning.json\""
+    },
+    {
+      "entityType": "item",
+      "entityId": "lightning",
+      "missing": "texture",
+      "details": "Missing item texture at \"src/main/resources/assets/stormcaller/textures/item/lightning.png\""
+    }
+  ],
+  "summary": {
+    "blocks": {
+      "total": 0,
+      "complete": 0
+    },
+    "items": {
+      "total": 1,
+      "complete": 0
+    },
+    "entities": {
+      "total": 0,
+      "complete": 0
+    }
+  }
+}

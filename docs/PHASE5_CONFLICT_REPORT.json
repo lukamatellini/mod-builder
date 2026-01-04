@@ -1,0 +1,126 @@
+{
+  "traceId": "p0_mk07s28i_45z1c0",
+  "timestamp": "2026-01-04T20:58:44.689Z",
+  "passed": false,
+  "fileCollision": {
+    "traceId": "p0_mk07s28i_45z1c0",
+    "timestamp": "2026-01-04T20:58:44.687Z",
+    "collisions": [],
+    "passed": true,
+    "totalFilesAnalyzed": 33,
+    "totalCollisions": 0,
+    "resolvedCollisions": 0,
+    "unresolvedCollisions": 0
+  },
+  "registryOwnership": {
+    "traceId": "p0_mk07s28i_45z1c0",
+    "timestamp": "2026-01-04T20:58:44.687Z",
+    "entries": [
+      {
+        "key": "stormcaller:lightning",
+        "type": "item",
+        "owner": "template",
+        "ownerType": "template",
+        "hasAssets": false,
+        "requiredAssets": [
+          "src/main/resources/assets/stormcaller/models/item/lightning.json",
+          "src/main/resources/assets/stormcaller/textures/item/lightning.png"
+        ],
+        "foundAssets": [
+          "src/main/java/com/modgen/stormcaller/item/LightningWandItem.java",
+          "src/main/resources/assets/stormcaller/models/item/lightning_wand.json",
+          "src/main/resources/assets/stormcaller/textures/item/lightning_wand.png"
+        ]
+      }
+    ],
+    "passed": false,
+    "duplicateRegistrations": [],
+    "unreferencedKeys": [
+      {
+        "key": "stormcaller:lightning_wand",
+        "type": "unknown",
+        "referencedIn": [
+          "src/main/resources/data/stormcaller/recipes/lightning_wand.json"
+        ]
+      },
+      {
+        "key": "stormcaller:item",
+        "type": "unknown",
+        "referencedIn": [
+          "src/main/resources/assets/stormcaller/models/item/lightning_wand.json"
+        ]
+      }
+    ],
+    "registeredButNoAssets": [
+      {
+        "key": "stormcaller:lightning",
+        "type": "item",
+        "missingAssets": [
+          "src/main/resources/assets/stormcaller/models/item/lightning.json",
+          "src/main/resources/assets/stormcaller/textures/item/lightning.png"
+        ]
+      }
+    ]
+  },
+  "clientServerBoundary": {
+    "traceId": "p0_mk07s28i_45z1c0",
+    "timestamp": "2026-01-04T20:58:44.689Z",
+    "passed": false,
+    "violations": [
+      {
+        "type": "client_in_common",
+        "file": "src/main/java/com/modgen/stormcaller/ModParticles.java",
+        "classReference": "net.minecraft.client.particle.Particle",
+        "reason": "Client-only class \"net.minecraft.client.particle.Particle\" referenced in common/server code"
+      }
+    ],
+    "clientOnlyClasses": [
+      "src/client/java/com/modgen/stormcaller/client/StormCallerClient.java",
+      "src/client/java/com/modgen/stormcaller/client/StormCallerClient.java",
+      "src/client/java/com/modgen/stormcaller/client/ModClientNetworking.java",
+      "src/client/java/com/modgen/stormcaller/client/ModClientNetworking.java",
+      "src/client/java/com/modgen/stormcaller/client/screen/ProgressBarHud.java",
+      "src/client/java/com/modgen/stormcaller/client/screen/ProgressBarHud.java",
+      "src/client/java/com/modgen/stormcaller/client/screen/ProgressBarHud.java",
+      "src/client/java/com/modgen/stormcaller/client/screen/BossHealthBar.java",
+      "src/client/java/com/modgen/stormcaller/client/screen/BossHealthBar.java",
+      "src/client/java/com/modgen/stormcaller/client/screen/BossHealthBar.java",
+      "src/client/java/com/modgen/stormcaller/client/ModHudOverlay.java",
+      "src/client/java/com/modgen/stormcaller/client/ModHudOverlay.java",
+      "src/client/java/com/modgen/stormcaller/client/ModHudOverlay.java",
+      "src/client/java/com/modgen/stormcaller/client/ModHudOverlay.java",
+      "src/client/java/com/modgen/stormcaller/client/particle/ModParticleFactories.java",
+      "src/client/java/com/modgen/stormcaller/client/particle/ModParticleFactories.java",
+      "src/client/java/com/modgen/stormcaller/client/particle/ModParticleFactories.java",
+      "src/client/java/com/modgen/stormcaller/client/particle/FlameParticle.java",
+      "src/client/java/com/modgen/stormcaller/client/particle/FlameParticle.java",
+      "src/client/java/com/modgen/stormcaller/client/particle/FlameParticle.java",
+      "src/client/java/com/modgen/stormcaller/client/particle/FlameParticle.java",
+      "src/client/java/com/modgen/stormcaller/client/ModParticleFactories.java",
+      "src/client/java/com/modgen/stormcaller/client/ModParticleFactories.java",
+      "src/client/java/com/modgen/stormcaller/client/ModParticleFactories.java"
+    ],
+    "serverOnlyClasses": [],
+    "commonClasses": [
+      "src/main/java/com/modgen/stormcaller/engine/BuildPlanValidator.java",
+      "src/main/java/com/modgen/stormcaller/StormCaller.java",
+      "src/main/java/com/modgen/stormcaller/engine/ModGenEngine.java",
+      "src/main/java/com/modgen/stormcaller/network/ModNetworking.java",
+      "src/main/java/com/modgen/stormcaller/network/ModPackets.java",
+      "src/main/java/com/modgen/stormcaller/ModSounds.java",
+      "src/main/java/com/modgen/stormcaller/ModParticles.java",
+      "src/main/java/com/modgen/stormcaller/ModItems.java",
+      "src/main/java/com/modgen/stormcaller/item/LightningWandItem.java"
+    ],
+    "hasClientEntrypoint": true,
+    "hasServerEntrypoint": true,
+    "registeredPackets": []
+  },
+  "blockingErrors": [
+    {
+      "gate": "CLIENT_SERVER_BOUNDARY",
+      "code": "CLIENT_IN_COMMON",
+      "message": "Client-only class \"net.minecraft.client.particle.Particle\" referenced in common/server code in src/main/java/com/modgen/stormcaller/ModParticles.java"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "traceId": "p0_mk07s28i_45z1c0",
+  "timestamp": "2026-01-04T20:58:44.694Z",
+  "modId": "stormcaller",
+  "overallStatus": "BLOCKED",
+  "capabilityStatuses": [
+    {
+      "capability": "item",
+      "phase5_conflicts": true,
+      "phase5_ownership": false,
+      "phase5_boundary": false,
+      "phase5_mixin": true,
+      "phase6_buildplan_coverage": true,
+      "phase6_runtime_primitives": true,
+      "phase6_asset_pipeline": false,
+      "phase7_presence": true,
+      "phase7_reference_integrity": false,
+      "phase7_enhanced_refs": true,
+      "phase8_semantics": true,
+      "phase8_visual_completeness": false,
+      "phase9_build": "DEFERRED",
+      "phase9_jar": "DEFERRED",
+      "phase9_smokeload": "DEFERRED",
+      "pos_e2e": "NOT_RUN",
+      "neg_e2e": "NOT_RUN",
+      "finalStatus": "INCOMPLETE_SPEC"
+    },
+    {
+      "capability": "recipe",
+      "phase5_conflicts": true,
+      "phase5_ownership": false,
+      "phase5_boundary": false,
+      "phase5_mixin": true,
+      "phase6_buildplan_coverage": false,
+      "phase6_runtime_primitives": true,
+      "phase6_asset_pipeline": false,
+      "phase7_presence": true,
+      "phase7_reference_integrity": false,
+      "phase7_enhanced_refs": true,
+      "phase8_semantics": true,
+      "phase8_visual_completeness": false,
+      "phase9_build": "DEFERRED",
+      "phase9_jar": "DEFERRED",
+      "phase9_smokeload": "DEFERRED",
+      "pos_e2e": "NOT_RUN",
+      "neg_e2e": "NOT_RUN",
+      "finalStatus": "INCOMPLETE_SPEC"
+    },
+    {
+      "capability": "item_use_hook",
+      "phase5_conflicts": true,
+      "phase5_ownership": false,
+      "phase5_boundary": false,
+      "phase5_mixin": true,
+      "phase6_buildplan_coverage": true,
+      "phase6_runtime_primitives": true,
+      "phase6_asset_pipeline": false,
+      "phase7_presence": true,
+      "phase7_reference_integrity": false,
+      "phase7_enhanced_refs": true,
+      "phase8_semantics": true,
+      "phase8_visual_completeness": false,
+      "phase9_build": "DEFERRED",
+      "phase9_jar": "DEFERRED",
+      "phase9_smokeload": "DEFERRED",
+      "pos_e2e": "NOT_RUN",
+      "neg_e2e": "NOT_RUN",
+      "finalStatus": "INCOMPLETE_SPEC"
+    }
+  ],
+  "phase5Summary": {
+    "passed": false,
+    "blockingErrors": 1,
+    "mixinPassed": true
+  },
+  "phase6Summary": {
+    "passed": false,
+    "missingKeys": 1,
+    "missingPrimitives": 0,
+    "assetPipelinePassed": false
+  },
+  "phase7Summary": {
+    "passed": false,
+    "missingArtifacts": 0,
+    "danglingRefs": 1,
+    "enhancedRefsPassed": true
+  },
+  "phase8Summary": {
+    "passed": false,
+    "violations": 3,
+    "visualCompletenessPassed": false
+  },
+  "phase9Summary": {
+    "status": "NOT_RUN",
+    "buildPassed": null,
+    "jarPassed": null,
+    "smokePassed": null
+  },
+  "allBlockingErrors": [
+    {
+      "phase": "PHASE5",
+      "gate": "CLIENT_SERVER_BOUNDARY",
+      "code": "CLIENT_IN_COMMON",
+      "message": "Client-only class \"net.minecraft.client.particle.Particle\" referenced in common/server code in src/main/java/com/modgen/stormcaller/ModParticles.java"
+    },
+    {
+      "phase": "PHASE6",
+      "gate": "BUILDPLAN_COVERAGE",
+      "code": "MISSING_KEY",
+      "message": "Capability \"recipe\" requires BuildPlan key \"dataPack.recipes\" but it is missing"
+    },
+    {
+      "phase": "PHASE6_ASSETS",
+      "code": "MISSING_ASSET",
+      "message": "Missing texture: lightning"
+    },
+    {
+      "phase": "PHASE6_ASSETS",
+      "code": "MISSING_ASSET",
+      "message": "Missing model: lightning"
+    },
+    {
+      "phase": "PHASE7",
+      "gate": "REFERENCE_INTEGRITY",
+      "code": "DANGLING_LANG",
+      "message": "Missing lang entry for item \"lightning\""
+    },
+    {
+      "phase": "PHASE8_VISUAL",
+      "code": "MISSING_LANG",
+      "message": "Missing lang key \"item.stormcaller.lightning\""
+    },
+    {
+      "phase": "PHASE8_VISUAL",
+      "code": "MISSING_MODEL",
+      "message": "Missing item model at \"src/main/resources/assets/stormcaller/models/item/lightning.json\""
+    },
+    {
+      "phase": "PHASE8_VISUAL",
+      "code": "MISSING_TEXTURE",
+      "message": "Missing item texture at \"src/main/resources/assets/stormcaller/textures/item/lightning.png\""
+    }
+  ],
+  "productionReadyCapabilities": [],
+  "phase9RequiredCapabilities": [],
+  "blockedCapabilities": [
+    "item",
+    "recipe",
+    "item_use_hook"
+  ]
+}
