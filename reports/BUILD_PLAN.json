@@ -1,0 +1,94 @@
+{
+  "modId": "arcanespark",
+  "modName": "Arcane Spark",
+  "version": "1.0.0",
+  "registries": {
+    "items": [
+      {
+        "id": "lightning",
+        "type": "wand",
+        "className": "LightningItem"
+      }
+    ],
+    "blocks": [],
+    "entities": [],
+    "biomes": [],
+    "dimensions": [],
+    "structures": [],
+    "features": [],
+    "placedFeatures": [],
+    "structureSets": [],
+    "advancements": [],
+    "sounds": [],
+    "particles": []
+  },
+  "hooks": {
+    "onUse": [
+      {
+        "entityId": "lightning",
+        "effectType": "projectile"
+      }
+    ],
+    "onHit": [],
+    "onKill": [],
+    "onBreak": [],
+    "onTick": [],
+    "onEnterDimension": [],
+    "onProjectileHit": [],
+    "onMount": [],
+    "onDismount": [],
+    "onInteract": []
+  },
+  "dataPack": {
+    "recipes": [],
+    "lootTables": [],
+    "advancements": [],
+    "dimensionJson": [],
+    "worldgenConfigured": [],
+    "worldgenPlaced": [],
+    "structurePools": [],
+    "tags": []
+  },
+  "assets": {
+    "itemModels": [
+      {
+        "id": "lightning",
+        "textureRef": "item/lightning"
+      }
+    ],
+    "blockModels": [],
+    "blockstates": [],
+    "entityTextures": [],
+    "guiTextures": [],
+    "langEntries": [
+      {
+        "key": "item.arcanespark.lightning",
+        "value": "lightning"
+      }
+    ],
+    "soundEvents": [],
+    "particleDefinitions": []
+  },
+  "worldgen": {
+    "dimensionEntry": [],
+    "spawnSafety": [],
+    "mobSpawnRules": [],
+    "biomeFeatures": [],
+    "orePlacements": [],
+    "treePlacements": []
+  },
+  "requiredCapabilities": [
+    "item",
+    "item_use_hook"
+  ],
+  "usedRuntimePrimitives": [
+    "FabricItemSettings",
+    "Registry.register",
+    "UseItemCallback"
+  ],
+  "metadata": {
+    "generatedAt": "2026-01-04T22:06:07.879Z",
+    "traceId": "p0_mk0a6qyv_d9jhlv",
+    "plannerVersion": "3.0.0"
+  }
+}

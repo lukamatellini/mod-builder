@@ -1,0 +1,54 @@
+{
+  "summary": {
+    "scannedLocations": 10,
+    "totalRepairs": 3,
+    "autoCreatedStubs": 3,
+    "unresolvedReferences": 0,
+    "success": true
+  },
+  "repairs": [
+    {
+      "location": "src/main/resources/build-plan.json .inferenceReasons[0]",
+      "type": "auto_create",
+      "original": "Items enabled: 1 items defined in spec",
+      "repaired": "arcanespark:items enabled: 1 items defined in spec",
+      "reason": "Auto-created missing item stub"
+    },
+    {
+      "location": "src/main/resources/build-plan.json .inferenceReasons[1]",
+      "type": "auto_create",
+      "original": "HUD overlay enabled: 0 quests, mana items: true, custom effects: false",
+      "repaired": "arcanespark:hud overlay enabled: 0 quests, mana items: true, custom effects: false",
+      "reason": "Auto-created missing item stub"
+    },
+    {
+      "location": "src/main/resources/build-plan.json .inferenceReasons[2]",
+      "type": "auto_create",
+      "original": "Commands enabled: mandatory fallback surface for testing",
+      "repaired": "arcanespark:commands enabled: mandatory fallback surface for testing",
+      "reason": "Auto-created missing item stub"
+    }
+  ],
+  "autoCreatedStubs": [
+    {
+      "id": "items enabled: 1 items defined in spec",
+      "name": "Items enabled: 1 items defined in spec",
+      "type": "item",
+      "reason": "Referenced in src/main/resources/build-plan.json .inferenceReasons[0] but not defined"
+    },
+    {
+      "id": "hud overlay enabled: 0 quests, mana items: true, custom effects: false",
+      "name": "Hud overlay enabled: 0 quests, mana items: true, custom effects: false",
+      "type": "item",
+      "reason": "Referenced in src/main/resources/build-plan.json .inferenceReasons[1] but not defined"
+    },
+    {
+      "id": "commands enabled: mandatory fallback surface for testing",
+      "name": "Commands enabled: mandatory fallback surface for testing",
+      "type": "item",
+      "reason": "Referenced in src/main/resources/build-plan.json .inferenceReasons[2] but not defined"
+    }
+  ],
+  "unresolvedReferences": [],
+  "generatedAt": "2026-01-04T22:06:10.079Z"
+}

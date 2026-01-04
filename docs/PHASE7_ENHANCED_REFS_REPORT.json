@@ -1,0 +1,16 @@
+{
+  "traceId": "p0_mk0a6qy0_87givj",
+  "timestamp": "2026-01-04T22:06:10.076Z",
+  "passed": true,
+  "violations": [],
+  "soundIntegrity": {
+    "checked": 0,
+    "valid": 0,
+    "invalid": 0
+  },
+  "particleIntegrity": {
+    "checked": 0,
+    "valid": 0,
+    "invalid": 0
+  }
+}

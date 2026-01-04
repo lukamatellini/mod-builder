@@ -1,0 +1,11 @@
+{
+  "traceId": "p0_mk0a6qy0_87givj",
+  "timestamp": "2026-01-04T22:06:10.072Z",
+  "passed": true,
+  "mixinsRequired": false,
+  "violations": [],
+  "mixinConfigExists": false,
+  "fabricModReferences": false,
+  "targetClassesValid": true,
+  "mixinClasses": []
+}
