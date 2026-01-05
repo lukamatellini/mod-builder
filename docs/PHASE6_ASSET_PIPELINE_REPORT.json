@@ -1,0 +1,70 @@
+{
+  "traceId": "p0_mk12ldnq_j93a2t",
+  "timestamp": "2026-01-05T11:21:20.930Z",
+  "passed": false,
+  "items": [
+    {
+      "type": "texture",
+      "id": "lightning",
+      "path": "src/main/resources/assets/magicwand/textures/item/lightning.png",
+      "present": false,
+      "assignedTo": "template"
+    },
+    {
+      "type": "model",
+      "id": "lightning",
+      "path": "src/main/resources/assets/magicwand/models/item/lightning.json",
+      "present": false,
+      "assignedTo": "template"
+    },
+    {
+      "type": "lang",
+      "id": "item.magicwand.lightning",
+      "path": "src/main/resources/assets/magicwand/lang/en_us.json",
+      "present": true,
+      "assignedTo": "template"
+    }
+  ],
+  "missingAssets": [
+    {
+      "type": "texture",
+      "id": "lightning",
+      "path": "src/main/resources/assets/magicwand/textures/item/lightning.png",
+      "present": false,
+      "assignedTo": "template"
+    },
+    {
+      "type": "model",
+      "id": "lightning",
+      "path": "src/main/resources/assets/magicwand/models/item/lightning.json",
+      "present": false,
+      "assignedTo": "template"
+    }
+  ],
+  "coverage": {
+    "textures": {
+      "total": 1,
+      "present": 0
+    },
+    "models": {
+      "total": 1,
+      "present": 0
+    },
+    "blockstates": {
+      "total": 0,
+      "present": 0
+    },
+    "lang": {
+      "total": 1,
+      "present": 1
+    },
+    "sounds": {
+      "total": 0,
+      "present": 0
+    },
+    "particles": {
+      "total": 0,
+      "present": 0
+    }
+  }
+}

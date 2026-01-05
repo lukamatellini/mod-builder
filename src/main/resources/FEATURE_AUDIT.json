@@ -1,0 +1,367 @@
+{
+  "modId": "magicwand",
+  "modName": "Magic Wand",
+  "generatedAt": "2026-01-05T11:21:20.973Z",
+  "mcVersion": "1.21.1",
+  "overallStatus": "passed",
+  "totalChecks": 17,
+  "passedChecks": 8,
+  "failedChecks": 0,
+  "warningChecks": 0,
+  "skippedChecks": 9,
+  "categories": [
+    {
+      "category": "items",
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "items_existence",
+          "name": "Items Defined",
+          "category": "items",
+          "status": "passed",
+          "message": "1 items defined"
+        },
+        {
+          "id": "item_model_lightning_wand",
+          "name": "Item Model: Lightning Wand",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Model: Lightning Wand validated successfully"
+        },
+        {
+          "id": "item_texture_lightning_wand",
+          "name": "Item Texture: Lightning Wand",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Texture: Lightning Wand validated successfully"
+        },
+        {
+          "id": "item_lang_lightning_wand",
+          "name": "Item Localization: Lightning Wand",
+          "category": "items",
+          "status": "passed",
+          "message": "Item Localization: Lightning Wand validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "blocks",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "blocks_existence",
+          "name": "Blocks Defined",
+          "category": "blocks",
+          "status": "skipped",
+          "message": "No blocks defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "recipes",
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "checks": [
+        {
+          "id": "recipes_existence",
+          "name": "Recipes Defined",
+          "category": "recipes",
+          "status": "passed",
+          "message": "1 recipes expected"
+        },
+        {
+          "id": "recipe_files",
+          "name": "Recipe Files Generated",
+          "category": "recipes",
+          "status": "passed",
+          "message": "1 recipe files generated"
+        },
+        {
+          "id": "recipe_output_lightning_wand",
+          "name": "Recipe Output: lightning_wand",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Output: lightning_wand validated successfully"
+        },
+        {
+          "id": "recipe_ingredients_lightning_wand",
+          "name": "Recipe Ingredients: lightning_wand",
+          "category": "recipes",
+          "status": "passed",
+          "message": "Recipe Ingredients: lightning_wand validated successfully"
+        }
+      ]
+    },
+    {
+      "category": "mobs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "mobs_existence",
+          "name": "Mobs Defined",
+          "category": "mobs",
+          "status": "skipped",
+          "message": "No mobs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "npcs",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "npcs_existence",
+          "name": "NPCs Defined",
+          "category": "npcs",
+          "status": "skipped",
+          "message": "No NPCs defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "quests",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "quests_existence",
+          "name": "Quests Defined",
+          "category": "quests",
+          "status": "skipped",
+          "message": "No quests defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "advancements",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "advancements_existence",
+          "name": "Advancements Defined",
+          "category": "advancements",
+          "status": "skipped",
+          "message": "No advancements generated"
+        }
+      ]
+    },
+    {
+      "category": "dimensions",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "dimensions_existence",
+          "name": "Dimensions Defined",
+          "category": "dimensions",
+          "status": "skipped",
+          "message": "No dimensions defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "biomes",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "biomes_existence",
+          "name": "Biomes Defined",
+          "category": "biomes",
+          "status": "skipped",
+          "message": "No biomes defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "structures",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "structures_existence",
+          "name": "Structures Defined",
+          "category": "structures",
+          "status": "skipped",
+          "message": "No structures defined in spec"
+        }
+      ]
+    },
+    {
+      "category": "events",
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 1,
+      "checks": [
+        {
+          "id": "events_existence",
+          "name": "Events Defined",
+          "category": "events",
+          "status": "skipped",
+          "message": "No events defined in spec"
+        }
+      ]
+    }
+  ],
+  "criticalFailures": [],
+  "allChecks": [
+    {
+      "id": "items_existence",
+      "name": "Items Defined",
+      "category": "items",
+      "status": "passed",
+      "message": "1 items defined"
+    },
+    {
+      "id": "item_model_lightning_wand",
+      "name": "Item Model: Lightning Wand",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Model: Lightning Wand validated successfully"
+    },
+    {
+      "id": "item_texture_lightning_wand",
+      "name": "Item Texture: Lightning Wand",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Texture: Lightning Wand validated successfully"
+    },
+    {
+      "id": "item_lang_lightning_wand",
+      "name": "Item Localization: Lightning Wand",
+      "category": "items",
+      "status": "passed",
+      "message": "Item Localization: Lightning Wand validated successfully"
+    },
+    {
+      "id": "blocks_existence",
+      "name": "Blocks Defined",
+      "category": "blocks",
+      "status": "skipped",
+      "message": "No blocks defined in spec"
+    },
+    {
+      "id": "recipes_existence",
+      "name": "Recipes Defined",
+      "category": "recipes",
+      "status": "passed",
+      "message": "1 recipes expected"
+    },
+    {
+      "id": "recipe_files",
+      "name": "Recipe Files Generated",
+      "category": "recipes",
+      "status": "passed",
+      "message": "1 recipe files generated"
+    },
+    {
+      "id": "recipe_output_lightning_wand",
+      "name": "Recipe Output: lightning_wand",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Output: lightning_wand validated successfully"
+    },
+    {
+      "id": "recipe_ingredients_lightning_wand",
+      "name": "Recipe Ingredients: lightning_wand",
+      "category": "recipes",
+      "status": "passed",
+      "message": "Recipe Ingredients: lightning_wand validated successfully"
+    },
+    {
+      "id": "mobs_existence",
+      "name": "Mobs Defined",
+      "category": "mobs",
+      "status": "skipped",
+      "message": "No mobs defined in spec"
+    },
+    {
+      "id": "npcs_existence",
+      "name": "NPCs Defined",
+      "category": "npcs",
+      "status": "skipped",
+      "message": "No NPCs defined in spec"
+    },
+    {
+      "id": "quests_existence",
+      "name": "Quests Defined",
+      "category": "quests",
+      "status": "skipped",
+      "message": "No quests defined in spec"
+    },
+    {
+      "id": "advancements_existence",
+      "name": "Advancements Defined",
+      "category": "advancements",
+      "status": "skipped",
+      "message": "No advancements generated"
+    },
+    {
+      "id": "dimensions_existence",
+      "name": "Dimensions Defined",
+      "category": "dimensions",
+      "status": "skipped",
+      "message": "No dimensions defined in spec"
+    },
+    {
+      "id": "biomes_existence",
+      "name": "Biomes Defined",
+      "category": "biomes",
+      "status": "skipped",
+      "message": "No biomes defined in spec"
+    },
+    {
+      "id": "structures_existence",
+      "name": "Structures Defined",
+      "category": "structures",
+      "status": "skipped",
+      "message": "No structures defined in spec"
+    },
+    {
+      "id": "events_existence",
+      "name": "Events Defined",
+      "category": "events",
+      "status": "skipped",
+      "message": "No events defined in spec"
+    }
+  ],
+  "summary": "# Feature Audit Report: Magic Wand\nGenerated: 2026-01-05T11:21:20.973Z\nMinecraft Version: 1.21.1\n\n## ✅ ALL CHECKS PASSED\nTotal: 8 passed, 9 skipped\n\n## Category Breakdown\n\n✅ **items**: 4/4 passed\n✅ **blocks**: 0/1 passed\n✅ **recipes**: 4/4 passed\n✅ **mobs**: 0/1 passed\n✅ **npcs**: 0/1 passed\n✅ **quests**: 0/1 passed\n✅ **advancements**: 0/1 passed\n✅ **dimensions**: 0/1 passed\n✅ **biomes**: 0/1 passed\n✅ **structures**: 0/1 passed\n✅ **events**: 0/1 passed",
+  "suggestions": []
+}
