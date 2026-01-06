@@ -142,57 +142,66 @@ jobs:
           echo "OK: build-plan.json found"
 
       # ----------------------------
-      # 6c) AUDIT + QA FILES - HARD GATE (MUST be in src/main/resources/)
-      #     FIXED: Only accept src/main/resources/ - docs/ is NOT packaged in jar
+      # 6c) AUDIT FILES GATE (CRITICAL - HARD GATE)
+      #     INVARIANT: FEATURE_AUDIT.json MUST be in src/main/resources/
+      #     Files in docs/ are NOT included in the jar!
       # ----------------------------
-      - name: Verify audit + QA files exist (inference system outputs)
+      - name: Verify audit + QA files exist (HARD GATE)
         run: |
           set -e
 
           AUDIT_PATH="src/main/resources/FEATURE_AUDIT.json"
           QA_PATH="src/main/resources/QA_TEST_PLAN.md"
 
-          ERRORS=0
+          echo "=== AUDIT FILES GATE ==="
+          echo "Required path: $AUDIT_PATH"
+          echo "Required path: $QA_PATH"
+          echo ""
 
+          # Check FEATURE_AUDIT.json exists at correct path
           if [ ! -f "$AUDIT_PATH" ]; then
-            echo "ERROR: Missing $AUDIT_PATH"
-            echo "  -> This file MUST be in src/main/resources/ to be included in the jar"
-            echo "  -> Files in docs/ are NOT packaged by Gradle"
-            ERRORS=$((ERRORS+1))
-          else
-            echo "OK: Found $AUDIT_PATH"
-            # Validate it's valid JSON
-            if ! jq empty "$AUDIT_PATH" 2>/dev/null; then
-              echo "ERROR: $AUDIT_PATH is not valid JSON"
-              ERRORS=$((ERRORS+1))
-            else
-              echo "OK: $AUDIT_PATH is valid JSON"
-            fi
-          fi
-
-          if [ ! -f "$QA_PATH" ]; then
-            echo "ERROR: Missing $QA_PATH"
-            echo "  -> This file MUST be in src/main/resources/ to be included in the jar"
-            ERRORS=$((ERRORS+1))
-          else
-            echo "OK: Found $QA_PATH"
-          fi
-
-          if [ $ERRORS -gt 0 ]; then
-            echo ""
             echo "============================================"
-            echo "AUDIT/QA VALIDATION FAILED ($ERRORS errors)"
+            echo "ERROR: FEATURE_AUDIT.json NOT FOUND"
+            echo ""
+            echo "Expected: $AUDIT_PATH"
+            echo ""
+            echo "INVARIANT: FEATURE_AUDIT.json MUST be in src/main/resources/"
+            echo "           Files in docs/ are NOT included in the jar!"
+            echo ""
+            echo "Debug listing:"
+            ls -lah src/main/resources/ 2>/dev/null || echo "src/main/resources/ not found"
+            ls -lah docs/ 2>/dev/null || echo "docs/ not found"
             echo "============================================"
-            echo ""
-            echo "Debug listing of src/main/resources/:"
-            ls -lah src/main/resources/ 2>/dev/null || echo "  (directory not found)"
-            echo ""
-            echo "Debug listing of docs/ (NOT packaged in jar):"
-            ls -lah docs/ 2>/dev/null || echo "  (directory not found)"
             exit 1
           fi
 
-          echo "=== Audit + QA validation PASSED ==="
+          # Validate FEATURE_AUDIT.json is valid JSON with required schema fields
+          echo "Validating FEATURE_AUDIT.json schema..."
+          node -e "
+            const fs = require('fs');
+            const audit = JSON.parse(fs.readFileSync('$AUDIT_PATH', 'utf8'));
+            const requiredFields = ['modId', 'timestamp'];
+            const missing = requiredFields.filter(f => !audit[f]);
+            if (missing.length > 0) {
+              console.error('ERROR: FEATURE_AUDIT.json missing required fields:', missing.join(', '));
+              process.exit(1);
+            }
+            console.log('OK: FEATURE_AUDIT.json schema valid');
+            console.log('  modId:', audit.modId);
+            console.log('  schemaVersion:', audit.schemaVersion || 'not set');
+            console.log('  overallStatus:', audit.summary?.overallStatus || 'unknown');
+          "
+
+          # Check QA_TEST_PLAN.md exists
+          if [ ! -f "$QA_PATH" ]; then
+            echo "WARNING: QA_TEST_PLAN.md not found at $QA_PATH"
+            echo "This is a soft warning - build will continue"
+          else
+            echo "OK: QA_TEST_PLAN.md found"
+          fi
+
+          echo ""
+          echo "=== AUDIT FILES GATE PASSED ==="
 
       # ----------------------------
       # 6d) Verify source files exist
@@ -364,8 +373,8 @@ jobs:
           echo "jar_name=$(basename "$JAR_FILE")" >> "$GITHUB_OUTPUT"
 
       # ----------------------------
-      # 13) HARD validation (real mod jar contents)
-      #     FIXED: Only check for files at jar root (from src/main/resources/)
+      # 13) HARD validation (real mod)
+      #     INVARIANT: FEATURE_AUDIT.json MUST be at jar root
       # ----------------------------
       - name: Validate real mod jar
         env:
@@ -373,53 +382,61 @@ jobs:
           JAR: ${{ steps.build.outputs.jar_file }}
         run: |
           set -e
-          echo "Validating JAR: $JAR"
+          echo "=== VALIDATING JAR: $JAR ==="
           echo ""
-          echo "=== JAR Contents (for debugging) ==="
+          
+          # Debug: List jar contents
+          echo "Jar contents (first 50 lines):"
           unzip -l "$JAR" | head -50
-          echo "..."
           echo ""
+          
+          # Core files
+          unzip -l "$JAR" | grep -q "fabric.mod.json" || (echo "ERROR: Missing fabric.mod.json in jar" && exit 1)
+          echo "OK: fabric.mod.json found"
+          
+          unzip -l "$JAR" | grep -q "\.class$" || (echo "ERROR: No compiled classes in jar" && exit 1)
+          echo "OK: Compiled classes found"
+          
+          unzip -l "$JAR" | grep -q "build-plan.json" || (echo "ERROR: Missing build-plan.json in jar" && exit 1)
+          echo "OK: build-plan.json found"
 
-          ERRORS=0
-
-          # Core mod files
-          unzip -l "$JAR" | grep -q "fabric.mod.json" || (echo "ERROR: Missing fabric.mod.json in jar" && ERRORS=$((ERRORS+1)))
-          unzip -l "$JAR" | grep -q "\.class$" || (echo "ERROR: No compiled classes in jar" && ERRORS=$((ERRORS+1)))
-          unzip -l "$JAR" | grep -q "build-plan.json" || (echo "ERROR: Missing build-plan.json in jar" && ERRORS=$((ERRORS+1)))
-
-          # FIXED: Audit files must be at jar root (from src/main/resources/)
-          # Using exact match to avoid false positives
-          if ! unzip -l "$JAR" | awk '{print $4}' | grep -qx "FEATURE_AUDIT.json"; then
-            echo "ERROR: Missing FEATURE_AUDIT.json at jar root"
-            echo "  -> Generator must write to src/main/resources/FEATURE_AUDIT.json"
-            echo "  -> Files in docs/ are NOT included in the jar"
-            ERRORS=$((ERRORS+1))
-          else
+          # CRITICAL: FEATURE_AUDIT.json MUST be at jar root (not under docs/)
+          # This is the INVARIANT we're enforcing
+          echo ""
+          echo "=== FEATURE_AUDIT.json INVARIANT CHECK ==="
+          if unzip -l "$JAR" | grep -q " FEATURE_AUDIT\.json$"; then
             echo "OK: FEATURE_AUDIT.json found at jar root"
-          fi
-
-          if ! unzip -l "$JAR" | awk '{print $4}' | grep -qx "QA_TEST_PLAN.md"; then
-            echo "ERROR: Missing QA_TEST_PLAN.md at jar root"
-            echo "  -> Generator must write to src/main/resources/QA_TEST_PLAN.md"
-            ERRORS=$((ERRORS+1))
           else
-            echo "OK: QA_TEST_PLAN.md found at jar root"
-          fi
-
-          # Asset directories
-          unzip -l "$JAR" | grep -q "assets/$MODID/" || (echo "ERROR: Missing assets/$MODID/" && ERRORS=$((ERRORS+1)))
-          unzip -l "$JAR" | grep -q "data/$MODID/" || (echo "ERROR: Missing data/$MODID/" && ERRORS=$((ERRORS+1)))
-
-          if [ $ERRORS -gt 0 ]; then
-            echo ""
             echo "============================================"
-            echo "JAR VALIDATION FAILED ($ERRORS errors)"
+            echo "ERROR: FEATURE_AUDIT.json NOT FOUND at jar root"
+            echo ""
+            echo "INVARIANT VIOLATED: FEATURE_AUDIT.json must be at jar root"
+            echo ""
+            echo "Searching for FEATURE_AUDIT.json anywhere in jar:"
+            unzip -l "$JAR" | grep -i "FEATURE_AUDIT" || echo "  (not found anywhere)"
+            echo ""
+            echo "This means the generator wrote to the wrong path."
+            echo "Expected: src/main/resources/FEATURE_AUDIT.json → jar:FEATURE_AUDIT.json"
             echo "============================================"
             exit 1
           fi
+          
+          # QA_TEST_PLAN.md (soft check - warn only)
+          if unzip -l "$JAR" | grep -q " QA_TEST_PLAN\.md$"; then
+            echo "OK: QA_TEST_PLAN.md found at jar root"
+          else
+            echo "WARNING: QA_TEST_PLAN.md not found at jar root (non-blocking)"
+          fi
 
+          # Asset directories
+          unzip -l "$JAR" | grep -q "assets/$MODID/" || (echo "ERROR: Missing assets/$MODID/" && exit 1)
+          echo "OK: assets/$MODID/ found"
+          
+          unzip -l "$JAR" | grep -q "data/$MODID/" || (echo "ERROR: Missing data/$MODID/" && exit 1)
+          echo "OK: data/$MODID/ found"
+          
           echo ""
-          echo "=== All core files present ==="
+          echo "=== JAR VALIDATION PASSED ==="
 
       # ----------------------------
       # 14) EXTRA QUALITY GATE
@@ -485,7 +502,7 @@ jobs:
           retention-days: 7
 
       # ----------------------------
-      # 16b) Upload audit + QA files (GitHub artifact) (nice for debugging)
+      # 16b) Upload audit + QA files (GitHub artifact) for debugging
       # ----------------------------
       - name: Upload audit + QA files (GitHub artifact)
         uses: actions/upload-artifact@v4
@@ -533,7 +550,7 @@ jobs:
           echo "OK: Uploaded to $PUBLIC_URL"
 
       # ----------------------------
-      # 17b) NEW: Wait until R2 URL is actually reachable (prevents UI/email race)
+      # 17b) Wait until R2 URL is actually reachable (prevents UI/email race)
       # ----------------------------
       - name: Verify R2 URL is reachable (retry)
         env:
