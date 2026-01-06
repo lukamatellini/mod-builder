@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "surpriseblocks:block/rng_block"
+    }
+  }
+}

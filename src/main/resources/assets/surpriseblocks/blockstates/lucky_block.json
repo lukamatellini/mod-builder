@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "surpriseblocks:block/lucky_block"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21.1",
+  "javaVersion": 21,
+  "generatedAt": "2026-01-06T16:29:43.252Z",
+  "enabledModules": {
+    "quests": false,
+    "npcs": false,
+    "dialogue": false,
+    "trading": false,
+    "structures": false,
+    "dimensions": false,
+    "biomes": false,
+    "commands": true,
+    "items": true,
+    "mobs": true,
+    "events": false
+  },
+  "inferenceReasons": [
+    "Items enabled: 4 items defined in spec",
+    "Mobs enabled: 3 mobs defined in spec",
+    "Commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 4,
+    "mobs": 3,
+    "structures": 0,
+    "dimensions": 0,
+    "quests": 0,
+    "npcs": 0,
+    "events": 0
+  },
+  "expectedDataFiles": [],
+  "expectedAssetFiles": [
+    "assets/surpriseblocks/lang/en_us.json",
+    "assets/surpriseblocks/models/item/lucky_pickaxe.json",
+    "assets/surpriseblocks/models/item/lucky_sword.json",
+    "assets/surpriseblocks/models/item/dirt.json",
+    "assets/surpriseblocks/models/item/oak_planks.json"
+  ]
+}

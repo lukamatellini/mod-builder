@@ -1,0 +1,412 @@
+{
+  "modId": "surpriseblocks",
+  "modName": "Surprise Blocks",
+  "generatedAt": "2026-01-06T16:29:43.287Z",
+  "mcVersion": "1.21.1",
+  "categories": {
+    "items": {
+      "name": "Items",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_pickaxe: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lucky_pickaxe: Weapon stats",
+          "status": "passed",
+          "message": "Damage: 4, Durability: 500"
+        },
+        {
+          "name": "lucky_pickaxe: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "lucky_sword: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lucky_sword: Weapon stats",
+          "status": "passed",
+          "message": "Damage: 7, Durability: 700"
+        },
+        {
+          "name": "lucky_sword: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "dirt: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "dirt: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "oak_planks: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "oak_planks: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        }
+      ],
+      "notes": "4 items audited"
+    },
+    "blocks": {
+      "name": "Blocks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lucky_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "lucky_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "rng_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "rng_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "rng_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        }
+      ],
+      "notes": "2 blocks audited"
+    },
+    "mobs": {
+      "name": "Mobs",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "unlucky_goblin: Required fields",
+          "status": "passed",
+          "message": "Health: 20, Damage: 5"
+        },
+        {
+          "name": "unlucky_goblin: Drops",
+          "status": "passed",
+          "message": "4 drops defined"
+        },
+        {
+          "name": "unlucky_goblin: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        },
+        {
+          "name": "worm: Required fields",
+          "status": "passed",
+          "message": "Health: 20, Damage: 3"
+        },
+        {
+          "name": "worm: Drops",
+          "status": "passed",
+          "message": "1 drops defined"
+        },
+        {
+          "name": "worm: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: overworld"
+        },
+        {
+          "name": "japanese_sumo_wrestlers_that_attack_till_kill_them: Required fields",
+          "status": "passed",
+          "message": "Health: 30, Damage: 5"
+        },
+        {
+          "name": "japanese_sumo_wrestlers_that_attack_till_kill_them: Drops",
+          "status": "passed",
+          "message": "1 drops defined"
+        },
+        {
+          "name": "japanese_sumo_wrestlers_that_attack_till_kill_them: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: overworld"
+        }
+      ],
+      "notes": "3 mobs audited (0 bosses)"
+    },
+    "structures": {
+      "name": "Structures",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No structures defined",
+          "status": "skipped",
+          "message": "No structures to audit"
+        }
+      ]
+    },
+    "recipes": {
+      "name": "Recipes",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Items with recipes",
+          "status": "passed",
+          "message": "2/4 items have recipes"
+        },
+        {
+          "name": "lucky_pickaxe: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        },
+        {
+          "name": "lucky_sword: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        }
+      ],
+      "notes": "3 recipes audited"
+    },
+    "lootTables": {
+      "name": "Loot Tables",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "unlucky_goblin: Loot table",
+          "status": "passed",
+          "message": "Loot table generated"
+        },
+        {
+          "name": "unlucky_goblin: Loot table content",
+          "status": "passed",
+          "message": "Loot table has entries"
+        },
+        {
+          "name": "worm: Loot table",
+          "status": "passed",
+          "message": "Loot table generated"
+        },
+        {
+          "name": "worm: Loot table content",
+          "status": "passed",
+          "message": "Loot table has entries"
+        },
+        {
+          "name": "japanese_sumo_wrestlers_that_attack_till_kill_them: Loot table",
+          "status": "passed",
+          "message": "Loot table generated"
+        },
+        {
+          "name": "japanese_sumo_wrestlers_that_attack_till_kill_them: Loot table content",
+          "status": "passed",
+          "message": "Loot table has entries"
+        },
+        {
+          "name": "lucky_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        },
+        {
+          "name": "rng_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        }
+      ],
+      "notes": "3 mob loot tables audited"
+    },
+    "textures": {
+      "name": "Textures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Texture files generated",
+          "status": "passed",
+          "message": "10 textures generated (expected at least 6)"
+        },
+        {
+          "name": "lucky_block.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "rng_block.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "unlucky_goblin.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "worm.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "japanese_sumo_wrestlers_that_attack_till_kill_them.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "fallback.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "lucky_pickaxe.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "lucky_sword.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "dirt.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "oak_planks.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        }
+      ],
+      "notes": "10 texture files"
+    },
+    "quests": {
+      "name": "Quests",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No quests defined",
+          "status": "skipped",
+          "message": "No quests to audit"
+        }
+      ]
+    },
+    "advancements": {
+      "name": "Advancements",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Advancement files",
+          "status": "warn",
+          "message": "0 advancement files generated"
+        },
+        {
+          "name": "Root advancement",
+          "status": "warn",
+          "message": "No root advancement"
+        }
+      ],
+      "notes": "0 advancements"
+    },
+    "compilation": {
+      "name": "Compilation",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "build.gradle",
+          "status": "passed",
+          "message": "Build file exists"
+        },
+        {
+          "name": "fabric.mod.json",
+          "status": "passed",
+          "message": "Mod descriptor exists"
+        },
+        {
+          "name": "Minecraft version",
+          "status": "passed",
+          "message": "Correct MC version"
+        },
+        {
+          "name": "Java source files",
+          "status": "passed",
+          "message": "12 Java files generated"
+        }
+      ],
+      "notes": "Build configuration audit"
+    },
+    "apiSafety": {
+      "name": "API Safety",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "API safety scan",
+          "status": "passed",
+          "message": "No forbidden patterns detected"
+        }
+      ],
+      "notes": "MC 1.21.1 API compatibility check"
+    },
+    "vanillaFallbacks": {
+      "name": "Vanilla Fallbacks",
+      "status": "warn",
+      "checks": [
+        {
+          "name": "Vanilla recipe ingredients",
+          "status": "passed",
+          "message": "8 vanilla ingredients used (intentional)",
+          "details": "lucky_pickaxe uses minecraft:stick, lucky_pickaxe uses minecraft:stick, lucky_pickaxe uses minecraft:stick, lucky_pickaxe uses minecraft:stick, lucky_sword uses minecraft:stick, lucky_sword uses minecraft:stick, lucky_sword uses minecraft:stick, lucky_sword uses minecraft:stick"
+        },
+        {
+          "name": "Vanilla mob drops",
+          "status": "warn",
+          "message": "5 mobs drop vanilla items (consider custom drops)",
+          "details": "unlucky_goblin drops minecraft:gold_ingot, unlucky_goblin drops minecraft:gold_ingot, unlucky_goblin drops minecraft:gold_ingot, worm drops minecraft:rotten_flesh, japanese_sumo_wrestlers_that_attack_till_kill_them drops minecraft:rotten_flesh"
+        }
+      ],
+      "notes": "Tracks use of vanilla content vs custom generation"
+    },
+    "inferredContent": {
+      "name": "Inferred Content",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Inferred item recipes",
+          "status": "passed",
+          "message": "2/4 items have recipes"
+        },
+        {
+          "name": "Inferred mob drops",
+          "status": "passed",
+          "message": "3/3 mobs have drops"
+        },
+        {
+          "name": "Inferred spawn rules",
+          "status": "passed",
+          "message": "3/3 mobs have spawn rules"
+        }
+      ],
+      "notes": "Tracks auto-completed and inferred content"
+    }
+  },
+  "summary": {
+    "totalChecks": 61,
+    "passed": 56,
+    "failed": 0,
+    "warnings": 3,
+    "skipped": 2,
+    "overallStatus": "warn"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "itemGroup.surpriseblocks.main": "Surprise Blocks",
+  "item.surpriseblocks.lucky_pickaxe": "Lucky Pickaxe",
+  "item.surpriseblocks.lucky_sword": "Lucky Sword",
+  "item.surpriseblocks.dirt": "Dirt",
+  "item.surpriseblocks.oak_planks": "Oak Planks",
+  "block.surpriseblocks.lucky_block": "Lucky Block",
+  "block.surpriseblocks.rng_block": "Mystery Block",
+  "entity.surpriseblocks.unlucky_goblin": "Unlucky Goblin",
+  "entity.surpriseblocks.worm": "Worms",
+  "entity.surpriseblocks.japanese_sumo_wrestlers_that_attack_till_kill_them": "Japanese Sumo Wrestlers That Attack Till Kill Them",
+  "category.surpriseblocks.keys": "Surprise Blocks",
+  "key.surpriseblocks.open_quest_journal": "Open Quest Journal",
+  "key.surpriseblocks.open_achievements": "Open Achievements"
+}
