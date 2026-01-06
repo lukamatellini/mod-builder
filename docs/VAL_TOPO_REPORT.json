@@ -1,0 +1,136 @@
+{
+  "status": "pass",
+  "reasons": [],
+  "checks": {
+    "items": {
+      "status": "pass",
+      "details": {
+        "count": 3,
+        "errors": 0
+      }
+    },
+    "blocks": {
+      "status": "pass",
+      "details": {
+        "count": 1,
+        "errors": 0
+      }
+    },
+    "mobs": {
+      "status": "pass",
+      "details": {
+        "count": 0,
+        "errors": 0
+      }
+    },
+    "structures": {
+      "status": "pass",
+      "details": {
+        "count": 0,
+        "errors": 0
+      }
+    },
+    "dimensions_biomes": {
+      "status": "pass",
+      "details": {
+        "dimensions": 0,
+        "biomes": 0,
+        "errors": 0
+      }
+    },
+    "recipes_loot": {
+      "status": "pass",
+      "details": {
+        "errors": 0
+      }
+    },
+    "theme_manifest": {
+      "status": "pass",
+      "details": {
+        "tokens": 3,
+        "mappings": 4
+      }
+    }
+  },
+  "assetIndex": {
+    "textures": [
+      {
+        "id": "lucky_block",
+        "path": "src/main/resources/assets/blockyfortune/textures/block/lucky_block.png",
+        "kind": "block",
+        "w": 16,
+        "h": 16,
+        "hash": "ru9j05"
+      },
+      {
+        "id": "fallback",
+        "path": "src/main/resources/assets/blockyfortune/textures/item/fallback.png",
+        "kind": "item",
+        "w": 16,
+        "h": 16,
+        "hash": "jxns4p"
+      },
+      {
+        "id": "lucky_block",
+        "path": "src/main/resources/assets/blockyfortune/textures/item/lucky_block.png",
+        "kind": "item",
+        "w": 16,
+        "h": 16,
+        "hash": "8m9bfp"
+      },
+      {
+        "id": "cooked_beef_",
+        "path": "src/main/resources/assets/blockyfortune/textures/item/cooked_beef_.png",
+        "kind": "item",
+        "w": 16,
+        "h": 16,
+        "hash": "e9tpyj"
+      },
+      {
+        "id": "player_haste_effect_30s",
+        "path": "src/main/resources/assets/blockyfortune/textures/item/player_haste_effect_30s.png",
+        "kind": "item",
+        "w": 16,
+        "h": 16,
+        "hash": "c8jd1y"
+      }
+    ],
+    "models": [
+      {
+        "id": "lucky_block",
+        "path": "src/main/resources/assets/blockyfortune/models/block/lucky_block.json"
+      },
+      {
+        "id": "lucky_block",
+        "path": "src/main/resources/assets/blockyfortune/models/item/lucky_block.json"
+      },
+      {
+        "id": "cooked_beef_",
+        "path": "src/main/resources/assets/blockyfortune/models/item/cooked_beef_.json"
+      },
+      {
+        "id": "player_haste_effect_30s",
+        "path": "src/main/resources/assets/blockyfortune/models/item/player_haste_effect_30s.json"
+      }
+    ],
+    "langKeys": [
+      "itemGroup.blockyfortune.main",
+      "item.blockyfortune.lucky_block",
+      "item.blockyfortune.cooked_beef_",
+      "item.blockyfortune.player_haste_effect_30s",
+      "block.blockyfortune.lucky_block",
+      "category.blockyfortune.keys",
+      "key.blockyfortune.open_quest_journal",
+      "key.blockyfortune.open_achievements"
+    ],
+    "lootTables": [
+      "blocks/lucky_block"
+    ],
+    "recipes": [
+      "lucky_block"
+    ],
+    "blockstates": [
+      "lucky_block"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "version": "java-import-audit@1",
+  "locked": {
+    "mcVersion": "1.21.1",
+    "loader": "fabric"
+  },
+  "stage": "post_template_engine",
+  "mcVersion": "1.21.1",
+  "loader": "fabric",
+  "auditedFiles": 7,
+  "totalImportsAdded": 1,
+  "repairs": [
+    {
+      "filePath": "src/main/java/com/modgen/blockyfortune/ModItems.java",
+      "addedImports": [
+        "net.minecraft.item.Items"
+      ]
+    }
+  ],
+  "errors": [],
+  "timestamp": "2026-01-06T14:56:17.959Z"
+}

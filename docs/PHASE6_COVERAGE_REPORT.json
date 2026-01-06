@@ -1,0 +1,137 @@
+{
+  "traceId": "p0_mk2pm57y_j2hd93",
+  "timestamp": "2026-01-06T14:56:17.949Z",
+  "passed": false,
+  "buildPlanCoverage": {
+    "traceId": "p0_mk2pm57y_j2hd93",
+    "timestamp": "2026-01-06T14:56:17.948Z",
+    "passed": false,
+    "missingKeys": [
+      {
+        "capability": "recipe",
+        "key": "dataPack.recipes"
+      },
+      {
+        "capability": "block_break_hook",
+        "key": "hooks.onBreak"
+      }
+    ],
+    "unassignedKeys": [],
+    "keyStatuses": [
+      {
+        "key": "registries.blocks",
+        "capability": "block",
+        "present": true,
+        "value": "[1 items]",
+        "assignedTo": "subsystem",
+        "subsystemFamily": "blocks"
+      },
+      {
+        "key": "assets.blockModels",
+        "capability": "block",
+        "present": true,
+        "value": "[1 items]",
+        "assignedTo": "subsystem",
+        "subsystemFamily": "blocks"
+      },
+      {
+        "key": "assets.blockstates",
+        "capability": "block",
+        "present": true,
+        "value": "[1 items]",
+        "assignedTo": "subsystem",
+        "subsystemFamily": "blocks"
+      },
+      {
+        "key": "assets.langEntries",
+        "capability": "block",
+        "present": true,
+        "value": "[1 items]",
+        "assignedTo": "subsystem",
+        "subsystemFamily": "blocks"
+      },
+      {
+        "key": "assets.itemModels",
+        "capability": "block",
+        "present": true,
+        "value": "[2 items]",
+        "assignedTo": "subsystem",
+        "subsystemFamily": "items"
+      },
+      {
+        "key": "dataPack.recipes",
+        "capability": "recipe",
+        "present": false,
+        "assignedTo": "subsystem",
+        "subsystemFamily": "recipes"
+      },
+      {
+        "key": "registries.blocks",
+        "capability": "block_break_hook",
+        "present": true,
+        "value": "[1 items]",
+        "assignedTo": "subsystem",
+        "subsystemFamily": "blocks"
+      },
+      {
+        "key": "hooks.onBreak",
+        "capability": "block_break_hook",
+        "present": false,
+        "assignedTo": "unassigned"
+      },
+      {
+        "key": "dataPack.lootTables",
+        "capability": "loot_table",
+        "present": true,
+        "value": "[1 items]",
+        "assignedTo": "subsystem",
+        "subsystemFamily": "blocks"
+      },
+      {
+        "key": "dataPack.lootTables",
+        "capability": "rng_outcome",
+        "present": true,
+        "value": "[1 items]",
+        "assignedTo": "subsystem",
+        "subsystemFamily": "blocks"
+      }
+    ],
+    "coverageByFamily": {
+      "blocks": {
+        "total": 7,
+        "present": 6,
+        "percentage": 86
+      },
+      "core": {
+        "total": 3,
+        "present": 2,
+        "percentage": 67
+      }
+    },
+    "totalRequiredKeys": 10,
+    "totalPresentKeys": 8,
+    "coveragePercentage": 80
+  },
+  "runtimePrimitiveCoverage": {
+    "traceId": "p0_mk2pm57y_j2hd93",
+    "timestamp": "2026-01-06T14:56:17.949Z",
+    "passed": true,
+    "missingPrimitives": [],
+    "duplicatePrimitives": [],
+    "primitiveStatuses": [],
+    "totalRequiredPrimitives": 0,
+    "totalEmittedPrimitives": 0
+  },
+  "blockingErrors": [
+    {
+      "gate": "BUILDPLAN_COVERAGE",
+      "code": "MISSING_KEY",
+      "message": "Capability \"recipe\" requires BuildPlan key \"dataPack.recipes\" but it is missing"
+    },
+    {
+      "gate": "BUILDPLAN_COVERAGE",
+      "code": "MISSING_KEY",
+      "message": "Capability \"block_break_hook\" requires BuildPlan key \"hooks.onBreak\" but it is missing"
+    }
+  ]
+}

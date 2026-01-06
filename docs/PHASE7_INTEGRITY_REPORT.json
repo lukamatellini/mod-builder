@@ -1,0 +1,154 @@
+{
+  "traceId": "p0_mk2pm57y_j2hd93",
+  "timestamp": "2026-01-06T14:56:17.951Z",
+  "passed": false,
+  "artifactPresence": {
+    "traceId": "p0_mk2pm57y_j2hd93",
+    "timestamp": "2026-01-06T14:56:17.950Z",
+    "passed": false,
+    "missingArtifacts": [
+      {
+        "glob": "src/main/java/**/*Block.java",
+        "description": "Custom block with afterBreak handler"
+      }
+    ],
+    "invalidSchemas": [],
+    "artifactStatuses": [
+      {
+        "glob": "src/main/java/**/ModBlocks.java",
+        "kind": "java_entrypoint",
+        "description": "Block registration class",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/java/com/modgen/blockyfortune/ModBlocks.java"
+        ]
+      },
+      {
+        "glob": "src/main/resources/assets/blockyfortune/blockstates/*.json",
+        "kind": "json_schema",
+        "description": "Blockstate JSON",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/assets/blockyfortune/blockstates/lucky_block.json"
+        ],
+        "schemaValid": true,
+        "schemaErrors": []
+      },
+      {
+        "glob": "src/main/resources/assets/blockyfortune/models/block/*.json",
+        "kind": "json_schema",
+        "description": "Block model JSON",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/assets/blockyfortune/models/block/lucky_block.json"
+        ],
+        "schemaValid": true,
+        "schemaErrors": []
+      },
+      {
+        "glob": "src/main/resources/assets/blockyfortune/textures/block/*.png",
+        "kind": "png",
+        "description": "Block texture",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/assets/blockyfortune/textures/block/lucky_block.png"
+        ]
+      },
+      {
+        "glob": "src/main/resources/data/blockyfortune/recipes/*.json",
+        "kind": "json_schema",
+        "description": "Recipe JSON file",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/data/blockyfortune/recipes/lucky_block.json"
+        ],
+        "schemaValid": true,
+        "schemaErrors": []
+      },
+      {
+        "glob": "src/main/java/**/*Block.java",
+        "kind": "java_entrypoint",
+        "description": "Custom block with afterBreak handler",
+        "required": true,
+        "found": false,
+        "matchedPaths": []
+      },
+      {
+        "glob": "src/main/resources/data/blockyfortune/loot_tables/**/*.json",
+        "kind": "json_schema",
+        "description": "Loot table JSON file",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/data/blockyfortune/loot_tables/blocks/lucky_block.json"
+        ],
+        "schemaValid": true,
+        "schemaErrors": []
+      },
+      {
+        "glob": "src/main/resources/data/blockyfortune/loot_tables/**/*.json",
+        "kind": "json_schema",
+        "description": "Weighted loot table with RNG",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/data/blockyfortune/loot_tables/blocks/lucky_block.json"
+        ],
+        "schemaValid": true,
+        "schemaErrors": []
+      }
+    ],
+    "totalRequired": 8,
+    "totalFound": 7
+  },
+  "referenceIntegrity": {
+    "traceId": "p0_mk2pm57y_j2hd93",
+    "timestamp": "2026-01-06T14:56:17.951Z",
+    "passed": false,
+    "danglingReferences": [
+      {
+        "sourceFile": "assets/blockyfortune/lang/en_us.json",
+        "referenceType": "lang",
+        "reference": "block.blockyfortune.lucky_blocks",
+        "reason": "Missing lang entry for block \"lucky_blocks\""
+      }
+    ],
+    "modelTextureIntegrity": {
+      "checked": 9,
+      "valid": 9,
+      "invalid": 0
+    },
+    "worldgenGraphIntegrity": {
+      "checked": 0,
+      "valid": 0,
+      "invalid": 0
+    },
+    "tagIntegrity": {
+      "checked": 0,
+      "valid": 0,
+      "invalid": 0
+    },
+    "langIntegrity": {
+      "checked": 1,
+      "valid": 0,
+      "invalid": 1
+    }
+  },
+  "blockingErrors": [
+    {
+      "gate": "ARTIFACT_PRESENCE",
+      "code": "MISSING_ARTIFACT",
+      "message": "Required artifact missing: Custom block with afterBreak handler (src/main/java/**/*Block.java)"
+    },
+    {
+      "gate": "REFERENCE_INTEGRITY",
+      "code": "DANGLING_LANG",
+      "message": "Missing lang entry for block \"lucky_blocks\""
+    }
+  ]
+}

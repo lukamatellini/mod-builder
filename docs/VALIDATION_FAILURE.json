@@ -1,0 +1,12 @@
+{
+  "traceId": "p0_mk2ppop5_1mv2ii",
+  "passed": false,
+  "issueCount": 1,
+  "issues": [
+    {
+      "code": "REGISTRY_DUPLICATE",
+      "message": "Duplicate registry ID \"lucky_block\" found in items and blocks"
+    }
+  ],
+  "timestamp": "2026-01-06T14:56:18.000Z"
+}

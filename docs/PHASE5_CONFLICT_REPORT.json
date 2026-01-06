@@ -1,0 +1,110 @@
+{
+  "traceId": "p0_mk2pm57y_j2hd93",
+  "timestamp": "2026-01-06T14:56:17.946Z",
+  "passed": false,
+  "fileCollision": {
+    "traceId": "p0_mk2pm57y_j2hd93",
+    "timestamp": "2026-01-06T14:56:17.944Z",
+    "collisions": [],
+    "passed": true,
+    "totalFilesAnalyzed": 30,
+    "totalCollisions": 0,
+    "resolvedCollisions": 0,
+    "unresolvedCollisions": 0
+  },
+  "registryOwnership": {
+    "traceId": "p0_mk2pm57y_j2hd93",
+    "timestamp": "2026-01-06T14:56:17.945Z",
+    "entries": [
+      {
+        "key": "blockyfortune:lucky_blocks",
+        "type": "block",
+        "owner": "template",
+        "ownerType": "template",
+        "hasAssets": false,
+        "requiredAssets": [
+          "src/main/resources/assets/blockyfortune/blockstates/lucky_blocks.json",
+          "src/main/resources/assets/blockyfortune/models/block/lucky_blocks.json",
+          "src/main/resources/assets/blockyfortune/textures/block/lucky_blocks.png"
+        ],
+        "foundAssets": []
+      }
+    ],
+    "passed": false,
+    "duplicateRegistrations": [],
+    "unreferencedKeys": [
+      {
+        "key": "blockyfortune:block",
+        "type": "unknown",
+        "referencedIn": [
+          "src/main/resources/assets/blockyfortune/blockstates/lucky_block.json",
+          "src/main/resources/assets/blockyfortune/models/block/lucky_block.json"
+        ]
+      },
+      {
+        "key": "blockyfortune:item",
+        "type": "unknown",
+        "referencedIn": [
+          "src/main/resources/assets/blockyfortune/models/item/lucky_block.json",
+          "src/main/resources/assets/blockyfortune/models/item/cooked_beef_.json",
+          "src/main/resources/assets/blockyfortune/models/item/player_haste_effect_30s.json"
+        ]
+      },
+      {
+        "key": "blockyfortune:cooked_beef_",
+        "type": "unknown",
+        "referencedIn": [
+          "src/main/resources/data/blockyfortune/loot_tables/blocks/lucky_block.json"
+        ]
+      },
+      {
+        "key": "blockyfortune:player_haste_effect_",
+        "type": "unknown",
+        "referencedIn": [
+          "src/main/resources/data/blockyfortune/loot_tables/blocks/lucky_block.json"
+        ]
+      },
+      {
+        "key": "blockyfortune:lucky_block",
+        "type": "unknown",
+        "referencedIn": [
+          "src/main/resources/data/blockyfortune/recipes/lucky_block.json"
+        ]
+      }
+    ],
+    "registeredButNoAssets": [
+      {
+        "key": "blockyfortune:lucky_blocks",
+        "type": "block",
+        "missingAssets": [
+          "src/main/resources/assets/blockyfortune/blockstates/lucky_blocks.json",
+          "src/main/resources/assets/blockyfortune/models/block/lucky_blocks.json",
+          "src/main/resources/assets/blockyfortune/textures/block/lucky_blocks.png"
+        ]
+      }
+    ]
+  },
+  "clientServerBoundary": {
+    "traceId": "p0_mk2pm57y_j2hd93",
+    "timestamp": "2026-01-06T14:56:17.946Z",
+    "passed": true,
+    "violations": [],
+    "clientOnlyClasses": [
+      "src/client/java/com/modgen/blockyfortune/client/BlockyFortuneClient.java",
+      "src/client/java/com/modgen/blockyfortune/client/BlockyFortuneClient.java"
+    ],
+    "serverOnlyClasses": [],
+    "commonClasses": [
+      "src/main/java/com/modgen/blockyfortune/engine/BuildPlanValidator.java",
+      "src/main/java/com/modgen/blockyfortune/BlockyFortune.java",
+      "src/main/java/com/modgen/blockyfortune/engine/ModGenEngine.java",
+      "src/main/java/com/modgen/blockyfortune/ModSounds.java",
+      "src/main/java/com/modgen/blockyfortune/ModItems.java",
+      "src/main/java/com/modgen/blockyfortune/ModBlocks.java"
+    ],
+    "hasClientEntrypoint": true,
+    "hasServerEntrypoint": true,
+    "registeredPackets": []
+  },
+  "blockingErrors": []
+}

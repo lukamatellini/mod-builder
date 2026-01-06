@@ -1,0 +1,56 @@
+{
+  "status": "fail",
+  "reasons": [
+    {
+      "code": "REGISTRY_DUPLICATE",
+      "message": "Duplicate registry ID \"lucky_block\" found in items and blocks"
+    }
+  ],
+  "checks": {
+    "structure_topology": {
+      "status": "pass",
+      "details": {
+        "errors": 0
+      }
+    },
+    "dimension_playability": {
+      "status": "pass",
+      "details": {
+        "dimensions": 0,
+        "errors": 0
+      }
+    },
+    "biome_playability": {
+      "status": "pass",
+      "details": {
+        "biomes": 0,
+        "errors": 0
+      }
+    },
+    "worldgen_features": {
+      "status": "pass",
+      "details": {
+        "errors": 0
+      }
+    },
+    "quest_playability": {
+      "status": "pass",
+      "details": {
+        "quests": 0,
+        "errors": 0
+      }
+    },
+    "build_sanity": {
+      "status": "pass",
+      "details": {
+        "errors": 0
+      }
+    },
+    "registry_duplicates": {
+      "status": "fail",
+      "details": {
+        "errors": 1
+      }
+    }
+  }
+}

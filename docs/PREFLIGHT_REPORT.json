@@ -1,0 +1,28 @@
+{
+  "summary": {
+    "scannedLocations": 11,
+    "totalRepairs": 2,
+    "autoCreatedStubs": 0,
+    "unresolvedReferences": 0,
+    "success": true
+  },
+  "repairs": [
+    {
+      "location": "block lucky_block drop 0",
+      "type": "namespace_fix",
+      "original": "cooked_beef_",
+      "repaired": "blockyfortune:cooked_beef_",
+      "reason": "Added mod namespace"
+    },
+    {
+      "location": "block lucky_block drop 2",
+      "type": "namespace_fix",
+      "original": "player_haste_effect_30s",
+      "repaired": "blockyfortune:player_haste_effect_30s",
+      "reason": "Added mod namespace"
+    }
+  ],
+  "autoCreatedStubs": [],
+  "unresolvedReferences": [],
+  "generatedAt": "2026-01-06T14:56:17.954Z"
+}
