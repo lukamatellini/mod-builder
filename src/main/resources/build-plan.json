@@ -1,0 +1,44 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21.1",
+  "javaVersion": 21,
+  "generatedAt": "2026-01-06T15:43:51.908Z",
+  "enabledModules": {
+    "quests": false,
+    "npcs": false,
+    "dialogue": false,
+    "trading": false,
+    "structures": false,
+    "dimensions": false,
+    "biomes": false,
+    "commands": true,
+    "items": true,
+    "mobs": true,
+    "events": false
+  },
+  "inferenceReasons": [
+    "Items enabled: 6 items defined in spec",
+    "Mobs enabled: 4 mobs defined in spec",
+    "Commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 6,
+    "mobs": 4,
+    "structures": 0,
+    "dimensions": 0,
+    "quests": 0,
+    "npcs": 0,
+    "events": 0
+  },
+  "expectedDataFiles": [],
+  "expectedAssetFiles": [
+    "assets/fortunesfolly/lang/en_us.json",
+    "assets/fortunesfolly/models/item/lucky_block.json",
+    "assets/fortunesfolly/models/item/minecraftfeather.json",
+    "assets/fortunesfolly/models/item/minecraftegg.json",
+    "assets/fortunesfolly/models/item/minecraftporkchop.json",
+    "assets/fortunesfolly/models/item/minecraftsaddle.json",
+    "assets/fortunesfolly/models/item/dirt.json"
+  ]
+}

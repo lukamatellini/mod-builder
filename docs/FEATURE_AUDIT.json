@@ -1,0 +1,442 @@
+{
+  "modId": "fortunesfolly",
+  "modName": "Fortunes Folly",
+  "generatedAt": "2026-01-06T15:43:51.949Z",
+  "mcVersion": "1.21.1",
+  "categories": {
+    "items": {
+      "name": "Items",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lucky_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "minecraftfeather: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "minecraftfeather: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "minecraftegg: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "minecraftegg: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "minecraftporkchop: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "minecraftporkchop: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "minecraftsaddle: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "minecraftsaddle: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "dirt: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "dirt: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        }
+      ],
+      "notes": "6 items audited"
+    },
+    "blocks": {
+      "name": "Blocks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lucky_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "lucky_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "rng_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "rng_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "rng_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        }
+      ],
+      "notes": "2 blocks audited"
+    },
+    "mobs": {
+      "name": "Mobs",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_chicken: Required fields",
+          "status": "passed",
+          "message": "Health: 10, Damage: 5"
+        },
+        {
+          "name": "lucky_chicken: Drops",
+          "status": "passed",
+          "message": "2 drops defined"
+        },
+        {
+          "name": "lucky_chicken: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        },
+        {
+          "name": "lucky_pig: Required fields",
+          "status": "passed",
+          "message": "Health: 10, Damage: 5"
+        },
+        {
+          "name": "lucky_pig: Drops",
+          "status": "passed",
+          "message": "2 drops defined"
+        },
+        {
+          "name": "lucky_pig: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        },
+        {
+          "name": "japanese_sumo_wrestelrs: Required fields",
+          "status": "passed",
+          "message": "Health: 30, Damage: 5"
+        },
+        {
+          "name": "japanese_sumo_wrestelrs: Drops",
+          "status": "passed",
+          "message": "1 drops defined"
+        },
+        {
+          "name": "japanese_sumo_wrestelrs: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: overworld"
+        },
+        {
+          "name": "worms_spawn: Required fields",
+          "status": "passed",
+          "message": "Health: 30, Damage: 5"
+        },
+        {
+          "name": "worms_spawn: Drops",
+          "status": "passed",
+          "message": "1 drops defined"
+        },
+        {
+          "name": "worms_spawn: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: overworld"
+        }
+      ],
+      "notes": "4 mobs audited (0 bosses)"
+    },
+    "structures": {
+      "name": "Structures",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No structures defined",
+          "status": "skipped",
+          "message": "No structures to audit"
+        }
+      ]
+    },
+    "recipes": {
+      "name": "Recipes",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Items with recipes",
+          "status": "passed",
+          "message": "1/6 items have recipes"
+        },
+        {
+          "name": "lucky_block: Recipe file",
+          "status": "passed",
+          "message": "Recipe file generated"
+        }
+      ],
+      "notes": "2 recipes audited"
+    },
+    "lootTables": {
+      "name": "Loot Tables",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_chicken: Loot table",
+          "status": "passed",
+          "message": "Loot table generated"
+        },
+        {
+          "name": "lucky_chicken: Loot table content",
+          "status": "passed",
+          "message": "Loot table has entries"
+        },
+        {
+          "name": "lucky_pig: Loot table",
+          "status": "passed",
+          "message": "Loot table generated"
+        },
+        {
+          "name": "lucky_pig: Loot table content",
+          "status": "passed",
+          "message": "Loot table has entries"
+        },
+        {
+          "name": "japanese_sumo_wrestelrs: Loot table",
+          "status": "passed",
+          "message": "Loot table generated"
+        },
+        {
+          "name": "japanese_sumo_wrestelrs: Loot table content",
+          "status": "passed",
+          "message": "Loot table has entries"
+        },
+        {
+          "name": "worms_spawn: Loot table",
+          "status": "passed",
+          "message": "Loot table generated"
+        },
+        {
+          "name": "worms_spawn: Loot table content",
+          "status": "passed",
+          "message": "Loot table has entries"
+        },
+        {
+          "name": "lucky_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        },
+        {
+          "name": "rng_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        }
+      ],
+      "notes": "4 mob loot tables audited"
+    },
+    "textures": {
+      "name": "Textures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Texture files generated",
+          "status": "passed",
+          "message": "13 textures generated (expected at least 8)"
+        },
+        {
+          "name": "lucky_block.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "rng_block.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "lucky_chicken.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "lucky_pig.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "japanese_sumo_wrestelrs.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "worms_spawn.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "fallback.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "lucky_block.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "minecraftfeather.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "minecraftegg.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        }
+      ],
+      "notes": "13 texture files"
+    },
+    "quests": {
+      "name": "Quests",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No quests defined",
+          "status": "skipped",
+          "message": "No quests to audit"
+        }
+      ]
+    },
+    "advancements": {
+      "name": "Advancements",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Advancement files",
+          "status": "warn",
+          "message": "0 advancement files generated"
+        },
+        {
+          "name": "Root advancement",
+          "status": "warn",
+          "message": "No root advancement"
+        }
+      ],
+      "notes": "0 advancements"
+    },
+    "compilation": {
+      "name": "Compilation",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "build.gradle",
+          "status": "passed",
+          "message": "Build file exists"
+        },
+        {
+          "name": "fabric.mod.json",
+          "status": "passed",
+          "message": "Mod descriptor exists"
+        },
+        {
+          "name": "Minecraft version",
+          "status": "passed",
+          "message": "Correct MC version"
+        },
+        {
+          "name": "Java source files",
+          "status": "passed",
+          "message": "13 Java files generated"
+        }
+      ],
+      "notes": "Build configuration audit"
+    },
+    "apiSafety": {
+      "name": "API Safety",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "API safety scan",
+          "status": "passed",
+          "message": "No forbidden patterns detected"
+        }
+      ],
+      "notes": "MC 1.21.1 API compatibility check"
+    },
+    "vanillaFallbacks": {
+      "name": "Vanilla Fallbacks",
+      "status": "warn",
+      "checks": [
+        {
+          "name": "Vanilla recipe ingredients",
+          "status": "passed",
+          "message": "1 vanilla ingredients used (intentional)",
+          "details": "lucky_block uses minecraft:cobblestone"
+        },
+        {
+          "name": "Vanilla mob drops",
+          "status": "warn",
+          "message": "2 mobs drop vanilla items (consider custom drops)",
+          "details": "japanese_sumo_wrestelrs drops minecraft:rotten_flesh, worms_spawn drops minecraft:rotten_flesh"
+        }
+      ],
+      "notes": "Tracks use of vanilla content vs custom generation"
+    },
+    "inferredContent": {
+      "name": "Inferred Content",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Inferred item recipes",
+          "status": "passed",
+          "message": "1/6 items have recipes"
+        },
+        {
+          "name": "Inferred mob drops",
+          "status": "passed",
+          "message": "4/4 mobs have drops"
+        },
+        {
+          "name": "Inferred spawn rules",
+          "status": "passed",
+          "message": "4/4 mobs have spawn rules"
+        }
+      ],
+      "notes": "Tracks auto-completed and inferred content"
+    }
+  },
+  "summary": {
+    "totalChecks": 67,
+    "passed": 62,
+    "failed": 0,
+    "warnings": 3,
+    "skipped": 2,
+    "overallStatus": "warn"
+  }
+}

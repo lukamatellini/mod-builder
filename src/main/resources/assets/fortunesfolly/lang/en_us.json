@@ -1,0 +1,18 @@
+{
+  "itemGroup.fortunesfolly.main": "Fortunes Folly",
+  "item.fortunesfolly.lucky_block": "Lucky Block",
+  "item.fortunesfolly.minecraftfeather": "Minecraftfeather",
+  "item.fortunesfolly.minecraftegg": "Minecraftegg",
+  "item.fortunesfolly.minecraftporkchop": "Minecraftporkchop",
+  "item.fortunesfolly.minecraftsaddle": "Minecraftsaddle",
+  "item.fortunesfolly.dirt": "Dirt",
+  "block.fortunesfolly.lucky_block": "Lucky Block",
+  "block.fortunesfolly.rng_block": "Mystery Block",
+  "entity.fortunesfolly.lucky_chicken": "Lucky Chicken",
+  "entity.fortunesfolly.lucky_pig": "Lucky Pig",
+  "entity.fortunesfolly.japanese_sumo_wrestelrs": "Japanese Sumo Wrestelrs",
+  "entity.fortunesfolly.worms_spawn": "Worms Spawn.",
+  "category.fortunesfolly.keys": "Fortunes Folly",
+  "key.fortunesfolly.open_quest_journal": "Open Quest Journal",
+  "key.fortunesfolly.open_achievements": "Open Achievements"
+}
