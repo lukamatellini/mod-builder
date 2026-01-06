@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0",
+  "minecraftRange": ">=1.21 <1.22",
+  "fabricApiVersion": "0.100.0+1.21.1",
+  "javaVersion": 21,
+  "generatedAt": "2026-01-06T15:33:04.781Z",
+  "enabledModules": {
+    "quests": false,
+    "npcs": false,
+    "dialogue": false,
+    "trading": false,
+    "structures": true,
+    "dimensions": false,
+    "biomes": false,
+    "commands": true,
+    "items": true,
+    "mobs": true,
+    "events": false
+  },
+  "inferenceReasons": [
+    "Structures enabled: 1 structures defined in spec",
+    "Items enabled: 6 items defined in spec",
+    "Mobs enabled: 2 mobs defined in spec",
+    "HUD overlay enabled: 0 quests, mana items: false, custom effects: true",
+    "Commands enabled: mandatory fallback surface for testing"
+  ],
+  "expectedContent": {
+    "items": 6,
+    "mobs": 2,
+    "structures": 1,
+    "dimensions": 0,
+    "quests": 0,
+    "npcs": 0,
+    "events": 0
+  },
+  "expectedDataFiles": [
+    "data/chancecubes/worldgen/structure/lucky_shrine.json"
+  ],
+  "expectedAssetFiles": [
+    "assets/chancecubes/lang/en_us.json",
+    "assets/chancecubes/models/item/lucky_pickaxe.json",
+    "assets/chancecubes/models/item/lucky_sword.json",
+    "assets/chancecubes/models/item/a_i_d_heart.json",
+    "assets/chancecubes/models/item/rotten_flesh.json",
+    "assets/chancecubes/models/item/aid_heart.json",
+    "assets/chancecubes/models/item/spider_eye.json"
+  ]
+}

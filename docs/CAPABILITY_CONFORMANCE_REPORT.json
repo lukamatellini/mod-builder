@@ -1,0 +1,32 @@
+{
+  "status": "fail",
+  "checkedCapabilities": 7,
+  "passedCapabilities": 5,
+  "failedCapabilities": 2,
+  "failures": [
+    {
+      "capabilityType": "mob",
+      "missingArtifacts": [
+        "png: Entity texture (src/main/resources/assets/{modid}/textures/entity/**/*.png)"
+      ],
+      "denyIfMissing": true
+    },
+    {
+      "capabilityType": "structure",
+      "missingArtifacts": [
+        "file_glob: Structure NBT file (src/main/resources/data/{modid}/structures/*.nbt)"
+      ],
+      "denyIfMissing": true
+    }
+  ],
+  "reasons": [
+    {
+      "code": "MISSING_CAPABILITY_ARTIFACT",
+      "message": "Capability mob missing required artifact: png: Entity texture (src/main/resources/assets/{modid}/textures/entity/**/*.png)"
+    },
+    {
+      "code": "MISSING_CAPABILITY_ARTIFACT",
+      "message": "Capability structure missing required artifact: file_glob: Structure NBT file (src/main/resources/data/{modid}/structures/*.nbt)"
+    }
+  ]
+}

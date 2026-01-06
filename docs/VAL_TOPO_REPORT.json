@@ -1,0 +1,222 @@
+{
+  "status": "pass",
+  "reasons": [],
+  "checks": {
+    "items": {
+      "status": "pass",
+      "details": {
+        "count": 6,
+        "errors": 0
+      }
+    },
+    "blocks": {
+      "status": "pass",
+      "details": {
+        "count": 2,
+        "errors": 0
+      }
+    },
+    "mobs": {
+      "status": "pass",
+      "details": {
+        "count": 2,
+        "errors": 0
+      }
+    },
+    "structures": {
+      "status": "pass",
+      "details": {
+        "count": 1,
+        "errors": 0
+      }
+    },
+    "dimensions_biomes": {
+      "status": "pass",
+      "details": {
+        "dimensions": 0,
+        "biomes": 0,
+        "errors": 0
+      }
+    },
+    "recipes_loot": {
+      "status": "pass",
+      "details": {
+        "errors": 0
+      }
+    },
+    "theme_manifest": {
+      "status": "pass",
+      "details": {
+        "tokens": 10,
+        "mappings": 11
+      }
+    }
+  },
+  "assetIndex": {
+    "textures": [
+      {
+        "id": "lucky_block",
+        "path": "src/main/resources/assets/chancecubes/textures/block/lucky_block.png",
+        "kind": "block",
+        "w": 16,
+        "h": 16,
+        "hash": "1walmo"
+      },
+      {
+        "id": "unlucky_block",
+        "path": "src/main/resources/assets/chancecubes/textures/block/unlucky_block.png",
+        "kind": "block",
+        "w": 16,
+        "h": 16,
+        "hash": "a4t89v"
+      },
+      {
+        "id": "lucky_goblin",
+        "path": "src/main/resources/assets/chancecubes/textures/entity/lucky_goblin.png",
+        "kind": "entity",
+        "w": 64,
+        "h": 64,
+        "hash": "azrw88"
+      },
+      {
+        "id": "unlucky_zombie",
+        "path": "src/main/resources/assets/chancecubes/textures/entity/unlucky_zombie.png",
+        "kind": "entity",
+        "w": 64,
+        "h": 64,
+        "hash": "jc9f02"
+      },
+      {
+        "id": "fallback",
+        "path": "src/main/resources/assets/chancecubes/textures/item/fallback.png",
+        "kind": "item",
+        "w": 16,
+        "h": 16,
+        "hash": "jxns4p"
+      },
+      {
+        "id": "lucky_pickaxe",
+        "path": "src/main/resources/assets/chancecubes/textures/item/lucky_pickaxe.png",
+        "kind": "item",
+        "w": 16,
+        "h": 16,
+        "hash": "ui4r08"
+      },
+      {
+        "id": "lucky_sword",
+        "path": "src/main/resources/assets/chancecubes/textures/item/lucky_sword.png",
+        "kind": "item",
+        "w": 16,
+        "h": 16,
+        "hash": "6y3r86"
+      },
+      {
+        "id": "a_i_d_heart",
+        "path": "src/main/resources/assets/chancecubes/textures/item/a_i_d_heart.png",
+        "kind": "item",
+        "w": 16,
+        "h": 16,
+        "hash": "7mm5gl"
+      },
+      {
+        "id": "rotten_flesh",
+        "path": "src/main/resources/assets/chancecubes/textures/item/rotten_flesh.png",
+        "kind": "item",
+        "w": 16,
+        "h": 16,
+        "hash": "o9c0bd"
+      },
+      {
+        "id": "aid_heart",
+        "path": "src/main/resources/assets/chancecubes/textures/item/aid_heart.png",
+        "kind": "item",
+        "w": 16,
+        "h": 16,
+        "hash": "lkwtn2"
+      },
+      {
+        "id": "spider_eye",
+        "path": "src/main/resources/assets/chancecubes/textures/item/spider_eye.png",
+        "kind": "item",
+        "w": 16,
+        "h": 16,
+        "hash": "p42fwr"
+      }
+    ],
+    "models": [
+      {
+        "id": "lucky_block",
+        "path": "src/main/resources/assets/chancecubes/models/block/lucky_block.json"
+      },
+      {
+        "id": "lucky_block",
+        "path": "src/main/resources/assets/chancecubes/models/item/lucky_block.json"
+      },
+      {
+        "id": "unlucky_block",
+        "path": "src/main/resources/assets/chancecubes/models/block/unlucky_block.json"
+      },
+      {
+        "id": "unlucky_block",
+        "path": "src/main/resources/assets/chancecubes/models/item/unlucky_block.json"
+      },
+      {
+        "id": "lucky_pickaxe",
+        "path": "src/main/resources/assets/chancecubes/models/item/lucky_pickaxe.json"
+      },
+      {
+        "id": "lucky_sword",
+        "path": "src/main/resources/assets/chancecubes/models/item/lucky_sword.json"
+      },
+      {
+        "id": "a_i_d_heart",
+        "path": "src/main/resources/assets/chancecubes/models/item/a_i_d_heart.json"
+      },
+      {
+        "id": "rotten_flesh",
+        "path": "src/main/resources/assets/chancecubes/models/item/rotten_flesh.json"
+      },
+      {
+        "id": "aid_heart",
+        "path": "src/main/resources/assets/chancecubes/models/item/aid_heart.json"
+      },
+      {
+        "id": "spider_eye",
+        "path": "src/main/resources/assets/chancecubes/models/item/spider_eye.json"
+      }
+    ],
+    "langKeys": [
+      "itemGroup.chancecubes.main",
+      "item.chancecubes.lucky_pickaxe",
+      "item.chancecubes.lucky_sword",
+      "item.chancecubes.a_i_d_heart",
+      "item.chancecubes.rotten_flesh",
+      "item.chancecubes.aid_heart",
+      "item.chancecubes.spider_eye",
+      "block.chancecubes.lucky_block",
+      "block.chancecubes.unlucky_block",
+      "entity.chancecubes.lucky_goblin",
+      "entity.chancecubes.unlucky_zombie",
+      "structure.chancecubes.lucky_shrine",
+      "category.chancecubes.keys",
+      "key.chancecubes.open_quest_journal",
+      "key.chancecubes.open_achievements"
+    ],
+    "lootTables": [
+      "blocks/lucky_block",
+      "blocks/unlucky_block",
+      "chests/lucky_shrine",
+      "entities/lucky_goblin",
+      "entities/unlucky_zombie"
+    ],
+    "recipes": [
+      "lucky_pickaxe",
+      "lucky_sword",
+      "a_i_d_heart"
+    ],
+    "blockstates": [
+      "lucky_block",
+      "unlucky_block"
+    ]
+  }
+}

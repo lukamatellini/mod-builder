@@ -1,0 +1,17 @@
+{
+  "itemGroup.chancecubes.main": "Chance Cubes",
+  "item.chancecubes.lucky_pickaxe": "Lucky Pickaxe",
+  "item.chancecubes.lucky_sword": "Lucky Sword",
+  "item.chancecubes.a_i_d_heart": "A.I.D. Heart",
+  "item.chancecubes.rotten_flesh": "Rotten Flesh",
+  "item.chancecubes.aid_heart": "Aid Heart",
+  "item.chancecubes.spider_eye": "Spider Eye",
+  "block.chancecubes.lucky_block": "Lucky Block",
+  "block.chancecubes.unlucky_block": "Unlucky Block",
+  "entity.chancecubes.lucky_goblin": "Lucky Goblin",
+  "entity.chancecubes.unlucky_zombie": "Unlucky Zombie",
+  "structure.chancecubes.lucky_shrine": "Lucky Shrine",
+  "category.chancecubes.keys": "Chance Cubes",
+  "key.chancecubes.open_quest_journal": "Open Quest Journal",
+  "key.chancecubes.open_achievements": "Open Achievements"
+}

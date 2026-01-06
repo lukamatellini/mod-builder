@@ -1,0 +1,16 @@
+{
+  "traceId": "p0_mk2r0zjn_fhdc0z",
+  "passed": false,
+  "issueCount": 2,
+  "issues": [
+    {
+      "code": "MISSING_CAPABILITY_ARTIFACT",
+      "message": "Capability mob missing required artifact: png: Entity texture (src/main/resources/assets/{modid}/textures/entity/**/*.png)"
+    },
+    {
+      "code": "MISSING_CAPABILITY_ARTIFACT",
+      "message": "Capability structure missing required artifact: file_glob: Structure NBT file (src/main/resources/data/{modid}/structures/*.nbt)"
+    }
+  ],
+  "timestamp": "2026-01-06T15:33:04.890Z"
+}

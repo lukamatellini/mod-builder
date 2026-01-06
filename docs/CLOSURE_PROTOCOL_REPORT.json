@@ -1,0 +1,232 @@
+{
+  "traceId": "p0_mk2r0vfo_txcvcc",
+  "timestamp": "2026-01-06T15:33:04.842Z",
+  "modId": "chancecubes",
+  "overallStatus": "BLOCKED",
+  "capabilityStatuses": [
+    {
+      "capability": "block",
+      "phase5_conflicts": true,
+      "phase5_ownership": false,
+      "phase5_boundary": true,
+      "phase5_mixin": true,
+      "phase6_buildplan_coverage": true,
+      "phase6_runtime_primitives": true,
+      "phase6_asset_pipeline": false,
+      "phase7_presence": false,
+      "phase7_reference_integrity": false,
+      "phase7_enhanced_refs": true,
+      "phase8_semantics": true,
+      "phase8_visual_completeness": false,
+      "phase9_build": "DEFERRED",
+      "phase9_jar": "DEFERRED",
+      "phase9_smokeload": "DEFERRED",
+      "pos_e2e": "NOT_RUN",
+      "neg_e2e": "NOT_RUN",
+      "finalStatus": "INCOMPLETE_SPEC"
+    },
+    {
+      "capability": "recipe",
+      "phase5_conflicts": true,
+      "phase5_ownership": false,
+      "phase5_boundary": true,
+      "phase5_mixin": true,
+      "phase6_buildplan_coverage": false,
+      "phase6_runtime_primitives": true,
+      "phase6_asset_pipeline": false,
+      "phase7_presence": false,
+      "phase7_reference_integrity": false,
+      "phase7_enhanced_refs": true,
+      "phase8_semantics": true,
+      "phase8_visual_completeness": false,
+      "phase9_build": "DEFERRED",
+      "phase9_jar": "DEFERRED",
+      "phase9_smokeload": "DEFERRED",
+      "pos_e2e": "NOT_RUN",
+      "neg_e2e": "NOT_RUN",
+      "finalStatus": "INCOMPLETE_SPEC"
+    },
+    {
+      "capability": "block_break_hook",
+      "phase5_conflicts": true,
+      "phase5_ownership": false,
+      "phase5_boundary": true,
+      "phase5_mixin": true,
+      "phase6_buildplan_coverage": false,
+      "phase6_runtime_primitives": true,
+      "phase6_asset_pipeline": false,
+      "phase7_presence": false,
+      "phase7_reference_integrity": false,
+      "phase7_enhanced_refs": true,
+      "phase8_semantics": true,
+      "phase8_visual_completeness": false,
+      "phase9_build": "DEFERRED",
+      "phase9_jar": "DEFERRED",
+      "phase9_smokeload": "DEFERRED",
+      "pos_e2e": "NOT_RUN",
+      "neg_e2e": "NOT_RUN",
+      "finalStatus": "INCOMPLETE_SPEC"
+    },
+    {
+      "capability": "loot_table",
+      "phase5_conflicts": true,
+      "phase5_ownership": false,
+      "phase5_boundary": true,
+      "phase5_mixin": true,
+      "phase6_buildplan_coverage": true,
+      "phase6_runtime_primitives": true,
+      "phase6_asset_pipeline": false,
+      "phase7_presence": false,
+      "phase7_reference_integrity": false,
+      "phase7_enhanced_refs": true,
+      "phase8_semantics": true,
+      "phase8_visual_completeness": false,
+      "phase9_build": "DEFERRED",
+      "phase9_jar": "DEFERRED",
+      "phase9_smokeload": "DEFERRED",
+      "pos_e2e": "NOT_RUN",
+      "neg_e2e": "NOT_RUN",
+      "finalStatus": "INCOMPLETE_SPEC"
+    },
+    {
+      "capability": "rng_outcome",
+      "phase5_conflicts": true,
+      "phase5_ownership": false,
+      "phase5_boundary": true,
+      "phase5_mixin": true,
+      "phase6_buildplan_coverage": true,
+      "phase6_runtime_primitives": true,
+      "phase6_asset_pipeline": false,
+      "phase7_presence": false,
+      "phase7_reference_integrity": false,
+      "phase7_enhanced_refs": true,
+      "phase8_semantics": true,
+      "phase8_visual_completeness": false,
+      "phase9_build": "DEFERRED",
+      "phase9_jar": "DEFERRED",
+      "phase9_smokeload": "DEFERRED",
+      "pos_e2e": "NOT_RUN",
+      "neg_e2e": "NOT_RUN",
+      "finalStatus": "INCOMPLETE_SPEC"
+    }
+  ],
+  "phase5Summary": {
+    "passed": false,
+    "blockingErrors": 0,
+    "mixinPassed": true
+  },
+  "phase6Summary": {
+    "passed": false,
+    "missingKeys": 2,
+    "missingPrimitives": 0,
+    "assetPipelinePassed": false
+  },
+  "phase7Summary": {
+    "passed": false,
+    "missingArtifacts": 1,
+    "danglingRefs": 2,
+    "enhancedRefsPassed": true
+  },
+  "phase8Summary": {
+    "passed": false,
+    "violations": 5,
+    "visualCompletenessPassed": false
+  },
+  "phase9Summary": {
+    "status": "NOT_RUN",
+    "buildPassed": null,
+    "jarPassed": null,
+    "smokePassed": null
+  },
+  "allBlockingErrors": [
+    {
+      "phase": "PHASE6",
+      "gate": "BUILDPLAN_COVERAGE",
+      "code": "MISSING_KEY",
+      "message": "Capability \"recipe\" requires BuildPlan key \"dataPack.recipes\" but it is missing"
+    },
+    {
+      "phase": "PHASE6",
+      "gate": "BUILDPLAN_COVERAGE",
+      "code": "MISSING_KEY",
+      "message": "Capability \"block_break_hook\" requires BuildPlan key \"hooks.onBreak\" but it is missing"
+    },
+    {
+      "phase": "PHASE6_ASSETS",
+      "code": "MISSING_ASSET",
+      "message": "Missing texture: lucky_blocks"
+    },
+    {
+      "phase": "PHASE6_ASSETS",
+      "code": "MISSING_ASSET",
+      "message": "Missing model: lucky_blocks"
+    },
+    {
+      "phase": "PHASE6_ASSETS",
+      "code": "MISSING_ASSET",
+      "message": "Missing model: lucky_blocks"
+    },
+    {
+      "phase": "PHASE6_ASSETS",
+      "code": "MISSING_ASSET",
+      "message": "Missing model: lucky_blocks"
+    },
+    {
+      "phase": "PHASE6_ASSETS",
+      "code": "MISSING_ASSET",
+      "message": "Missing blockstate: lucky_blocks"
+    },
+    {
+      "phase": "PHASE7",
+      "gate": "ARTIFACT_PRESENCE",
+      "code": "MISSING_ARTIFACT",
+      "message": "Required artifact missing: Custom block with afterBreak handler (src/main/java/**/*Block.java)"
+    },
+    {
+      "phase": "PHASE7",
+      "gate": "REFERENCE_INTEGRITY",
+      "code": "DANGLING_TAG",
+      "message": "Tag references \"chancecubes:lucky_shrine\" which is not registered"
+    },
+    {
+      "phase": "PHASE7",
+      "gate": "REFERENCE_INTEGRITY",
+      "code": "DANGLING_LANG",
+      "message": "Missing lang entry for block \"lucky_blocks\""
+    },
+    {
+      "phase": "PHASE8_VISUAL",
+      "code": "MISSING_LANG",
+      "message": "Missing lang key \"block.chancecubes.lucky_blocks\""
+    },
+    {
+      "phase": "PHASE8_VISUAL",
+      "code": "MISSING_MODEL",
+      "message": "Missing block model at \"src/main/resources/assets/chancecubes/models/block/lucky_blocks.json\""
+    },
+    {
+      "phase": "PHASE8_VISUAL",
+      "code": "MISSING_TEXTURE",
+      "message": "Missing block texture at \"src/main/resources/assets/chancecubes/textures/block/lucky_blocks.png\""
+    },
+    {
+      "phase": "PHASE8_VISUAL",
+      "code": "MISSING_BLOCKSTATE",
+      "message": "Missing blockstate at \"src/main/resources/assets/chancecubes/blockstates/lucky_blocks.json\""
+    },
+    {
+      "phase": "PHASE8_VISUAL",
+      "code": "MISSING_LOOT_TABLE",
+      "message": "Missing block loot table at \"src/main/resources/data/chancecubes/loot_tables/blocks/lucky_blocks.json\""
+    }
+  ],
+  "productionReadyCapabilities": [],
+  "phase9RequiredCapabilities": [],
+  "blockedCapabilities": [
+    "block",
+    "recipe",
+    "block_break_hook",
+    "loot_table",
+    "rng_outcome"
+  ]
+}

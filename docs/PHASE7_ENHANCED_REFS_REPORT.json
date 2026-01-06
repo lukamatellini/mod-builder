@@ -1,0 +1,16 @@
+{
+  "traceId": "p0_mk2r0vfo_txcvcc",
+  "timestamp": "2026-01-06T15:33:04.841Z",
+  "passed": true,
+  "violations": [],
+  "soundIntegrity": {
+    "checked": 0,
+    "valid": 0,
+    "invalid": 0
+  },
+  "particleIntegrity": {
+    "checked": 0,
+    "valid": 0,
+    "invalid": 0
+  }
+}

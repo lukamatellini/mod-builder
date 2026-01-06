@@ -1,0 +1,63 @@
+{
+  "summary": {
+    "scannedLocations": 21,
+    "totalRepairs": 7,
+    "autoCreatedStubs": 0,
+    "unresolvedReferences": 0,
+    "success": true
+  },
+  "repairs": [
+    {
+      "location": "mob unlucky_zombie drop 0",
+      "type": "vanilla_canonicalize",
+      "original": "rotten_flesh",
+      "repaired": "minecraft:rotten_flesh",
+      "reason": "Added minecraft: namespace to vanilla item"
+    },
+    {
+      "location": "mob unlucky_zombie drop 1",
+      "type": "vanilla_canonicalize",
+      "original": "bone",
+      "repaired": "minecraft:bone",
+      "reason": "Added minecraft: namespace to vanilla item"
+    },
+    {
+      "location": "mob unlucky_zombie drop 2",
+      "type": "namespace_fix",
+      "original": "aid_heart",
+      "repaired": "chancecubes:aid_heart",
+      "reason": "Added mod namespace"
+    },
+    {
+      "location": "block lucky_block drop 0",
+      "type": "vanilla_canonicalize",
+      "original": "cobblestone",
+      "repaired": "minecraft:cobblestone",
+      "reason": "Added minecraft: namespace to vanilla item"
+    },
+    {
+      "location": "block unlucky_block drop 0",
+      "type": "vanilla_canonicalize",
+      "original": "rotten_flesh",
+      "repaired": "minecraft:rotten_flesh",
+      "reason": "Added minecraft: namespace to vanilla item"
+    },
+    {
+      "location": "block unlucky_block drop 1",
+      "type": "vanilla_canonicalize",
+      "original": "spider_eye",
+      "repaired": "minecraft:spider_eye",
+      "reason": "Added minecraft: namespace to vanilla item"
+    },
+    {
+      "location": "block unlucky_block drop 2",
+      "type": "namespace_fix",
+      "original": "aid_heart",
+      "repaired": "chancecubes:aid_heart",
+      "reason": "Added mod namespace"
+    }
+  ],
+  "autoCreatedStubs": [],
+  "unresolvedReferences": [],
+  "generatedAt": "2026-01-06T15:33:04.843Z"
+}

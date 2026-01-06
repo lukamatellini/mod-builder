@@ -1,0 +1,112 @@
+{
+  "traceId": "p0_mk2r0vfo_txcvcc",
+  "timestamp": "2026-01-06T15:33:04.838Z",
+  "passed": false,
+  "items": [
+    {
+      "type": "texture",
+      "id": "lucky_blocks",
+      "path": "src/main/resources/assets/chancecubes/textures/block/lucky_blocks.png",
+      "present": false,
+      "assignedTo": "template"
+    },
+    {
+      "type": "model",
+      "id": "lucky_blocks",
+      "path": "src/main/resources/assets/chancecubes/models/block/lucky_blocks.json",
+      "present": false,
+      "assignedTo": "template"
+    },
+    {
+      "type": "model",
+      "id": "lucky_blocks",
+      "path": "src/main/resources/assets/chancecubes/models/item/lucky_blocks.json",
+      "present": false,
+      "assignedTo": "template"
+    },
+    {
+      "type": "model",
+      "id": "lucky_blocks",
+      "path": "src/main/resources/assets/chancecubes/models/item/lucky_blocks.json",
+      "present": false,
+      "assignedTo": "template"
+    },
+    {
+      "type": "blockstate",
+      "id": "lucky_blocks",
+      "path": "src/main/resources/assets/chancecubes/blockstates/lucky_blocks.json",
+      "present": false,
+      "assignedTo": "template"
+    },
+    {
+      "type": "lang",
+      "id": "block.chancecubes.lucky_blocks",
+      "path": "src/main/resources/assets/chancecubes/lang/en_us.json",
+      "present": true,
+      "assignedTo": "template"
+    }
+  ],
+  "missingAssets": [
+    {
+      "type": "texture",
+      "id": "lucky_blocks",
+      "path": "src/main/resources/assets/chancecubes/textures/block/lucky_blocks.png",
+      "present": false,
+      "assignedTo": "template"
+    },
+    {
+      "type": "model",
+      "id": "lucky_blocks",
+      "path": "src/main/resources/assets/chancecubes/models/block/lucky_blocks.json",
+      "present": false,
+      "assignedTo": "template"
+    },
+    {
+      "type": "model",
+      "id": "lucky_blocks",
+      "path": "src/main/resources/assets/chancecubes/models/item/lucky_blocks.json",
+      "present": false,
+      "assignedTo": "template"
+    },
+    {
+      "type": "model",
+      "id": "lucky_blocks",
+      "path": "src/main/resources/assets/chancecubes/models/item/lucky_blocks.json",
+      "present": false,
+      "assignedTo": "template"
+    },
+    {
+      "type": "blockstate",
+      "id": "lucky_blocks",
+      "path": "src/main/resources/assets/chancecubes/blockstates/lucky_blocks.json",
+      "present": false,
+      "assignedTo": "template"
+    }
+  ],
+  "coverage": {
+    "textures": {
+      "total": 1,
+      "present": 0
+    },
+    "models": {
+      "total": 3,
+      "present": 0
+    },
+    "blockstates": {
+      "total": 1,
+      "present": 0
+    },
+    "lang": {
+      "total": 1,
+      "present": 1
+    },
+    "sounds": {
+      "total": 0,
+      "present": 0
+    },
+    "particles": {
+      "total": 0,
+      "present": 0
+    }
+  }
+}

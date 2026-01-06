@@ -1,0 +1,51 @@
+{
+  "traceId": "p0_mk2r0vfo_txcvcc",
+  "timestamp": "2026-01-06T15:33:04.842Z",
+  "passed": false,
+  "violations": [
+    {
+      "entityType": "block",
+      "entityId": "lucky_blocks",
+      "missing": "lang",
+      "details": "Missing lang key \"block.chancecubes.lucky_blocks\""
+    },
+    {
+      "entityType": "block",
+      "entityId": "lucky_blocks",
+      "missing": "model",
+      "details": "Missing block model at \"src/main/resources/assets/chancecubes/models/block/lucky_blocks.json\""
+    },
+    {
+      "entityType": "block",
+      "entityId": "lucky_blocks",
+      "missing": "texture",
+      "details": "Missing block texture at \"src/main/resources/assets/chancecubes/textures/block/lucky_blocks.png\""
+    },
+    {
+      "entityType": "block",
+      "entityId": "lucky_blocks",
+      "missing": "blockstate",
+      "details": "Missing blockstate at \"src/main/resources/assets/chancecubes/blockstates/lucky_blocks.json\""
+    },
+    {
+      "entityType": "block",
+      "entityId": "lucky_blocks",
+      "missing": "loot_table",
+      "details": "Missing block loot table at \"src/main/resources/data/chancecubes/loot_tables/blocks/lucky_blocks.json\""
+    }
+  ],
+  "summary": {
+    "blocks": {
+      "total": 1,
+      "complete": 0
+    },
+    "items": {
+      "total": 0,
+      "complete": 0
+    },
+    "entities": {
+      "total": 0,
+      "complete": 0
+    }
+  }
+}

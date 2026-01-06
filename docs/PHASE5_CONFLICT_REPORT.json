@@ -1,0 +1,180 @@
+{
+  "traceId": "p0_mk2r0vfo_txcvcc",
+  "timestamp": "2026-01-06T15:33:04.836Z",
+  "passed": false,
+  "fileCollision": {
+    "traceId": "p0_mk2r0vfo_txcvcc",
+    "timestamp": "2026-01-06T15:33:04.834Z",
+    "collisions": [],
+    "passed": true,
+    "totalFilesAnalyzed": 74,
+    "totalCollisions": 0,
+    "resolvedCollisions": 0,
+    "unresolvedCollisions": 0
+  },
+  "registryOwnership": {
+    "traceId": "p0_mk2r0vfo_txcvcc",
+    "timestamp": "2026-01-06T15:33:04.835Z",
+    "entries": [
+      {
+        "key": "chancecubes:lucky_blocks",
+        "type": "block",
+        "owner": "template",
+        "ownerType": "template",
+        "hasAssets": false,
+        "requiredAssets": [
+          "src/main/resources/assets/chancecubes/blockstates/lucky_blocks.json",
+          "src/main/resources/assets/chancecubes/models/block/lucky_blocks.json",
+          "src/main/resources/assets/chancecubes/textures/block/lucky_blocks.png"
+        ],
+        "foundAssets": []
+      }
+    ],
+    "passed": false,
+    "duplicateRegistrations": [],
+    "unreferencedKeys": [
+      {
+        "key": "chancecubes:block",
+        "type": "unknown",
+        "referencedIn": [
+          "src/main/resources/assets/chancecubes/blockstates/lucky_block.json",
+          "src/main/resources/assets/chancecubes/models/block/lucky_block.json",
+          "src/main/resources/assets/chancecubes/models/item/lucky_block.json",
+          "src/main/resources/assets/chancecubes/blockstates/unlucky_block.json",
+          "src/main/resources/assets/chancecubes/models/block/unlucky_block.json",
+          "src/main/resources/assets/chancecubes/models/item/unlucky_block.json"
+        ]
+      },
+      {
+        "key": "chancecubes:aid_heart",
+        "type": "unknown",
+        "referencedIn": [
+          "src/main/resources/data/chancecubes/loot_tables/blocks/unlucky_block.json",
+          "src/main/resources/data/chancecubes/loot_tables/entities/unlucky_zombie.json"
+        ]
+      },
+      {
+        "key": "chancecubes:lucky_pickaxe",
+        "type": "unknown",
+        "referencedIn": [
+          "src/main/resources/data/chancecubes/recipes/lucky_pickaxe.json"
+        ]
+      },
+      {
+        "key": "chancecubes:lucky_sword",
+        "type": "unknown",
+        "referencedIn": [
+          "src/main/resources/data/chancecubes/recipes/lucky_sword.json"
+        ]
+      },
+      {
+        "key": "chancecubes:a_i_d_heart",
+        "type": "unknown",
+        "referencedIn": [
+          "src/main/resources/data/chancecubes/recipes/a_i_d_heart.json"
+        ]
+      },
+      {
+        "key": "chancecubes:lucky_shrine",
+        "type": "unknown",
+        "referencedIn": [
+          "src/main/resources/data/chancecubes/worldgen/structure_set/chancecubes_structures.json",
+          "src/main/resources/data/chancecubes/tags/worldgen/structure/chancecubes_structures.json"
+        ]
+      },
+      {
+        "key": "chancecubes:lucky_shrine_pool",
+        "type": "unknown",
+        "referencedIn": [
+          "src/main/resources/data/chancecubes/worldgen/structure/lucky_shrine.json"
+        ]
+      },
+      {
+        "key": "chancecubes:lucky_shrine_structure_feature",
+        "type": "unknown",
+        "referencedIn": [
+          "src/main/resources/data/chancecubes/worldgen/template_pool/lucky_shrine_pool.json",
+          "src/main/resources/data/chancecubes/worldgen/placed_feature/lucky_shrine_structure_feature.json"
+        ]
+      },
+      {
+        "key": "chancecubes:item",
+        "type": "unknown",
+        "referencedIn": [
+          "src/main/resources/assets/chancecubes/models/item/lucky_pickaxe.json",
+          "src/main/resources/assets/chancecubes/models/item/lucky_sword.json",
+          "src/main/resources/assets/chancecubes/models/item/a_i_d_heart.json",
+          "src/main/resources/assets/chancecubes/models/item/rotten_flesh.json",
+          "src/main/resources/assets/chancecubes/models/item/aid_heart.json",
+          "src/main/resources/assets/chancecubes/models/item/spider_eye.json"
+        ]
+      }
+    ],
+    "registeredButNoAssets": [
+      {
+        "key": "chancecubes:lucky_blocks",
+        "type": "block",
+        "missingAssets": [
+          "src/main/resources/assets/chancecubes/blockstates/lucky_blocks.json",
+          "src/main/resources/assets/chancecubes/models/block/lucky_blocks.json",
+          "src/main/resources/assets/chancecubes/textures/block/lucky_blocks.png"
+        ]
+      }
+    ]
+  },
+  "clientServerBoundary": {
+    "traceId": "p0_mk2r0vfo_txcvcc",
+    "timestamp": "2026-01-06T15:33:04.836Z",
+    "passed": true,
+    "violations": [],
+    "clientOnlyClasses": [
+      "src/client/java/com/modgen/chancecubes/client/ChanceCubesClient.java",
+      "src/client/java/com/modgen/chancecubes/client/ChanceCubesClient.java",
+      "src/client/java/com/modgen/chancecubes/client/ChanceCubesClient.java",
+      "src/client/java/com/modgen/chancecubes/client/ModClientNetworking.java",
+      "src/client/java/com/modgen/chancecubes/client/ModClientNetworking.java",
+      "src/client/java/com/modgen/chancecubes/client/screen/ProgressBarHud.java",
+      "src/client/java/com/modgen/chancecubes/client/screen/ProgressBarHud.java",
+      "src/client/java/com/modgen/chancecubes/client/screen/ProgressBarHud.java",
+      "src/client/java/com/modgen/chancecubes/client/screen/BossHealthBar.java",
+      "src/client/java/com/modgen/chancecubes/client/screen/BossHealthBar.java",
+      "src/client/java/com/modgen/chancecubes/client/screen/BossHealthBar.java",
+      "src/client/java/com/modgen/chancecubes/client/ModHudOverlay.java",
+      "src/client/java/com/modgen/chancecubes/client/ModHudOverlay.java",
+      "src/client/java/com/modgen/chancecubes/client/ModHudOverlay.java",
+      "src/client/java/com/modgen/chancecubes/client/ModHudOverlay.java",
+      "src/client/java/com/modgen/chancecubes/client/ModModelLayers.java",
+      "src/client/java/com/modgen/chancecubes/client/model/LuckyGoblinModel.java",
+      "src/client/java/com/modgen/chancecubes/client/model/LuckyGoblinModel.java",
+      "src/client/java/com/modgen/chancecubes/client/renderer/LuckyGoblinRenderer.java",
+      "src/client/java/com/modgen/chancecubes/client/renderer/LuckyGoblinRenderer.java",
+      "src/client/java/com/modgen/chancecubes/client/model/UnluckyZombieModel.java",
+      "src/client/java/com/modgen/chancecubes/client/model/UnluckyZombieModel.java",
+      "src/client/java/com/modgen/chancecubes/client/renderer/UnluckyZombieRenderer.java",
+      "src/client/java/com/modgen/chancecubes/client/renderer/UnluckyZombieRenderer.java"
+    ],
+    "serverOnlyClasses": [],
+    "commonClasses": [
+      "src/main/java/com/modgen/chancecubes/engine/BuildPlanValidator.java",
+      "src/main/java/com/modgen/chancecubes/ChanceCubes.java",
+      "src/main/java/com/modgen/chancecubes/engine/ModGenEngine.java",
+      "src/main/java/com/modgen/chancecubes/engine/StructureRegistry.java",
+      "src/main/java/com/modgen/chancecubes/command/ModGenCommand.java",
+      "src/main/java/com/modgen/chancecubes/network/ModNetworking.java",
+      "src/main/java/com/modgen/chancecubes/network/ModPackets.java",
+      "src/main/java/com/modgen/chancecubes/ModSounds.java",
+      "src/main/java/com/modgen/chancecubes/ModItems.java",
+      "src/main/java/com/modgen/chancecubes/item/AIDHeartItem.java",
+      "src/main/java/com/modgen/chancecubes/ModBlocks.java",
+      "src/main/java/com/modgen/chancecubes/ModEntities.java",
+      "src/main/java/com/modgen/chancecubes/entity/LuckyGoblinEntity.java",
+      "src/main/java/com/modgen/chancecubes/entity/UnluckyZombieEntity.java",
+      "src/main/java/com/modgen/chancecubes/ModStructures.java",
+      "src/main/java/com/modgen/chancecubes/structure/LuckyShrineStructure.java"
+    ],
+    "hasClientEntrypoint": true,
+    "hasServerEntrypoint": true,
+    "registeredPackets": []
+  },
+  "blockingErrors": []
+}

@@ -1,0 +1,178 @@
+{
+  "traceId": "p0_mk2r0vfo_txcvcc",
+  "timestamp": "2026-01-06T15:33:04.841Z",
+  "passed": false,
+  "artifactPresence": {
+    "traceId": "p0_mk2r0vfo_txcvcc",
+    "timestamp": "2026-01-06T15:33:04.839Z",
+    "passed": false,
+    "missingArtifacts": [
+      {
+        "glob": "src/main/java/**/*Block.java",
+        "description": "Custom block with afterBreak handler"
+      }
+    ],
+    "invalidSchemas": [],
+    "artifactStatuses": [
+      {
+        "glob": "src/main/java/**/ModBlocks.java",
+        "kind": "java_entrypoint",
+        "description": "Block registration class",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/java/com/modgen/chancecubes/ModBlocks.java"
+        ]
+      },
+      {
+        "glob": "src/main/resources/assets/chancecubes/blockstates/*.json",
+        "kind": "json_schema",
+        "description": "Blockstate JSON",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/assets/chancecubes/blockstates/lucky_block.json",
+          "src/main/resources/assets/chancecubes/blockstates/unlucky_block.json"
+        ],
+        "schemaValid": true,
+        "schemaErrors": []
+      },
+      {
+        "glob": "src/main/resources/assets/chancecubes/models/block/*.json",
+        "kind": "json_schema",
+        "description": "Block model JSON",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/assets/chancecubes/models/block/lucky_block.json",
+          "src/main/resources/assets/chancecubes/models/block/unlucky_block.json"
+        ],
+        "schemaValid": true,
+        "schemaErrors": []
+      },
+      {
+        "glob": "src/main/resources/assets/chancecubes/textures/block/*.png",
+        "kind": "png",
+        "description": "Block texture",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/assets/chancecubes/textures/block/lucky_block.png",
+          "src/main/resources/assets/chancecubes/textures/block/unlucky_block.png"
+        ]
+      },
+      {
+        "glob": "src/main/resources/data/chancecubes/recipes/*.json",
+        "kind": "json_schema",
+        "description": "Recipe JSON file",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/data/chancecubes/recipes/lucky_pickaxe.json",
+          "src/main/resources/data/chancecubes/recipes/lucky_sword.json",
+          "src/main/resources/data/chancecubes/recipes/a_i_d_heart.json"
+        ],
+        "schemaValid": true,
+        "schemaErrors": []
+      },
+      {
+        "glob": "src/main/java/**/*Block.java",
+        "kind": "java_entrypoint",
+        "description": "Custom block with afterBreak handler",
+        "required": true,
+        "found": false,
+        "matchedPaths": []
+      },
+      {
+        "glob": "src/main/resources/data/chancecubes/loot_tables/**/*.json",
+        "kind": "json_schema",
+        "description": "Loot table JSON file",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/data/chancecubes/loot_tables/blocks/lucky_block.json",
+          "src/main/resources/data/chancecubes/loot_tables/blocks/unlucky_block.json",
+          "src/main/resources/data/chancecubes/loot_tables/chests/lucky_shrine.json",
+          "src/main/resources/data/chancecubes/loot_tables/entities/lucky_goblin.json",
+          "src/main/resources/data/chancecubes/loot_tables/entities/unlucky_zombie.json"
+        ],
+        "schemaValid": true,
+        "schemaErrors": []
+      },
+      {
+        "glob": "src/main/resources/data/chancecubes/loot_tables/**/*.json",
+        "kind": "json_schema",
+        "description": "Weighted loot table with RNG",
+        "required": true,
+        "found": true,
+        "matchedPaths": [
+          "src/main/resources/data/chancecubes/loot_tables/blocks/lucky_block.json",
+          "src/main/resources/data/chancecubes/loot_tables/blocks/unlucky_block.json",
+          "src/main/resources/data/chancecubes/loot_tables/chests/lucky_shrine.json",
+          "src/main/resources/data/chancecubes/loot_tables/entities/lucky_goblin.json",
+          "src/main/resources/data/chancecubes/loot_tables/entities/unlucky_zombie.json"
+        ],
+        "schemaValid": true,
+        "schemaErrors": []
+      }
+    ],
+    "totalRequired": 8,
+    "totalFound": 7
+  },
+  "referenceIntegrity": {
+    "traceId": "p0_mk2r0vfo_txcvcc",
+    "timestamp": "2026-01-06T15:33:04.841Z",
+    "passed": false,
+    "danglingReferences": [
+      {
+        "sourceFile": "src/main/resources/data/chancecubes/tags/worldgen/structure/chancecubes_structures.json",
+        "referenceType": "tag",
+        "reference": "chancecubes:lucky_shrine",
+        "reason": "Tag references \"chancecubes:lucky_shrine\" which is not registered"
+      },
+      {
+        "sourceFile": "assets/chancecubes/lang/en_us.json",
+        "referenceType": "lang",
+        "reference": "block.chancecubes.lucky_blocks",
+        "reason": "Missing lang entry for block \"lucky_blocks\""
+      }
+    ],
+    "modelTextureIntegrity": {
+      "checked": 20,
+      "valid": 20,
+      "invalid": 0
+    },
+    "worldgenGraphIntegrity": {
+      "checked": 3,
+      "valid": 3,
+      "invalid": 0
+    },
+    "tagIntegrity": {
+      "checked": 1,
+      "valid": 0,
+      "invalid": 1
+    },
+    "langIntegrity": {
+      "checked": 1,
+      "valid": 0,
+      "invalid": 1
+    }
+  },
+  "blockingErrors": [
+    {
+      "gate": "ARTIFACT_PRESENCE",
+      "code": "MISSING_ARTIFACT",
+      "message": "Required artifact missing: Custom block with afterBreak handler (src/main/java/**/*Block.java)"
+    },
+    {
+      "gate": "REFERENCE_INTEGRITY",
+      "code": "DANGLING_TAG",
+      "message": "Tag references \"chancecubes:lucky_shrine\" which is not registered"
+    },
+    {
+      "gate": "REFERENCE_INTEGRITY",
+      "code": "DANGLING_LANG",
+      "message": "Missing lang entry for block \"lucky_blocks\""
+    }
+  ]
+}
