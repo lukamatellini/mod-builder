@@ -1,0 +1,59 @@
+# QA Test Plan: Fortunes Folly
+
+Generated: 2026-01-06T23:00:34.856Z
+Minecraft Version: 1.21.1
+Mod ID: fortunesfolly
+
+## Audit Summary
+
+| Metric | Count |
+|--------|-------|
+| Total Checks | 23 |
+| Passed | 13 |
+| Failed | 4 |
+| Warnings | 3 |
+| Skipped | 3 |
+| **Overall** | **FAILED** |
+
+## Test Setup
+
+1. Install Fabric Loader for Minecraft 1.21.1
+2. Install Fabric API
+3. Place `fortunesfolly.jar` in mods folder
+4. Launch Minecraft
+5. Create new creative world or use existing test world
+
+## Items Checklist
+
+| Item | Get Command | Texture | Recipe | Functionality |
+|------|-------------|---------|--------|---------------|
+| Lucky Block | `/give @p fortunesfolly:lucky_block` | ☐ | ☐ | ☐ |
+| Zombie Spawn Egg | `/give @p fortunesfolly:zombie_spawn_egg` | ☐ | ☐ | ☐ |
+
+### Item Tests
+
+#### Lucky Block
+
+- [ ] Item appears in creative tab
+- [ ] Texture displays correctly (not purple/black)
+- [ ] Name displays correctly: "Lucky Block"
+- [ ] Crafting recipe works
+
+#### Zombie Spawn Egg
+
+- [ ] Item appears in creative tab
+- [ ] Texture displays correctly (not purple/black)
+- [ ] Name displays correctly: "Zombie Spawn Egg"
+
+## Blocks Checklist
+
+| Block | Get Command | Texture | Place | Break |
+|-------|-------------|---------|-------|-------|
+| Lucky Block | `/give @p fortunesfolly:lucky_block` | ☐ | ☐ | ☐ |
+
+## Notes
+
+- Test in both creative and survival modes
+- Check for console errors/warnings
+- Verify no crashes on world load/unload
+- Test multiplayer compatibility if applicable
