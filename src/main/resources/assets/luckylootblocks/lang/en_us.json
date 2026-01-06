@@ -1,0 +1,12 @@
+{
+  "itemGroup.luckylootblocks.main": "Lucky Loot Blocks",
+  "item.luckylootblocks.lucky_block": "Lucky Block",
+  "item.luckylootblocks.cooked_porkchop": "Cooked Porkchop",
+  "block.luckylootblocks.lucky_block": "Lucky Block",
+  "block.luckylootblocks.rng_block": "Mystery Block",
+  "entity.luckylootblocks.worm": "Worms",
+  "entity.luckylootblocks.japanese_sumo_wresteers": "Japanese Sumo Wresteers",
+  "category.luckylootblocks.keys": "Lucky Loot Blocks",
+  "key.luckylootblocks.open_quest_journal": "Open Quest Journal",
+  "key.luckylootblocks.open_achievements": "Open Achievements"
+}

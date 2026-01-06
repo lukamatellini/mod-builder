@@ -1,0 +1,9 @@
+{
+  "webhookUrl": "https://jhhqehkjffldkoqjqbzx.supabase.co/functions/v1/build-webhook",
+  "loader": "fabric",
+  "mcVersion": "1.21.1",
+  "modId": "f9f696f4-043a-43d8-a103-8a499c1fe4e9",
+  "modName": "Lucky Loot Blocks",
+  "webhookSecret": "za8f3c2b1e49840b28a7c4c11d9a0de92",
+  "generatedAt": "2026-01-06T13:29:34.631Z"
+}
