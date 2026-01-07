@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "fortunefollies",
+  "version": "1.0.0",
+  "name": "Fortune & Follies",
+  "description": "",
+  "authors": [
+    "Mod Generator"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/fortunefollies/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.modgen.fortunefollies.FortuneFollies"
+    ],
+    "client": [
+      "com.modgen.fortunefollies.client.FortuneFolliesClient"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "minecraft": "1.21.1",
+    "fabricloader": ">=0.16.9",
+    "fabric": "*",
+    "java": ">=21"
+  }
+}
