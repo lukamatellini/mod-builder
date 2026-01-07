@@ -1,0 +1,17 @@
+{
+  "itemGroup.yokaiuprising.main": "Yokai Uprising",
+  "itemGroup.yokaiuprising": "Yokai Uprising",
+  "item.yokaiuprising.mutated_flesh": "Mutated Flesh",
+  "item.yokaiuprising.cooked_mutated_flesh": "Cooked Mutated Flesh",
+  "item.yokaiuprising.worm_meat": "Worm Meat",
+  "item.yokaiuprising.cooked_worm_meat": "Cooked Worm Meat",
+  "item.yokaiuprising.sumo_belt": "Sumo Belt",
+  "item.yokaiuprising.raw_porkchop": "Raw Porkchop",
+  "item.yokaiuprising.1_leather": "1 Leather",
+  "item.yokaiuprising.itself": "Itself",
+  "block.yokaiuprising.doho_ring_block": "Dohyo Ring Block",
+  "entity.yokaiuprising.mutated_zombie": "Mutated Zombie",
+  "entity.yokaiuprising.cave_worm": "Cave Worm",
+  "entity.yokaiuprising.sumo_wrestler": "Sumo Wrestler",
+  "structure.yokaiuprising.sumo_doho": "Sumo Dohyo"
+}

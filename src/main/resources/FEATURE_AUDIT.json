@@ -1,0 +1,560 @@
+{
+  "schemaVersion": "1.0.0",
+  "modId": "yokaiuprising",
+  "modName": "Yokai Uprising",
+  "mcVersion": "1.21.1",
+  "loader": "fabric",
+  "timestamp": "2026-01-07T02:29:34.608Z",
+  "capabilitiesRequested": [],
+  "capabilitiesImplemented": [
+    "item",
+    "block",
+    "mob",
+    "structure"
+  ],
+  "assetsEmitted": [
+    "src/main/resources/assets/yokaiuprising/textures/item/mutated_flesh.png",
+    "src/main/resources/assets/yokaiuprising/models/item/mutated_flesh.json",
+    "src/main/resources/assets/yokaiuprising/textures/item/cooked_mutated_flesh.png",
+    "src/main/resources/assets/yokaiuprising/models/item/cooked_mutated_flesh.json",
+    "src/main/resources/assets/yokaiuprising/textures/item/worm_meat.png",
+    "src/main/resources/assets/yokaiuprising/models/item/worm_meat.json",
+    "src/main/resources/assets/yokaiuprising/textures/item/cooked_worm_meat.png",
+    "src/main/resources/assets/yokaiuprising/models/item/cooked_worm_meat.json",
+    "src/main/resources/assets/yokaiuprising/textures/item/sumo_belt.png",
+    "src/main/resources/assets/yokaiuprising/models/item/sumo_belt.json",
+    "src/main/resources/assets/yokaiuprising/textures/item/raw_porkchop.png",
+    "src/main/resources/assets/yokaiuprising/models/item/raw_porkchop.json",
+    "src/main/resources/assets/yokaiuprising/textures/item/1_leather.png",
+    "src/main/resources/assets/yokaiuprising/models/item/1_leather.json",
+    "src/main/resources/assets/yokaiuprising/textures/item/itself.png",
+    "src/main/resources/assets/yokaiuprising/models/item/itself.json",
+    "src/main/resources/assets/yokaiuprising/textures/mob_effect/sumo_belt_resistance.png",
+    "src/main/resources/assets/yokaiuprising/blockstates/doho_ring_block.json",
+    "src/main/resources/assets/yokaiuprising/models/block/doho_ring_block.json",
+    "src/main/resources/assets/yokaiuprising/models/item/doho_ring_block.json",
+    "src/main/resources/assets/yokaiuprising/textures/block/doho_ring_block.png",
+    "src/main/resources/assets/yokaiuprising/textures/entity/mutated_zombie.png",
+    "src/main/resources/assets/yokaiuprising/textures/entity/cave_worm.png",
+    "src/main/resources/assets/yokaiuprising/textures/entity/sumo_wrestler.png",
+    "src/main/resources/assets/yokaiuprising/lang/en_us.json"
+  ],
+  "invariants": [
+    {
+      "name": "category_items",
+      "status": "passed",
+      "reason": "8 items audited"
+    },
+    {
+      "name": "category_blocks",
+      "status": "passed",
+      "reason": "1 blocks audited"
+    },
+    {
+      "name": "category_mobs",
+      "status": "passed",
+      "reason": "3 mobs audited (0 bosses)"
+    },
+    {
+      "name": "category_structures",
+      "status": "passed",
+      "reason": "1 structures audited"
+    },
+    {
+      "name": "category_recipes",
+      "status": "failed",
+      "reason": "5 recipes audited"
+    },
+    {
+      "name": "category_lootTables",
+      "status": "failed",
+      "reason": "3 mob loot tables audited"
+    },
+    {
+      "name": "category_textures",
+      "status": "passed",
+      "reason": "13 texture files"
+    },
+    {
+      "name": "category_quests",
+      "status": "passed"
+    },
+    {
+      "name": "category_advancements",
+      "status": "passed",
+      "reason": "0 advancements"
+    },
+    {
+      "name": "category_compilation",
+      "status": "passed",
+      "reason": "Build configuration audit"
+    },
+    {
+      "name": "category_apiSafety",
+      "status": "passed",
+      "reason": "MC 1.21.1 API compatibility check"
+    },
+    {
+      "name": "category_vanillaFallbacks",
+      "status": "warn",
+      "reason": "Tracks use of vanilla content vs custom generation"
+    },
+    {
+      "name": "category_inferredContent",
+      "status": "passed",
+      "reason": "Tracks auto-completed and inferred content"
+    }
+  ],
+  "generatedAt": "2026-01-07T02:29:34.608Z",
+  "categories": {
+    "items": {
+      "name": "Items",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "mutated_flesh: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "mutated_flesh: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "cooked_mutated_flesh: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cooked_mutated_flesh: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "worm_meat: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "worm_meat: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "cooked_worm_meat: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cooked_worm_meat: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "sumo_belt: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "sumo_belt: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "raw_porkchop: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "raw_porkchop: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "1_leather: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "1_leather: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "itself: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "itself: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        }
+      ],
+      "notes": "8 items audited"
+    },
+    "blocks": {
+      "name": "Blocks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "doho_ring_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "doho_ring_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "doho_ring_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        }
+      ],
+      "notes": "1 blocks audited"
+    },
+    "mobs": {
+      "name": "Mobs",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "mutated_zombie: Required fields",
+          "status": "passed",
+          "message": "Health: 40, Damage: 8"
+        },
+        {
+          "name": "mutated_zombie: Drops",
+          "status": "passed",
+          "message": "2 drops defined"
+        },
+        {
+          "name": "mutated_zombie: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest, minecraft:swamp"
+        },
+        {
+          "name": "cave_worm: Required fields",
+          "status": "passed",
+          "message": "Health: 25, Damage: 5"
+        },
+        {
+          "name": "cave_worm: Drops",
+          "status": "passed",
+          "message": "2 drops defined"
+        },
+        {
+          "name": "cave_worm: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        },
+        {
+          "name": "sumo_wrestler: Required fields",
+          "status": "passed",
+          "message": "Health: 70, Damage: 12"
+        },
+        {
+          "name": "sumo_wrestler: Drops",
+          "status": "passed",
+          "message": "3 drops defined"
+        },
+        {
+          "name": "sumo_wrestler: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains"
+        }
+      ],
+      "notes": "3 mobs audited (0 bosses)"
+    },
+    "structures": {
+      "name": "Structures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "sumo_doho: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "sumo_doho: Features",
+          "status": "passed",
+          "message": "1 features defined"
+        }
+      ],
+      "notes": "1 structures audited"
+    },
+    "recipes": {
+      "name": "Recipes",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "Items with recipes",
+          "status": "passed",
+          "message": "5/8 items have recipes"
+        },
+        {
+          "name": "mutated_flesh: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "cooked_mutated_flesh: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "worm_meat: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "cooked_worm_meat: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "sumo_belt: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        }
+      ],
+      "notes": "5 recipes audited"
+    },
+    "lootTables": {
+      "name": "Loot Tables",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "mutated_zombie: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "cave_worm: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "sumo_wrestler: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "doho_ring_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        }
+      ],
+      "notes": "3 mob loot tables audited"
+    },
+    "textures": {
+      "name": "Textures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Texture files generated",
+          "status": "passed",
+          "message": "13 textures generated (expected at least 9)"
+        },
+        {
+          "name": "mutated_flesh.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "cooked_mutated_flesh.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "worm_meat.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "cooked_worm_meat.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "sumo_belt.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "raw_porkchop.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "1_leather.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "itself.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "sumo_belt_resistance.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "doho_ring_block.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        }
+      ],
+      "notes": "13 texture files"
+    },
+    "quests": {
+      "name": "Quests",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No quests defined",
+          "status": "skipped",
+          "message": "No quests to audit"
+        }
+      ]
+    },
+    "advancements": {
+      "name": "Advancements",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Advancement files",
+          "status": "warn",
+          "message": "0 advancement files generated"
+        },
+        {
+          "name": "Root advancement",
+          "status": "warn",
+          "message": "No root advancement"
+        }
+      ],
+      "notes": "0 advancements"
+    },
+    "compilation": {
+      "name": "Compilation",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "build.gradle",
+          "status": "passed",
+          "message": "Build file exists"
+        },
+        {
+          "name": "fabric.mod.json",
+          "status": "passed",
+          "message": "Mod descriptor exists"
+        },
+        {
+          "name": "Minecraft version",
+          "status": "passed",
+          "message": "Correct MC version"
+        },
+        {
+          "name": "Java source files",
+          "status": "passed",
+          "message": "15 Java files generated"
+        }
+      ],
+      "notes": "Build configuration audit"
+    },
+    "apiSafety": {
+      "name": "API Safety",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "API safety scan",
+          "status": "passed",
+          "message": "No forbidden patterns detected"
+        }
+      ],
+      "notes": "MC 1.21.1 API compatibility check"
+    },
+    "vanillaFallbacks": {
+      "name": "Vanilla Fallbacks",
+      "status": "warn",
+      "checks": [
+        {
+          "name": "Vanilla recipe ingredients",
+          "status": "passed",
+          "message": "10 vanilla ingredients used (intentional)",
+          "details": "mutated_flesh uses minecraft:diamond, mutated_flesh uses minecraft:stick, cooked_mutated_flesh uses minecraft:diamond, cooked_mutated_flesh uses minecraft:stick, worm_meat uses minecraft:diamond, worm_meat uses minecraft:stick, cooked_worm_meat uses minecraft:diamond, cooked_worm_meat uses minecraft:stick, sumo_belt uses minecraft:string, sumo_belt uses minecraft:leather"
+        },
+        {
+          "name": "Vanilla mob drops",
+          "status": "warn",
+          "message": "2 mobs drop vanilla items (consider custom drops)",
+          "details": "mutated_zombie drops minecraft:rotten_flesh, cave_worm drops minecraft:string"
+        }
+      ],
+      "notes": "Tracks use of vanilla content vs custom generation"
+    },
+    "inferredContent": {
+      "name": "Inferred Content",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Inferred item recipes",
+          "status": "passed",
+          "message": "5/8 items have recipes"
+        },
+        {
+          "name": "Inferred mob drops",
+          "status": "passed",
+          "message": "3/3 mobs have drops"
+        },
+        {
+          "name": "Inferred spawn rules",
+          "status": "passed",
+          "message": "3/3 mobs have spawn rules"
+        },
+        {
+          "name": "Inferred structure features",
+          "status": "passed",
+          "message": "1/1 structures have features"
+        }
+      ],
+      "notes": "Tracks auto-completed and inferred content"
+    }
+  },
+  "summary": {
+    "totalChecks": 65,
+    "passed": 53,
+    "failed": 8,
+    "warnings": 3,
+    "skipped": 1,
+    "overallStatus": "failed"
+  },
+  "assetsEmittedCount": 29,
+  "repairs": [
+    {
+      "path": "src/main/resources/assets/1345b86b-ec28-4acb-9103-e13748922cdd/lang/en_us.json",
+      "type": "placeholder_lang",
+      "reason": "Generated placeholder lang file - no lang file existed"
+    },
+    {
+      "path": "src/main/resources/assets/1345b86b-ec28-4acb-9103-e13748922cdd/models/item/placeholder.json",
+      "type": "placeholder_model",
+      "reason": "Generated placeholder model - no models existed"
+    },
+    {
+      "path": "src/main/resources/assets/1345b86b-ec28-4acb-9103-e13748922cdd/textures/item/placeholder.png",
+      "type": "placeholder_png",
+      "reason": "Generated rich placeholder textures (style-aware) - no PNG files existed"
+    }
+  ],
+  "missingTextureFixups": [],
+  "modelTextureIntegrity": {
+    "valid": 10,
+    "invalid": 0,
+    "fixed": 0
+  }
+}
