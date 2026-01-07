@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "fortunesgamble:item/enchanted_iron_tool"
+  }
+}
