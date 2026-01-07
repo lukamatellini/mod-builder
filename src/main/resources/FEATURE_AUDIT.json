@@ -1,0 +1,426 @@
+{
+  "schemaVersion": "1.0.0",
+  "modId": "luckylootblocks",
+  "modName": "Lucky Loot Blocks",
+  "mcVersion": "1.21.1",
+  "loader": "fabric",
+  "timestamp": "2026-01-07T05:29:40.916Z",
+  "capabilitiesRequested": [],
+  "capabilitiesImplemented": [
+    "item",
+    "block"
+  ],
+  "assetsEmitted": [
+    "src/main/resources/assets/luckylootblocks/textures/item/lucky_block.png",
+    "src/main/resources/assets/luckylootblocks/models/item/lucky_block.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/minecraftoak_planks.png",
+    "src/main/resources/assets/luckylootblocks/models/item/minecraftoak_planks.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/minecraftcobblestone.png",
+    "src/main/resources/assets/luckylootblocks/models/item/minecraftcobblestone.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/minecraftdirt.png",
+    "src/main/resources/assets/luckylootblocks/models/item/minecraftdirt.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/minecraftcooked_beef.png",
+    "src/main/resources/assets/luckylootblocks/models/item/minecraftcooked_beef.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/minecraftpotionotionhealing.png",
+    "src/main/resources/assets/luckylootblocks/models/item/minecraftpotionotionhealing.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/xp.png",
+    "src/main/resources/assets/luckylootblocks/models/item/xp.json",
+    "src/main/resources/assets/luckylootblocks/blockstates/lucky_block.json",
+    "src/main/resources/assets/luckylootblocks/models/block/lucky_block.json",
+    "src/main/resources/assets/luckylootblocks/textures/block/lucky_block.png",
+    "src/main/resources/assets/luckylootblocks/lang/en_us.json"
+  ],
+  "invariants": [
+    {
+      "name": "category_items",
+      "status": "passed",
+      "reason": "7 items audited"
+    },
+    {
+      "name": "category_blocks",
+      "status": "passed",
+      "reason": "1 blocks audited"
+    },
+    {
+      "name": "category_mobs",
+      "status": "passed"
+    },
+    {
+      "name": "category_structures",
+      "status": "passed"
+    },
+    {
+      "name": "category_recipes",
+      "status": "failed",
+      "reason": "1 recipes audited"
+    },
+    {
+      "name": "category_lootTables",
+      "status": "passed",
+      "reason": "0 mob loot tables audited"
+    },
+    {
+      "name": "category_textures",
+      "status": "passed",
+      "reason": "8 texture files"
+    },
+    {
+      "name": "category_quests",
+      "status": "passed"
+    },
+    {
+      "name": "category_advancements",
+      "status": "passed",
+      "reason": "0 advancements"
+    },
+    {
+      "name": "category_compilation",
+      "status": "passed",
+      "reason": "Build configuration audit"
+    },
+    {
+      "name": "category_apiSafety",
+      "status": "passed",
+      "reason": "MC 1.21.1 API compatibility check"
+    },
+    {
+      "name": "category_vanillaFallbacks",
+      "status": "passed",
+      "reason": "Tracks use of vanilla content vs custom generation"
+    },
+    {
+      "name": "category_inferredContent",
+      "status": "passed",
+      "reason": "Tracks auto-completed and inferred content"
+    }
+  ],
+  "generatedAt": "2026-01-07T05:29:40.916Z",
+  "categories": {
+    "items": {
+      "name": "Items",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lucky_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "minecraftoak_planks: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "minecraftoak_planks: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "minecraftcobblestone: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "minecraftcobblestone: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "minecraftdirt: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "minecraftdirt: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "minecraftcooked_beef: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "minecraftcooked_beef: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "minecraftpotionotionhealing: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "minecraftpotionotionhealing: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "xp: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "xp: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        }
+      ],
+      "notes": "7 items audited"
+    },
+    "blocks": {
+      "name": "Blocks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lucky_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "lucky_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        }
+      ],
+      "notes": "1 blocks audited"
+    },
+    "mobs": {
+      "name": "Mobs",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No mobs defined",
+          "status": "skipped",
+          "message": "No mobs to audit"
+        }
+      ]
+    },
+    "structures": {
+      "name": "Structures",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No structures defined",
+          "status": "skipped",
+          "message": "No structures to audit"
+        }
+      ]
+    },
+    "recipes": {
+      "name": "Recipes",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "Items with recipes",
+          "status": "passed",
+          "message": "1/7 items have recipes"
+        },
+        {
+          "name": "lucky_block: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        }
+      ],
+      "notes": "1 recipes audited"
+    },
+    "lootTables": {
+      "name": "Loot Tables",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        }
+      ],
+      "notes": "0 mob loot tables audited"
+    },
+    "textures": {
+      "name": "Textures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Texture files generated",
+          "status": "passed",
+          "message": "8 textures generated (expected at least 8)"
+        },
+        {
+          "name": "lucky_block.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "minecraftoak_planks.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "minecraftcobblestone.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "minecraftdirt.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "minecraftcooked_beef.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "minecraftpotionotionhealing.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "xp.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "lucky_block.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        }
+      ],
+      "notes": "8 texture files"
+    },
+    "quests": {
+      "name": "Quests",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No quests defined",
+          "status": "skipped",
+          "message": "No quests to audit"
+        }
+      ]
+    },
+    "advancements": {
+      "name": "Advancements",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Advancement files",
+          "status": "warn",
+          "message": "0 advancement files generated"
+        },
+        {
+          "name": "Root advancement",
+          "status": "warn",
+          "message": "No root advancement"
+        }
+      ],
+      "notes": "0 advancements"
+    },
+    "compilation": {
+      "name": "Compilation",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "build.gradle",
+          "status": "passed",
+          "message": "Build file exists"
+        },
+        {
+          "name": "fabric.mod.json",
+          "status": "passed",
+          "message": "Mod descriptor exists"
+        },
+        {
+          "name": "Minecraft version",
+          "status": "passed",
+          "message": "Correct MC version"
+        },
+        {
+          "name": "Java source files",
+          "status": "passed",
+          "message": "4 Java files generated"
+        }
+      ],
+      "notes": "Build configuration audit"
+    },
+    "apiSafety": {
+      "name": "API Safety",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "API safety scan",
+          "status": "passed",
+          "message": "No forbidden patterns detected"
+        }
+      ],
+      "notes": "MC 1.21.1 API compatibility check"
+    },
+    "vanillaFallbacks": {
+      "name": "Vanilla Fallbacks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Vanilla recipe ingredients",
+          "status": "passed",
+          "message": "1 vanilla ingredients used (intentional)",
+          "details": "lucky_block uses minecraft:gold_ingot"
+        }
+      ],
+      "notes": "Tracks use of vanilla content vs custom generation"
+    },
+    "inferredContent": {
+      "name": "Inferred Content",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Inferred item recipes",
+          "status": "passed",
+          "message": "1/7 items have recipes"
+        }
+      ],
+      "notes": "Tracks auto-completed and inferred content"
+    }
+  },
+  "summary": {
+    "totalChecks": 41,
+    "passed": 35,
+    "failed": 1,
+    "warnings": 2,
+    "skipped": 3,
+    "overallStatus": "failed"
+  },
+  "assetsEmittedCount": 22,
+  "repairs": [
+    {
+      "path": "src/main/resources/assets/7f43c8df-32da-414b-bd20-80153eda6f67/lang/en_us.json",
+      "type": "placeholder_lang",
+      "reason": "Generated placeholder lang file - no lang file existed"
+    },
+    {
+      "path": "src/main/resources/assets/7f43c8df-32da-414b-bd20-80153eda6f67/models/item/placeholder.json",
+      "type": "placeholder_model",
+      "reason": "Generated placeholder model - no models existed"
+    },
+    {
+      "path": "src/main/resources/assets/7f43c8df-32da-414b-bd20-80153eda6f67/textures/item/placeholder.png",
+      "type": "placeholder_png",
+      "reason": "Generated rich placeholder textures (style-aware) - no PNG files existed"
+    }
+  ],
+  "missingTextureFixups": [],
+  "modelTextureIntegrity": {
+    "valid": 8,
+    "invalid": 0,
+    "fixed": 0
+  }
+}
