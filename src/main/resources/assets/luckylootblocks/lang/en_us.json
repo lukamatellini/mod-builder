@@ -1,0 +1,12 @@
+{
+  "itemGroup.luckylootblocks.main": "Lucky Loot Blocks",
+  "itemGroup.luckylootblocks": "Lucky Loot Blocks",
+  "item.luckylootblocks.lucky_block_item": "Lucky Block",
+  "item.luckylootblocks.good_drops": "Good Drops",
+  "item.luckylootblocks.random_events": "Random Events",
+  "block.luckylootblocks.lucky_block": "Lucky Block",
+  "entity.luckylootblocks.lucky_zombie": "Lucky Zombie",
+  "entity.luckylootblocks.lucky_spider": "Lucky Spider",
+  "entity.luckylootblocks.lucky_creeper": "Lucky Creeper",
+  "entity.luckylootblocks.lucky_cave_spider": "Lucky Cave Spider"
+}

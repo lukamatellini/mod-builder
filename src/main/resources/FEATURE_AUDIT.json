@@ -1,0 +1,477 @@
+{
+  "schemaVersion": "1.0.0",
+  "modId": "luckylootblocks",
+  "modName": "Lucky Loot Blocks",
+  "mcVersion": "1.21.1",
+  "loader": "fabric",
+  "timestamp": "2026-01-07T01:38:58.631Z",
+  "capabilitiesRequested": [],
+  "capabilitiesImplemented": [
+    "item",
+    "block",
+    "mob"
+  ],
+  "assetsEmitted": [
+    "src/main/resources/assets/luckylootblocks/textures/item/lucky_block_item.png",
+    "src/main/resources/assets/luckylootblocks/models/item/lucky_block_item.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/good_drops.png",
+    "src/main/resources/assets/luckylootblocks/models/item/good_drops.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/random_events.png",
+    "src/main/resources/assets/luckylootblocks/models/item/random_events.json",
+    "src/main/resources/assets/luckylootblocks/blockstates/lucky_block.json",
+    "src/main/resources/assets/luckylootblocks/models/block/lucky_block.json",
+    "src/main/resources/assets/luckylootblocks/models/item/lucky_block.json",
+    "src/main/resources/assets/luckylootblocks/textures/block/lucky_block.png",
+    "src/main/resources/assets/luckylootblocks/textures/entity/lucky_zombie.png",
+    "src/main/resources/assets/luckylootblocks/textures/entity/lucky_spider.png",
+    "src/main/resources/assets/luckylootblocks/textures/entity/lucky_creeper.png",
+    "src/main/resources/assets/luckylootblocks/textures/entity/lucky_cave_spider.png",
+    "src/main/resources/assets/luckylootblocks/lang/en_us.json"
+  ],
+  "invariants": [
+    {
+      "name": "category_items",
+      "status": "passed",
+      "reason": "3 items audited"
+    },
+    {
+      "name": "category_blocks",
+      "status": "passed",
+      "reason": "1 blocks audited"
+    },
+    {
+      "name": "category_mobs",
+      "status": "failed",
+      "reason": "4 mobs audited (0 bosses)"
+    },
+    {
+      "name": "category_structures",
+      "status": "passed"
+    },
+    {
+      "name": "category_recipes",
+      "status": "failed",
+      "reason": "1 recipes audited"
+    },
+    {
+      "name": "category_lootTables",
+      "status": "failed",
+      "reason": "4 mob loot tables audited"
+    },
+    {
+      "name": "category_textures",
+      "status": "passed",
+      "reason": "8 texture files"
+    },
+    {
+      "name": "category_quests",
+      "status": "passed"
+    },
+    {
+      "name": "category_advancements",
+      "status": "passed",
+      "reason": "0 advancements"
+    },
+    {
+      "name": "category_compilation",
+      "status": "passed",
+      "reason": "Build configuration audit"
+    },
+    {
+      "name": "category_apiSafety",
+      "status": "passed",
+      "reason": "MC 1.21.1 API compatibility check"
+    },
+    {
+      "name": "category_vanillaFallbacks",
+      "status": "warn",
+      "reason": "Tracks use of vanilla content vs custom generation"
+    },
+    {
+      "name": "category_inferredContent",
+      "status": "passed",
+      "reason": "Tracks auto-completed and inferred content"
+    }
+  ],
+  "generatedAt": "2026-01-07T01:38:58.631Z",
+  "categories": {
+    "items": {
+      "name": "Items",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_block_item: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lucky_block_item: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "good_drops: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "good_drops: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "random_events: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "random_events: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        }
+      ],
+      "notes": "3 items audited"
+    },
+    "blocks": {
+      "name": "Blocks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lucky_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "lucky_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        }
+      ],
+      "notes": "1 blocks audited"
+    },
+    "mobs": {
+      "name": "Mobs",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "lucky_zombie: Required fields",
+          "status": "passed",
+          "message": "Health: 20, Damage: 3"
+        },
+        {
+          "name": "lucky_zombie: Drops",
+          "status": "passed",
+          "message": "1 drops defined"
+        },
+        {
+          "name": "lucky_zombie: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        },
+        {
+          "name": "lucky_spider: Required fields",
+          "status": "passed",
+          "message": "Health: 16, Damage: 2"
+        },
+        {
+          "name": "lucky_spider: Drops",
+          "status": "passed",
+          "message": "2 drops defined"
+        },
+        {
+          "name": "lucky_spider: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        },
+        {
+          "name": "lucky_creeper: Required fields",
+          "status": "failed",
+          "message": "Missing or invalid required fields"
+        },
+        {
+          "name": "lucky_creeper: Drops",
+          "status": "passed",
+          "message": "1 drops defined"
+        },
+        {
+          "name": "lucky_creeper: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        },
+        {
+          "name": "lucky_cave_spider: Required fields",
+          "status": "passed",
+          "message": "Health: 12, Damage: 2"
+        },
+        {
+          "name": "lucky_cave_spider: Drops",
+          "status": "passed",
+          "message": "2 drops defined"
+        },
+        {
+          "name": "lucky_cave_spider: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        }
+      ],
+      "notes": "4 mobs audited (0 bosses)"
+    },
+    "structures": {
+      "name": "Structures",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No structures defined",
+          "status": "skipped",
+          "message": "No structures to audit"
+        }
+      ]
+    },
+    "recipes": {
+      "name": "Recipes",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "Items with recipes",
+          "status": "passed",
+          "message": "1/3 items have recipes"
+        },
+        {
+          "name": "lucky_block_item: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        }
+      ],
+      "notes": "1 recipes audited"
+    },
+    "lootTables": {
+      "name": "Loot Tables",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "lucky_zombie: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "lucky_spider: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "lucky_creeper: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "lucky_cave_spider: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "lucky_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        }
+      ],
+      "notes": "4 mob loot tables audited"
+    },
+    "textures": {
+      "name": "Textures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Texture files generated",
+          "status": "passed",
+          "message": "8 textures generated (expected at least 4)"
+        },
+        {
+          "name": "lucky_block_item.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "good_drops.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "random_events.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "lucky_block.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "lucky_zombie.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "lucky_spider.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "lucky_creeper.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "lucky_cave_spider.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        }
+      ],
+      "notes": "8 texture files"
+    },
+    "quests": {
+      "name": "Quests",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No quests defined",
+          "status": "skipped",
+          "message": "No quests to audit"
+        }
+      ]
+    },
+    "advancements": {
+      "name": "Advancements",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Advancement files",
+          "status": "warn",
+          "message": "0 advancement files generated"
+        },
+        {
+          "name": "Root advancement",
+          "status": "warn",
+          "message": "No root advancement"
+        }
+      ],
+      "notes": "0 advancements"
+    },
+    "compilation": {
+      "name": "Compilation",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "build.gradle",
+          "status": "passed",
+          "message": "Build file exists"
+        },
+        {
+          "name": "fabric.mod.json",
+          "status": "passed",
+          "message": "Mod descriptor exists"
+        },
+        {
+          "name": "Minecraft version",
+          "status": "passed",
+          "message": "Correct MC version"
+        },
+        {
+          "name": "Java source files",
+          "status": "passed",
+          "message": "18 Java files generated"
+        }
+      ],
+      "notes": "Build configuration audit"
+    },
+    "apiSafety": {
+      "name": "API Safety",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "API safety scan",
+          "status": "passed",
+          "message": "No forbidden patterns detected"
+        }
+      ],
+      "notes": "MC 1.21.1 API compatibility check"
+    },
+    "vanillaFallbacks": {
+      "name": "Vanilla Fallbacks",
+      "status": "warn",
+      "checks": [
+        {
+          "name": "Vanilla recipe ingredients",
+          "status": "passed",
+          "message": "2 vanilla ingredients used (intentional)",
+          "details": "lucky_block_item uses minecraft:diamond, lucky_block_item uses minecraft:gold_ingot"
+        },
+        {
+          "name": "Vanilla mob drops",
+          "status": "warn",
+          "message": "6 mobs drop vanilla items (consider custom drops)",
+          "details": "lucky_zombie drops minecraft:rotten_flesh, lucky_spider drops minecraft:string, lucky_spider drops minecraft:spider_eye, lucky_creeper drops minecraft:gunpowder, lucky_cave_spider drops minecraft:string, lucky_cave_spider drops minecraft:spider_eye"
+        }
+      ],
+      "notes": "Tracks use of vanilla content vs custom generation"
+    },
+    "inferredContent": {
+      "name": "Inferred Content",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Inferred item recipes",
+          "status": "passed",
+          "message": "1/3 items have recipes"
+        },
+        {
+          "name": "Inferred mob drops",
+          "status": "passed",
+          "message": "4/4 mobs have drops"
+        },
+        {
+          "name": "Inferred spawn rules",
+          "status": "passed",
+          "message": "4/4 mobs have spawn rules"
+        }
+      ],
+      "notes": "Tracks auto-completed and inferred content"
+    }
+  },
+  "summary": {
+    "totalChecks": 51,
+    "passed": 40,
+    "failed": 6,
+    "warnings": 3,
+    "skipped": 2,
+    "overallStatus": "failed"
+  },
+  "assetsEmittedCount": 19,
+  "repairs": [
+    {
+      "path": "src/main/resources/assets/d0a1e7fc-1ac0-45ad-8fbe-140ccf3a14f7/lang/en_us.json",
+      "type": "placeholder_lang",
+      "reason": "Generated placeholder lang file - no lang file existed"
+    },
+    {
+      "path": "src/main/resources/assets/d0a1e7fc-1ac0-45ad-8fbe-140ccf3a14f7/models/item/placeholder.json",
+      "type": "placeholder_model",
+      "reason": "Generated placeholder model - no models existed"
+    },
+    {
+      "path": "src/main/resources/assets/d0a1e7fc-1ac0-45ad-8fbe-140ccf3a14f7/textures/item/placeholder.png",
+      "type": "placeholder_png",
+      "reason": "Generated rich placeholder textures (style-aware) - no PNG files existed"
+    }
+  ],
+  "missingTextureFixups": [],
+  "modelTextureIntegrity": {
+    "valid": 5,
+    "invalid": 0,
+    "fixed": 0
+  }
+}
