@@ -1,0 +1,461 @@
+{
+  "schemaVersion": "1.0.0",
+  "modId": "fortunefates",
+  "modName": "Fortune Fates",
+  "mcVersion": "1.21.1",
+  "loader": "fabric",
+  "timestamp": "2026-01-07T05:51:59.119Z",
+  "capabilitiesRequested": [],
+  "capabilitiesImplemented": [
+    "item",
+    "block"
+  ],
+  "assetsEmitted": [
+    "src/main/resources/assets/fortunefates/textures/item/lucky_block_item.png",
+    "src/main/resources/assets/fortunefates/models/item/lucky_block_item.json",
+    "src/main/resources/assets/fortunefates/textures/item/hasteregeneration_effect.png",
+    "src/main/resources/assets/fortunefates/models/item/hasteregeneration_effect.json",
+    "src/main/resources/assets/fortunefates/textures/item/small_chest_with_valuable_loot.png",
+    "src/main/resources/assets/fortunefates/models/item/small_chest_with_valuable_loot.json",
+    "src/main/resources/assets/fortunefates/textures/item/cooked_porkchops.png",
+    "src/main/resources/assets/fortunefates/models/item/cooked_porkchops.json",
+    "src/main/resources/assets/fortunefates/textures/item/silverfish_swarm.png",
+    "src/main/resources/assets/fortunefates/models/item/silverfish_swarm.json",
+    "src/main/resources/assets/fortunefates/textures/item/small_explosion.png",
+    "src/main/resources/assets/fortunefates/models/item/small_explosion.json",
+    "src/main/resources/assets/fortunefates/textures/item/slownessweakness_effect.png",
+    "src/main/resources/assets/fortunefates/models/item/slownessweakness_effect.json",
+    "src/main/resources/assets/fortunefates/textures/item/set_player_on_fire.png",
+    "src/main/resources/assets/fortunefates/models/item/set_player_on_fire.json",
+    "src/main/resources/assets/fortunefates/textures/item/poisonous_potatoes.png",
+    "src/main/resources/assets/fortunefates/models/item/poisonous_potatoes.json",
+    "src/main/resources/assets/fortunefates/blockstates/lucky_block.json",
+    "src/main/resources/assets/fortunefates/models/block/lucky_block.json",
+    "src/main/resources/assets/fortunefates/models/item/lucky_block.json",
+    "src/main/resources/assets/fortunefates/textures/block/lucky_block.png",
+    "src/main/resources/assets/fortunefates/lang/en_us.json"
+  ],
+  "invariants": [
+    {
+      "name": "category_items",
+      "status": "passed",
+      "reason": "9 items audited"
+    },
+    {
+      "name": "category_blocks",
+      "status": "passed",
+      "reason": "1 blocks audited"
+    },
+    {
+      "name": "category_mobs",
+      "status": "passed"
+    },
+    {
+      "name": "category_structures",
+      "status": "passed"
+    },
+    {
+      "name": "category_recipes",
+      "status": "failed",
+      "reason": "1 recipes audited"
+    },
+    {
+      "name": "category_lootTables",
+      "status": "passed",
+      "reason": "0 mob loot tables audited"
+    },
+    {
+      "name": "category_textures",
+      "status": "passed",
+      "reason": "10 texture files"
+    },
+    {
+      "name": "category_quests",
+      "status": "passed"
+    },
+    {
+      "name": "category_advancements",
+      "status": "passed",
+      "reason": "0 advancements"
+    },
+    {
+      "name": "category_compilation",
+      "status": "passed",
+      "reason": "Build configuration audit"
+    },
+    {
+      "name": "category_apiSafety",
+      "status": "passed",
+      "reason": "MC 1.21.1 API compatibility check"
+    },
+    {
+      "name": "category_vanillaFallbacks",
+      "status": "passed",
+      "reason": "Tracks use of vanilla content vs custom generation"
+    },
+    {
+      "name": "category_inferredContent",
+      "status": "passed",
+      "reason": "Tracks auto-completed and inferred content"
+    }
+  ],
+  "generatedAt": "2026-01-07T05:51:59.119Z",
+  "categories": {
+    "items": {
+      "name": "Items",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_block_item: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lucky_block_item: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "hasteregeneration_effect: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "hasteregeneration_effect: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "small_chest_with_valuable_loot: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "small_chest_with_valuable_loot: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "cooked_porkchops: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cooked_porkchops: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "silverfish_swarm: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "silverfish_swarm: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "small_explosion: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "small_explosion: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "slownessweakness_effect: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "slownessweakness_effect: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "set_player_on_fire: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "set_player_on_fire: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "poisonous_potatoes: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "poisonous_potatoes: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        }
+      ],
+      "notes": "9 items audited"
+    },
+    "blocks": {
+      "name": "Blocks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lucky_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "lucky_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        }
+      ],
+      "notes": "1 blocks audited"
+    },
+    "mobs": {
+      "name": "Mobs",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No mobs defined",
+          "status": "skipped",
+          "message": "No mobs to audit"
+        }
+      ]
+    },
+    "structures": {
+      "name": "Structures",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No structures defined",
+          "status": "skipped",
+          "message": "No structures to audit"
+        }
+      ]
+    },
+    "recipes": {
+      "name": "Recipes",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "Items with recipes",
+          "status": "passed",
+          "message": "1/9 items have recipes"
+        },
+        {
+          "name": "lucky_block_item: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        }
+      ],
+      "notes": "1 recipes audited"
+    },
+    "lootTables": {
+      "name": "Loot Tables",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        }
+      ],
+      "notes": "0 mob loot tables audited"
+    },
+    "textures": {
+      "name": "Textures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Texture files generated",
+          "status": "passed",
+          "message": "10 textures generated (expected at least 10)"
+        },
+        {
+          "name": "lucky_block_item.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "hasteregeneration_effect.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "small_chest_with_valuable_loot.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "cooked_porkchops.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "silverfish_swarm.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "small_explosion.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "slownessweakness_effect.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "set_player_on_fire.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "poisonous_potatoes.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "lucky_block.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        }
+      ],
+      "notes": "10 texture files"
+    },
+    "quests": {
+      "name": "Quests",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No quests defined",
+          "status": "skipped",
+          "message": "No quests to audit"
+        }
+      ]
+    },
+    "advancements": {
+      "name": "Advancements",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Advancement files",
+          "status": "warn",
+          "message": "0 advancement files generated"
+        },
+        {
+          "name": "Root advancement",
+          "status": "warn",
+          "message": "No root advancement"
+        }
+      ],
+      "notes": "0 advancements"
+    },
+    "compilation": {
+      "name": "Compilation",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "build.gradle",
+          "status": "passed",
+          "message": "Build file exists"
+        },
+        {
+          "name": "fabric.mod.json",
+          "status": "passed",
+          "message": "Mod descriptor exists"
+        },
+        {
+          "name": "Minecraft version",
+          "status": "passed",
+          "message": "Correct MC version"
+        },
+        {
+          "name": "Java source files",
+          "status": "passed",
+          "message": "4 Java files generated"
+        }
+      ],
+      "notes": "Build configuration audit"
+    },
+    "apiSafety": {
+      "name": "API Safety",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "API safety scan",
+          "status": "passed",
+          "message": "No forbidden patterns detected"
+        }
+      ],
+      "notes": "MC 1.21.1 API compatibility check"
+    },
+    "vanillaFallbacks": {
+      "name": "Vanilla Fallbacks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Vanilla recipe ingredients",
+          "status": "passed",
+          "message": "1 vanilla ingredients used (intentional)",
+          "details": "lucky_block_item uses minecraft:gold_ingot"
+        }
+      ],
+      "notes": "Tracks use of vanilla content vs custom generation"
+    },
+    "inferredContent": {
+      "name": "Inferred Content",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Inferred item recipes",
+          "status": "passed",
+          "message": "1/9 items have recipes"
+        }
+      ],
+      "notes": "Tracks auto-completed and inferred content"
+    }
+  },
+  "summary": {
+    "totalChecks": 47,
+    "passed": 41,
+    "failed": 1,
+    "warnings": 2,
+    "skipped": 3,
+    "overallStatus": "failed"
+  },
+  "assetsEmittedCount": 27,
+  "repairs": [
+    {
+      "path": "src/main/resources/assets/2b735535-e053-4516-903f-18c21275fd54/lang/en_us.json",
+      "type": "placeholder_lang",
+      "reason": "Generated placeholder lang file - no lang file existed"
+    },
+    {
+      "path": "src/main/resources/assets/2b735535-e053-4516-903f-18c21275fd54/models/item/placeholder.json",
+      "type": "placeholder_model",
+      "reason": "Generated placeholder model - no models existed"
+    },
+    {
+      "path": "src/main/resources/assets/2b735535-e053-4516-903f-18c21275fd54/textures/item/placeholder.png",
+      "type": "placeholder_png",
+      "reason": "Generated rich placeholder textures (style-aware) - no PNG files existed"
+    }
+  ],
+  "missingTextureFixups": [],
+  "modelTextureIntegrity": {
+    "valid": 11,
+    "invalid": 0,
+    "fixed": 0
+  }
+}

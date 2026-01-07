@@ -1,0 +1,14 @@
+{
+  "itemGroup.fortunefates.main": "Fortune Fates",
+  "itemGroup.fortunefates": "Fortune Fates",
+  "item.fortunefates.lucky_block_item": "Lucky Block",
+  "item.fortunefates.hasteregeneration_effect": "Hasteregeneration Effect",
+  "item.fortunefates.small_chest_with_valuable_loot": "Small Chest With Valuable Loot",
+  "item.fortunefates.cooked_porkchops": "Cooked Porkchops",
+  "item.fortunefates.silverfish_swarm": "Silverfish Swarm",
+  "item.fortunefates.small_explosion": "Small Explosion",
+  "item.fortunefates.slownessweakness_effect": "Slownessweakness Effect",
+  "item.fortunefates.set_player_on_fire": "Set Player On Fire",
+  "item.fortunefates.poisonous_potatoes": "Poisonous Potatoes",
+  "block.fortunefates.lucky_block": "Lucky Block"
+}
