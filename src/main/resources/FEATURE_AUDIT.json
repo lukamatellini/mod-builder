@@ -1,0 +1,336 @@
+{
+  "schemaVersion": "1.0.0",
+  "modId": "velocitysoles",
+  "modName": "Velocity Soles",
+  "mcVersion": "1.21.1",
+  "loader": "fabric",
+  "timestamp": "2026-01-07T14:25:00.114Z",
+  "capabilitiesRequested": [],
+  "capabilitiesImplemented": [
+    "item"
+  ],
+  "assetsEmitted": [
+    "src/main/resources/assets/velocitysoles/textures/item/velocity_boots.png",
+    "src/main/resources/assets/velocitysoles/models/item/velocity_boots.json",
+    "src/main/resources/assets/velocitysoles/textures/mob_effect/velocity_boots_speed.png",
+    "src/main/resources/assets/velocitysoles/lang/en_us.json",
+    "src/main/resources/assets/velocitysoles/textures/models/armor/velocity_layer_1.png",
+    "src/main/resources/assets/velocitysoles/textures/models/armor/velocity_layer_2.png",
+    "src/main/resources/assets/velocitysoles/models/item/velocity_helmet.json",
+    "src/main/resources/assets/velocitysoles/textures/item/velocity_helmet.png",
+    "src/main/resources/assets/velocitysoles/models/item/velocity_chestplate.json",
+    "src/main/resources/assets/velocitysoles/textures/item/velocity_chestplate.png",
+    "src/main/resources/assets/velocitysoles/models/item/velocity_leggings.json",
+    "src/main/resources/assets/velocitysoles/textures/item/velocity_leggings.png"
+  ],
+  "invariants": [
+    {
+      "name": "category_items",
+      "status": "passed",
+      "reason": "1 items audited"
+    },
+    {
+      "name": "category_blocks",
+      "status": "passed"
+    },
+    {
+      "name": "category_mobs",
+      "status": "passed"
+    },
+    {
+      "name": "category_structures",
+      "status": "passed"
+    },
+    {
+      "name": "category_recipes",
+      "status": "failed",
+      "reason": "1 recipes audited"
+    },
+    {
+      "name": "category_lootTables",
+      "status": "passed",
+      "reason": "0 mob loot tables audited"
+    },
+    {
+      "name": "category_textures",
+      "status": "passed",
+      "reason": "7 texture files"
+    },
+    {
+      "name": "category_quests",
+      "status": "passed"
+    },
+    {
+      "name": "category_advancements",
+      "status": "passed",
+      "reason": "0 advancements"
+    },
+    {
+      "name": "category_compilation",
+      "status": "passed",
+      "reason": "Build configuration audit"
+    },
+    {
+      "name": "category_apiSafety",
+      "status": "passed",
+      "reason": "MC 1.21.1 API compatibility check"
+    },
+    {
+      "name": "category_vanillaFallbacks",
+      "status": "passed",
+      "reason": "Tracks use of vanilla content vs custom generation"
+    },
+    {
+      "name": "category_inferredContent",
+      "status": "passed",
+      "reason": "Tracks auto-completed and inferred content"
+    }
+  ],
+  "generatedAt": "2026-01-07T14:25:00.114Z",
+  "categories": {
+    "items": {
+      "name": "Items",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "velocity_boots: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "velocity_boots: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        }
+      ],
+      "notes": "1 items audited"
+    },
+    "blocks": {
+      "name": "Blocks",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No blocks defined",
+          "status": "skipped",
+          "message": "No blocks to audit"
+        }
+      ]
+    },
+    "mobs": {
+      "name": "Mobs",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No mobs defined",
+          "status": "skipped",
+          "message": "No mobs to audit"
+        }
+      ]
+    },
+    "structures": {
+      "name": "Structures",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No structures defined",
+          "status": "skipped",
+          "message": "No structures to audit"
+        }
+      ]
+    },
+    "recipes": {
+      "name": "Recipes",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "Items with recipes",
+          "status": "passed",
+          "message": "1/1 items have recipes"
+        },
+        {
+          "name": "velocity_boots: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        }
+      ],
+      "notes": "1 recipes audited"
+    },
+    "lootTables": {
+      "name": "Loot Tables",
+      "status": "passed",
+      "checks": [],
+      "notes": "0 mob loot tables audited"
+    },
+    "textures": {
+      "name": "Textures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Texture files generated",
+          "status": "passed",
+          "message": "7 textures generated (expected at least 1)"
+        },
+        {
+          "name": "velocity_boots.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "velocity_boots_speed.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "velocity_layer_1.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "velocity_layer_2.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "velocity_helmet.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "velocity_chestplate.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "velocity_leggings.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        }
+      ],
+      "notes": "7 texture files"
+    },
+    "quests": {
+      "name": "Quests",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No quests defined",
+          "status": "skipped",
+          "message": "No quests to audit"
+        }
+      ]
+    },
+    "advancements": {
+      "name": "Advancements",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Advancement files",
+          "status": "warn",
+          "message": "0 advancement files generated"
+        },
+        {
+          "name": "Root advancement",
+          "status": "warn",
+          "message": "No root advancement"
+        }
+      ],
+      "notes": "0 advancements"
+    },
+    "compilation": {
+      "name": "Compilation",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "build.gradle",
+          "status": "passed",
+          "message": "Build file exists"
+        },
+        {
+          "name": "fabric.mod.json",
+          "status": "passed",
+          "message": "Mod descriptor exists"
+        },
+        {
+          "name": "Minecraft version",
+          "status": "passed",
+          "message": "Correct MC version"
+        },
+        {
+          "name": "Java source files",
+          "status": "passed",
+          "message": "3 Java files generated"
+        }
+      ],
+      "notes": "Build configuration audit"
+    },
+    "apiSafety": {
+      "name": "API Safety",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "API safety scan",
+          "status": "passed",
+          "message": "No forbidden patterns detected"
+        }
+      ],
+      "notes": "MC 1.21.1 API compatibility check"
+    },
+    "vanillaFallbacks": {
+      "name": "Vanilla Fallbacks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Vanilla recipe ingredients",
+          "status": "passed",
+          "message": "1 vanilla ingredients used (intentional)",
+          "details": "velocity_boots uses minecraft:iron_ingot"
+        }
+      ],
+      "notes": "Tracks use of vanilla content vs custom generation"
+    },
+    "inferredContent": {
+      "name": "Inferred Content",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Inferred item recipes",
+          "status": "passed",
+          "message": "1/1 items have recipes"
+        }
+      ],
+      "notes": "Tracks auto-completed and inferred content"
+    }
+  },
+  "summary": {
+    "totalChecks": 25,
+    "passed": 18,
+    "failed": 1,
+    "warnings": 2,
+    "skipped": 4,
+    "overallStatus": "failed"
+  },
+  "assetsEmittedCount": 16,
+  "repairs": [
+    {
+      "path": "src/main/resources/assets/2bfea99d-02fb-4442-9a3c-6ddb5b346372/lang/en_us.json",
+      "type": "placeholder_lang",
+      "reason": "Generated placeholder lang file - no lang file existed"
+    },
+    {
+      "path": "src/main/resources/assets/2bfea99d-02fb-4442-9a3c-6ddb5b346372/models/item/placeholder.json",
+      "type": "placeholder_model",
+      "reason": "Generated placeholder model - no models existed"
+    },
+    {
+      "path": "src/main/resources/assets/2bfea99d-02fb-4442-9a3c-6ddb5b346372/textures/item/placeholder.png",
+      "type": "placeholder_png",
+      "reason": "Generated rich placeholder textures (style-aware) - no PNG files existed"
+    }
+  ],
+  "missingTextureFixups": [],
+  "modelTextureIntegrity": {
+    "valid": 5,
+    "invalid": 0,
+    "fixed": 0
+  }
+}
