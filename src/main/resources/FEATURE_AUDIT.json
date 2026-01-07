@@ -1,0 +1,498 @@
+{
+  "schemaVersion": "1.0.0",
+  "modId": "luckylootboxes",
+  "modName": "Lucky Loot Boxes",
+  "mcVersion": "1.21.1",
+  "loader": "fabric",
+  "timestamp": "2026-01-07T02:52:28.046Z",
+  "capabilitiesRequested": [],
+  "capabilitiesImplemented": [
+    "item",
+    "block",
+    "mob"
+  ],
+  "assetsEmitted": [
+    "src/main/resources/assets/luckylootboxes/textures/item/lucky_charm.png",
+    "src/main/resources/assets/luckylootboxes/models/item/lucky_charm.json",
+    "src/main/resources/assets/luckylootboxes/textures/item/unlucky_charm.png",
+    "src/main/resources/assets/luckylootboxes/models/item/unlucky_charm.json",
+    "src/main/resources/assets/luckylootboxes/textures/item/four_leaf_clover.png",
+    "src/main/resources/assets/luckylootboxes/models/item/four_leaf_clover.json",
+    "src/main/resources/assets/luckylootboxes/textures/item/common_bone.png",
+    "src/main/resources/assets/luckylootboxes/models/item/common_bone.json",
+    "src/main/resources/assets/luckylootboxes/textures/item/rare_wither_skeleton_skull.png",
+    "src/main/resources/assets/luckylootboxes/models/item/rare_wither_skeleton_skull.json",
+    "src/main/resources/assets/luckylootboxes/blockstates/lucky_block.json",
+    "src/main/resources/assets/luckylootboxes/models/block/lucky_block.json",
+    "src/main/resources/assets/luckylootboxes/models/item/lucky_block.json",
+    "src/main/resources/assets/luckylootboxes/textures/block/lucky_block.png",
+    "src/main/resources/assets/luckylootboxes/blockstates/cursed_lucky_block.json",
+    "src/main/resources/assets/luckylootboxes/models/block/cursed_lucky_block.json",
+    "src/main/resources/assets/luckylootboxes/models/item/cursed_lucky_block.json",
+    "src/main/resources/assets/luckylootboxes/textures/block/cursed_lucky_block.png",
+    "src/main/resources/assets/luckylootboxes/textures/entity/lucky_goblin.png",
+    "src/main/resources/assets/luckylootboxes/textures/entity/cursed_spirit.png",
+    "src/main/resources/assets/luckylootboxes/lang/en_us.json"
+  ],
+  "invariants": [
+    {
+      "name": "category_items",
+      "status": "passed",
+      "reason": "5 items audited"
+    },
+    {
+      "name": "category_blocks",
+      "status": "passed",
+      "reason": "2 blocks audited"
+    },
+    {
+      "name": "category_mobs",
+      "status": "passed",
+      "reason": "2 mobs audited (0 bosses)"
+    },
+    {
+      "name": "category_structures",
+      "status": "passed"
+    },
+    {
+      "name": "category_recipes",
+      "status": "failed",
+      "reason": "3 recipes audited"
+    },
+    {
+      "name": "category_lootTables",
+      "status": "failed",
+      "reason": "2 mob loot tables audited"
+    },
+    {
+      "name": "category_textures",
+      "status": "passed",
+      "reason": "9 texture files"
+    },
+    {
+      "name": "category_quests",
+      "status": "passed"
+    },
+    {
+      "name": "category_advancements",
+      "status": "passed",
+      "reason": "0 advancements"
+    },
+    {
+      "name": "category_compilation",
+      "status": "passed",
+      "reason": "Build configuration audit"
+    },
+    {
+      "name": "category_apiSafety",
+      "status": "passed",
+      "reason": "MC 1.21.1 API compatibility check"
+    },
+    {
+      "name": "category_vanillaFallbacks",
+      "status": "warn",
+      "reason": "Tracks use of vanilla content vs custom generation"
+    },
+    {
+      "name": "category_inferredContent",
+      "status": "passed",
+      "reason": "Tracks auto-completed and inferred content"
+    }
+  ],
+  "generatedAt": "2026-01-07T02:52:28.046Z",
+  "categories": {
+    "items": {
+      "name": "Items",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_charm: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lucky_charm: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "unlucky_charm: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "unlucky_charm: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "four_leaf_clover: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "four_leaf_clover: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "common_bone: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "common_bone: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "rare_wither_skeleton_skull: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "rare_wither_skeleton_skull: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        }
+      ],
+      "notes": "5 items audited"
+    },
+    "blocks": {
+      "name": "Blocks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lucky_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "lucky_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "cursed_lucky_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cursed_lucky_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "cursed_lucky_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        }
+      ],
+      "notes": "2 blocks audited"
+    },
+    "mobs": {
+      "name": "Mobs",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_goblin: Required fields",
+          "status": "passed",
+          "message": "Health: 20, Damage: 3"
+        },
+        {
+          "name": "lucky_goblin: Drops",
+          "status": "passed",
+          "message": "3 drops defined"
+        },
+        {
+          "name": "lucky_goblin: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        },
+        {
+          "name": "cursed_spirit: Required fields",
+          "status": "passed",
+          "message": "Health: 30, Damage: 6"
+        },
+        {
+          "name": "cursed_spirit: Drops",
+          "status": "passed",
+          "message": "3 drops defined"
+        },
+        {
+          "name": "cursed_spirit: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        }
+      ],
+      "notes": "2 mobs audited (0 bosses)"
+    },
+    "structures": {
+      "name": "Structures",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No structures defined",
+          "status": "skipped",
+          "message": "No structures to audit"
+        }
+      ]
+    },
+    "recipes": {
+      "name": "Recipes",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "Items with recipes",
+          "status": "passed",
+          "message": "3/5 items have recipes"
+        },
+        {
+          "name": "lucky_charm: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "unlucky_charm: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "four_leaf_clover: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        }
+      ],
+      "notes": "3 recipes audited"
+    },
+    "lootTables": {
+      "name": "Loot Tables",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "lucky_goblin: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "cursed_spirit: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "lucky_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        },
+        {
+          "name": "cursed_lucky_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        }
+      ],
+      "notes": "2 mob loot tables audited"
+    },
+    "textures": {
+      "name": "Textures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Texture files generated",
+          "status": "passed",
+          "message": "9 textures generated (expected at least 7)"
+        },
+        {
+          "name": "lucky_charm.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "unlucky_charm.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "four_leaf_clover.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "common_bone.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "rare_wither_skeleton_skull.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "lucky_block.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "cursed_lucky_block.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "lucky_goblin.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "cursed_spirit.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        }
+      ],
+      "notes": "9 texture files"
+    },
+    "quests": {
+      "name": "Quests",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No quests defined",
+          "status": "skipped",
+          "message": "No quests to audit"
+        }
+      ]
+    },
+    "advancements": {
+      "name": "Advancements",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Advancement files",
+          "status": "warn",
+          "message": "0 advancement files generated"
+        },
+        {
+          "name": "Root advancement",
+          "status": "warn",
+          "message": "No root advancement"
+        }
+      ],
+      "notes": "0 advancements"
+    },
+    "compilation": {
+      "name": "Compilation",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "build.gradle",
+          "status": "passed",
+          "message": "Build file exists"
+        },
+        {
+          "name": "fabric.mod.json",
+          "status": "passed",
+          "message": "Mod descriptor exists"
+        },
+        {
+          "name": "Minecraft version",
+          "status": "passed",
+          "message": "Correct MC version"
+        },
+        {
+          "name": "Java source files",
+          "status": "passed",
+          "message": "12 Java files generated"
+        }
+      ],
+      "notes": "Build configuration audit"
+    },
+    "apiSafety": {
+      "name": "API Safety",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "API safety scan",
+          "status": "passed",
+          "message": "No forbidden patterns detected"
+        }
+      ],
+      "notes": "MC 1.21.1 API compatibility check"
+    },
+    "vanillaFallbacks": {
+      "name": "Vanilla Fallbacks",
+      "status": "warn",
+      "checks": [
+        {
+          "name": "Vanilla recipe ingredients",
+          "status": "passed",
+          "message": "9 vanilla ingredients used (intentional)",
+          "details": "lucky_charm uses minecraft:diamond, lucky_charm uses minecraft:diamond, lucky_charm uses minecraft:gold_ingot, lucky_charm uses minecraft:emerald, unlucky_charm uses minecraft:iron_ingot, unlucky_charm uses minecraft:coal, unlucky_charm uses minecraft:coal, four_leaf_clover uses minecraft:diamond, four_leaf_clover uses minecraft:stick"
+        },
+        {
+          "name": "Vanilla mob drops",
+          "status": "warn",
+          "message": "4 mobs drop vanilla items (consider custom drops)",
+          "details": "lucky_goblin drops minecraft:gold_ingot, lucky_goblin drops minecraft:gold_ingot, lucky_goblin drops minecraft:emerald, cursed_spirit drops minecraft:ghast_tear"
+        }
+      ],
+      "notes": "Tracks use of vanilla content vs custom generation"
+    },
+    "inferredContent": {
+      "name": "Inferred Content",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Inferred item recipes",
+          "status": "passed",
+          "message": "3/5 items have recipes"
+        },
+        {
+          "name": "Inferred mob drops",
+          "status": "passed",
+          "message": "2/2 mobs have drops"
+        },
+        {
+          "name": "Inferred spawn rules",
+          "status": "passed",
+          "message": "2/2 mobs have spawn rules"
+        }
+      ],
+      "notes": "Tracks auto-completed and inferred content"
+    }
+  },
+  "summary": {
+    "totalChecks": 54,
+    "passed": 44,
+    "failed": 5,
+    "warnings": 3,
+    "skipped": 2,
+    "overallStatus": "failed"
+  },
+  "assetsEmittedCount": 25,
+  "repairs": [
+    {
+      "path": "src/main/resources/assets/32255a46-2ad4-476a-b17e-c33b7b1f259a/lang/en_us.json",
+      "type": "placeholder_lang",
+      "reason": "Generated placeholder lang file - no lang file existed"
+    },
+    {
+      "path": "src/main/resources/assets/32255a46-2ad4-476a-b17e-c33b7b1f259a/models/item/placeholder.json",
+      "type": "placeholder_model",
+      "reason": "Generated placeholder model - no models existed"
+    },
+    {
+      "path": "src/main/resources/assets/32255a46-2ad4-476a-b17e-c33b7b1f259a/textures/item/placeholder.png",
+      "type": "placeholder_png",
+      "reason": "Generated rich placeholder textures (style-aware) - no PNG files existed"
+    }
+  ],
+  "missingTextureFixups": [],
+  "modelTextureIntegrity": {
+    "valid": 8,
+    "invalid": 0,
+    "fixed": 0
+  }
+}

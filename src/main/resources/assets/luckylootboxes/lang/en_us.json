@@ -1,0 +1,13 @@
+{
+  "itemGroup.luckylootboxes.main": "Lucky Loot Boxes",
+  "itemGroup.luckylootboxes": "Lucky Loot Boxes",
+  "item.luckylootboxes.lucky_charm": "Lucky Charm",
+  "item.luckylootboxes.unlucky_charm": "Unlucky Charm",
+  "item.luckylootboxes.four_leaf_clover": "Four-Leaf Clover",
+  "item.luckylootboxes.common_bone": "Common Bone",
+  "item.luckylootboxes.rare_wither_skeleton_skull": "Rare Wither Skeleton Skull",
+  "block.luckylootboxes.lucky_block": "Lucky Block",
+  "block.luckylootboxes.cursed_lucky_block": "Cursed Lucky Block",
+  "entity.luckylootboxes.lucky_goblin": "Lucky Goblin",
+  "entity.luckylootboxes.cursed_spirit": "Cursed Spirit"
+}
