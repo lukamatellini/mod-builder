@@ -1,0 +1,663 @@
+{
+  "schemaVersion": "1.0.0",
+  "modId": "cheesyblade",
+  "modName": "Cheesy Blade",
+  "mcVersion": "1.21.1",
+  "loader": "fabric",
+  "timestamp": "2026-01-07T14:19:42.251Z",
+  "capabilitiesRequested": [],
+  "capabilitiesImplemented": [
+    "item",
+    "block",
+    "mob",
+    "structure"
+  ],
+  "assetsEmitted": [
+    "src/main/resources/assets/cheesyblade/textures/item/cheese_sword.png",
+    "src/main/resources/assets/cheesyblade/models/item/cheese_sword.json",
+    "src/main/resources/assets/cheesyblade/textures/item/cheese_slice.png",
+    "src/main/resources/assets/cheesyblade/models/item/cheese_slice.json",
+    "src/main/resources/assets/cheesyblade/textures/item/moldy_cheese.png",
+    "src/main/resources/assets/cheesyblade/models/item/moldy_cheese.json",
+    "src/main/resources/assets/cheesyblade/textures/item/cheese_curds.png",
+    "src/main/resources/assets/cheesyblade/models/item/cheese_curds.json",
+    "src/main/resources/assets/cheesyblade/textures/item/cheese_armor_helmet.png",
+    "src/main/resources/assets/cheesyblade/models/item/cheese_armor_helmet.json",
+    "src/main/resources/assets/cheesyblade/textures/item/cheese_armor_chestplate.png",
+    "src/main/resources/assets/cheesyblade/models/item/cheese_armor_chestplate.json",
+    "src/main/resources/assets/cheesyblade/textures/item/cheese_armor_leggings.png",
+    "src/main/resources/assets/cheesyblade/models/item/cheese_armor_leggings.json",
+    "src/main/resources/assets/cheesyblade/textures/item/cheese_armor_boots.png",
+    "src/main/resources/assets/cheesyblade/models/item/cheese_armor_boots.json",
+    "src/main/resources/assets/cheesyblade/textures/item/x_cheese_slice.png",
+    "src/main/resources/assets/cheesyblade/models/item/x_cheese_slice.json",
+    "src/main/resources/assets/cheesyblade/textures/item/x_cheese_block.png",
+    "src/main/resources/assets/cheesyblade/models/item/x_cheese_block.json",
+    "src/main/resources/assets/cheesyblade/textures/item/1x_moldy_cheese.png",
+    "src/main/resources/assets/cheesyblade/models/item/1x_moldy_cheese.json",
+    "src/main/resources/assets/cheesyblade/textures/item/x_moldy_cheese.png",
+    "src/main/resources/assets/cheesyblade/models/item/x_moldy_cheese.json",
+    "src/main/resources/assets/cheesyblade/textures/item/x_cheese_curds_smelts_into_cheese_curds.png",
+    "src/main/resources/assets/cheesyblade/models/item/x_cheese_curds_smelts_into_cheese_curds.json",
+    "src/main/resources/assets/cheesyblade/blockstates/cheese_block.json",
+    "src/main/resources/assets/cheesyblade/models/block/cheese_block.json",
+    "src/main/resources/assets/cheesyblade/models/item/cheese_block.json",
+    "src/main/resources/assets/cheesyblade/textures/block/cheese_block.png",
+    "src/main/resources/assets/cheesyblade/blockstates/aged_cheese_block.json",
+    "src/main/resources/assets/cheesyblade/models/block/aged_cheese_block.json",
+    "src/main/resources/assets/cheesyblade/models/item/aged_cheese_block.json",
+    "src/main/resources/assets/cheesyblade/textures/block/aged_cheese_block.png",
+    "src/main/resources/assets/cheesyblade/blockstates/cheese_ore.json",
+    "src/main/resources/assets/cheesyblade/models/block/cheese_ore.json",
+    "src/main/resources/assets/cheesyblade/models/item/cheese_ore.json",
+    "src/main/resources/assets/cheesyblade/textures/block/cheese_ore.png",
+    "src/main/resources/assets/cheesyblade/textures/entity/cheese_golem.png",
+    "src/main/resources/assets/cheesyblade/textures/entity/hungry_mouse.png",
+    "src/main/resources/assets/cheesyblade/lang/en_us.json",
+    "src/main/resources/assets/cheesyblade/textures/gui/structure/cheese_mine.png",
+    "src/main/resources/assets/cheesyblade/textures/models/armor/cheese_armor_layer_1.png",
+    "src/main/resources/assets/cheesyblade/textures/models/armor/cheese_armor_layer_2.png"
+  ],
+  "invariants": [
+    {
+      "name": "category_items",
+      "status": "passed",
+      "reason": "13 items audited"
+    },
+    {
+      "name": "category_blocks",
+      "status": "passed",
+      "reason": "3 blocks audited"
+    },
+    {
+      "name": "category_mobs",
+      "status": "passed",
+      "reason": "2 mobs audited (0 bosses)"
+    },
+    {
+      "name": "category_structures",
+      "status": "passed",
+      "reason": "1 structures audited"
+    },
+    {
+      "name": "category_recipes",
+      "status": "failed",
+      "reason": "8 recipes audited"
+    },
+    {
+      "name": "category_lootTables",
+      "status": "failed",
+      "reason": "2 mob loot tables audited"
+    },
+    {
+      "name": "category_textures",
+      "status": "passed",
+      "reason": "21 texture files"
+    },
+    {
+      "name": "category_quests",
+      "status": "passed"
+    },
+    {
+      "name": "category_advancements",
+      "status": "passed",
+      "reason": "0 advancements"
+    },
+    {
+      "name": "category_compilation",
+      "status": "passed",
+      "reason": "Build configuration audit"
+    },
+    {
+      "name": "category_apiSafety",
+      "status": "passed",
+      "reason": "MC 1.21.1 API compatibility check"
+    },
+    {
+      "name": "category_vanillaFallbacks",
+      "status": "passed",
+      "reason": "Tracks use of vanilla content vs custom generation"
+    },
+    {
+      "name": "category_inferredContent",
+      "status": "passed",
+      "reason": "Tracks auto-completed and inferred content"
+    }
+  ],
+  "generatedAt": "2026-01-07T14:19:42.251Z",
+  "categories": {
+    "items": {
+      "name": "Items",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "cheese_sword: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cheese_sword: Weapon stats",
+          "status": "passed",
+          "message": "Damage: 6, Durability: 250"
+        },
+        {
+          "name": "cheese_sword: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "cheese_slice: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cheese_slice: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "moldy_cheese: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "moldy_cheese: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "cheese_curds: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cheese_curds: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "cheese_armor_helmet: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cheese_armor_helmet: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "cheese_armor_chestplate: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cheese_armor_chestplate: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "cheese_armor_leggings: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cheese_armor_leggings: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "cheese_armor_boots: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cheese_armor_boots: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "x_cheese_slice: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "x_cheese_slice: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "x_cheese_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "x_cheese_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "1x_moldy_cheese: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "1x_moldy_cheese: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "x_moldy_cheese: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "x_moldy_cheese: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "x_cheese_curds_smelts_into_cheese_curds: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "x_cheese_curds_smelts_into_cheese_curds: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        }
+      ],
+      "notes": "13 items audited"
+    },
+    "blocks": {
+      "name": "Blocks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "cheese_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cheese_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "cheese_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "aged_cheese_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "aged_cheese_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "aged_cheese_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "cheese_ore: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cheese_ore: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "cheese_ore: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        }
+      ],
+      "notes": "3 blocks audited"
+    },
+    "mobs": {
+      "name": "Mobs",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "cheese_golem: Required fields",
+          "status": "passed",
+          "message": "Health: 40, Damage: 8"
+        },
+        {
+          "name": "cheese_golem: Drops",
+          "status": "passed",
+          "message": "2 drops defined"
+        },
+        {
+          "name": "cheese_golem: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest, minecraft:mountains"
+        },
+        {
+          "name": "hungry_mouse: Required fields",
+          "status": "passed",
+          "message": "Health: 10, Damage: 2"
+        },
+        {
+          "name": "hungry_mouse: Drops",
+          "status": "passed",
+          "message": "1 drops defined"
+        },
+        {
+          "name": "hungry_mouse: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        }
+      ],
+      "notes": "2 mobs audited (0 bosses)"
+    },
+    "structures": {
+      "name": "Structures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "cheese_mine: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cheese_mine: Features",
+          "status": "passed",
+          "message": "2 features defined"
+        }
+      ],
+      "notes": "1 structures audited"
+    },
+    "recipes": {
+      "name": "Recipes",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "Items with recipes",
+          "status": "passed",
+          "message": "8/13 items have recipes"
+        },
+        {
+          "name": "cheese_sword: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "cheese_slice: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "moldy_cheese: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "cheese_curds: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "cheese_armor_helmet: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "cheese_armor_chestplate: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "cheese_armor_leggings: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "cheese_armor_boots: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        }
+      ],
+      "notes": "8 recipes audited"
+    },
+    "lootTables": {
+      "name": "Loot Tables",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "cheese_golem: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "hungry_mouse: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "cheese_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        },
+        {
+          "name": "aged_cheese_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        },
+        {
+          "name": "cheese_ore: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        }
+      ],
+      "notes": "2 mob loot tables audited"
+    },
+    "textures": {
+      "name": "Textures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Texture files generated",
+          "status": "passed",
+          "message": "21 textures generated (expected at least 16)"
+        },
+        {
+          "name": "cheese_sword.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "cheese_slice.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "moldy_cheese.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "cheese_curds.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "cheese_armor_helmet.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "cheese_armor_chestplate.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "cheese_armor_leggings.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "cheese_armor_boots.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "x_cheese_slice.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "x_cheese_block.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        }
+      ],
+      "notes": "21 texture files"
+    },
+    "quests": {
+      "name": "Quests",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No quests defined",
+          "status": "skipped",
+          "message": "No quests to audit"
+        }
+      ]
+    },
+    "advancements": {
+      "name": "Advancements",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Advancement files",
+          "status": "warn",
+          "message": "0 advancement files generated"
+        },
+        {
+          "name": "Root advancement",
+          "status": "warn",
+          "message": "No root advancement"
+        }
+      ],
+      "notes": "0 advancements"
+    },
+    "compilation": {
+      "name": "Compilation",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "build.gradle",
+          "status": "passed",
+          "message": "Build file exists"
+        },
+        {
+          "name": "fabric.mod.json",
+          "status": "passed",
+          "message": "Mod descriptor exists"
+        },
+        {
+          "name": "Minecraft version",
+          "status": "passed",
+          "message": "Correct MC version"
+        },
+        {
+          "name": "Java source files",
+          "status": "passed",
+          "message": "15 Java files generated"
+        }
+      ],
+      "notes": "Build configuration audit"
+    },
+    "apiSafety": {
+      "name": "API Safety",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "API safety scan",
+          "status": "passed",
+          "message": "No forbidden patterns detected"
+        }
+      ],
+      "notes": "MC 1.21.1 API compatibility check"
+    },
+    "vanillaFallbacks": {
+      "name": "Vanilla Fallbacks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Vanilla recipe ingredients",
+          "status": "passed",
+          "message": "14 vanilla ingredients used (intentional)",
+          "details": "cheese_sword uses minecraft:stick, cheese_slice uses minecraft:diamond, cheese_slice uses minecraft:stick, moldy_cheese uses minecraft:diamond, cheese_curds uses minecraft:diamond, cheese_curds uses minecraft:stick, cheese_armor_helmet uses minecraft:diamond, cheese_armor_helmet uses minecraft:stick, cheese_armor_chestplate uses minecraft:diamond, cheese_armor_chestplate uses minecraft:stick"
+        }
+      ],
+      "notes": "Tracks use of vanilla content vs custom generation"
+    },
+    "inferredContent": {
+      "name": "Inferred Content",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Inferred item recipes",
+          "status": "passed",
+          "message": "8/13 items have recipes"
+        },
+        {
+          "name": "Inferred mob drops",
+          "status": "passed",
+          "message": "2/2 mobs have drops"
+        },
+        {
+          "name": "Inferred spawn rules",
+          "status": "passed",
+          "message": "2/2 mobs have spawn rules"
+        },
+        {
+          "name": "Inferred structure features",
+          "status": "passed",
+          "message": "1/1 structures have features"
+        }
+      ],
+      "notes": "Tracks auto-completed and inferred content"
+    }
+  },
+  "summary": {
+    "totalChecks": 82,
+    "passed": 69,
+    "failed": 10,
+    "warnings": 2,
+    "skipped": 1,
+    "overallStatus": "failed"
+  },
+  "assetsEmittedCount": 48,
+  "repairs": [
+    {
+      "path": "src/main/resources/assets/3d680b99-846e-4c8b-beab-1085162d2e97/lang/en_us.json",
+      "type": "placeholder_lang",
+      "reason": "Generated placeholder lang file - no lang file existed"
+    },
+    {
+      "path": "src/main/resources/assets/3d680b99-846e-4c8b-beab-1085162d2e97/models/item/placeholder.json",
+      "type": "placeholder_model",
+      "reason": "Generated placeholder model - no models existed"
+    },
+    {
+      "path": "src/main/resources/assets/3d680b99-846e-4c8b-beab-1085162d2e97/textures/item/placeholder.png",
+      "type": "placeholder_png",
+      "reason": "Generated rich placeholder textures (style-aware) - no PNG files existed"
+    }
+  ],
+  "missingTextureFixups": [],
+  "modelTextureIntegrity": {
+    "valid": 17,
+    "invalid": 0,
+    "fixed": 0
+  }
+}

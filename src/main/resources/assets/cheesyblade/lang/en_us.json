@@ -1,0 +1,23 @@
+{
+  "itemGroup.cheesyblade.main": "Cheesy Blade",
+  "itemGroup.cheesyblade": "Cheesy Blade",
+  "item.cheesyblade.cheese_sword": "Cheese Sword",
+  "item.cheesyblade.cheese_slice": "Cheese Slice",
+  "item.cheesyblade.moldy_cheese": "Moldy Cheese",
+  "item.cheesyblade.cheese_curds": "Cheese Curds",
+  "item.cheesyblade.cheese_armor_helmet": "Cheese Helmet",
+  "item.cheesyblade.cheese_armor_chestplate": "Cheese Chestplate",
+  "item.cheesyblade.cheese_armor_leggings": "Cheese Leggings",
+  "item.cheesyblade.cheese_armor_boots": "Cheese Boots",
+  "item.cheesyblade.x_cheese_slice": "X Cheese Slice",
+  "item.cheesyblade.x_cheese_block": "X Cheese Block",
+  "item.cheesyblade.1x_moldy_cheese": "1x Moldy Cheese",
+  "item.cheesyblade.x_moldy_cheese": "X Moldy Cheese",
+  "item.cheesyblade.x_cheese_curds_smelts_into_cheese_curds": "X Cheese Curds Smelts Into Cheese Curds",
+  "block.cheesyblade.cheese_block": "Cheese Block",
+  "block.cheesyblade.aged_cheese_block": "Aged Cheese Block",
+  "block.cheesyblade.cheese_ore": "Cheese Ore",
+  "entity.cheesyblade.cheese_golem": "Cheese Golem",
+  "entity.cheesyblade.hungry_mouse": "Hungry Mouse",
+  "structure.cheesyblade.cheese_mine": "Cheese Mine"
+}
