@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "goudablade",
+  "version": "1.0.0",
+  "name": "Gouda Blade",
+  "description": "",
+  "authors": [
+    "Mod Generator"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/goudablade/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.modgen.goudablade.GoudaBlade"
+    ],
+    "client": [
+      "com.modgen.goudablade.client.GoudaBladeClient"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "minecraft": "1.21.1",
+    "fabricloader": ">=0.16.9",
+    "fabric": "*",
+    "java": ">=21"
+  }
+}
