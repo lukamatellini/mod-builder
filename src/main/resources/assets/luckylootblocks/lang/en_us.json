@@ -1,0 +1,19 @@
+{
+  "itemGroup.luckylootblocks.main": "Lucky Loot Blocks",
+  "itemGroup.luckylootblocks": "Lucky Loot Blocks",
+  "item.luckylootblocks.lucky_block": "Lucky Block",
+  "item.luckylootblocks.chance_wolves": "Chance Wolves",
+  "item.luckylootblocks.chance_cooked_beef": "Chance Cooked Beef",
+  "item.luckylootblocks.baked_potatoes": "Baked Potatoes",
+  "item.luckylootblocks.chance_regeneration_ii_10s": "Chance Regeneration Ii 10s",
+  "item.luckylootblocks.chance_dirt": "Chance Dirt",
+  "item.luckylootblocks.chance_feathers": "Chance Feathers",
+  "item.luckylootblocks.chance_flint": "Chance Flint",
+  "item.luckylootblocks.chance_random_dye": "Chance Random Dye",
+  "item.luckylootblocks.chance_zombies": "Chance Zombies",
+  "item.luckylootblocks.chance_skeletons": "Chance Skeletons",
+  "item.luckylootblocks.chance_1_creeper": "Chance 1 Creeper",
+  "item.luckylootblocks.chance_explosion": "Chance Explosion",
+  "item.luckylootblocks.chance_poison_i_5s": "Chance Poison I 5s",
+  "block.luckylootblocks.lucky_block": "Lucky Block"
+}
