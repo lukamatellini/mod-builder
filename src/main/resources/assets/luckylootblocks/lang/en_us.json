@@ -1,0 +1,23 @@
+{
+  "itemGroup.luckylootblocks.main": "Lucky Loot Blocks",
+  "itemGroup.luckylootblocks": "Lucky Loot Blocks",
+  "item.luckylootblocks.stone_pickaxe": "Stone Pickaxe",
+  "item.luckylootblocks.bread": "Bread",
+  "item.luckylootblocks.cooked_beef": "Cooked Beef",
+  "item.luckylootblocks.apple": "Apple",
+  "item.luckylootblocks.golden_apple": "Golden Apple",
+  "item.luckylootblocks.enchanted_book": "Enchanted Book",
+  "item.luckylootblocks.iron_chestplate": "Iron Chestplate",
+  "item.luckylootblocks.netherite_scrap": "Netherite Scrap",
+  "item.luckylootblocks.ancient_debris": "Ancient Debris",
+  "item.luckylootblocks.dragon_breath": "Dragon's Breath",
+  "item.luckylootblocks.diamond_sword_sharpness_1": "Diamond Sword (Sharpness I)",
+  "item.luckylootblocks.bow_power_1": "Bow (Power I)",
+  "item.luckylootblocks.diamond_chestplate_protection_2": "Diamond Chestplate (Protection II)",
+  "item.luckylootblocks.efficiency_3_pickaxe": "Efficiency III Pickaxe",
+  "item.luckylootblocks.lucky_block_item": "Lucky Block",
+  "block.luckylootblocks.lucky_block": "Lucky Block",
+  "entity.luckylootblocks.reinforced_zombie": "Reinforced Zombie",
+  "entity.luckylootblocks.reinforced_skeleton": "Reinforced Skeleton",
+  "structure.luckylootblocks.valuable_loot_chest_structure": "Valuable Loot Chest"
+}

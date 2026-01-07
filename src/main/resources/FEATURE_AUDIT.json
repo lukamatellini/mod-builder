@@ -1,0 +1,687 @@
+{
+  "schemaVersion": "1.0.0",
+  "modId": "luckylootblocks",
+  "modName": "Lucky Loot Blocks",
+  "mcVersion": "1.21.1",
+  "loader": "fabric",
+  "timestamp": "2026-01-07T04:36:35.878Z",
+  "capabilitiesRequested": [],
+  "capabilitiesImplemented": [
+    "item",
+    "block",
+    "mob",
+    "structure"
+  ],
+  "assetsEmitted": [
+    "src/main/resources/assets/luckylootblocks/textures/item/stone_pickaxe.png",
+    "src/main/resources/assets/luckylootblocks/models/item/stone_pickaxe.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/bread.png",
+    "src/main/resources/assets/luckylootblocks/models/item/bread.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/cooked_beef.png",
+    "src/main/resources/assets/luckylootblocks/models/item/cooked_beef.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/apple.png",
+    "src/main/resources/assets/luckylootblocks/models/item/apple.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/golden_apple.png",
+    "src/main/resources/assets/luckylootblocks/models/item/golden_apple.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/enchanted_book.png",
+    "src/main/resources/assets/luckylootblocks/models/item/enchanted_book.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/iron_chestplate.png",
+    "src/main/resources/assets/luckylootblocks/models/item/iron_chestplate.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/netherite_scrap.png",
+    "src/main/resources/assets/luckylootblocks/models/item/netherite_scrap.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/ancient_debris.png",
+    "src/main/resources/assets/luckylootblocks/models/item/ancient_debris.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/dragon_breath.png",
+    "src/main/resources/assets/luckylootblocks/models/item/dragon_breath.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/diamond_sword_sharpness_1.png",
+    "src/main/resources/assets/luckylootblocks/models/item/diamond_sword_sharpness_1.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/bow_power_1.png",
+    "src/main/resources/assets/luckylootblocks/models/item/bow_power_1.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/diamond_chestplate_protection_2.png",
+    "src/main/resources/assets/luckylootblocks/models/item/diamond_chestplate_protection_2.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/efficiency_3_pickaxe.png",
+    "src/main/resources/assets/luckylootblocks/models/item/efficiency_3_pickaxe.json",
+    "src/main/resources/assets/luckylootblocks/textures/item/lucky_block_item.png",
+    "src/main/resources/assets/luckylootblocks/models/item/lucky_block_item.json",
+    "src/main/resources/assets/luckylootblocks/blockstates/lucky_block.json",
+    "src/main/resources/assets/luckylootblocks/models/block/lucky_block.json",
+    "src/main/resources/assets/luckylootblocks/models/item/lucky_block.json",
+    "src/main/resources/assets/luckylootblocks/textures/block/lucky_block.png",
+    "src/main/resources/assets/luckylootblocks/textures/entity/reinforced_zombie.png",
+    "src/main/resources/assets/luckylootblocks/textures/entity/reinforced_skeleton.png",
+    "src/main/resources/assets/luckylootblocks/lang/en_us.json"
+  ],
+  "invariants": [
+    {
+      "name": "category_items",
+      "status": "passed",
+      "reason": "15 items audited"
+    },
+    {
+      "name": "category_blocks",
+      "status": "passed",
+      "reason": "1 blocks audited"
+    },
+    {
+      "name": "category_mobs",
+      "status": "passed",
+      "reason": "2 mobs audited (0 bosses)"
+    },
+    {
+      "name": "category_structures",
+      "status": "passed",
+      "reason": "1 structures audited"
+    },
+    {
+      "name": "category_recipes",
+      "status": "failed",
+      "reason": "15 recipes audited"
+    },
+    {
+      "name": "category_lootTables",
+      "status": "failed",
+      "reason": "2 mob loot tables audited"
+    },
+    {
+      "name": "category_textures",
+      "status": "passed",
+      "reason": "18 texture files"
+    },
+    {
+      "name": "category_quests",
+      "status": "passed"
+    },
+    {
+      "name": "category_advancements",
+      "status": "passed",
+      "reason": "0 advancements"
+    },
+    {
+      "name": "category_compilation",
+      "status": "passed",
+      "reason": "Build configuration audit"
+    },
+    {
+      "name": "category_apiSafety",
+      "status": "passed",
+      "reason": "MC 1.21.1 API compatibility check"
+    },
+    {
+      "name": "category_vanillaFallbacks",
+      "status": "warn",
+      "reason": "Tracks use of vanilla content vs custom generation"
+    },
+    {
+      "name": "category_inferredContent",
+      "status": "passed",
+      "reason": "Tracks auto-completed and inferred content"
+    }
+  ],
+  "generatedAt": "2026-01-07T04:36:35.878Z",
+  "categories": {
+    "items": {
+      "name": "Items",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "stone_pickaxe: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "stone_pickaxe: Weapon stats",
+          "status": "passed",
+          "message": "Damage: 2, Durability: 131"
+        },
+        {
+          "name": "stone_pickaxe: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "bread: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "bread: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "cooked_beef: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "cooked_beef: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "apple: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "apple: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "golden_apple: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "golden_apple: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "enchanted_book: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "enchanted_book: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "iron_chestplate: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "iron_chestplate: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "netherite_scrap: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "netherite_scrap: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "ancient_debris: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "ancient_debris: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "dragon_breath: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "dragon_breath: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "diamond_sword_sharpness_1: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "diamond_sword_sharpness_1: Weapon stats",
+          "status": "passed",
+          "message": "Damage: 8, Durability: 1561"
+        },
+        {
+          "name": "diamond_sword_sharpness_1: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "bow_power_1: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "bow_power_1: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "diamond_chestplate_protection_2: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "diamond_chestplate_protection_2: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "efficiency_3_pickaxe: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "efficiency_3_pickaxe: Weapon stats",
+          "status": "passed",
+          "message": "Damage: 5, Durability: 1561"
+        },
+        {
+          "name": "efficiency_3_pickaxe: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "lucky_block_item: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lucky_block_item: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        }
+      ],
+      "notes": "15 items audited"
+    },
+    "blocks": {
+      "name": "Blocks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lucky_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "lucky_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        }
+      ],
+      "notes": "1 blocks audited"
+    },
+    "mobs": {
+      "name": "Mobs",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "reinforced_zombie: Required fields",
+          "status": "passed",
+          "message": "Health: 40, Damage: 8"
+        },
+        {
+          "name": "reinforced_zombie: Drops",
+          "status": "passed",
+          "message": "2 drops defined"
+        },
+        {
+          "name": "reinforced_zombie: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        },
+        {
+          "name": "reinforced_skeleton: Required fields",
+          "status": "passed",
+          "message": "Health: 30, Damage: 6"
+        },
+        {
+          "name": "reinforced_skeleton: Drops",
+          "status": "passed",
+          "message": "3 drops defined"
+        },
+        {
+          "name": "reinforced_skeleton: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        }
+      ],
+      "notes": "2 mobs audited (0 bosses)"
+    },
+    "structures": {
+      "name": "Structures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "valuable_loot_chest_structure: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "valuable_loot_chest_structure: Features",
+          "status": "passed",
+          "message": "1 features defined"
+        }
+      ],
+      "notes": "1 structures audited"
+    },
+    "recipes": {
+      "name": "Recipes",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "Items with recipes",
+          "status": "passed",
+          "message": "15/15 items have recipes"
+        },
+        {
+          "name": "stone_pickaxe: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "bread: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "cooked_beef: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "apple: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "golden_apple: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "enchanted_book: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "iron_chestplate: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "netherite_scrap: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "ancient_debris: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "dragon_breath: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "diamond_sword_sharpness_1: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "bow_power_1: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "diamond_chestplate_protection_2: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "efficiency_3_pickaxe: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "lucky_block_item: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        }
+      ],
+      "notes": "15 recipes audited"
+    },
+    "lootTables": {
+      "name": "Loot Tables",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "reinforced_zombie: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "reinforced_skeleton: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "lucky_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        }
+      ],
+      "notes": "2 mob loot tables audited"
+    },
+    "textures": {
+      "name": "Textures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Texture files generated",
+          "status": "passed",
+          "message": "18 textures generated (expected at least 16)"
+        },
+        {
+          "name": "stone_pickaxe.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "bread.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "cooked_beef.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "apple.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "golden_apple.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "enchanted_book.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "iron_chestplate.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "netherite_scrap.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "ancient_debris.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "dragon_breath.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        }
+      ],
+      "notes": "18 texture files"
+    },
+    "quests": {
+      "name": "Quests",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No quests defined",
+          "status": "skipped",
+          "message": "No quests to audit"
+        }
+      ]
+    },
+    "advancements": {
+      "name": "Advancements",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Advancement files",
+          "status": "warn",
+          "message": "0 advancement files generated"
+        },
+        {
+          "name": "Root advancement",
+          "status": "warn",
+          "message": "No root advancement"
+        }
+      ],
+      "notes": "0 advancements"
+    },
+    "compilation": {
+      "name": "Compilation",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "build.gradle",
+          "status": "passed",
+          "message": "Build file exists"
+        },
+        {
+          "name": "fabric.mod.json",
+          "status": "passed",
+          "message": "Mod descriptor exists"
+        },
+        {
+          "name": "Minecraft version",
+          "status": "passed",
+          "message": "Correct MC version"
+        },
+        {
+          "name": "Java source files",
+          "status": "passed",
+          "message": "12 Java files generated"
+        }
+      ],
+      "notes": "Build configuration audit"
+    },
+    "apiSafety": {
+      "name": "API Safety",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "API safety scan",
+          "status": "passed",
+          "message": "No forbidden patterns detected"
+        }
+      ],
+      "notes": "MC 1.21.1 API compatibility check"
+    },
+    "vanillaFallbacks": {
+      "name": "Vanilla Fallbacks",
+      "status": "warn",
+      "checks": [
+        {
+          "name": "Vanilla recipe ingredients",
+          "status": "passed",
+          "message": "38 vanilla ingredients used (intentional)",
+          "details": "stone_pickaxe uses minecraft:stick, stone_pickaxe uses minecraft:stick, bread uses minecraft:diamond, bread uses minecraft:stick, cooked_beef uses minecraft:diamond, cooked_beef uses minecraft:stick, apple uses minecraft:diamond, apple uses minecraft:stick, golden_apple uses minecraft:gold_ingot, golden_apple uses minecraft:gold_ingot"
+        },
+        {
+          "name": "Vanilla mob drops",
+          "status": "warn",
+          "message": "5 mobs drop vanilla items (consider custom drops)",
+          "details": "reinforced_zombie drops minecraft:rotten_flesh, reinforced_zombie drops minecraft:iron_ingot, reinforced_skeleton drops minecraft:bone, reinforced_skeleton drops minecraft:arrow, reinforced_skeleton drops minecraft:iron_ingot"
+        }
+      ],
+      "notes": "Tracks use of vanilla content vs custom generation"
+    },
+    "inferredContent": {
+      "name": "Inferred Content",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Inferred item recipes",
+          "status": "passed",
+          "message": "15/15 items have recipes"
+        },
+        {
+          "name": "Inferred mob drops",
+          "status": "passed",
+          "message": "2/2 mobs have drops"
+        },
+        {
+          "name": "Inferred spawn rules",
+          "status": "passed",
+          "message": "2/2 mobs have spawn rules"
+        },
+        {
+          "name": "Inferred structure features",
+          "status": "passed",
+          "message": "1/1 structures have features"
+        }
+      ],
+      "notes": "Tracks auto-completed and inferred content"
+    }
+  },
+  "summary": {
+    "totalChecks": 88,
+    "passed": 67,
+    "failed": 17,
+    "warnings": 3,
+    "skipped": 1,
+    "overallStatus": "failed"
+  },
+  "assetsEmittedCount": 41,
+  "repairs": [
+    {
+      "path": "src/main/resources/assets/9fe7561a-32d8-4d99-81ac-7a3b660f6bd0/lang/en_us.json",
+      "type": "placeholder_lang",
+      "reason": "Generated placeholder lang file - no lang file existed"
+    },
+    {
+      "path": "src/main/resources/assets/9fe7561a-32d8-4d99-81ac-7a3b660f6bd0/models/item/placeholder.json",
+      "type": "placeholder_model",
+      "reason": "Generated placeholder model - no models existed"
+    },
+    {
+      "path": "src/main/resources/assets/9fe7561a-32d8-4d99-81ac-7a3b660f6bd0/textures/item/placeholder.png",
+      "type": "placeholder_png",
+      "reason": "Generated rich placeholder textures (style-aware) - no PNG files existed"
+    }
+  ],
+  "missingTextureFixups": [],
+  "modelTextureIntegrity": {
+    "valid": 17,
+    "invalid": 0,
+    "fixed": 0
+  }
+}
