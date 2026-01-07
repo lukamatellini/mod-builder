@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cheesyblade:item/remaining_slices_as_aged_cheese_slices_if_partially_consumed"
+  }
+}

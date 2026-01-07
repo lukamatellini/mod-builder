@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "cheesyblade",
+  "version": "1.0.0",
+  "name": "Cheesy Blade",
+  "description": "",
+  "authors": [
+    "Mod Generator"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/cheesyblade/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.modgen.cheesyblade.CheesyBlade"
+    ],
+    "client": [
+      "com.modgen.cheesyblade.client.CheesyBladeClient"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "minecraft": "1.21.1",
+    "fabricloader": ">=0.16.9",
+    "fabric": "*",
+    "java": ">=21"
+  }
+}

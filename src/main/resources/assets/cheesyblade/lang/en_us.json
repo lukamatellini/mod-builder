@@ -1,0 +1,12 @@
+{
+  "itemGroup.cheesyblade.main": "Cheesy Blade",
+  "itemGroup.cheesyblade": "Cheesy Blade",
+  "item.cheesyblade.cheese_curds": "Cheese Curds",
+  "item.cheesyblade.small_cheese_block_item": "Small Cheese Block",
+  "item.cheesyblade.medium_cheese_wheel_item": "Medium Cheese Wheel",
+  "item.cheesyblade.aged_cheese_slice": "Aged Cheese Slice",
+  "item.cheesyblade.cheesemongers_blade": "Cheesemonger's Blade",
+  "item.cheesyblade.nothing_if_fully_consumed": "Nothing If Fully Consumed",
+  "item.cheesyblade.remaining_slices_as_aged_cheese_slices_if_partially_consumed": "Remaining Slices As Aged Cheese Slices If Partially Consumed",
+  "block.cheesyblade.medium_cheese_wheel_block": "Medium Cheese Wheel Block"
+}
