@@ -1,0 +1,60 @@
+{
+  "modId": "kinetickicks",
+  "modName": "Kinetic Kicks",
+  "generatedAt": "2026-01-07T15:18:29.206Z",
+  "enabledCapabilities": [
+    "items"
+  ],
+  "emittedFiles": {
+    "java": [
+      "src/main/java/com/modgen/kinetickicks/KineticKicks.java",
+      "src/main/java/com/modgen/kinetickicks/ModItems.java",
+      "src/client/java/com/modgen/kinetickicks/client/KineticKicksClient.java"
+    ],
+    "assets": [
+      "src/main/resources/assets/kinetickicks/textures/item/speedwalker_boots.png",
+      "src/main/resources/assets/kinetickicks/models/item/speedwalker_boots.json",
+      "src/main/resources/assets/kinetickicks/textures/mob_effect/speedwalker_boots_speed.png",
+      "src/main/resources/assets/kinetickicks/lang/en_us.json",
+      "src/main/resources/assets/kinetickicks/textures/models/armor/speedwalker_layer_1.png",
+      "src/main/resources/assets/kinetickicks/textures/models/armor/speedwalker_layer_2.png",
+      "src/main/resources/assets/kinetickicks/models/item/speedwalker_helmet.json",
+      "src/main/resources/assets/kinetickicks/textures/item/speedwalker_helmet.png",
+      "src/main/resources/assets/kinetickicks/models/item/speedwalker_chestplate.json",
+      "src/main/resources/assets/kinetickicks/textures/item/speedwalker_chestplate.png",
+      "src/main/resources/assets/kinetickicks/models/item/speedwalker_leggings.json",
+      "src/main/resources/assets/kinetickicks/textures/item/speedwalker_leggings.png"
+    ],
+    "data": [
+      "src/main/resources/data/kinetickicks/tags/functions/load.json",
+      "src/main/resources/data/kinetickicks/tags/functions/tick.json"
+    ],
+    "gradle": [
+      "build.gradle",
+      "gradle.properties",
+      "settings.gradle",
+      "gradle/wrapper/gradle-wrapper.properties"
+    ],
+    "other": [
+      "src/main/resources/fabric.mod.json",
+      "src/main/resources/build-plan.json",
+      "LICENSE",
+      "README.md",
+      "src/main/resources/FEATURE_AUDIT.json"
+    ]
+  },
+  "entrypoints": {
+    "main": "com.modgen.kinetickicks.KineticKicks"
+  },
+  "assetCounts": {
+    "items": 1,
+    "blocks": 0,
+    "mobs": 0,
+    "structures": 0,
+    "textures": 7
+  },
+  "registryValidation": {
+    "passed": true,
+    "errors": []
+  }
+}

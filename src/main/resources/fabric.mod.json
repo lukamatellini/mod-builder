@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "kinetickicks",
+  "version": "1.0.0",
+  "name": "Kinetic Kicks",
+  "description": "",
+  "authors": [
+    "Mod Generator"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/kinetickicks/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.modgen.kinetickicks.KineticKicks"
+    ],
+    "client": [
+      "com.modgen.kinetickicks.client.KineticKicksClient"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "minecraft": "1.21.1",
+    "fabricloader": ">=0.16.9",
+    "fabric": "*",
+    "java": ">=21"
+  }
+}
