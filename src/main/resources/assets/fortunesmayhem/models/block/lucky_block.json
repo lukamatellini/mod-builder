@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "fortunesmayhem:block/lucky_block"
+  }
+}
