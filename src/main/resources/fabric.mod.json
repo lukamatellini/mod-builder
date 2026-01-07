@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "chilldelights",
+  "version": "1.0.0",
+  "name": "Chill Delights",
+  "description": "",
+  "authors": [
+    "Mod Generator"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/chilldelights/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.modgen.chilldelights.ChillDelights"
+    ],
+    "client": [
+      "com.modgen.chilldelights.client.ChillDelightsClient"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "minecraft": "1.21.1",
+    "fabricloader": ">=0.16.9",
+    "fabric": "*",
+    "java": ">=21"
+  }
+}

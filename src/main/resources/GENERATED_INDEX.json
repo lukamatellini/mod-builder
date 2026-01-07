@@ -1,0 +1,68 @@
+{
+  "modId": "chilldelights",
+  "modName": "Chill Delights",
+  "generatedAt": "2026-01-07T16:55:59.359Z",
+  "enabledCapabilities": [
+    "items"
+  ],
+  "emittedFiles": {
+    "java": [
+      "src/main/java/com/modgen/chilldelights/ChillDelights.java",
+      "src/main/java/com/modgen/chilldelights/ModItems.java",
+      "src/main/java/com/modgen/chilldelights/item/VanillaIceCreamItem.java",
+      "src/main/java/com/modgen/chilldelights/item/ChocolateIceCreamItem.java",
+      "src/main/java/com/modgen/chilldelights/item/StrawberryIceCreamItem.java",
+      "src/main/java/com/modgen/chilldelights/item/MintChocolateChipIceCreamItem.java",
+      "src/main/java/com/modgen/chilldelights/item/CookieDoughIceCreamItem.java",
+      "src/client/java/com/modgen/chilldelights/client/ChillDelightsClient.java"
+    ],
+    "assets": [
+      "src/main/resources/assets/chilldelights/textures/item/ice_cream_base.png",
+      "src/main/resources/assets/chilldelights/models/item/ice_cream_base.json",
+      "src/main/resources/assets/chilldelights/textures/item/vanilla_ice_cream.png",
+      "src/main/resources/assets/chilldelights/models/item/vanilla_ice_cream.json",
+      "src/main/resources/assets/chilldelights/textures/item/chocolate_ice_cream.png",
+      "src/main/resources/assets/chilldelights/models/item/chocolate_ice_cream.json",
+      "src/main/resources/assets/chilldelights/textures/item/strawberry_ice_cream.png",
+      "src/main/resources/assets/chilldelights/models/item/strawberry_ice_cream.json",
+      "src/main/resources/assets/chilldelights/textures/item/mint_chocolate_chip_ice_cream.png",
+      "src/main/resources/assets/chilldelights/models/item/mint_chocolate_chip_ice_cream.json",
+      "src/main/resources/assets/chilldelights/textures/item/dough.png",
+      "src/main/resources/assets/chilldelights/models/item/dough.json",
+      "src/main/resources/assets/chilldelights/textures/item/cookie_dough_ice_cream.png",
+      "src/main/resources/assets/chilldelights/models/item/cookie_dough_ice_cream.json",
+      "src/main/resources/assets/chilldelights/lang/en_us.json"
+    ],
+    "data": [
+      "src/main/resources/data/chilldelights/tags/functions/load.json",
+      "src/main/resources/data/chilldelights/tags/functions/tick.json"
+    ],
+    "gradle": [
+      "build.gradle",
+      "gradle.properties",
+      "settings.gradle",
+      "gradle/wrapper/gradle-wrapper.properties"
+    ],
+    "other": [
+      "src/main/resources/fabric.mod.json",
+      "src/main/resources/build-plan.json",
+      "LICENSE",
+      "README.md",
+      "src/main/resources/FEATURE_AUDIT.json"
+    ]
+  },
+  "entrypoints": {
+    "main": "com.modgen.chilldelights.ChillDelights"
+  },
+  "assetCounts": {
+    "items": 7,
+    "blocks": 0,
+    "mobs": 0,
+    "structures": 0,
+    "textures": 7
+  },
+  "registryValidation": {
+    "passed": true,
+    "errors": []
+  }
+}
