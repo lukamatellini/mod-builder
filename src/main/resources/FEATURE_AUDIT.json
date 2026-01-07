@@ -1,0 +1,504 @@
+{
+  "schemaVersion": "1.0.0",
+  "modId": "sumoundeadworms",
+  "modName": "Sumo Undead Worms",
+  "mcVersion": "1.21.1",
+  "loader": "fabric",
+  "timestamp": "2026-01-07T02:43:49.940Z",
+  "capabilitiesRequested": [],
+  "capabilitiesImplemented": [
+    "item",
+    "block",
+    "mob",
+    "structure"
+  ],
+  "assetsEmitted": [
+    "src/main/resources/assets/sumoundeadworms/textures/item/sumo_hachimaki.png",
+    "src/main/resources/assets/sumoundeadworms/models/item/sumo_hachimaki.json",
+    "src/main/resources/assets/sumoundeadworms/textures/item/carrot_rare.png",
+    "src/main/resources/assets/sumoundeadworms/models/item/carrot_rare.json",
+    "src/main/resources/assets/sumoundeadworms/textures/item/clay_ball_rare.png",
+    "src/main/resources/assets/sumoundeadworms/models/item/clay_ball_rare.json",
+    "src/main/resources/assets/sumoundeadworms/textures/item/raw_porkchop.png",
+    "src/main/resources/assets/sumoundeadworms/models/item/raw_porkchop.json",
+    "src/main/resources/assets/sumoundeadworms/textures/item/sumo_hachimaki_rare_cosmetic_helmet_with_protection_i.png",
+    "src/main/resources/assets/sumoundeadworms/models/item/sumo_hachimaki_rare_cosmetic_helmet_with_protection_i.json",
+    "src/main/resources/assets/sumoundeadworms/textures/mob_effect/sumo_hachimaki_speed.png",
+    "src/main/resources/assets/sumoundeadworms/blockstates/tatami_mat.json",
+    "src/main/resources/assets/sumoundeadworms/models/block/tatami_mat.json",
+    "src/main/resources/assets/sumoundeadworms/models/item/tatami_mat.json",
+    "src/main/resources/assets/sumoundeadworms/textures/block/tatami_mat.png",
+    "src/main/resources/assets/sumoundeadworms/textures/entity/yokai_zombie.png",
+    "src/main/resources/assets/sumoundeadworms/textures/entity/burrowing_worm.png",
+    "src/main/resources/assets/sumoundeadworms/textures/entity/japanese_sumo_wrestler.png",
+    "src/main/resources/assets/sumoundeadworms/lang/en_us.json"
+  ],
+  "invariants": [
+    {
+      "name": "category_items",
+      "status": "passed",
+      "reason": "5 items audited"
+    },
+    {
+      "name": "category_blocks",
+      "status": "passed",
+      "reason": "1 blocks audited"
+    },
+    {
+      "name": "category_mobs",
+      "status": "passed",
+      "reason": "3 mobs audited (0 bosses)"
+    },
+    {
+      "name": "category_structures",
+      "status": "passed",
+      "reason": "1 structures audited"
+    },
+    {
+      "name": "category_recipes",
+      "status": "failed",
+      "reason": "1 recipes audited"
+    },
+    {
+      "name": "category_lootTables",
+      "status": "failed",
+      "reason": "3 mob loot tables audited"
+    },
+    {
+      "name": "category_textures",
+      "status": "passed",
+      "reason": "10 texture files"
+    },
+    {
+      "name": "category_quests",
+      "status": "passed"
+    },
+    {
+      "name": "category_advancements",
+      "status": "passed",
+      "reason": "0 advancements"
+    },
+    {
+      "name": "category_compilation",
+      "status": "passed",
+      "reason": "Build configuration audit"
+    },
+    {
+      "name": "category_apiSafety",
+      "status": "passed",
+      "reason": "MC 1.21.1 API compatibility check"
+    },
+    {
+      "name": "category_vanillaFallbacks",
+      "status": "warn",
+      "reason": "Tracks use of vanilla content vs custom generation"
+    },
+    {
+      "name": "category_inferredContent",
+      "status": "passed",
+      "reason": "Tracks auto-completed and inferred content"
+    }
+  ],
+  "generatedAt": "2026-01-07T02:43:49.940Z",
+  "categories": {
+    "items": {
+      "name": "Items",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "sumo_hachimaki: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "sumo_hachimaki: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "carrot_rare: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "carrot_rare: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "clay_ball_rare: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "clay_ball_rare: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "raw_porkchop: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "raw_porkchop: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "sumo_hachimaki_rare_cosmetic_helmet_with_protection_i: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "sumo_hachimaki_rare_cosmetic_helmet_with_protection_i: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        }
+      ],
+      "notes": "5 items audited"
+    },
+    "blocks": {
+      "name": "Blocks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "tatami_mat: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "tatami_mat: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "tatami_mat: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        }
+      ],
+      "notes": "1 blocks audited"
+    },
+    "mobs": {
+      "name": "Mobs",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "yokai_zombie: Required fields",
+          "status": "passed",
+          "message": "Health: 20, Damage: 3"
+        },
+        {
+          "name": "yokai_zombie: Drops",
+          "status": "passed",
+          "message": "3 drops defined"
+        },
+        {
+          "name": "yokai_zombie: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        },
+        {
+          "name": "burrowing_worm: Required fields",
+          "status": "passed",
+          "message": "Health: 10, Damage: 2"
+        },
+        {
+          "name": "burrowing_worm: Drops",
+          "status": "passed",
+          "message": "2 drops defined"
+        },
+        {
+          "name": "burrowing_worm: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:jungle, minecraft:swamp"
+        },
+        {
+          "name": "japanese_sumo_wrestler: Required fields",
+          "status": "passed",
+          "message": "Health: 60, Damage: 7"
+        },
+        {
+          "name": "japanese_sumo_wrestler: Drops",
+          "status": "passed",
+          "message": "3 drops defined"
+        },
+        {
+          "name": "japanese_sumo_wrestler: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        }
+      ],
+      "notes": "3 mobs audited (0 bosses)"
+    },
+    "structures": {
+      "name": "Structures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "sumo_dojo: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "sumo_dojo: Features",
+          "status": "passed",
+          "message": "1 features defined"
+        }
+      ],
+      "notes": "1 structures audited"
+    },
+    "recipes": {
+      "name": "Recipes",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "Items with recipes",
+          "status": "passed",
+          "message": "1/5 items have recipes"
+        },
+        {
+          "name": "sumo_hachimaki: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        }
+      ],
+      "notes": "1 recipes audited"
+    },
+    "lootTables": {
+      "name": "Loot Tables",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "yokai_zombie: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "burrowing_worm: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "japanese_sumo_wrestler: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "tatami_mat: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        }
+      ],
+      "notes": "3 mob loot tables audited"
+    },
+    "textures": {
+      "name": "Textures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Texture files generated",
+          "status": "passed",
+          "message": "10 textures generated (expected at least 6)"
+        },
+        {
+          "name": "sumo_hachimaki.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "carrot_rare.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "clay_ball_rare.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "raw_porkchop.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "sumo_hachimaki_rare_cosmetic_helmet_with_protection_i.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "sumo_hachimaki_speed.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "tatami_mat.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "yokai_zombie.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "burrowing_worm.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "japanese_sumo_wrestler.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        }
+      ],
+      "notes": "10 texture files"
+    },
+    "quests": {
+      "name": "Quests",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No quests defined",
+          "status": "skipped",
+          "message": "No quests to audit"
+        }
+      ]
+    },
+    "advancements": {
+      "name": "Advancements",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Advancement files",
+          "status": "warn",
+          "message": "0 advancement files generated"
+        },
+        {
+          "name": "Root advancement",
+          "status": "warn",
+          "message": "No root advancement"
+        }
+      ],
+      "notes": "0 advancements"
+    },
+    "compilation": {
+      "name": "Compilation",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "build.gradle",
+          "status": "passed",
+          "message": "Build file exists"
+        },
+        {
+          "name": "fabric.mod.json",
+          "status": "passed",
+          "message": "Mod descriptor exists"
+        },
+        {
+          "name": "Minecraft version",
+          "status": "passed",
+          "message": "Correct MC version"
+        },
+        {
+          "name": "Java source files",
+          "status": "passed",
+          "message": "15 Java files generated"
+        }
+      ],
+      "notes": "Build configuration audit"
+    },
+    "apiSafety": {
+      "name": "API Safety",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "API safety scan",
+          "status": "passed",
+          "message": "No forbidden patterns detected"
+        }
+      ],
+      "notes": "MC 1.21.1 API compatibility check"
+    },
+    "vanillaFallbacks": {
+      "name": "Vanilla Fallbacks",
+      "status": "warn",
+      "checks": [
+        {
+          "name": "Vanilla recipe ingredients",
+          "status": "passed",
+          "message": "1 vanilla ingredients used (intentional)",
+          "details": "sumo_hachimaki uses minecraft:leather"
+        },
+        {
+          "name": "Vanilla mob drops",
+          "status": "warn",
+          "message": "4 mobs drop vanilla items (consider custom drops)",
+          "details": "yokai_zombie drops minecraft:rotten_flesh, yokai_zombie drops minecraft:iron_ingot, burrowing_worm drops minecraft:string, japanese_sumo_wrestler drops minecraft:leather"
+        }
+      ],
+      "notes": "Tracks use of vanilla content vs custom generation"
+    },
+    "inferredContent": {
+      "name": "Inferred Content",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Inferred item recipes",
+          "status": "passed",
+          "message": "1/5 items have recipes"
+        },
+        {
+          "name": "Inferred mob drops",
+          "status": "passed",
+          "message": "3/3 mobs have drops"
+        },
+        {
+          "name": "Inferred spawn rules",
+          "status": "passed",
+          "message": "3/3 mobs have spawn rules"
+        },
+        {
+          "name": "Inferred structure features",
+          "status": "passed",
+          "message": "1/1 structures have features"
+        }
+      ],
+      "notes": "Tracks auto-completed and inferred content"
+    }
+  },
+  "summary": {
+    "totalChecks": 55,
+    "passed": 47,
+    "failed": 4,
+    "warnings": 3,
+    "skipped": 1,
+    "overallStatus": "failed"
+  },
+  "assetsEmittedCount": 23,
+  "repairs": [
+    {
+      "path": "src/main/resources/assets/5f627e56-a9c2-40a6-9dba-712541175195/lang/en_us.json",
+      "type": "placeholder_lang",
+      "reason": "Generated placeholder lang file - no lang file existed"
+    },
+    {
+      "path": "src/main/resources/assets/5f627e56-a9c2-40a6-9dba-712541175195/models/item/placeholder.json",
+      "type": "placeholder_model",
+      "reason": "Generated placeholder model - no models existed"
+    },
+    {
+      "path": "src/main/resources/assets/5f627e56-a9c2-40a6-9dba-712541175195/textures/item/placeholder.png",
+      "type": "placeholder_png",
+      "reason": "Generated rich placeholder textures (style-aware) - no PNG files existed"
+    }
+  ],
+  "missingTextureFixups": [],
+  "modelTextureIntegrity": {
+    "valid": 7,
+    "invalid": 0,
+    "fixed": 0
+  }
+}
