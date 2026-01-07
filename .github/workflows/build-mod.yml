@@ -58,21 +58,16 @@ jobs:
             if (!cfg.webhookSecret) throw new Error('build-config.json missing webhookSecret');
             if (!cfg.loader) throw new Error('build-config.json missing loader');
             if (!cfg.mcVersion) throw new Error('build-config.json missing mcVersion');
-
             const mc = String(cfg.mcVersion).trim();
             const loader = String(cfg.loader).trim();
             if (loader !== 'fabric') throw new Error('Only fabric loader is supported (got: ' + loader + ')');
             if (mc !== '1.21.1') throw new Error('Only Minecraft 1.21.1 is supported (got: ' + mc + ')');
-
             const url = String(cfg.webhookUrl).trim();
             if (!/^https?:\\/\\//.test(url)) throw new Error('webhookUrl must start with http:// or https://');
-
             const modUuid = String(cfg.modId).trim();
             const uuidRe = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$/;
             if (!uuidRe.test(modUuid)) throw new Error('modId is not a valid UUID: ' + modUuid);
-
             console.log('::add-mask::' + String(cfg.webhookSecret).trim());
-
             const out = process.env.GITHUB_OUTPUT;
             fs.appendFileSync(out, 'modUuid=' + modUuid + '\\n');
             fs.appendFileSync(out, 'webhookUrl=' + url + '\\n');
@@ -91,7 +86,6 @@ jobs:
           set -e
           LOADER="${{ steps.buildconfig.outputs.loader }}"
           MC_VERSION="${{ steps.buildconfig.outputs.mcVersion }}"
-
           if [ "$LOADER" != "fabric" ]; then
             echo "ERROR: loader must be 'fabric', got '$LOADER'"
             exit 1
@@ -103,13 +97,11 @@ jobs:
             echo "============================================"
             exit 1
           fi
-
           GRADLE_VER="8.10.2"
           LOOM_VER="1.8.12"
           YARN_VER="1.21.1+build.3"
           LOADER_VER="0.16.9"
           FABRIC_API_VER="0.116.7+1.21.1"
-
           echo "OK: Minecraft $MC_VERSION is allowed (hard lock)"
           echo "gradle_version=$GRADLE_VER" >> "$GITHUB_OUTPUT"
           echo "loom_version=$LOOM_VER" >> "$GITHUB_OUTPUT"
@@ -151,30 +143,26 @@ jobs:
           echo "OK: build-plan.json found"
 
       # ----------------------------
-      # 6c) AUDIT FILES GATE (HARD GATE)
+      # 6c) AUDIT FILES GATE (CRITICAL - HARD GATE)
       # ----------------------------
       - name: Verify audit + QA files exist (HARD GATE)
         run: |
           set -e
           AUDIT_PATH="src/main/resources/FEATURE_AUDIT.json"
           QA_PATH="src/main/resources/QA_TEST_PLAN.md"
-
           echo "=== AUDIT FILES GATE ==="
           echo "Required path: $AUDIT_PATH"
           echo "Required path: $QA_PATH"
           echo ""
-
           if [ ! -f "$AUDIT_PATH" ]; then
             echo "============================================"
             echo "ERROR: FEATURE_AUDIT.json NOT FOUND"
             echo "Expected: $AUDIT_PATH"
-            echo "Debug listing:"
             ls -lah src/main/resources/ 2>/dev/null || echo "src/main/resources/ not found"
             ls -lah docs/ 2>/dev/null || echo "docs/ not found"
             echo "============================================"
             exit 1
           fi
-
           echo "Validating FEATURE_AUDIT.json schema..."
           node -e "
             const fs = require('fs');
@@ -190,13 +178,11 @@ jobs:
             console.log('  schemaVersion:', audit.schemaVersion || 'not set');
             console.log('  overallStatus:', audit.summary?.overallStatus || 'unknown');
           "
-
           if [ ! -f "$QA_PATH" ]; then
             echo "WARNING: QA_TEST_PLAN.md not found at $QA_PATH"
           else
             echo "OK: QA_TEST_PLAN.md found"
           fi
-
           echo "=== AUDIT FILES GATE PASSED ==="
 
       # ----------------------------
@@ -213,13 +199,11 @@ jobs:
             exit 1
           fi
           echo "OK: Found source files"
-
           if [ ! -d "src/main/resources/assets/$MODID" ]; then
             echo "ERROR: Missing assets directory for mod $MODID"
             exit 1
           fi
           echo "OK: Assets directory found"
-
           if [ ! -d "src/main/resources/data/$MODID" ]; then
             echo "ERROR: Missing data directory for mod $MODID"
             exit 1
@@ -241,33 +225,26 @@ jobs:
           set -e
           echo "=== Validating toolchain for MC $MC_VERSION ==="
           ERRORS=0
-
           if [ -f gradle.properties ]; then
             ACTUAL_MC=$(grep "^minecraft_version=" gradle.properties | cut -d'=' -f2 | tr -d ' \r')
             ACTUAL_YARN=$(grep "^yarn_mappings=" gradle.properties | cut -d'=' -f2 | tr -d ' \r')
             ACTUAL_LOADER=$(grep "^loader_version=" gradle.properties | cut -d'=' -f2 | tr -d ' \r')
             ACTUAL_FABRIC=$(grep "^fabric_version=" gradle.properties | cut -d'=' -f2 | tr -d ' \r')
-
             echo "minecraft_version: $ACTUAL_MC (expected: $MC_VERSION)"
             [ "$ACTUAL_MC" = "$MC_VERSION" ] || (echo "ERROR: minecraft_version mismatch" && ERRORS=$((ERRORS+1)))
-
             echo "yarn_mappings:     $ACTUAL_YARN (expected: $EXPECTED_YARN)"
             [ "$ACTUAL_YARN" = "$EXPECTED_YARN" ] || (echo "ERROR: yarn_mappings mismatch" && ERRORS=$((ERRORS+1)))
-
             echo "loader_version:   $ACTUAL_LOADER (expected: $EXPECTED_LOADER)"
             [ "$ACTUAL_LOADER" = "$EXPECTED_LOADER" ] || (echo "ERROR: loader_version mismatch" && ERRORS=$((ERRORS+1)))
-
             echo "fabric_version:   $ACTUAL_FABRIC (expected: $EXPECTED_FABRIC_API)"
             [ "$ACTUAL_FABRIC" = "$EXPECTED_FABRIC_API" ] || (echo "ERROR: fabric_version mismatch" && ERRORS=$((ERRORS+1)))
           else
             echo "ERROR: gradle.properties not found"
             ERRORS=$((ERRORS+1))
           fi
-
           GRADLE_FILE=""
           if [ -f build.gradle ]; then GRADLE_FILE="build.gradle"; fi
           if [ -f build.gradle.kts ]; then GRADLE_FILE="build.gradle.kts"; fi
-
           if [ -n "$GRADLE_FILE" ]; then
             echo "Checking $GRADLE_FILE for Loom version..."
             ACTUAL_LOOM=$(grep -oP "fabric-loom['\"]?\s+version\s+['\"]?\K[0-9.]+" "$GRADLE_FILE" 2>/dev/null || \
@@ -284,7 +261,6 @@ jobs:
             echo "ERROR: build.gradle(.kts) not found"
             ERRORS=$((ERRORS+1))
           fi
-
           if [ -f gradle/wrapper/gradle-wrapper.properties ]; then
             ACTUAL_GRADLE=$(grep -oP "gradle-\K[0-9.]+" gradle/wrapper/gradle-wrapper.properties | head -1)
             echo "wrapper gradle:   $ACTUAL_GRADLE (expected: $EXPECTED_GRADLE)"
@@ -292,7 +268,6 @@ jobs:
           else
             echo "NOTE: gradle-wrapper.properties not found yet (will be generated)"
           fi
-
           if [ $ERRORS -gt 0 ]; then
             echo "============================================"
             echo "ERROR: Toolchain validation FAILED ($ERRORS)"
@@ -327,7 +302,6 @@ jobs:
         run: |
           set -e
           echo "Required Gradle version: $GRADLE_VERSION"
-
           if [ ! -f "./gradlew" ]; then
             echo "No ./gradlew found — generating wrapper with Gradle $GRADLE_VERSION"
             gradle wrapper --gradle-version "$GRADLE_VERSION"
@@ -343,7 +317,6 @@ jobs:
               fi
             fi
           fi
-
           chmod +x ./gradlew
           ls -lah gradle/wrapper || true
 
@@ -369,7 +342,6 @@ jobs:
           set -e
           ./gradlew --version
           ./gradlew clean build remapJar --no-daemon --info 2>&1 | tee build.log
-
           ls -lah build/libs || true
           JAR_FILE=$(ls -1S build/libs/*.jar 2>/dev/null | grep -vE '(sources|javadoc|dev)\.jar$' | head -n 1)
           if [ -z "$JAR_FILE" ]; then
@@ -378,7 +350,6 @@ jobs:
             tail -100 build.log
             exit 1
           fi
-
           echo "Found JAR: $JAR_FILE"
           echo "jar_file=$JAR_FILE" >> "$GITHUB_OUTPUT"
           echo "jar_name=$(basename "$JAR_FILE")" >> "$GITHUB_OUTPUT"
@@ -394,19 +365,15 @@ jobs:
           set -e
           echo "=== VALIDATING JAR: $JAR ==="
           echo ""
-          echo "Jar contents (first 50 lines):"
-          unzip -l "$JAR" | head -50
+          echo "Jar contents (first 80 lines):"
+          unzip -l "$JAR" | head -80
           echo ""
-
           unzip -l "$JAR" | grep -q "fabric.mod.json" || (echo "ERROR: Missing fabric.mod.json in jar" && exit 1)
           echo "OK: fabric.mod.json found"
-
           unzip -l "$JAR" | grep -q "\.class$" || (echo "ERROR: No compiled classes in jar" && exit 1)
           echo "OK: Compiled classes found"
-
           unzip -l "$JAR" | grep -q "build-plan.json" || (echo "ERROR: Missing build-plan.json in jar" && exit 1)
           echo "OK: build-plan.json found"
-
           echo ""
           echo "=== FEATURE_AUDIT.json INVARIANT CHECK ==="
           if unzip -l "$JAR" | grep -q " FEATURE_AUDIT\.json$"; then
@@ -416,29 +383,25 @@ jobs:
             echo "ERROR: FEATURE_AUDIT.json NOT FOUND at jar root"
             echo "Searching for FEATURE_AUDIT.json anywhere in jar:"
             unzip -l "$JAR" | grep -i "FEATURE_AUDIT" || echo "  (not found anywhere)"
+            echo "Expected: src/main/resources/FEATURE_AUDIT.json → jar:FEATURE_AUDIT.json"
             echo "============================================"
             exit 1
           fi
-
           if unzip -l "$JAR" | grep -q " QA_TEST_PLAN\.md$"; then
             echo "OK: QA_TEST_PLAN.md found at jar root"
           else
             echo "WARNING: QA_TEST_PLAN.md not found at jar root (non-blocking)"
           fi
-
           unzip -l "$JAR" | grep -q "assets/$MODID/" || (echo "ERROR: Missing assets/$MODID/" && exit 1)
           echo "OK: assets/$MODID/ found"
-
           unzip -l "$JAR" | grep -q "data/$MODID/" || (echo "ERROR: Missing data/$MODID/" && exit 1)
           echo "OK: data/$MODID/ found"
-
           echo ""
           echo "=== JAR VALIDATION PASSED ==="
 
       # ----------------------------
-      # 14) EXTRA QUALITY GATE (NO CLASS-COUNT CHECK)
-      #     - lang/models/textures presence
-      #     - Fabric entrypoints referenced in fabric.mod.json must exist as .class in the jar
+      # 14) EXTRA QUALITY GATE + ENTRYPOINT VALIDATION (FIXED)
+      #     CRITICAL FIX: Export TMP_DIR and pass env vars explicitly to Node
       # ----------------------------
       - name: Validate jar has lang/models/textures + Fabric entrypoints exist
         env:
@@ -450,7 +413,6 @@ jobs:
           ls -lah "$JAR" || true
           JAR_SIZE=$(stat -c%s "$JAR")
           echo "Jar size bytes: $JAR_SIZE"
-
           unzip -l "$JAR" | grep -q "assets/$MODID/lang/en_us.json" \
             || (echo "Missing assets/$MODID/lang/en_us.json" && exit 1)
           unzip -l "$JAR" | grep -q "assets/$MODID/models/.*\.json" \
@@ -458,32 +420,39 @@ jobs:
           unzip -l "$JAR" | grep -q "assets/$MODID/textures/.*\.png" \
             || (echo "Missing any assets/$MODID/textures/*.png" && exit 1)
 
-          TMP_DIR="$(mktemp -d)"
-          cleanup() { rm -rf "$TMP_DIR"; }
-          trap cleanup EXIT
-
+          # Extract fabric.mod.json and validate entrypoint classes exist
+          # CRITICAL FIX: Export TMP_DIR so Node.js can access it via process.env
+          export TMP_DIR=$(mktemp -d)
           unzip -q "$JAR" "fabric.mod.json" -d "$TMP_DIR" || (echo "ERROR: Could not extract fabric.mod.json" && exit 1)
-
-          env TMP_DIR="$TMP_DIR" JAR="$JAR" node - <<'NODE'
+          
+          # CRITICAL FIX: Pass JAR and TMP_DIR explicitly to Node via inline environment
+          JAR="$JAR" TMP_DIR="$TMP_DIR" node - <<'NODE'
           const fs = require('fs');
           const path = require('path');
           const { execSync } = require('child_process');
-
+          
           const jar = process.env.JAR;
           const tmp = process.env.TMP_DIR;
-
-          if (!jar) { console.error('ERROR: JAR env var not set'); process.exit(1); }
-          if (!tmp) { console.error('ERROR: TMP_DIR env var not set'); process.exit(1); }
-
-          const metaPath = path.join(tmp, 'fabric.mod.json');
-          if (!fs.existsSync(metaPath)) {
-            console.error('ERROR: fabric.mod.json not found at', metaPath);
+          
+          // Fail fast if env vars are missing (bug prevention)
+          if (!jar) {
+            console.error('ERROR: JAR environment variable is undefined');
             process.exit(1);
           }
-
+          if (!tmp) {
+            console.error('ERROR: TMP_DIR environment variable is undefined');
+            process.exit(1);
+          }
+          
+          const metaPath = path.join(tmp, 'fabric.mod.json');
+          if (!fs.existsSync(metaPath)) {
+            console.error('ERROR: fabric.mod.json not found at ' + metaPath);
+            process.exit(1);
+          }
+          
           const meta = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
           const eps = meta.entrypoints || {};
-
+          
           const collect = (v) => {
             if (!v) return [];
             if (Array.isArray(v)) return v.flatMap(collect);
@@ -491,41 +460,45 @@ jobs:
             if (typeof v === 'object' && v.value) return [String(v.value)];
             return [];
           };
-
+          
           const main = collect(eps.main);
           const client = collect(eps.client);
           const server = collect(eps.server);
-
+          
           if (main.length === 0 && client.length === 0 && server.length === 0) {
             console.error('ERROR: fabric.mod.json has no entrypoints (main/client/server).');
             process.exit(1);
           }
-
+          
           const all = [...new Set([...main, ...client, ...server])];
           const jarList = execSync(`unzip -l "${jar}"`, { encoding: 'utf8' });
-
           const missing = [];
+          
           for (const fqcn of all) {
             const rel = fqcn.replace(/\./g, '/') + '.class';
             const re = new RegExp(`\\s${rel}$`, 'm');
             if (!re.test(jarList)) missing.push({ fqcn, rel });
           }
-
+          
           if (missing.length) {
             console.error('ERROR: Missing entrypoint class files in jar:');
-            for (const m of missing) console.error(` - ${m.fqcn} (expected ${m.rel})`);
+            for (const m of missing) console.error(`  - ${m.fqcn} (expected ${m.rel})`);
             process.exit(1);
           }
-
+          
           console.log('OK: All Fabric entrypoint classes exist in jar:');
-          for (const fqcn of all) console.log(' - ' + fqcn);
-NODE
+          for (const fqcn of all) console.log('  - ' + fqcn);
+          NODE
+          
+          rm -rf "$TMP_DIR"
+
+          CLASS_COUNT=$(unzip -l "$JAR" | grep -c "\.class$" || echo "0")
+          echo "Class files in jar: $CLASS_COUNT"
 
           if [ "$JAR_SIZE" -lt 10000 ]; then
             echo "ERROR: Jar is suspiciously small (< 10KB). Likely missing content."
             exit 1
           fi
-
           echo "OK: Quality gate passed"
 
       # ----------------------------
@@ -590,24 +563,20 @@ NODE
           aws configure set aws_access_key_id "$R2_ACCESS_KEY_ID"
           aws configure set aws_secret_access_key "$R2_SECRET_ACCESS_KEY"
           aws configure set region auto
-
           JAR_FILE="${{ steps.build.outputs.jar_file }}"
           JAR_NAME="${{ steps.build.outputs.jar_name }}"
           MOD_UUID="${{ steps.buildconfig.outputs.modUuid }}"
           TIMESTAMP=$(date +%s)
           KEY="compiled-mods/${MOD_UUID}/${TIMESTAMP}_${JAR_NAME}"
-
           echo "Uploading to R2: $KEY"
           aws s3 cp "$JAR_FILE" "s3://${R2_BUCKET_NAME}/${KEY}" \
             --endpoint-url "https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com" \
             --content-type "application/java-archive"
-
           if [ -n "$R2_PUBLIC_URL" ]; then
             PUBLIC_URL="${R2_PUBLIC_URL}/${KEY}"
           else
             PUBLIC_URL="https://${R2_BUCKET_NAME}.r2.dev/${KEY}"
           fi
-
           echo "storage_path=$KEY" >> "$GITHUB_OUTPUT"
           echo "compiled_jar_url=$PUBLIC_URL" >> "$GITHUB_OUTPUT"
           echo "OK: Uploaded to $PUBLIC_URL"
@@ -646,7 +615,6 @@ NODE
           COMPILED_URL="${{ steps.r2.outputs.compiled_jar_url }}"
           SHA="${{ github.sha }}"
           RUN_ID="${{ github.run_id }}"
-
           PAYLOAD=$(jq -n \
             --arg modId "$MOD_UUID" \
             --arg status "completed" \
@@ -657,19 +625,16 @@ NODE
             --arg gitSha "$SHA" \
             --arg runId "$RUN_ID" \
             '{modId:$modId,status:$status,storagePath:$storagePath,storage_path:$storage_path,compiledJarUrl:$compiledJarUrl,compiled_jar_url:$compiled_jar_url,gitSha:$gitSha,runId:$runId}')
-
           RESPONSE=$(curl --fail-with-body -sS \
             -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
             -H "x-webhook-secret: $WEBHOOK_SECRET" \
             -d "$PAYLOAD" \
             -w "\n%{http_code}")
-
           HTTP_CODE=$(echo "$RESPONSE" | tail -1)
           BODY=$(echo "$RESPONSE" | head -n -1)
           echo "Response code: $HTTP_CODE"
           echo "Response body: $BODY"
-
           if [ "$HTTP_CODE" -lt 200 ] || [ "$HTTP_CODE" -ge 300 ]; then
             echo "ERROR: Webhook returned non-2xx status"
             exit 1
@@ -685,17 +650,14 @@ NODE
           WEBHOOK_URL="${{ steps.buildconfig.outputs.webhookUrl }}"
           WEBHOOK_SECRET="${{ steps.buildconfig.outputs.webhookSecret }}"
           MOD_UUID="${{ steps.buildconfig.outputs.modUuid }}"
-
           if [ -z "$WEBHOOK_URL" ]; then
             echo "No webhookUrl available; skipping webhook."
             exit 0
           fi
-
           ERROR_MSG="Build failed"
           if [ -f "build.log" ]; then
             ERROR_MSG=$(grep -iE "error:|FAILURE:|Exception" build.log | head -8 | tr '\n' ' ' | cut -c1-800 || echo "Build failed - see logs")
           fi
-
           PAYLOAD=$(jq -n \
             --arg modId "$MOD_UUID" \
             --arg status "failed" \
@@ -703,7 +665,6 @@ NODE
             --argjson storage_path null \
             --argjson storagePath null \
             '{modId:$modId,status:$status,error:$error,storage_path:$storage_path,storagePath:$storagePath}')
-
           curl --fail-with-body -sS \
             -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
