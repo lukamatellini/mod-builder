@@ -1,4 +1,5 @@
 name: Build Minecraft Mod (Main-Controlled)
+
 on:
   workflow_dispatch:
     inputs:
@@ -6,10 +7,12 @@ on:
         description: "Branch to build (e.g. build/<id>/<timestamp>)"
         required: true
         type: string
+
 jobs:
   build:
     runs-on: ubuntu-22.04
     timeout-minutes: 45
+
     steps:
       # ----------------------------
       # 1) Checkout generated mod project
@@ -19,6 +22,7 @@ jobs:
         with:
           ref: ${{ inputs.build_ref }}
           fetch-depth: 1
+
       # ----------------------------
       # 2) Setup Node (JSON parsing)
       # ----------------------------
@@ -26,6 +30,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+
       # ----------------------------
       # 3) Ensure tools are available (unzip/file/pip/jq)
       # ----------------------------
@@ -34,6 +39,7 @@ jobs:
           set -e
           sudo apt-get update
           sudo apt-get install -y unzip file python3-pip jq
+
       # ----------------------------
       # 4) Read build-config.json (includes modId + webhookSecret)
       #    HARD LOCK: enforce mcVersion === 1.21.1 and loader === fabric
@@ -52,15 +58,19 @@ jobs:
             if (!cfg.webhookSecret) throw new Error('build-config.json missing webhookSecret');
             if (!cfg.loader) throw new Error('build-config.json missing loader');
             if (!cfg.mcVersion) throw new Error('build-config.json missing mcVersion');
+
             const mc = String(cfg.mcVersion).trim();
             const loader = String(cfg.loader).trim();
             if (loader !== 'fabric') throw new Error('Only fabric loader is supported (got: ' + loader + ')');
             if (mc !== '1.21.1') throw new Error('Only Minecraft 1.21.1 is supported (got: ' + mc + ')');
+
             const url = String(cfg.webhookUrl).trim();
             if (!/^https?:\\/\\//.test(url)) throw new Error('webhookUrl must start with http:// or https://');
+
             const modUuid = String(cfg.modId).trim();
             const uuidRe = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$/;
             if (!uuidRe.test(modUuid)) throw new Error('modId is not a valid UUID: ' + modUuid);
+
             console.log('::add-mask::' + String(cfg.webhookSecret).trim());
             const out = process.env.GITHUB_OUTPUT;
             fs.appendFileSync(out, 'modUuid=' + modUuid + '\\n');
@@ -70,6 +80,7 @@ jobs:
             fs.appendFileSync(out, 'mcVersion=' + mc + '\\n');
             fs.appendFileSync(out, 'modName=' + String(cfg.modName || 'Minecraft Mod').trim() + '\\n');
           "
+
       # ----------------------------
       # 5) STRICT GUARDRAILS - HARD LOCK (NO WILDCARDS)
       # ----------------------------
@@ -101,6 +112,7 @@ jobs:
           echo "yarn_version=$YARN_VER" >> "$GITHUB_OUTPUT"
           echo "loader_version=$LOADER_VER" >> "$GITHUB_OUTPUT"
           echo "fabric_api_version=$FABRIC_API_VER" >> "$GITHUB_OUTPUT"
+
       # ----------------------------
       # 6) Validate fabric.mod.json (HARD LOCK depends.minecraft)
       # ----------------------------
@@ -120,6 +132,7 @@ jobs:
             const out = process.env.GITHUB_OUTPUT;
             fs.appendFileSync(out, 'modid=' + meta.id + '\\n');
           "
+
       # ----------------------------
       # 6b) Verify build-plan.json exists (early sanity check)
       # ----------------------------
@@ -132,10 +145,9 @@ jobs:
             exit 1
           fi
           echo "OK: build-plan.json found"
+
       # ----------------------------
       # 6c) AUDIT FILES GATE (CRITICAL - HARD GATE)
-      #     INVARIANT: FEATURE_AUDIT.json MUST be in src/main/resources/
-      #     Files in docs/ are NOT included in the jar!
       # ----------------------------
       - name: Verify audit + QA files exist (HARD GATE)
         run: |
@@ -146,23 +158,15 @@ jobs:
           echo "Required path: $AUDIT_PATH"
           echo "Required path: $QA_PATH"
           echo ""
-          # Check FEATURE_AUDIT.json exists at correct path
           if [ ! -f "$AUDIT_PATH" ]; then
             echo "============================================"
             echo "ERROR: FEATURE_AUDIT.json NOT FOUND"
-            echo ""
             echo "Expected: $AUDIT_PATH"
-            echo ""
-            echo "INVARIANT: FEATURE_AUDIT.json MUST be in src/main/resources/"
-            echo "           Files in docs/ are NOT included in the jar!"
-            echo ""
-            echo "Debug listing:"
             ls -lah src/main/resources/ 2>/dev/null || echo "src/main/resources/ not found"
             ls -lah docs/ 2>/dev/null || echo "docs/ not found"
             echo "============================================"
             exit 1
           fi
-          # Validate FEATURE_AUDIT.json is valid JSON with required schema fields
           echo "Validating FEATURE_AUDIT.json schema..."
           node -e "
             const fs = require('fs');
@@ -178,15 +182,13 @@ jobs:
             console.log('  schemaVersion:', audit.schemaVersion || 'not set');
             console.log('  overallStatus:', audit.summary?.overallStatus || 'unknown');
           "
-          # Check QA_TEST_PLAN.md exists
           if [ ! -f "$QA_PATH" ]; then
             echo "WARNING: QA_TEST_PLAN.md not found at $QA_PATH"
-            echo "This is a soft warning - build will continue"
           else
             echo "OK: QA_TEST_PLAN.md found"
           fi
-          echo ""
           echo "=== AUDIT FILES GATE PASSED ==="
+
       # ----------------------------
       # 6d) Verify source files exist
       # ----------------------------
@@ -211,6 +213,7 @@ jobs:
             exit 1
           fi
           echo "OK: Data directory found"
+
       # ----------------------------
       # 7) TOOLCHAIN CONSISTENCY VALIDATION (hard gate)
       # ----------------------------
@@ -243,6 +246,7 @@ jobs:
             echo "ERROR: gradle.properties not found"
             ERRORS=$((ERRORS+1))
           fi
+
           GRADLE_FILE=""
           if [ -f build.gradle ]; then GRADLE_FILE="build.gradle"; fi
           if [ -f build.gradle.kts ]; then GRADLE_FILE="build.gradle.kts"; fi
@@ -262,6 +266,7 @@ jobs:
             echo "ERROR: build.gradle(.kts) not found"
             ERRORS=$((ERRORS+1))
           fi
+
           if [ -f gradle/wrapper/gradle-wrapper.properties ]; then
             ACTUAL_GRADLE=$(grep -oP "gradle-\K[0-9.]+" gradle/wrapper/gradle-wrapper.properties | head -1)
             echo "wrapper gradle:   $ACTUAL_GRADLE (expected: $EXPECTED_GRADLE)"
@@ -269,6 +274,7 @@ jobs:
           else
             echo "NOTE: gradle-wrapper.properties not found yet (will be generated)"
           fi
+
           if [ $ERRORS -gt 0 ]; then
             echo "============================================"
             echo "ERROR: Toolchain validation FAILED ($ERRORS)"
@@ -276,6 +282,7 @@ jobs:
             exit 1
           fi
           echo "=== Toolchain validation PASSED ==="
+
       # ----------------------------
       # 8) Java 21 (Required for Minecraft 1.21+)
       # ----------------------------
@@ -284,6 +291,7 @@ jobs:
         with:
           distribution: temurin
           java-version: "21"
+
       # ----------------------------
       # 9) Setup Gradle (dynamic version from guardrails)
       # ----------------------------
@@ -291,6 +299,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
         with:
           gradle-version: ${{ steps.guardrails.outputs.gradle_version }}
+
       # ----------------------------
       # 10) Ensure Gradle wrapper exists with correct version
       # ----------------------------
@@ -317,6 +326,7 @@ jobs:
           fi
           chmod +x ./gradlew
           ls -lah gradle/wrapper || true
+
       # ----------------------------
       # 11) Wrapper sanity check
       # ----------------------------
@@ -329,6 +339,7 @@ jobs:
           unzip -l gradle/wrapper/gradle-wrapper.jar | grep -q "org/gradle/wrapper/GradleWrapperMain.class" \
             && echo "OK: GradleWrapperMain present" \
             || (echo "ERROR: GradleWrapperMain NOT in jar" && exit 1)
+
       # ----------------------------
       # 12) Build mod
       # ----------------------------
@@ -349,9 +360,9 @@ jobs:
           echo "Found JAR: $JAR_FILE"
           echo "jar_file=$JAR_FILE" >> "$GITHUB_OUTPUT"
           echo "jar_name=$(basename "$JAR_FILE")" >> "$GITHUB_OUTPUT"
+
       # ----------------------------
       # 13) HARD validation (real mod)
-      #     INVARIANT: FEATURE_AUDIT.json MUST be at jar root
       # ----------------------------
       - name: Validate real mod jar
         env:
@@ -361,23 +372,19 @@ jobs:
           set -e
           echo "=== VALIDATING JAR: $JAR ==="
           echo ""
-          
-          # Debug: List jar contents
-          echo "Jar contents (first 50 lines):"
-          unzip -l "$JAR" | head -50
+          echo "Jar contents (first 80 lines):"
+          unzip -l "$JAR" | head -80
           echo ""
-          
-          # Core files
+
           unzip -l "$JAR" | grep -q "fabric.mod.json" || (echo "ERROR: Missing fabric.mod.json in jar" && exit 1)
           echo "OK: fabric.mod.json found"
-          
+
           unzip -l "$JAR" | grep -q "\.class$" || (echo "ERROR: No compiled classes in jar" && exit 1)
           echo "OK: Compiled classes found"
-          
+
           unzip -l "$JAR" | grep -q "build-plan.json" || (echo "ERROR: Missing build-plan.json in jar" && exit 1)
           echo "OK: build-plan.json found"
-          # CRITICAL: FEATURE_AUDIT.json MUST be at jar root (not under docs/)
-          # This is the INVARIANT we're enforcing
+
           echo ""
           echo "=== FEATURE_AUDIT.json INVARIANT CHECK ==="
           if unzip -l "$JAR" | grep -q " FEATURE_AUDIT\.json$"; then
@@ -385,37 +392,33 @@ jobs:
           else
             echo "============================================"
             echo "ERROR: FEATURE_AUDIT.json NOT FOUND at jar root"
-            echo ""
-            echo "INVARIANT VIOLATED: FEATURE_AUDIT.json must be at jar root"
-            echo ""
             echo "Searching for FEATURE_AUDIT.json anywhere in jar:"
             unzip -l "$JAR" | grep -i "FEATURE_AUDIT" || echo "  (not found anywhere)"
-            echo ""
-            echo "This means the generator wrote to the wrong path."
             echo "Expected: src/main/resources/FEATURE_AUDIT.json → jar:FEATURE_AUDIT.json"
             echo "============================================"
             exit 1
           fi
-          
-          # QA_TEST_PLAN.md (soft check - warn only)
+
           if unzip -l "$JAR" | grep -q " QA_TEST_PLAN\.md$"; then
             echo "OK: QA_TEST_PLAN.md found at jar root"
           else
             echo "WARNING: QA_TEST_PLAN.md not found at jar root (non-blocking)"
           fi
-          # Asset directories
+
           unzip -l "$JAR" | grep -q "assets/$MODID/" || (echo "ERROR: Missing assets/$MODID/" && exit 1)
           echo "OK: assets/$MODID/ found"
-          
+
           unzip -l "$JAR" | grep -q "data/$MODID/" || (echo "ERROR: Missing data/$MODID/" && exit 1)
           echo "OK: data/$MODID/ found"
-          
+
           echo ""
           echo "=== JAR VALIDATION PASSED ==="
+
       # ----------------------------
-      # 14) EXTRA QUALITY GATE
+      # 14) EXTRA QUALITY GATE (FIXED)
+      #     Replace bogus ">= 5 class files" rule with "Fabric entrypoints exist"
       # ----------------------------
-      - name: Validate jar has lang/models/textures + reasonable size
+      - name: Validate jar has lang/models/textures + Fabric entrypoints exist
         env:
           MODID: ${{ steps.modmeta.outputs.modid }}
           JAR: ${{ steps.build.outputs.jar_file }}
@@ -425,23 +428,79 @@ jobs:
           ls -lah "$JAR" || true
           JAR_SIZE=$(stat -c%s "$JAR")
           echo "Jar size bytes: $JAR_SIZE"
+
           unzip -l "$JAR" | grep -q "assets/$MODID/lang/en_us.json" \
             || (echo "Missing assets/$MODID/lang/en_us.json" && exit 1)
+
           unzip -l "$JAR" | grep -q "assets/$MODID/models/.*\.json" \
             || (echo "Missing any assets/$MODID/models/*.json" && exit 1)
+
           unzip -l "$JAR" | grep -q "assets/$MODID/textures/.*\.png" \
             || (echo "Missing any assets/$MODID/textures/*.png" && exit 1)
-          CLASS_COUNT=$(unzip -l "$JAR" | grep -c "\.class$" || echo "0")
-          echo "Class files in jar: $CLASS_COUNT"
-          if [ "$CLASS_COUNT" -lt 5 ]; then
-            echo "ERROR: Too few class files ($CLASS_COUNT). Expected at least 5 for a real mod."
-            exit 1
-          fi
+
+          # Extract fabric.mod.json from jar and validate entrypoint classes exist
+          TMP_DIR=$(mktemp -d)
+          unzip -q "$JAR" "fabric.mod.json" -d "$TMP_DIR" || (echo "ERROR: Could not extract fabric.mod.json" && exit 1)
+
+          node - <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const { execSync } = require('child_process');
+
+          const jar = process.env.JAR;
+          const tmp = process.env.TMP_DIR;
+          const metaPath = path.join(tmp, 'fabric.mod.json');
+
+          const meta = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
+          const eps = meta.entrypoints || {};
+
+          const collect = (v) => {
+            if (!v) return [];
+            if (Array.isArray(v)) return v.flatMap(collect);
+            if (typeof v === 'string') return [v];
+            if (typeof v === 'object' && v.value) return [String(v.value)];
+            return [];
+          };
+
+          const main = collect(eps.main);
+          const client = collect(eps.client);
+          const server = collect(eps.server);
+
+          if (main.length === 0 && client.length === 0 && server.length === 0) {
+            console.error('ERROR: fabric.mod.json has no entrypoints (main/client/server).');
+            process.exit(1);
+          }
+
+          const all = [...new Set([...main, ...client, ...server])];
+
+          const jarList = execSync(`unzip -l "${jar}"`, { encoding: 'utf8' });
+
+          const missing = [];
+          for (const fqcn of all) {
+            const rel = fqcn.replace(/\./g, '/') + '.class';
+            const re = new RegExp(`\\s${rel}$`, 'm');
+            if (!re.test(jarList)) missing.push({ fqcn, rel });
+          }
+
+          if (missing.length) {
+            console.error('ERROR: Missing entrypoint class files in jar:');
+            for (const m of missing) console.error(`  - ${m.fqcn} (expected ${m.rel})`);
+            process.exit(1);
+          }
+
+          console.log('OK: All Fabric entrypoint classes exist in jar:');
+          for (const fqcn of all) console.log('  - ' + fqcn);
+          NODE
+
+          rm -rf "$TMP_DIR"
+
           if [ "$JAR_SIZE" -lt 10000 ]; then
             echo "ERROR: Jar is suspiciously small (< 10KB). Likely missing content."
             exit 1
           fi
+
           echo "OK: Quality gate passed"
+
       # ----------------------------
       # 15) Validate loot tables have content (warn-only)
       # ----------------------------
@@ -463,6 +522,7 @@ jobs:
           fi
           rm -rf "$TEMP_DIR"
           echo "OK: Loot table validation complete"
+
       # ----------------------------
       # 16) Upload artifact (GitHub)
       # ----------------------------
@@ -472,6 +532,7 @@ jobs:
           name: minecraft-mod
           path: ${{ steps.build.outputs.jar_file }}
           retention-days: 7
+
       # ----------------------------
       # 16b) Upload audit + QA files (GitHub artifact) for debugging
       # ----------------------------
@@ -484,6 +545,7 @@ jobs:
             src/main/resources/QA_TEST_PLAN.md
           if-no-files-found: warn
           retention-days: 7
+
       # ----------------------------
       # 17) Upload to R2 (for in-app download)
       # ----------------------------
@@ -518,6 +580,7 @@ jobs:
           echo "storage_path=$KEY" >> "$GITHUB_OUTPUT"
           echo "compiled_jar_url=$PUBLIC_URL" >> "$GITHUB_OUTPUT"
           echo "OK: Uploaded to $PUBLIC_URL"
+
       # ----------------------------
       # 17b) Wait until R2 URL is actually reachable (prevents UI/email race)
       # ----------------------------
@@ -537,6 +600,7 @@ jobs:
           done
           echo "ERROR: R2 URL still not reachable after retries"
           exit 1
+
       # ----------------------------
       # 18) Webhook success (STRICT + logs)
       # ----------------------------
@@ -575,6 +639,7 @@ jobs:
             echo "ERROR: Webhook returned non-2xx status"
             exit 1
           fi
+
       # ----------------------------
       # 19) Webhook failure (STRICT + logs)
       # ----------------------------
@@ -605,6 +670,7 @@ jobs:
             -H "Content-Type: application/json" \
             -H "x-webhook-secret: $WEBHOOK_SECRET" \
             -d "$PAYLOAD" || echo "Webhook notification failed (non-blocking)"
+
       # ----------------------------
       # 20) Upload build log on failure
       # ----------------------------
@@ -615,4 +681,3 @@ jobs:
           name: build-log
           path: build.log
           retention-days: 3
-
