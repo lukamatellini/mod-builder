@@ -1,0 +1,950 @@
+{
+  "schemaVersion": "1.0.0",
+  "modId": "aetherfellarmory",
+  "modName": "Aetherfell Armory",
+  "mcVersion": "1.21.1",
+  "loader": "fabric",
+  "timestamp": "2026-01-07T18:27:44.317Z",
+  "capabilitiesRequested": [],
+  "capabilitiesImplemented": [
+    "item",
+    "block",
+    "mob",
+    "structure"
+  ],
+  "assetsEmitted": [
+    "src/main/resources/assets/aetherfellarmory/textures/item/ruby_ingot.png",
+    "src/main/resources/assets/aetherfellarmory/models/item/ruby_ingot.json",
+    "src/main/resources/assets/aetherfellarmory/textures/item/sapphire_shard.png",
+    "src/main/resources/assets/aetherfellarmory/models/item/sapphire_shard.json",
+    "src/main/resources/assets/aetherfellarmory/textures/item/dragon_scale.png",
+    "src/main/resources/assets/aetherfellarmory/models/item/dragon_scale.json",
+    "src/main/resources/assets/aetherfellarmory/textures/item/magic_pizza.png",
+    "src/main/resources/assets/aetherfellarmory/models/item/magic_pizza.json",
+    "src/main/resources/assets/aetherfellarmory/textures/item/frost_berry.png",
+    "src/main/resources/assets/aetherfellarmory/models/item/frost_berry.json",
+    "src/main/resources/assets/aetherfellarmory/textures/item/phoenix_feather_cake.png",
+    "src/main/resources/assets/aetherfellarmory/models/item/phoenix_feather_cake.json",
+    "src/main/resources/assets/aetherfellarmory/textures/item/ruby_helmet.png",
+    "src/main/resources/assets/aetherfellarmory/models/item/ruby_helmet.json",
+    "src/main/resources/assets/aetherfellarmory/textures/item/ruby_chestplate.png",
+    "src/main/resources/assets/aetherfellarmory/models/item/ruby_chestplate.json",
+    "src/main/resources/assets/aetherfellarmory/textures/item/ruby_leggings.png",
+    "src/main/resources/assets/aetherfellarmory/models/item/ruby_leggings.json",
+    "src/main/resources/assets/aetherfellarmory/textures/item/ruby_boots.png",
+    "src/main/resources/assets/aetherfellarmory/models/item/ruby_boots.json",
+    "src/main/resources/assets/aetherfellarmory/textures/item/dragon_slayer_sword.png",
+    "src/main/resources/assets/aetherfellarmory/models/item/dragon_slayer_sword.json",
+    "src/main/resources/assets/aetherfellarmory/textures/item/thunder_staff.png",
+    "src/main/resources/assets/aetherfellarmory/textures/entity/projectile/thunder_staff_projectile.png",
+    "src/main/resources/assets/aetherfellarmory/models/item/thunder_staff.json",
+    "src/main/resources/assets/aetherfellarmory/textures/item/void_pickaxe.png",
+    "src/main/resources/assets/aetherfellarmory/models/item/void_pickaxe.json",
+    "src/main/resources/assets/aetherfellarmory/textures/item/void_ingot.png",
+    "src/main/resources/assets/aetherfellarmory/models/item/void_ingot.json",
+    "src/main/resources/assets/aetherfellarmory/textures/item/ice.png",
+    "src/main/resources/assets/aetherfellarmory/models/item/ice.json",
+    "src/main/resources/assets/aetherfellarmory/textures/item/packed_ice.png",
+    "src/main/resources/assets/aetherfellarmory/models/item/packed_ice.json",
+    "src/main/resources/assets/aetherfellarmory/textures/item/ruby_shard.png",
+    "src/main/resources/assets/aetherfellarmory/models/item/ruby_shard.json",
+    "src/main/resources/assets/aetherfellarmory/textures/mob_effect/dragon_slayer_sword_fire.png",
+    "src/main/resources/assets/aetherfellarmory/textures/mob_effect/void_pickaxe_speed.png",
+    "src/main/resources/assets/aetherfellarmory/blockstates/ruby_ore.json",
+    "src/main/resources/assets/aetherfellarmory/models/block/ruby_ore.json",
+    "src/main/resources/assets/aetherfellarmory/models/item/ruby_ore.json",
+    "src/main/resources/assets/aetherfellarmory/textures/block/ruby_ore.png",
+    "src/main/resources/assets/aetherfellarmory/blockstates/ruby_block.json",
+    "src/main/resources/assets/aetherfellarmory/models/block/ruby_block.json",
+    "src/main/resources/assets/aetherfellarmory/models/item/ruby_block.json",
+    "src/main/resources/assets/aetherfellarmory/textures/block/ruby_block.png",
+    "src/main/resources/assets/aetherfellarmory/blockstates/sapphire_ore.json",
+    "src/main/resources/assets/aetherfellarmory/models/block/sapphire_ore.json",
+    "src/main/resources/assets/aetherfellarmory/models/item/sapphire_ore.json",
+    "src/main/resources/assets/aetherfellarmory/textures/block/sapphire_ore.png",
+    "src/main/resources/assets/aetherfellarmory/blockstates/magic_crystal_block.json",
+    "src/main/resources/assets/aetherfellarmory/models/block/magic_crystal_block.json",
+    "src/main/resources/assets/aetherfellarmory/models/item/magic_crystal_block.json",
+    "src/main/resources/assets/aetherfellarmory/textures/block/magic_crystal_block.png",
+    "src/main/resources/assets/aetherfellarmory/blockstates/lucky_block.json",
+    "src/main/resources/assets/aetherfellarmory/models/block/lucky_block.json",
+    "src/main/resources/assets/aetherfellarmory/models/item/lucky_block.json",
+    "src/main/resources/assets/aetherfellarmory/textures/block/lucky_block.png",
+    "src/main/resources/assets/aetherfellarmory/blockstates/ancient_rune_block.json",
+    "src/main/resources/assets/aetherfellarmory/models/block/ancient_rune_block.json",
+    "src/main/resources/assets/aetherfellarmory/models/item/ancient_rune_block.json",
+    "src/main/resources/assets/aetherfellarmory/textures/block/ancient_rune_block.png",
+    "src/main/resources/assets/aetherfellarmory/blockstates/dragon_nest_block.json",
+    "src/main/resources/assets/aetherfellarmory/models/block/dragon_nest_block.json",
+    "src/main/resources/assets/aetherfellarmory/models/item/dragon_nest_block.json",
+    "src/main/resources/assets/aetherfellarmory/textures/block/dragon_nest_block.png",
+    "src/main/resources/assets/aetherfellarmory/textures/entity/frost_elemental.png",
+    "src/main/resources/assets/aetherfellarmory/textures/entity/shadow_wolf.png",
+    "src/main/resources/assets/aetherfellarmory/textures/entity/crystal_golem.png",
+    "src/main/resources/assets/aetherfellarmory/textures/entity/ancient_dragon_boss.png",
+    "src/main/resources/assets/aetherfellarmory/textures/block/void_realm_portal.png",
+    "src/main/resources/assets/aetherfellarmory/textures/block/void_realm_portal_overlay.png",
+    "src/main/resources/assets/aetherfellarmory/textures/block/sky_islands_portal.png",
+    "src/main/resources/assets/aetherfellarmory/textures/block/sky_islands_portal_overlay.png",
+    "src/main/resources/assets/aetherfellarmory/lang/en_us.json",
+    "src/main/resources/assets/aetherfellarmory/textures/gui/structure/dragon_lair.png",
+    "src/main/resources/assets/aetherfellarmory/textures/gui/structure/crystal_cave.png",
+    "src/main/resources/assets/aetherfellarmory/textures/gui/structure/pirate_ship.png",
+    "src/main/resources/assets/aetherfellarmory/textures/gui/structure/wizard_tower.png",
+    "src/main/resources/assets/aetherfellarmory/textures/models/armor/ruby_layer_1.png",
+    "src/main/resources/assets/aetherfellarmory/textures/models/armor/ruby_layer_2.png"
+  ],
+  "invariants": [
+    {
+      "name": "category_items",
+      "status": "passed",
+      "reason": "17 items audited"
+    },
+    {
+      "name": "category_blocks",
+      "status": "passed",
+      "reason": "7 blocks audited"
+    },
+    {
+      "name": "category_mobs",
+      "status": "warn",
+      "reason": "4 mobs audited (1 bosses)"
+    },
+    {
+      "name": "category_structures",
+      "status": "passed",
+      "reason": "4 structures audited"
+    },
+    {
+      "name": "category_recipes",
+      "status": "failed",
+      "reason": "14 recipes audited"
+    },
+    {
+      "name": "category_lootTables",
+      "status": "failed",
+      "reason": "4 mob loot tables audited"
+    },
+    {
+      "name": "category_textures",
+      "status": "passed",
+      "reason": "41 texture files"
+    },
+    {
+      "name": "category_quests",
+      "status": "passed"
+    },
+    {
+      "name": "category_advancements",
+      "status": "passed",
+      "reason": "0 advancements"
+    },
+    {
+      "name": "category_compilation",
+      "status": "passed",
+      "reason": "Build configuration audit"
+    },
+    {
+      "name": "category_apiSafety",
+      "status": "passed",
+      "reason": "MC 1.21.1 API compatibility check"
+    },
+    {
+      "name": "category_vanillaFallbacks",
+      "status": "warn",
+      "reason": "Tracks use of vanilla content vs custom generation"
+    },
+    {
+      "name": "category_inferredContent",
+      "status": "passed",
+      "reason": "Tracks auto-completed and inferred content"
+    }
+  ],
+  "generatedAt": "2026-01-07T18:27:44.317Z",
+  "categories": {
+    "items": {
+      "name": "Items",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "ruby_ingot: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "ruby_ingot: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "sapphire_shard: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "sapphire_shard: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "dragon_scale: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "dragon_scale: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "magic_pizza: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "magic_pizza: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "frost_berry: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "frost_berry: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "phoenix_feather_cake: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "phoenix_feather_cake: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "ruby_helmet: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "ruby_helmet: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "ruby_chestplate: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "ruby_chestplate: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "ruby_leggings: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "ruby_leggings: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "ruby_boots: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "ruby_boots: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "dragon_slayer_sword: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "dragon_slayer_sword: Weapon stats",
+          "status": "passed",
+          "message": "Damage: 20, Durability: 1500"
+        },
+        {
+          "name": "dragon_slayer_sword: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "thunder_staff: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "thunder_staff: Right-click action",
+          "status": "passed",
+          "message": "Action: projectile"
+        },
+        {
+          "name": "thunder_staff: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "void_pickaxe: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "void_pickaxe: Weapon stats",
+          "status": "passed",
+          "message": "Damage: 6, Durability: 1000"
+        },
+        {
+          "name": "void_pickaxe: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "void_ingot: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "void_ingot: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "ice: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "ice: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "packed_ice: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "packed_ice: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "ruby_shard: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "ruby_shard: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        }
+      ],
+      "notes": "17 items audited"
+    },
+    "blocks": {
+      "name": "Blocks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "ruby_ore: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "ruby_ore: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "ruby_ore: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "ruby_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "ruby_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "ruby_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "sapphire_ore: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "sapphire_ore: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "sapphire_ore: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "magic_crystal_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "magic_crystal_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "magic_crystal_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "lucky_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lucky_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "lucky_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "ancient_rune_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "ancient_rune_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "ancient_rune_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        },
+        {
+          "name": "dragon_nest_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "dragon_nest_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "dragon_nest_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        }
+      ],
+      "notes": "7 blocks audited"
+    },
+    "mobs": {
+      "name": "Mobs",
+      "status": "warn",
+      "checks": [
+        {
+          "name": "frost_elemental: Required fields",
+          "status": "passed",
+          "message": "Health: 40, Damage: 5"
+        },
+        {
+          "name": "frost_elemental: Drops",
+          "status": "passed",
+          "message": "2 drops defined"
+        },
+        {
+          "name": "frost_elemental: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        },
+        {
+          "name": "shadow_wolf: Required fields",
+          "status": "passed",
+          "message": "Health: 30, Damage: 8"
+        },
+        {
+          "name": "shadow_wolf: Drops",
+          "status": "passed",
+          "message": "2 drops defined"
+        },
+        {
+          "name": "shadow_wolf: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        },
+        {
+          "name": "crystal_golem: Required fields",
+          "status": "passed",
+          "message": "Health: 70, Damage: 15"
+        },
+        {
+          "name": "crystal_golem: Drops",
+          "status": "passed",
+          "message": "2 drops defined"
+        },
+        {
+          "name": "crystal_golem: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        },
+        {
+          "name": "ancient_dragon_boss: Required fields",
+          "status": "passed",
+          "message": "Health: 500, Damage: 25"
+        },
+        {
+          "name": "ancient_dragon_boss: Drops",
+          "status": "passed",
+          "message": "3 drops defined"
+        },
+        {
+          "name": "ancient_dragon_boss: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        },
+        {
+          "name": "ancient_dragon_boss: Boss configuration",
+          "status": "passed",
+          "message": "Boss health: 500"
+        },
+        {
+          "name": "ancient_dragon_boss: Boss trophy",
+          "status": "warn",
+          "message": "No trophy drop (will be auto-generated)"
+        }
+      ],
+      "notes": "4 mobs audited (1 bosses)"
+    },
+    "structures": {
+      "name": "Structures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "dragon_lair: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "dragon_lair: Features",
+          "status": "passed",
+          "message": "3 features defined"
+        },
+        {
+          "name": "crystal_cave: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "crystal_cave: Features",
+          "status": "passed",
+          "message": "1 features defined"
+        },
+        {
+          "name": "pirate_ship: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "pirate_ship: Features",
+          "status": "passed",
+          "message": "1 features defined"
+        },
+        {
+          "name": "wizard_tower: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "wizard_tower: Features",
+          "status": "passed",
+          "message": "1 features defined"
+        }
+      ],
+      "notes": "4 structures audited"
+    },
+    "recipes": {
+      "name": "Recipes",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "Items with recipes",
+          "status": "passed",
+          "message": "14/17 items have recipes"
+        },
+        {
+          "name": "ruby_ingot: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "sapphire_shard: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "dragon_scale: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "magic_pizza: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "frost_berry: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "phoenix_feather_cake: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "ruby_helmet: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "ruby_chestplate: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "ruby_leggings: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "ruby_boots: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "dragon_slayer_sword: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "thunder_staff: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "void_pickaxe: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "void_ingot: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        }
+      ],
+      "notes": "14 recipes audited"
+    },
+    "lootTables": {
+      "name": "Loot Tables",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "frost_elemental: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "shadow_wolf: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "crystal_golem: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "ancient_dragon_boss: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "ruby_ore: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        },
+        {
+          "name": "ruby_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        },
+        {
+          "name": "sapphire_ore: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        },
+        {
+          "name": "magic_crystal_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        },
+        {
+          "name": "lucky_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        },
+        {
+          "name": "ancient_rune_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        },
+        {
+          "name": "dragon_nest_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        }
+      ],
+      "notes": "4 mob loot tables audited"
+    },
+    "textures": {
+      "name": "Textures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Texture files generated",
+          "status": "passed",
+          "message": "41 textures generated (expected at least 24)"
+        },
+        {
+          "name": "ruby_ingot.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "sapphire_shard.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "dragon_scale.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "magic_pizza.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "frost_berry.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "phoenix_feather_cake.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "ruby_helmet.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "ruby_chestplate.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "ruby_leggings.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "ruby_boots.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        }
+      ],
+      "notes": "41 texture files"
+    },
+    "quests": {
+      "name": "Quests",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No quests defined",
+          "status": "skipped",
+          "message": "No quests to audit"
+        }
+      ]
+    },
+    "advancements": {
+      "name": "Advancements",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Advancement files",
+          "status": "warn",
+          "message": "0 advancement files generated"
+        },
+        {
+          "name": "Root advancement",
+          "status": "warn",
+          "message": "No root advancement"
+        }
+      ],
+      "notes": "0 advancements"
+    },
+    "compilation": {
+      "name": "Compilation",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "build.gradle",
+          "status": "passed",
+          "message": "Build file exists"
+        },
+        {
+          "name": "fabric.mod.json",
+          "status": "passed",
+          "message": "Mod descriptor exists"
+        },
+        {
+          "name": "Minecraft version",
+          "status": "passed",
+          "message": "Correct MC version"
+        },
+        {
+          "name": "Java source files",
+          "status": "passed",
+          "message": "30 Java files generated"
+        }
+      ],
+      "notes": "Build configuration audit"
+    },
+    "apiSafety": {
+      "name": "API Safety",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "API safety scan",
+          "status": "passed",
+          "message": "No forbidden patterns detected"
+        }
+      ],
+      "notes": "MC 1.21.1 API compatibility check"
+    },
+    "vanillaFallbacks": {
+      "name": "Vanilla Fallbacks",
+      "status": "warn",
+      "checks": [
+        {
+          "name": "Vanilla recipe ingredients",
+          "status": "passed",
+          "message": "28 vanilla ingredients used (intentional)",
+          "details": "ruby_ingot uses minecraft:diamond, ruby_ingot uses minecraft:stick, sapphire_shard uses minecraft:diamond, sapphire_shard uses minecraft:stick, dragon_scale uses minecraft:diamond, dragon_scale uses minecraft:stick, magic_pizza uses minecraft:diamond, magic_pizza uses minecraft:stick, frost_berry uses minecraft:diamond, frost_berry uses minecraft:stick"
+        },
+        {
+          "name": "Vanilla mob drops",
+          "status": "warn",
+          "message": "3 mobs drop vanilla items (consider custom drops)",
+          "details": "shadow_wolf drops minecraft:bone, shadow_wolf drops minecraft:phantom_membrane, crystal_golem drops minecraft:iron_ingot"
+        }
+      ],
+      "notes": "Tracks use of vanilla content vs custom generation"
+    },
+    "inferredContent": {
+      "name": "Inferred Content",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Inferred item recipes",
+          "status": "passed",
+          "message": "14/17 items have recipes"
+        },
+        {
+          "name": "Inferred abilities",
+          "status": "passed",
+          "message": "4/1 wands/staves have abilities"
+        },
+        {
+          "name": "Inferred mob drops",
+          "status": "passed",
+          "message": "4/4 mobs have drops"
+        },
+        {
+          "name": "Inferred spawn rules",
+          "status": "passed",
+          "message": "4/4 mobs have spawn rules"
+        },
+        {
+          "name": "Inferred structure features",
+          "status": "passed",
+          "message": "4/4 structures have features"
+        }
+      ],
+      "notes": "Tracks auto-completed and inferred content"
+    }
+  },
+  "summary": {
+    "totalChecks": 132,
+    "passed": 109,
+    "failed": 18,
+    "warnings": 4,
+    "skipped": 1,
+    "overallStatus": "failed"
+  },
+  "assetsEmittedCount": 84,
+  "repairs": [
+    {
+      "path": "src/main/resources/assets/b59e245c-2406-4f27-9b28-970d231ccf97/lang/en_us.json",
+      "type": "placeholder_lang",
+      "reason": "Generated placeholder lang file - no lang file existed"
+    },
+    {
+      "path": "src/main/resources/assets/b59e245c-2406-4f27-9b28-970d231ccf97/models/item/placeholder.json",
+      "type": "placeholder_model",
+      "reason": "Generated placeholder model - no models existed"
+    },
+    {
+      "path": "src/main/resources/assets/b59e245c-2406-4f27-9b28-970d231ccf97/textures/item/placeholder.png",
+      "type": "placeholder_png",
+      "reason": "Generated rich placeholder textures (style-aware) - no PNG files existed"
+    }
+  ],
+  "missingTextureFixups": [],
+  "modelTextureIntegrity": {
+    "valid": 25,
+    "invalid": 0,
+    "fixed": 0
+  }
+}

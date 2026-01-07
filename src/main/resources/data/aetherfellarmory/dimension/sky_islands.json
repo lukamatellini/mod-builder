@@ -1,0 +1,11 @@
+{
+  "type": "aetherfellarmory:sky_islands",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "aetherfellarmory:sky_islands_biome"
+    }
+  }
+}
