@@ -1,0 +1,20 @@
+{
+  "itemGroup.luckylootblocks.main": "Lucky Loot Blocks",
+  "itemGroup.luckylootblocks": "Lucky Loot Blocks",
+  "item.luckylootblocks.lucky_block_item": "Lucky Block",
+  "item.luckylootblocks.zombie_": "Zombie ",
+  "item.luckylootblocks.skeleton_": "Skeleton ",
+  "item.luckylootblocks.creeper_": "Creeper ",
+  "item.luckylootblocks.spider_": "Spider ",
+  "item.luckylootblocks.oak_planks_": "Oak Planks ",
+  "item.luckylootblocks.cobblestone_": "Cobblestone ",
+  "item.luckylootblocks.cooked_beef_": "Cooked Beef ",
+  "item.luckylootblocks.cooked_chicken_": "Cooked Chicken ",
+  "item.luckylootblocks.bread_": "Bread ",
+  "item.luckylootblocks.regeneration_effect": "Regeneration Effect",
+  "item.luckylootblocks.strength_effect": "Strength Effect",
+  "item.luckylootblocks.poison_effect": "Poison Effect",
+  "item.luckylootblocks.slowness_effect": "Slowness Effect",
+  "item.luckylootblocks.explosion": "Explosion",
+  "block.luckylootblocks.lucky_block": "Lucky Block"
+}
