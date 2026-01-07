@@ -1,0 +1,27 @@
+{
+  "modId": "luckylootboxes",
+  "modName": "Lucky Loot Boxes",
+  "loader": "fabric",
+  "minecraftRange": ">=1.21",
+  "expectedContent": {
+    "items": 17,
+    "mobs": 6,
+    "structures": 0,
+    "dimensions": 0,
+    "quests": 0,
+    "npcs": 0,
+    "events": 0
+  },
+  "enabledModules": {
+    "items": true,
+    "mobs": true,
+    "structures": false,
+    "dimensions": false,
+    "quests": false,
+    "npcs": false,
+    "dialogue": false,
+    "trading": false,
+    "biomes": false,
+    "events": false
+  }
+}

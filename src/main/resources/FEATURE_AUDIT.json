@@ -1,0 +1,791 @@
+{
+  "schemaVersion": "1.0.0",
+  "modId": "luckylootboxes",
+  "modName": "Lucky Loot Boxes",
+  "mcVersion": "1.21.1",
+  "loader": "fabric",
+  "timestamp": "2026-01-07T04:56:09.001Z",
+  "capabilitiesRequested": [],
+  "capabilitiesImplemented": [
+    "item",
+    "block",
+    "mob"
+  ],
+  "assetsEmitted": [
+    "src/main/resources/assets/luckylootboxes/textures/item/iron_pickaxe.png",
+    "src/main/resources/assets/luckylootboxes/models/item/iron_pickaxe.json",
+    "src/main/resources/assets/luckylootboxes/textures/item/iron_axe.png",
+    "src/main/resources/assets/luckylootboxes/models/item/iron_axe.json",
+    "src/main/resources/assets/luckylootboxes/textures/item/iron_helmet.png",
+    "src/main/resources/assets/luckylootboxes/models/item/iron_helmet.json",
+    "src/main/resources/assets/luckylootboxes/textures/item/iron_chestplate.png",
+    "src/main/resources/assets/luckylootboxes/models/item/iron_chestplate.json",
+    "src/main/resources/assets/luckylootboxes/textures/item/iron_leggings.png",
+    "src/main/resources/assets/luckylootboxes/models/item/iron_leggings.json",
+    "src/main/resources/assets/luckylootboxes/textures/item/iron_boots.png",
+    "src/main/resources/assets/luckylootboxes/models/item/iron_boots.json",
+    "src/main/resources/assets/luckylootboxes/textures/item/bow.png",
+    "src/main/resources/assets/luckylootboxes/models/item/bow.json",
+    "src/main/resources/assets/luckylootboxes/textures/item/diamond_sword.png",
+    "src/main/resources/assets/luckylootboxes/models/item/diamond_sword.json",
+    "src/main/resources/assets/luckylootboxes/textures/item/diamond_helmet.png",
+    "src/main/resources/assets/luckylootboxes/models/item/diamond_helmet.json",
+    "src/main/resources/assets/luckylootboxes/textures/item/diamond_chestplate.png",
+    "src/main/resources/assets/luckylootboxes/models/item/diamond_chestplate.json",
+    "src/main/resources/assets/luckylootboxes/textures/item/diamond_leggings.png",
+    "src/main/resources/assets/luckylootboxes/models/item/diamond_leggings.json",
+    "src/main/resources/assets/luckylootboxes/textures/item/diamond_boots.png",
+    "src/main/resources/assets/luckylootboxes/models/item/diamond_boots.json",
+    "src/main/resources/assets/luckylootboxes/textures/item/enchanted_diamond_helmet.png",
+    "src/main/resources/assets/luckylootboxes/models/item/enchanted_diamond_helmet.json",
+    "src/main/resources/assets/luckylootboxes/textures/item/enchanted_diamond_chestplate.png",
+    "src/main/resources/assets/luckylootboxes/models/item/enchanted_diamond_chestplate.json",
+    "src/main/resources/assets/luckylootboxes/textures/item/enchanted_diamond_leggings.png",
+    "src/main/resources/assets/luckylootboxes/models/item/enchanted_diamond_leggings.json",
+    "src/main/resources/assets/luckylootboxes/textures/item/enchanted_diamond_boots.png",
+    "src/main/resources/assets/luckylootboxes/models/item/enchanted_diamond_boots.json",
+    "src/main/resources/assets/luckylootboxes/textures/item/vex.png",
+    "src/main/resources/assets/luckylootboxes/models/item/vex.json",
+    "src/main/resources/assets/luckylootboxes/textures/mob_effect/enchanted_diamond_helmet_speed.png",
+    "src/main/resources/assets/luckylootboxes/textures/mob_effect/enchanted_diamond_chestplate_speed.png",
+    "src/main/resources/assets/luckylootboxes/textures/mob_effect/enchanted_diamond_leggings_speed.png",
+    "src/main/resources/assets/luckylootboxes/textures/mob_effect/enchanted_diamond_boots_speed.png",
+    "src/main/resources/assets/luckylootboxes/blockstates/lucky_block.json",
+    "src/main/resources/assets/luckylootboxes/models/block/lucky_block.json",
+    "src/main/resources/assets/luckylootboxes/models/item/lucky_block.json",
+    "src/main/resources/assets/luckylootboxes/textures/block/lucky_block.png",
+    "src/main/resources/assets/luckylootboxes/textures/entity/zombie.png",
+    "src/main/resources/assets/luckylootboxes/textures/entity/skeleton.png",
+    "src/main/resources/assets/luckylootboxes/textures/entity/creeper.png",
+    "src/main/resources/assets/luckylootboxes/textures/entity/enderman.png",
+    "src/main/resources/assets/luckylootboxes/textures/entity/vex.png",
+    "src/main/resources/assets/luckylootboxes/textures/entity/evoker.png",
+    "src/main/resources/assets/luckylootboxes/lang/en_us.json"
+  ],
+  "invariants": [
+    {
+      "name": "category_items",
+      "status": "passed",
+      "reason": "17 items audited"
+    },
+    {
+      "name": "category_blocks",
+      "status": "passed",
+      "reason": "1 blocks audited"
+    },
+    {
+      "name": "category_mobs",
+      "status": "passed",
+      "reason": "6 mobs audited (0 bosses)"
+    },
+    {
+      "name": "category_structures",
+      "status": "passed"
+    },
+    {
+      "name": "category_recipes",
+      "status": "failed",
+      "reason": "16 recipes audited"
+    },
+    {
+      "name": "category_lootTables",
+      "status": "failed",
+      "reason": "6 mob loot tables audited"
+    },
+    {
+      "name": "category_textures",
+      "status": "passed",
+      "reason": "28 texture files"
+    },
+    {
+      "name": "category_quests",
+      "status": "passed"
+    },
+    {
+      "name": "category_advancements",
+      "status": "passed",
+      "reason": "0 advancements"
+    },
+    {
+      "name": "category_compilation",
+      "status": "passed",
+      "reason": "Build configuration audit"
+    },
+    {
+      "name": "category_apiSafety",
+      "status": "passed",
+      "reason": "MC 1.21.1 API compatibility check"
+    },
+    {
+      "name": "category_vanillaFallbacks",
+      "status": "warn",
+      "reason": "Tracks use of vanilla content vs custom generation"
+    },
+    {
+      "name": "category_inferredContent",
+      "status": "passed",
+      "reason": "Tracks auto-completed and inferred content"
+    }
+  ],
+  "generatedAt": "2026-01-07T04:56:09.001Z",
+  "categories": {
+    "items": {
+      "name": "Items",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "iron_pickaxe: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "iron_pickaxe: Weapon stats",
+          "status": "passed",
+          "message": "Damage: 3, Durability: 250"
+        },
+        {
+          "name": "iron_pickaxe: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "iron_axe: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "iron_axe: Weapon stats",
+          "status": "passed",
+          "message": "Damage: 6, Durability: 250"
+        },
+        {
+          "name": "iron_axe: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "iron_helmet: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "iron_helmet: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "iron_chestplate: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "iron_chestplate: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "iron_leggings: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "iron_leggings: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "iron_boots: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "iron_boots: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "bow: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "bow: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "diamond_sword: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "diamond_sword: Weapon stats",
+          "status": "passed",
+          "message": "Damage: 7, Durability: 1561"
+        },
+        {
+          "name": "diamond_sword: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "diamond_helmet: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "diamond_helmet: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "diamond_chestplate: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "diamond_chestplate: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "diamond_leggings: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "diamond_leggings: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "diamond_boots: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "diamond_boots: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "enchanted_diamond_helmet: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "enchanted_diamond_helmet: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "enchanted_diamond_chestplate: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "enchanted_diamond_chestplate: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "enchanted_diamond_leggings: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "enchanted_diamond_leggings: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "enchanted_diamond_boots: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "enchanted_diamond_boots: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "vex: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "vex: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        }
+      ],
+      "notes": "17 items audited"
+    },
+    "blocks": {
+      "name": "Blocks",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "lucky_block: Required fields",
+          "status": "passed",
+          "message": "All required fields present"
+        },
+        {
+          "name": "lucky_block: Texture",
+          "status": "passed",
+          "message": "Texture generated"
+        },
+        {
+          "name": "lucky_block: Blockstate",
+          "status": "passed",
+          "message": "Blockstate generated"
+        }
+      ],
+      "notes": "1 blocks audited"
+    },
+    "mobs": {
+      "name": "Mobs",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "zombie: Required fields",
+          "status": "passed",
+          "message": "Health: 20, Damage: 3"
+        },
+        {
+          "name": "zombie: Drops",
+          "status": "passed",
+          "message": "1 drops defined"
+        },
+        {
+          "name": "zombie: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        },
+        {
+          "name": "skeleton: Required fields",
+          "status": "passed",
+          "message": "Health: 20, Damage: 2"
+        },
+        {
+          "name": "skeleton: Drops",
+          "status": "passed",
+          "message": "2 drops defined"
+        },
+        {
+          "name": "skeleton: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        },
+        {
+          "name": "creeper: Required fields",
+          "status": "passed",
+          "message": "Health: 20, Damage: 4"
+        },
+        {
+          "name": "creeper: Drops",
+          "status": "passed",
+          "message": "1 drops defined"
+        },
+        {
+          "name": "creeper: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        },
+        {
+          "name": "enderman: Required fields",
+          "status": "passed",
+          "message": "Health: 40, Damage: 7"
+        },
+        {
+          "name": "enderman: Drops",
+          "status": "passed",
+          "message": "1 drops defined"
+        },
+        {
+          "name": "enderman: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        },
+        {
+          "name": "vex: Required fields",
+          "status": "passed",
+          "message": "Health: 14, Damage: 9"
+        },
+        {
+          "name": "vex: Drops",
+          "status": "passed",
+          "message": "1 drops defined"
+        },
+        {
+          "name": "vex: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        },
+        {
+          "name": "evoker: Required fields",
+          "status": "passed",
+          "message": "Health: 24, Damage: 6"
+        },
+        {
+          "name": "evoker: Drops",
+          "status": "passed",
+          "message": "1 drops defined"
+        },
+        {
+          "name": "evoker: Spawn rules",
+          "status": "passed",
+          "message": "Spawns in: minecraft:plains, minecraft:forest"
+        }
+      ],
+      "notes": "6 mobs audited (0 bosses)"
+    },
+    "structures": {
+      "name": "Structures",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No structures defined",
+          "status": "skipped",
+          "message": "No structures to audit"
+        }
+      ]
+    },
+    "recipes": {
+      "name": "Recipes",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "Items with recipes",
+          "status": "passed",
+          "message": "16/17 items have recipes"
+        },
+        {
+          "name": "iron_pickaxe: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "iron_axe: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "iron_helmet: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "iron_chestplate: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "iron_leggings: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "iron_boots: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "bow: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "diamond_sword: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "diamond_helmet: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "diamond_chestplate: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "diamond_leggings: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "diamond_boots: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "enchanted_diamond_helmet: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "enchanted_diamond_chestplate: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "enchanted_diamond_leggings: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        },
+        {
+          "name": "enchanted_diamond_boots: Recipe file",
+          "status": "failed",
+          "message": "Missing recipe file"
+        }
+      ],
+      "notes": "16 recipes audited"
+    },
+    "lootTables": {
+      "name": "Loot Tables",
+      "status": "failed",
+      "checks": [
+        {
+          "name": "zombie: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "skeleton: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "creeper: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "enderman: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "vex: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "evoker: Loot table",
+          "status": "failed",
+          "message": "Missing loot table file"
+        },
+        {
+          "name": "lucky_block: Block loot",
+          "status": "passed",
+          "message": "Block loot table generated"
+        }
+      ],
+      "notes": "6 mob loot tables audited"
+    },
+    "textures": {
+      "name": "Textures",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Texture files generated",
+          "status": "passed",
+          "message": "28 textures generated (expected at least 18)"
+        },
+        {
+          "name": "iron_pickaxe.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "iron_axe.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "iron_helmet.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "iron_chestplate.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "iron_leggings.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "iron_boots.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "bow.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "diamond_sword.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "diamond_helmet.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        },
+        {
+          "name": "diamond_chestplate.png: Valid PNG",
+          "status": "passed",
+          "message": "Valid PNG data"
+        }
+      ],
+      "notes": "28 texture files"
+    },
+    "quests": {
+      "name": "Quests",
+      "status": "skipped",
+      "checks": [
+        {
+          "name": "No quests defined",
+          "status": "skipped",
+          "message": "No quests to audit"
+        }
+      ]
+    },
+    "advancements": {
+      "name": "Advancements",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Advancement files",
+          "status": "warn",
+          "message": "0 advancement files generated"
+        },
+        {
+          "name": "Root advancement",
+          "status": "warn",
+          "message": "No root advancement"
+        }
+      ],
+      "notes": "0 advancements"
+    },
+    "compilation": {
+      "name": "Compilation",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "build.gradle",
+          "status": "passed",
+          "message": "Build file exists"
+        },
+        {
+          "name": "fabric.mod.json",
+          "status": "passed",
+          "message": "Mod descriptor exists"
+        },
+        {
+          "name": "Minecraft version",
+          "status": "passed",
+          "message": "Correct MC version"
+        },
+        {
+          "name": "Java source files",
+          "status": "passed",
+          "message": "24 Java files generated"
+        }
+      ],
+      "notes": "Build configuration audit"
+    },
+    "apiSafety": {
+      "name": "API Safety",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "API safety scan",
+          "status": "passed",
+          "message": "No forbidden patterns detected"
+        }
+      ],
+      "notes": "MC 1.21.1 API compatibility check"
+    },
+    "vanillaFallbacks": {
+      "name": "Vanilla Fallbacks",
+      "status": "warn",
+      "checks": [
+        {
+          "name": "Vanilla recipe ingredients",
+          "status": "passed",
+          "message": "71 vanilla ingredients used (intentional)",
+          "details": "iron_pickaxe uses minecraft:iron_ingot, iron_pickaxe uses minecraft:iron_ingot, iron_pickaxe uses minecraft:iron_ingot, iron_pickaxe uses minecraft:stick, iron_pickaxe uses minecraft:stick, iron_axe uses minecraft:iron_ingot, iron_axe uses minecraft:iron_ingot, iron_axe uses minecraft:iron_ingot, iron_axe uses minecraft:stick, iron_axe uses minecraft:stick"
+        },
+        {
+          "name": "Vanilla mob drops",
+          "status": "warn",
+          "message": "7 mobs drop vanilla items (consider custom drops)",
+          "details": "zombie drops minecraft:rotten_flesh, skeleton drops minecraft:bone, skeleton drops minecraft:arrow, creeper drops minecraft:gunpowder, enderman drops minecraft:ender_pearl, vex drops minecraft:iron_ingot, evoker drops minecraft:totem_of_undying"
+        }
+      ],
+      "notes": "Tracks use of vanilla content vs custom generation"
+    },
+    "inferredContent": {
+      "name": "Inferred Content",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "Inferred item recipes",
+          "status": "passed",
+          "message": "16/17 items have recipes"
+        },
+        {
+          "name": "Inferred mob drops",
+          "status": "passed",
+          "message": "6/6 mobs have drops"
+        },
+        {
+          "name": "Inferred spawn rules",
+          "status": "passed",
+          "message": "6/6 mobs have spawn rules"
+        }
+      ],
+      "notes": "Tracks auto-completed and inferred content"
+    }
+  },
+  "summary": {
+    "totalChecks": 107,
+    "passed": 80,
+    "failed": 22,
+    "warnings": 3,
+    "skipped": 2,
+    "overallStatus": "failed"
+  },
+  "assetsEmittedCount": 53,
+  "repairs": [
+    {
+      "path": "src/main/resources/assets/ebe67715-81fe-44c5-b6db-a3a1fe5f5998/lang/en_us.json",
+      "type": "placeholder_lang",
+      "reason": "Generated placeholder lang file - no lang file existed"
+    },
+    {
+      "path": "src/main/resources/assets/ebe67715-81fe-44c5-b6db-a3a1fe5f5998/models/item/placeholder.json",
+      "type": "placeholder_model",
+      "reason": "Generated placeholder model - no models existed"
+    },
+    {
+      "path": "src/main/resources/assets/ebe67715-81fe-44c5-b6db-a3a1fe5f5998/textures/item/placeholder.png",
+      "type": "placeholder_png",
+      "reason": "Generated rich placeholder textures (style-aware) - no PNG files existed"
+    }
+  ],
+  "missingTextureFixups": [],
+  "modelTextureIntegrity": {
+    "valid": 19,
+    "invalid": 0,
+    "fixed": 0
+  }
+}
