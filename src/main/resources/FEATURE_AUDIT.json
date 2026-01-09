@@ -1,0 +1,223 @@
+{
+  "schemaVersion": "1.0.0",
+  "modId": "gemstoneodyssey",
+  "mcVersion": "1.21.1",
+  "loader": "fabric",
+  "capabilitiesRequested": [
+    {
+      "id": "m_block",
+      "type": "block",
+      "reason": "Block requested",
+      "derivedFrom": "block:m_block"
+    },
+    {
+      "id": "m_block",
+      "type": "recipe",
+      "reason": "Block needs recipe for obtainability",
+      "derivedFrom": "block:m_block"
+    },
+    {
+      "id": "m_block",
+      "type": "block_break_hook",
+      "reason": "Block has break behavior",
+      "derivedFrom": "block:m_block"
+    },
+    {
+      "id": "m_block",
+      "type": "loot_table",
+      "reason": "Block needs drop table",
+      "derivedFrom": "block:m_block"
+    },
+    {
+      "id": "legendary",
+      "type": "item",
+      "reason": "Item requested",
+      "derivedFrom": "item:legendary"
+    },
+    {
+      "id": "legendary",
+      "type": "recipe",
+      "reason": "Item needs recipe for obtainability",
+      "derivedFrom": "item:legendary"
+    },
+    {
+      "id": "ruby",
+      "type": "item",
+      "reason": "Item requested",
+      "derivedFrom": "item:ruby"
+    },
+    {
+      "id": "ruby",
+      "type": "recipe",
+      "reason": "Item needs recipe for obtainability",
+      "derivedFrom": "item:ruby"
+    },
+    {
+      "id": "wizard",
+      "type": "structure",
+      "reason": "Structure requested",
+      "derivedFrom": "structure:wizard"
+    },
+    {
+      "id": "wizard",
+      "type": "structure_spawn",
+      "reason": "Structure needs spawn rules",
+      "derivedFrom": "structure:wizard"
+    },
+    {
+      "id": "big",
+      "type": "mob",
+      "reason": "Mob requested",
+      "derivedFrom": "mob:big"
+    },
+    {
+      "id": "big",
+      "type": "mob_spawn",
+      "reason": "Mob needs spawn rules",
+      "derivedFrom": "mob:big"
+    },
+    {
+      "id": "big",
+      "type": "mob_drop",
+      "reason": "Mob needs drops",
+      "derivedFrom": "mob:big"
+    },
+    {
+      "id": "big",
+      "type": "loot_table",
+      "reason": "Boss needs loot table",
+      "derivedFrom": "mob:big"
+    },
+    {
+      "id": "npcs",
+      "type": "npc",
+      "reason": "NPC requested",
+      "derivedFrom": "npc:npcs"
+    },
+    {
+      "id": "npcs",
+      "type": "npc_dialogue",
+      "reason": "NPC has dialogue",
+      "derivedFrom": "npc:npcs"
+    },
+    {
+      "id": "quests",
+      "type": "quest",
+      "reason": "Quest requested",
+      "derivedFrom": "quest:quests"
+    }
+  ],
+  "capabilitiesImplemented": [],
+  "assetsEmitted": [
+    "src/main/resources/assets/gemstoneodyssey/textures/item/ruby.png",
+    "src/main/resources/assets/gemstoneodyssey/models/item/ruby.json",
+    "src/main/resources/assets/gemstoneodyssey/textures/item/sapphire.png",
+    "src/main/resources/assets/gemstoneodyssey/models/item/sapphire.json",
+    "src/main/resources/assets/gemstoneodyssey/textures/item/ruby_sword.png",
+    "src/main/resources/assets/gemstoneodyssey/models/item/ruby_sword.json",
+    "src/main/resources/assets/gemstoneodyssey/textures/item/sapphire_staff.png",
+    "src/main/resources/assets/gemstoneodyssey/models/item/sapphire_staff.json",
+    "src/main/resources/assets/gemstoneodyssey/textures/item/ruby_helmet.png",
+    "src/main/resources/assets/gemstoneodyssey/models/item/ruby_helmet.json",
+    "src/main/resources/assets/gemstoneodyssey/textures/item/ruby_chestplate.png",
+    "src/main/resources/assets/gemstoneodyssey/models/item/ruby_chestplate.json",
+    "src/main/resources/assets/gemstoneodyssey/textures/item/ruby_leggings.png",
+    "src/main/resources/assets/gemstoneodyssey/models/item/ruby_leggings.json",
+    "src/main/resources/assets/gemstoneodyssey/textures/item/ruby_boots.png",
+    "src/main/resources/assets/gemstoneodyssey/models/item/ruby_boots.json",
+    "src/main/resources/assets/gemstoneodyssey/textures/item/sunpetal_cake.png",
+    "src/main/resources/assets/gemstoneodyssey/models/item/sunpetal_cake.json",
+    "src/main/resources/assets/gemstoneodyssey/textures/item/dragonfire_stew.png",
+    "src/main/resources/assets/gemstoneodyssey/models/item/dragonfire_stew.json",
+    "src/main/resources/assets/gemstoneodyssey/textures/item/voidfish_skewer.png",
+    "src/main/resources/assets/gemstoneodyssey/models/item/voidfish_skewer.json",
+    "src/main/resources/assets/gemstoneodyssey/textures/item/ruby_ingot.png",
+    "src/main/resources/assets/gemstoneodyssey/models/item/ruby_ingot.json",
+    "src/main/resources/assets/gemstoneodyssey/blockstates/ruby_ore.json",
+    "src/main/resources/assets/gemstoneodyssey/models/block/ruby_ore.json",
+    "src/main/resources/assets/gemstoneodyssey/models/item/ruby_ore.json",
+    "src/main/resources/assets/gemstoneodyssey/textures/block/ruby_ore.png",
+    "src/main/resources/assets/gemstoneodyssey/blockstates/sapphire_ore.json",
+    "src/main/resources/assets/gemstoneodyssey/models/block/sapphire_ore.json",
+    "src/main/resources/assets/gemstoneodyssey/models/item/sapphire_ore.json",
+    "src/main/resources/assets/gemstoneodyssey/textures/block/sapphire_ore.png",
+    "src/main/resources/assets/gemstoneodyssey/blockstates/glowing_crystal.json",
+    "src/main/resources/assets/gemstoneodyssey/models/block/glowing_crystal.json",
+    "src/main/resources/assets/gemstoneodyssey/models/item/glowing_crystal.json",
+    "src/main/resources/assets/gemstoneodyssey/textures/block/glowing_crystal.png",
+    "src/main/resources/assets/gemstoneodyssey/blockstates/obsidian_brick.json",
+    "src/main/resources/assets/gemstoneodyssey/models/block/obsidian_brick.json",
+    "src/main/resources/assets/gemstoneodyssey/models/item/obsidian_brick.json",
+    "src/main/resources/assets/gemstoneodyssey/textures/block/obsidian_brick.png",
+    "src/main/resources/assets/gemstoneodyssey/blockstates/shadowstone.json",
+    "src/main/resources/assets/gemstoneodyssey/models/block/shadowstone.json",
+    "src/main/resources/assets/gemstoneodyssey/models/item/shadowstone.json",
+    "src/main/resources/assets/gemstoneodyssey/textures/block/shadowstone.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/entity/gloomy_ghoul.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/entity/ice_elemental.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/entity/blaze_elemental.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/entity/voidfish.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/entity/sky_golem.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/entity/ignis_the_ancient_dragon.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/entity/npc_captain_redbeard.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/entity/npc_elara_the_arcane_weaver.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/entity/npc_default.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/gui/advancement/the_sunken_treasure.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/gui/advancement/ghost_fleet.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/gui/advancement/the_elemental_calling.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/gui/advancement/shadows_overworld.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/gui/structure/dragon_lair.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/gui/structure/crystal_caves.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/gui/structure/pirate_shipwreck.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/gui/structure/wizard_tower.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/block/shadowfell_portal.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/block/shadowfell_portal_overlay.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/block/aetherial_expanse_portal.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/block/aetherial_expanse_portal_overlay.png",
+    "src/main/resources/assets/gemstoneodyssey/lang/en_us.json",
+    "src/main/resources/assets/gemstoneodyssey/textures/entity/captain_redbeard.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/entity/elara_the_arcane_weaver.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/advancement/the_sunken_treasure.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/advancement/ghost_fleet.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/advancement/the_elemental_calling.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/advancement/shadows_overworld.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/gui/biome/magical_grove.png",
+    "src/main/resources/assets/gemstoneodyssey/textures/gui/biome/volcanic_wastelands.png"
+  ],
+  "assetsEmittedCount": 78,
+  "repairs": [
+    {
+      "path": "src/main/resources/assets/2e03abe1-c108-4d57-8d84-b602d4175d06/lang/en_us.json",
+      "type": "placeholder_lang",
+      "reason": "Generated placeholder lang file - no lang file existed"
+    },
+    {
+      "path": "src/main/resources/assets/2e03abe1-c108-4d57-8d84-b602d4175d06/models/item/placeholder.json",
+      "type": "placeholder_model",
+      "reason": "Generated placeholder model - no models existed"
+    },
+    {
+      "path": "src/main/resources/assets/2e03abe1-c108-4d57-8d84-b602d4175d06/textures/item/placeholder.png",
+      "type": "placeholder_png",
+      "reason": "Generated rich placeholder textures (style-aware) - no PNG files existed"
+    }
+  ],
+  "missingTextureFixups": [],
+  "modelTextureIntegrity": {
+    "valid": 18,
+    "invalid": 0,
+    "fixed": 0
+  },
+  "invariants": [
+    {
+      "name": "audit_generator",
+      "status": "failed",
+      "reason": "TypeError: mob.drops is not iterable"
+    }
+  ],
+  "timestamp": "2026-01-09T17:32:42.183Z",
+  "summary": {
+    "overallStatus": "failed",
+    "error": "TypeError: mob.drops is not iterable"
+  }
+}

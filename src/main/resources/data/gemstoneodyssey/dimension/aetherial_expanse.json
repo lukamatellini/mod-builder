@@ -1,0 +1,11 @@
+{
+  "type": "gemstoneodyssey:aetherial_expanse",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "gemstoneodyssey:aetherial_expanse_biome"
+    }
+  }
+}
