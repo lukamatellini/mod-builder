@@ -1,0 +1,329 @@
+{
+  "modId": "gemstoneodyssey",
+  "modName": "Gemstone Odyssey",
+  "generatedAt": "2026-01-09T17:13:26.228Z",
+  "enabledCapabilities": [
+    "items",
+    "blocks",
+    "mobs",
+    "structures",
+    "npcs",
+    "quests",
+    "dimensions"
+  ],
+  "emittedCapabilities": [
+    "items",
+    "blocks",
+    "mobs",
+    "structures",
+    "npcs",
+    "quests",
+    "dimensions"
+  ],
+  "emittedFiles": {
+    "java": [
+      "src/main/java/com/modgen/gemstoneodyssey/GemstoneOdyssey.java",
+      "src/main/java/com/modgen/gemstoneodyssey/ModItems.java",
+      "src/main/java/com/modgen/gemstoneodyssey/ModBlocks.java",
+      "src/main/java/com/modgen/gemstoneodyssey/entity/ModEntities.java",
+      "src/client/java/com/modgen/gemstoneodyssey/client/ModModelLayers.java",
+      "src/main/java/com/modgen/gemstoneodyssey/entity/FrostElementalEntity.java",
+      "src/client/java/com/modgen/gemstoneodyssey/client/model/FrostElementalModel.java",
+      "src/client/java/com/modgen/gemstoneodyssey/client/renderer/FrostElementalRenderer.java",
+      "src/main/java/com/modgen/gemstoneodyssey/entity/ShadowWolfEntity.java",
+      "src/client/java/com/modgen/gemstoneodyssey/client/model/ShadowWolfModel.java",
+      "src/client/java/com/modgen/gemstoneodyssey/client/renderer/ShadowWolfRenderer.java",
+      "src/main/java/com/modgen/gemstoneodyssey/entity/CrystalGolemEntity.java",
+      "src/client/java/com/modgen/gemstoneodyssey/client/model/CrystalGolemModel.java",
+      "src/client/java/com/modgen/gemstoneodyssey/client/renderer/CrystalGolemRenderer.java",
+      "src/main/java/com/modgen/gemstoneodyssey/entity/AncientDragonEntity.java",
+      "src/client/java/com/modgen/gemstoneodyssey/client/model/AncientDragonModel.java",
+      "src/client/java/com/modgen/gemstoneodyssey/client/renderer/AncientDragonRenderer.java",
+      "src/main/java/com/modgen/gemstoneodyssey/entity/FireElementalEntity.java",
+      "src/client/java/com/modgen/gemstoneodyssey/client/model/FireElementalModel.java",
+      "src/client/java/com/modgen/gemstoneodyssey/client/renderer/FireElementalRenderer.java",
+      "src/main/java/com/modgen/gemstoneodyssey/entity/UnicornEntity.java",
+      "src/client/java/com/modgen/gemstoneodyssey/client/model/UnicornModel.java",
+      "src/client/java/com/modgen/gemstoneodyssey/client/renderer/UnicornRenderer.java",
+      "src/main/java/com/modgen/gemstoneodyssey/entity/PirateEntity.java",
+      "src/client/java/com/modgen/gemstoneodyssey/client/model/PirateModel.java",
+      "src/client/java/com/modgen/gemstoneodyssey/client/renderer/PirateRenderer.java",
+      "src/main/java/com/modgen/gemstoneodyssey/entity/BenevolentFloatingCreatureEntity.java",
+      "src/client/java/com/modgen/gemstoneodyssey/client/model/BenevolentFloatingCreatureModel.java",
+      "src/client/java/com/modgen/gemstoneodyssey/client/renderer/BenevolentFloatingCreatureRenderer.java",
+      "src/main/java/com/modgen/gemstoneodyssey/ModNPCs.java",
+      "src/main/java/com/modgen/gemstoneodyssey/entity/ModGenNPCEntity.java",
+      "src/client/java/com/modgen/gemstoneodyssey/client/model/NPCModel.java",
+      "src/client/java/com/modgen/gemstoneodyssey/client/renderer/NPCRenderer.java",
+      "src/main/java/com/modgen/gemstoneodyssey/npc/PirateCaptainNPC.java",
+      "src/main/java/com/modgen/gemstoneodyssey/npc/WizardMerchantNPC.java",
+      "src/main/java/com/modgen/gemstoneodyssey/ModQuests.java",
+      "src/main/java/com/modgen/gemstoneodyssey/ModStructures.java",
+      "src/main/java/com/modgen/gemstoneodyssey/structure/DragonLairStructure.java",
+      "src/main/java/com/modgen/gemstoneodyssey/structure/CrystalCaveStructure.java",
+      "src/main/java/com/modgen/gemstoneodyssey/structure/PirateShipStructure.java",
+      "src/main/java/com/modgen/gemstoneodyssey/structure/WizardTowerStructure.java",
+      "src/main/java/com/modgen/gemstoneodyssey/ModDimensions.java",
+      "src/client/java/com/modgen/gemstoneodyssey/client/GemstoneOdysseyClient.java"
+    ],
+    "assets": [
+      "src/main/resources/assets/gemstoneodyssey/textures/item/ruby_ingot.png",
+      "src/main/resources/assets/gemstoneodyssey/models/item/ruby_ingot.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/item/sapphire_shard.png",
+      "src/main/resources/assets/gemstoneodyssey/models/item/sapphire_shard.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/item/dragon_scale.png",
+      "src/main/resources/assets/gemstoneodyssey/models/item/dragon_scale.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/item/magic_pizza.png",
+      "src/main/resources/assets/gemstoneodyssey/models/item/magic_pizza.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/item/frost_berry.png",
+      "src/main/resources/assets/gemstoneodyssey/models/item/frost_berry.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/item/phoenix_feather_cake.png",
+      "src/main/resources/assets/gemstoneodyssey/models/item/phoenix_feather_cake.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/item/ruby_helmet.png",
+      "src/main/resources/assets/gemstoneodyssey/models/item/ruby_helmet.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/item/ruby_chestplate.png",
+      "src/main/resources/assets/gemstoneodyssey/models/item/ruby_chestplate.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/item/ruby_leggings.png",
+      "src/main/resources/assets/gemstoneodyssey/models/item/ruby_leggings.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/item/ruby_boots.png",
+      "src/main/resources/assets/gemstoneodyssey/models/item/ruby_boots.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/item/dragon_slayer_sword.png",
+      "src/main/resources/assets/gemstoneodyssey/models/item/dragon_slayer_sword.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/item/thunder_staff.png",
+      "src/main/resources/assets/gemstoneodyssey/models/item/thunder_staff.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/item/void_pickaxe.png",
+      "src/main/resources/assets/gemstoneodyssey/models/item/void_pickaxe.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/item/ruby_pickaxe.png",
+      "src/main/resources/assets/gemstoneodyssey/models/item/ruby_pickaxe.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/item/ruby_axe.png",
+      "src/main/resources/assets/gemstoneodyssey/models/item/ruby_axe.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/item/ruby_shovel.png",
+      "src/main/resources/assets/gemstoneodyssey/models/item/ruby_shovel.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/item/ruby_hoe.png",
+      "src/main/resources/assets/gemstoneodyssey/models/item/ruby_hoe.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/item/ruby_sword.png",
+      "src/main/resources/assets/gemstoneodyssey/models/item/ruby_sword.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/item/void_gem.png",
+      "src/main/resources/assets/gemstoneodyssey/models/item/void_gem.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/item/sky_crystal.png",
+      "src/main/resources/assets/gemstoneodyssey/models/item/sky_crystal.json",
+      "src/main/resources/assets/gemstoneodyssey/blockstates/ruby_ore.json",
+      "src/main/resources/assets/gemstoneodyssey/models/block/ruby_ore.json",
+      "src/main/resources/assets/gemstoneodyssey/models/item/ruby_ore.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/block/ruby_ore.png",
+      "src/main/resources/assets/gemstoneodyssey/blockstates/ruby_block.json",
+      "src/main/resources/assets/gemstoneodyssey/models/block/ruby_block.json",
+      "src/main/resources/assets/gemstoneodyssey/models/item/ruby_block.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/block/ruby_block.png",
+      "src/main/resources/assets/gemstoneodyssey/blockstates/sapphire_ore.json",
+      "src/main/resources/assets/gemstoneodyssey/models/block/sapphire_ore.json",
+      "src/main/resources/assets/gemstoneodyssey/models/item/sapphire_ore.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/block/sapphire_ore.png",
+      "src/main/resources/assets/gemstoneodyssey/blockstates/magic_crystal_block.json",
+      "src/main/resources/assets/gemstoneodyssey/models/block/magic_crystal_block.json",
+      "src/main/resources/assets/gemstoneodyssey/models/item/magic_crystal_block.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/block/magic_crystal_block.png",
+      "src/main/resources/assets/gemstoneodyssey/blockstates/lucky_block.json",
+      "src/main/resources/assets/gemstoneodyssey/models/block/lucky_block.json",
+      "src/main/resources/assets/gemstoneodyssey/models/item/lucky_block.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/block/lucky_block.png",
+      "src/main/resources/assets/gemstoneodyssey/blockstates/ancient_rune_block.json",
+      "src/main/resources/assets/gemstoneodyssey/models/block/ancient_rune_block.json",
+      "src/main/resources/assets/gemstoneodyssey/models/item/ancient_rune_block.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/block/ancient_rune_block.png",
+      "src/main/resources/assets/gemstoneodyssey/blockstates/dragon_nest_block.json",
+      "src/main/resources/assets/gemstoneodyssey/models/block/dragon_nest_block.json",
+      "src/main/resources/assets/gemstoneodyssey/models/item/dragon_nest_block.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/block/dragon_nest_block.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/entity/frost_elemental.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/entity/shadow_wolf.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/entity/crystal_golem.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/entity/ancient_dragon.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/entity/fire_elemental.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/entity/unicorn.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/entity/pirate.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/entity/benevolent_floating_creature.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/entity/npc_pirate_captain.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/entity/npc_wizard_merchant.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/entity/npc_default.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/gui/advancement/dragon_slayer_quest.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/gui/advancement/crystal_collector_quest.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/gui/advancement/void_explorer_quest.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/gui/structure/dragon_lair.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/gui/structure/crystal_cave.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/gui/structure/pirate_ship.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/gui/structure/wizard_tower.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/block/void_realm_portal.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/block/void_realm_portal_overlay.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/block/sky_islands_portal.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/block/sky_islands_portal_overlay.png",
+      "src/main/resources/assets/gemstoneodyssey/lang/en_us.json",
+      "src/main/resources/assets/gemstoneodyssey/textures/entity/pirate_captain.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/entity/wizard_merchant.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/advancement/dragon_slayer_quest.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/advancement/crystal_collector_quest.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/advancement/void_explorer_quest.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/gui/biome/enchanted_forest.png",
+      "src/main/resources/assets/gemstoneodyssey/textures/gui/biome/volcanic_wasteland.png"
+    ],
+    "data": [
+      "src/main/resources/data/gemstoneodyssey/loot_tables/blocks/ruby_ore.json",
+      "src/main/resources/data/gemstoneodyssey/loot_tables/blocks/ruby_block.json",
+      "src/main/resources/data/gemstoneodyssey/loot_tables/blocks/sapphire_ore.json",
+      "src/main/resources/data/gemstoneodyssey/loot_tables/blocks/magic_crystal_block.json",
+      "src/main/resources/data/gemstoneodyssey/loot_tables/blocks/lucky_block.json",
+      "src/main/resources/data/gemstoneodyssey/loot_tables/blocks/ancient_rune_block.json",
+      "src/main/resources/data/gemstoneodyssey/loot_tables/blocks/dragon_nest_block.json",
+      "src/main/resources/data/gemstoneodyssey/dimension/void_realm.json",
+      "src/main/resources/data/gemstoneodyssey/dimension_type/void_realm.json",
+      "src/main/resources/data/gemstoneodyssey/dimension/sky_islands.json",
+      "src/main/resources/data/gemstoneodyssey/dimension_type/sky_islands.json",
+      "src/main/resources/data/gemstoneodyssey/tags/functions/load.json",
+      "src/main/resources/data/gemstoneodyssey/tags/functions/tick.json"
+    ],
+    "gradle": [
+      "build.gradle",
+      "gradle.properties",
+      "settings.gradle",
+      "gradle/wrapper/gradle-wrapper.properties"
+    ],
+    "other": [
+      "src/main/resources/fabric.mod.json",
+      "src/main/resources/build-plan.json",
+      "LICENSE",
+      "README.md",
+      "src/main/resources/FEATURE_AUDIT.json"
+    ]
+  },
+  "entrypoints": {
+    "main": "com.modgen.gemstoneodyssey.GemstoneOdyssey",
+    "client": "com.modgen.gemstoneodyssey.client.GemstoneOdysseyClient"
+  },
+  "assetCounts": {
+    "items": 20,
+    "blocks": 7,
+    "mobs": 8,
+    "structures": 4,
+    "textures": 56
+  },
+  "registryValidation": {
+    "passed": true,
+    "errors": []
+  },
+  "capabilityEmissionReport": {
+    "items": {
+      "specPresent": true,
+      "expectedFiles": [
+        "src/main/java/com/modgen/gemstoneodyssey/ModItems.java"
+      ],
+      "emittedFiles": [
+        "src/main/java/com/modgen/gemstoneodyssey/ModItems.java"
+      ],
+      "emitterRan": true,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "blocks": {
+      "specPresent": true,
+      "expectedFiles": [
+        "src/main/java/com/modgen/gemstoneodyssey/ModBlocks.java"
+      ],
+      "emittedFiles": [
+        "src/main/java/com/modgen/gemstoneodyssey/ModBlocks.java"
+      ],
+      "emitterRan": true,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "mobs": {
+      "specPresent": true,
+      "expectedFiles": [
+        "src/main/java/com/modgen/gemstoneodyssey/entity/ModEntities.java"
+      ],
+      "emittedFiles": [
+        "src/main/java/com/modgen/gemstoneodyssey/entity/ModEntities.java"
+      ],
+      "emitterRan": true,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "structures": {
+      "specPresent": true,
+      "expectedFiles": [
+        "src/main/java/com/modgen/gemstoneodyssey/ModStructures.java"
+      ],
+      "emittedFiles": [
+        "src/main/java/com/modgen/gemstoneodyssey/ModStructures.java"
+      ],
+      "emitterRan": true,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "events": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/gemstoneodyssey/ModEvents.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "npcs": {
+      "specPresent": true,
+      "expectedFiles": [
+        "src/main/java/com/modgen/gemstoneodyssey/ModNPCs.java"
+      ],
+      "emittedFiles": [
+        "src/main/java/com/modgen/gemstoneodyssey/ModNPCs.java"
+      ],
+      "emitterRan": true,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "quests": {
+      "specPresent": true,
+      "expectedFiles": [
+        "src/main/java/com/modgen/gemstoneodyssey/ModQuests.java"
+      ],
+      "emittedFiles": [
+        "src/main/java/com/modgen/gemstoneodyssey/ModQuests.java"
+      ],
+      "emitterRan": true,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "guis": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/gemstoneodyssey/ModGUIs.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "dimensions": {
+      "specPresent": true,
+      "expectedFiles": [
+        "src/main/java/com/modgen/gemstoneodyssey/ModDimensions.java"
+      ],
+      "emittedFiles": [
+        "src/main/java/com/modgen/gemstoneodyssey/ModDimensions.java"
+      ],
+      "emitterRan": true,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "biomeInjectors": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/gemstoneodyssey/ModBiomeModifications.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    }
+  }
+}

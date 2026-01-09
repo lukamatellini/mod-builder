@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "7ceb9420-8b67-45c4-a2fb-0014e60c2aa9:item/placeholder"
+  }
+}
