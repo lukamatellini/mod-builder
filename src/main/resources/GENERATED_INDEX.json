@@ -1,0 +1,167 @@
+{
+  "modId": "luckylootboxes",
+  "modName": "Lucky Loot Boxes",
+  "generatedAt": "2026-01-09T17:38:58.275Z",
+  "enabledCapabilities": [
+    "items",
+    "blocks"
+  ],
+  "emittedCapabilities": [
+    "items",
+    "blocks"
+  ],
+  "emittedFiles": {
+    "java": [
+      "src/main/java/com/modgen/luckylootboxes/LuckyLootBoxes.java",
+      "src/main/java/com/modgen/luckylootboxes/ModItems.java",
+      "src/main/java/com/modgen/luckylootboxes/ModBlocks.java",
+      "src/client/java/com/modgen/luckylootboxes/client/LuckyLootBoxesClient.java"
+    ],
+    "assets": [
+      "src/main/resources/assets/luckylootboxes/textures/item/lucky_block.png",
+      "src/main/resources/assets/luckylootboxes/models/item/lucky_block.json",
+      "src/main/resources/assets/luckylootboxes/blockstates/lucky_block.json",
+      "src/main/resources/assets/luckylootboxes/models/block/lucky_block.json",
+      "src/main/resources/assets/luckylootboxes/textures/block/lucky_block.png",
+      "src/main/resources/assets/luckylootboxes/lang/en_us.json"
+    ],
+    "data": [
+      "src/main/resources/data/luckylootboxes/loot_tables/blocks/lucky_block.json",
+      "src/main/resources/data/luckylootboxes/tags/functions/load.json",
+      "src/main/resources/data/luckylootboxes/tags/functions/tick.json"
+    ],
+    "gradle": [
+      "build.gradle",
+      "gradle.properties",
+      "settings.gradle",
+      "gradle/wrapper/gradle-wrapper.properties"
+    ],
+    "other": [
+      "src/main/resources/fabric.mod.json",
+      "src/main/resources/build-plan.json",
+      "LICENSE",
+      "README.md",
+      "src/main/resources/FEATURE_AUDIT.json"
+    ]
+  },
+  "entrypoints": {
+    "main": "com.modgen.luckylootboxes.LuckyLootBoxes"
+  },
+  "assetCounts": {
+    "items": 1,
+    "blocks": 1,
+    "mobs": 0,
+    "structures": 0,
+    "textures": 2
+  },
+  "registryValidation": {
+    "passed": true,
+    "errors": []
+  },
+  "capabilityEmissionReport": {
+    "items": {
+      "specPresent": true,
+      "expectedFiles": [
+        "src/main/java/com/modgen/luckylootboxes/ModItems.java"
+      ],
+      "emittedFiles": [
+        "src/main/java/com/modgen/luckylootboxes/ModItems.java"
+      ],
+      "emitterRan": true,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "blocks": {
+      "specPresent": true,
+      "expectedFiles": [
+        "src/main/java/com/modgen/luckylootboxes/ModBlocks.java"
+      ],
+      "emittedFiles": [
+        "src/main/java/com/modgen/luckylootboxes/ModBlocks.java"
+      ],
+      "emitterRan": true,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "mobs": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/luckylootboxes/entity/ModEntities.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "structures": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/luckylootboxes/ModStructures.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "events": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/luckylootboxes/ModEvents.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "npcs": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/luckylootboxes/ModNPCs.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "quests": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/luckylootboxes/ModQuests.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "guis": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/luckylootboxes/ModGUIs.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "dimensions": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/luckylootboxes/ModDimensions.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "biomeInjectors": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/luckylootboxes/ModBiomeModifications.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    }
+  }
+}
