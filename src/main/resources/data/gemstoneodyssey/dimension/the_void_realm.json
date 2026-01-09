@@ -1,0 +1,11 @@
+{
+  "type": "gemstoneodyssey:the_void_realm",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "gemstoneodyssey:the_void_realm_biome"
+    }
+  }
+}
