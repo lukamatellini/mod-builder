@@ -1,0 +1,207 @@
+{
+  "modId": "twilightgemcraft",
+  "modName": "Twilight Gemcraft",
+  "generatedAt": "2026-01-09T17:36:12.573Z",
+  "enabledCapabilities": [
+    "items",
+    "blocks",
+    "mobs",
+    "structures"
+  ],
+  "emittedCapabilities": [
+    "items",
+    "blocks",
+    "mobs",
+    "structures"
+  ],
+  "emittedFiles": {
+    "java": [
+      "src/main/java/com/modgen/twilightgemcraft/TwilightGemcraft.java",
+      "src/main/java/com/modgen/twilightgemcraft/ModItems.java",
+      "src/main/java/com/modgen/twilightgemcraft/ModBlocks.java",
+      "src/main/java/com/modgen/twilightgemcraft/entity/ModEntities.java",
+      "src/client/java/com/modgen/twilightgemcraft/client/ModModelLayers.java",
+      "src/main/java/com/modgen/twilightgemcraft/entity/NightProwlerEntity.java",
+      "src/client/java/com/modgen/twilightgemcraft/client/model/NightProwlerModel.java",
+      "src/client/java/com/modgen/twilightgemcraft/client/renderer/NightProwlerRenderer.java",
+      "src/main/java/com/modgen/twilightgemcraft/ModStructures.java",
+      "src/main/java/com/modgen/twilightgemcraft/structure/AncientAetheriumShrineStructure.java",
+      "src/client/java/com/modgen/twilightgemcraft/client/TwilightGemcraftClient.java"
+    ],
+    "assets": [
+      "src/main/resources/assets/twilightgemcraft/textures/item/aetherium_gem.png",
+      "src/main/resources/assets/twilightgemcraft/models/item/aetherium_gem.json",
+      "src/main/resources/assets/twilightgemcraft/textures/item/aetherium_dust.png",
+      "src/main/resources/assets/twilightgemcraft/models/item/aetherium_dust.json",
+      "src/main/resources/assets/twilightgemcraft/textures/item/aetherium_ingot.png",
+      "src/main/resources/assets/twilightgemcraft/models/item/aetherium_ingot.json",
+      "src/main/resources/assets/twilightgemcraft/textures/item/aetherium_helmet.png",
+      "src/main/resources/assets/twilightgemcraft/models/item/aetherium_helmet.json",
+      "src/main/resources/assets/twilightgemcraft/textures/item/aetherium_chestplate.png",
+      "src/main/resources/assets/twilightgemcraft/models/item/aetherium_chestplate.json",
+      "src/main/resources/assets/twilightgemcraft/textures/item/aetherium_leggings.png",
+      "src/main/resources/assets/twilightgemcraft/models/item/aetherium_leggings.json",
+      "src/main/resources/assets/twilightgemcraft/textures/item/aetherium_boots.png",
+      "src/main/resources/assets/twilightgemcraft/models/item/aetherium_boots.json",
+      "src/main/resources/assets/twilightgemcraft/textures/item/aetherium_shard.png",
+      "src/main/resources/assets/twilightgemcraft/models/item/aetherium_shard.json",
+      "src/main/resources/assets/twilightgemcraft/textures/item/night_vision_potion.png",
+      "src/main/resources/assets/twilightgemcraft/models/item/night_vision_potion.json",
+      "src/main/resources/assets/twilightgemcraft/blockstates/aetherium_ore.json",
+      "src/main/resources/assets/twilightgemcraft/models/block/aetherium_ore.json",
+      "src/main/resources/assets/twilightgemcraft/models/item/aetherium_ore.json",
+      "src/main/resources/assets/twilightgemcraft/textures/block/aetherium_ore.png",
+      "src/main/resources/assets/twilightgemcraft/blockstates/aetherium_block.json",
+      "src/main/resources/assets/twilightgemcraft/models/block/aetherium_block.json",
+      "src/main/resources/assets/twilightgemcraft/models/item/aetherium_block.json",
+      "src/main/resources/assets/twilightgemcraft/textures/block/aetherium_block.png",
+      "src/main/resources/assets/twilightgemcraft/textures/entity/night_prowler.png",
+      "src/main/resources/assets/twilightgemcraft/textures/gui/structure/ancient_aetherium_shrine.png",
+      "src/main/resources/assets/twilightgemcraft/lang/en_us.json"
+    ],
+    "data": [
+      "src/main/resources/data/twilightgemcraft/loot_tables/blocks/aetherium_ore.json",
+      "src/main/resources/data/twilightgemcraft/loot_tables/blocks/aetherium_block.json",
+      "src/main/resources/data/twilightgemcraft/tags/functions/load.json",
+      "src/main/resources/data/twilightgemcraft/tags/functions/tick.json"
+    ],
+    "gradle": [
+      "build.gradle",
+      "gradle.properties",
+      "settings.gradle",
+      "gradle/wrapper/gradle-wrapper.properties"
+    ],
+    "other": [
+      "src/main/resources/fabric.mod.json",
+      "src/main/resources/build-plan.json",
+      "LICENSE",
+      "README.md",
+      "src/main/resources/FEATURE_AUDIT.json"
+    ]
+  },
+  "entrypoints": {
+    "main": "com.modgen.twilightgemcraft.TwilightGemcraft",
+    "client": "com.modgen.twilightgemcraft.client.TwilightGemcraftClient"
+  },
+  "assetCounts": {
+    "items": 9,
+    "blocks": 2,
+    "mobs": 1,
+    "structures": 1,
+    "textures": 13
+  },
+  "registryValidation": {
+    "passed": true,
+    "errors": []
+  },
+  "capabilityEmissionReport": {
+    "items": {
+      "specPresent": true,
+      "expectedFiles": [
+        "src/main/java/com/modgen/twilightgemcraft/ModItems.java"
+      ],
+      "emittedFiles": [
+        "src/main/java/com/modgen/twilightgemcraft/ModItems.java"
+      ],
+      "emitterRan": true,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "blocks": {
+      "specPresent": true,
+      "expectedFiles": [
+        "src/main/java/com/modgen/twilightgemcraft/ModBlocks.java"
+      ],
+      "emittedFiles": [
+        "src/main/java/com/modgen/twilightgemcraft/ModBlocks.java"
+      ],
+      "emitterRan": true,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "mobs": {
+      "specPresent": true,
+      "expectedFiles": [
+        "src/main/java/com/modgen/twilightgemcraft/entity/ModEntities.java"
+      ],
+      "emittedFiles": [
+        "src/main/java/com/modgen/twilightgemcraft/entity/ModEntities.java"
+      ],
+      "emitterRan": true,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "structures": {
+      "specPresent": true,
+      "expectedFiles": [
+        "src/main/java/com/modgen/twilightgemcraft/ModStructures.java"
+      ],
+      "emittedFiles": [
+        "src/main/java/com/modgen/twilightgemcraft/ModStructures.java"
+      ],
+      "emitterRan": true,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "events": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/twilightgemcraft/ModEvents.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "npcs": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/twilightgemcraft/ModNPCs.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "quests": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/twilightgemcraft/ModQuests.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "guis": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/twilightgemcraft/ModGUIs.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "dimensions": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/twilightgemcraft/ModDimensions.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "biomeInjectors": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/twilightgemcraft/ModBiomeModifications.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    }
+  }
+}

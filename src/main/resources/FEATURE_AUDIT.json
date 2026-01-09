@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "modId": "twilightgemcraft",
+  "mcVersion": "1.21.1",
+  "loader": "fabric",
+  "capabilitiesRequested": [
+    {
+      "id": "into",
+      "type": "item",
+      "reason": "Item requested",
+      "derivedFrom": "item:into"
+    },
+    {
+      "id": "into",
+      "type": "recipe",
+      "reason": "Item needs recipe for obtainability",
+      "derivedFrom": "item:into"
+    },
+    {
+      "id": "ruined",
+      "type": "structure",
+      "reason": "Structure requested",
+      "derivedFrom": "structure:ruined"
+    },
+    {
+      "id": "ruined",
+      "type": "structure_spawn",
+      "reason": "Structure needs spawn rules",
+      "derivedFrom": "structure:ruined"
+    },
+    {
+      "id": "keep",
+      "type": "structure",
+      "reason": "Structure requested",
+      "derivedFrom": "structure:keep"
+    },
+    {
+      "id": "keep",
+      "type": "structure_spawn",
+      "reason": "Structure needs spawn rules",
+      "derivedFrom": "structure:keep"
+    }
+  ],
+  "capabilitiesImplemented": [],
+  "assetsEmitted": [
+    "src/main/resources/assets/twilightgemcraft/textures/item/aetherium_gem.png",
+    "src/main/resources/assets/twilightgemcraft/models/item/aetherium_gem.json",
+    "src/main/resources/assets/twilightgemcraft/textures/item/aetherium_dust.png",
+    "src/main/resources/assets/twilightgemcraft/models/item/aetherium_dust.json",
+    "src/main/resources/assets/twilightgemcraft/textures/item/aetherium_ingot.png",
+    "src/main/resources/assets/twilightgemcraft/models/item/aetherium_ingot.json",
+    "src/main/resources/assets/twilightgemcraft/textures/item/aetherium_helmet.png",
+    "src/main/resources/assets/twilightgemcraft/models/item/aetherium_helmet.json",
+    "src/main/resources/assets/twilightgemcraft/textures/item/aetherium_chestplate.png",
+    "src/main/resources/assets/twilightgemcraft/models/item/aetherium_chestplate.json",
+    "src/main/resources/assets/twilightgemcraft/textures/item/aetherium_leggings.png",
+    "src/main/resources/assets/twilightgemcraft/models/item/aetherium_leggings.json",
+    "src/main/resources/assets/twilightgemcraft/textures/item/aetherium_boots.png",
+    "src/main/resources/assets/twilightgemcraft/models/item/aetherium_boots.json",
+    "src/main/resources/assets/twilightgemcraft/textures/item/aetherium_shard.png",
+    "src/main/resources/assets/twilightgemcraft/models/item/aetherium_shard.json",
+    "src/main/resources/assets/twilightgemcraft/textures/item/night_vision_potion.png",
+    "src/main/resources/assets/twilightgemcraft/models/item/night_vision_potion.json",
+    "src/main/resources/assets/twilightgemcraft/blockstates/aetherium_ore.json",
+    "src/main/resources/assets/twilightgemcraft/models/block/aetherium_ore.json",
+    "src/main/resources/assets/twilightgemcraft/models/item/aetherium_ore.json",
+    "src/main/resources/assets/twilightgemcraft/textures/block/aetherium_ore.png",
+    "src/main/resources/assets/twilightgemcraft/blockstates/aetherium_block.json",
+    "src/main/resources/assets/twilightgemcraft/models/block/aetherium_block.json",
+    "src/main/resources/assets/twilightgemcraft/models/item/aetherium_block.json",
+    "src/main/resources/assets/twilightgemcraft/textures/block/aetherium_block.png",
+    "src/main/resources/assets/twilightgemcraft/textures/entity/night_prowler.png",
+    "src/main/resources/assets/twilightgemcraft/textures/gui/structure/ancient_aetherium_shrine.png",
+    "src/main/resources/assets/twilightgemcraft/lang/en_us.json"
+  ],
+  "assetsEmittedCount": 33,
+  "repairs": [
+    {
+      "path": "src/main/resources/assets/92cddfb9-d049-4420-882b-ba9ad064e792/lang/en_us.json",
+      "type": "placeholder_lang",
+      "reason": "Generated placeholder lang file - no lang file existed"
+    },
+    {
+      "path": "src/main/resources/assets/92cddfb9-d049-4420-882b-ba9ad064e792/models/item/placeholder.json",
+      "type": "placeholder_model",
+      "reason": "Generated placeholder model - no models existed"
+    },
+    {
+      "path": "src/main/resources/assets/92cddfb9-d049-4420-882b-ba9ad064e792/textures/item/placeholder.png",
+      "type": "placeholder_png",
+      "reason": "Generated rich placeholder textures (style-aware) - no PNG files existed"
+    }
+  ],
+  "missingTextureFixups": [],
+  "modelTextureIntegrity": {
+    "valid": 12,
+    "invalid": 0,
+    "fixed": 0
+  },
+  "invariants": [
+    {
+      "name": "audit_generator",
+      "status": "failed",
+      "reason": "TypeError: mob.drops is not iterable"
+    }
+  ],
+  "timestamp": "2026-01-09T17:36:12.578Z",
+  "summary": {
+    "overallStatus": "failed",
+    "error": "TypeError: mob.drops is not iterable"
+  }
+}

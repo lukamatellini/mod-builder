@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "twilightgemcraft:item/aetherium_ingot"
+  }
+}

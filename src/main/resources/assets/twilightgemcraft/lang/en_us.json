@@ -1,0 +1,17 @@
+{
+  "itemGroup.twilightgemcraft.main": "Twilight Gemcraft",
+  "itemGroup.twilightgemcraft": "Twilight Gemcraft",
+  "item.twilightgemcraft.aetherium_gem": "Aetherium Gem",
+  "item.twilightgemcraft.aetherium_dust": "Aetherium Dust",
+  "item.twilightgemcraft.aetherium_ingot": "Aetherium Ingot",
+  "item.twilightgemcraft.aetherium_helmet": "Aetherium Helmet",
+  "item.twilightgemcraft.aetherium_chestplate": "Aetherium Chestplate",
+  "item.twilightgemcraft.aetherium_leggings": "Aetherium Leggings",
+  "item.twilightgemcraft.aetherium_boots": "Aetherium Boots",
+  "item.twilightgemcraft.aetherium_shard": "Aetherium Shard",
+  "item.twilightgemcraft.night_vision_potion": "Night Vision Potion",
+  "block.twilightgemcraft.aetherium_ore": "Aetherium Ore",
+  "block.twilightgemcraft.aetherium_block": "Block of Aetherium",
+  "entity.twilightgemcraft.night_prowler": "Night Prowler",
+  "structure.twilightgemcraft.ancient_aetherium_shrine": "Ancient Aetherium Shrine"
+}
