@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "dragonsheir",
+  "version": "1.0.0",
+  "name": "Dragons Heir",
+  "description": "A Minecraft mod featuring Dragons Heir.",
+  "authors": [
+    "Mod Generator"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/dragonsheir/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.modgen.dragonsheir.DragonsHeir"
+    ],
+    "client": [
+      "com.modgen.dragonsheir.client.DragonsHeirClient"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "minecraft": "1.21.1",
+    "fabricloader": ">=0.16.9",
+    "fabric": "*",
+    "java": ">=21"
+  }
+}

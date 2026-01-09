@@ -1,0 +1,16 @@
+package com.modgen.dragonsheir;
+
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.util.Identifier;
+import net.minecraft.world.World;
+import net.minecraft.world.dimension.DimensionType;
+
+public class ModDimensions {
+    public static final RegistryKey<World> THE_VOID_REALM_KEY = RegistryKey.of(RegistryKeys.WORLD, Identifier.of(DragonsHeir.MOD_ID, "the_void_realm"));
+    public static final RegistryKey<World> SKY_ISLANDS_KEY = RegistryKey.of(RegistryKeys.WORLD, Identifier.of(DragonsHeir.MOD_ID, "sky_islands"));
+    
+    public static void registerDimensions() {
+        DragonsHeir.LOGGER.info("Registered 2 dimensions");
+    }
+}

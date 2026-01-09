@@ -1,0 +1,27 @@
+{
+  "modId": "dragonsheir",
+  "modName": "Dragons Heir",
+  "loader": "fabric",
+  "minecraftRange": ">=1.21",
+  "expectedContent": {
+    "items": 21,
+    "mobs": 8,
+    "structures": 4,
+    "dimensions": 2,
+    "quests": 3,
+    "npcs": 2,
+    "events": 0
+  },
+  "enabledModules": {
+    "items": true,
+    "mobs": true,
+    "structures": true,
+    "dimensions": true,
+    "quests": true,
+    "npcs": true,
+    "dialogue": true,
+    "trading": true,
+    "biomes": false,
+    "events": false
+  }
+}
