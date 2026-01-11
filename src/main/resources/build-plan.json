@@ -1,0 +1,27 @@
+{
+  "modId": "navalarchitect",
+  "modName": "Naval Architect",
+  "loader": "fabric",
+  "minecraftRange": ">=1.21",
+  "expectedContent": {
+    "items": 1,
+    "mobs": 0,
+    "structures": 0,
+    "dimensions": 0,
+    "quests": 0,
+    "npcs": 0,
+    "events": 0
+  },
+  "enabledModules": {
+    "items": true,
+    "mobs": false,
+    "structures": false,
+    "dimensions": false,
+    "quests": false,
+    "npcs": false,
+    "dialogue": false,
+    "trading": false,
+    "biomes": false,
+    "events": false
+  }
+}

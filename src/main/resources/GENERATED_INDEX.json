@@ -1,0 +1,168 @@
+{
+  "modId": "navalarchitect",
+  "modName": "Naval Architect",
+  "generatedAt": "2026-01-11T09:09:20.586Z",
+  "enabledCapabilities": [
+    "items",
+    "blocks"
+  ],
+  "emittedCapabilities": [
+    "items",
+    "blocks"
+  ],
+  "emittedFiles": {
+    "java": [
+      "src/main/java/com/modgen/navalarchitect/NavalArchitect.java",
+      "src/main/java/com/modgen/navalarchitect/ModItems.java",
+      "src/main/java/com/modgen/navalarchitect/ModBlocks.java",
+      "src/client/java/com/modgen/navalarchitect/client/NavalArchitectClient.java"
+    ],
+    "assets": [
+      "src/main/resources/assets/navalarchitect/textures/item/pilot_seat.png",
+      "src/main/resources/assets/navalarchitect/models/item/pilot_seat.json",
+      "src/main/resources/assets/navalarchitect/blockstates/ship_core.json",
+      "src/main/resources/assets/navalarchitect/models/block/ship_core.json",
+      "src/main/resources/assets/navalarchitect/models/item/ship_core.json",
+      "src/main/resources/assets/navalarchitect/textures/block/ship_core.png",
+      "src/main/resources/assets/navalarchitect/lang/en_us.json"
+    ],
+    "data": [
+      "src/main/resources/data/navalarchitect/loot_tables/blocks/ship_core.json",
+      "src/main/resources/data/navalarchitect/tags/functions/load.json",
+      "src/main/resources/data/navalarchitect/tags/functions/tick.json"
+    ],
+    "gradle": [
+      "build.gradle",
+      "gradle.properties",
+      "settings.gradle",
+      "gradle/wrapper/gradle-wrapper.properties"
+    ],
+    "other": [
+      "src/main/resources/fabric.mod.json",
+      "src/main/resources/build-plan.json",
+      "LICENSE",
+      "README.md",
+      "src/main/resources/FEATURE_AUDIT.json"
+    ]
+  },
+  "entrypoints": {
+    "main": "com.modgen.navalarchitect.NavalArchitect"
+  },
+  "assetCounts": {
+    "items": 1,
+    "blocks": 1,
+    "mobs": 0,
+    "structures": 0,
+    "textures": 2
+  },
+  "registryValidation": {
+    "passed": true,
+    "errors": []
+  },
+  "capabilityEmissionReport": {
+    "items": {
+      "specPresent": true,
+      "expectedFiles": [
+        "src/main/java/com/modgen/navalarchitect/ModItems.java"
+      ],
+      "emittedFiles": [
+        "src/main/java/com/modgen/navalarchitect/ModItems.java"
+      ],
+      "emitterRan": true,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "blocks": {
+      "specPresent": true,
+      "expectedFiles": [
+        "src/main/java/com/modgen/navalarchitect/ModBlocks.java"
+      ],
+      "emittedFiles": [
+        "src/main/java/com/modgen/navalarchitect/ModBlocks.java"
+      ],
+      "emitterRan": true,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "mobs": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/navalarchitect/entity/ModEntities.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "structures": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/navalarchitect/ModStructures.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "events": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/navalarchitect/ModEvents.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "npcs": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/navalarchitect/ModNPCs.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "quests": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/navalarchitect/ModQuests.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "guis": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/navalarchitect/ModGUIs.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "dimensions": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/navalarchitect/ModDimensions.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "biomeInjectors": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/navalarchitect/ModBiomeModifications.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    }
+  }
+}
