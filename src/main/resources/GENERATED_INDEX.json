@@ -1,0 +1,231 @@
+{
+  "modId": "cheesycraft",
+  "modName": "CheesyCraft",
+  "generatedAt": "2026-01-12T12:39:06.944Z",
+  "enabledCapabilities": [
+    "items",
+    "blocks",
+    "mobs",
+    "structures"
+  ],
+  "emittedCapabilities": [
+    "items",
+    "blocks",
+    "mobs",
+    "structures"
+  ],
+  "emittedFiles": {
+    "java": [
+      "src/main/java/com/modgen/cheesycraft/Cheesycraft.java",
+      "src/main/java/com/modgen/cheesycraft/ModItems.java",
+      "src/main/java/com/modgen/cheesycraft/item/MouseTrapItem.java",
+      "src/main/java/com/modgen/cheesycraft/ModBlocks.java",
+      "src/main/java/com/modgen/cheesycraft/entity/ModEntities.java",
+      "src/client/java/com/modgen/cheesycraft/client/ModModelLayers.java",
+      "src/main/java/com/modgen/cheesycraft/entity/MouseEntity.java",
+      "src/client/java/com/modgen/cheesycraft/client/model/MouseModel.java",
+      "src/client/java/com/modgen/cheesycraft/client/renderer/MouseRenderer.java",
+      "src/main/java/com/modgen/cheesycraft/entity/RatEntity.java",
+      "src/client/java/com/modgen/cheesycraft/client/model/RatModel.java",
+      "src/client/java/com/modgen/cheesycraft/client/renderer/RatRenderer.java",
+      "src/main/java/com/modgen/cheesycraft/entity/CheesyGolemEntity.java",
+      "src/client/java/com/modgen/cheesycraft/client/model/CheesyGolemModel.java",
+      "src/client/java/com/modgen/cheesycraft/client/renderer/CheesyGolemRenderer.java",
+      "src/main/java/com/modgen/cheesycraft/ModStructures.java",
+      "src/main/java/com/modgen/cheesycraft/structure/CheeseDungeonStructure.java",
+      "src/client/java/com/modgen/cheesycraft/client/CheesycraftClient.java"
+    ],
+    "assets": [
+      "src/main/resources/assets/cheesycraft/textures/item/cheese_slice.png",
+      "src/main/resources/assets/cheesycraft/models/item/cheese_slice.json",
+      "src/main/resources/assets/cheesycraft/textures/item/cheese_sword.png",
+      "src/main/resources/assets/cheesycraft/models/item/cheese_sword.json",
+      "src/main/resources/assets/cheesycraft/textures/item/cheese_pickaxe.png",
+      "src/main/resources/assets/cheesycraft/models/item/cheese_pickaxe.json",
+      "src/main/resources/assets/cheesycraft/textures/item/cheese_axe.png",
+      "src/main/resources/assets/cheesycraft/models/item/cheese_axe.json",
+      "src/main/resources/assets/cheesycraft/textures/item/cheese_helmet.png",
+      "src/main/resources/assets/cheesycraft/models/item/cheese_helmet.json",
+      "src/main/resources/assets/cheesycraft/textures/item/cheese_chestplate.png",
+      "src/main/resources/assets/cheesycraft/models/item/cheese_chestplate.json",
+      "src/main/resources/assets/cheesycraft/textures/item/cheese_leggings.png",
+      "src/main/resources/assets/cheesycraft/models/item/cheese_leggings.json",
+      "src/main/resources/assets/cheesycraft/textures/item/cheese_boots.png",
+      "src/main/resources/assets/cheesycraft/models/item/cheese_boots.json",
+      "src/main/resources/assets/cheesycraft/textures/item/mouse_trap.png",
+      "src/main/resources/assets/cheesycraft/models/item/mouse_trap.json",
+      "src/main/resources/assets/cheesycraft/textures/item/common_cheese_slice.png",
+      "src/main/resources/assets/cheesycraft/models/item/common_cheese_slice.json",
+      "src/main/resources/assets/cheesycraft/textures/item/rare_string.png",
+      "src/main/resources/assets/cheesycraft/models/item/rare_string.json",
+      "src/main/resources/assets/cheesycraft/textures/item/rare_poison_gland.png",
+      "src/main/resources/assets/cheesycraft/models/item/rare_poison_gland.json",
+      "src/main/resources/assets/cheesycraft/textures/item/epic_cheese_block.png",
+      "src/main/resources/assets/cheesycraft/models/item/epic_cheese_block.json",
+      "src/main/resources/assets/cheesycraft/blockstates/cheese_block.json",
+      "src/main/resources/assets/cheesycraft/models/block/cheese_block.json",
+      "src/main/resources/assets/cheesycraft/models/item/cheese_block.json",
+      "src/main/resources/assets/cheesycraft/textures/block/cheese_block.png",
+      "src/main/resources/assets/cheesycraft/blockstates/aged_cheese_block.json",
+      "src/main/resources/assets/cheesycraft/models/block/aged_cheese_block.json",
+      "src/main/resources/assets/cheesycraft/models/item/aged_cheese_block.json",
+      "src/main/resources/assets/cheesycraft/textures/block/aged_cheese_block.png",
+      "src/main/resources/assets/cheesycraft/blockstates/cheese_ore.json",
+      "src/main/resources/assets/cheesycraft/models/block/cheese_ore.json",
+      "src/main/resources/assets/cheesycraft/models/item/cheese_ore.json",
+      "src/main/resources/assets/cheesycraft/textures/block/cheese_ore.png",
+      "src/main/resources/assets/cheesycraft/textures/entity/mouse.png",
+      "src/main/resources/assets/cheesycraft/textures/entity/rat.png",
+      "src/main/resources/assets/cheesycraft/textures/entity/cheesy_golem.png",
+      "src/main/resources/assets/cheesycraft/textures/gui/structure/cheese_dungeon.png",
+      "src/main/resources/assets/cheesycraft/lang/en_us.json",
+      "src/main/resources/assets/cheesycraft/textures/models/armor/cheese_layer_1.png",
+      "src/main/resources/assets/cheesycraft/textures/models/armor/cheese_layer_2.png"
+    ],
+    "data": [
+      "src/main/resources/data/cheesycraft/loot_tables/blocks/cheese_block.json",
+      "src/main/resources/data/cheesycraft/loot_tables/blocks/aged_cheese_block.json",
+      "src/main/resources/data/cheesycraft/loot_tables/blocks/cheese_ore.json",
+      "src/main/resources/data/cheesycraft/tags/functions/load.json",
+      "src/main/resources/data/cheesycraft/tags/functions/tick.json"
+    ],
+    "gradle": [
+      "build.gradle",
+      "gradle.properties",
+      "settings.gradle",
+      "gradle/wrapper/gradle-wrapper.properties"
+    ],
+    "other": [
+      "src/main/resources/fabric.mod.json",
+      "src/main/resources/build-plan.json",
+      "LICENSE",
+      "README.md",
+      "src/main/resources/FEATURE_AUDIT.json"
+    ]
+  },
+  "entrypoints": {
+    "main": "com.modgen.cheesycraft.Cheesycraft",
+    "client": "com.modgen.cheesycraft.client.CheesycraftClient"
+  },
+  "assetCounts": {
+    "items": 13,
+    "blocks": 3,
+    "mobs": 3,
+    "structures": 1,
+    "textures": 22
+  },
+  "registryValidation": {
+    "passed": true,
+    "errors": []
+  },
+  "capabilityEmissionReport": {
+    "items": {
+      "specPresent": true,
+      "expectedFiles": [
+        "src/main/java/com/modgen/cheesycraft/ModItems.java"
+      ],
+      "emittedFiles": [
+        "src/main/java/com/modgen/cheesycraft/ModItems.java"
+      ],
+      "emitterRan": true,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "blocks": {
+      "specPresent": true,
+      "expectedFiles": [
+        "src/main/java/com/modgen/cheesycraft/ModBlocks.java"
+      ],
+      "emittedFiles": [
+        "src/main/java/com/modgen/cheesycraft/ModBlocks.java"
+      ],
+      "emitterRan": true,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "mobs": {
+      "specPresent": true,
+      "expectedFiles": [
+        "src/main/java/com/modgen/cheesycraft/entity/ModEntities.java"
+      ],
+      "emittedFiles": [
+        "src/main/java/com/modgen/cheesycraft/entity/ModEntities.java"
+      ],
+      "emitterRan": true,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "structures": {
+      "specPresent": true,
+      "expectedFiles": [
+        "src/main/java/com/modgen/cheesycraft/ModStructures.java"
+      ],
+      "emittedFiles": [
+        "src/main/java/com/modgen/cheesycraft/ModStructures.java"
+      ],
+      "emitterRan": true,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "events": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/cheesycraft/ModEvents.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "npcs": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/cheesycraft/ModNPCs.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "quests": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/cheesycraft/ModQuests.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "guis": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/cheesycraft/ModGUIs.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "dimensions": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/cheesycraft/ModDimensions.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    },
+    "biomeInjectors": {
+      "specPresent": false,
+      "expectedFiles": [
+        "src/main/java/com/modgen/cheesycraft/ModBiomeModifications.java"
+      ],
+      "emittedFiles": [],
+      "emitterRan": false,
+      "fullySatisfied": true,
+      "missingFiles": []
+    }
+  }
+}

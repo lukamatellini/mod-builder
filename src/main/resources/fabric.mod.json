@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "cheesycraft",
+  "version": "1.0.0",
+  "name": "CheesyCraft",
+  "description": "A Minecraft mod featuring CheesyCraft.",
+  "authors": [
+    "Mod Generator"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/cheesycraft/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.modgen.cheesycraft.Cheesycraft"
+    ],
+    "client": [
+      "com.modgen.cheesycraft.client.CheesycraftClient"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "minecraft": "1.21.1",
+    "fabricloader": ">=0.16.9",
+    "fabric": "*",
+    "java": ">=21"
+  }
+}
